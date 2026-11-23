@@ -19,11 +19,11 @@
 
         <section class="how-to-read stack" aria-labelledby="h-leer">
           <h2 id="h-leer" class="visually-hidden">Cómo leer estos resultados</h2>
-          <p class="note r__alert"><strong>Ojo con contestar «de acuerdo» a todo:</strong> te acerca a los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión.</p>
+          <p v-if="!isHistoricalSurvey" class="note r__alert"><strong>Ojo con contestar «de acuerdo» a todo:</strong> te acerca a los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión.</p>
           <details class="r__how">
             <summary>Cómo leer estos resultados</summary>
             <ul>
-              <li><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
+              <li v-if="!isHistoricalSurvey"><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
               <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice {{ isHistoricalSurvey ? 'cada programa' : 'el programa de cada partido' }}: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
               <li><strong>Solo cuentan las preguntas en las que el programa dice algo.</strong> Si un {{ noun.singular }} no se pronuncia sobre un tema, ese tema no suma ni resta. Tampoco cuentan las que contestaste «No sé» o omitiste.</li>
               <li><strong>«Tiene posición en X de tus Y preguntas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
@@ -54,6 +54,9 @@
               <span v-if="low(result)" class="low-data-badge" :title="`Este ${noun.singular} tiene pocas posiciones documentadas en las preguntas que contestaste: el resultado es solo orientativo.`">Pocos datos</span>
             </div>
             <div class="label__body stack">
+              <p v-if="isHistoricalSurvey && entityInfo(result.entityId)?.description" class="r__ficha small">
+                <strong>{{ entityInfo(result.entityId)?.periodLabel }}.</strong> {{ entityInfo(result.entityId)?.description }}
+              </p>
               <div class="affinity-score r__score">
                 <span v-if="result.affinityPercent !== null" class="flag r__flag tnum" :class="low(result) ? 'flag--ghost' : ''" :style="{ width: `${Math.max(16, result.affinityPercent)}%` }">
                   <span class="score-value">{{ result.affinityPercent }}%</span>
@@ -372,6 +375,10 @@ async function sendContribution() {
   if (ok) { try { localStorage.setItem(contribKey.value, '1') } catch { /* sin efecto */ } }
 }
 
+function entityInfo(entityId: string): any {
+  return releaseData.value?.entities?.find((e: any) => e.entityId === entityId)
+}
+
 function getEntityName(entityId: string): string {
   const entity = releaseData.value?.entities?.find((e: any) => e.entityId === entityId)
   return entity?.name || entityId
@@ -569,5 +576,6 @@ function exportResults() {
 .r__check { display: flex; gap: 0.6rem; align-items: flex-start; cursor: pointer; }
 .r__check input { width: 1.25rem; height: 1.25rem; margin-top: 0.15rem; flex: none; accent-color: var(--ink); }
 .r__hist { margin-top: var(--space-3); }
+.r__ficha { color: var(--ink-soft); border-left: 3px solid var(--line-strong); padding-left: var(--space-3); }
 .r__kofi { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
 </style>
