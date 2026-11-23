@@ -24,7 +24,7 @@
     "@pinia/nuxt": "^1.0.3",
     "compression": "^1.8.1",
     "execa": "^9.5.0",
-    "node-pg-migrate": "^7.7.0",
+    "node-pg-migrate": "^9.0.0",
     "nuxt": "^3.15.0",
     "pg": "^8.13.0",
     "pinia": "^4.1.0",
