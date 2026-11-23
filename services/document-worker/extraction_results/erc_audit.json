@@ -1,0 +1,272 @@
+{
+  "classifications": {
+    "valid": [
+      {
+        "index": 4,
+        "question_id": "Q004",
+        "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+        "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les person",
+        "area": "Vivienda / Arrendamientos",
+        "page": 19,
+        "stance": "unclear",
+        "score": 15,
+        "keyword": "habitatge",
+        "reason": "El claim respalda la postura sugerida de forma clara."
+      },
+      {
+        "index": 11,
+        "question_id": "Q008",
+        "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida d",
+        "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les person",
+        "area": "Vivienda / Arrendamientos",
+        "page": 19,
+        "stance": "unclear",
+        "score": 14,
+        "keyword": "habitatge",
+        "reason": "El claim respalda la postura sugerida de forma clara."
+      },
+      {
+        "index": 20,
+        "question_id": "Q023",
+        "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+        "literal_text": "Cal reforçar la conservació de les vies, modernitzar els centres de control i els sistemes de senyalització i protecció,",
+        "area": "Seguridad ferroviaria / Mantenimiento de infraestructuras",
+        "page": 39,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "seguridad",
+        "reason": "El claim respalda la postura sugerida de forma clara."
+      }
+    ],
+    "ambiguous": [
+      {
+        "index": 1,
+        "question_id": "Q001",
+        "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la",
+        "literal_text": "Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i",
+        "area": "Educación / Competencias autonómicas",
+        "page": 11,
+        "stance": "unclear",
+        "score": 10,
+        "keyword": null,
+        "reason": "La relación entre el claim y la pregunta es ambigua; requiere revisión humana."
+      },
+      {
+        "index": 3,
+        "question_id": "Q002",
+        "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+        "literal_text": "Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i",
+        "area": "Educación / Competencias autonómicas",
+        "page": 11,
+        "stance": "unclear",
+        "score": 10,
+        "keyword": null,
+        "reason": "La relación entre el claim y la pregunta es ambigua; requiere revisión humana."
+      },
+      {
+        "index": 5,
+        "question_id": "Q004",
+        "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+        "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+        "area": "Vivienda",
+        "page": 18,
+        "stance": "unclear",
+        "score": 10,
+        "keyword": null,
+        "reason": "La relación entre el claim y la pregunta es ambigua; requiere revisión humana."
+      },
+      {
+        "index": 8,
+        "question_id": "Q006",
+        "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir lista",
+        "literal_text": "Blindar les competències de la Generalitat de Catalunya en matèria sanitària. Defensar el caràcter exclusiu de les compe",
+        "area": "Sanidad / Competencias autonómicas",
+        "page": 42,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "salut",
+        "reason": "La relación entre el claim y la pregunta es ambigua; requiere revisión humana."
+      },
+      {
+        "index": 13,
+        "question_id": "Q011",
+        "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejor",
+        "literal_text": "afavoreixin el transport públic i el desenvolupament ferroviari",
+        "area": "Infraestructuras / Transporte",
+        "page": 37,
+        "stance": "unclear",
+        "score": 13,
+        "keyword": "infraestructura",
+        "reason": "La relación entre el claim y la pregunta es ambigua; requiere revisión humana."
+      },
+      {
+        "index": 17,
+        "question_id": "Q018",
+        "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apo",
+        "literal_text": "Impulsar un Pla de Sobirania Cultural per culminar el traspàs dels museus i equipaments culturals transferibles a Catalu",
+        "area": "Cultura / Competencias autonómicas",
+        "page": 13,
+        "stance": "unclear",
+        "score": 14,
+        "keyword": "museo",
+        "reason": "La relación entre el claim y la pregunta es ambigua; requiere revisión humana."
+      }
+    ],
+    "contradictory": [],
+    "not_pertinent": [
+      {
+        "index": 0,
+        "question_id": "Q001",
+        "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la",
+        "literal_text": "Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar ",
+        "area": "Educación / Protección institucional",
+        "page": 11,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "profesor",
+        "reason": "El claim no trata sobre becas o educación infantil, sino sobre protección institucional educativa."
+      },
+      {
+        "index": 2,
+        "question_id": "Q002",
+        "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+        "literal_text": "Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar ",
+        "area": "Educación / Protección institucional",
+        "page": 11,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "profesor",
+        "reason": "El claim no trata sobre becas o educación infantil, sino sobre protección institucional educativa."
+      },
+      {
+        "index": 6,
+        "question_id": "Q005",
+        "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, ",
+        "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les person",
+        "area": "Vivienda / Arrendamientos",
+        "page": 19,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "habitatge",
+        "reason": "El claim no trata sobre impuestos de vivienda, sino sobre arrendamientos o SAREB."
+      },
+      {
+        "index": 7,
+        "question_id": "Q005",
+        "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, ",
+        "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+        "area": "Vivienda",
+        "page": 18,
+        "stance": "unclear",
+        "score": 10,
+        "keyword": null,
+        "reason": "El claim no trata sobre impuestos de vivienda, sino sobre arrendamientos o SAREB."
+      },
+      {
+        "index": 9,
+        "question_id": "Q007",
+        "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de",
+        "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les person",
+        "area": "Vivienda / Arrendamientos",
+        "page": 19,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "habitatge",
+        "reason": "El claim no trata sobre rehabilitación, sino sobre arrendamientos o SAREB."
+      },
+      {
+        "index": 10,
+        "question_id": "Q007",
+        "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de",
+        "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+        "area": "Vivienda",
+        "page": 18,
+        "stance": "unclear",
+        "score": 10,
+        "keyword": null,
+        "reason": "El claim no trata sobre rehabilitación, sino sobre arrendamientos o SAREB."
+      },
+      {
+        "index": 12,
+        "question_id": "Q008",
+        "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida d",
+        "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+        "area": "Vivienda",
+        "page": 18,
+        "stance": "unclear",
+        "score": 10,
+        "keyword": null,
+        "reason": "El claim no es pertinente para la pregunta."
+      },
+      {
+        "index": 14,
+        "question_id": "Q011",
+        "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejor",
+        "literal_text": "Traspassar progressivament a Catalunya les funcions de conservació, manteniment i gestió de les infraestructures ferrovi",
+        "area": "Infraestructuras ferroviarias / Competencias autonómicas",
+        "page": 40,
+        "stance": "unclear",
+        "score": 12,
+        "keyword": "infraestructura",
+        "reason": "El claim trata sobre competencias autonómicas, no sobre la política concreta de la pregunta."
+      },
+      {
+        "index": 15,
+        "question_id": "Q017",
+        "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mej",
+        "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les person",
+        "area": "Vivienda / Arrendamientos",
+        "page": 19,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "habitatge",
+        "reason": "El claim no trata sobre rehabilitación, sino sobre arrendamientos o SAREB."
+      },
+      {
+        "index": 16,
+        "question_id": "Q017",
+        "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mej",
+        "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+        "area": "Vivienda",
+        "page": 18,
+        "stance": "unclear",
+        "score": 10,
+        "keyword": null,
+        "reason": "El claim no trata sobre rehabilitación, sino sobre arrendamientos o SAREB."
+      },
+      {
+        "index": 18,
+        "question_id": "Q018",
+        "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apo",
+        "literal_text": "Exigir la modificació de la Llei del Patrimoni Històric espanyol perquè els recursos generats per les obres públiques es",
+        "area": "Cultura / Patrimonio / Financiación",
+        "page": 13,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "patrimonio",
+        "reason": "El claim no trata sobre mecenazgo o derechos de autor, sino sobre traspaso de museos/patrimonio."
+      },
+      {
+        "index": 19,
+        "question_id": "Q023",
+        "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+        "literal_text": "Aprovar una llei estatal de desaparició forçosa de menors per garantir veritat, justícia i reparació",
+        "area": "Justicia y memoria democrática",
+        "page": 8,
+        "stance": "unclear",
+        "score": 11,
+        "keyword": "justícia",
+        "reason": "El claim no trata sobre seguridad ciudadana o policía, sino sobre justicia o seguridad ferroviaria."
+      }
+    ]
+  },
+  "issues": [],
+  "summary": {
+    "total": 21,
+    "valid": 3,
+    "ambiguous": 6,
+    "contradictory": 0,
+    "not_pertinent": 12,
+    "issues": 0
+  }
+}

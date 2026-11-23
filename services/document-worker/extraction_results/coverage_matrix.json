@@ -1,0 +1,152 @@
+{
+  "Economía y empleo": {
+    "total_questions": 5,
+    "parties_coverage": {
+      "PSOE": {
+        "questions_with_evidence": 4,
+        "coverage_percentage": 80.0
+      },
+      "PP": {
+        "questions_with_evidence": 5,
+        "coverage_percentage": 100.0
+      },
+      "Vox": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 20.0
+      },
+      "Sumar": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 40.0
+      },
+      "ERC": {
+        "questions_with_evidence": 3,
+        "coverage_percentage": 60.0
+      }
+    }
+  },
+  "Estado de bienestar": {
+    "total_questions": 8,
+    "parties_coverage": {
+      "PSOE": {
+        "questions_with_evidence": 6,
+        "coverage_percentage": 75.0
+      },
+      "PP": {
+        "questions_with_evidence": 5,
+        "coverage_percentage": 62.5
+      },
+      "Vox": {
+        "questions_with_evidence": 3,
+        "coverage_percentage": 37.5
+      },
+      "Sumar": {
+        "questions_with_evidence": 6,
+        "coverage_percentage": 75.0
+      },
+      "ERC": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 12.5
+      }
+    }
+  },
+  "Territorio y medio ambiente": {
+    "total_questions": 2,
+    "parties_coverage": {
+      "PSOE": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 50.0
+      },
+      "PP": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 50.0
+      },
+      "Vox": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 50.0
+      },
+      "Sumar": {
+        "questions_with_evidence": 0,
+        "coverage_percentage": 0.0
+      },
+      "ERC": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 50.0
+      }
+    }
+  },
+  "Justicia y seguridad": {
+    "total_questions": 2,
+    "parties_coverage": {
+      "PSOE": {
+        "questions_with_evidence": 0,
+        "coverage_percentage": 0.0
+      },
+      "PP": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 50.0
+      },
+      "Vox": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 100.0
+      },
+      "Sumar": {
+        "questions_with_evidence": 0,
+        "coverage_percentage": 0.0
+      },
+      "ERC": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 50.0
+      }
+    }
+  },
+  "Derechos y libertades": {
+    "total_questions": 4,
+    "parties_coverage": {
+      "PSOE": {
+        "questions_with_evidence": 3,
+        "coverage_percentage": 75.0
+      },
+      "PP": {
+        "questions_with_evidence": 4,
+        "coverage_percentage": 100.0
+      },
+      "Vox": {
+        "questions_with_evidence": 1,
+        "coverage_percentage": 25.0
+      },
+      "Sumar": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 50.0
+      },
+      "ERC": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 50.0
+      }
+    }
+  },
+  "Gobernanza y democracia": {
+    "total_questions": 2,
+    "parties_coverage": {
+      "PSOE": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 100.0
+      },
+      "PP": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 100.0
+      },
+      "Vox": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 100.0
+      },
+      "Sumar": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 100.0
+      },
+      "ERC": {
+        "questions_with_evidence": 2,
+        "coverage_percentage": 100.0
+      }
+    }
+  }
+}

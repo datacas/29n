@@ -1,0 +1,64 @@
+{
+  "erc_audit": {
+    "total": 21,
+    "valid": 3,
+    "ambiguous": 6,
+    "contradictory": 0,
+    "not_pertinent": 12,
+    "issues": 0
+  },
+  "coverage": {
+    "total_cells": 115,
+    "cells_with_evidence": 78,
+    "cells_without_evidence": 37,
+    "coverage_by_party": {
+      "PSOE": {
+        "with": 16,
+        "total": 23
+      },
+      "PP": {
+        "with": 18,
+        "total": 23
+      },
+      "Vox": {
+        "with": 11,
+        "total": 23
+      },
+      "Sumar": {
+        "with": 12,
+        "total": 23
+      },
+      "ERC": {
+        "with": 21,
+        "total": 23
+      }
+    },
+    "coverage_by_dimension": {
+      "Estado de bienestar": {
+        "with": 28,
+        "total": 40
+      },
+      "Economía y empleo": {
+        "with": 17,
+        "total": 25
+      },
+      "Territorio y medio ambiente": {
+        "with": 5,
+        "total": 10
+      },
+      "Derechos y libertades": {
+        "with": 13,
+        "total": 20
+      },
+      "Justicia y seguridad": {
+        "with": 5,
+        "total": 10
+      },
+      "Gobernanza y democracia": {
+        "with": 10,
+        "total": 10
+      }
+    }
+  },
+  "no_auto_approval": true
+}

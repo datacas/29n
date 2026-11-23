@@ -1,0 +1,2107 @@
+{
+ "k": 70,
+ "clusters": [
+  {
+   "cluster": 3,
+   "size": 449,
+   "parties": {
+    "Adelante Andalucía": 65,
+    "BNG": 32,
+    "Coalición Canaria": 1,
+    "Democracia21": 24,
+    "EH Bildu": 26,
+    "ERC": 1,
+    "FE de las JONS": 31,
+    "Frente Amplio": 47,
+    "Frente Obrero": 18,
+    "PACMA": 45,
+    "PCTE": 2,
+    "PNV": 25,
+    "PP": 33,
+    "PSOE": 35,
+    "SALF": 20,
+    "Sumar": 33,
+    "Vox": 11
+   },
+   "n_parties": 17,
+   "top_terms": [
+    "desarrollo",
+    "países",
+    "personas",
+    "estado",
+    "comunidades",
+    "financiación",
+    "internacional",
+    "medio"
+   ],
+   "sample": "Para ello, proponemos una actualización de las directrices contenidas en el Plan Director de la Red de Parques Nacionales, para actualizar, a su vez, los Planes de Ordenación de los Recursos Naturales (PORN), los Planes Rectores de Uso y Gestión (PRUG) y los P",
+   "sample_party": "PACMA"
+  },
+  {
+   "cluster": 22,
+   "size": 129,
+   "parties": {
+    "Adelante Andalucía": 4,
+    "Democracia21": 2,
+    "Frente Amplio": 5,
+    "PACMA": 111,
+    "PSOE": 2,
+    "Partido Autónomos": 1,
+    "Sumar": 4
+   },
+   "n_parties": 7,
+   "top_terms": [
+    "animales",
+    "animal",
+    "bienestar",
+    "caza",
+    "protección",
+    "compañía",
+    "pacma",
+    "animales compañía"
+   ],
+   "sample": "ÍNDICE Presentación ....................................................................................................................................................................................................................5 1 Nuestro compromiso con l",
+   "sample_party": "PACMA"
+  },
+  {
+   "cluster": 18,
+   "size": 116,
+   "parties": {
+    "Adelante Andalucía": 3,
+    "Coalición Canaria": 50,
+    "Democracia21": 3,
+    "EH Bildu": 7,
+    "FE de las JONS": 1,
+    "Frente Amplio": 15,
+    "Frente Obrero": 5,
+    "PACMA": 6,
+    "PNV": 4,
+    "PP": 3,
+    "PSOE": 11,
+    "Partido Autónomos": 1,
+    "SALF": 1,
+    "Sumar": 6
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "canarias",
+    "energía",
+    "agua",
+    "islas",
+    "reclamaremos",
+    "renovables",
+    "combustibles",
+    "canaria"
+   ],
+   "sample": "DEFENDER NUESTRA TIERRA Y NUESTROS RECURSOS Canarias necesita agua suficiente, energía segura y un territorio cuidado. La transformación de los sistemas de agua y energía debe reducir la dependencia exterior y asegurar precios razonables para familias y empres",
+   "sample_party": "Coalición Canaria"
+  },
+  {
+   "cluster": 28,
+   "size": 101,
+   "parties": {
+    "Adelante Andalucía": 11,
+    "BNG": 2,
+    "Democracia21": 19,
+    "EH Bildu": 1,
+    "FE de las JONS": 3,
+    "Frente Amplio": 5,
+    "Frente Obrero": 1,
+    "PACMA": 3,
+    "PCTE": 1,
+    "PNV": 3,
+    "PP": 3,
+    "PSOE": 3,
+    "Partido Autónomos": 38,
+    "SALF": 1,
+    "Sumar": 5,
+    "Vox": 2
+   },
+   "n_parties": 16,
+   "top_terms": [
+    "profesional",
+    "viabilidad",
+    "formación",
+    "viabilidad viable",
+    "viable",
+    "formación profesional",
+    "técnico",
+    "personal"
+   ],
+   "sample": "68. Reconocimiento profesional del celador sanitario en Formación Profesional Creación del título oficial de Técnico de Formación Profesional para el colectivo de celadores sanitarios, reconociendo su cualificación clínica, movilización de pacientes y apoyo ho",
+   "sample_party": "Partido Autónomos"
+  },
+  {
+   "cluster": 45,
+   "size": 95,
+   "parties": {
+    "BNG": 95
+   },
+   "n_parties": 1,
+   "top_terms": [
+    "galiza",
+    "desenvolvemento",
+    "financiamento",
+    "noso",
+    "capacidade",
+    "galego",
+    "servizos",
+    "desenvolver"
+   ],
+   "sample": "Por iso, no camiño de ir afondando na capacidade de decisión de Galiza, defendemos: Un novo modelo de financiamento baseado no concerto económico e na bilateralidade co Estado. Trátase de que Galiza recade todos os impostos e teña capacidade para decidir como ",
+   "sample_party": "BNG"
+  },
+  {
+   "cluster": 16,
+   "size": 91,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 5,
+    "Democracia21": 4,
+    "EH Bildu": 5,
+    "FE de las JONS": 3,
+    "Frente Amplio": 23,
+    "Frente Obrero": 5,
+    "PACMA": 1,
+    "PCTE": 2,
+    "PNV": 3,
+    "PP": 5,
+    "PSOE": 9,
+    "Partido Autónomos": 4,
+    "SALF": 3,
+    "Sumar": 11,
+    "Vox": 1
+   },
+   "n_parties": 16,
+   "top_terms": [
+    "impuesto",
+    "grandes",
+    "empresas",
+    "sociedades",
+    "grandes empresas",
+    "patrimonio",
+    "impuesto sociedades",
+    "beneficios"
+   ],
+   "sample": "Aumentar el impuesto de sociedades y de patrimonio para las grandes empresas que no contribuyen lo suficiente a la riqueza nacional.",
+   "sample_party": "Frente Obrero"
+  },
+  {
+   "cluster": 46,
+   "size": 88,
+   "parties": {
+    "Adelante Andalucía": 2,
+    "BNG": 8,
+    "Democracia21": 4,
+    "EH Bildu": 8,
+    "FE de las JONS": 4,
+    "Frente Amplio": 21,
+    "Frente Obrero": 4,
+    "PACMA": 5,
+    "PNV": 6,
+    "PP": 2,
+    "PSOE": 18,
+    "Partido Autónomos": 2,
+    "Sumar": 3,
+    "Vox": 1
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "industrial",
+    "sectores",
+    "estratégicos",
+    "sectores estratégicos",
+    "valor",
+    "ecológica",
+    "empleo",
+    "empresas"
+   ],
+   "sample": "Impulsar una estrategia legislativa estatal y europea para desarrollar el Made in Europe como instrumento de soberanía industrial, transición ecológica y justicia social, dentro del ámbito del Industrial Accelerator Act para reforzar las capacidades productiva",
+   "sample_party": "EH Bildu"
+  },
+  {
+   "cluster": 54,
+   "size": 80,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "BNG": 1,
+    "Democracia21": 6,
+    "EH Bildu": 3,
+    "FE de las JONS": 3,
+    "Frente Amplio": 2,
+    "Frente Obrero": 36,
+    "PCTE": 15,
+    "PP": 7,
+    "PSOE": 2,
+    "SALF": 1,
+    "Vox": 3
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "trabajadores",
+    "intereses",
+    "empresas",
+    "obrero",
+    "sistema",
+    "situación",
+    "trabajo",
+    "capitalistas"
+   ],
+   "sample": "el paro, la inflación, la terciarización de puestos de trabajo y el aumento de la edad de jubilación son la consecuencia directa de un sistema nefasto que explota al que menos tiene, para garantizar los beneficios de grandes empresas y sus socios de gobierno. ",
+   "sample_party": "Frente Obrero"
+  },
+  {
+   "cluster": 67,
+   "size": 80,
+   "parties": {
+    "Adelante Andalucía": 17,
+    "BNG": 3,
+    "Democracia21": 10,
+    "EH Bildu": 6,
+    "FE de las JONS": 7,
+    "Frente Amplio": 5,
+    "Frente Obrero": 3,
+    "PACMA": 2,
+    "PNV": 2,
+    "PP": 8,
+    "PSOE": 4,
+    "Partido Autónomos": 2,
+    "SALF": 7,
+    "Sumar": 2,
+    "Vox": 2
+   },
+   "n_parties": 15,
+   "top_terms": [
+    "permiso",
+    "familias",
+    "permisos",
+    "hijos",
+    "nacimiento",
+    "trabajo",
+    "cargo",
+    "cuidado"
+   ],
+   "sample": "Equiparar la duración de los permisos de lactancia, permiso para ausentarse en el trabajo para cuidar a los menores a cargo y permiso a suspensión con reserva de puesto de trabajo a los que acceden las familias biparentales a las familias monoparental y monoma",
+   "sample_party": "EH Bildu"
+  },
+  {
+   "cluster": 30,
+   "size": 79,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "Coalición Canaria": 2,
+    "Democracia21": 2,
+    "EH Bildu": 3,
+    "Frente Amplio": 17,
+    "Frente Obrero": 1,
+    "PACMA": 7,
+    "PCTE": 1,
+    "PNV": 8,
+    "PP": 5,
+    "PSOE": 10,
+    "Partido Autónomos": 1,
+    "Sumar": 13,
+    "Vox": 2
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "cuidados",
+    "personas",
+    "servicios",
+    "atención",
+    "mayores",
+    "personas mayores",
+    "profesionales",
+    "servicios sociales"
+   ],
+   "sample": "Dignificar y fortalecer los cuidados de larga duración, reconociendo la labor de los profesionales y promoviendo modelos de atención centrados en la persona. Mejorar las condiciones laborales, el reconocimiento profesional y la formación continua y especializa",
+   "sample_party": "Sumar"
+  },
+  {
+   "cluster": 47,
+   "size": 77,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 2,
+    "Democracia21": 4,
+    "EH Bildu": 5,
+    "FE de las JONS": 4,
+    "Frente Amplio": 9,
+    "Frente Obrero": 2,
+    "PACMA": 2,
+    "PCTE": 1,
+    "PNV": 4,
+    "PP": 7,
+    "PSOE": 12,
+    "Sumar": 14,
+    "Vox": 4
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "atención",
+    "garantizar",
+    "salud",
+    "primaria",
+    "acceso",
+    "rurales",
+    "paliativos",
+    "atención primaria"
+   ],
+   "sample": "Gobierno y Buena Gestión del SNS, basada en la transparencia, la rendición de cuentas, la participación y la evaluación permanente de resultados. 139. Garantizar la atención pediátrica y la asistencia sanitaria de proximidad en todo el territorio, financiando ",
+   "sample_party": "PSOE"
+  },
+  {
+   "cluster": 61,
+   "size": 72,
+   "parties": {
+    "Adelante Andalucía": 5,
+    "BNG": 2,
+    "Democracia21": 8,
+    "FE de las JONS": 1,
+    "Frente Amplio": 6,
+    "Frente Obrero": 2,
+    "PACMA": 1,
+    "PCTE": 2,
+    "PP": 28,
+    "PSOE": 8,
+    "SALF": 1,
+    "Sumar": 7,
+    "Vox": 1
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "política",
+    "igualdad",
+    "gobierno",
+    "exterior",
+    "estado",
+    "política exterior",
+    "defensa",
+    "seguridad"
+   ],
+   "sample": "LA IGUALDAD DE LOS ESPAÑOLES NO SERÁ EL PRECIO DE UNA INVESTIDURA. No habrá cesiones en materia de igualdad básica, Hacienda general, Seguridad Social, Defensa y Fuerzas Armadas, política exterior y política migratoria y fronteras a cambio de apoyos para forma",
+   "sample_party": "PP"
+  },
+  {
+   "cluster": 21,
+   "size": 69,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "Democracia21": 3,
+    "EH Bildu": 9,
+    "FE de las JONS": 4,
+    "Frente Amplio": 9,
+    "Frente Obrero": 5,
+    "PACMA": 1,
+    "PCTE": 2,
+    "PNV": 5,
+    "PP": 5,
+    "PSOE": 11,
+    "Partido Autónomos": 3,
+    "Sumar": 4,
+    "Vox": 1
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "trabajo",
+    "laboral",
+    "inspección trabajo",
+    "inspección",
+    "laborales",
+    "puestos",
+    "trabajadores",
+    "jornada"
+   ],
+   "sample": "Regulación garantista del teletrabajo: Derecho al teletrabajo voluntario y reversible en puestos compatibles, con asunción de gastos y equipos por la empresa y desconexión digital efectiva. Estatuto de las personas en prácticas: Impediremos el trabajo gratuito",
+   "sample_party": "Frente Amplio"
+  },
+  {
+   "cluster": 12,
+   "size": 68,
+   "parties": {
+    "Adelante Andalucía": 2,
+    "Coalición Canaria": 2,
+    "Democracia21": 2,
+    "EH Bildu": 2,
+    "FE de las JONS": 4,
+    "Frente Amplio": 10,
+    "Frente Obrero": 3,
+    "PACMA": 2,
+    "PCTE": 1,
+    "PNV": 2,
+    "PP": 5,
+    "PSOE": 22,
+    "Partido Autónomos": 2,
+    "Sumar": 7,
+    "Vox": 2
+   },
+   "n_parties": 15,
+   "top_terms": [
+    "vivienda",
+    "construcción",
+    "asequible",
+    "viviendas",
+    "parque",
+    "rehabilitación",
+    "social",
+    "vivienda asequible"
+   ],
+   "sample": "• Priorizar la construcción de vivienda social y asequible y la rehabilitación de edificios públicos para habilitarlos como viviendas facilitando el cambio de uso.",
+   "sample_party": "Sumar"
+  },
+  {
+   "cluster": 59,
+   "size": 68,
+   "parties": {
+    "Adelante Andalucía": 6,
+    "BNG": 2,
+    "Democracia21": 4,
+    "EH Bildu": 1,
+    "FE de las JONS": 27,
+    "Frente Amplio": 1,
+    "Frente Obrero": 8,
+    "PACMA": 1,
+    "PNV": 1,
+    "PP": 5,
+    "PSOE": 5,
+    "SALF": 1,
+    "Sumar": 2,
+    "Vox": 4
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "soberanía",
+    "decisiones",
+    "creemos",
+    "nación",
+    "intereses",
+    "nacional",
+    "estado",
+    "popular"
+   ],
+   "sample": "Creemos que la soberanía popular es un apéndice de la soberanía nacional, por lo que una no es igual a la otra. Apostamos por una democracia de trabajadores, en la cual, a través de la familia, el municipio y el sindicato, se participe de las decisiones políti",
+   "sample_party": "FE de las JONS"
+  },
+  {
+   "cluster": 27,
+   "size": 67,
+   "parties": {
+    "Adelante Andalucía": 16,
+    "BNG": 1,
+    "Democracia21": 4,
+    "EH Bildu": 2,
+    "FE de las JONS": 2,
+    "Frente Amplio": 10,
+    "Frente Obrero": 1,
+    "PACMA": 8,
+    "PP": 4,
+    "PSOE": 7,
+    "Partido Autónomos": 1,
+    "SALF": 1,
+    "Sumar": 8,
+    "Vox": 2
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "mental",
+    "salud mental",
+    "salud",
+    "centros",
+    "atención",
+    "plan",
+    "escolar",
+    "prevención"
+   ],
+   "sample": "Reforzar la prevención del suicidio y promover una atención integral y humanizada a las personas con problemas de salud mental. Fortalecer los programas de prevención del suicidio y la coordinación entre los servicios sanitarios, educativos y sociales para gar",
+   "sample_party": "Sumar"
+  },
+  {
+   "cluster": 44,
+   "size": 67,
+   "parties": {
+    "Adelante Andalucía": 14,
+    "BNG": 3,
+    "Democracia21": 7,
+    "EH Bildu": 6,
+    "FE de las JONS": 3,
+    "Frente Amplio": 10,
+    "PACMA": 3,
+    "PNV": 3,
+    "PP": 5,
+    "PSOE": 5,
+    "Partido Autónomos": 1,
+    "SALF": 1,
+    "Sumar": 5,
+    "Vox": 1
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "regularización",
+    "extranjería",
+    "plazo",
+    "oficinas",
+    "plazo máximo",
+    "máximo",
+    "asilo",
+    "derechos"
+   ],
+   "sample": "Culminar la regularización extraordinaria de 2026: Resolveremos todas las solicitudes con medios suficientes, de modo que ninguna persona quede fuera por retrasos de la Administración. Procedimiento estable de regularización: Reformaremos de forma integral la ",
+   "sample_party": "Frente Amplio"
+  },
+  {
+   "cluster": 1,
+   "size": 66,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 1,
+    "Democracia21": 3,
+    "EH Bildu": 3,
+    "FE de las JONS": 1,
+    "Frente Amplio": 4,
+    "Frente Obrero": 3,
+    "PACMA": 9,
+    "PCTE": 3,
+    "PNV": 6,
+    "PP": 1,
+    "PSOE": 18,
+    "Partido Autónomos": 1,
+    "Sumar": 5,
+    "Vox": 1
+   },
+   "n_parties": 15,
+   "top_terms": [
+    "mujeres",
+    "violencia",
+    "género",
+    "víctimas",
+    "violencia machista",
+    "machista",
+    "igualdad",
+    "víctimas violencia"
+   ],
+   "sample": "La igualdad entre mujeres y hombres es una cuestión de derechos humanos y de justicia elemental. Gracias al impulso del movimiento feminista se ha avanzado mucho, pero la violencia machista sigue matando, la pobreza tiene rostro de mujer y los cuidados siguen ",
+   "sample_party": "Sumar"
+  },
+  {
+   "cluster": 4,
+   "size": 65,
+   "parties": {
+    "Adelante Andalucía": 2,
+    "Democracia21": 5,
+    "EH Bildu": 1,
+    "Frente Amplio": 8,
+    "PACMA": 4,
+    "PNV": 4,
+    "PP": 4,
+    "PSOE": 30,
+    "Sumar": 7
+   },
+   "n_parties": 9,
+   "top_terms": [
+    "mundo",
+    "transición",
+    "justicia",
+    "empleo",
+    "oportunidades",
+    "economía",
+    "mejor",
+    "transición ecológica"
+   ],
+   "sample": "Elegimos seguir avanzando Elegimos una España más justa porque será más fuerte. Más verde porque será más próspera. Más innovadora porque será más competitiva. Más feminista porque será más libre. Más europea porque será más influyente. Más democrática porque ",
+   "sample_party": "PSOE"
+  },
+  {
+   "cluster": 13,
+   "size": 65,
+   "parties": {
+    "Adelante Andalucía": 4,
+    "BNG": 2,
+    "Democracia21": 12,
+    "FE de las JONS": 5,
+    "Frente Amplio": 2,
+    "Frente Obrero": 6,
+    "PACMA": 6,
+    "PCTE": 3,
+    "PP": 4,
+    "Partido Autónomos": 4,
+    "SALF": 9,
+    "Sumar": 6,
+    "Vox": 2
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "partidos",
+    "políticos",
+    "cargos",
+    "partidos políticos",
+    "corrupción",
+    "públicos",
+    "asesores",
+    "cargos públicos"
+   ],
+   "sample": "NO MÁS IMPUESTOS REVOLUCIONARIOS PARA LOS PARTIDOS POLÍTICOS Estará terminantemente prohibido que los parlamentarios, cargos públicos y asesores paguen un porcentaje de su sueldo a los partidos políticos.",
+   "sample_party": "Democracia21"
+  },
+  {
+   "cluster": 41,
+   "size": 65,
+   "parties": {
+    "Adelante Andalucía": 9,
+    "BNG": 1,
+    "Democracia21": 6,
+    "EH Bildu": 1,
+    "FE de las JONS": 2,
+    "Frente Amplio": 1,
+    "Frente Obrero": 1,
+    "PP": 9,
+    "PSOE": 4,
+    "Partido Autónomos": 5,
+    "SALF": 19,
+    "Sumar": 5,
+    "Vox": 2
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "cotización",
+    "irpf",
+    "menos",
+    "impuestos",
+    "euros",
+    "cuota",
+    "autónomos",
+    "mínimo"
+   ],
+   "sample": "La mili: quien sirve a España paga menos impuestos. Quien complete la mili voluntaria tendrá un mínimo exento de IRPF de 50.000 euros durante diez años (15.000 más que el resto), cero cotización del trabajador en sus tres primeros años de contrato y matrícula ",
+   "sample_party": "SALF"
+  },
+  {
+   "cluster": 15,
+   "size": 64,
+   "parties": {
+    "Adelante Andalucía": 3,
+    "BNG": 41,
+    "Democracia21": 2,
+    "EH Bildu": 4,
+    "Frente Amplio": 1,
+    "PACMA": 1,
+    "PNV": 4,
+    "PSOE": 3,
+    "Partido Autónomos": 1,
+    "Sumar": 4
+   },
+   "n_parties": 10,
+   "top_terms": [
+    "social",
+    "vivenda",
+    "protección",
+    "carácter",
+    "xestión",
+    "prezos",
+    "estabelecer",
+    "laboral"
+   ],
+   "sample": "para garantir unha xestión máis áxil e acaída á realidade galega, permitindo a creación dunha verdadeira Renda Galega de Inclusión Social e Laboral nunha contía non inferior ao SMI. Aplicar un programa específico de loita contra a pobreza e contra a exclusión ",
+   "sample_party": "BNG"
+  },
+  {
+   "cluster": 49,
+   "size": 64,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 1,
+    "Democracia21": 3,
+    "EH Bildu": 6,
+    "FE de las JONS": 4,
+    "Frente Amplio": 8,
+    "PACMA": 1,
+    "PCTE": 1,
+    "PNV": 12,
+    "PP": 3,
+    "PSOE": 9,
+    "SALF": 1,
+    "Sumar": 6,
+    "Vox": 2
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "esenciales",
+    "bienes",
+    "servicios",
+    "personas",
+    "servicios esenciales",
+    "personas consumidoras",
+    "consumidoras",
+    "acceso"
+   ],
+   "sample": "Garantizar una protección reforzada de las personas consumidoras vulnerables, adaptando la información, los contratos y los canales de atención a sus necesidades, asegurando alternativas no exclusivamente digitales y facilitando el acceso efectivo a bienes y s",
+   "sample_party": "PSOE"
+  },
+  {
+   "cluster": 5,
+   "size": 63,
+   "parties": {
+    "Adelante Andalucía": 11,
+    "Coalición Canaria": 2,
+    "Democracia21": 5,
+    "EH Bildu": 1,
+    "FE de las JONS": 2,
+    "Frente Amplio": 10,
+    "Frente Obrero": 1,
+    "PACMA": 6,
+    "PNV": 7,
+    "PP": 2,
+    "PSOE": 6,
+    "SALF": 1,
+    "Sumar": 9
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "infancia",
+    "infantil",
+    "violencia",
+    "inversión",
+    "participación",
+    "plan",
+    "pública",
+    "infancia adolescencia"
+   ],
+   "sample": "Suelo de inversión pública al 2,4 % del PIB: Elevaremos la inversión estatal en políticas de protección a la infancia y familias del 1,5 % actual al 2,4 % del PIB para equipararla a la media europea. Plan para la promoción de derechos y bienestar: Aprobaremos ",
+   "sample_party": "Frente Amplio"
+  },
+  {
+   "cluster": 29,
+   "size": 63,
+   "parties": {
+    "Adelante Andalucía": 18,
+    "BNG": 4,
+    "Democracia21": 4,
+    "FE de las JONS": 1,
+    "Frente Amplio": 9,
+    "Frente Obrero": 2,
+    "PACMA": 2,
+    "PP": 5,
+    "PSOE": 1,
+    "Partido Autónomos": 1,
+    "SALF": 14,
+    "Sumar": 2
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "horas",
+    "primaria",
+    "gasto",
+    "atención",
+    "atención primaria",
+    "cita",
+    "sanitario",
+    "gasto sanitario"
+   ],
+   "sample": "La atención primaria será el centro del sistema: cita en 48 horas, al menos 10 minutos por paciente y un 25 % del gasto sanitario.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 57,
+   "size": 63,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 1,
+    "Coalición Canaria": 1,
+    "Democracia21": 14,
+    "EH Bildu": 1,
+    "FE de las JONS": 2,
+    "Frente Amplio": 7,
+    "PACMA": 4,
+    "PP": 7,
+    "PSOE": 9,
+    "Partido Autónomos": 3,
+    "SALF": 6,
+    "Sumar": 1
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "millones",
+    "euros",
+    "millones euros",
+    "infraestructuras",
+    "alta",
+    "velocidad",
+    "estado",
+    "alta velocidad"
+   ],
+   "sample": "infraestructuras más extraordinarios de Europa: la red de autovías más extensa de la Unión, la mayor red de alta velocidad del continente y unos puertos que conectan tres continentes. Ahora toca cuidarlo, conectarlo y hacerlo rendir. Según la Asociación Españo",
+   "sample_party": "Democracia21"
+  },
+  {
+   "cluster": 32,
+   "size": 62,
+   "parties": {
+    "Adelante Andalucía": 4,
+    "Coalición Canaria": 1,
+    "Democracia21": 7,
+    "EH Bildu": 1,
+    "FE de las JONS": 4,
+    "Frente Amplio": 11,
+    "Frente Obrero": 6,
+    "PACMA": 8,
+    "PCTE": 2,
+    "PNV": 1,
+    "PP": 5,
+    "PSOE": 6,
+    "Sumar": 3,
+    "Vox": 3
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "cultura",
+    "cultural",
+    "culturales",
+    "patrimonio",
+    "apoyo",
+    "promoción",
+    "difusión",
+    "mundo"
+   ],
+   "sample": "PROYECTAREMOS AL MUNDO LO MEJOR DE ESPAÑA. Impulsaremos la promoción exterior de nuestra cultura, nuestro patrimonio, el turismo, las universidades, la gastronomía y el deporte para aumentar la presencia y la influencia de España en el mundo. El español será e",
+   "sample_party": "PP"
+  },
+  {
+   "cluster": 63,
+   "size": 62,
+   "parties": {
+    "Adelante Andalucía": 6,
+    "BNG": 2,
+    "EH Bildu": 5,
+    "FE de las JONS": 1,
+    "Frente Amplio": 12,
+    "Frente Obrero": 1,
+    "PACMA": 4,
+    "PCTE": 1,
+    "PNV": 6,
+    "PP": 2,
+    "PSOE": 8,
+    "Sumar": 12,
+    "Vox": 2
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "protección",
+    "frente",
+    "vulnerabilidad",
+    "personas",
+    "situación",
+    "emergencias",
+    "situación vulnerabilidad",
+    "protección frente"
+   ],
+   "sample": "Garantizar un marco estable de protección frente a los desahucios de personas en situación de vulnerabilidad sin alternativa habitacional, y creación de un mecanismo de garantía y protección frente al desalojo que dé respuesta a las emergencias habitacionales.",
+   "sample_party": "PSOE"
+  },
+  {
+   "cluster": 40,
+   "size": 60,
+   "parties": {
+    "Adelante Andalucía": 12,
+    "Democracia21": 5,
+    "EH Bildu": 2,
+    "FE de las JONS": 2,
+    "Frente Amplio": 6,
+    "Frente Obrero": 1,
+    "PACMA": 3,
+    "PNV": 2,
+    "PP": 1,
+    "PSOE": 10,
+    "SALF": 2,
+    "Sumar": 12,
+    "Vox": 2
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "alquiler",
+    "vivienda",
+    "viviendas",
+    "asequible",
+    "precio",
+    "alquiler social",
+    "precios",
+    "vacías"
+   ],
+   "sample": "Viviendas vacías al alquiler Las de grandes tenedores vacías más de un año, alquiladas a precio limitado o al parque público.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 8,
+   "size": 58,
+   "parties": {
+    "Adelante Andalucía": 6,
+    "BNG": 1,
+    "Coalición Canaria": 2,
+    "Democracia21": 1,
+    "EH Bildu": 9,
+    "Frente Amplio": 8,
+    "Frente Obrero": 1,
+    "PCTE": 1,
+    "PNV": 14,
+    "PP": 4,
+    "PSOE": 6,
+    "Sumar": 3,
+    "Vox": 2
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "servicios",
+    "servicios públicos",
+    "públicos",
+    "necesidades",
+    "nuevas",
+    "sociales",
+    "acuerdos",
+    "nuevas necesidades"
+   ],
+   "sample": "Favorecer acuerdos estables entre administraciones para afrontar los cambios demográficos y las nuevas necesidades sociales, garantizando el respeto a las competencias de Euskadi y una gestión cercana de los servicios públicos.",
+   "sample_party": "PNV"
+  },
+  {
+   "cluster": 2,
+   "size": 57,
+   "parties": {
+    "Adelante Andalucía": 6,
+    "EH Bildu": 6,
+    "FE de las JONS": 1,
+    "Frente Amplio": 15,
+    "Frente Obrero": 1,
+    "PNV": 4,
+    "PP": 6,
+    "PSOE": 8,
+    "Partido Autónomos": 2,
+    "SALF": 2,
+    "Sumar": 4,
+    "Vox": 2
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "menores",
+    "plataformas",
+    "edad",
+    "digitales",
+    "plataformas digitales",
+    "menores edad",
+    "personas menores",
+    "contenidos"
+   ],
+   "sample": "Proteger a la infancia y la juventud en los entornos digitales 399 399. Establecer a 16 años la edad mínima para usar redes sociales. Aprobar en el primer año de legislatura la Ley de protección de las personas menores de edad en los entornos digitales. La eda",
+   "sample_party": "PSOE"
+  },
+  {
+   "cluster": 38,
+   "size": 57,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 1,
+    "Democracia21": 1,
+    "EH Bildu": 7,
+    "Frente Amplio": 12,
+    "PACMA": 1,
+    "PNV": 6,
+    "PSOE": 9,
+    "Sumar": 13
+   },
+   "n_parties": 9,
+   "top_terms": [
+    "derechos",
+    "derechos humanos",
+    "humanos",
+    "internacional",
+    "derecho",
+    "desarrollo",
+    "europeo derechos",
+    "europeo"
+   ],
+   "sample": "climáticos que cumplan los de salida del gas 398 Planes 404 Calendario derechos humanos Fuera del sistema eléctrico en 2030, Reformar la Ley de Cambio Climático conforme a la jurisprudencia del Tribunal Europeo de Derechos Humanos y obligar a planes municipale",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 20,
+   "size": 55,
+   "parties": {
+    "Adelante Andalucía": 18,
+    "Democracia21": 7,
+    "Frente Amplio": 7,
+    "Frente Obrero": 2,
+    "PACMA": 4,
+    "PNV": 1,
+    "PP": 2,
+    "PSOE": 6,
+    "SALF": 3,
+    "Sumar": 3,
+    "Vox": 2
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "sanidad",
+    "pública",
+    "sanidad pública",
+    "educación",
+    "educación pública",
+    "salud",
+    "conciertos",
+    "privada"
+   ],
+   "sample": "Desprivatización de toda la sanidad Sanidad 100 % pública, con un suelo de gasto del 8 % del PIB fijado por ley, derogación de la Ley 15/1997 y fin de los conciertos y externalizaciones: el dinero público, para la sanidad pública.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 64,
+   "size": 55,
+   "parties": {
+    "Adelante Andalucía": 13,
+    "BNG": 8,
+    "Democracia21": 2,
+    "EH Bildu": 1,
+    "FE de las JONS": 1,
+    "Frente Amplio": 8,
+    "Frente Obrero": 1,
+    "PACMA": 3,
+    "PNV": 7,
+    "PP": 3,
+    "PSOE": 5,
+    "Partido Autónomos": 1,
+    "Vox": 2
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "transporte",
+    "ferroviaria",
+    "conexión",
+    "mercancías",
+    "ferroviario",
+    "puertos",
+    "tren",
+    "interés general"
+   ],
+   "sample": "Impulso al transporte de mercancías por ferrocarril: Aumentaremos la capacidad de la red para el transporte ferroviario de mercancías mediante la ampliación de apartaderos y la modernización de terminales intermodales para trasvasar cargas de larga distancia d",
+   "sample_party": "Frente Amplio"
+  },
+  {
+   "cluster": 68,
+   "size": 55,
+   "parties": {
+    "Adelante Andalucía": 16,
+    "BNG": 2,
+    "Democracia21": 12,
+    "EH Bildu": 1,
+    "FE de las JONS": 2,
+    "Frente Amplio": 7,
+    "Frente Obrero": 1,
+    "PP": 7,
+    "PSOE": 1,
+    "Partido Autónomos": 1,
+    "SALF": 2,
+    "Sumar": 2,
+    "Vox": 1
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "independiente",
+    "públicos",
+    "resultados",
+    "auditoría",
+    "línea",
+    "madrid",
+    "tráfico",
+    "público"
+   ],
+   "sample": "Auditoría independiente de los sistemas de seguridad y del control de tráfico de la línea Madrid–Sevilla, con resultados públicos.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 56,
+   "size": 54,
+   "parties": {
+    "BNG": 54
+   },
+   "n_parties": 1,
+   "top_terms": [
+    "dereitos",
+    "galego",
+    "pobo",
+    "seus",
+    "pobo galego",
+    "sociais",
+    "igualdade",
+    "condicións"
+   ],
+   "sample": "Máis unha vez, un dos obxectivos do Bloque Nacionalista Galego para a próxima lexislatura será a defensa dos dereitos e liberdades públicas, tanto individuais como colectivas. Neste sentido, traballaremos polo respecto á vontade democrática dos pobos, a comeza",
+   "sample_party": "BNG"
+  },
+  {
+   "cluster": 35,
+   "size": 53,
+   "parties": {
+    "Adelante Andalucía": 2,
+    "Coalición Canaria": 1,
+    "Democracia21": 3,
+    "EH Bildu": 2,
+    "Frente Amplio": 5,
+    "Frente Obrero": 3,
+    "PACMA": 4,
+    "PNV": 14,
+    "PP": 5,
+    "PSOE": 5,
+    "Partido Autónomos": 3,
+    "Sumar": 3,
+    "Vox": 3
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "actividad",
+    "adquisitivo",
+    "poder adquisitivo",
+    "económica",
+    "fiscalidad",
+    "actividad económica",
+    "poder",
+    "responder"
+   ],
+   "sample": "2.7 Una fiscalidad que favorezca la actividad económica y permita invertir Queremos que las instituciones puedan utilizar sus recursos para responder a las necesidades de la ciudadanía. Y una fiscalidad que proteja el poder adquisitivo y favorezca la actividad",
+   "sample_party": "PNV"
+  },
+  {
+   "cluster": 43,
+   "size": 53,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "ERC": 52
+   },
+   "n_parties": 2,
+   "top_terms": [
+    "catalunya",
+    "garantir",
+    "generalitat",
+    "competències",
+    "estat",
+    "generalitat catalunya",
+    "establir",
+    "necessaris"
+   ],
+   "sample": "als ajuntaments, a títol gratuït per posar-los al servei de la ciutadania del nostre país. Molt especialment, cal que el govern espanyol, donant compliment a les competències exclusives en habitatge de la Generalitat de Catalunya, traspassi tots els habitatges",
+   "sample_party": "ERC"
+  },
+  {
+   "cluster": 11,
+   "size": 52,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "BNG": 45,
+    "Democracia21": 1,
+    "EH Bildu": 2,
+    "PACMA": 1,
+    "PP": 1,
+    "PSOE": 1
+   },
+   "n_parties": 7,
+   "top_terms": [
+    "competencias",
+    "galiza",
+    "servizos",
+    "estado",
+    "tamén",
+    "dominio público",
+    "dominio",
+    "materia"
+   ],
+   "sample": "Transferencia das competencias en materia de costas e do dominio público marítimo-terrestre, tanto as normativas en materia de protección do litoral como aquelas de intervención e xestión (autorizacións de instalacións na costa galega). Tamén se afrontará o tr",
+   "sample_party": "BNG"
+  },
+  {
+   "cluster": 0,
+   "size": 51,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "Democracia21": 1,
+    "EH Bildu": 3,
+    "FE de las JONS": 3,
+    "Frente Amplio": 5,
+    "Frente Obrero": 2,
+    "PACMA": 2,
+    "PCTE": 2,
+    "PNV": 4,
+    "PP": 6,
+    "PSOE": 10,
+    "Partido Autónomos": 2,
+    "SALF": 1,
+    "Sumar": 3
+   },
+   "n_parties": 14,
+   "top_terms": [
+    "juventud",
+    "judicial",
+    "poder judicial",
+    "poder",
+    "jurídico",
+    "consejo",
+    "independencia",
+    "financiación"
+   ],
+   "sample": "376 376. Regular por ley el Consejo de la Juventud de España y establecer un marco jurídico para los consejos de juventud autonómicos y locales que garantice su personalidad jurídica, independencia, autonomía, autogestión, pluralidad y financiación estable, re",
+   "sample_party": "PSOE"
+  },
+  {
+   "cluster": 6,
+   "size": 51,
+   "parties": {
+    "Adelante Andalucía": 4,
+    "BNG": 1,
+    "Democracia21": 5,
+    "EH Bildu": 4,
+    "FE de las JONS": 1,
+    "Frente Amplio": 4,
+    "PNV": 24,
+    "PP": 1,
+    "PSOE": 3,
+    "Sumar": 2,
+    "Vox": 2
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "vascas",
+    "instituciones",
+    "instituciones vascas",
+    "competencias",
+    "respetando",
+    "respetando competencias",
+    "vehículos",
+    "directa"
+   ],
+   "sample": "Mantener ayudas estables para la adquisición de vehículos electrificados, facilitando su aplicación directa en el momento de la compra y respetando las competencias de gestión de las instituciones vascas.",
+   "sample_party": "PNV"
+  },
+  {
+   "cluster": 9,
+   "size": 51,
+   "parties": {
+    "Adelante Andalucía": 2,
+    "Democracia21": 5,
+    "EH Bildu": 2,
+    "FE de las JONS": 2,
+    "Frente Amplio": 6,
+    "Frente Obrero": 3,
+    "PACMA": 1,
+    "PP": 10,
+    "PSOE": 7,
+    "Partido Autónomos": 2,
+    "SALF": 3,
+    "Vox": 8
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "fuerzas",
+    "policía",
+    "seguridad",
+    "guardia civil",
+    "guardia",
+    "civil",
+    "cuerpos",
+    "nacional"
+   ],
+   "sample": "Dotar de suficientes medios humanos y recursos materiales, técnicos, tecnológicos, jurídicos, organizativos y presupuestarios, así como de las infraestructuras, instalaciones y demás capacidades a las Fuerzas Armadas, Ejército de Tierra, la Armada y el Ejércit",
+   "sample_party": "Vox"
+  },
+  {
+   "cluster": 19,
+   "size": 51,
+   "parties": {
+    "Adelante Andalucía": 6,
+    "Coalición Canaria": 1,
+    "Democracia21": 5,
+    "EH Bildu": 5,
+    "FE de las JONS": 1,
+    "Frente Amplio": 8,
+    "Frente Obrero": 1,
+    "PACMA": 1,
+    "PNV": 1,
+    "PP": 7,
+    "PSOE": 4,
+    "Partido Autónomos": 2,
+    "SALF": 2,
+    "Sumar": 5,
+    "Vox": 2
+   },
+   "n_parties": 15,
+   "top_terms": [
+    "vivienda",
+    "habitual",
+    "compra",
+    "vivienda habitual",
+    "alquiler",
+    "primera vivienda",
+    "compra vivienda",
+    "especulativa"
+   ],
+   "sample": "34. La primera vivienda habitual de una familia española no paga impuestos. Tipo 0% de IVA para la compra de tu primera vivienda habitual -de nueva construcción- y bonificación 100% del ITP para la compra de tu primera vivienda habitual -de segunda mano-. Recu",
+   "sample_party": "Vox"
+  },
+  {
+   "cluster": 14,
+   "size": 50,
+   "parties": {
+    "ERC": 50
+   },
+   "n_parties": 1,
+   "top_terms": [
+    "catalunya",
+    "garantir",
+    "gestió",
+    "transport",
+    "inversions",
+    "finançament",
+    "estat",
+    "xarxa"
+   ],
+   "sample": "cobertes, aparcaments, equipaments públics i espais industrials. Garantir finançament i assistència tècnica, jurídica i administrativa, prioritzant els projectes amb menys recursos, les zones amb vulnerabilitat energètica i la participació de les persones que ",
+   "sample_party": "ERC"
+  },
+  {
+   "cluster": 55,
+   "size": 50,
+   "parties": {
+    "ERC": 50
+   },
+   "n_parties": 1,
+   "top_terms": [
+    "defensar",
+    "estat",
+    "catalunya",
+    "republicana",
+    "esquerra",
+    "esquerra republicana",
+    "serveis",
+    "públics"
+   ],
+   "sample": "C. DEFENSAR ELS SERVEIS PÚBLICS Per a Esquerra Republicana, els serveis públics són totalment prioritaris i els defensarem amb aferrissament. Són els serveis públics els que ens garanteixen una societat justa i cohesionada, i són els serveis públics els que fa",
+   "sample_party": "ERC"
+  },
+  {
+   "cluster": 42,
+   "size": 49,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "BNG": 30,
+    "Democracia21": 2,
+    "EH Bildu": 1,
+    "FE de las JONS": 1,
+    "Frente Amplio": 1,
+    "Frente Obrero": 2,
+    "PACMA": 5,
+    "PNV": 1,
+    "PP": 1,
+    "PSOE": 3,
+    "Vox": 1
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "educativo",
+    "educación",
+    "sistema",
+    "ensino",
+    "sistema educativo",
+    "universitario",
+    "galego",
+    "galiza"
+   ],
+   "sample": "LOFP) como no universitario (LOSU) e que, por tanto, parta da configuración plurinacional e plurilingüe do Estado; que Galiza poida organizar e ordenar o sistema educativo mediante unha Lei galega de educación que regule o noso sistema educativo até o Bacharel",
+   "sample_party": "BNG"
+  },
+  {
+   "cluster": 33,
+   "size": 48,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 1,
+    "Democracia21": 2,
+    "EH Bildu": 13,
+    "Frente Amplio": 13,
+    "Frente Obrero": 1,
+    "PACMA": 2,
+    "PCTE": 1,
+    "PP": 1,
+    "PSOE": 2,
+    "Sumar": 3,
+    "Vox": 2
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "transporte",
+    "transporte público",
+    "público",
+    "euskal",
+    "euskal herria",
+    "herria",
+    "movilidad",
+    "estatal"
+   ],
+   "sample": "Cofinanciación estatal para las políticas de descuentos al transporte público: Mientras existan servicios de movilidad de titularidad estatal, garantizar que las aportaciones estatales destinadas a la bonificación del transporte público puedan gestionarse desd",
+   "sample_party": "EH Bildu"
+  },
+  {
+   "cluster": 39,
+   "size": 48,
+   "parties": {
+    "Adelante Andalucía": 6,
+    "BNG": 1,
+    "Coalición Canaria": 2,
+    "Democracia21": 12,
+    "FE de las JONS": 8,
+    "Frente Amplio": 3,
+    "Frente Obrero": 1,
+    "PACMA": 1,
+    "PNV": 2,
+    "PP": 2,
+    "PSOE": 3,
+    "Sumar": 2,
+    "Vox": 5
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "plan",
+    "nacional",
+    "plan nacional",
+    "vivienda",
+    "barrios",
+    "fase",
+    "construir",
+    "necesita"
+   ],
+   "sample": "FASE 2 – PLAN NACIONAL DE BARRIOS (10 AÑOS) Objetivo: Construir a escala industrial toda la vivienda asequible que España necesita.",
+   "sample_party": "Democracia21"
+  },
+  {
+   "cluster": 65,
+   "size": 48,
+   "parties": {
+    "Adelante Andalucía": 5,
+    "Coalición Canaria": 1,
+    "Democracia21": 16,
+    "EH Bildu": 3,
+    "Frente Amplio": 5,
+    "Frente Obrero": 1,
+    "PP": 4,
+    "PSOE": 3,
+    "SALF": 3,
+    "Sumar": 4,
+    "Vox": 3
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "ayuda",
+    "mínimo vital",
+    "mínimo",
+    "ingreso mínimo",
+    "vital",
+    "ingreso",
+    "estado",
+    "derecho"
+   ],
+   "sample": "sino la barrera burocrática que separa a los ciudadanos de sus propios derechos. Más de la mitad de los hogares con derecho al Ingreso Mínimo Vital no llega a solicitarlo, y siete de cada diez familias que cumplen los requisitos para recibir ayuda por sus hijo",
+   "sample_party": "Democracia21"
+  },
+  {
+   "cluster": 10,
+   "size": 46,
+   "parties": {
+    "Adelante Andalucía": 3,
+    "BNG": 3,
+    "Coalición Canaria": 1,
+    "Democracia21": 1,
+    "EH Bildu": 2,
+    "FE de las JONS": 15,
+    "Frente Amplio": 2,
+    "Frente Obrero": 2,
+    "PACMA": 3,
+    "PNV": 5,
+    "PP": 3,
+    "PSOE": 5,
+    "Sumar": 1
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "unión",
+    "unión europea",
+    "europea",
+    "jons",
+    "falange",
+    "falange española",
+    "española jons",
+    "española"
+   ],
+   "sample": "Falange Española de las JONS, como se ha expresado en el punto anterior, defiende sin fisuras la total y absoluta soberanía de España frente a cualquier elemento extranjero. Por ello, nuestro planteamiento frente a la Unión Europea no es una excepción.",
+   "sample_party": "FE de las JONS"
+  },
+  {
+   "cluster": 17,
+   "size": 46,
+   "parties": {
+    "Adelante Andalucía": 4,
+    "Democracia21": 6,
+    "EH Bildu": 6,
+    "FE de las JONS": 2,
+    "Frente Amplio": 4,
+    "Frente Obrero": 2,
+    "PNV": 9,
+    "PSOE": 6,
+    "Partido Autónomos": 1,
+    "SALF": 2,
+    "Sumar": 3,
+    "Vox": 1
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "pensiones",
+    "público pensiones",
+    "contributivas",
+    "mínimas",
+    "pensiones mínimas",
+    "público",
+    "sistema público",
+    "sistema"
+   ],
+   "sample": "Pensiones dignas y 100 % públicas Un sistema público blindado en la Constitución y revalorizado con el IPC real por ley; pensiones mínimas y no contributivas iguales al salario mínimo neto; jubilación a los 64 años, desde los 55 con contrato de relevo, y jubil",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 48,
+   "size": 46,
+   "parties": {
+    "Adelante Andalucía": 15,
+    "BNG": 5,
+    "Democracia21": 4,
+    "EH Bildu": 2,
+    "FE de las JONS": 1,
+    "PACMA": 4,
+    "PNV": 3,
+    "PP": 4,
+    "PSOE": 5,
+    "SALF": 1,
+    "Vox": 2
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "campo",
+    "industria",
+    "gibraltar",
+    "campo gibraltar",
+    "comarca",
+    "ambiental",
+    "reducir",
+    "industrial"
+   ],
+   "sample": "12.3 Campo de Gibraltar industrial 654 Moratoria Ninguna nueva gran industria contaminante hasta reducir la carga ambiental de la comarca.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 50,
+   "size": 46,
+   "parties": {
+    "Adelante Andalucía": 16,
+    "BNG": 6,
+    "Democracia21": 7,
+    "EH Bildu": 3,
+    "FE de las JONS": 1,
+    "Frente Amplio": 5,
+    "Frente Obrero": 1,
+    "PACMA": 1,
+    "PNV": 2,
+    "PP": 2,
+    "PSOE": 2
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "universidades",
+    "libre",
+    "software",
+    "públicas",
+    "andaluzas",
+    "software libre",
+    "universidades públicas",
+    "investigación"
+   ],
+   "sample": "Universidades y FP en la red de software libre Que las universidades andaluzas y la FP pública entren en la red estatal de software libre y soberanía digital.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 51,
+   "size": 46,
+   "parties": {
+    "Adelante Andalucía": 3,
+    "BNG": 38,
+    "EH Bildu": 2,
+    "Frente Obrero": 1,
+    "PNV": 1,
+    "PP": 1
+   },
+   "n_parties": 6,
+   "top_terms": [
+    "persoas",
+    "trans",
+    "recoñecemento",
+    "dereitos",
+    "persoas trans",
+    "traballadoras",
+    "personas trans",
+    "traballo"
+   ],
+   "sample": "As persoas non binarias, as persoas trans migrantes e as persoas trans menores de idade fican invisibilizadas e sen recoñecemento axeitado, mesmo despois dos avances normativos recentes.",
+   "sample_party": "BNG"
+  },
+  {
+   "cluster": 36,
+   "size": 45,
+   "parties": {
+    "Adelante Andalucía": 6,
+    "EH Bildu": 10,
+    "Frente Amplio": 8,
+    "PACMA": 1,
+    "PCTE": 1,
+    "PNV": 3,
+    "PP": 3,
+    "PSOE": 3,
+    "Partido Autónomos": 6,
+    "Sumar": 3,
+    "Vox": 1
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "márgenes",
+    "precios",
+    "costes",
+    "alimentaria",
+    "distribución",
+    "cadena",
+    "cadena alimentaria",
+    "venta"
+   ],
+   "sample": "88. Cumplimiento de la Ley de la Cadena Alimentaria y precios justos Inspección efectiva de los contratos agrarios para prohibir la venta a pérdidas de agricultores y ganaderos, garantizando que el precio en origen cubra los costes reales de producción y frena",
+   "sample_party": "Partido Autónomos"
+  },
+  {
+   "cluster": 62,
+   "size": 45,
+   "parties": {
+    "Adelante Andalucía": 4,
+    "BNG": 1,
+    "Democracia21": 3,
+    "EH Bildu": 2,
+    "FE de las JONS": 3,
+    "Frente Amplio": 9,
+    "Frente Obrero": 3,
+    "PACMA": 2,
+    "PSOE": 1,
+    "SALF": 2,
+    "Vox": 15
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "sentido común",
+    "sentido",
+    "ilegales",
+    "común",
+    "pisos",
+    "pisos turísticos",
+    "turísticos",
+    "regulación"
+   ],
+   "sample": "ES SENTIDO COMÚN duración y deducciones para inquilinos españoles. Regulación de la proliferación masiva de VUT y refuerzo del servicio de inspección de pisos turísticos ilegales. 31.",
+   "sample_party": "Vox"
+  },
+  {
+   "cluster": 69,
+   "size": 45,
+   "parties": {
+    "Adelante Andalucía": 5,
+    "BNG": 1,
+    "Democracia21": 9,
+    "EH Bildu": 2,
+    "FE de las JONS": 1,
+    "Frente Amplio": 6,
+    "PNV": 1,
+    "PP": 4,
+    "PSOE": 15,
+    "Vox": 1
+   },
+   "n_parties": 10,
+   "top_terms": [
+    "inteligencia artificial",
+    "artificial",
+    "inteligencia",
+    "digital",
+    "algoritmos",
+    "sistemas",
+    "datos",
+    "productividad"
+   ],
+   "sample": "Reforzar el nodo andaluz de la Red Española de Supercomputación y crear infraestructura pública de inteligencia artificial al servicio de la investigación.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 24,
+   "size": 44,
+   "parties": {
+    "Adelante Andalucía": 4,
+    "Democracia21": 4,
+    "EH Bildu": 1,
+    "FE de las JONS": 2,
+    "Frente Amplio": 8,
+    "PACMA": 3,
+    "PNV": 1,
+    "PP": 8,
+    "PSOE": 1,
+    "Partido Autónomos": 3,
+    "SALF": 8,
+    "Vox": 1
+   },
+   "n_parties": 12,
+   "top_terms": [
+    "constitucional",
+    "tribunal",
+    "constitución",
+    "tribunal constitucional",
+    "reforma",
+    "supremo",
+    "judicial",
+    "tribunal supremo"
+   ],
+   "sample": "Disolución del Tribunal Constitucional, trasvasando sus competencias de interpretación de la Constitución al Tribunal Supremo.",
+   "sample_party": "FE de las JONS"
+  },
+  {
+   "cluster": 25,
+   "size": 44,
+   "parties": {
+    "Adelante Andalucía": 5,
+    "BNG": 3,
+    "Democracia21": 1,
+    "EH Bildu": 3,
+    "Frente Amplio": 3,
+    "Frente Obrero": 2,
+    "PACMA": 3,
+    "PNV": 7,
+    "PP": 1,
+    "PSOE": 8,
+    "SALF": 1,
+    "Sumar": 6,
+    "Vox": 1
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "sexual",
+    "prevención",
+    "violencia",
+    "integral",
+    "víctimas",
+    "explotación",
+    "reparación",
+    "discriminación"
+   ],
+   "sample": "1. Garantizar la igualdad de derechos y combatir la discriminación de las personas LGTBI. Reforzar la aplicación efectiva de la legislación de protección de los derechos de las personas LGTBI, garantizando mecanismos accesibles de prevención, denuncia y protec",
+   "sample_party": "Sumar"
+  },
+  {
+   "cluster": 37,
+   "size": 42,
+   "parties": {
+    "Adelante Andalucía": 7,
+    "BNG": 3,
+    "EH Bildu": 5,
+    "FE de las JONS": 2,
+    "Frente Amplio": 8,
+    "PNV": 5,
+    "PP": 2,
+    "PSOE": 5,
+    "Sumar": 4,
+    "Vox": 1
+   },
+   "n_parties": 10,
+   "top_terms": [
+    "memoria",
+    "memoria democrática",
+    "reparación",
+    "democrática",
+    "víctimas",
+    "verdad",
+    "reconocimiento",
+    "dictadura"
+   ],
+   "sample": "Promover la aplicación íntegra de la legislación de Memoria Histórica y Memoria Democrática, garantizando los derechos a la verdad, la justicia y la reparación de las víctimas de la Guerra Civil y la dictadura franquista.",
+   "sample_party": "PNV"
+  },
+  {
+   "cluster": 66,
+   "size": 42,
+   "parties": {
+    "EH Bildu": 4,
+    "PNV": 38
+   },
+   "n_parties": 2,
+   "top_terms": [
+    "euskadi",
+    "asegurar",
+    "concierto económico",
+    "económico",
+    "concierto",
+    "vasco",
+    "capacidad",
+    "vasca"
+   ],
+   "sample": "Para conseguirlo necesitamos capacidad de decisión. Defender el autogobierno es defender nuestra capacidad para decidir sobre lo que nos afecta. Por eso seguiremos reclamando el cumplimiento íntegro del Estatuto de Gernika, defendiendo el Concierto Económico y",
+   "sample_party": "PNV"
+  },
+  {
+   "cluster": 60,
+   "size": 40,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "BNG": 1,
+    "EH Bildu": 2,
+    "FE de las JONS": 7,
+    "Frente Amplio": 2,
+    "Frente Obrero": 3,
+    "PACMA": 2,
+    "PNV": 1,
+    "PP": 11,
+    "PSOE": 1,
+    "Partido Autónomos": 2,
+    "SALF": 2,
+    "Vox": 5
+   },
+   "n_parties": 13,
+   "top_terms": [
+    "nacionalidad",
+    "delitos",
+    "española",
+    "nacionalidad española",
+    "delitos graves",
+    "graves",
+    "revisión",
+    "supuestos"
+   ],
+   "sample": "Endurecimiento de los requisitos de adquisición de la nacionalidad española. Revisión de las concesiones fraudulentas de la nacionalidad. Aumento de los supuestos de pérdida de nacionalidad española para los españoles no de origen en casos de delitos graves o ",
+   "sample_party": "Vox"
+  },
+  {
+   "cluster": 23,
+   "size": 39,
+   "parties": {
+    "Adelante Andalucía": 38,
+    "BNG": 1
+   },
+   "n_parties": 2,
+   "top_terms": [
+    "andalucía",
+    "deuda",
+    "estatales",
+    "centros",
+    "estado andalucía",
+    "financiación",
+    "infrafinanciación",
+    "estatal"
+   ],
+   "sample": "Los centros del Estado, con Andalucía Participación andaluza en la gestión de los centros del CSIC y del Instituto Español de Oceanografía en Andalucía.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 34,
+   "size": 36,
+   "parties": {
+    "ERC": 36
+   },
+   "n_parties": 1,
+   "top_terms": [
+    "drets",
+    "garantir",
+    "persones",
+    "protecció",
+    "reforçar",
+    "davant",
+    "socials",
+    "digitals"
+   ],
+   "sample": "Exigir a les plataformes digitals mecanismes efectius de prevenció i detecció de riscos, sistemes de denúncia accessibles i dissenys adequats a l’edat que evitin les pràctiques manipuladores i addictives. Reforçar l’educació digital i la formació de les famíli",
+   "sample_party": "ERC"
+  },
+  {
+   "cluster": 52,
+   "size": 34,
+   "parties": {
+    "Coalición Canaria": 2,
+    "Democracia21": 2,
+    "Frente Amplio": 1,
+    "Frente Obrero": 4,
+    "PCTE": 1,
+    "PNV": 9,
+    "PP": 3,
+    "PSOE": 8,
+    "Sumar": 3,
+    "Vox": 1
+   },
+   "n_parties": 10,
+   "top_terms": [
+    "vida",
+    "proyecto vida",
+    "proyecto",
+    "desarrollar proyecto",
+    "vivienda",
+    "jóvenes",
+    "oportunidades",
+    "desarrollar"
+   ],
+   "sample": "Vivienda, empleo, salarios, educación y oportunidades para que las personas jóvenes y las familias puedan desarrollar su proyecto de vida en Euskadi.",
+   "sample_party": "PNV"
+  },
+  {
+   "cluster": 31,
+   "size": 33,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "BNG": 4,
+    "EH Bildu": 2,
+    "ERC": 1,
+    "FE de las JONS": 5,
+    "Frente Amplio": 3,
+    "Frente Obrero": 2,
+    "PACMA": 3,
+    "PCTE": 1,
+    "PNV": 2,
+    "PP": 1,
+    "PSOE": 3,
+    "SALF": 2,
+    "Sumar": 2,
+    "Vox": 1
+   },
+   "n_parties": 15,
+   "top_terms": [
+    "cabo",
+    "llevar cabo",
+    "llevar",
+    "necesarias",
+    "territorio",
+    "reino",
+    "reino unido",
+    "unido"
+   ],
+   "sample": "Desmantelamiento de toda base militar extranjera situada en nuestro territorio, incluyendo en este sentido Gibraltar, actualmente ocupada por el Reino Unido. En este caso, se invitará al abandono británico que, de no producirse, provocarán las acciones que el ",
+   "sample_party": "FE de las JONS"
+  },
+  {
+   "cluster": 58,
+   "size": 30,
+   "parties": {
+    "Adelante Andalucía": 22,
+    "BNG": 2,
+    "EH Bildu": 1,
+    "FE de las JONS": 1,
+    "Frente Amplio": 1,
+    "PP": 1,
+    "PSOE": 2
+   },
+   "n_parties": 7,
+   "top_terms": [
+    "cercanías",
+    "algeciras",
+    "media distancia",
+    "antequera",
+    "distancia",
+    "media",
+    "granada",
+    "cercanías media"
+   ],
+   "sample": "reabriendo las estaciones cerradas, con lanzaderas a los pueblos; servicio directo Ronda–Antequera–Málaga, más frecuencias Algeciras–Ronda–Antequera y la media distancia con Granada recuperada.",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 26,
+   "size": 28,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "EH Bildu": 6,
+    "FE de las JONS": 4,
+    "Frente Amplio": 1,
+    "Frente Obrero": 2,
+    "PNV": 1,
+    "PP": 3,
+    "PSOE": 1,
+    "Partido Autónomos": 4,
+    "SALF": 2,
+    "Vox": 3
+   },
+   "n_parties": 11,
+   "top_terms": [
+    "lenguas",
+    "castellano",
+    "lengua",
+    "lenguas cooficiales",
+    "cooficiales",
+    "territorio nacional",
+    "lenguas oficiales",
+    "oficiales"
+   ],
+   "sample": "74. Garantía del castellano como lengua vehicular y respeto a lenguas cooficiales Ley orgánica que garantice el derecho a estudiar y relacionarse con la Administración en español en todo el territorio nacional, considerando las lenguas cooficiales como mérito ",
+   "sample_party": "Partido Autónomos"
+  },
+  {
+   "cluster": 53,
+   "size": 26,
+   "parties": {
+    "Adelante Andalucía": 13,
+    "BNG": 2,
+    "EH Bildu": 1,
+    "FE de las JONS": 1,
+    "Frente Amplio": 2,
+    "Frente Obrero": 2,
+    "PCTE": 1,
+    "PNV": 2,
+    "Sumar": 1,
+    "Vox": 1
+   },
+   "n_parties": 10,
+   "top_terms": [
+    "conexión",
+    "cercanías",
+    "programa",
+    "calidad",
+    "propuesta",
+    "almería",
+    "derribo",
+    "asentamientos"
+   ],
+   "sample": "También en este programa: fin de los asentamientos (Propuesta 176), derribo del Algarrobico (424), conexión de calidad para Almería (375) y Cercanías (376).",
+   "sample_party": "Adelante Andalucía"
+  },
+  {
+   "cluster": 7,
+   "size": 21,
+   "parties": {
+    "Adelante Andalucía": 1,
+    "Democracia21": 1,
+    "FE de las JONS": 2,
+    "Frente Amplio": 1,
+    "PP": 6,
+    "PSOE": 1,
+    "Partido Autónomos": 1,
+    "SALF": 6,
+    "Vox": 2
+   },
+   "n_parties": 9,
+   "top_terms": [
+    "ceuta",
+    "melilla",
+    "ceuta melilla",
+    "canarias",
+    "españolidad",
+    "territorios",
+    "melilla canarias",
+    "frontera"
+   ],
+   "sample": "La indemnización por residencia no se revisa de fondo des‐ de 2007: 435 euros al mes para un soldado en Ceuta, 117 en Gran Canaria. Baleares la subió en 2026; a Canarias, Ceuta y Melilla las dejaron fuera. Se duplica para militares, guar‐ dias civiles, policía",
+   "sample_party": "SALF"
+  }
+ ]
+}

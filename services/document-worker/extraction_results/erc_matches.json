@@ -1,0 +1,338 @@
+[
+  {
+    "question_id": "Q001",
+    "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la educación más accesible?",
+    "area": "Educación",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar els seus projectes educatius sense pressions ni interferències externes",
+      "normalized_text": "Exigir mecanismos efectivos de protección y asesoramiento jurídico para centros educativos y profesorado frente a injerencias judiciales y políticas.",
+      "source_page": 11,
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Educación / Protección institucional"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "profesor"
+  },
+  {
+    "question_id": "Q001",
+    "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la educación más accesible?",
+    "area": "Educación",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i gestionar el seu sistema educatiu",
+      "normalized_text": "Exigir competencias exclusivas en materia educativa para Catalunya, reclamando plena soberanía para decidir, regular y gestionar su sistema educativo sin subordinación al Estado español.",
+      "source_page": 11,
+      "conditions": "Sin subordinación a las imposiciones del Estado español",
+      "affected_area": "Educación / Competencias autonómicas"
+    },
+    "stance": "unclear",
+    "relevance_score": 10,
+    "matched_keyword": null
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "area": "Educación",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar els seus projectes educatius sense pressions ni interferències externes",
+      "normalized_text": "Exigir mecanismos efectivos de protección y asesoramiento jurídico para centros educativos y profesorado frente a injerencias judiciales y políticas.",
+      "source_page": 11,
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Educación / Protección institucional"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "profesor"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "area": "Educación",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i gestionar el seu sistema educatiu",
+      "normalized_text": "Exigir competencias exclusivas en materia educativa para Catalunya, reclamando plena soberanía para decidir, regular y gestionar su sistema educativo sin subordinación al Estado español.",
+      "source_page": 11,
+      "conditions": "Sin subordinación a las imposiciones del Estado español",
+      "affected_area": "Educación / Competencias autonómicas"
+    },
+    "stance": "unclear",
+    "relevance_score": 10,
+    "matched_keyword": null
+  },
+  {
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "area": "Vivienda",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+      "normalized_text": "Mejorar la regulación de los arrendamientos para proteger a los arrendatarios, evitar desahucios de personas vulnerables sin alternativa habitacional y mantener compensaciones a pequeños propietarios perjudicados.",
+      "source_page": 19,
+      "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones.",
+      "affected_area": "Vivienda / Arrendamientos"
+    },
+    "stance": "unclear",
+    "relevance_score": 15,
+    "matched_keyword": "habitatge"
+  },
+  {
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "area": "Vivienda",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+      "normalized_text": "Transferencia de los pisos de la SAREB (Sociedad de Gestión de Activos procedentes de la Reestructuración Bancaria) a la Generalitat de Catalunya",
+      "source_page": 18,
+      "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+      "affected_area": "Vivienda"
+    },
+    "stance": "unclear",
+    "relevance_score": 10,
+    "matched_keyword": null
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimonial) para favorecer el acceso a la vivienda?",
+    "area": "Vivienda / Fiscalidad",
+    "dimension": "Economía y empleo",
+    "claim": {
+      "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+      "normalized_text": "Mejorar la regulación de los arrendamientos para proteger a los arrendatarios, evitar desahucios de personas vulnerables sin alternativa habitacional y mantener compensaciones a pequeños propietarios perjudicados.",
+      "source_page": 19,
+      "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones.",
+      "affected_area": "Vivienda / Arrendamientos"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "habitatge"
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimonial) para favorecer el acceso a la vivienda?",
+    "area": "Vivienda / Fiscalidad",
+    "dimension": "Economía y empleo",
+    "claim": {
+      "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+      "normalized_text": "Transferencia de los pisos de la SAREB (Sociedad de Gestión de Activos procedentes de la Reestructuración Bancaria) a la Generalitat de Catalunya",
+      "source_page": 18,
+      "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+      "affected_area": "Vivienda"
+    },
+    "stance": "unclear",
+    "relevance_score": 10,
+    "matched_keyword": null
+  },
+  {
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejorar la atención primaria?",
+    "area": "Sanidad",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Blindar les competències de la Generalitat de Catalunya en matèria sanitària. Defensar el caràcter exclusiu de les competències de la Generalitat en matèria de salut",
+      "normalized_text": "Blindar las competencias exclusivas de la Generalitat de Catalunya en materia sanitaria e impedir cualquier recentralización o injerencia del Estado en el modelo sanitario catalán.",
+      "source_page": 42,
+      "conditions": "Exige el traspaso inmediato de todas las funciones y competencias pendientes con los recursos económicos, humanos y materiales necesarios.",
+      "affected_area": "Sanidad / Competencias autonómicas"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "salut"
+  },
+  {
+    "question_id": "Q007",
+    "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana?",
+    "area": "Vivienda / Urbanismo",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+      "normalized_text": "Mejorar la regulación de los arrendamientos para proteger a los arrendatarios, evitar desahucios de personas vulnerables sin alternativa habitacional y mantener compensaciones a pequeños propietarios perjudicados.",
+      "source_page": 19,
+      "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones.",
+      "affected_area": "Vivienda / Arrendamientos"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "habitatge"
+  },
+  {
+    "question_id": "Q007",
+    "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana?",
+    "area": "Vivienda / Urbanismo",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+      "normalized_text": "Transferencia de los pisos de la SAREB (Sociedad de Gestión de Activos procedentes de la Reestructuración Bancaria) a la Generalitat de Catalunya",
+      "source_page": 18,
+      "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+      "affected_area": "Vivienda"
+    },
+    "stance": "unclear",
+    "relevance_score": 10,
+    "matched_keyword": null
+  },
+  {
+    "question_id": "Q008",
+    "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida descontrolada de rentas?",
+    "area": "Vivienda / Alquiler",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+      "normalized_text": "Mejorar la regulación de los arrendamientos para proteger a los arrendatarios, evitar desahucios de personas vulnerables sin alternativa habitacional y mantener compensaciones a pequeños propietarios perjudicados.",
+      "source_page": 19,
+      "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones.",
+      "affected_area": "Vivienda / Arrendamientos"
+    },
+    "stance": "unclear",
+    "relevance_score": 14,
+    "matched_keyword": "habitatge"
+  },
+  {
+    "question_id": "Q008",
+    "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida descontrolada de rentas?",
+    "area": "Vivienda / Alquiler",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+      "normalized_text": "Transferencia de los pisos de la SAREB (Sociedad de Gestión de Activos procedentes de la Reestructuración Bancaria) a la Generalitat de Catalunya",
+      "source_page": 18,
+      "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+      "affected_area": "Vivienda"
+    },
+    "stance": "unclear",
+    "relevance_score": 10,
+    "matched_keyword": null
+  },
+  {
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad territorial?",
+    "area": "Infraestructuras ferroviarias",
+    "dimension": "Territorio y medio ambiente",
+    "claim": {
+      "literal_text": "afavoreixin el transport públic i el desenvolupament ferroviari",
+      "normalized_text": "Priorización del transporte público y el desarrollo ferroviario en la construcción de nuevas infraestructuras",
+      "source_page": 37,
+      "conditions": "En el contexto de emergencia climática",
+      "affected_area": "Infraestructuras / Transporte"
+    },
+    "stance": "unclear",
+    "relevance_score": 13,
+    "matched_keyword": "infraestructura"
+  },
+  {
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad territorial?",
+    "area": "Infraestructuras ferroviarias",
+    "dimension": "Territorio y medio ambiente",
+    "claim": {
+      "literal_text": "Traspassar progressivament a Catalunya les funcions de conservació, manteniment i gestió de les infraestructures ferroviàries vinculades a Rodalies",
+      "normalized_text": "Traspasar progresivamente a Cataluña las funciones de conservación, mantenimiento y gestión de las infraestructuras ferroviarias vinculadas a Rodalies",
+      "source_page": 40,
+      "conditions": "Con los recursos necesarios para garantizar un servicio seguro, fiable y de calidad",
+      "affected_area": "Infraestructuras ferroviarias / Competencias autonómicas"
+    },
+    "stance": "unclear",
+    "relevance_score": 12,
+    "matched_keyword": "infraestructura"
+  },
+  {
+    "question_id": "Q017",
+    "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y reducir emisiones?",
+    "area": "Vivienda / Rehabilitación",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+      "normalized_text": "Mejorar la regulación de los arrendamientos para proteger a los arrendatarios, evitar desahucios de personas vulnerables sin alternativa habitacional y mantener compensaciones a pequeños propietarios perjudicados.",
+      "source_page": 19,
+      "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones.",
+      "affected_area": "Vivienda / Arrendamientos"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "habitatge"
+  },
+  {
+    "question_id": "Q017",
+    "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y reducir emisiones?",
+    "area": "Vivienda / Rehabilitación",
+    "dimension": "Estado de bienestar",
+    "claim": {
+      "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+      "normalized_text": "Transferencia de los pisos de la SAREB (Sociedad de Gestión de Activos procedentes de la Reestructuración Bancaria) a la Generalitat de Catalunya",
+      "source_page": 18,
+      "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+      "affected_area": "Vivienda"
+    },
+    "stance": "unclear",
+    "relevance_score": 10,
+    "matched_keyword": null
+  },
+  {
+    "question_id": "Q018",
+    "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apoyar a los creadores y la industria cultural?",
+    "area": "Cultura / Legislación",
+    "dimension": "Derechos y libertades",
+    "claim": {
+      "literal_text": "Impulsar un Pla de Sobirania Cultural per culminar el traspàs dels museus i equipaments culturals transferibles a Catalunya, incloent-hi el Museu Nacional Arqueològic de Tarragona",
+      "normalized_text": "Impulsar un Plan de Soberanía Cultural para completar el traspaso de museos y equipamientos culturales a Cataluña, incluyendo el Museu Nacional Arqueològic de Tarragona",
+      "source_page": 13,
+      "conditions": "Los traspasos deben ir acompañados de la financiación estructural correspondiente y se deben auditar las inversiones estatales pendientes",
+      "affected_area": "Cultura / Competencias autonómicas"
+    },
+    "stance": "unclear",
+    "relevance_score": 14,
+    "matched_keyword": "museo"
+  },
+  {
+    "question_id": "Q018",
+    "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apoyar a los creadores y la industria cultural?",
+    "area": "Cultura / Legislación",
+    "dimension": "Derechos y libertades",
+    "claim": {
+      "literal_text": "Exigir la modificació de la Llei del Patrimoni Històric espanyol perquè els recursos generats per les obres públiques estatals executades a Catalunya es transfereixin automàticament a la Generalitat",
+      "normalized_text": "Exigir la modificación de la Ley del Patrimonio Histórico español para que los recursos generados por obras públicas estatales en Cataluña se transfieran automáticamente a la Generalitat",
+      "source_page": 13,
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Cultura / Patrimonio / Financiación"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "patrimonio"
+  },
+  {
+    "question_id": "Q023",
+    "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+    "area": "Justicia y seguridad",
+    "dimension": "Justicia y seguridad",
+    "claim": {
+      "literal_text": "Aprovar una llei estatal de desaparició forçosa de menors per garantir veritat, justícia i reparació",
+      "normalized_text": "Aprobar una ley estatal de desaparición forzosa de menores que garantice investigaciones rigurosas, acceso a archivos, pruebas de ADN y apoyo jurídico y psicológico a las víctimas",
+      "source_page": 8,
+      "conditions": "La norma debe garantizar que ningún caso quede sin investigar y que las víctimas reciban reconocimiento y apoyo",
+      "affected_area": "Justicia y memoria democrática"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "justícia"
+  },
+  {
+    "question_id": "Q023",
+    "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+    "area": "Justicia y seguridad",
+    "dimension": "Justicia y seguridad",
+    "claim": {
+      "literal_text": "Cal reforçar la conservació de les vies, modernitzar els centres de control i els sistemes de senyalització i protecció, i revisar preventivament la seguretat de tota la xarxa",
+      "normalized_text": "Reforzar la conservación de las vías, modernizar los centros de control y los sistemas de señalización y protección, y revisar preventivamente la seguridad de toda la red ferroviaria, incluidas líneas de alta velocidad y tramos mixtos.",
+      "source_page": 39,
+      "conditions": "Incluye líneas de alta velocidad y tramos con circulación mixta de pasajeros y mercancías.",
+      "affected_area": "Seguridad ferroviaria / Mantenimiento de infraestructuras"
+    },
+    "stance": "unclear",
+    "relevance_score": 11,
+    "matched_keyword": "seguridad"
+  }
+]

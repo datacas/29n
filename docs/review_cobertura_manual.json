@@ -1,0 +1,122 @@
+[
+ {
+  "qid": "Q034",
+  "party": "PP",
+  "value": -1,
+  "quotes": [
+   {
+    "page": 51,
+    "text": "LOS PADRES ELEGIRÁN COLEGIO, Y NINGÚN CONCIERTO EDUCATIVO SE ELIMINARÁ DONDE HAYA DEMANDA SUFICIENTE. La demanda de las familias volverá a contar para programar las plazas, y se podrá elegir centro en todo el municipio de residencia, con criterios públicos."
+   }
+  ]
+ },
+ {
+  "qid": "Q054",
+  "party": "PP",
+  "value": -1,
+  "quotes": [
+   {
+    "page": 55,
+    "text": "La lucha contra el cambio climático y la descarbonización son objetivos irrenunciables para Europa por razones ambientales, geoestratégicas y económicas. Pero ha llegado el momento de revisar los ritmos de cada sector atendiendo a tres factores: lo que está ocurriendo en el resto del mundo, la tecnología realmente disponible y la evolución de la demanda. Pondremos freno a la imposición de calendarios imposibles."
+   }
+  ]
+ },
+ {
+  "qid": "Q014",
+  "party": "Vox",
+  "value": -1,
+  "quotes": [
+   {
+    "page": 16,
+    "text": "Fin de la cooperación al desarrollo con los países que no colaboren en la gestión de los flujos migratorios. Retirar ayudas y fondos de cooperación y promover sanciones a aquellos Estados que fomenten la inmigración ilegal o la utilicen como arma de presión política."
+   }
+  ]
+ },
+ {
+  "qid": "Q077",
+  "party": "PP",
+  "value": 1,
+  "quotes": [
+   {
+    "page": 33,
+    "text": "Convocaremos la Conferencia de Presidentes al inicio de la legislatura para sentar las bases de un nuevo modelo de financiación autonómica, que se acordará de manera multilateral en el Consejo de Política Fiscal y Financiera y se llevará a las Cortes."
+   },
+   {
+    "page": 33,
+    "text": "El nuevo sistema ampliará los recursos del conjunto de las Comunidades Autónomas y garantizará recursos suficientes para prestar los servicios públicos en condiciones de igualdad, de forma muy particular en el ámbito de la sanidad"
+   }
+  ]
+ },
+ {
+  "qid": "Q077",
+  "party": "SALF",
+  "value": 1,
+  "quotes": [
+   {
+    "page": 14,
+    "text": "defenderemos un sistema justo, solidario y responsable, regido por criterios objetivos y transparentes, iguales para todas las Comunidades Autónomas."
+   }
+  ]
+ },
+ {
+  "qid": "Q051",
+  "party": "PNV",
+  "value": 1,
+  "quotes": [
+   {
+    "page": 9,
+    "text": "Ampliar la cobertura de la prestación por desempleo hasta un máximo de 36 meses, vinculándola a procesos de mejora de la empleabilidad y reforzando la protección de las personas con mayores dificultades para reincorporarse al mercado laboral."
+   }
+  ]
+ },
+ {
+  "qid": "Q042",
+  "party": "Vox",
+  "value": -1,
+  "quotes": [
+   {
+    "page": 19,
+    "text": "El Ingreso Mínimo Vital atenderá únicamente las necesidades de los españoles con menos recursos."
+   }
+  ]
+ },
+ {
+  "qid": "Q042",
+  "party": "SALF",
+  "value": -1,
+  "quotes": [
+   {
+    "page": 19,
+    "text": "Ninguna prestación no contributiva, ayuda al alquiler ni vi‐ vienda pública sin cinco años de residencia legal y cotiza‐ ción."
+   }
+  ]
+ },
+ {
+  "qid": "Q042",
+  "party": "PSOE",
+  "value": 1,
+  "quotes": [
+   {
+    "page": 38,
+    "text": "Potenciar el IMV. Crear pasarelas que automaticen y simplifiquen la concesión del IMV, utilizando datos de renta y patrimonio más recientes. Se adecuarán las cuantías y umbrales al coste de la crianza para hogares perceptores con niñas y niños."
+   }
+  ]
+ },
+ {
+  "qid": "Q073",
+  "party": "BNG",
+  "value": 2,
+  "quotes": [
+   {
+    "page": 32,
+    "text": "Denunciar e revogar o Concordato coa Igrexa católica e, nomeadamente, os Acordos vixentes coa Santa Sé, para avanzar nun Estado verdadeiramente laico. Isto suporá a eliminación dos privilexios da Igrexa e a presenza da relixión nas institucións e servizos públicos.",
+    "translation_es": "Denunciar y revocar el Concordato con la Iglesia católica y, en concreto, los Acuerdos vigentes con la Santa Sede, para avanzar hacia un Estado verdaderamente laico. Esto supondrá la eliminación de los privilegios de la Iglesia y de la presencia de la religión en las instituciones y servicios públicos."
+   },
+   {
+    "page": 35,
+    "text": "A materia de Relixión non formará parte do currículo escolar, xa que é incuestionábel que a difusión da fe relixiosa corresponde ao ámbito privado e familiar. Neste sentido, será denunciado e renegociado o concordato coa Santa Sé e os acordos coas demais confesións relixiosas.",
+    "translation_es": "La materia de Religión no formará parte del currículo escolar, ya que es incuestionable que la difusión de la fe religiosa corresponde al ámbito privado y familiar. En este sentido, será denunciado y renegociado el concordato con la Santa Sede y los acuerdos con las demás confesiones religiosas."
+   }
+  ]
+ }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "question_id": "Q008",
+    "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida descontrolada de rentas?",
+    "issues": [
+      {
+        "type": "low_comparability",
+        "issue": "Solo 1 partido con evidencia",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "question": "¿Deben reducirse los impuestos sobre la renta de las personas físicas (IRPF) para las clases medias y trabajadoras?",
+    "issues": [
+      {
+        "type": "low_comparability",
+        "issue": "Solo 1 partido con evidencia",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "question": "¿Debe reforzarse la gestión y protección de los bosques frente a los incendios forestales?",
+    "issues": [
+      {
+        "type": "low_comparability",
+        "issue": "Solo 1 partido con evidencia",
+        "severity": "medium"
+      }
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+    "issues": [
+      {
+        "type": "low_comparability",
+        "issue": "Solo 1 partido con evidencia",
+        "severity": "medium"
+      }
+    ]
+  }
+]

@@ -1,0 +1,557 @@
+{
+ "version": "2026-11-21",
+ "themes": [
+  {
+   "code": "educ-publica",
+   "name": "Educación pública y sistema educativo",
+   "dimension": "social",
+   "description": "la educación pública no universitaria: financiación, ratios, profesorado, currículo, modelo educativo",
+   "regional_parties": []
+  },
+  {
+   "code": "educ-infantil",
+   "name": "Educación infantil 0-3 años",
+   "dimension": "social",
+   "description": "plazas públicas y gratuitas de educación infantil de 0 a 3 años",
+   "regional_parties": []
+  },
+  {
+   "code": "becas-ayudas",
+   "name": "Becas y ayudas al estudio",
+   "dimension": "social",
+   "description": "becas, ayudas al estudio y cuantías para el alumnado",
+   "regional_parties": []
+  },
+  {
+   "code": "fp-universidad",
+   "name": "Formación Profesional y universidad",
+   "dimension": "social",
+   "description": "formación profesional, universidades públicas, investigación y acceso a estudios superiores",
+   "regional_parties": []
+  },
+  {
+   "code": "vivienda-oferta",
+   "name": "Oferta de vivienda pública y protegida",
+   "dimension": "social",
+   "description": "construcción de vivienda pública, social o protegida y aumento de la oferta",
+   "regional_parties": []
+  },
+  {
+   "code": "alquiler-regulacion",
+   "name": "Regulación del alquiler e inquilinos",
+   "dimension": "social",
+   "description": "topes de precios, zonas tensionadas, contratos de alquiler, desahucios y protección de inquilinos",
+   "regional_parties": []
+  },
+  {
+   "code": "vivienda-fiscalidad",
+   "name": "Impuestos sobre la vivienda",
+   "dimension": "social",
+   "description": "IBI, plusvalía, ITP, IVA y otros impuestos sobre la compra, tenencia o alquiler de vivienda",
+   "regional_parties": []
+  },
+  {
+   "code": "rehabilitacion",
+   "name": "Rehabilitación y regeneración de edificios y barrios",
+   "dimension": "social",
+   "description": "rehabilitación de viviendas y edificios, eficiencia energética de la vivienda y regeneración urbana",
+   "regional_parties": []
+  },
+  {
+   "code": "vivienda-especulacion",
+   "name": "Vivienda vacía, pisos turísticos y especulación",
+   "dimension": "social",
+   "description": "viviendas vacías, pisos turísticos, grandes tenedores, fondos y usos especulativos de la vivienda",
+   "regional_parties": []
+  },
+  {
+   "code": "sanidad-publica",
+   "name": "Sanidad pública",
+   "dimension": "social",
+   "description": "financiación de la sanidad pública, atención primaria, listas de espera y profesionales sanitarios",
+   "regional_parties": []
+  },
+  {
+   "code": "salud-mental",
+   "name": "Salud mental",
+   "dimension": "social",
+   "description": "salud mental, suicidio y adicciones: recursos y atención",
+   "regional_parties": []
+  },
+  {
+   "code": "cuidados-dependencia",
+   "name": "Cuidados, dependencia y personas mayores",
+   "dimension": "social",
+   "description": "sistema de cuidados, dependencia, residencias y atención a personas mayores",
+   "regional_parties": []
+  },
+  {
+   "code": "pensiones",
+   "name": "Pensiones",
+   "dimension": "social",
+   "description": "pensiones contributivas y no contributivas, revalorización, jubilación y edad de jubilación",
+   "regional_parties": []
+  },
+  {
+   "code": "familia-permisos",
+   "name": "Familia, natalidad y permisos de cuidado",
+   "dimension": "social",
+   "description": "permisos de maternidad y paternidad, conciliación, natalidad y ayudas a las familias",
+   "regional_parties": []
+  },
+  {
+   "code": "infancia-juventud",
+   "name": "Infancia y juventud",
+   "dimension": "social",
+   "description": "políticas de infancia y juventud, emancipación, participación y protección de la infancia",
+   "regional_parties": []
+  },
+  {
+   "code": "ingreso-pobreza",
+   "name": "Ingreso mínimo y lucha contra la pobreza",
+   "dimension": "social",
+   "description": "ingreso mínimo vital, rentas mínimas, ayudas contra la pobreza y exclusión social",
+   "regional_parties": []
+  },
+  {
+   "code": "discapacidad",
+   "name": "Discapacidad",
+   "dimension": "social",
+   "description": "derechos, accesibilidad y apoyos a las personas con discapacidad",
+   "regional_parties": []
+  },
+  {
+   "code": "consumo-precios",
+   "name": "Precios, consumo y bienes esenciales",
+   "dimension": "social",
+   "description": "precios de bienes y servicios esenciales, inflación, protección de personas consumidoras y márgenes empresariales",
+   "regional_parties": []
+  },
+  {
+   "code": "agro-rural",
+   "name": "Agricultura, ganadería, pesca y mundo rural",
+   "dimension": "social",
+   "description": "agricultura, ganadería, pesca, cadena alimentaria, precios agrarios y servicios en el medio rural",
+   "regional_parties": []
+  },
+  {
+   "code": "irpf-rentas",
+   "name": "IRPF y fiscalidad de las rentas del trabajo",
+   "dimension": "economy",
+   "description": "IRPF, tramos, mínimo exento, deducciones y cargas fiscales sobre trabajadores y clases medias",
+   "regional_parties": []
+  },
+  {
+   "code": "fiscalidad-grandes",
+   "name": "Impuestos a grandes fortunas, empresas y banca",
+   "dimension": "economy",
+   "description": "impuestos a grandes fortunas, patrimonio, sociedades, banca, energéticas y multinacionales",
+   "regional_parties": []
+  },
+  {
+   "code": "autonomos-pymes",
+   "name": "Autónomos y pequeñas empresas",
+   "dimension": "economy",
+   "description": "autónomos, cuota de cotización, pymes, burocracia y apoyo a pequeños negocios",
+   "regional_parties": []
+  },
+  {
+   "code": "fraude-fiscal",
+   "name": "Fraude fiscal y paraísos fiscales",
+   "dimension": "economy",
+   "description": "lucha contra el fraude fiscal, evasión y paraísos fiscales",
+   "regional_parties": []
+  },
+  {
+   "code": "contratacion-despido",
+   "name": "Contratación y despido",
+   "dimension": "economy",
+   "description": "reformas laborales, contratos temporales, despido, ERE y negociación colectiva",
+   "regional_parties": []
+  },
+  {
+   "code": "jornada-salarios",
+   "name": "Jornada laboral y salarios",
+   "dimension": "economy",
+   "description": "reducción de jornada, salario mínimo, salarios y poder adquisitivo",
+   "regional_parties": []
+  },
+  {
+   "code": "politica-industrial",
+   "name": "Política industrial",
+   "dimension": "economy",
+   "description": "reindustrialización, sectores estratégicos, inversión y empleo industrial",
+   "regional_parties": []
+  },
+  {
+   "code": "energia-modelo",
+   "name": "Modelo energético",
+   "dimension": "economy",
+   "description": "nuclear, renovables, combustibles fósiles, redes eléctricas y transición energética",
+   "regional_parties": []
+  },
+  {
+   "code": "energia-precios",
+   "name": "Precio de la energía",
+   "dimension": "economy",
+   "description": "factura de la luz y el gas, pobreza energética y mercado eléctrico",
+   "regional_parties": []
+  },
+  {
+   "code": "transporte-movilidad",
+   "name": "Transporte y movilidad",
+   "dimension": "economy",
+   "description": "ferrocarril, alta velocidad, cercanías, transporte público, carreteras y puertos",
+   "regional_parties": []
+  },
+  {
+   "code": "digitalizacion-ia",
+   "name": "Digitalización e inteligencia artificial",
+   "dimension": "economy",
+   "description": "digitalización de la economía y la administración, inteligencia artificial y software libre",
+   "regional_parties": []
+  },
+  {
+   "code": "turismo",
+   "name": "Modelo turístico",
+   "dimension": "economy",
+   "description": "turismo: modelo, masificación, empleo y regulación",
+   "regional_parties": []
+  },
+  {
+   "code": "deuda-gasto-publico",
+   "name": "Deuda y gasto público",
+   "dimension": "economy",
+   "description": "reducir o aumentar el gasto público, el déficit o la deuda pública, y las reglas fiscales",
+   "regional_parties": []
+  },
+  {
+   "code": "clima-transicion",
+   "name": "Cambio climático y transición ecológica",
+   "dimension": "environment",
+   "description": "emisiones, objetivos climáticos, adaptación y transición ecológica",
+   "regional_parties": []
+  },
+  {
+   "code": "bosques-incendios",
+   "name": "Bosques e incendios forestales",
+   "dimension": "environment",
+   "description": "gestión forestal, prevención y lucha contra incendios forestales",
+   "regional_parties": []
+  },
+  {
+   "code": "agua-sequia",
+   "name": "Agua y sequía",
+   "dimension": "environment",
+   "description": "gestión del agua, sequía, desalación, regadío e infraestructuras hidráulicas",
+   "regional_parties": []
+  },
+  {
+   "code": "biodiversidad-animales",
+   "name": "Biodiversidad y bienestar animal",
+   "dimension": "environment",
+   "description": "protección de la fauna, bienestar animal, caza, maltrato y espacios naturales",
+   "regional_parties": []
+  },
+  {
+   "code": "residuos-circular",
+   "name": "Residuos y economía circular",
+   "dimension": "environment",
+   "description": "residuos, reciclaje, plásticos y economía circular",
+   "regional_parties": []
+  },
+  {
+   "code": "poder-judicial",
+   "name": "Poder judicial y justicia",
+   "dimension": "institutions",
+   "description": "independencia judicial, CGPJ, Tribunal Constitucional, plazos y medios de la justicia",
+   "regional_parties": []
+  },
+  {
+   "code": "corrupcion-transparencia",
+   "name": "Corrupción, transparencia y financiación de partidos",
+   "dimension": "institutions",
+   "description": "corrupción, transparencia, financiación de partidos, cargos públicos y conflictos de intereses",
+   "regional_parties": []
+  },
+  {
+   "code": "reforma-constitucional",
+   "name": "Reforma constitucional y sistema electoral",
+   "dimension": "institutions",
+   "description": "reforma de la Constitución, sistema electoral, Senado y reglas de representación",
+   "regional_parties": []
+  },
+  {
+   "code": "monarquia",
+   "name": "Monarquía y forma de Estado",
+   "dimension": "institutions",
+   "description": "monarquía, república y jefatura del Estado",
+   "regional_parties": []
+  },
+  {
+   "code": "participacion-democratica",
+   "name": "Participación ciudadana directa",
+   "dimension": "institutions",
+   "description": "referendos, consultas populares, iniciativa legislativa popular y democracia directa",
+   "regional_parties": []
+  },
+  {
+   "code": "seguridad-policia",
+   "name": "Seguridad ciudadana y policía",
+   "dimension": "institutions",
+   "description": "fuerzas y cuerpos de seguridad, policía, plantillas, medios y criminalidad",
+   "regional_parties": []
+  },
+  {
+   "code": "defensa-exterior",
+   "name": "Defensa y política exterior",
+   "dimension": "institutions",
+   "description": "gasto en defensa, OTAN, bases militares, política exterior y relaciones internacionales",
+   "regional_parties": []
+  },
+  {
+   "code": "union-europea",
+   "name": "Unión Europea",
+   "dimension": "institutions",
+   "description": "relación con la Unión Europea, soberanía, Schengen y fondos europeos",
+   "regional_parties": []
+  },
+  {
+   "code": "cooperacion-desarrollo",
+   "name": "Cooperación al desarrollo",
+   "dimension": "institutions",
+   "description": "ayuda oficial al desarrollo y cooperación internacional",
+   "regional_parties": []
+  },
+  {
+   "code": "soberania-unidad",
+   "name": "Soberanía nacional y unidad de España",
+   "dimension": "institutions",
+   "description": "soberanía nacional, unidad de España, patriotismo y orden constitucional",
+   "regional_parties": []
+  },
+  {
+   "code": "administracion-publica",
+   "name": "Administración pública y gasto político",
+   "dimension": "institutions",
+   "description": "reducir o ampliar el número de ministerios, altos cargos, asesores y empleados públicos, o el tamaño de la administración",
+   "regional_parties": []
+  },
+  {
+   "code": "ciberseguridad-datos",
+   "name": "Datos personales y ciberseguridad",
+   "dimension": "institutions",
+   "description": "protección de datos, privacidad, ciberseguridad y vigilancia",
+   "regional_parties": []
+  },
+  {
+   "code": "inmigracion-regularizacion",
+   "name": "Regularización y derechos de personas migrantes",
+   "dimension": "rights",
+   "description": "regularización de personas migrantes, extranjería, arraigo, permisos y derechos de las personas migrantes",
+   "regional_parties": []
+  },
+  {
+   "code": "asilo-acogida",
+   "name": "Asilo y acogida",
+   "dimension": "rights",
+   "description": "asilo, refugio, acogida y protección internacional",
+   "regional_parties": []
+  },
+  {
+   "code": "fronteras-expulsiones",
+   "name": "Fronteras y expulsiones",
+   "dimension": "rights",
+   "description": "control de fronteras, devoluciones, expulsiones, CIE y repatriación",
+   "regional_parties": []
+  },
+  {
+   "code": "nacionalidad",
+   "name": "Nacionalidad y requisitos de residencia",
+   "dimension": "rights",
+   "description": "nacionalidad, naturalización y requisitos de residencia o idioma",
+   "regional_parties": []
+  },
+  {
+   "code": "violencia-genero",
+   "name": "Violencia de género y machista",
+   "dimension": "rights",
+   "description": "violencia machista, víctimas, prevención, protección y justicia",
+   "regional_parties": []
+  },
+  {
+   "code": "igualdad-lgtbi",
+   "name": "Igualdad y derechos LGTBI",
+   "dimension": "rights",
+   "description": "igualdad de género, brecha salarial, derechos LGTBI y personas trans",
+   "regional_parties": []
+  },
+  {
+   "code": "memoria-democratica",
+   "name": "Memoria democrática",
+   "dimension": "rights",
+   "description": "memoria histórica y democrática, reparación a las víctimas y símbolos franquistas",
+   "regional_parties": []
+  },
+  {
+   "code": "libertades-civiles",
+   "name": "Libertades civiles y derechos fundamentales",
+   "dimension": "rights",
+   "description": "libertad de expresión, derecho de manifestación, ley de seguridad ciudadana y garantías frente a la actuación policial o judicial",
+   "regional_parties": []
+  },
+  {
+   "code": "aborto-eutanasia",
+   "name": "Aborto y final de la vida",
+   "dimension": "rights",
+   "description": "aborto, eutanasia, gestación subrogada y derechos reproductivos",
+   "regional_parties": []
+  },
+  {
+   "code": "menores-digital",
+   "name": "Menores y entornos digitales",
+   "dimension": "rights",
+   "description": "protección de menores en internet, redes sociales, plataformas e inteligencia artificial",
+   "regional_parties": []
+  },
+  {
+   "code": "laicidad",
+   "name": "Laicidad y religión",
+   "dimension": "rights",
+   "description": "separación Iglesia-Estado, financiación de confesiones y educación religiosa",
+   "regional_parties": []
+  },
+  {
+   "code": "lenguas",
+   "name": "Lenguas cooficiales y castellano",
+   "dimension": "rights",
+   "description": "lenguas cooficiales, castellano, educación y uso institucional de las lenguas",
+   "regional_parties": []
+  },
+  {
+   "code": "cultura-patrimonio",
+   "name": "Cultura y patrimonio",
+   "dimension": "rights",
+   "description": "financiación de la cultura, creadores, derechos de autor, patrimonio y medios públicos",
+   "regional_parties": []
+  },
+  {
+   "code": "deporte",
+   "name": "Deporte",
+   "dimension": "rights",
+   "description": "deporte, financiación, deporte base y federaciones",
+   "regional_parties": []
+  },
+  {
+   "code": "modelo-territorial",
+   "name": "Modelo territorial y competencias",
+   "dimension": "territory",
+   "description": "competencias autonómicas: transferirlas, recentralizarlas o reformar el modelo territorial",
+   "regional_parties": []
+  },
+  {
+   "code": "autodeterminacion",
+   "name": "Autodeterminación y modelo federal",
+   "dimension": "territory",
+   "description": "derecho de autodeterminación, independencia, federalismo y plurinacionalidad",
+   "regional_parties": []
+  },
+  {
+   "code": "financiacion-territorial",
+   "name": "Financiación autonómica y solidaridad territorial",
+   "dimension": "territory",
+   "description": "financiación autonómica, cupo, solidaridad interterritorial y deuda autonómica",
+   "regional_parties": []
+  },
+  {
+   "code": "despoblacion-cohesion",
+   "name": "Despoblación y cohesión territorial",
+   "dimension": "territory",
+   "description": "despoblación, España vaciada, conectividad y servicios en zonas con menos población",
+   "regional_parties": []
+  },
+  {
+   "code": "ceuta-melilla-gibraltar",
+   "name": "Ceuta, Melilla y Gibraltar",
+   "dimension": "territory",
+   "description": "Ceuta, Melilla, Gibraltar y territorios españoles en el exterior",
+   "regional_parties": []
+  },
+  {
+   "code": "reg-euskadi",
+   "name": "Autogobierno vasco y concierto económico",
+   "dimension": "territory",
+   "description": "Euskadi: Estatuto de Gernika, concierto económico, competencias vascas y cultura vasca",
+   "regional_parties": [
+    "PNV",
+    "EH Bildu"
+   ]
+  },
+  {
+   "code": "reg-catalunya",
+   "name": "Catalunya: autogobierno, competencias y país",
+   "dimension": "territory",
+   "description": "Catalunya: autogobierno, Generalitat, competencias, finanzas y proyecto nacional catalán",
+   "regional_parties": [
+    "ERC"
+   ]
+  },
+  {
+   "code": "reg-galiza",
+   "name": "Galiza: autogobierno, lengua y sector productivo",
+   "dimension": "territory",
+   "description": "Galiza: competencias, lengua gallega, sector naval, rural y marítimo, infraestructuras gallegas",
+   "regional_parties": [
+    "BNG"
+   ]
+  },
+  {
+   "code": "reg-canarias",
+   "name": "Canarias: régimen especial y lejanía insular",
+   "dimension": "territory",
+   "description": "Canarias: régimen económico y fiscal, conectividad entre islas, ultraperificidad, agua y energía insular",
+   "regional_parties": [
+    "Coalición Canaria"
+   ]
+  },
+  {
+   "code": "reg-andalucia",
+   "name": "Andalucía: financiación, agua y territorio",
+   "dimension": "territory",
+   "description": "Andalucía: financiación, deuda, Doñana, Campo de Gibraltar, infraestructuras y servicios andaluces",
+   "regional_parties": [
+    "Adelante Andalucía"
+   ]
+  },
+  {
+   "code": "empleo-desempleo",
+   "name": "Empleo y prestaciones por desempleo",
+   "dimension": "economy",
+   "description": "políticas de empleo, paro, prestaciones por desempleo y políticas activas",
+   "regional_parties": []
+  },
+  {
+   "code": "economia-social",
+   "name": "Economía social y participación en la empresa",
+   "dimension": "economy",
+   "description": "cooperativas, economía social y participación de los trabajadores en la gestión de las empresas",
+   "regional_parties": []
+  },
+  {
+   "code": "simplificacion-normativa",
+   "name": "Simplificación normativa y burocracia",
+   "dimension": "institutions",
+   "description": "simplificar o reducir la regulación, los trámites y la burocracia",
+   "regional_parties": []
+  },
+  {
+   "code": "reg-valencia",
+   "name": "Comunitat Valenciana: financiación y deuda",
+   "dimension": "territory",
+   "description": "Comunitat Valenciana: infrafinanciación, deuda histórica, inversiones y servicios valencianos",
+   "regional_parties": [
+    "Compromís"
+   ]
+  }
+ ]
+}

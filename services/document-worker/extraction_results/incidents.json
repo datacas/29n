@@ -1,0 +1,3674 @@
+[
+  {
+    "type": "two_party_evidence",
+    "question_id": "Q001",
+    "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la educación más acces",
+    "parties": [
+      "PSOE",
+      "Vox"
+    ],
+    "severity": "low",
+    "recommendation": "Aceptable si la pregunta es específica; buscar más evidencia si es posible"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q001",
+    "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la educación más acces",
+    "party": "PSOE",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q001",
+    "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la educación más acces",
+    "party": "PSOE",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q001",
+    "question": "¿El Estado debe aumentar la inversión en becas y ayudas al estudio para hacer la educación más acces",
+    "party": "Vox",
+    "condition": "Dirigido a estudiantes con falta de recursos económicos.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "condition": "Propuesta de futuro, no medida ya ejecutada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Plazo de cuatro años",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Requiere acuerdo con las Comunidades Autónomas",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Vinculado al protocolo nacional contra el acoso escolar",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "condition": "Aplicable a alumnos con bajo rendimiento académico",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Sin que la situación económica o social sea un impedimento.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Dirigido a estudiantes con falta de recursos económicos.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "condition": "Medido en términos anualizados desde 2018.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "condition": "Aplica únicamente a viviendas construidas con recursos de la Administración General del Estado.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "condition": "Fondos destinados a acompañar a las comunidades autónomas en el ejercicio de sus competencias.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "condition": "Sin condiciones específicas mencionadas.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "condition": "Se sumarán a las promovidas por comunidades autónomas y entidades locales en el ejercicio de sus competencias.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "condition": "Solo en casos en que las comunidades autónomas no estén realizando el mapa en aplicación de la Ley de Vivienda.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada en este texto",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PP",
+    "condition": "En colaboración con las Comunidades Autónomas y las entidades locales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PP",
+    "condition": "Siguiendo la experiencia de otros países europeos.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Sin que el coste de la vivienda impida cubrir otras necesidades básicas",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Orientado a proteger tanto a generaciones presentes como futuras",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Prioridad a la función social frente al uso financiero de la vivienda",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Requiere multiplicar por 12–18 la aportación estatal media anual del actual Plan Estatal de Vivienda.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "A largo plazo; se prevé que las rentas sociales generen ingresos recurrentes que reduzcan la dependencia de financiación exclusiva vía impuestos.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Aplicable únicamente a viviendas con calificación de protegida.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "condition": "Aplicable en cada operación de venta de vivienda protegida.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "ERC",
+    "condition": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "ERC",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "two_party_evidence",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "parties": [
+      "PSOE",
+      "Sumar"
+    ],
+    "severity": "low",
+    "recommendation": "Aceptable si la pregunta es específica; buscar más evidencia si es posible"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "PSOE",
+    "condition": "Se sumarán a las promovidas por comunidades autónomas y entidades locales en el ejercicio de sus competencias.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "condition": "Prioridad a la función social frente al uso financiero de la vivienda",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "condition": "Requiere multiplicar por 12–18 la aportación estatal media anual del actual Plan Estatal de Vivienda.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "condition": "A largo plazo; se prevé que las rentas sociales generen ingresos recurrentes que reduzcan la dependencia de financiación exclusiva vía impuestos.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PSOE",
+    "condition": "Dirigido a personas que paguen un alquiler",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PSOE",
+    "condition": "Equiparación del tratamiento fiscal al de transmisiones realizadas a entidades públicas destinadas al alquiler social y asequible.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "condition": "Aplicable únicamente a vivienda habitual.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "condition": "Aplicable únicamente a menores de 40 años en la compra de su primera vivienda",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "condition": "Vinculado a la reducción del IVA al 4% para menores de 40 años",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "condition": "Aplicable cuando la vivienda sea usada; requiere acuerdo con las Comunidades Autónomas",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "condition": "Vinculado al ITP reducido para primera vivienda usada de jóvenes",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "condition": "El importe debe destinarse a la reinversión en vivienda habitual para mantener la exención fiscal",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "condition": "El ahorro debe destinarse exclusivamente a la compra de la primera vivienda",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "Vox",
+    "condition": "Texto truncado; no se puede verificar el alcance completo de la medida.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "Sumar",
+    "condition": "Aplica especialmente a vivienda turística.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "Sumar",
+    "condition": "Aplicable solo a precios por encima de un límite establecido y solo a personas extranjeras.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PSOE",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PSOE",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PSOE",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada en este texto",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PP",
+    "condition": "Requiere acuerdo con las Comunidades Autónomas",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PP",
+    "condition": "Requiere acuerdo con las CCAA y respeto a sus competencias de gestión",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "Vox",
+    "condition": "Con especial atención a zonas rurales y de difícil cobertura y a la continuidad entre centros de salud, especialistas y hospitales",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "Vox",
+    "condition": "Solo cuando ayude efectivamente a reducir demoras; con transparencia, evaluación de calidad y control del gasto",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "two_party_evidence",
+    "question_id": "Q007",
+    "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana",
+    "parties": [
+      "PP",
+      "Sumar"
+    ],
+    "severity": "low",
+    "recommendation": "Aceptable si la pregunta es específica; buscar más evidencia si es posible"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q007",
+    "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana",
+    "party": "PP",
+    "condition": "Solo cuando sea necesario para hacer viable la actuación.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q007",
+    "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana",
+    "party": "Sumar",
+    "condition": "Preferencia por intervención en cascos urbanos frente a nuevos sectores.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q007",
+    "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "single_party_evidence",
+    "question_id": "Q008",
+    "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida descontrolada de rent",
+    "parties": [
+      "Sumar"
+    ],
+    "severity": "medium",
+    "recommendation": "Buscar evidencia en otros partidos o reformular pregunta"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q008",
+    "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida descontrolada de rent",
+    "party": "Sumar",
+    "condition": "Orientado a favorecer relaciones de alquiler estables y equilibradas",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PSOE",
+    "condition": "Las derechas derogaron la prórroga del impuesto a las grandes energéticas en 2025",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PSOE",
+    "condition": "Aplicable únicamente a rentas del ahorro superiores a 300.000 euros",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada en este texto",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "Sumar",
+    "condition": "Aplicable independientemente del origen de los ingresos",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "ERC",
+    "condition": "Aplicable a las liquidaciones de tributos cedidos.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "ERC",
+    "condition": "Aplicable a ingresos superiores a 6.000 euros mensuales",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "ERC",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "single_party_evidence",
+    "question_id": "Q010",
+    "question": "¿Deben reducirse los impuestos sobre la renta de las personas físicas (IRPF) para las clases medias ",
+    "parties": [
+      "PP"
+    ],
+    "severity": "medium",
+    "recommendation": "Buscar evidencia en otros partidos o reformular pregunta"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q010",
+    "question": "¿Deben reducirse los impuestos sobre la renta de las personas físicas (IRPF) para las clases medias ",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada en este texto",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q010",
+    "question": "¿Deben reducirse los impuestos sobre la renta de las personas físicas (IRPF) para las clases medias ",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "PP",
+    "condition": "Ninguna condición explícita.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "Vox",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "Vox",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "Vox",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PSOE",
+    "condition": "Dirigido a 2 millones de hogares que no tienen obligación de presentar declaración o carecen de cuota para beneficiarse del mínimo actual",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PP",
+    "condition": "El umbral se actualizará automáticamente cada vez que suba el SMI.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "ERC",
+    "condition": "Aplicable a tramos de renta del trabajo por debajo de 35.000 euros anuales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "single_party_evidence",
+    "question_id": "Q013",
+    "question": "¿Debe reforzarse la gestión y protección de los bosques frente a los incendios forestales?",
+    "parties": [
+      "ERC"
+    ],
+    "severity": "medium",
+    "recommendation": "Buscar evidencia en otros partidos o reformular pregunta"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q013",
+    "question": "¿Debe reforzarse la gestión y protección de los bosques frente a los incendios forestales?",
+    "party": "ERC",
+    "condition": "No se especifican condiciones adicionales en el fragmento disponible",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "PP",
+    "condition": "Se eliminarán programas considerados ineficaces.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "Sumar",
+    "condition": "Ninguna condición adicional especificada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "PP",
+    "condition": "Limitado a resolución de consultas más habituales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "PP",
+    "condition": "Aplicable a competencias ya gestionadas por las Comunidades Autónomas.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "Vox",
+    "condition": "Ninguna condición o excepción mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "ERC",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q016",
+    "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estraté",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q016",
+    "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estraté",
+    "party": "PP",
+    "condition": "Requisito mínimo de creación de 100 empleos.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q016",
+    "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estraté",
+    "party": "ERC",
+    "condition": "Substituir los PERTE, que finalizan en 2026, por proyectos estratégicos con gestión descentralizada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q016",
+    "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estraté",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q016",
+    "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estraté",
+    "party": "ERC",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q017",
+    "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y",
+    "party": "PSOE",
+    "condition": "Sin condiciones específicas mencionadas.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q017",
+    "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y",
+    "party": "PP",
+    "condition": "Vinculado a actuaciones de rehabilitación de vivienda habitual.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q017",
+    "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q017",
+    "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q018",
+    "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apoyar a los creadores ",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q018",
+    "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apoyar a los creadores ",
+    "party": "PP",
+    "condition": "Elaboración con participación del sector y las industrias culturales y creativas.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q018",
+    "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apoyar a los creadores ",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q019",
+    "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en ",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q019",
+    "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en ",
+    "party": "PP",
+    "condition": "Aplicable particularmente en Cuba, Nicaragua y Venezuela.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q019",
+    "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en ",
+    "party": "ERC",
+    "condition": "Ninguna condición específica adicional mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q019",
+    "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en ",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q019",
+    "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en ",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q020",
+    "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q020",
+    "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+    "party": "Vox",
+    "condition": "Con especial atención al patrimonio nacional (texto incompleto en el fragmento).",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q020",
+    "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+    "party": "ERC",
+    "condition": "Los informes técnicos disponibles y dictámenes de expertos internacionales alertan de riesgo para la conservación",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q020",
+    "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q020",
+    "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+    "party": "ERC",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Se realizará en el marco del diálogo social.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "La reforma deberá adecuarse al artículo 24.b de la Carta Social Europea revisada y a las decisiones del Comité Europeo de Derechos Sociales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Programación económica plurianual; sistema de seguimiento por territorios",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Vinculado al despliegue de la reciente reforma de la Ley General de Derechos de las Personas con Discapacidad y de su Inclusión Social",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Aplicable a jóvenes de 16 y 17 años",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Iniciada en 2026; orientada a reforzar garantías frente a intentos de retroceso",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Requiere reforma constitucional acordada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Requiere reforma constitucional acordada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Retomando la iniciativa legislativa impulsada durante la anterior legislatura.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Desde una mesa de diálogo y diagnóstico compartido con el sector",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Limitado a actividades calificadas como de bajo riesgo.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Aplicable únicamente a informes no vinculantes recibidos fuera de plazo.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Aplicable a disturbios que atenten contra personas, agentes de la autoridad y patrimonio público y privado.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Aplicable a delitos graves cometidos por menores (texto truncado).",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna especificada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Se prevén garantías específicas para personas que no puedan identificarse personalmente.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Aplicable a condenados por terrorismo, corrupción grave, delitos contra la vida o delitos graves contra las instituciones del Estado",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Mientras persista la situación de rebeldía declarada por delitos graves",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Aplicable durante la campaña electoral",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Aplicable cuando se produzca una segunda prórroga presupuestaria consecutiva.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Con el objetivo de que las Mesas no puedan bloquear una ley alargando plazos injustificadamente ni vaciar el debate acortándolos",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Condicionado a que la ley no cumpla el objetivo para el que fue aprobada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Aplicable dentro del mismo periodo de sesiones parlamentarias",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Se mantiene la posibilidad de uso de lenguas cooficiales en el Senado",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Requiere solicitud judicial por parte de la comunidad de propietarios",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Enmarcado en el Pacto Nacional para el campo.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Reforma a realizar con el sector",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición explícita",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "condition": "Ninguna condición mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "condition": "La reducción del tipo varía en función del número de hijos del contribuyente o familia.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "condition": "Ninguna condición adicional especificada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "condition": "Sin la identificación de las tres normas a derogar, la nueva ley no se tramita ni se aprueba.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "condition": "Aplicable a los vocales de procedencia judicial, no al total de miembros del CGPJ",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Las deudas con organismos públicos podrán exonerarse solo en condiciones legalmente reguladas",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "La eliminación del tope será progresiva.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Aplicable independientemente del origen de los ingresos",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Las propuestas se complementan con las de cooperación internacional, educación, vivienda, empleo, sanidad, servicios sociales, comercio exterior e igu",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Garantizando asistencia jurídica, respeto al principio de no devolución y control judicial efectivo en todas las actuaciones fronterizas.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Mecanismo ya aprobado en 2022 mediante Resolución 76/262.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Aplicable a condenados por corrupción",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Aplicable a partidos sin representación parlamentaria",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Los programas deben ser transparentes sobre las posibilidades de concretar las medidas y el grado de apertura a la negociación.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "No se especifican condiciones adicionales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Orientada a favorecer la sostenibilidad de entidades de interés general.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Se trata de una medida nueva sin legislación previa de referencia indicada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "condition": "Incluye lo previsto en el VI Plan Director con sus enfoques, estrategias y la estrategia de paz",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "ERC",
+    "condition": "Con participación de entidades LGBTI+ y priorizando el interés superior del menor.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "ERC",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "ERC",
+    "condition": "Aplicable a personas condenadas por delitos de maltrato animal.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Orientado a fortalecer la autonomía estratégica de España y Europa",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Partirá de un Libro Blanco o auditoría elaborada en dos meses por una comisión técnica de nueva creación compuesta por expertos del sector ferroviario",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Requiere modificación de la Ley de Propiedad Horizontal.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Basado en el desarrollo legislativo del artículo 129.2 de la Constitución Española",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Incluye mecanismos de detección temprana, coordinación sociosanitaria y apoyos comunitarios",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Aplicable en actos procesales en los que deban participar personas con discapacidad",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "La incorporación se plantea de forma estable.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Dirigido específicamente a mujeres rurales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Sin derecho a voto",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Vinculada al Consejo de la Juventud de España",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Requiere participación de fuerzas políticas y organizaciones sociales",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Junto a las organizaciones representativas del pueblo gitano",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Con participación de fuerzas políticas y organizaciones sociales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Las cámaras corporales deben ir acompañadas de garantías de protección de datos",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Requiere conexión de los sistemas de todas las administraciones",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Coordinación con aliados y socios internacionales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "condition": "Enmarcado en el ámbito de la Unión Europea.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición explícita.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición explícita.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Cuando la conducta no constituya delito; durante desórdenes multitudinarios que alteren gravemente la seguridad ciudadana.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Aplicable a comerciantes afectados por actos de vandalismo en desórdenes multitudinarios.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Conocimiento previo de la participación reiterada del menor; posibilidad razonable de impedirla; incumplimiento grave de deberes de guarda.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Dirigido especialmente a ayuntamientos medianos y pequeños.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna especificada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Alumnos que necesiten centros de educación especial",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna especificada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Vox",
+    "condition": "En territorio nacional considerado atacado",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Vox",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Vox",
+    "condition": "Ninguna condición o excepción mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Vox",
+    "condition": "Aplicable a competiciones deportivas femeninas.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Se establecerán criterios comunes de calidad, acompañamiento profesional, protección de la infancia y evaluación de resultados",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Aplicable a normas que afecten directamente a la juventud.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Incorporando la perspectiva de género y la participación de los agentes sociales y las partes interesadas.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Marco normativo: Ley 1/2026 integral de impulso de la economía social.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Requiere cambios legislativos para su implementación",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Condicionado a la aprobación de la Ley del Derecho a la Cultura.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Limitado a cuestiones de especial relevancia.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Los programas deben ser transparentes sobre las posibilidades de concretar las medidas y el grado de apertura a la negociación.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Aplicable a políticas públicas con impacto social.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "El reglamento está pendiente de aprobación desde 2015.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Limitado a políticas que afecten directamente a niñas, niños y adolescentes.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Se trata de una medida nueva sin legislación previa de referencia indicada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición adicional especificada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "condition": "Ninguna condición explícita mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "condition": "Ninguna condición específica mencionada",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "condition": "El acuerdo político ya fue alcanzado en enero de 2026 pero fue bloqueado parlamentariamente; su implementación requiere desbloqueo legislativo en la n",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "condition": "Limitado a los ámbitos de competencia de la Generalitat de Catalunya",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "condition": "Ninguna condición específica mencionada.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Vox",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "unclear_stance",
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "severity": "medium",
+    "recommendation": "Revisar manualmente: la postura no es clara a partir del claim"
+  },
+  {
+    "type": "single_party_evidence",
+    "question_id": "Q023",
+    "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+    "parties": [
+      "Vox"
+    ],
+    "severity": "medium",
+    "recommendation": "Buscar evidencia en otros partidos o reformular pregunta"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q023",
+    "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+    "party": "Vox",
+    "condition": "Aplica específicamente a delitos violentos como homicidios y agresiones sexuales.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  },
+  {
+    "type": "conditional_claim",
+    "question_id": "Q023",
+    "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+    "party": "Vox",
+    "condition": "Aplicable a los delitos considerados más graves.",
+    "severity": "info",
+    "recommendation": "Verificar que la condición no invalide la posición"
+  }
+]

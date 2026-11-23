@@ -1,0 +1,1657 @@
+{
+ "min": 0.5,
+ "created_at": "2026-11-20T17:37:12.271Z",
+ "model": "jev-1.14.0",
+ "items": [
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 8,
+   "text": "Porque en un mundo marcado por gigantes económicos, tecnológicos y geopolíticos, Europa representa nuestra mejor herramienta para defender nuestros valores y nuestros intereses. La emergencia climática constituye uno de los mayores desafíos de nuestro tiempo. Sus efectos ya son visibles y afectan a nuestra economía, a nuestro territorio y a nuestra calidad de vida. Por eso apostamos por acelerar una transición ecológica justa, impulsar las energías renovables, avanzar hacia una mayor autonomía energética y convertir la sostenibilidad en una fuente de empleo, innovación y prosperidad. Porque la transición ecológica no es solo una necesidad ambiental; es un requisito imprescindible para un progreso más justo, más seguro y más duradero. Del mismo modo, la revolución tecnológica y la inteligencia artificial ofrecen enormes posibilidades de progreso. Pueden mejorar nuestra productividad, impulsar la investigación científica y ampliar las capacidades humanas. Pero también plantean riesgos para la privacidad, la igualdad y la calidad democrática.",
+   "pRel": 0.96,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.94
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 14,
+   "text": "Impulsar una nueva política industrial para la autonomía estratégica. Aprobaremos una nueva Ley de Industria y Autonomía Estratégica y apoyaremos la industria limpia y las cadenas de valor estratégicas mediante la electrificación, las energías renovables, el hidrógeno renovable, el almacenamiento energético, la economía circular, la simbiosis industrial y la modernización y ampliación de las redes eléctricas, convocando nuevos concursos de acceso para garantizar el desarrollo de proyectos industriales estratégicos.",
+   "pRel": 0.58,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.52
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 14,
+   "text": "Impulsar la descarbonización y modernización de la industria mediante las energías renovables, el hidrógeno renovable, el biogás, los combustibles",
+   "pRel": 0.85,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.6
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 21,
+   "text": "extenderemos la infraestructura de recarga eléctrica en todo el territorio e impulsaremos la descarbonización del transporte de mercancías, los puertos y el transporte pesado mediante la electrificación, el hidrógeno renovable y otros combustibles sostenibles. 31.",
+   "pRel": 0.6,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.6
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q032",
+   "page": 35,
+   "text": "Un país que protege: mejores salarios, trabajo digno y menos desigualdad En un contexto global marcado por la inflación provocada por la guerra, y el aumento de las desigualdades, España ha demostrado que hay otra forma de hacer las cosas: se puede gobernar para mejorar la vida de la gente. Mientras en muchos países de nuestro entorno se ha protegido a los millonarios a costa de los trabajadores, que han perdido poder adquisitivo y derechos, en España hemos hecho lo contrario: proteger los ingresos de la gente, ampliar sus derechos y reducir la brecha entre ricos y pobres. Lo hemos hecho con tres prioridades claras: que los ingresos de las familias crezcan más rápido que el coste de la vida, que todo el mundo tenga derecho a un trabajo digno y que la acción del gobierno reduzca las diferencias entre los que más tienen y los que menos. Esto se ha plasmado en políticas como revalorizar las pensiones con el IPC, incrementar el SMI, aprobar la reforma laboral, o implementar impuestos extraordinarios a la banca y al sector energético. Políticas que responden a una misma convicción: la economía debe estar al servicio de la gente, y no al revés.",
+   "pRel": 0.74,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.88
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q032",
+   "page": 35,
+   "text": "Desde 2018, hemos aumentado el salario mínimo un 66%, pasando de 736 a 1.221 euros. Hemos garantizado por ley que las pensiones mantengan su poder adquisitivo, incrementando las contributivas medias un 46% y las no contributivas un 68%. Hemos creado el Ingreso Mínimo Vital y el CAPI, que ya benefician a más de 3,8 millones de personas y",
+   "pRel": 0.52,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.59
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q032",
+   "page": 37,
+   "text": "Blindar por ley un SMI digno. Blindar por ley el SMI por encima del 60% del salario medio y actualizarlo periódicamente según los precios, los salarios, la productividad y las necesidades de las personas trabajadoras, garantizando que cada subida mejore efectivamente la nómina y no quede neutralizada por la absorción de complementos salariales.",
+   "pRel": 0.88,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.77
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q031",
+   "page": 41,
+   "text": "Trabajo digno Nuestra ambición es sencilla y firme: que la gente gane más, viva mejor, y que las personas tengan un trabajo digno. Porque es la condición necesaria e irrenunciable para una buena vida y para una democracia que funcione bien. Estas políticas tienen por objetivo ensanchar los derechos laborales de los españoles y reforzar el trabajo digno. Compromisos 108. Completar la reducción de la jornada a 37,5 horas e incentivar los avances en la negociación colectiva hacia las 35 horas. Trabajar menos horas debe permitir ganar tiempo para la familia, los cuidados, el descanso y la vida personal, sin perder salario. Se aplicará con un calendario que beba del diálogo social y periodos transitorios que faciliten a las pymes su implementación. 109. Erradicar las horas extra ilegales y no remuneradas. Implantar un registro horario digital fiable, que recoja las jornadas laborales reales, haciendo efectivo el derecho al descanso y la desconexión digital y reforzar la Inspección de Trabajo para perseguir los incumplimientos. 110.",
+   "pRel": 0.97,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.62
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q033",
+   "page": 41,
+   "text": "Reformar el despido improcedente para garantizar una reparación efectiva, proporcionada y disuasoria, teniendo en cuenta las circunstancias y los daños causados, y adecuar la normativa al artículo 24.b de la Carta Social Europea revisada y a las decisiones del Comité Europeo de Derechos Sociales.",
+   "pRel": 0.53,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.46
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 63,
+   "text": "Un país que combate el cambio climático y aprovecha la transición verde El cambio climático ya no es una amenaza del futuro: es una realidad que afecta a nuestras vidas, nuestra economía y nuestro territorio. Sus impactos sobre la vida de las personas, la salud, la economía y el territorio son cada vez más visibles. La DANA de 2024 dejó 241 víctimas, los incendios de 2025 arrasaron más de 350.000 hectáreas y los fenómenos climáticos extremos provocan cada año pérdidas multimillonarias. Sus consecuencias golpean especialmente al mundo rural, que lleva décadas sufriendo el envejecimiento y la pérdida de población. Si no actuamos, el cambio climático agravará las desigualdades, aumentará nuestra dependencia de los combustibles fósiles y dejará atrás a quienes viven en los territorios más vulnerables. Pero la transición ecológica nos presenta también una gran oportunidad para generar prosperidad, crear empleo y cohesionar nuestro territorio. Aprovechar nuestros recursos naturales para producir energía limpia y barata, modernizar nuestra economía, fortalecer nuestra autonomía energética y garantizar que vivir en un pueblo no signifique tener menos oportunidades que vivir en una ciudad.",
+   "pRel": 0.62,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.82
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 63,
+   "text": "Durante estos ocho años hemos demostrado que proteger el planeta y mejorar la vida de la gente pueden y deben ir de la mano. Declaramos la emergencia climática y aprobamos la primera Ley de Cambio Climático, convirtiendo el desafío climático en una oportunidad para reforzar nuestra autonomía energética, modernizar nuestra economía y generar prosperidad compartida. Mientras que durante el último Gobierno del PP la potencia renovable apenas creció dos puntos porcentuales, desde 2018 ha aumentado 23 puntos, hasta representar el 72% de nuestra potencia eléctrica instalada, contribuyendo a que los precios mayoristas de la electricidad sean inferiores a la media europea. Y hemos trabajado para que los beneficios de la transición ecológica lleguen a los hogares. Lo hemos hecho ampliando el bono social eléctrico, impulsando las ayudas al autoconsumo y las comunidades energéticas, y poniendo en marcha la excepción ibérica. Y seguiremos haciéndolo con los más de 9.000 millones de euros movilizados para el Plan Social para el Clima. Porque la transición ecológica debe ser también una transición justa que mejore la vida de la gente.",
+   "pRel": 0.7,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.64
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 63,
+   "text": "Lo hemos hecho impulsando una transición ecológica que también es una transformación económica y social. Nuestra apuesta por las energías renovables, la electrificación y la",
+   "pRel": 0.6,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.62
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 64,
+   "text": "una España que produzca la mayor parte de su electricidad con energía limpia y barata, que proteja a su gente frente a los extremos climáticos y que ofrezca oportunidades de futuro en cada rincón del país. Para conseguirlo, proponemos medidas articuladas en cinco grandes prioridades: impulsar una economía verde basada en las energías renovables y la economía circular; reforzar nuestra resiliencia climática, mejorando la prevención de emergencias y la seguridad hídrica;",
+   "pRel": 0.82,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.83
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 65,
+   "text": "Economía verde Energía renovable para una vida asequible, una industria competitiva y un país más seguro Las renovables son autonomía estratégica, precios estables, empresas más competitivas y seguridad frente a las guerras fósiles. Continuaremos promoviendo la transición energética, para que el sol, el viento y la industria españolas reviertan en beneficios y oportunidades en todos los territorios y para toda la sociedad. Compromisos",
+   "pRel": 0.82,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.71
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 65,
+   "text": "234 234. Impulsar el despliegue de energías renovables, para alcanzar el 81% de generación eléctrica en 2030, priorizando su ubicación en las Zonas de Aceleración Renovable para garantizar el máximo consenso social y la compatibilidad con la preservación de la biodiversidad y la actividad agroganadera. 235. Impulsar la electrificación como elemento crucial para aprovechar el despliegue de renovables, y aprobar un plan nacional para promover el bombeo hidroeléctrico. Aprobar una hoja de ruta para el abandono progresivo de los combustibles fósiles 236. Extender el autoconsumo y la eficiencia energética en viviendas, edificios públicos, pymes e industrias, trasladando los beneficios de las energías renovables a hogares, empresas y administraciones públicas. 237. Acelerar el despliegue del almacenamiento energético, la gestión de la demanda, el hidrógeno renovable y las interconexiones internacionales para reforzar la seguridad y flexibilidad del sistema eléctrico. 238.",
+   "pRel": 0.96,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.92
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 65,
+   "text": "Acelerar el refuerzo y la extensión de la red troncal de gasoductos preparados para el transporte de hidrógeno verde, consolidando las interconexiones estratégicas con Francia para posicionar a nuestro país como el principal nodo de energía limpia y renovable del sur de Europa.",
+   "pRel": 0.71,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.68
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q027",
+   "page": 66,
+   "text": "239. Defender la reforma del mercado eléctrico europeo para garantizar que los beneficios de las energías renovables se trasladen de forma efectiva a consumidores, hogares y empresas. 240. Mantener el calendario de cierre de las centrales nucleares hasta 2035 y desarrollar proyectos de transición justa en las comarcas afectadas, preservando las capacidades tecnológicas y de conocimiento vinculadas al sector. 241. Reorientar la fiscalidad para la transición ecológica, eliminando barreras y reduciendo costes para las tecnologías limpias. 242. Desplegar el Plan Social para el Clima para proteger a los hogares vulnerables, las microempresas y las personas usuarias del transporte frente a los costes de la transición. 243. Reforzar las capacidades industriales nacionales en las cadenas de valor verdes en sectores estratégicos como los bienes de equipo para energías renovables, almacenamiento energético y acero verde. Para ello, se promoverá la I+D, la transferencia de conocimiento y la compra pública innovadora. 244. Formar y recualificar a las personas trabajadoras para los empleos verdes del futuro, reforzando la FP Dual y los programas de capacitación permanente. 245.",
+   "pRel": 0.56,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.71
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q028",
+   "page": 69,
+   "text": "266. Garantizar que los centros de datos operen con energías renovables, reutilización del calor y un uso responsable del agua, minimizando su impacto ambiental.",
+   "pRel": 0.51,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.74
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q032",
+   "page": 76,
+   "text": "Durante estos años hemos reducido a mínimos históricos las brechas de género en el mercado de trabajo y apostado por la conciliación y la corresponsabilidad. En 2025 alcanzamos el máximo histórico de más de 10,45 millones de mujeres ocupadas, que representan ya el 47 % de la afiliación a la Seguridad Social. Hemos extendido los planes de igualdad a empresas de 50 o más personas trabajadoras y establecido registros retributivos y auditorías salariales. La brecha salarial se redujo del 21,4 % en 2018 al 15,7 % en 2023. Hemos incrementado el SMI un 66 %, lo que beneficia especialmente a las mujeres, mayoría entre quienes perciben los salarios más bajos. Hemos reconocido el derecho a la prestación por desempleo y mejorado las condiciones de las trabajadoras del hogar, poniendo fin a una discriminación histórica. Hemos creado el complemento para reducir la brecha de género en las pensiones, compensando el impacto de los cuidados en las carreras laborales. Hemos aprobado la Ley de Representación Paritaria, para garantizar una presencia equilibrada de mujeres y hombres en los órganos de decisión política, institucional y empresarial.",
+   "pRel": 0.54,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.66
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q031",
+   "page": 80,
+   "text": "319 319. Aprobar una Ley de Usos del Tiempo de Trabajo, promoviendo horarios racionales, la reducción del tiempo de trabajo sin pérdida salarial, la desconexión digital y la conciliación sin penalizaciones profesionales. 320. Crear un Indicador Nacional de Brechas de Tiempo, que permita evaluar periódicamente la distribución de los cuidados y del tiempo entre mujeres y hombres. 321. Promover la corresponsabilidad de los hombres en los cuidados y las tareas domésticas, impulsando cambios educativos, culturales y laborales que favorezcan una participación equilibrada.",
+   "pRel": 0.85,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.6
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q025",
+   "page": 88,
+   "text": "Y la cultura cuenta hoy con la mayor inversión de la democracia. Hemos reforzado la convivencia y la seguridad. Contamos con las mayores plantillas de Policía Nacional y Guardia Civil de nuestra historia, España sigue entre los países más seguros de su entorno y hemos ampliado las vías para una migración humanitaria, ordenada, legal y segura.",
+   "pRel": 0.56,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.74
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q030",
+   "page": 91,
+   "text": "Un Estado autonómico que funciona: cooperación, autogobierno y cohesión La España de las autonomías es uno de los grandes logros de nuestra democracia: ha acercado los servicios públicos a la ciudadanía, ha reconocido nuestra diversidad y ha impulsado el desarrollo de todos los territorios. Casi cincuenta años después, el reto no es recentralizar ni fragmentar, sino hacer que el Estado autonómico funcione mejor: con más cooperación entre administraciones, con instituciones que representen de verdad a los territorios y con un compromiso firme con la igualdad de derechos, se viva donde se viva. Compromisos 382. Reformar el Senado para convertirlo en una auténtica Cámara de representación territorial, haciendo coincidir sus circunscripciones con el ámbito autonómico. 383. Institucionalizar la Conferencia de Presidentes. La convocaremos con una periodicidad fija y un reglamento que garantice el seguimiento de sus acuerdos, y reforzaremos las conferencias sectoriales como espacio ordinario de cogobernanza. 384. Aprobar una ley de cooperación interadministrativa.",
+   "pRel": 0.58,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.98
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q025",
+   "page": 92,
+   "text": "Impulsar una política migratoria regular, humana y eficaz España necesita una migración ordenada, legal y segura, que responda a sus necesidades demográficas y económicas. Desde 2018 hemos ampliado las vías legales para residir y trabajar en España, modernizado la normativa de extranjería y reforzado la cooperación con los países de origen y de tránsito para combatir a las mafias y salvar vidas. Queremos seguir avanzando en esta dirección: simplificar los trámites, dar seguridad jurídica, impulsar la contratación en origen, agilizar la homologación de títulos y facilitar el acceso al empleo, para aprovechar el talento de quienes vienen a vivir y trabajar aquí. Ante el aumento de las crisis humanitarias, España seguirá siendo un puerto seguro para las personas refugiadas, con una política migratoria unida a la cooperación al desarrollo y a la defensa del derecho internacional. La integración es un compromiso de doble sentido, con derechos y obligaciones para todos. Desplegaremos el Plan de Integración y Ciudadanía para reforzar la formación, el empleo, la educación y la sanidad, porque la mejor respuesta al racismo y la xenofobia es una convivencia en igualdad de oportunidades.",
+   "pRel": 0.8,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.51
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q025",
+   "page": 92,
+   "text": "Compromisos 388. Desplegar el Plan de Integración y Ciudadanía 2026-2030, con una dotación inicial de 500 millones de euros y la colaboración de las administraciones públicas y los agentes sociales, para favorecer la integración y la convivencia, promoviendo la igualdad de derechos, el cumplimiento de las obligaciones y la participación de las personas migrantes en la sociedad. 389. Ampliar las vías legales y seguras de protección internacional y reforzar el sistema público de acogida y asilo, con mecanismos para el reasentamiento y visados humanitarios, financiación estable y atención especializada en salud mental, educación, traducción e integración social.",
+   "pRel": 0.97,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.96
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q025",
+   "page": 93,
+   "text": "390. Promover la integración participación social, cívica y política de las personas inmigrantes, apoyando el asociacionismo, reforzando los espacios de participación ciudadana e impulsando su implicación en la vida pública. 391. Garantizar un sistema de acogida digno, robusto y una protección internacional efectiva, reforzando la protección especialmente de los niños, niñas y adolescentes que lleguen solos, situando siempre el interés superior del menor en el centro de nuestra política.",
+   "pRel": 0.8,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.66
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 7,
+   "text": "LA ESPAÑA QUE HAREMOS ENTRE TODOS REPARAR EL ESTADO 1.1 LA ADMINISTRACIÓN SERÁ RIGUROSA, DIMENSIONADA Y EFICAZ - Pág. 12 1.2 EL ESTADO DEJARÁ DE ASFIXIAR AL QUE CUMPLE Y DE SUBVENCIONAR AL QUE SE APROVECHA - Pág. 13 1.3 EL ESTADO ESTARÁ PRESENTE EN TODA ESPAÑA - Pág. 14 1.4 SE HARÁ CUMPLIR LA LEY EN TODO EL TERRITORIO - Pág. 15 1.5 NUESTRO PAÍS RECUPERARÁ EL CONTROL DE SUS FRONTERAS - Pág. 18 1.6 VIVIR EN ESPAÑA SERÁ UN COMPROMISO MUTUO - Pág. 19 1.7 EL GOBIERNO LLEGARÁ EL PRIMERO CUANDO HAYA UNA EMERGENCIA - Pág. 20 1.8 ESPAÑA TENDRÁ MEDIOS PARA SU DEFENSA - Pág. 21 REGENERAR LA DEMOCRACIA 2.1 EL PODER SE GANARÁ CON MÁS GARANTÍAS Y SE EJERCERÁ DE FORMA MÁS ESTABLE - Pág. 24 2.2 NADIE GOBERNARÁ SIN PRESUPUESTOS NI GASTARÁ SIN CONTROL - Pág. 26 2.3 EL PODER NO CONTROLARÁ A QUIEN LO VIGILA - Pág. 26 2.4 LA POLÍTICA NUNCA SERÁ UN NEGOCIO - Pág. 28 2.5 EL PARLAMENTO VOLVERÁ A HACER BUENAS LEYES Y A CONTROLAR AL GOBIERNO - Pág. 29 REUNIR A LA NACIÓN 3.1 UNA CIUDADANÍA COMÚN - Pág. 31 3.2 UNIR TERRITORIOS, GENERACIONES Y PERSONAS - Pág. 32 3.3 UNAS INFRAESTRUCTURAS SEGURAS QUE VERTEBREN ESPAÑA - Pág. 36 3.4 RECUPERAR LO QUE COMPARTIMOS - Pág.",
+   "pRel": 0.64,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.65
+  },
+  {
+   "party": "PP",
+   "qid": "Q029",
+   "page": 8,
+   "text": "Respetar los límites, preservar la neutralidad de las instituciones y asumir responsabilidades dependen de quienes ejercen el poder. Cuando eso falla, la democracia se degrada, lo excepcional se vuelve ordinario, los controles llegan tarde y el abuso deja de tener coste. Esa es la grieta que tenemos que cerrar. La Nación también se ha debilitado. Se ha aceptado que la igualdad pueda negociarse, que las competencias exclusivas del Estado entren en intercambios parlamentarios y que las identidades pesen más que la ciudadanía compartida. El enfrentamiento entre españoles se ha utilizado como una forma de alcanzar el poder y gobernar. Y eso nos ha alejado de nuestras instituciones, pero también unos de otros. No porque hayamos dejado de creer en nosotros mismos ni de querer hacer cosas juntos, sino porque durante todos estos años se ha utilizado demasiado lo que nos separa y demasiado poco todo lo que compartimos. Y todo esto ha tenido una consecuencia más honda: España ha empezado a esperar menos de sí misma.",
+   "pRel": 0.57,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.65
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 14,
+   "text": "RECUPERAREMOS LA NORMALIDAD EN CEUTA Y ASEGURAREMOS SU FUTURO. Resolver la crisis de Ceuta será una prioridad desde el primer Consejo de Ministros. Procederemos a las devoluciones de quienes entraron ilegalmente y no tengan derecho a permanecer en España. Fortaleceremos físicamente la frontera y reclamaremos la cooperación de Marruecos en las readmisiones. Aprobaremos el Plan de Reactivación de Ceuta para que el respaldo del Estado continúe después de la emergencia. Reforzaremos la plantilla del hospital público e impulsaremos la construcción de nuevas viviendas para atender las necesi-",
+   "pRel": 0.96,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.88
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 18,
+   "text": "LA FRONTERA SUR TENDRÁ MÁS AGENTES Y EL APOYO DE LAS FUERZAS ARMADAS. Reforzaremos efectivos, vigilancia e infraestructuras en las fronteras terrestres, marítimas y aeroportuarias. Canarias, Baleares, Ceuta, Melilla, el Estrecho y las zonas donde existe mayor presión migratoria, incluidos los principales aeropuertos, tendrán un refuerzo permanente de la Guardia Civil y de la Policía Nacional, presencia estable de Frontex y cooperación con Europol. Reformaremos la Ley de Extranjería para que el rechazo en frontera cubra también las entradas a nado en Ceuta y Melilla. Modernizaremos las vallas, los espigones y los sistemas de vigilancia de Ceuta y Melilla, con sensores, cámaras térmicas y drones. En Canarias, la Guardia Civil aumentará el número de sus patrulleras y la vigilancia marítima integrará medios navales y aéreos, drones y satélites. Las Fuerzas Armadas apoyarán en la frontera cuando lo exija la seguridad nacional, con cobertura jurídica, reglas claras y medios.",
+   "pRel": 0.91,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.47
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 18,
+   "text": "QUIENES ENTREN IRREGULARMENTE POR LA FRONTERA SERÁN IDENTIFICADOS EN UN MÁXIMO DE SIETE DÍAS Y LAS DEVOLUCIONES SE PRODUCIRÁN SIN DEMORA. En un máximo de una semana, comprobaremos la identidad de quienes sean interceptados al cruzar ilegalmente nuestras fronteras y si suponen un riesgo para la seguridad. Tras estos controles, tramitaremos con rapidez las solicitudes de asilo o la devolución que corresponda. En situaciones de emergencia migratoria, y de la mano del nuevo mecanismo europeo, reduciremos los plazos y trámites al máximo para retornar cuanto antes a quienes hayan entrado ilegalmente.",
+   "pRel": 0.97,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.75
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 18,
+   "text": "EL ASILO FUNCIONARÁ PARA QUIEN DE VERDAD NECESITA PROTECCIÓN. Resolveremos las solicitudes pendientes y reduciremos los tiempos de tramitación. Quien tenga derecho a asilo debe obtenerlo sin demoras y las peticiones sin fundamento deben rechazarse con rapidez. Aplicaremos el Pacto Europeo e impulsaremos acuerdos con países seguros para que examinen solicitudes y acojan a quienes lo necesiten. Impediremos que encadenar peticiones rechazadas sin aportar hechos nuevos sirva para bloquear una expulsión.",
+   "pRel": 0.62,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.63
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 18,
+   "text": "LA INMIGRACIÓN ILEGAL NO SERÁ RENTABLE PARA NADIE. Extenderemos a países de origen y tránsito equipos conjuntos permanentes de investigación policial para desarticular las redes antes de que",
+   "pRel": 0.81,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.48
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 19,
+   "text": "19 organicen las salidas. Perseguiremos a quien les suministre a sabiendas embarcaciones, motores o combustible y seguiremos su dinero hasta decomisarlo. Haremos lo mismo con la contratación clandestina, que alimenta la irregularidad y la explotación: Inspección de Trabajo, Seguridad Social y Policía Nacional actuarán juntas, y endureceremos las sanciones a quienes trafican con contratos simulados, protegiendo siempre los derechos de los trabajadores.",
+   "pRel": 0.54,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.65
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 19,
+   "text": "LA INMIGRACIÓN SE AJUSTARÁ A LA CAPACIDAD REAL DE ACOGIDA DE NUESTRO PAÍS. Fijaremos cupos anuales que determinen cuántos trabajadores pueden venir y para qué sectores. Además, sólo participarán los países que colaboren en los retornos y en el control de la inmigración irregular. Revisaremos los cupos cada año según el paro y los puestos sin cubrir, y los ajustaremos a la capacidad del país en vivienda, servicios públicos y empleo.",
+   "pRel": 0.87,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.41
+  },
+  {
+   "party": "PP",
+   "qid": "Q024",
+   "page": 19,
+   "text": "PROHIBIREMOS POR LEY LAS REGULARIZACIONES MASIVAS E INDISCRIMINADAS Y EL ARRAIGO SERÁ EXCEPCIONAL. Reformaremos la Ley de Extranjería para prohibir las regularizaciones masivas e indiscriminadas y para que el arraigo sea un reconocimiento individual excepcional, no una vía generalizada de regularización. El empadronamiento, por sí solo, no bastará para acceder a ayudas económicas no urgentes.",
+   "pRel": 0.91,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.78
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 19,
+   "text": "PROHIBIREMOS POR LEY LAS REGULARIZACIONES MASIVAS E INDISCRIMINADAS Y EL ARRAIGO SERÁ EXCEPCIONAL. Reformaremos la Ley de Extranjería para prohibir las regularizaciones masivas e indiscriminadas y para que el arraigo sea un reconocimiento individual excepcional, no una vía generalizada de regularización. El empadronamiento, por sí solo, no bastará para acceder a ayudas económicas no urgentes.",
+   "pRel": 0.54,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.72
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 19,
+   "text": "QUIEN DELINQUE SERÁ EXPULSADO DE ESPAÑA. La expulsión será la regla para los extranjeros",
+   "pRel": 0.79,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.46
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 19,
+   "text": "condenados por delitos sexuales, delitos de sangre y multirreincidencia. Tener causas pendientes en varios juzgados no servirá para frenar una expulsión. La prohibición de entrada será permanente para quien suponga un riesgo para la seguridad, y retiraremos el permiso de residencia a quien tenga vínculos con el crimen organizado o con la radicalización violenta.",
+   "pRel": 0.77,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.71
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 19,
+   "text": "LAS ÓRDENES DE RETORNO SE EJECUTARÁN, NO COMO HASTA AHORA. Aplicaremos ple-",
+   "pRel": 0.89,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.54
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 19,
+   "text": "namente el nuevo Reglamento Europeo de Retornos y reforzaremos los medios para ejecutar las órdenes dictadas, incluidas las de otros países europeos. Ampliaremos el tiempo máximo de permanencia en los centros de internamiento, dentro de los límites europeos, para que las expulsiones se ejecuten. Utilizaremos todos los destinos que el Reglamento permite, incluidos terceros países seguros y primeros países de asilo, e impulsaremos acuerdos para crear centros de retorno en terceros países. Si un país no coopera en las readmisiones, condicionaremos a ello los visados, la cooperación al desarrollo y la posición de España en la",
+   "pRel": 0.95,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.46
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 20,
+   "text": "20 política comercial europea. Impulsaremos programas de retorno voluntario con incentivos, en colaboración con la Organización Internacional para las Migraciones.",
+   "pRel": 0.58,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.92
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 20,
+   "text": "PROMOVEREMOS EL REGRESO DE LOS MENORES CON SUS FAMILIAS COMO OBJETIVO PRIORITARIO. Resolveremos en un máximo de 72 horas los procedimientos de determinación de la edad, reforzando los medios de la Fiscalía. Introduciremos en el Código Penal el delito de fraude de identidad, edad o nacionalidad para acceder a la protección de menores. Reformaremos la Ley de Extranjería y la legislación de protección de menores para priorizar la reunificación familiar y el retorno seguro a sus países de origen y para permitir la expulsión de quienes se hagan pasar por menores. Eliminaremos la exigencia de un informe individualizado del país de origen como requisito imprescindible para autorizar el retorno, estableciendo mecanismos alternativos que acrediten las garantías de protección y acogida. Exigiremos a los países de origen que cumplan íntegramente los acuerdos internacionales de retorno. El Estado asumirá la atención inicial, la identificación y la determinación de edad, y revisaremos el régimen de tutela para evitar su atribución automática a las Comunidades Autónomas. Sustituiremos el reparto como respuesta principal por un modelo de protección individualizada con retorno.",
+   "pRel": 0.89,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.63
+  },
+  {
+   "party": "PP",
+   "qid": "Q029",
+   "page": 25,
+   "text": "LA IGUALDAD DE LOS ESPAÑOLES NO SERÁ EL PRECIO DE UNA INVESTIDURA. No habrá cesiones en materia de igualdad básica, Hacienda general, Seguridad Social, Defensa y Fuerzas Armadas, política exterior y política migratoria y fronteras a cambio de apoyos para formar o sostener un Gobierno. Preservaremos la capacidad del Estado para cumplir sus responsabilidades y evaluaremos cualquier transferencia por sus efectos sobre la igualdad de los españoles.",
+   "pRel": 0.56,
+   "choice": "partially_against",
+   "value": -1,
+   "confidence": 0.59
+  },
+  {
+   "party": "PP",
+   "qid": "Q030",
+   "page": 32,
+   "text": "IMPLANTAREMOS UNA PRUEBA DE ACCESO A LA UNIVERSIDAD (PAU) COMÚN. Se aplicará en todo el territorio nacional. Sus condiciones básicas, incluyendo su evaluación, se acordarán con las Comunidades Autónomas y los órganos de representación de las universidades, con el fin de garantizar la igualdad de oportunidades.",
+   "pRel": 0.63,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.82
+  },
+  {
+   "party": "PP",
+   "qid": "Q029",
+   "page": 33,
+   "text": "NINGUNA COMUNIDAD SALDRÁ DEL SISTEMA COMÚN. Ninguna de las Comunidades que ac-",
+   "pRel": 0.5,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.48
+  },
+  {
+   "party": "PP",
+   "qid": "Q033",
+   "page": 46,
+   "text": "172 SI ENFERMAS O EL NEGOCIO VA MAL, TENDRÁS UNA SEGUNDA OPORTUNIDAD. El autóno-",
+   "pRel": 0.54,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.44
+  },
+  {
+   "party": "PP",
+   "qid": "Q033",
+   "page": 50,
+   "text": "Los jóvenes que se incorporen cobrarán por anticipado hasta el 70% de la ayuda de la PAC a la incorporación y tendrán ventajas fiscales especiales. Agilizaremos la contratación de mano de obra en origen. Implantaremos un sistema de sustitución por bajas y descansos, y apoyaremos a quien se jubile para que traspase su explotación.",
+   "pRel": 0.51,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.81
+  },
+  {
+   "party": "PP",
+   "qid": "Q027",
+   "page": 54,
+   "text": "4.9 ESPAÑA PUEDE SER POTENCIA ENERGÉTICA DE EUROPA 228 ELIMINAREMOS EL CALENDARIO DE CIERRE DE ALMARAZ, ASCÓ, VANDELLÓS, COFRENTES",
+   "pRel": 0.89,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.92
+  },
+  {
+   "party": "PP",
+   "qid": "Q027",
+   "page": 54,
+   "text": "Y TRILLO. En los primeros cien días de Gobierno tramitaremos la extensión de su vida útil con el visto bueno del Consejo de Seguridad Nuclear, garantizando la seguridad de las instalaciones. Reformularemos con realismo el Plan Nacional Integrado de Energía y Clima. Nuclear, renovables, almacenamiento y respaldo suficiente se complementarán, y todas las tecnologías competirán en igualdad en subastas, ayudas y regulación. Aprobaremos una estrategia nacional de energía nuclear y participaremos en las iniciativas europeas de reactores avanzados y de pequeños reactores modulares. Facilitaremos contratos de electricidad a largo plazo, que dan precios estables a la industria y a los hogares. La neutralidad tecnológica y la seguridad de suministro guiarán cada decisión. No será el Gobierno quien decida qué tecnología debe ganar, sino su capacidad para ofrecer energía segura, limpia y competitiva.",
+   "pRel": 0.95,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.46
+  },
+  {
+   "party": "PP",
+   "qid": "Q028",
+   "page": 55,
+   "text": "cia y sin dogmatismos. La lucha contra el cambio climático y la descarbonización son objetivos irrenunciables para Europa por razones ambientales, geoestratégicas y económicas. Pero ha llegado el momento de revisar los ritmos de cada sector atendiendo a tres factores: lo que está ocurriendo en el resto del mundo, la tecnología realmente disponible y la evolución de la demanda. Pondremos freno a la imposición de calendarios imposibles. Defendemos una transición ordenada, realista y justa, que haga compatible la protección del medioambiente con el crecimiento económico y el bienestar. Los ciudadanos no deben perder oportunidades ni sufrir un encarecimiento desproporcionado de la vida por las políticas climáticas. No impondremos obligaciones innecesarias y retiraremos las que perjudiquen la competitividad, la industria o el empleo.",
+   "pRel": 0.64,
+   "choice": "partially_against",
+   "value": -1,
+   "confidence": 0.41
+  },
+  {
+   "party": "PP",
+   "qid": "Q026",
+   "page": 56,
+   "text": "238 LA FRONTERA SUR SERÁ UNA PRIORIDAD DE ESPAÑA Y DE EUROPA. Ceuta y Melilla son la",
+   "pRel": 0.5,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.75
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 7,
+   "text": "Expulsión de todos los invasores con carácter inmediato. Defender la españolidad de Ceuta y Melilla, y a los trabajadores, familias y empresas de estas dos ciudades españolas.",
+   "pRel": 0.87,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.83
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 7,
+   "text": "Militarización de la frontera para repeler cualquier intento futuro de invasión o ataque híbrido. Refuerzo de la protección de las fronteras terrestres de Ceuta y Melilla, sus aguas bajo soberanía española y su espacio aéreo.",
+   "pRel": 0.83,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.7
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 7,
+   "text": "Realizar un plan de inversiones que garantice el futuro y la prosperidad de ambas ciudades y su protección. Garantizar la libertad y seguridad de las familias españolas residentes en territorio nacional atacado y establecer medidas para evitar futuras invasiones así como reparar las consecuencias sociales, económicas y psicológicas de la producida en Ceuta.",
+   "pRel": 0.58,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.59
+  },
+  {
+   "party": "Vox",
+   "qid": "Q027",
+   "page": 12,
+   "text": "Recuperar urgentemente el plan nuclear nacional. Se garantizará la supervivencia de las centrales nucleares actuales, derogando el calendario de cierre. Se promoverán estudios urgentes para instalar centrales nucleares en los emplazamientos disponibles adyacentes a las actuales. Se llevarán a cabo aquellos proyectos que sean viables con la mayor brevedad posible.",
+   "pRel": 0.97,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.93
+  },
+  {
+   "party": "Vox",
+   "qid": "Q033",
+   "page": 13,
+   "text": "Derogar la legislación laboral de Sánchez que ha agravado la precariedad, desincentivado la contratación y empeorado una situación ya de por sí insostenible, que ha maquillado las cifras de temporalidad y que beneficia al duopolio sindical que ha traicionado a los trabajadores.",
+   "pRel": 0.79,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.69
+  },
+  {
+   "party": "Vox",
+   "qid": "Q024",
+   "page": 15,
+   "text": "Ni uno más. Después de recibir a 5 millones de personas en 5 años España no puede acoger a más inmigrantes. Prohibición de las regularizaciones masivas. Quien entra de forma ilegal jamás podrá regularizar su situación.",
+   "pRel": 0.94,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.99
+  },
+  {
+   "party": "Vox",
+   "qid": "Q025",
+   "page": 15,
+   "text": "Ni uno más. Después de recibir a 5 millones de personas en 5 años España no puede acoger a más inmigrantes. Prohibición de las regularizaciones masivas. Quien entra de forma ilegal jamás podrá regularizar su situación.",
+   "pRel": 0.53,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.99
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 15,
+   "text": "Ni uno más. Después de recibir a 5 millones de personas en 5 años España no puede acoger a más inmigrantes. Prohibición de las regularizaciones masivas. Quien entra de forma ilegal jamás podrá regularizar su situación.",
+   "pRel": 0.82,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.54
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 15,
+   "text": "Supresión de la institución del arraigo como forma de atajar la inmigración ilegal y revocación de las pasarelas rápidas para adquirir la nacionalidad española.",
+   "pRel": 0.61,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.51
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 15,
+   "text": "Repatriación de quienes permanezcan en situación ilegal en nuestra nación.",
+   "pRel": 0.91,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.6
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 15,
+   "text": "Remigración. Plan para facilitar el retorno a sus países de los extranjeros que no contribuyan o vivan de subsidios públicos que no alcanzan a los españoles.",
+   "pRel": 0.64,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.89
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 15,
+   "text": "Los MENAS, con sus familias. Devolución de menores extranjeros no acompañados a sus padres o a las",
+   "pRel": 0.72,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.59
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 16,
+   "text": "Fin de la cooperación al desarrollo con los países que no colaboren en la gestión de los flujos migratorios. Retirar ayudas y fondos de cooperación y promover sanciones a aquellos Estados que fomenten la inmigración ilegal o la utilicen como arma de presión política.",
+   "pRel": 0.52,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.58
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 23,
+   "text": "VIVIENDA 26. Todos los españoles tienen derecho a disfrutar de una vivienda digna y adecuada para satisfacer sus necesidades y las de su familia. El punto de partida de todo programa de vivienda es el control férreo de las fronteras. 27.",
+   "pRel": 0.67,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.66
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 33,
+   "text": "SECTOR PRIMARIO Y MUNDO RURAL 48. Blindaje del sector primario frente a la Agenda 2030 y lucha contra la competencia desleal. VOX en el Gobierno será el representante del sector primario en Bruselas, y no el representante de Bruselas ante los españoles. Oposición a todas las medidas que perjudiquen objetivamente al sector primario y proteger a los nuestros activamente -económica, política y jurídicamente- de las imposiciones de Bruselas y del Pacto Verde. Rechazo explícito al acuerdo UE-Mercosur y de todo acuerdo comercial que obligue a nuestros productores a competir en desigualdad de condiciones. Inclusión de cláusulas espejo. Recuperación del principio de preferencia comunitaria. Aumento de los controles en frontera y lucha contra el fraude en el etiquetado. 49. Protección total de nuestros agricultores, ganaderos y pescadores. Será derogada cualquier normativa que perjudique, imponga cargas o sobrecostes que perjudiquen estos oficios que garantizan nuestra soberanía alimentaria y llevan a los hogares productos de una calidad insuperable. 50. Fondo de compensación frente a imposiciones de Bruselas.",
+   "pRel": 0.5,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.83
+  },
+  {
+   "party": "Vox",
+   "qid": "Q030",
+   "page": 41,
+   "text": "EDUCACIÓN, CULTURA Y DEPORTE 66. Igualar las oportunidades para todos los alumnos españoles: unificar currículo, evaluaciones nacionales e inspección. Reválidas y EVAU única. Se garantizará la educación en español en todo el territorio nacional. Fin a las diferencias en los contenidos curriculares e impulso de la exigencia académica. Revisión de las homologaciones de títulos extranjeros. 67.",
+   "pRel": 0.71,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.47
+  },
+  {
+   "party": "Vox",
+   "qid": "Q026",
+   "page": 46,
+   "text": "88. Protección y defensa de las fronteras españolas. Establecer un nuevo modelo de protección permanente de las fronteras terrestres, marítimas y aéreas, con participación de las Fuerzas Armadas, en apoyo a la Guardia Civil y el Cuerpo Nacional de Policía, reforzando la lucha contra la inmigración ilegal, las mafias de tráfico",
+   "pRel": 0.88,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.59
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q028",
+   "page": 3,
+   "text": "17 Lucha contra la emergencia climática 18 Cuidado del planeta y la biodiversidad 19 Políticas de transición energética 20 Protección animal 32 Repoblación rural",
+   "pRel": 0.58,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.53
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q031",
+   "page": 29,
+   "text": "Tener empleo debería bastar para vivir con dignidad, y hoy no siempre basta. La automatización y la tecnología generan una riqueza enorme, y la cuestión es quién se la queda. Proponemos repartir mejor el trabajo y sus frutos: menos horas, salarios suficientes, más tiempo para cuidar y convivir, y avanzar hacia una renta básica de justicia social. 01",
+   "pRel": 0.77,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.63
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q031",
+   "page": 29,
+   "text": "Reducir progresivamente la jornada laboral hasta las 35 horas semanales, sin reducción salarial, adaptando su implantación a las características de los sectores productivos y ofreciendo apoyos a las pequeñas empresas y entidades que lo necesiten. Favorecer así una distribución más justa del tiempo, del empleo y de los beneficios del progreso tecnológico, facilitando la conciliación, los cuidados y el bienestar de las personas trabajadoras.",
+   "pRel": 0.97,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.65
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q024",
+   "page": 30,
+   "text": "Garantizar vías accesibles y estables de regularización de las personas migrantes que viven y trabajan en España, simplificando los procedimientos administrativos, reduciendo las demoras y facilitando su incorporación al empleo legal y a la Seguridad Social. Reforzar especialmente la protección de quienes sufren explotación laboral, permitiendo el acceso a autorizaciones de residencia y trabajo sin que la denuncia de abusos suponga un riesgo de expulsión, con garantías contra posibles represalias.",
+   "pRel": 0.74,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.68
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q025",
+   "page": 50,
+   "text": "Vivimos en un mundo globalizado e interdependiente, donde los bienes, los recursos y los capitales atraviesan fronteras constantemente. La movilidad humana forma parte de esta realidad y debe reconocerse como un fenómeno estructural de nuestras sociedades, no como un problema que haya que resolver. Una globalización abierta al intercambio económico debe serlo también al reconocimiento de los derechos y la plena inclusión de las personas migrantes. Al mismo tiempo, las desigualdades económicas, las guerras, las persecuciones y la crisis climática obligan a millones de personas a abandonar sus hogares. Por ello, defendemos el derecho a no tener que migrar por necesidad, a migrar de forma segura y a vivir con dignidad e igualdad de derechos. Para M+J, el fenómeno migratorio debe gestionarse como una oportunidad y no como un problema. Su abordaje desde la justicia global, la fraternidad y la construcción de una sociedad inclusiva representa un eje transversal de nuestro programa electoral, cuyas propuestas se complementan con las de cooperación internacional, educación, vivienda, empleo, sanidad, servicios sociales, comercio exterior e igualdad de derechos.",
+   "pRel": 0.55,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.78
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q025",
+   "page": 51,
+   "text": "Facilitar vías legales y seguras de migración y permisos de trabajo en origen. Ampliar y agilizar la obtención de autorizaciones de residencia y trabajo desde los países de origen, reforzando los consulados y garantizando una contratación laboral transparente, condiciones dignas e igualdad de derechos. Promover permisos estables que eviten la dependencia abusiva de un único empleador. Impulsar también corredores humanitarios, programas de reasentamiento y mecanismos accesibles de reagrupación familiar. Garantizar la implementación del Pacto Europeo de Migración y Asilo con enfoque de derechos humanos y de protección efectiva de la infancia, garantizando el derecho a ser escuchados, informados de manera adaptada y que su interés superior sea prioritario.",
+   "pRel": 0.64,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.78
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q025",
+   "page": 51,
+   "text": "Poner fin a la externalización de fronteras, y recuperar la autonomía de esta competencia junto con la UE promoviendo una política común y digna para las personas que quieren rehacer su vida de manera digna.",
+   "pRel": 0.61,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.57
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q026",
+   "page": 51,
+   "text": "Poner fin a la externalización de fronteras, y recuperar la autonomía de esta competencia junto con la UE promoviendo una política común y digna para las personas que quieren rehacer su vida de manera digna.",
+   "pRel": 0.58,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.4
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q025",
+   "page": 51,
+   "text": "Eliminar las devoluciones en caliente sin garantías. Reformar la legislación de extranjería para eliminar los rechazos fronterizos inmediatos que impidan la identificación individual, el acceso efectivo al derecho de asilo y la protección de personas vulnerables. Garantizar asistencia jurídica, respeto al principio de no devolución y control judicial efectivo en todas las actuaciones fronterizas. Concretamente, proponemos la retirada definitiva del proyecto de real decreto-ley sobre medidas extraordinarias para agilizar las solicitudes y recursos de protección internacional en Ceuta, en aquellos términos que restringen el acceso efectivo al asilo, el principio de no devolución y la tutela judicial. Proponemos reforzar los medios humanos y administrativos para agilizar los procedimientos sin reducir las garantías de las personas solicitantes de protección internacional.",
+   "pRel": 0.55,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.42
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q026",
+   "page": 51,
+   "text": "Eliminar las devoluciones en caliente sin garantías. Reformar la legislación de extranjería para eliminar los rechazos fronterizos inmediatos que impidan la identificación individual, el acceso efectivo al derecho de asilo y la protección de personas vulnerables. Garantizar asistencia jurídica, respeto al principio de no devolución y control judicial efectivo en todas las actuaciones fronterizas. Concretamente, proponemos la retirada definitiva del proyecto de real decreto-ley sobre medidas extraordinarias para agilizar las solicitudes y recursos de protección internacional en Ceuta, en aquellos términos que restringen el acceso efectivo al asilo, el principio de no devolución y la tutela judicial. Proponemos reforzar los medios humanos y administrativos para agilizar los procedimientos sin reducir las garantías de las personas solicitantes de protección internacional.",
+   "pRel": 0.82,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.65
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q025",
+   "page": 51,
+   "text": "Garantizar una acogida digna y poner fin al internamiento de personas migrantes por motivos administrativos. Sustituir los Centros de Internamiento de Extranjeros (CIE) por alternativas abiertas y comunitarias, con acompañamiento social y jurídico, respetando la libertad y los derechos fundamentales. Reforzar los recursos públicos de acogida y la atención especializada a personas en situación de especial vulnerabilidad, especialmente menores no acompañados, mujeres víctimas de violencia, personas refugiadas y víctimas de trata. Garantizar",
+   "pRel": 0.84,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.89
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q024",
+   "page": 52,
+   "text": "Facilitar la regularización y eliminar las barreras administrativas. Establecer vías accesibles y permanentes de regularización, prevenir la irregularidad sobrevenida y reforzar las oficinas de extranjería para agilizar los trámites, garantizar una atención presencial accesible y acabar con las prácticas abusivas de intermediación y venta de citas administrativas.",
+   "pRel": 0.78,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.75
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q028",
+   "page": 58,
+   "text": "La energía es un derecho social, no un lujo. Dejar atrás el carbón, el petróleo y el gas es urgente, y puede hacerse de forma que abarate la factura de los hogares y genere empleo en los territorios. Queremos energías renovables bien planificadas, que respeten el entorno y dejen parte de su riqueza en los pueblos donde se instalan, y más autoconsumo y comunidades energéticas. 01",
+   "pRel": 0.96,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.84
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q028",
+   "page": 58,
+   "text": "Apoyar la transición ecológica que permita eliminar todas aquellas fuentes de energía que utilizan combustibles fósiles (carbón, petróleo y gas). Para ello apostamos por un Estado que regule la generación de la energía, incentivando mejoras e inversiones ecológicas, y que apoye la implantación de soluciones locales de autoconsumo.",
+   "pRel": 0.89,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.8
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q028",
+   "page": 58,
+   "text": "Apuesta decidida por las energías renovables cumpliendo con las evaluaciones de impacto ambiental a través de una gestión seria y rigurosa por parte de las administraciones públicas y garantizando la estabilidad del sistema eléctrico español para asegurar una producción y distribución continua. Incorporar criterios de regeneración ecológica en las instalaciones solares y eólicas, promoviendo la recuperación de vegetación autóctona, corredores de biodiversidad, refugios de fauna y aprovechamientos compatibles con el pastoreo. Impulsar mecanismos",
+   "pRel": 0.76,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.53
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q029",
+   "page": 87,
+   "text": "los recursos disponibles, y facilitando el mantenimiento de los vínculos familiares, especialmente con hijos e hijas menores de edad. 4. Garantizar una atención sanitaria penitenciaria de calidad y en condiciones de equidad con el resto de la población, estableciendo ratios máximos de pacientes por profesional sanitario y dotaciones suficientes de personal y recursos. Completar la transferencia de la sanidad penitenciaria a los servicios públicos de salud de las comunidades autónomas, asegurando su plena integración en el sistema sanitario público. 5. Mejora de las oportunidades de empleo y la reinserción laboral. Ampliar la oferta de Formación Profesional en los centros penitenciarios, garantizando el acceso a itinerarios formativos acreditados y adaptados a las necesidades del mercado laboral. Incentivar la contratación de personas que han cumplido condena, con bonificaciones a las empresas que las contratan, como vía real de reinserción laboral y de prevención de la reincidencia. 6.",
+   "pRel": 0.83,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.84
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 3,
+   "text": "Autodeterminació, democràcia i drets......................................................................................................... 7 Protecció efectiva de la llengua catalana...................................................................................................9 Defensa de l’escola catalana..........................................................................................................................10 Finançament i sobirania fiscal........................................................................................................................ 11 Cultura catalana i defensa d’un espai comunicatiu nacional........................................................... 12 Més sobirania i competències....................................................................................................................... 14 Unió Europea, projecció internacional i cooperació............................................................................. 15",
+   "pRel": 0.78,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.8
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 7,
+   "text": "A. DEFENSAR EL PAÍS En aquestes eleccions, els catalans ens hi juguem molt. No només perquè ens trobem en un moment clau per al futur del nostre país, sinó també perquè l’amenaça d’un govern del Partit Popular i de VOX posarà en risc la nostra cultura, la nostra llengua i el nostre autogovern. Catalunya fa temps que és a punt de col·lapsar. Tenim un país de vuit milions de persones amb unes infraestructures i serveis per a sis milions. I això fa que la qualitat dels serveis públics se’n vegin afectats. Des de fa temps, Esquerra Republicana, sovint en solitari, ha estat treballant i negociant per aconseguir revertir aquesta situació, mitjançant un acord de finançament que aporti gairebé 5.000 milions d’euros anuals per als nostres serveis públics, la condonació de bona part del deute i la gestió catalana de Rodalies per posar fi a un servei pèssim. Necessitem una Esquerra Republicana forta per enllestir aquesta tasca i per continuar guanyant sobirania a cada pas, en benefici dels treballadors i les classes mitjanes del país. Però també necessitarem una Esquerra Republicana forta si, finalment, hi ha un govern del Partit Popular i de VOX a Madrid.",
+   "pRel": 0.68,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.48
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 8,
+   "text": "Traspassar la titularitat de l’edifici de la Prefectura Superior de la Policia Nacional de Via Laietana 43 a la Generalitat de Catalunya, conjuntament amb el fons arxivístic i els recursos econòmics que s’estimin oportuns per convertir les dependències actuals en un centre memorialístic i commemoratiu. La comissaria de Via Laietana és un dels espais més simbòlics de la repressió franquista, on milers de persones van patir tortures, detencions arbitràries i violacions de drets humans. Mantenir-la com a comissaria perpetua una ferida oberta i impedeix avançar cap a una memòria democràtica plena. Aplicar l’impost sobre béns immobles a totes les propietats de les confessions religioses, sense excepcionalitats i deixant sense efecte els acords de Govern de l’any 1979 amb la Santa Seu i les actualitzacions de l’any 2023, com també els acords de 1992 de l’Estat amb la resta de federacions religioses. Impulsar totes les iniciatives parlamentàries oportunes per fiscalitzar l’activitat del rei d’Espanya, la casa reial i la família reial i totes les iniciatives que puguin influir a l’hora de posar fi a aquesta institució contrària al principi democràtic.",
+   "pRel": 0.52,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.69
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 9,
+   "text": "B. Protecció efectiva de la llengua catalana El català, la llengua pròpia de Catalunya, té amenaçat l’ús social al carrer, a les institucions i a l’escola. La recuperació de l’ús social de la llengua és una prioritat per a Esquerra Republicana i, a Madrid, lluitarem per impulsar-ne l’ús, afrontar les ingerències de l’Estat i defensar la capacitat de Catalunya de decidir les pròpies polítiques lingüístiques. Defensarem la llengua davant de qualsevol atac. La construcció de la identitat nacional espanyola s’ha fet, històricament, a partir de la llengua i la cultura castellanes, tot relegant el català i la resta de llengües pròpies de les diverses nacions de l’Estat a una posició de subordinació i promovent un model d’assimilació cultural. Les administracions no garanteixen plenament l’exercici dels drets lingüístics i les vulneracions continuen sent habituals, especialment en àmbits com la justícia, l’Administració de l’Estat i els serveis públics. És una realitat que contradiu tant el mandat constitucional de respecte i protecció de les llengües oficials com la Carta Europea de les Llengües Regionals o Minoritàries.",
+   "pRel": 0.5,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.51
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 10,
+   "text": "Caldrà millorar moltes coses de la nostra escola, començant per aconseguir els recursos necessaris de l’Estat espanyol i poder fer efectiva la normalització lingüística, però res d’això no serà possible si no defensem el nostre model davant les amenaces de l’extrema dreta espanyolista. L’Estat espanyol i els seus tribunals han convertit les aules en un camp de batalla política, amb sentències que pretenen imposar als centres com han d’ensenyar i en quina llengua. Cap tribunal pot substituir la capacitat de les institucions catalanes per decidir el seu propi model educatiu. Cal una resposta ferma, unitària i de país, que protegeixi els centres i el professorat, blindar l’escola catalana davant les ingerències judicials i polítiques i avançar cap a l’exercici ple de les competències educatives. Aquesta defensa també passa per garantir l’estabilitat del model educatiu, perquè no pateixi cops de volant amb cada canvi de majoria parlamentària ni amb cada sentència, i per dotar-lo dels recursos necessaris per afrontar els reptes actuals: el retrocés de l’ús social del català entre infants i joves, la segregació escolar i l’atenció a la diversitat de l’alumnat.",
+   "pRel": 0.84,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.5
+  },
+  {
+   "party": "ERC",
+   "qid": "Q030",
+   "page": 10,
+   "text": "Caldrà millorar moltes coses de la nostra escola, començant per aconseguir els recursos necessaris de l’Estat espanyol i poder fer efectiva la normalització lingüística, però res d’això no serà possible si no defensem el nostre model davant les amenaces de l’extrema dreta espanyolista. L’Estat espanyol i els seus tribunals han convertit les aules en un camp de batalla política, amb sentències que pretenen imposar als centres com han d’ensenyar i en quina llengua. Cap tribunal pot substituir la capacitat de les institucions catalanes per decidir el seu propi model educatiu. Cal una resposta ferma, unitària i de país, que protegeixi els centres i el professorat, blindar l’escola catalana davant les ingerències judicials i polítiques i avançar cap a l’exercici ple de les competències educatives. Aquesta defensa també passa per garantir l’estabilitat del model educatiu, perquè no pateixi cops de volant amb cada canvi de majoria parlamentària ni amb cada sentència, i per dotar-lo dels recursos necessaris per afrontar els reptes actuals: el retrocés de l’ús social del català entre infants i joves, la segregació escolar i l’atenció a la diversitat de l’alumnat.",
+   "pRel": 0.53,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.84
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 10,
+   "text": "L’Estat no pot continuar imposant obligacions a Catalunya sense assumir el finançament que li correspon ni respectar les competències de les institucions catalanes. Defensar l’escola catalana és defensar la llengua, la cohesió social i la capacitat de Catalunya per decidir el seu futur. I ho farem sense demanar perdó i sense retrocedir. 16.",
+   "pRel": 0.74,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.47
+  },
+  {
+   "party": "ERC",
+   "qid": "Q030",
+   "page": 10,
+   "text": "L’Estat no pot continuar imposant obligacions a Catalunya sense assumir el finançament que li correspon ni respectar les competències de les institucions catalanes. Defensar l’escola catalana és defensar la llengua, la cohesió social i la capacitat de Catalunya per decidir el seu futur. I ho farem sense demanar perdó i sense retrocedir. 16.",
+   "pRel": 0.67,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.86
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 11,
+   "text": "cativa estatal per impedir les ingerències de l’Estat, la imposició de percentatges lingüístics als centres i qualsevol vulneració dels projectes lingüístics i del model d’immersió de Catalunya. 18. Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i gestionar el seu sistema educatiu, sense subordinació a les imposicions de l’Estat espanyol. 19. Garantir un finançament estatal digne per a l’educació. Destinar el 6 % del PIB estatal a l’educació i posar fi a l’infrafinançament del sistema educatiu, assegurant els recursos necessaris per reforçar l’escola pública, reduir les ràtios i millorar les condicions salarials del professorat. Transferir els recursos a les administracions educatives competents, amb criteris transparents i sense traslladar noves obligacions sense el finançament corresponent, per combatre les desigualtats i assegurar una educació gratuïta i de qualitat per a tothom. 20. Assegurar el finançament estatal de l’educació pública i gratuïta de 0 a 3 anys.",
+   "pRel": 0.94,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.66
+  },
+  {
+   "party": "ERC",
+   "qid": "Q030",
+   "page": 11,
+   "text": "cativa estatal per impedir les ingerències de l’Estat, la imposició de percentatges lingüístics als centres i qualsevol vulneració dels projectes lingüístics i del model d’immersió de Catalunya. 18. Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i gestionar el seu sistema educatiu, sense subordinació a les imposicions de l’Estat espanyol. 19. Garantir un finançament estatal digne per a l’educació. Destinar el 6 % del PIB estatal a l’educació i posar fi a l’infrafinançament del sistema educatiu, assegurant els recursos necessaris per reforçar l’escola pública, reduir les ràtios i millorar les condicions salarials del professorat. Transferir els recursos a les administracions educatives competents, amb criteris transparents i sense traslladar noves obligacions sense el finançament corresponent, per combatre les desigualtats i assegurar una educació gratuïta i de qualitat per a tothom. 20. Assegurar el finançament estatal de l’educació pública i gratuïta de 0 a 3 anys.",
+   "pRel": 0.78,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.82
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 11,
+   "text": "Establir un sistema de finançament estatal suficient i estable per fer efectiu l’accés universal i gratuït de tots els infants a una plaça educativa pública de 0 a 3 anys, amb un calendari d’implantació progressiva i recursos per cobrir el cost real del servei. 21. Protegir els centres educatius i el professorat davant les ingerències judicials i polítiques. Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar els seus projectes educatius sense pressions ni interferències externes. 22. Garantir les competències exclusives de la Generalitat de Catalunya en l’elaboració dels currículums. Cal assegurar que les administracions competents en matèria educativa puguin dictar els currículums per a les etapes obligatòries i postobligatòries d’acord amb la realitat social, cultural i lingüística del país, sense ingerència ni imposicions de l’Estat.",
+   "pRel": 0.77,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.41
+  },
+  {
+   "party": "ERC",
+   "qid": "Q030",
+   "page": 11,
+   "text": "Establir un sistema de finançament estatal suficient i estable per fer efectiu l’accés universal i gratuït de tots els infants a una plaça educativa pública de 0 a 3 anys, amb un calendari d’implantació progressiva i recursos per cobrir el cost real del servei. 21. Protegir els centres educatius i el professorat davant les ingerències judicials i polítiques. Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar els seus projectes educatius sense pressions ni interferències externes. 22. Garantir les competències exclusives de la Generalitat de Catalunya en l’elaboració dels currículums. Cal assegurar que les administracions competents en matèria educativa puguin dictar els currículums per a les etapes obligatòries i postobligatòries d’acord amb la realitat social, cultural i lingüística del país, sense ingerència ni imposicions de l’Estat.",
+   "pRel": 0.77,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.64
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 11,
+   "text": "Per posar fil a l’agulla, Esquerra Republicana proposa un model de finançament que avanci en la línia d’un concert econòmic solidari, tal com es preveia a l’Estatut d’Autonomia aprovat pel Parlament el 2006, i que faci efectius els compromisos que el Govern de l’Estat no ha estat capaç de materialitzar aquesta legislatura. Aquest model és la clau de volta per protegir Catalunya de la dreta i l’extrema dreta espanyola, perquè garanteix la capacitat de decisió de la Generalitat en detriment de l’Estat i la dota de sobirania econòmica. La proposta d’Esquerra Republicana pretenia posar fi al model de finançament actual, que ha perjudicat no només Catalunya sinó els Països Catalans. Aquesta proposta suposa un guany evident en sobirania, garanteix el principi d’ordinalitat de la despesa per població ajustada i acaba amb el sistema de bestretes, una llosa per a les finances de la Generalitat que Esquerra Republicana no s’ha cansat de denunciar.",
+   "pRel": 0.8,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.74
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 13,
+   "text": "condicionada per un marc estatal que concentra recursos, instruments normatius i poder de decisió en qüestions estratègiques. Volem una cultura que no es limiti a preservar el que som, sinó que tingui capacitat de crear, innovar, generar imaginaris propis i projectar-se internacionalment. La cultura és també un espai de llibertat, de pensament crític i de cohesió social, i ha de ser un bé comú accessible a tothom. Per això, cal reconèixer i dignificar les persones que la fan possible, protegir la creació i garantir que les condicions econòmiques o socials no es converteixin en una barrera d’accés a la cultura. En definitiva, volem que Catalunya tingui plena capacitat de decidir com a país i de construir un espai cultural i comunicatiu fort, amb competències, recursos propis i projecció internacional, que garanteixi l’accés universal a la cultura i reforci la cohesió social, la llengua i la identitat nacional. 27.",
+   "pRel": 0.77,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.66
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 13,
+   "text": "La cultura de Catalunya, decidida des de Catalunya: equipaments i recursos. Impulsar un Pla de Sobirania Cultural per culminar el traspàs dels museus i equipaments culturals transferibles a Catalunya, incloent-hi el Museu Nacional Arqueològic de Tarragona, i revisar la governança del MNAC i del MACBA perquè les decisions estratègiques es prenguin des de les institucions catalanes. Garantir que els traspassos vagin acompanyats del finançament estructural corresponent i auditar les inversions estatals pendents. Territorialitzar el 2 % cultural. Exigir la modificació de la Llei del Patrimoni Històric espanyol perquè els recursos generats per les obres públiques estatals executades a Catalunya es transfereixin automàticament a la Generalitat, que gestionarà un Fons Català del 2 % Cultural destinat a conservar, restaurar i activar el patrimoni, amb especial atenció als municipis petits, el patrimoni en risc i industrial i els projectes d’ús social i comunitari. Cal una publicació anual de quins recursos s’han generat a Catalunya i quina quantitat s’ha transferit. Sixena: les pintures no es mouen.",
+   "pRel": 0.9,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.42
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 13,
+   "text": "Ampliar les competències de les autoritats reguladores autonòmiques com el Consell Audiovisual de Catalunya (CAC) i el Consell Audiovisual de la Comunitat Valenciana (CACV), perquè puguin exercir les funcions de la Comissió Nacional dels Mercats i la Competència (CNMC) mitjançant acords formals, i garantir la participació dels organismes reguladors autonòmics en la representació de l’Estat al Comitè Europeu dels Serveis de Mitjans de Comunicació (Media Board). Les radiotelevisions públiques tindran la consideració de servei públic o d’infraestructures crítiques als efectes dels serveis de telecomunicacions, perquè proporcionen serveis essencials per al funcionament social i econòmic del país.",
+   "pRel": 0.88,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.63
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 14,
+   "text": "F. Més sobirania i competències Com a país amb voluntat d’exercir la seva llibertat, Catalunya aspira a desenvolupar l’autogovern i a assumir plenament totes les competències. Esquerra Republicana continuarà treballant per guanyar àmbits de sobirania, mentre exigeix el finançament necessari per oferir uns serveis públics a l’alçada del que es mereixen els catalans i les catalanes. Esquerra Republicana també continuarà denunciant les vulneracions del marc competencial del Govern espanyol allà on es produeixin. No permetrem cap passa enrere en l’autogovern de Catalunya, ni en l’àmbit de la salut, ni en el de l’habitatge ni en el de l’educació. Volem preparar el futur del país amb les màximes competències i totes les eines per gestionar-lo com es mereix la ciutadania. Esquerra Republicana defensa el dret de les seleccions catalanes de competir internacionalment en totes les disciplines esportives, i així ho ha reclamat històricament. El reconeixement de les seleccions catalanes no només es correspon amb les competències que ja té la Generalitat sinó que és una eina clau per a la projecció internacional del país, diferenciada de la visió imposada pel nacionalisme espanyol.",
+   "pRel": 0.93,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.82
+  },
+  {
+   "party": "ERC",
+   "qid": "Q030",
+   "page": 14,
+   "text": "F. Més sobirania i competències Com a país amb voluntat d’exercir la seva llibertat, Catalunya aspira a desenvolupar l’autogovern i a assumir plenament totes les competències. Esquerra Republicana continuarà treballant per guanyar àmbits de sobirania, mentre exigeix el finançament necessari per oferir uns serveis públics a l’alçada del que es mereixen els catalans i les catalanes. Esquerra Republicana també continuarà denunciant les vulneracions del marc competencial del Govern espanyol allà on es produeixin. No permetrem cap passa enrere en l’autogovern de Catalunya, ni en l’àmbit de la salut, ni en el de l’habitatge ni en el de l’educació. Volem preparar el futur del país amb les màximes competències i totes les eines per gestionar-lo com es mereix la ciutadania. Esquerra Republicana defensa el dret de les seleccions catalanes de competir internacionalment en totes les disciplines esportives, i així ho ha reclamat històricament. El reconeixement de les seleccions catalanes no només es correspon amb les competències que ja té la Generalitat sinó que és una eina clau per a la projecció internacional del país, diferenciada de la visió imposada pel nacionalisme espanyol.",
+   "pRel": 0.81,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.94
+  },
+  {
+   "party": "ERC",
+   "qid": "Q025",
+   "page": 14,
+   "text": "També continuarem reclamant el traspàs de les competències per recaptar tots els impostos mitjançant l’Agència Tributària de Catalunya, una eina clau per a la sobirania fiscal del país. A més, exigirem el traspàs de les competències en migració i asil a Catalunya per impulsar una política pròpia d’acollida i integració. Per últim, demanem la cessió a Catalunya de les polítiques passives que permetin que el Servei d’Ocupació de Catalunya (SOC) gestioni les prestacions per atur i desocupació, tal com ja s’ha acordat amb el País Basc. 33. Reclamar l’oficialitat i el reconeixement internacional de les seleccions catalanes en totes les disciplines esportives. Defensar el dret de les seleccions catalanes a competir oficialment a escala internacional en totes les disciplines esportives i a tenir representació pròpia en els organismes i les competicions internacionals. Simultàniament, és necessari impulsar la modificació de la Llei de l’Esport espanyola per eliminar l’obligatorietat de participació dels esportistes amb la selecció espanyola sota amenaça de sanció. 34. Fer efectiu el traspàs de les competències en la recaptació d’impostos estatals a l’Agència Tributària de Catalunya.",
+   "pRel": 0.63,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.6
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 14,
+   "text": "També continuarem reclamant el traspàs de les competències per recaptar tots els impostos mitjançant l’Agència Tributària de Catalunya, una eina clau per a la sobirania fiscal del país. A més, exigirem el traspàs de les competències en migració i asil a Catalunya per impulsar una política pròpia d’acollida i integració. Per últim, demanem la cessió a Catalunya de les polítiques passives que permetin que el Servei d’Ocupació de Catalunya (SOC) gestioni les prestacions per atur i desocupació, tal com ja s’ha acordat amb el País Basc. 33. Reclamar l’oficialitat i el reconeixement internacional de les seleccions catalanes en totes les disciplines esportives. Defensar el dret de les seleccions catalanes a competir oficialment a escala internacional en totes les disciplines esportives i a tenir representació pròpia en els organismes i les competicions internacionals. Simultàniament, és necessari impulsar la modificació de la Llei de l’Esport espanyola per eliminar l’obligatorietat de participació dels esportistes amb la selecció espanyola sota amenaça de sanció. 34. Fer efectiu el traspàs de les competències en la recaptació d’impostos estatals a l’Agència Tributària de Catalunya.",
+   "pRel": 0.94,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.8
+  },
+  {
+   "party": "ERC",
+   "qid": "Q025",
+   "page": 14,
+   "text": "Complir amb els acords de la Comissió Bilateral Generalitat Estat de juliol de 2025 sobre l’assumpció de competències en l’IRPF per part de la Generalitat, fent efectius els canvis legislatius pertinents per a la recaptació no només d’aquest tribut sinó de tots els impostos que es generen a Catalunya. 35. Transferir les competències integrals en matèria de migració i asil. Exigir el traspàs integral de les competències en migració i asil a Catalunya per garantir una gestió pròpia de l’acollida, l’avaluació de les necessitats i la integració, des d’una perspectiva de drets humans i inclusió social. Condicionar l’aplicació i el desenvolupament legislatiu del Reglament europeu de Retorn a garanties efectives dels drets fonamentals, per evitar la deriva punitiva i les deportacions automàtiques. Rebutgem la creació de centres de retorn a països tercers i reclamem la màxima protecció jurídica, assistència legal independent i respecte als drets fonamentals durant tot el procés migratori. 36. Assumir noves competències en seguretat. Cal garantir la competència del Cos de Mossos d’Esquadra com a policia integral al conjunt del país, sense excepcions.",
+   "pRel": 0.54,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.53
+  },
+  {
+   "party": "ERC",
+   "qid": "Q026",
+   "page": 14,
+   "text": "Complir amb els acords de la Comissió Bilateral Generalitat Estat de juliol de 2025 sobre l’assumpció de competències en l’IRPF per part de la Generalitat, fent efectius els canvis legislatius pertinents per a la recaptació no només d’aquest tribut sinó de tots els impostos que es generen a Catalunya. 35. Transferir les competències integrals en matèria de migració i asil. Exigir el traspàs integral de les competències en migració i asil a Catalunya per garantir una gestió pròpia de l’acollida, l’avaluació de les necessitats i la integració, des d’una perspectiva de drets humans i inclusió social. Condicionar l’aplicació i el desenvolupament legislatiu del Reglament europeu de Retorn a garanties efectives dels drets fonamentals, per evitar la deriva punitiva i les deportacions automàtiques. Rebutgem la creació de centres de retorn a països tercers i reclamem la màxima protecció jurídica, assistència legal independent i respecte als drets fonamentals durant tot el procés migratori. 36. Assumir noves competències en seguretat. Cal garantir la competència del Cos de Mossos d’Esquadra com a policia integral al conjunt del país, sense excepcions.",
+   "pRel": 0.74,
+   "choice": "partially_against",
+   "value": -1,
+   "confidence": 0.41
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 14,
+   "text": "Complir amb els acords de la Comissió Bilateral Generalitat Estat de juliol de 2025 sobre l’assumpció de competències en l’IRPF per part de la Generalitat, fent efectius els canvis legislatius pertinents per a la recaptació no només d’aquest tribut sinó de tots els impostos que es generen a Catalunya. 35. Transferir les competències integrals en matèria de migració i asil. Exigir el traspàs integral de les competències en migració i asil a Catalunya per garantir una gestió pròpia de l’acollida, l’avaluació de les necessitats i la integració, des d’una perspectiva de drets humans i inclusió social. Condicionar l’aplicació i el desenvolupament legislatiu del Reglament europeu de Retorn a garanties efectives dels drets fonamentals, per evitar la deriva punitiva i les deportacions automàtiques. Rebutgem la creació de centres de retorn a països tercers i reclamem la màxima protecció jurídica, assistència legal independent i respecte als drets fonamentals durant tot el procés migratori. 36. Assumir noves competències en seguretat. Cal garantir la competència del Cos de Mossos d’Esquadra com a policia integral al conjunt del país, sense excepcions.",
+   "pRel": 0.95,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.87
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 14,
+   "text": "A dia d’avui, els Mossos actuen com a policia integral i tenen plenes competències en seguretat a tot Catalunya, menys als ports i aeroports de l’Estat, fet que distorsiona i treu eficiència a la lluita contra la delinqüència perquè es fracciona el territori. 37. Traspassar a la Generalitat tots els immobles de l’Administració General de l’Estat a Catalunya. Diversos departaments del govern espanyol i altres organismes de l’Administració General de l’Estat (AGE) retenen la propietat de dotzenes d’edificis de diverses naturaleses i ubicacions. Des del front litoral de Barcelona fins a les casernes abandonades de la Guàrdia Civil, passant pels edificis de la Tresoreria General de la Seguretat Social no destinats a cap finalitat relacionada amb aquesta entitat. És necessari que se’n faci el traspàs a la Generalitat de Catalunya i, si escau,",
+   "pRel": 0.92,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.59
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 15,
+   "text": "als ajuntaments, a títol gratuït per posar-los al servei de la ciutadania del nostre país. Molt especialment, cal que el govern espanyol, donant compliment a les competències exclusives en habitatge de la Generalitat de Catalunya, traspassi tots els habitatges de la SAREB i la resta d’organismes que depenen de l’AGE situats a Catalunya, conjuntament amb els recursos necessaris per rehabilitar-los i destinar-los a habitatge de protecció oficial. 38. Traspassar les competències en matèria d’homologació i reconeixement dels títols estrangers. Reclamar el traspàs de les funcions i els recursos necessaris perquè la Generalitat pugui gestionar l’homologació i el reconeixement de les titulacions obtingudes a l’estranger, d’acord amb les necessitats del país i amb les garanties de qualitat corresponents. 39. Completar el traspàs integral de la Inspecció de Treball i Seguretat Social.",
+   "pRel": 0.95,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.59
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 15,
+   "text": "Culminar el traspàs previst a l’Estatut d’Autonomia, incloent-hi totes les funcions inspectores que encara romanen en l’àmbit estatal, com també el personal inspector i subinspector necessari per exercir-les, garantint-ne la dependència orgànica i funcional de la Generalitat de Catalunya, i dotant-la dels recursos econòmics, materials i organitzatius corresponents. Cal que el govern del país disposi de la capacitat plena per planificar, dirigir, organitzar i executar la funció inspectora en l’àmbit laboral i de la Seguretat Social a Catalunya, amb un model integral, coordinat i adaptat a les necessitats del mercat de treball català. 40. Traspassar les polítiques passives a la Generalitat. Acordar amb l’Estat les cessions, delegacions i traspassos de competències i de béns patrimonials i personals necessaris a la Generalitat de Catalunya per fer efectiu el pagament de les prestacions contributives per atur i les prestacions assistencials per desocupació des del SOC. La ciutadania ha de poder accedir a un servei públic d’ocupació únic tant per a les polítiques actives com per a les polítiques passives d’ocupació. 41. Crear el Consell de Justícia de Catalunya.",
+   "pRel": 0.95,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.78
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 15,
+   "text": "Estructurar el govern judicial propi a Catalunya i, per a això, cal impulsar la reforma de la Llei Orgànica del Poder Judicial per fer possible la creació d’un Consell de Justícia de Catalunya, com a òrgan desconcentrat del CGPJ, amb seu a Barcelona i competències sobre govern judicial, territorial, nomenaments, formació, inspecció, disciplina, organització i planta.",
+   "pRel": 0.7,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.46
+  },
+  {
+   "party": "ERC",
+   "qid": "Q026",
+   "page": 17,
+   "text": "Enfortir la governança multinivell a Nacions Unides: representació catalana en la negociació d’acords i tractats internacionals. Reclamar la participació de la Generalitat de Catalunya en la negociació de tractats internacionals en el marc de Nacions Unides dels àmbits de la seva competència, seguint l’aposta per la governança multinivell que ja s’està duent a terme per avançar objectius de desenvolupament i foment dels DDHH, la pau i el multilateralisme en l’àmbit global. 50. Fomentar l’autonomia geopolítica i estratègica de la Unió Europea apostant per una estratègia de seguretat pròpia basada en la diplomàcia i la solució negociada de conflictes, tant en els pressupostos dels estats membres com en el Marc Financer Pluriennal de la Unió Europea. 51. Posar fi a l’externalització de les fronteres i garantir vies legals i segures per migrar. Desenvolupar una política migratòria centrada en la protecció internacional, el respecte dels drets humans i les garanties legals, en el marc de l’aplicació del Pacte Europeu de Migració i Asil.",
+   "pRel": 0.7,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.75
+  },
+  {
+   "party": "ERC",
+   "qid": "Q025",
+   "page": 17,
+   "text": "Impulsar una nova Llei d’asil que impedeixi externalitzar les sol·licituds de protecció internacional a tercers països amb els quals les persones sol·licitants no tinguin cap vincle i que no respectin els drets humans. Obrir i ampliar vies legals i segures de migració i protecció internacional, amb mecanismes i recursos suficients perquè les persones puguin migrar en condicions dignes. 52. Apostar per un pressupost europeu ambiciós i descentralitzat. Exigir a l’Estat espanyol que, durant les negociacions per al Marc Financer Pluriennal (MFP), defensi el principi de governança multinivell, un pilar fonamental per a la política de cohesió europea durant dècades, i s’oposi a la recentralització de programes gestionats per autoritats locals i de territoris com Catalunya. A més, Esquerra Republicana aposta per un pressupost europeu ambiciós, que pugui fer front a reptes compartits en matèria de canvi climàtic, competitivitat o reindustrialització, i que disposi de noves fonts d’ingressos propis europeus, com ara un impost digital dirigit a les grans plataformes tecnològiques. 53.",
+   "pRel": 0.89,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.81
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 18,
+   "text": "Aquest clam social ha situat la crisi de l’habitatge al centre del debat polític i exigeix un canvi profund en les polítiques en aquesta matèria. Esquerra Republicana, davant d’aquesta emergència d’habitatge, defensa que l’Estat traspassi a la Generalitat de Catalunya, competent en matèria d’habitatge, tots els mitjans necessaris per garantir l’accés a un lloguer assequible i a un habitatge en propietat. Per això, es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya, l’habilitació per aprovar una llei d’arrendaments urbans (LAU) catala-",
+   "pRel": 0.91,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.41
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 19,
+   "text": "Dotar la Generalitat de Catalunya de competències per al desplegament d’una llei d’arrendaments urbans catalana. Impulsar l’aprovació d’una legislació estatal, per la via de l’article 150.1 de la Constitució espanyola, que delegui formalment a la Generalitat de Catalunya la facultat de legislar de manera plena i integral en matèria d’arrendaments urbans. Aquest nou marc normatiu hauria de permetre solucionar el bloqueig de competències en matèria de dret civil i habitatge, que impedeix a la Generalitat un desplegament efectiu de les seves competències en habitatge mitjançant les lleis aprovades pel Parlament de Catalunya, i respondre a la realitat socioeconòmica singular del mercat de l’habitatge a Catalunya, als consensos socials del país i a les necessitats de les persones treballadores. Augment del finançament estatal en matèria d’habitatge. Cal garantir un finançament públic adequat a les polítiques d’habitatge i incloure’l als pressupostos generals de l’Estat, que dediqui a aquestes polítiques almenys l’1,5 % del Producte Interior Brut (PIB), la qual cosa implica multiplicar els recursos que actualment es dediquen a les polítiques d’habitatge a l’Estat espanyol.",
+   "pRel": 0.94,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.51
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 19,
+   "text": "S’ha de garantir que aquests recursos es transfereixen a les comunitats autònomes i es posen al servei d’incrementar el parc públic d’habitatges de lloguer als estàndards europeus. Traspàs immediat de tots els immobles de la SAREB i Casa 47 a la Generalitat de Catalunya. Resulta urgent el traspàs immediat i gratuït de la titularitat d’aquests immobles a la Generalitat com a administració competent en matèria d’habitatge per poder-los destinar a l’ampliació del parc públic d’habitatge. Alhora, cal garantir el traspàs dels recursos necessaris per a la rehabilitació dels immobles. Modificar la legislació bàsica en matèria de sòl per garantir que el sòl classificat es posa a disposició de la construcció d’habitatge assequible. S’ha d’incorporar a la legislació bàsica en matèria de sòl el deure legal de transformar el sòl en el termini que fixi el planejament urbanístic o, subsidiàriament, la legislació urbanística, habilitant la possibilitat de recórrer als mecanismes de venda i substitució forçosa als propietaris que incompleixin aquest deure o establint l’obligació de les administracions públiques de revisar el sòl no construït en el termini legalment previst.",
+   "pRel": 0.85,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.44
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 20,
+   "text": "Davant d’aquest panorama, Esquerra Republicana aposta tant per mesures estructurals que ens permetin avançar cap a un model econòmic més inclusiu, fomentant la reindustrialització verda, com per mesures de suport a la classe treballadora que pateix les conseqüències d’un model econòmic basat en salaris baixos. Entre altres mesures, Esquerra Republicana fa anys que reclama que Catalunya tingui un salari mínim propi, que reflecteixi el cost de vida més alt que el d’altres territoris de l’Estat. També defensa una reforma de l’IRPF i l’IVA que penalitzi les rendes més altes, dependents del capital, mentre es redueix l’IRPF a la classe treballadora i es fan més accessibles productes bàsics per a la ciutadania. 66. Incrementar el Salari Mínim Interprofessional de l’estat fins al 60 % del salari mitjà brut d’acord amb les exigències del dret internacional comunitari i, en particular, de la Carta Social Europea. 67. Transferir les competències a la Generalitat de Catalunya per establir un salari mínim català (SMC) a 1.460 €.",
+   "pRel": 0.85,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.68
+  },
+  {
+   "party": "ERC",
+   "qid": "Q032",
+   "page": 20,
+   "text": "Davant d’aquest panorama, Esquerra Republicana aposta tant per mesures estructurals que ens permetin avançar cap a un model econòmic més inclusiu, fomentant la reindustrialització verda, com per mesures de suport a la classe treballadora que pateix les conseqüències d’un model econòmic basat en salaris baixos. Entre altres mesures, Esquerra Republicana fa anys que reclama que Catalunya tingui un salari mínim propi, que reflecteixi el cost de vida més alt que el d’altres territoris de l’Estat. També defensa una reforma de l’IRPF i l’IVA que penalitzi les rendes més altes, dependents del capital, mentre es redueix l’IRPF a la classe treballadora i es fan més accessibles productes bàsics per a la ciutadania. 66. Incrementar el Salari Mínim Interprofessional de l’estat fins al 60 % del salari mitjà brut d’acord amb les exigències del dret internacional comunitari i, en particular, de la Carta Social Europea. 67. Transferir les competències a la Generalitat de Catalunya per establir un salari mínim català (SMC) a 1.460 €.",
+   "pRel": 0.94,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.92
+  },
+  {
+   "party": "ERC",
+   "qid": "Q032",
+   "page": 20,
+   "text": "Efectuar les modificacions normatives oportunes perquè el Govern de la Generalitat pugui establir un salari mínim interprofessional territorialitzat, superior al fixat a escala estatal, d’acord amb la realitat socioeconòmica de Catalunya i amb l’objectiu de garantir una remuneració suficient i un nivell de vida digne, en la línia de la Carta Social Europea i del criteri del Comitè Europeu de Drets Socials, que situa el salari mínim en, com a referència, almenys el 60 % del salari mitjà net.",
+   "pRel": 0.93,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.7
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 22,
+   "text": "Des d’Esquerra Republicana proposem una intervenció més gran del sector públic en l’economia, especialment encaminada a accelerar la transició ecològica. També exigim més justícia fiscal en la tributació dels grans patrimonis, la banca i les empreses energètiques, mentre continuem reivindicant la banca pública amb l’ICF al capdavant. Per últim, també proposem una passa endavant en la fiscalitat verda, on l’Estat es troba a la cua d’Europa, seguint les passes ambicioses que ja ha fet la Generalitat de Catalunya. Fiscalitat dels multimilionaris. Fer permanent l’impost temporal de solidaritat de les grans fortunes, augmentant el tipus per a fortunes de més de 10 milions d’euros i creant un tram nou a partir de 100 milions d’euros. 75. Recuperar l’impost a les grans energètiques, consolidant la tributació dels beneficis i establint exempcions per incentivar la inversió en transició energètica. Cal transformar la fiscalitat de l’Estat cap a un model redistributiu que garanteixi que tothom pugui fer front al cost de la vida i orientat a impulsar la transició ecològica. 76. Convertir l’impost extraordinari a la banca en un tribut permanent.",
+   "pRel": 0.84,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 1
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 22,
+   "text": "Davant un sector bancari cada cop més concentrat i amb tendències oligopolístiques, l’Estat ha de tenir un rol actiu per garantir el crèdit al petit negoci i l’accés als serveis bancaris de persones en risc d’exclusió. Per això, com ja passa amb el servei postal, cal garantir l’accés a efectiu i a atenció presencial en cada municipi per sobre d’un llindar, finançant-ho amb un fons sectorial al qual contribueixin totes les entitats segons quota de mercat. 81. Crear línies públiques de crèdit per al petit negoci amb repartiment de risc (avals parcials) i amb una banca pública que garanteixi el crèdit a la inversió productiva. Per fer-ho caldria convertir l’ICO en un banc de promoció amb capacitat de préstec directe a projectes industrials i de transició. 82. Impulsar les inversions clau per fer front a l’emergència climàtica. Impulsar un programa ambiciós d’inversió pública en tecnologies verdes crítiques per a la transició ecològica i l’autonomia estratègica europea: bateries, panells solars, energia eòlica i bombes de calor, així com capacitats de reciclatge de matèries primeres crítiques.",
+   "pRel": 0.72,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.88
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 23,
+   "text": "L’origen, el color de pell o la situació administrativa no poden justificar cap forma de discriminació ni d’exclusió. Esquerra Republicana defensa una societat feminista, diversa i lliure de discriminacions, on totes les persones puguin viure amb dignitat, llibertat i igualtat de drets. Avançar en feminisme, drets LGBTI+ i antiracisme és avançar en justícia social i democràcia, respectant les competències de Catalunya i reforçant la seva capacitat per desenvolupar polítiques pròpies.",
+   "pRel": 0.56,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.52
+  },
+  {
+   "party": "ERC",
+   "qid": "Q032",
+   "page": 25,
+   "text": "E. Treball digne i seguretat social garantida Viure dignament ha de ser una realitat per a tothom, independentment de la situació laboral, econòmica o personal de cadascú. El treball ha de permetre desenvolupar un projecte de vida i no condemnar ningú a la precarietat o a la pobresa. Però en els darrers anys l’encariment del cost de la vida, amb uns salaris que no han evolucionat al mateix ritme que els preus, ha provocat que cada vegada més persones, tot i tenir una feina, tinguin dificultats per arribar a final de mes. Aquesta realitat evidencia els límits d’un model que continua repartint de manera desigual la riquesa i que prioritza els beneficis empresarials per sobre les condicions de vida de la classe treballadora. Cal garantir les rendes i avançar cap a l’assoliment de salaris suficients per viure, combatre la precarietat i la temporalitat injustificada, reduir les desigualtats i evitar que l’acomiadament sigui una via fàcil i barata per a les empreses. També implica reforçar la protecció social, garantir unes pensions dignes i assegurar que ningú quedi desprotegit davant de situacions de vulnerabilitat.",
+   "pRel": 0.53,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.65
+  },
+  {
+   "party": "ERC",
+   "qid": "Q033",
+   "page": 25,
+   "text": "E. Treball digne i seguretat social garantida Viure dignament ha de ser una realitat per a tothom, independentment de la situació laboral, econòmica o personal de cadascú. El treball ha de permetre desenvolupar un projecte de vida i no condemnar ningú a la precarietat o a la pobresa. Però en els darrers anys l’encariment del cost de la vida, amb uns salaris que no han evolucionat al mateix ritme que els preus, ha provocat que cada vegada més persones, tot i tenir una feina, tinguin dificultats per arribar a final de mes. Aquesta realitat evidencia els límits d’un model que continua repartint de manera desigual la riquesa i que prioritza els beneficis empresarials per sobre les condicions de vida de la classe treballadora. Cal garantir les rendes i avançar cap a l’assoliment de salaris suficients per viure, combatre la precarietat i la temporalitat injustificada, reduir les desigualtats i evitar que l’acomiadament sigui una via fàcil i barata per a les empreses. També implica reforçar la protecció social, garantir unes pensions dignes i assegurar que ningú quedi desprotegit davant de situacions de vulnerabilitat.",
+   "pRel": 0.55,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.92
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 25,
+   "text": "Cal avançar cap a un sistema públic de pensions que garanteixi el poder adquisitiu, redueixi les desigualtats i continuï contribuint a la redistribució de la riquesa. Catalunya necessita eines pròpies per desplegar polítiques socials que responguin a la nostra realitat, amb capacitat per decidir sobre les condicions laborals, la protecció social i el sistema de pensions. Volem un model que redistribueixi els recursos i garanteixi que el progrés econòmic es tradueixi en millors condicions de vida per a la societat.",
+   "pRel": 0.74,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.62
+  },
+  {
+   "party": "ERC",
+   "qid": "Q033",
+   "page": 26,
+   "text": "103. Derogar els aspectes de les reformes laborals de 2010 i 2012 que continuen vigents. Revertir l’abaratiment i la facilitació de l’acomiadament, recuperant la indemnització per acomiadament improcedent de 45 dies per any treballat, amb un màxim de 42 mensualitats, i els salaris de tramitació. Restablir l’autorització administrativa prèvia de l’autoritat laboral de la Generalitat per als acomiadaments col·lectius, les suspensions de contractes i les reduccions col·lectives de jornada. Recuperar les garanties davant els acomiadaments per causes objectives i reforçar la negociació col·lectiva, l’estabilitat laboral i el control públic de les decisions empresarials. 104. Establir una indemnització addicional per acomiadaments sense causa d’acord amb la resolució del Comitè Europeu de Drets Socials (CEDS). El CEDS va emetre una decisió vinculant el 24 de juliol de 2024 que explicitava que la legislació laboral espanyola no protegia degudament els treballadors víctimes d’acomiadaments sense causa.",
+   "pRel": 0.84,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.99
+  },
+  {
+   "party": "ERC",
+   "qid": "Q031",
+   "page": 26,
+   "text": "Així, per donar compliment a la Carta Social Europea, cal reformar l’Estatut dels Treballadors i permetre que en aquest tipus de cessaments no operi cap tipus de topall màxim a l’hora de fixar la indemnització. S’ha de garantir que les indemnitzacions per acomiadaments sense causa siguin efectivament dissuasives per a les empreses i rescabalin degudament els treballadors que en siguin víctimes. 105. Reduir la durada màxima de la jornada laboral setmanal a 37 hores i mitja sense reducció salarial. Modificar l’article 34 de l’Estatut dels Treballadors per garantir aquesta reducció legal de la jornada, respectant les jornades inferiors establertes per conveni col·lectiu. Reforçar el registre diari de jornada, garantint-ne el caràcter digital, fiable i accessible a la Inspecció de Treball, així com el dret a la desconnexió digital, per evitar els abusos en el temps de treball i garantir el descans de les persones treballadores. 106. Blindar la revaloració de les pensions per evitar la pèrdua de capacitat adquisitiva de les persones pensionistes. Cal garantir l’actualització de pensions públiques d’acord amb la inflació. 107. Revalorar les pensions d’acord amb l’IPC de cada territori.",
+   "pRel": 0.98,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.94
+  },
+  {
+   "party": "ERC",
+   "qid": "Q033",
+   "page": 26,
+   "text": "Així, per donar compliment a la Carta Social Europea, cal reformar l’Estatut dels Treballadors i permetre que en aquest tipus de cessaments no operi cap tipus de topall màxim a l’hora de fixar la indemnització. S’ha de garantir que les indemnitzacions per acomiadaments sense causa siguin efectivament dissuasives per a les empreses i rescabalin degudament els treballadors que en siguin víctimes. 105. Reduir la durada màxima de la jornada laboral setmanal a 37 hores i mitja sense reducció salarial. Modificar l’article 34 de l’Estatut dels Treballadors per garantir aquesta reducció legal de la jornada, respectant les jornades inferiors establertes per conveni col·lectiu. Reforçar el registre diari de jornada, garantint-ne el caràcter digital, fiable i accessible a la Inspecció de Treball, així com el dret a la desconnexió digital, per evitar els abusos en el temps de treball i garantir el descans de les persones treballadores. 106. Blindar la revaloració de les pensions per evitar la pèrdua de capacitat adquisitiva de les persones pensionistes. Cal garantir l’actualització de pensions públiques d’acord amb la inflació. 107. Revalorar les pensions d’acord amb l’IPC de cada territori.",
+   "pRel": 0.56,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.39
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 27,
+   "text": "Alhora, desenvolupar reglamentàriament la passarel·la garantint la protecció social pública dels treballadors provinents de mutualitats o altres sistemes alternatius. 118. Avançar cap a un sistema integrat de formació professional al llarg de la vida. Impulsar una ordenació que integri la formació professional del sistema educatiu, la formació per a l’ocupació i la formació en el treball, incorporant els ensenyaments de règim especial i respectant-ne les singularitats. Superar la fragmentació normativa i administrativa actual i garantir les competències de la Generalitat de Catalunya, amb els traspassos i recursos necessaris per planificar i gestionar un sistema propi i integrat. 119. Reforçar la vinculació de la formació professional amb la universitat, la recerca i la innovació. Consolidar la formació professional com un àmbit propi de qualificació i especialització, estretament vinculat al sistema universitari, científic i tecnològic. Establir mecanismes de coordinació i projectes compartits entre centres de formació professional, universitats, centres de recerca i empreses, i facilitar les passarel·les formatives mitjançant el reconeixement de crèdits i aprenentatges. 120.",
+   "pRel": 0.75,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.58
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 29,
+   "text": "G. Impulsar una transició energètica justa, ecològica i accessible El model energètic de l’Estat espanyol ha demostrat ser un sistema fortament centralitzat, àgraf i dominat per monopolis territorials i un oligopoli clàssic que opera en la generació, distribució i comercialització. Aquesta falta de competència real, sumada a les ineficiències d’un sistema marginalista de fixació de preus que extreu rendes de les famílies i les empreses per maximitzar els beneficis dels grans operadors, ha provocat un encariment insostenible de l’electricitat. Aquesta realitat ha situat la ciutadania davant l’anomenat trilema energètic: la vulnerabilitat de la seguretat de subministrament, l’impacte econòmic dels alts costos de l’energia i la necessitat urgent de reduir emissions de CO2. Davant d’un model allunyat dels usuaris i del teixit productiu, cal que la Generalitat de Catalunya assumeixi una capacitat de decisió plena en la planificació i la governança de les xarxes elèctriques per garantir una transició alineada amb les necessitats territorials i la preservació del medi natural.",
+   "pRel": 0.84,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.51
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 29,
+   "text": "Aquesta transformació només serà possible si passem d’un esquema vertical i concentrat a un model energètic 100 % renovable, descentralitzat, distribuït i de proximitat (km0). Cal impulsar noves eines normatives que transposin de manera efectiva les directives del Clean Energy Package i la Directiva de Mercat Interior de la UE, acompanyades d’una revisió profunda de la fiscalitat energètica que penalitzi les emissions i posi fi als senyals contradictoris actuals. Alhora, l’Administració ha de prioritzar l’electrificació del sistema, destinant els combustibles renovables únicament als sectors industrials difícilment electrificables, i dotar el país de xarxes de transport i distribució adequades, capacitat d’emmagatzematge, xarxes intel·ligents (smart grids) i una gestió flexible de la demanda que no faci recaure els costos de la transició sobre els consumidors. En definitiva, la transició energètica és una revolució que ha de democratitzar el mercat energètic, alliberar-lo d’oligopolis i garantir l’accés a l’energia a preus justos com a bé de primera necessitat.",
+   "pRel": 0.82,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.93
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 29,
+   "text": "Per fer-ho possible, cal convertir la ciutadania, les cooperatives, les pimes i els municipis en actors actius del sistema mitjançant l’autoconsum col·lectiu, les comunitats energètiques locals i la participació en la gestió de la xarxa. Aquesta és l’aposta per a una Catalunya compromesa amb els objectius globals de l’Agenda 2030:",
+   "pRel": 0.53,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.64
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 30,
+   "text": "un model sostenible, d’eficiència, amb plena complicitat territorial i que situï la sobirania energètica al servei de la gent i de la competitivitat de la nostra economia. 130. Incrementar la capacitat de decisió i sobirania de la Generalitat de Catalunya sobre la xarxa elèctrica. Garantir la participació efectiva i l’increment de la capacitat de decisió de la Generalitat de Catalunya en la planificació, determinació de prioritats i governança sobre el seu sistema energètic en matèria de xarxes, inversions i desplegament de nova capacitat. 131. Impulsar una nova legislació sobre el Sector Elèctric i la Llei dels Gasos Renovables. Cal una nova Llei de Bases del Sector Elèctric i una Llei dels Gasos Renovables en substitució de la Llei d’Hidrocarburs que transposi les directives del Clean Energy Package i actualitzi la realitat del sector als reptes climàtics, de seguretat energètica i econòmics de la pròxima dècada. 132. Eliminar els privilegis de les grans energètiques.",
+   "pRel": 0.81,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.48
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 30,
+   "text": "Modificar els incentius del RD 8/2023 per evitar que les bonificacions fiscals per inversions en renovables funcionin com a subvencions que reforcin la posició de domini de l’oligopoli, afavorint en el seu lloc l’entrada de nous agents i la diversificació del mercat. 133. Traspassar les centrals hidroelèctriques. Recuperar i traspassar la gestió i la titularitat pública de les centrals hidroelèctriques a la Generalitat de Catalunya a mesura que vagin caducant les concessions. 134. Impulsar un pla urgent d’inversions i modernització de la xarxa elèctrica catalana. Exigir a l’Estat un pla d’inversions en les xarxes de transport i distribució elèctrica de Catalunya, amb projectes identificats, calendaris executables i compromisos anuals verificables. Actualitzar els requisits tècnics de connexió de les grans instal·lacions fotovoltaiques per garantir l’estabilitat del sistema, exigint mecanismes de resposta ràpida davant fluctuacions i incidències. 135. Garantir la capacitat de decisió de Catalunya sobre les grans infraestructures elèctriques.",
+   "pRel": 0.78,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.52
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 30,
+   "text": "Crear una plataforma neutral de dades dels recursos energètics distribuïts que garanteixi l’accés igualitari a la informació i la cessió de dades a tercers únicament amb el consentiment exprés de les persones consumidores. 138. Ampliar els radis d’autoconsum compartit. Modificar la legislació per ampliar l’àmbit de l’autoconsum col·lectiu fins als 10 km amb caràcter general i fins als 20.000 metres (20 km) en àrees rurals, redefinint els peatges d’accés de manera proporcional als que s’indueixen a la xarxa. Això permetrà estendre l’autoconsum a més polígons industrials, a les urbanitzacions i al món rural, democratitzant l’accés a l’energia per a la majoria de la població que no disposa de teulada pròpia. 139. Agilitzar de tràmits i balanç net zero. Agilitzar els tràmits de legalització de les instal·lacions d’autoconsum compartit, garantir una bona qualitat de la senyal elèctrica de la xarxa de distribució, fixar procediments simples amb terminis exigibles per a distribuïdores i comercialitzadores, i apostar pel balanç net zero per a l’autoconsum. 140. Impulsar l’autoconsum renovable, les comunitats energètiques i la resiliència del sistema.",
+   "pRel": 0.78,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.68
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 30,
+   "text": "Ampliar els programes estatals d’ajuts per fomentar l’autoconsum individual i col·lectiu, amb incentius per a l’emmagatzematge energètic i les instal·lacions capaces de funcionar en mode illa davant de talls de subministrament. Reforçar el programa CE IMPLEMENTA i crear línies de suport a les comunitats energètiques, cooperatives, llars, municipis, comerços i pimes, facilitant l’aprofitament de",
+   "pRel": 0.64,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.58
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 31,
+   "text": "cobertes, aparcaments, equipaments públics i espais industrials. Garantir finançament i assistència tècnica, jurídica i administrativa, prioritzant els projectes amb menys recursos, les zones amb vulnerabilitat energètica i la participació de les persones que viuen de lloguer. 141. Accelerar l’electrificació i l’eficiència energètica de les llars i el transport. Impulsar ajuts per substituir els combustibles fòssils per alternatives elèctriques en la climatització i la mobilitat, millorar l’aïllament dels edificis i renovar els electrodomèstics i equips per models més eficients. Promoure mesures d’estalvi energètic i informació accessible per reduir el consum, les emissions i la dependència energètica. 142. Impulsar les infraestructures de recàrrega i garantir la resiliència energètica del transport. Desplegar una xarxa de recàrrega de vehicles elèctrics i d’hidrogen alineada amb els objectius europeus, amb especial atenció al transport de mercaderies i l’objectiu d’assolir 4.000 punts de recàrrega de més de 350 kW abans de 2030.",
+   "pRel": 0.53,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.94
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 31,
+   "text": "Adaptar el marc normatiu i ampliar els terminis de concessió de les estacions de càrrega ultraràpida per facilitar-ne el desplegament i fomentar la competència. Garantir sistemes d’alimentació elèctrica d’emergència a les estacions ferroviàries i infraestructures crítiques de transport per mantenir les comunicacions, la il·luminació i la senyalització quan hi hagi talls de subministrament. 143. Garantir una energia competitiva i sostenible per a la indústria i les pimes. Aprovar un paquet estatal d’ajuts per accelerar l’electrificació industrial, l’eficiència energètica, l’emmagatzematge i la recuperació de calor. Facilitar els contractes de subministrament renovable a llarg termini, la compra agregada d’energia i les garanties de finançament per a les pimes. Reformar la fiscalitat per afavorir la substitució dels combustibles fòssils per electricitat i garantir que les obligacions socials del sistema energètic disposin de finançament públic transparent. 144. Reparar els perjudicis causats als petits inversors en energies renovables.",
+   "pRel": 0.77,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.83
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 31,
+   "text": "Establir mecanismes de compensació per als petits inversors fotovoltaics afectats per les modificacions retroactives del règim retributiu de les energies renovables, garantint la seguretat jurídica i la protecció de les inversions realitzades sota el marc regulador anterior. 145. Reformar la regulació energètica per reduir els costos i afavorir la descarbonització. Recuperar el Fons Nacional per a la Sostenibilitat del Sistema Elèctric perquè els combustibles fòssils contribueixin al finançament de les renovables i es redueixin els costos de la factura elèctrica. Corregir els greuges tarifaris de les xarxes de 25 i 30 kV, incorporant-les a la tarifa 6.2, i regular la contractació de potència estacional per adaptar els costos al consum real. Impulsar els gasos renovables, especialment el biometà i l’hidrogen verd, i la cogeneració d’alta eficiència per descarbonitzar els processos industrials difícils d’electrificar. 146. Flexibilització de la Llei de Residus (Llei 7/2022) per al sector primari.",
+   "pRel": 0.68,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.69
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 31,
+   "text": "Modificar i flexibilitzar la Llei 7/2022 de residus i sòls contaminats per a una economia circular, facilitant que els residus procedents de la ramaderia, l’agricultura i la pesca es puguin utilitzar àgilment per a la producció de biogàs, la generació d’energia renovable i l’impuls de la bioeconomia. 147. Contribució de l’Estat al Fons de Transició Nuclear. Exigir la contribució obligatòria de l’Estat al Fons de Transició Nuclear de la Generalitat de Catalunya per un import equivalent al que aporta anualment l’administració catalana, mitjançant la recaptació finalista de l’impost sobre instal·lacions amb impacte ambiental provinent dels ingressos estatals de l’energia nuclear. 148. Modificar el Pla Hidrològic de l’Ebre i garantir els cabals ecològics i l’equilibri mediambiental. Cal protegir el Delta de l’Ebre i el conjunt de l’ecosistema del riu. 149. Comissió Bilateral del Delta de l’Ebre i cessió de conques de la CHE. Convocar la comissió bilateral entre la Direcció General de Costes i la Generalitat de Catalunya per coordinar les estratègies de protecció del litoral i incrementar la seguretat jurídica dels titulars de drets al delta de l’Ebre.",
+   "pRel": 0.6,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.69
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 31,
+   "text": "Reclamar el traspàs i la cessió de la gestió de les conques catalanes que depenen de la Confederació Hidrogràfica de l’Ebre (CHE). 150. Finançament estatal per a les dessalinitzadores de la Tordera i del Foix. Reclamar la modificació de la via de finançament establerta al RDL 4/2023 per convertir els 435 milions d’euros en una injecció directament estatal a fons perdut, evitant que s’articulin com un crèdit que acabi sent repercutit sobre la factura de l’aigua dels ciutadans de Catalunya.",
+   "pRel": 0.89,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.65
+  },
+  {
+   "party": "ERC",
+   "qid": "Q028",
+   "page": 32,
+   "text": "Crear una convocatòria periòdica d’ajuts a municipis rurals i de muntanya per a xarxes de calor amb estella forestal de proximitat, promovent la gestió sostenible dels boscos locals, la prevenció d’incendis i la creació d’ocupació. Aquesta mesura permetrà substituir els combustibles fòssils, reduir la despesa energètica dels equipaments públics i dinamitzar la bioeconomia rural. 155. Protegir el delta de l’Ebre davant la regressió litoral i el canvi climàtic. Exigir un pla estatal anual acordat amb el territori per combatre la regressió, la subsidència i la pujada del mar al delta de l’Ebre, prioritzant la mobilització de sorres i la recuperació de sediments d’embassaments, adaptant la gestió d’inundacions i eliminant tràmits que bloquegen les actuacions catalanes.",
+   "pRel": 0.53,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.47
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 32,
+   "text": "H. Garantir el futur de la pagesia, la pesca i el món rural Els sectors agrari, ramader i pesquer són essencials per garantir la sobirania alimentària, la cohesió territorial i la vitalitat econòmica i social del país. Tanmateix, afronta reptes estructurals com els efectes del canvi climàtic, l’increment dels costos de producció, la manca de relleu generacional i els desequilibris de poder en la cadena alimentària. Cal garantir unes condicions de vida i de treball dignes per a la pagesia, la ramaderia i el sector pesquer, protegir les explotacions familiars i avançar cap a un model productiu sostenible, resilient i arrelat al territori. Per assolir aquests objectius, és imprescindible disposar dels recursos i de la capacitat de decisió necessaris per definir polítiques adaptades a la realitat del país. Defensem una gestió descentralitzada dels fons europeus, el respecte a les competències de Catalunya i més implicació de l’Estat en el finançament de les transformacions que necessita el sector.",
+   "pRel": 0.7,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.53
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 32,
+   "text": "Apostem per reforçar la viabilitat econòmica de les explotacions, garantir preus justos, impulsar l’adaptació climàtica i promoure una gestió sostenible dels recursos naturals que asseguri el futur del sector primari i del món rural. 156. Descentralitzar la Política Agrària Comuna (PAC) i la gestió dels fons europeus destinats als sectors agrari i pesquer i al desenvolupament rural. Exigir que el nou Marc Financer Pluriennal (MFP) de la Unió Europea per al període 2028-2034 garanteixi recursos suficients i diferenciats per a l’agricultura, la ramaderia, la pesca i el desenvolupament rural, evitant que la integració dels actuals instruments de finançament en fons més amplis comporti una reducció dels recursos o una recentralització de les competències. Reclamar que Catalunya participi directament en la definició, distribució i gestió dels fons europeus, apropant les decisions a les explotacions agràries, ramaderes i pesqueres. 157. Revertir els acords comercials lesius per a la sobirania alimentària i el sector primari català. El govern espanyol ha de rebutjar la ratificació de l’acord de lliure comerç UE-Mercosur i oposar-se a l’aplicació provisional mentre no es pronunciï el TJUE.",
+   "pRel": 0.69,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.53
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 33,
+   "text": "158. Garantir la capacitat de decisió sobre l’ordenació de l’espai marítim. Exigir que el govern de la Generalitat de Catalunya disposi de les competències i dels instruments necessaris per planificar i ordenar els usos de l’espai marítim de les seves costes, d’acord amb la Directiva 2014/89/UE. 159. Reformar i garantir l’aplicació efectiva de la Llei de la cadena alimentària per assegurar preus justos a la pagesia. Impulsar les modificacions legislatives i els mecanismes de control necessaris per garantir preus justos que cobreixin els costos de producció, assegurin la viabilitat de les explotacions i facilitin el relleu generacional. Cal fixar metodologies objectives per sector i reforçar els observatoris agroalimentaris per publicar els costos de referència i la negociació mitjançant cooperatives i organitzacions de productors. 160. Promoure els vins i escumosos catalans i garantir la sostenibilitat del sector vitivinícola. Impulsar mesures de comercialització dels vins i escumosos catalans, tant al mercat interior com als mercats internacionals, reforçant el reconeixement de les denominacions d’origen i la qualitat dels productes del país.",
+   "pRel": 0.67,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.66
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 37,
+   "text": "C. DEFENSAR ELS SERVEIS PÚBLICS Per a Esquerra Republicana, els serveis públics són totalment prioritaris i els defensarem amb aferrissament. Són els serveis públics els que ens garanteixen una societat justa i cohesionada, i són els serveis públics els que fan millors les societats. En els darrers anys, a Catalunya patim un desgast evident dels nostres serveis públics. No tenim uns serveis públics dimensionats per a la població actual i la manca de finançament ha fet que la qualitat dels nostres serveis se n’hagi vist afectada. Per això hem batallat per aconseguir un acord de finançament imprescindible per als nostres serveis públics i per això hem treballat perquè Catalunya governi Rodalies i les seves infraestructures. Només amb més finançament i guanyant sobirania a l’Estat podrem millorar els nostres serveis públics. Davant la possibilitat d’un govern de dreta i extrema dreta que retallarà en allò que és troncal per a qualsevol societat —educació, sanitat, polítiques socials— cal algú prou fort per enfrontar-s’hi i defensar els serveis públics.",
+   "pRel": 0.65,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.56
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 37,
+   "text": "A. Inversions en infraestructures i garanties d’execució Catalunya pateix un dèficit d’infraestructures endèmic que suposa un llast econòmic inassumible i dificulta el dia a dia de la nostra activitat productiva. La injustícia dels governs espanyols en inversió és una vergonya i cal prioritzar l’exigència i el compliment de les inversions que necessitem i que ens corresponen. Les infraestructures del país, essencials per garantir la cohesió territorial, el desenvolupament econòmic i la mobilitat, es troben actualment al límit del col·lapse. Això té unes causes clares: Catalunya arrossega dèficits històrics d’inversió en la xarxa ferroviària, les carreteres, els ports i els aeroports que condicionen la competitivitat del país, dificulten la mobilitat quotidiana i accentuen els desequilibris territorials. Cal superar un model de planificació centralitzat que no respon a les necessitats de Catalunya i avançar en la sobirania sobre les infraestructures, amb el traspàs de la titularitat i la gestió dels ports, els aeroports i les carreteres estatals, i amb els recursos necessaris per garantir un sistema d’infraestructures integrat, eficient, sostenible i equilibrat territorialment.",
+   "pRel": 0.88,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.56
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 37,
+   "text": "La gestió i construcció d’infraestructures ha de tenir en compte el context d’emergència climàtica: cal adaptar les infraestructures actuals al canvi climàtic i construir-ne de noves que ajudin a la reducció de la contaminació atmosfèrica i afavoreixin el transport públic i el desenvolupament ferroviari i, alhora, cal evitar la construcció d’infraestructures sobredimensionades amb criteris del passat com ara el Quart Cinturó. Els governs espanyols, de tots els colors polítics, han incomplert sistemàticament les inversions pressupostades a Catalunya. Amb el govern de Sánchez, la inversió executada a Catalunya ha representat el percentatge més baix dels darrers deu anys respecte del total d’inversions regionalitzades de l’Estat (8,6 %). Cal disposar de noves eines que acostin la presa de decisions a Catalunya per revertir aquesta",
+   "pRel": 0.5,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.44
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 38,
+   "text": "situació, enquistada en les estructures inversores de l’Estat. En aquest sentit, el Consorci d’Inversions ha de permetre una planificació més transversal i propera de les inversions necessàries, així com garantir-ne l’execució. Paral·lelament, cal potenciar les encomandes de gestió perquè la Generalitat pugui executar les inversions que corresponen a l’Estat però que aquest no duu a terme, i posar fi, així, a la paràlisi inversora. 179. Una nova governança per a la gestió catalana dels aeroports catalans. Avançar cap a la gestió des de Catalunya dels aeroports catalans d’interès general, superant l’actual model centralitzat d’Aena i dotant la Generalitat d’un paper determinant en la planificació i la presa de decisions. Impulsar la plena operativitat de l’Autoritat Aeroportuària de Catalunya com a instrument per definir l’estratègia aeroportuària del país i concentrar les competències de la Generalitat vinculades als aeroports.",
+   "pRel": 0.88,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.45
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 38,
+   "text": "Paral·lelament, establir un òrgan bilateral Generalitat–Estat de governança aeroportuària que permeti avançar en el traspàs i la gestió individualitzada dels aeroports de Barcelona-El Prat, Girona, Reus i Sabadell, integrats en una estratègia aeroportuària catalana en xarxa. Garantir la participació de Catalunya en l’elaboració dels Documents de Regulació Aeroportuària (DORA) i en les decisions estratègiques d’AENA que afecten el sistema aeroportuari català. 180. Traspassar la titularitat i la gestió dels aeroports de Girona, Reus i Sabadell, sense renunciar al traspàs de la resta d’infraestructures aeroportuàries i portuàries dels Països Catalans. Impulsar un model de gestió propi que prioritzi l’equilibri territorial, la connectivitat internacional, la intermodalitat i la sostenibilitat ambiental, en lloc de perpetuar un model aeroportuari excessivament concentrat a Barcelona i dependent del turisme de baix cost. Prioritzar el traspàs dels aeroports de Girona, Reus i Sabadell com a pas per avançar cap a un sistema aeroportuari català integrat. 181. Connectar els aeroports de Girona i Reus amb la xarxa ferroviària d’alta velocitat.",
+   "pRel": 0.89,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.57
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 38,
+   "text": "Materialitzar els acords entre la Generalitat i l’Estat per constituir i posar en funcionament el Consorci d’Inversions de Catalunya i la Societat Mercantil d’Inversions de Catalunya, amb participació paritària de les dues administracions. Dotar aquests instruments dels recursos i les competències necessaris per planificar, supervisar i executar les inversions estatals a Catalunya, garantir el compliment dels compromisos pressupostaris i superar la situació crònica de baixa execució de les inversions de l’Estat. 185. Ampliar les encomanes de gestió i traspassar les carreteres estatals a Catalunya. Incrementar les encomanes de gestió perquè la Generalitat pugui projectar, executar i mantenir les infraestructures viàries de titularitat estatal, especialment les vies d’alta capacitat AP-7, AP-2, A-2 i A-27. Avançar en el traspàs de les carreteres estatals que transcorren per Catalunya, com l’N II, l’N 340, l’N 260, l’N 230 i l’N 240, amb els recursos econòmics necessaris per garantir-ne la conservació i la millora. 186. Implementació de la vinyeta i finançament just de les vies d’alta capacitat a Catalunya.",
+   "pRel": 0.9,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.42
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 39,
+   "text": "187. Accelerar la millora de l’Eix Pirinenc (N-260) i traspassar-ne la titularitat. Ampliar la dotació de les encomanes de gestió destinades a l’Eix Pirinenc, prioritzant les actuacions pendents al Pirineu lleidatà i, posteriorment, al gironí. Garantir la millora integral de la carretera i, un cop executades les inversions compromeses, traspassar a la Generalitat la titularitat de l’N-260 entre el Pont de Suert i Portbou. 188. Ampliar la capacitat de l’AP-7 a les Terres de l’Ebre. Accelerar la tramitació, la dotació pressupostària i l’execució del tercer carril per sentit de l’AP-7, entre Amposta i l’Hospitalet de l’Infant. 189. Completar les connexions viàries estratègiques pendents. Finalitzar l’autovia A 27 entre Valls i Montblanc i garantir-ne la connexió amb l’AP-2. Executar els accessos directes dels polígons industrials de Torreblanca-Quatre Pilans i Camí dels Frares a la xarxa viària d’alta capacitat. Completar les actuacions pendents de l’A-2 i l’N-II a les comarques gironines, especialment la connexió entre Tordera i Maçanet de la Selva i la variant de Figueres, per millorar la connectivitat territorial i descongestionar l’AP-7. 190.",
+   "pRel": 0.54,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.77
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 39,
+   "text": "Sense anticipar conclusions sobre les causes de l’accident, que cal investigar amb rigor, és imprescindible qüestionar les prioritats inversores de l’Estat. Espanya destina una proporció molt superior dels recursos per construir noves línies d’alta velocitat que per mantenir i renovar les actuals, molt per sobre dels principals països europeus. No podem continuar ampliant la xarxa sense garantir-ne el manteniment, la seguretat i la fiabilitat. Cal reforçar la conservació de les vies, modernitzar els centres de control i els sistemes de senyalització i protecció, i revisar preventivament la seguretat de tota la xarxa, incloses les línies d’alta velocitat i els trams amb circulació mixta de passatgers i mercaderies. El traspàs integral de Rodalies acordat entre la Generalitat i l’Estat és una oportunitat per transformar aquest model, però avança massa lentament, malgrat la constitució de Rodalies de Catalunya el gener de 2026, i encara té pendents traspassos essencials com el de la línia R1. Cal accelerar-lo, executar les inversions compromeses, completar el Corredor Mediterrani i eliminar els colls d’ampolla ferroviaris.",
+   "pRel": 0.79,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.66
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 39,
+   "text": "Catalunya necessita més inversió, més manteniment i més sobirania ferroviària per disposar d’una xarxa segura, fiable i al servei de les persones, de l’economia productiva i de la cohesió territorial.",
+   "pRel": 0.58,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.44
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 40,
+   "text": "192. Culminar el traspàs integral de Rodalies a la Generalitat. Accelerar el traspàs de l’operació dels serveis de Rodalies a la nova empresa Rodalies de Catalunya, superant els obstacles administratius i organitzatius que en dificulten el desplegament. Fer efectiu el traspàs de la línia R1 i iniciar el de la resta de línies acordades amb l’Estat —R2 Sud, R3, R4 Nord i R16 (l’Aldea-Tortosa)—, incloent-hi les vies, les estacions, les instal·lacions i tots els elements necessaris per garantir-ne una gestió integral des de Catalunya, amb els recursos humans, materials i econòmics corresponents. 193. Garantir la seguretat i la fiabilitat de l’alta velocitat ferroviària. Exigir a Adif un manteniment preventiu adequat de les infraestructures d’alta velocitat, amb les inspeccions, les renovacions i les inversions necessàries per garantir-ne la seguretat i el bon funcionament. Reforçar les obligacions de les operadores ferroviàries pel que fa al manteniment i l’estat del material mòbil, per reduir les incidències i garantir un servei fiable. 194. Descentralitzar la gestió i el manteniment de les infraestructures ferroviàries.",
+   "pRel": 0.87,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.44
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 40,
+   "text": "Traspassar progressivament a Catalunya les funcions de conservació, manteniment i gestió de les infraestructures ferroviàries vinculades a Rodalies, amb els recursos necessaris per garantir un servei segur, fiable i de qualitat. Establir mecanismes de control i rendició de comptes sobre les actuacions d’Adif i Renfe mentre no es completi el traspàs, prioritzant el manteniment preventiu, la reducció d’incidències i la recuperació de la fiabilitat del servei. 195. Garantir el finançament i l’execució íntegra del Pla de Rodalies 2026-2030. Comprometre els recursos necessaris per executar totes les actuacions del Pla de Rodalies 2026-2030, inclosos els 1.400 milions d’euros addicionals anunciats pel Ministeri de Transports i acordats amb la Generalitat. Formalitzar-ne el finançament mitjançant la Comissió Mixta d’Afers Econòmics i Fiscals (CMAEF), establint compromisos pressupostaris pluriennals i mecanismes de seguiment que garanteixin l’execució efectiva de les inversions. 196. Augmentar la capacitat de la xarxa ferroviària convencional i eliminar els colls d’ampolla.",
+   "pRel": 0.86,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.72
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 41,
+   "text": "Una sanitat que no deixi ningú enrere i que prioritzi les necessitats de salut per davant dels interessos econòmics. Catalunya ha de disposar de prou finançament i de plena capacitat de decisió per desenvolupar el seu propi model sanitari i donar resposta a les necessitats de la ciutadania. Necessitem més recursos, més professionals i més sobirania per garantir una sanitat pública forta, accessible i de qualitat, capaç de respondre als reptes actuals i futurs i de continuar sent un dels principals instruments de cohesió social del país. 203. Defensar i enfortir el sistema sanitari públic. Blindar una sanitat pública, universal i de qualitat, reforçant la capacitat assistencial del sistema per reduir les llistes d’espera, garantir una atenció equitativa i frenar la privatització de la sanitat. 204. Incrementar el finançament estatal del sistema públic de salut per garantir una atenció sanitària de qualitat i unes condicions laborals dignes.",
+   "pRel": 0.62,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.4
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 42,
+   "text": "da es faci tot respectant les competència de la Generalitat de Catalunya i atengui la població real, el creixement demogràfic, les necessitats assistencials i el cost efectiu de prestar els serveis. 205. Blindar les competències de la Generalitat de Catalunya en matèria sanitària. Defensar el caràcter exclusiu de les competències de la Generalitat en matèria de salut i impedir qualsevol intent de recentralització o ingerència de l’Estat en el model sanitari català. Exigir el traspàs immediat de totes les funcions i competències encara pendents, acompanyat dels recursos econòmics, humans i materials necessaris. Garantir la plena capacitat de Catalunya per planificar, regular i gestionar el seu sistema sanitari, d’acord amb les necessitats de la ciutadania i sense imposicions de l’Estat. 206. Ampliar la cartera pública de serveis de salut visual i garantir l’accés universal a ulleres graduades i lents de contacte.",
+   "pRel": 0.94,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.68
+  },
+  {
+   "party": "ERC",
+   "qid": "Q030",
+   "page": 42,
+   "text": "da es faci tot respectant les competència de la Generalitat de Catalunya i atengui la població real, el creixement demogràfic, les necessitats assistencials i el cost efectiu de prestar els serveis. 205. Blindar les competències de la Generalitat de Catalunya en matèria sanitària. Defensar el caràcter exclusiu de les competències de la Generalitat en matèria de salut i impedir qualsevol intent de recentralització o ingerència de l’Estat en el model sanitari català. Exigir el traspàs immediat de totes les funcions i competències encara pendents, acompanyat dels recursos econòmics, humans i materials necessaris. Garantir la plena capacitat de Catalunya per planificar, regular i gestionar el seu sistema sanitari, d’acord amb les necessitats de la ciutadania i sense imposicions de l’Estat. 206. Ampliar la cartera pública de serveis de salut visual i garantir l’accés universal a ulleres graduades i lents de contacte.",
+   "pRel": 0.92,
+   "choice": "strongly_against",
+   "value": -2,
+   "confidence": 0.8
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 42,
+   "text": "E. Més eines per la millora de la seguretat La seguretat és un dret de la ciutadania i una responsabilitat fonamental dels poders públics. Catalunya disposa d’un model de policia integral articulat al voltant del Cos de Mossos d’Esquadra, però encara hi ha competències per desplegar, limitacions en l’accés a la informació policial i mancances de coordinació que dificulten una resposta plenament eficaç davant la delinqüència. Defensem una política de seguretat que combini la prevenció, la capacitat d’investigació, la mediació i la resposta efectiva davant els delictes, amb una justícia dotada dels recursos necessaris per actuar amb agilitat i garantir la protecció de les víctimes. Tot això requereix completar el desplegament de les competències del Cos de Mossos d’Esquadra, reforçar les policies locals —posant l’èmfasi en els municipis petits i mitjans— i millorar la cooperació entre cossos policials i serveis d’emergències.",
+   "pRel": 0.69,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.59
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 42,
+   "text": "Esquerra Republicana reclamem també que Catalunya pugui exercir plenament les seves competències en seguretat, trànsit i protecció civil perquè volem una seguretat pública més coordinada, amb més recursos i capacitat d’actuació i que garanteixi una resposta adequada a tots els territoris de Catalunya. 209. Assumir plenament les competències de seguretat als ports i aeroports. Reclamar l’execució efectiva del traspàs de les funcions de seguretat ciutadana, prevenció i investigació de delictes i manteniment de les infraestructures crítiques als ports i aeroports de Catalunya. Establir un calendari concret de desplegament amb la dotació d’efectius i recursos necessaris per garantir una correcta prestació del servei. 210. Garantir l’accés efectiu dels Mossos d’Esquadra a les bases de dades i als mecanismes de cooperació policial internacional. Atenent que el Cos de Mossos d’Esquadra, com a policia integral, és també encarregat de la lluita i prevenció en matèria antiterrorista i del crim organitzat, és imprescindible la plena integració del CME a organismes d’àmbit internacional com són la Interpol i l’Europol en pla d’igualtat amb els cossos policials espanyols.",
+   "pRel": 0.9,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.59
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 43,
+   "text": "Promoure una revisió del tractament penal de la tinença i l’ús il·lícit d’armes de foc, la possessió d’armes blanques prohibides i els robatoris de cable, amb l’objectiu d’incrementar-ne les penes. 214. Ampliar les competències de Catalunya en trànsit i seguretat viària. Reclamar el traspàs immediat de les competències plenes en matèria de trànsit i seguretat viària als governs de Catalunya, el País Valencià i les Illes Balears, referides al control de la matriculació i l’expedició de permisos o llicències de conducció i circulació, la capacitat per autoritzar transferències, duplicats i baixes de vehicles, per poder fixar la velocitat en totes les vies del territori català, per la pèrdua i la devolució de punts del carnet de conduir i pel registre de la inspecció tècnica de vehicles. Resulta urgent, a més, incrementar els examinadors i alliberar-los de sobrecàrrega burocràtica. 215. Reforçar les policies locals i facilitar la cooperació entre municipis.",
+   "pRel": 0.94,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.53
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 44,
+   "text": "Recuperar i desplegar les competències de la Generalitat en la selecció i formació dels funcionaris d’habilitació nacional per adaptar els processos a la realitat catalana, agilitzar la cobertura de vacants i reduir el dèficit estructural de professionals que tant dificulta el funcionament dels ajuntaments.",
+   "pRel": 0.89,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.52
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 45,
+   "text": "Reduir la precarietat i la temporalitat, accelerar la contractació indefinida del personal investigador, millorar les retribucions i garantir una carrera professional digna per al personal investigador, docent, tècnic i de gestió. Ampliar les places dels programes estatals de formació i retenció del talent, millorar les condicions dels doctorands i doctorandes i garantir una retribució adequada des de l’inici de la carrera investigadora. També cal eliminar les taxes de reposició, desplegar la carrera professional horitzontal, reforçar les plantilles de suport i reduir la càrrega burocràtica, així com avaluar i abordar els riscos psicosocials, protegir la salut mental i combatre les dinàmiques de precarietat i explotació en l’àmbit universitari i científic. 223. Reforçar el finançament basal de les universitats i els centres de recerca. Assegurar recursos estables per als centres de recerca, les infraestructures científiques singulars i els grups de recerca universitaris i hospitalaris, amb especial atenció als àmbits estratègics per al país. 224. Assolir les competències plenes en matèria d’avaluació i acreditació universitàries.",
+   "pRel": 0.64,
+   "choice": "partially_for",
+   "value": 1,
+   "confidence": 0.39
+  },
+  {
+   "party": "ERC",
+   "qid": "Q029",
+   "page": 45,
+   "text": "Ampliar les competències de l’Agència per a la Qualitat del Sistema Universitari de Catalunya (AQU) perquè assumeixi la totalitat dels processos d’avaluació, certificació i acreditació de les universitats, titulacions i professorat de Catalunya. Reformar la normativa estatal per atribuir-li les competències encara reservades a l’ANECA, especialment l’acreditació del professorat per accedir als cossos docents funcionarials i el reconeixement dels mèrits docents i investigadors. Garantir la plena validesa de les resolucions d’AQU i la seva capacitat per establir criteris i procediments propis, d’acord amb els estàndards europeus i amb els recursos necessaris per exercir aquestes funcions. 225. Eliminar el districte únic universitari. Cal que Catalunya pugui planificar l’accés a la universitat d’acord amb les necessitats del país. Així mateix, garantir que Catalunya pugui planificar i executar les competències en formació de les professions sanitàries en un marc nacional, d’acord amb les necessitats del sistema de salut català i no amb una planificació centralitzada des de l’Estat. 226. Reformar la regulació de les pràctiques acadèmiques universitàries.",
+   "pRel": 0.88,
+   "choice": "strongly_for",
+   "value": 2,
+   "confidence": 0.57
+  }
+ ]
+}

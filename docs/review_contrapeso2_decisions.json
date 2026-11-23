@@ -1,0 +1,495 @@
+{
+ "generated": "2026-11-23",
+ "decisions": [
+  {
+   "party": "EH Bildu",
+   "qid": "Q097",
+   "action": "reject",
+   "reason": "La cita está cortada y no se ve a qué ayudas o servicios se refiere."
+  },
+  {
+   "party": "PP",
+   "qid": "Q097",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q097",
+   "action": "reject",
+   "reason": "Trata de ordenar la inmigración por empleo, no de condicionar las ayudas."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q097",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q098",
+   "action": "reject",
+   "reason": "Habla de unificar Adif y Renfe, no de eliminar organismos duplicados."
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q099",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q099",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q099",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q099",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q099",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q099",
+   "action": "reject",
+   "reason": "Habla de reservar suelo para vivienda habitual, no de liberalizar más suelo."
+  },
+  {
+   "party": "PP",
+   "qid": "Q099",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q099",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q099",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q100",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q100",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q100",
+   "action": "reject",
+   "reason": "Fragmento sin la medida: no se ve qué propone sobre la ley del menor."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q100",
+   "action": "reject",
+   "reason": "Habla de la prisión permanente revisable, no de la ley penal del menor."
+  },
+  {
+   "party": "Vox",
+   "qid": "Q100",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q101",
+   "action": "reject",
+   "reason": "Habla de financiar las pensiones y el tope de cotización, no de bajar las cotizaciones de las empresas."
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q101",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q101",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q101",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q101",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q101",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q102",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q102",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q103",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q103",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q103",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q103",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q103",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q103",
+   "action": "reject",
+   "reason": "Fragmento poco claro sobre el modelo de pensiones: no se ve su posición sobre los planes privados."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q103",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q103",
+   "action": "reject",
+   "reason": "Habla de las mutualidades, no de fomentar los planes privados."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q103",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q103",
+   "action": "reject",
+   "reason": "No queda claro que se refiera a un plan de pensiones privado."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q104",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q104",
+   "action": "reject",
+   "reason": "Es una frase general sobre los impuestos a los más ricos, no sobre suprimir el impuesto sobre el patrimonio."
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q104",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q104",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q104",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q105",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q106",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q107",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q107",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q108",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q108",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q108",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q109",
+   "action": "reject",
+   "reason": "No se ve a qué beneficios fiscales se refiere."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q109",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q110",
+   "action": "reject",
+   "reason": "La cita está cortada y no dice si baja o sube el IRPF."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q110",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q110",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q110",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q110",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q110",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q110",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q110",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q110",
+   "action": "reject",
+   "reason": "Habla de la diferencia entre lo que cuesta y lo que cobra una persona, sin concretar el IRPF."
+  },
+  {
+   "party": "Vox",
+   "qid": "Q110",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  }
+ ]
+}

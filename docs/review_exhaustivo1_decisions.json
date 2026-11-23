@@ -1,0 +1,672 @@
+{
+ "generated": "2026-11-23",
+ "decisions": [
+  {
+   "party": "BNG",
+   "qid": "Q001",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q001",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q003",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q003",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q003",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q004",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q005",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q006",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q007",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q007",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q007",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q008",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q010",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q010",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q010",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q017",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q018",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q018",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q018",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q019",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q019",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q020",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q020",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q020",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q022",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q023",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q025",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q025",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q026",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q027",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q030",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q030",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q030",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q033",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q033",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q033",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q033",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q034",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q035",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q035",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q036",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q036",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q038",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q038",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q038",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q038",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q044",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q045",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q047",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q048",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "ERC",
+   "qid": "Q050",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q055",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q055",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q055",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q056",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q058",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q061",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q062",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q062",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Vox",
+   "qid": "Q062",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q066",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q066",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q066",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q067",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q067",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q067",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q068",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q070",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q070",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q071",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q075",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q075",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q075",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q077",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q078",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q080",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q087",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q087",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q087",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q087",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q087",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q089",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q091",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q094",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q095",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q096",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q097",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q098",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q099",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q101",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q101",
+   "action": "reject",
+   "reason": "La cita no responde a la pregunta o no toma posición sobre la medida concreta."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q104",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q107",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q110",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  }
+ ]
+}

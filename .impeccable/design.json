@@ -1,0 +1,127 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-11-23T11:26:30.844273Z",
+ "title": "Design System: Plataforma de Afinidad",
+ "extensions": {
+  "colorMeta": {
+   "ink": {
+    "role": "primary",
+    "displayName": "Tinta",
+    "canonical": "#242522",
+    "tonalRamp": [
+     "#242522",
+     "#565850",
+     "#6b6c66"
+    ]
+   },
+   "data": {
+    "role": "secondary",
+    "displayName": "Salvia de datos",
+    "canonical": "#68745c",
+    "tonalRamp": [
+     "#68745c",
+     "#d0d8c3"
+    ]
+   },
+   "paper": {
+    "role": "neutral",
+    "displayName": "Papel",
+    "canonical": "#fafaf8",
+    "tonalRamp": [
+     "#fafaf8",
+     "#f2f2ef",
+     "#deded7"
+    ]
+   }
+  },
+  "typographyMeta": {
+   "display": {
+    "displayName": "Archivo",
+    "purpose": "Titulares y cifras, en peso ligero."
+   },
+   "body": {
+    "displayName": "Archivo",
+    "purpose": "Texto corrido."
+   }
+  },
+  "shadows": [],
+  "motion": [
+   {
+    "name": "ease",
+    "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "purpose": "Relleno de barras y cambios de fondo."
+   }
+  ],
+  "breakpoints": [
+   {
+    "name": "movil-estrecho",
+    "value": "23rem"
+   },
+   {
+    "name": "sm",
+    "value": "30rem"
+   },
+   {
+    "name": "md",
+    "value": "48rem"
+   }
+  ]
+ },
+ "components": [
+  {
+   "name": "Botón principal",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "La acción principal de cada pantalla.",
+   "html": "<button class=\"ds-btn\">Comenzar · 36 preguntas</button>",
+   "css": ".ds-btn{background:#242522;color:#fff;border:1px solid #242522;border-radius:999px;min-height:52px;padding:11px 27px;font:500 1.05rem Archivo,sans-serif}.ds-btn:hover{background:#3a3b36}.ds-btn:focus-visible{outline:3px solid #0071e3;outline-offset:3px}"
+  },
+  {
+   "name": "Barra de dato",
+   "kind": "custom",
+   "refersTo": "data-bar",
+   "description": "Cápsula cuya anchura es el dato.",
+   "html": "<span class=\"ds-bar\">71,2 %</span>",
+   "css": ".ds-bar{display:flex;align-items:center;width:71%;height:2.6rem;padding:0 1rem;border-radius:999px;background:#68745c;color:#fff;font:500 1.5rem Archivo,sans-serif;letter-spacing:-.02em}"
+  },
+  {
+   "name": "Tarjeta",
+   "kind": "card",
+   "refersTo": "card",
+   "description": "Tile blanco con línea fina y cabecera en mayúsculas pequeñas.",
+   "html": "<div class=\"ds-card\"><div class=\"ds-head\">Elige los partidos a comparar</div><div class=\"ds-body\">Contenido</div></div>",
+   "css": ".ds-card{border:1px solid #deded7;border-radius:16px;background:#fff;overflow:hidden}.ds-head{padding:16px 16px 12px;border-bottom:1px solid #deded7;font:600 .78rem Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#6b6c66}.ds-body{padding:16px}"
+  }
+ ],
+ "narrative": {
+  "northStar": "El impreso limpio",
+  "overview": "El lenguaje visual está tomado de elecciones29n.com: papel cálido, tinta casi negra, líneas finas, Archivo en peso ligero y botones en píldora. El diseño no recomienda nada y ningún color sugiere preferencia por un partido.",
+  "keyCharacteristics": [
+   "Tarjetas blancas con línea fina y sin sombras",
+   "Una sola gama de salvia para los datos",
+   "Titulares ligeros con el interletrado apretado",
+   "Botones en píldora"
+  ],
+  "rules": [
+   {
+    "name": "The No-Verdict Rule",
+    "body": "Ningún color expresa mejor o peor: los datos usan siempre la misma gama de salvia.",
+    "section": "colors"
+   },
+   {
+    "name": "The One Ink Rule",
+    "body": "La tinta se reserva para lo que se pulsa y lo que está elegido.",
+    "section": "colors"
+   }
+  ],
+  "dos": [
+   "Do usar una sola gama de salvia para todo dato",
+   "Do poner la fuente a la vista: cita, página y enlace al programa"
+  ],
+  "donts": [
+   "Don't usar verde y rojo como bueno y malo",
+   "Don't añadir sombras ni degradados",
+   "Don't usar colores de partidos como identidad"
+  ]
+ }
+}

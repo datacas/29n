@@ -1,0 +1,118 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "notFound": "No encontrado",
+    "back": "Volver",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "close": "Cerrar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "surveys": "Encuestas",
+    "history": "Mis resultados",
+    "admin": "Administración"
+  },
+  "survey": {
+    "catalog": {
+      "title": "Encuestas disponibles",
+      "description": "Selecciona una encuesta para comenzar",
+      "noSurveys": "No hay encuestas publicadas todavía"
+    },
+    "detail": {
+      "start": "Comenzar encuesta",
+      "results": "Ver resultados",
+      "entities": "Entidades",
+      "questions": "Preguntas",
+      "depth": {
+        "quick": "Rápida",
+        "normal": "Normal",
+        "deep": "Profunda"
+      },
+      "depthTitle": "Profundidad"
+    },
+    "take": {
+      "selectEntities": "Selecciona las entidades a comparar",
+      "answer": "Responde las preguntas",
+      "review": "Revisa tus respuestas",
+      "finish": "Ver resultados",
+      "skip": "Omitir",
+      "importance": {
+        "low": "Baja",
+        "medium": "Media",
+        "high": "Alta"
+      },
+      "scale": {
+        "strongly_disagree": "Totalmente en desacuerdo",
+        "disagree": "En desacuerdo",
+        "neutral": "No sé / Sin opinión",
+        "agree": "De acuerdo",
+        "strongly_agree": "Totalmente de acuerdo"
+      }
+    },
+    "results": {
+      "title": "Tus resultados",
+      "affinity": "Compatibilidad",
+      "coverage": "Cobertura",
+      "dimensions": "Resultados por dimensión",
+      "noData": "Sin datos suficientes",
+      "lowCoverage": "Cobertura limitada",
+      "export": "Exportar resultados",
+      "save": "Guardar localmente",
+      "evidence": "Ver evidencia"
+    }
+  },
+  "history": {
+    "title": "Mis resultados",
+    "empty": "No has completado ninguna encuesta todavía",
+    "import": "Importar resultados",
+    "export": "Exportar",
+    "delete": "Eliminar",
+    "date": "Fecha",
+    "survey": "Encuesta"
+  },
+  "admin": {
+    "login": {
+      "title": "Acceso administrativo",
+      "email": "Correo electrónico",
+      "code": "Código de verificación",
+      "requestCode": "Solicitar código",
+      "verifyCode": "Verificar código",
+      "enterCode": "Introduce el código recibido por email",
+      "sent": "Código enviado",
+      "error": "Código incorrecto",
+      "locked": "Demasiados intentos. Intenta más tarde."
+    },
+    "dashboard": {
+      "title": "Panel de administración",
+      "sources": "Fuentes",
+      "entities": "Entidades",
+      "questions": "Preguntas",
+      "review": "Revisión",
+      "publish": "Publicación",
+      "logout": "Cerrar sesión"
+    }
+  },
+  "scoring": {
+    "calibration": {
+      "title": "Calibración de prioridades",
+      "serious": "Seria",
+      "quick": "Rápida",
+      "skip": "Omitir",
+      "seriousDescription": "Comparaciones por pares para ajustar la importancia de cada dimensión",
+      "quickDescription": "Asigna importancia baja, media o alta a cada dimensión",
+      "skipDescription": "Usa los pesos predeterminados del administrador"
+    }
+  },
+  "dimensions": {
+    "economy": "Economía",
+    "social": "Social",
+    "rights": "Derechos",
+    "territory": "Territorio",
+    "institutions": "Instituciones",
+    "environment": "Medio ambiente"
+  }
+}

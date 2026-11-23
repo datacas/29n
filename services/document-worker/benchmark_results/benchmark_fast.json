@@ -1,0 +1,432 @@
+{
+  "PSOE": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 114,
+        "pages_extracted": 10,
+        "elapsed": 7.318536996841431,
+        "total_chars": 20896,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 20896,
+        "total_words": 2370,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.15121255349500715,
+        "numbered_sections": "1/473",
+        "numbered_coverage": 0.0021141649048625794,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 114,
+        "pages_extracted": 10,
+        "elapsed": 9.073916912078857,
+        "total_chars": 23696,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 23696,
+        "total_words": 2682,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.09700427960057062,
+        "numbered_sections": "1/473",
+        "numbered_coverage": 0.0021141649048625794,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pdftotext": {
+      "extraction": {
+        "tool": "pdftotext",
+        "total_pages": 114,
+        "pages_extracted": 10,
+        "elapsed": 0.1287543773651123,
+        "total_chars": 21690,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 21690,
+        "total_words": 2300,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.14978601997146934,
+        "numbered_sections": "1/473",
+        "numbered_coverage": 0.0021141649048625794,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 114,
+        "pages_extracted": 10,
+        "elapsed": 0.24756479263305664,
+        "total_chars": 17017,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 17017,
+        "total_words": 2300,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.1419400855920114,
+        "numbered_sections": "1/473",
+        "numbered_coverage": 0.0021141649048625794,
+        "duplicate_paragraphs": 0
+      }
+    }
+  },
+  "PP": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 64,
+        "pages_extracted": 10,
+        "elapsed": 0.19641971588134766,
+        "total_chars": 8804,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 8804,
+        "total_words": 1522,
+        "has_markdown_headers": false,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.08670520231213873,
+        "numbered_sections": "0/2",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 64,
+        "pages_extracted": 10,
+        "elapsed": 11.549373149871826,
+        "total_chars": 9168,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 9168,
+        "total_words": 1565,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.08257638315441784,
+        "numbered_sections": "0/2",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 1
+      }
+    },
+    "pdftotext": {
+      "extraction": {
+        "tool": "pdftotext",
+        "total_pages": 64,
+        "pages_extracted": 10,
+        "elapsed": 0.19128632545471191,
+        "total_chars": 9334,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 9334,
+        "total_words": 1522,
+        "has_markdown_headers": false,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.08587943848059455,
+        "numbered_sections": "0/2",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 64,
+        "pages_extracted": 10,
+        "elapsed": 0.21558284759521484,
+        "total_chars": 8813,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 8813,
+        "total_words": 1511,
+        "has_markdown_headers": false,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.08505367464905036,
+        "numbered_sections": "0/2",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 0
+      }
+    }
+  },
+  "Vox": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 66,
+        "pages_extracted": 10,
+        "elapsed": 0.3203403949737549,
+        "total_chars": 4486,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 4486,
+        "total_words": 718,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.11263736263736264,
+        "numbered_sections": "7/115",
+        "numbered_coverage": 0.06086956521739131,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 66,
+        "pages_extracted": 10,
+        "elapsed": 3.6768980026245117,
+        "total_chars": 5995,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 5995,
+        "total_words": 862,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.08241758241758242,
+        "numbered_sections": "8/115",
+        "numbered_coverage": 0.06956521739130435,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pdftotext": {
+      "extraction": {
+        "tool": "pdftotext",
+        "total_pages": 66,
+        "pages_extracted": 10,
+        "elapsed": 0.08453559875488281,
+        "total_chars": 5585,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 5585,
+        "total_words": 718,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.0989010989010989,
+        "numbered_sections": "7/115",
+        "numbered_coverage": 0.06086956521739131,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 66,
+        "pages_extracted": 10,
+        "elapsed": 0.18380022048950195,
+        "total_chars": 4445,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 4445,
+        "total_words": 694,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.10989010989010989,
+        "numbered_sections": "6/115",
+        "numbered_coverage": 0.05217391304347826,
+        "duplicate_paragraphs": 0
+      }
+    }
+  },
+  "Sumar": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 95,
+        "pages_extracted": 10,
+        "elapsed": 0.6261119842529297,
+        "total_chars": 14637,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 14637,
+        "total_words": 2275,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.14420062695924765,
+        "numbered_sections": "0/11",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 95,
+        "pages_extracted": 10,
+        "elapsed": 13.290812492370605,
+        "total_chars": 18579,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 18579,
+        "total_words": 2643,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.09247648902821316,
+        "numbered_sections": "0/11",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 11
+      }
+    },
+    "pdftotext": {
+      "extraction": {
+        "tool": "pdftotext",
+        "total_pages": 95,
+        "pages_extracted": 10,
+        "elapsed": 0.05320882797241211,
+        "total_chars": 20721,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 20721,
+        "total_words": 2274,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.14420062695924765,
+        "numbered_sections": "0/11",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 95,
+        "pages_extracted": 10,
+        "elapsed": 0.09075760841369629,
+        "total_chars": 14857,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 14857,
+        "total_words": 2274,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.14420062695924765,
+        "numbered_sections": "0/11",
+        "numbered_coverage": 0.0,
+        "duplicate_paragraphs": 8
+      }
+    }
+  },
+  "ERC": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 48,
+        "pages_extracted": 10,
+        "elapsed": 0.42026209831237793,
+        "total_chars": 23031,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 23031,
+        "total_words": 3223,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.17023445463812437,
+        "numbered_sections": "18/230",
+        "numbered_coverage": 0.0782608695652174,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 48,
+        "pages_extracted": 10,
+        "elapsed": 3.105562210083008,
+        "total_chars": 27216,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 27216,
+        "total_words": 3778,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.16819571865443425,
+        "numbered_sections": "23/230",
+        "numbered_coverage": 0.1,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pdftotext": {
+      "extraction": {
+        "tool": "pdftotext",
+        "total_pages": 48,
+        "pages_extracted": 10,
+        "elapsed": 0.06851339340209961,
+        "total_chars": 24617,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 24617,
+        "total_words": 3216,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": true,
+        "sentence_coverage": 0.15698267074413863,
+        "numbered_sections": "18/230",
+        "numbered_coverage": 0.0782608695652174,
+        "duplicate_paragraphs": 0
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 48,
+        "pages_extracted": 10,
+        "elapsed": 0.16019248962402344,
+        "total_chars": 21257,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 21257,
+        "total_words": 3173,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_hyphenation_artifacts": false,
+        "sentence_coverage": 0.1580020387359837,
+        "numbered_sections": "5/230",
+        "numbered_coverage": 0.021739130434782608,
+        "duplicate_paragraphs": 0
+      }
+    }
+  }
+}

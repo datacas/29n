@@ -1,0 +1,1611 @@
+{
+  "party": "ERC",
+  "source_title": "Programa Electoral ERC 2026",
+  "total_pages": 48,
+  "pages_processed": 44,
+  "total_claims": 133,
+  "duplicates": 0,
+  "input_tokens": 68496,
+  "output_tokens": 64454,
+  "cost": 1.172298,
+  "prompt_version": "1.0.0",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "page_results": [
+    {
+      "page": 1,
+      "claims": 0,
+      "input_tokens": 386,
+      "output_tokens": 20,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 909
+    },
+    {
+      "page": 3,
+      "claims": 0,
+      "input_tokens": 874,
+      "output_tokens": 20,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 985
+    },
+    {
+      "page": 5,
+      "claims": 0,
+      "input_tokens": 958,
+      "output_tokens": 20,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 882
+    },
+    {
+      "page": 6,
+      "claims": 0,
+      "input_tokens": 372,
+      "output_tokens": 20,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 930
+    },
+    {
+      "page": 7,
+      "claims": 4,
+      "input_tokens": 1394,
+      "output_tokens": 1061,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 11700
+    },
+    {
+      "page": 8,
+      "claims": 1,
+      "input_tokens": 1887,
+      "output_tokens": 1431,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 17613
+    },
+    {
+      "page": 9,
+      "claims": 4,
+      "input_tokens": 1750,
+      "output_tokens": 1926,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 17144
+    },
+    {
+      "page": 10,
+      "claims": 0,
+      "input_tokens": 1602,
+      "output_tokens": 1185,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 15582
+    },
+    {
+      "page": 11,
+      "claims": 2,
+      "input_tokens": 1588,
+      "output_tokens": 1111,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 12316
+    },
+    {
+      "page": 12,
+      "claims": 2,
+      "input_tokens": 1620,
+      "output_tokens": 795,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10681
+    },
+    {
+      "page": 13,
+      "claims": 5,
+      "input_tokens": 1797,
+      "output_tokens": 2647,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 28658
+    },
+    {
+      "page": 14,
+      "claims": 2,
+      "input_tokens": 1687,
+      "output_tokens": 1562,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 18149
+    },
+    {
+      "page": 15,
+      "claims": 1,
+      "input_tokens": 1636,
+      "output_tokens": 1255,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 13077
+    },
+    {
+      "page": 16,
+      "claims": 3,
+      "input_tokens": 1723,
+      "output_tokens": 2193,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 23883
+    },
+    {
+      "page": 17,
+      "claims": 2,
+      "input_tokens": 1355,
+      "output_tokens": 1694,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 16405
+    },
+    {
+      "page": 18,
+      "claims": 1,
+      "input_tokens": 1422,
+      "output_tokens": 473,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 5912
+    },
+    {
+      "page": 19,
+      "claims": 1,
+      "input_tokens": 1775,
+      "output_tokens": 1404,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 19100
+    },
+    {
+      "page": 20,
+      "claims": 1,
+      "input_tokens": 1633,
+      "output_tokens": 1065,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 11784
+    },
+    {
+      "page": 21,
+      "claims": 3,
+      "input_tokens": 1736,
+      "output_tokens": 1412,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 19037
+    },
+    {
+      "page": 22,
+      "claims": 3,
+      "input_tokens": 1783,
+      "output_tokens": 1893,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 18771
+    },
+    {
+      "page": 23,
+      "claims": 8,
+      "input_tokens": 1690,
+      "output_tokens": 1647,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 19139
+    },
+    {
+      "page": 24,
+      "claims": 9,
+      "input_tokens": 1920,
+      "output_tokens": 2945,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 31763
+    },
+    {
+      "page": 25,
+      "claims": 7,
+      "input_tokens": 1650,
+      "output_tokens": 2075,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 20225
+    },
+    {
+      "page": 26,
+      "claims": 5,
+      "input_tokens": 1883,
+      "output_tokens": 2374,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 28642
+    },
+    {
+      "page": 27,
+      "claims": 9,
+      "input_tokens": 1830,
+      "output_tokens": 3043,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 33726
+    },
+    {
+      "page": 28,
+      "claims": 3,
+      "input_tokens": 1547,
+      "output_tokens": 1272,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 15847
+    },
+    {
+      "page": 29,
+      "claims": 5,
+      "input_tokens": 1635,
+      "output_tokens": 1170,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 11694
+    },
+    {
+      "page": 30,
+      "claims": 3,
+      "input_tokens": 1830,
+      "output_tokens": 2135,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 23866
+    },
+    {
+      "page": 31,
+      "claims": 7,
+      "input_tokens": 1893,
+      "output_tokens": 3057,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 30258
+    },
+    {
+      "page": 32,
+      "claims": 2,
+      "input_tokens": 1698,
+      "output_tokens": 1629,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 20944
+    },
+    {
+      "page": 33,
+      "claims": 5,
+      "input_tokens": 1843,
+      "output_tokens": 1570,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 20029
+    },
+    {
+      "page": 34,
+      "claims": 4,
+      "input_tokens": 1567,
+      "output_tokens": 1305,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 13125
+    },
+    {
+      "page": 35,
+      "claims": 5,
+      "input_tokens": 1712,
+      "output_tokens": 1955,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 21263
+    },
+    {
+      "page": 36,
+      "claims": 3,
+      "input_tokens": 1064,
+      "output_tokens": 668,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 7306
+    },
+    {
+      "page": 37,
+      "claims": 5,
+      "input_tokens": 1411,
+      "output_tokens": 734,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 8744
+    },
+    {
+      "page": 38,
+      "claims": 2,
+      "input_tokens": 1888,
+      "output_tokens": 2178,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 23492
+    },
+    {
+      "page": 39,
+      "claims": 4,
+      "input_tokens": 1769,
+      "output_tokens": 1979,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 20197
+    },
+    {
+      "page": 40,
+      "claims": 4,
+      "input_tokens": 1901,
+      "output_tokens": 2717,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 29782
+    },
+    {
+      "page": 41,
+      "claims": 0,
+      "input_tokens": 1560,
+      "output_tokens": 912,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10641
+    },
+    {
+      "page": 42,
+      "claims": 1,
+      "input_tokens": 1639,
+      "output_tokens": 1020,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 13731
+    },
+    {
+      "page": 43,
+      "claims": 1,
+      "input_tokens": 1701,
+      "output_tokens": 1257,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 13142
+    },
+    {
+      "page": 44,
+      "claims": 1,
+      "input_tokens": 1581,
+      "output_tokens": 1383,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 17307
+    },
+    {
+      "page": 45,
+      "claims": 5,
+      "input_tokens": 1814,
+      "output_tokens": 1865,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 17932
+    },
+    {
+      "page": 46,
+      "claims": 0,
+      "input_tokens": 492,
+      "output_tokens": 377,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 4154
+    }
+  ],
+  "claims": [
+    {
+      "literal_text": "la condonació de bona part del deute",
+      "normalized_text": "Condonación de una parte significativa de la deuda de Cataluña con el Estado",
+      "conditions": "Negociación en curso con el Estado español",
+      "affected_area": "Financiación autonómica / Deuda pública",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "la gestió catalana de Rodalies per posar fi a un servei pèssim",
+      "normalized_text": "Transferencia de la gestión de Rodalies (cercanías ferroviarias) a la Generalitat de Cataluña",
+      "conditions": "Negociación en curso con el Estado español",
+      "affected_area": "Infraestructuras / Transporte",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "cal derogar la Llei mordassa, una norma absolutament lesiva per als moviments socials i la dissidència política",
+      "normalized_text": "Derogación de la Ley de Seguridad Ciudadana, conocida como 'Ley mordaza'",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Derechos y libertades civiles",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "cal convertir la comissaria de Policia Nacional de Via Laietana en un espai de memòria",
+      "normalized_text": "Conversión de la comisaría de Policía Nacional de Via Laietana (Barcelona) en un espacio de memoria",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Memoria democrática",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Aprovar una llei estatal de desaparició forçosa de menors per garantir veritat, justícia i reparació",
+      "normalized_text": "Aprobar una ley estatal de desaparición forzosa de menores que garantice investigaciones rigurosas, acceso a archivos, pruebas de ADN y apoyo jurídico y psicológico a las víctimas",
+      "conditions": "La norma debe garantizar que ningún caso quede sin investigar y que las víctimas reciban reconocimiento y apoyo",
+      "affected_area": "Justicia y memoria democrática",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 8
+    },
+    {
+      "literal_text": "Aprovar una Llei del plurilingüisme per reforçar els drets lingüístics i garantir una protecció més efectiva de les llengües oficials diferents del castellà.",
+      "normalized_text": "Aprobación de una Ley del plurilingüismo para reforzar los derechos lingüísticos y garantizar una protección más efectiva de las lenguas oficiales distintas del castellano.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Política lingüística / Legislación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "incorporar criteris lingüístics en la contractació pública",
+      "normalized_text": "Incorporar criterios lingüísticos en la contratación pública.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Política lingüística / Contratación pública",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "establir quotes mínimes de programació radiofònica en les llengües oficials diferents del castellà.",
+      "normalized_text": "Establecer cuotas mínimas de programación radiofónica en las lenguas oficiales distintas del castellano.",
+      "conditions": "Aplicable a lenguas oficiales distintas del castellano.",
+      "affected_area": "Política lingüística / Medios de comunicación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "garantir que els productes siguin igualment accessibles als usuaris de la llengua de signes catalana.",
+      "normalized_text": "Garantizar que los productos cinematográficos y audiovisuales sean igualmente accesibles a los usuarios de la lengua de signos catalana.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Política lingüística / Accesibilidad / Cultura",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i gestionar el seu sistema educatiu",
+      "normalized_text": "Exigir competencias exclusivas en materia educativa para Catalunya, reclamando plena soberanía para decidir, regular y gestionar su sistema educativo sin subordinación al Estado español.",
+      "conditions": "Sin subordinación a las imposiciones del Estado español",
+      "affected_area": "Educación / Competencias autonómicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 11
+    },
+    {
+      "literal_text": "Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar els seus projectes educatius sense pressions ni interferències externes",
+      "normalized_text": "Exigir mecanismos efectivos de protección y asesoramiento jurídico para centros educativos y profesorado frente a injerencias judiciales y políticas.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Educación / Protección institucional",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 11
+    },
+    {
+      "literal_text": "Aprovar un nou model de finançament per garantir la sobirania dels Països Catalans i el benestar de la ciutadania.",
+      "normalized_text": "Aprobar un nuevo modelo de financiación para Cataluña basado en la recaudación directa de todos los impuestos generados en Cataluña, con el Estado sufragando costes mediante un porcentaje de participación, garantizando el principio de ordinalidad y aportando 4.700 millones de euros anuales adicionales.",
+      "conditions": "El acuerdo político ya fue alcanzado en enero de 2026 pero fue bloqueado parlamentariamente; su implementación requiere desbloqueo legislativo en la nueva legislatura.",
+      "affected_area": "Financiación autonómica",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Constituir el Consorci de la Zona Franca amb majoria de les institucions catalanes en els òrgans de governança.",
+      "normalized_text": "Constituir el Consorcio de la Zona Franca con mayoría de representación de instituciones catalanas (Ayuntamiento de Barcelona y Generalitat de Cataluña) en sus órganos de gobernanza, para controlar un polo industrial que representa casi el 4% del PIB y genera cerca de 140.000 empleos.",
+      "conditions": "El objetivo es que las instituciones catalanas controlen el ente sin depender del gobierno español.",
+      "affected_area": "Política industrial / Gobernanza institucional",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Impulsar un Pla de Sobirania Cultural per culminar el traspàs dels museus i equipaments culturals transferibles a Catalunya, incloent-hi el Museu Nacional Arqueològic de Tarragona",
+      "normalized_text": "Impulsar un Plan de Soberanía Cultural para completar el traspaso de museos y equipamientos culturales a Cataluña, incluyendo el Museu Nacional Arqueològic de Tarragona",
+      "conditions": "Los traspasos deben ir acompañados de la financiación estructural correspondiente y se deben auditar las inversiones estatales pendientes",
+      "affected_area": "Cultura / Competencias autonómicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "revisar la governança del MNAC i del MACBA perquè les decisions estratègiques es prenguin des de les institucions catalanes",
+      "normalized_text": "Revisar la gobernanza del MNAC y del MACBA para que las decisiones estratégicas sean tomadas desde las instituciones catalanas",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Cultura / Gobernanza institucional",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "Exigir la modificació de la Llei del Patrimoni Històric espanyol perquè els recursos generats per les obres públiques estatals executades a Catalunya es transfereixin automàticament a la Generalitat",
+      "normalized_text": "Exigir la modificación de la Ley del Patrimonio Histórico español para que los recursos generados por obras públicas estatales en Cataluña se transfieran automáticamente a la Generalitat",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Cultura / Patrimonio / Financiación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "Exigir que les pintures murals de la Sala Capitular de Sixena no siguin desmuntades ni traslladades del MNAC",
+      "normalized_text": "Exigir que las pinturas murales de la Sala Capitular de Sijena no sean desmontadas ni trasladadas del MNAC",
+      "conditions": "Los informes técnicos disponibles y dictámenes de expertos internacionales alertan de riesgo para la conservación",
+      "affected_area": "Cultura / Patrimonio",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "les plataformes de televisió i de vídeo a petició reservaran a obres europees almenys el 35 % del seu catàleg",
+      "normalized_text": "Obligar a las plataformas de televisión y vídeo bajo demanda a reservar al menos el 35% de su catálogo a obras europeas",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Cultura / Audiovisual / Plataformas digitales",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "Defensar el dret de les seleccions catalanes a competir oficialment a escala internacional en totes les disciplines esportives i a tenir representació pròpia en els organismes i les competicions internacionals.",
+      "normalized_text": "Defender el derecho de las selecciones catalanas a competir oficialmente a escala internacional y tener representación propia en organismos y competiciones internacionales.",
+      "conditions": "Ninguna condición explícita.",
+      "affected_area": "Deporte / Proyección internacional",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 14
+    },
+    {
+      "literal_text": "Rebutgem la creació de centres de retorn a països tercers i reclamem la màxima protecció jurídica, assistència legal independent i respecte als drets fonamentals durant tot el procés migratori.",
+      "normalized_text": "Rechazar la creación de centros de retorno en terceros países y reclamar máxima protección jurídica, asistencia legal independiente y respeto a los derechos fundamentales durante todo el proceso migratorio.",
+      "conditions": "Ninguna condición explícita.",
+      "affected_area": "Migración / Derechos fundamentales",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 14
+    },
+    {
+      "literal_text": "permetre a Catalunya participar de manera directa en programes europeus de cooperació",
+      "normalized_text": "Permitir a Cataluña participar de forma directa en programas europeos de cooperación al desarrollo.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Cooperación internacional / Acción exterior",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "el govern espanyol condicioni qualsevol acord de cooperació o relació amb el Marroc al respecte escrupolós dels drets humans i la sobirania del Sàhara Occidental.",
+      "normalized_text": "Condicionar cualquier acuerdo de cooperación o relación del gobierno español con Marruecos al respeto de los derechos humanos y la soberanía del Sáhara Occidental.",
+      "conditions": "Ninguna condición específica adicional mencionada.",
+      "affected_area": "Política exterior / Derechos humanos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 16
+    },
+    {
+      "literal_text": "Promoure internacionalment la lluita contra la pena de mort, impulsant la ratificació del Segon Protocol Facultatiu del Pacte Internacional dels Drets Civils i Polítics",
+      "normalized_text": "Promover internacionalmente la lucha contra la pena de muerte impulsando la ratificación del Segundo Protocolo Facultativo del Pacto Internacional de Derechos Civiles y Políticos.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Derechos humanos / Política exterior",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 16
+    },
+    {
+      "literal_text": "el compliment amb la Convenció Europea de Drets Humans.",
+      "normalized_text": "Exigir el cumplimiento del Convenio Europeo de Derechos Humanos en el marco de la lucha contra la pena de muerte.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Derechos humanos / Política exterior",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 16
+    },
+    {
+      "literal_text": "Reclamar la participació de la Generalitat de Catalunya en la negociació de tractats internacionals en el marc de Nacions Unides dels àmbits de la seva competència",
+      "normalized_text": "Reclamar la participación de la Generalitat de Catalunya en la negociación de tratados internacionales en el marco de Naciones Unidas en los ámbitos de su competencia",
+      "conditions": "Limitado a los ámbitos de competencia de la Generalitat de Catalunya",
+      "affected_area": "Política exterior / Gobernanza multinivel",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 17
+    },
+    {
+      "literal_text": "Obrir i ampliar vies legals i segures de migració i protecció internacional, amb mecanismes i recursos suficients perquè les persones puguin migrar en condicions dignes.",
+      "normalized_text": "Abrir y ampliar vías legales y seguras de migración y protección internacional con mecanismos y recursos suficientes para migrar en condiciones dignas",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Política migratoria",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 17
+    },
+    {
+      "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+      "normalized_text": "Transferencia de los pisos de la SAREB (Sociedad de Gestión de Activos procedentes de la Reestructuración Bancaria) a la Generalitat de Catalunya",
+      "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+      "affected_area": "Vivienda",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 18
+    },
+    {
+      "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+      "normalized_text": "Mejorar la regulación de los arrendamientos para proteger a los arrendatarios, evitar desahucios de personas vulnerables sin alternativa habitacional y mantener compensaciones a pequeños propietarios perjudicados.",
+      "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones.",
+      "affected_area": "Vivienda / Arrendamientos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Transferir les competències a la Generalitat de Catalunya per establir un salari mínim català (SMC) a 1.460 €.",
+      "normalized_text": "Transferir competencias a la Generalitat de Catalunya para establecer un salario mínimo catalán (SMC) de 1.460 euros, superior al estatal.",
+      "conditions": "Requiere modificaciones normativas para permitir un SMI territorializado superior al estatal. Referencia: al menos 60% del salario medio neto según el Comité Europeo de Derechos Sociales.",
+      "affected_area": "Política laboral / Salarios / Competencias autonómicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 20
+    },
+    {
+      "literal_text": "reduir els tipus de la fiscalitat del treball per als trams inferiors als 35.000 euros",
+      "normalized_text": "Reducir los tipos impositivos sobre rentas del trabajo para tramos inferiores a 35.000 euros.",
+      "conditions": "Aplicable a tramos de renta del trabajo por debajo de 35.000 euros anuales.",
+      "affected_area": "Fiscalidad / IRPF",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 21
+    },
+    {
+      "literal_text": "Reduir els obstacles burocràtics per accedir al bo social elèctric, automatitzant-ne la concessió",
+      "normalized_text": "Reducir los obstáculos burocráticos para acceder al bono social eléctrico, automatizando su concesión.",
+      "conditions": "Sin condiciones específicas adicionales mencionadas para esta medida concreta.",
+      "affected_area": "Energía / Política social",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 21
+    },
+    {
+      "literal_text": "ampliant els llindars de renda per accedir-hi i revisant els límits de consum bonificat per adaptar-los a les necessitats energètiques reals de les llars",
+      "normalized_text": "Ampliar los umbrales de renta para acceder al bono social eléctrico y revisar los límites de consumo bonificado para adaptarlos a las necesidades energéticas reales de los hogares.",
+      "conditions": "Sin condiciones específicas adicionales mencionadas.",
+      "affected_area": "Energía / Política social",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 21
+    },
+    {
+      "literal_text": "Adoptar les polítiques necessàries per combatre el dúmping fiscal de les comunitats autònomes governades pel Partit Popular, especialment la Comunitat de Madrid.",
+      "normalized_text": "Adoptar políticas para combatir el dumping fiscal de las comunidades autónomas gobernadas por el Partido Popular, especialmente la Comunidad de Madrid.",
+      "conditions": "Dirigido especialmente a comunidades autónomas gobernadas por el PP.",
+      "affected_area": "Fiscalidad / Competencia fiscal territorial",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 22
+    },
+    {
+      "literal_text": "Crear línies públiques de crèdit per al petit negoci amb repartiment de risc (avals parcials) i amb una banca pública que garanteixi el crèdit a la inversió productiva.",
+      "normalized_text": "Crear líneas públicas de crédito para la pequeña empresa con reparto de riesgo mediante avales parciales, convirtiendo el ICO en un banco de promoción con capacidad de préstamo directo a proyectos industriales y de transición.",
+      "conditions": "Requiere convertir el ICO en banco de promoción con capacidad de préstamo directo.",
+      "affected_area": "Banca pública / Pequeña empresa",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 22
+    },
+    {
+      "literal_text": "Revisar també la fiscalitat energètica aplicada al consum del gas, conjuntament amb la configuració de la tarifa i els càrrecs i costos associats.",
+      "normalized_text": "Revisar la fiscalidad energética aplicada al consumo del gas, junto con la configuración de la tarifa y los cargos y costes asociados.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Fiscalidad verde / Energía",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 22
+    },
+    {
+      "literal_text": "Modificar la legislació vigent i els reglaments que la despleguen per facilitar que, en les liquidacions dels tributs cedits, es puguin sol·licitar pròrrogues en el pagament fins a 4 anys",
+      "normalized_text": "Modificar la legislación vigente para permitir solicitar prórrogas en el pago de tributos cedidos de hasta 4 años desde el hecho imponible.",
+      "conditions": "Aplicable a las liquidaciones de tributos cedidos.",
+      "affected_area": "Fiscalidad",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Reforçar els instruments de finançament de les petites i mitjanes empreses i establir mecanismes efectius per garantir el compliment dels terminis legals de pagament.",
+      "normalized_text": "Reforzar los instrumentos de financiación de pymes y establecer mecanismos efectivos para garantizar el cumplimiento de los plazos legales de pago.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Economía / Pymes",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "revisar la contractació pública per facilitar la participació directa de les pimes mitjançant la digitalització dels procediments, la divisió justificada en lots",
+      "normalized_text": "Revisar la contratación pública para facilitar la participación directa de pymes mediante digitalización de procedimientos y división justificada en lotes.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Contratación pública / Pymes",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "assegurant la proporcionalitat dels requisits de solvència i la transparència en els pagaments a subcontractistes",
+      "normalized_text": "Asegurar la proporcionalidad de los requisitos de solvencia y la transparencia en los pagos a subcontratistas en la contratación pública.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Contratación pública / Pymes",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "promoure una simplificació administrativa real durant el cicle de creixement de les pimes, que redueixi costos, duplicitats i terminis sense rebaixar les garanties laborals, socials i ambientals.",
+      "normalized_text": "Promover una simplificación administrativa real para pymes que reduzca costes, duplicidades y plazos sin reducir garantías laborales, sociales y ambientales.",
+      "conditions": "Sin reducción de garantías laborales, sociales y ambientales.",
+      "affected_area": "Administración / Pymes",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "blindar les polítiques feministes, reforçar la protecció i reparació davant totes les violències masclistes, garantir els drets sexuals i reproductius",
+      "normalized_text": "Blindar las políticas feministas, reforzar la protección y reparación ante violencias machistas y garantizar los derechos sexuales y reproductivos.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Igualdad / Feminismo",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "avançar en el reconeixement de la diversitat familiar, els drets de les persones cuidadores i la corresponsabilitat de les cures.",
+      "normalized_text": "Avanzar en el reconocimiento de la diversidad familiar, los derechos de las personas cuidadoras y la corresponsabilidad en los cuidados.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Igualdad / Familia / Cuidados",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "continuar eliminant les discriminacions legals i socials, reconèixer totes les identitats de gènere i models familiars, combatre les pràctiques de conversió",
+      "normalized_text": "Eliminar discriminaciones legales y sociales, reconocer todas las identidades de género y modelos familiares, y combatir las prácticas de conversión.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Derechos LGBTI+",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Reforçar la prevenció, la investigació i la persecució dels discursos racistes, xenòfobs, misògins i negacionistes de les violències masclistes, especialment a les xarxes socials, els entorns digitals i les institucions.",
+      "normalized_text": "Reforzar la prevención, investigación y persecución de discursos racistas, xenófobos, misóginos y negacionistas de violencias machistas, especialmente en redes sociales, entornos digitales e instituciones.",
+      "conditions": "Especial atención a redes sociales, entornos digitales e instituciones.",
+      "affected_area": "Discursos de odio y discriminación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "crear un fons estatal que asseguri les indemnitzacions judicials quan els responsables no les paguin.",
+      "normalized_text": "Crear un fondo estatal que asegure el pago de indemnizaciones judiciales a víctimas de trata y explotación cuando los responsables no las abonen.",
+      "conditions": "Aplicable cuando los responsables no paguen las indemnizaciones.",
+      "affected_area": "Trata y explotación de seres humanos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Garantir la igualtat de drets dels dos progenitors davant la pèrdua gestacional, equiparant la protecció i els permisos retribuïts en els casos de mort fetal a partir del dia 180 de gestació.",
+      "normalized_text": "Garantizar la igualdad de derechos de ambos progenitores ante la pérdida gestacional, equiparando protección y permisos retribuidos en casos de muerte fetal a partir del día 180 de gestación.",
+      "conditions": "Aplicable a partir del día 180 de gestación.",
+      "affected_area": "Derechos laborales y duelo gestacional",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Equiparar els drets de les famílies monoparentals als de les famílies nombroses, estenent els beneficis fiscals, socials i laborals, amb respecte a les competències de les administracions corresponents.",
+      "normalized_text": "Equiparar los derechos de las familias monoparentales a los de las familias numerosas, extendiendo beneficios fiscales, sociales y laborales.",
+      "conditions": "Con respeto a las competencias de las administraciones correspondientes.",
+      "affected_area": "Políticas familiares",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Reconèixer legalment les identitats no-binàries. Adaptar la normativa relativa al Registre Civil, la documentació identificativa i els procediments administratius per garantir-ne el reconeixement sense requisits patologitzadors",
+      "normalized_text": "Reconocer legalmente las identidades no binarias adaptando la normativa del Registro Civil, documentación identificativa y procedimientos administrativos, sin requisitos patologizadores.",
+      "conditions": "Protegiendo la privacidad y evitando discriminaciones.",
+      "affected_area": "Derechos LGBTI+",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Reformar la legislació civil i del Registre Civil per eliminar les discriminacions en la filiació de les famílies de dues mares, les persones trans i no-binàries i altres models familiars",
+      "normalized_text": "Reformar la legislación civil y del Registro Civil para eliminar discriminaciones en la filiación de familias de dos madres, personas trans y no binarias y otros modelos familiares.",
+      "conditions": "Con participación de entidades LGBTI+ y priorizando el interés superior del menor.",
+      "affected_area": "Derechos LGBTI+ y familia",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Impulsar una llei estatal de memòria i reparació LGBTI+. Reconèixer i reparar la persecució històrica de les persones LGBTI+ per les institucions, incloent-hi la repressió de les persones trans, les lesbianes i les dones sotmeses al Patronato",
+      "normalized_text": "Impulsar una ley estatal de memoria y reparación LGBTI+ que reconozca y repare la persecución histórica de personas LGBTI+ por las instituciones, incluyendo personas trans, lesbianas y mujeres sometidas al Patronato de Protección a la Mujer.",
+      "conditions": "Respetando las competencias de Cataluña.",
+      "affected_area": "Memoria histórica LGBTI+",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Obligar a identificar les imatges corporals retocades digitalment en la publicitat i els continguts comercials de les xarxes socials, i reforçar la regulació dels anuncis que promoguin models corporals irreals o fomentin conductes alimentàries perjudicials",
+      "normalized_text": "Obligar a identificar imágenes corporales retocadas digitalmente en publicidad y contenidos comerciales de redes sociales, y reforzar la regulación de anuncios que promuevan modelos corporales irreales o fomenten conductas alimentarias perjudiciales.",
+      "conditions": "Aplicable a publicidad y contenidos comerciales en redes sociales.",
+      "affected_area": "Regulación publicitaria y salud",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Garantir que cuidar un familiar no suposi perdre drets de Seguretat Social ni oportunitats laborals, assegurant les cotitzacions de les persones cuidadores no professionals amb finançament públic.",
+      "normalized_text": "Garantizar que cuidar a un familiar no suponga perder derechos de Seguridad Social ni oportunidades laborales, asegurando las cotizaciones de cuidadores no profesionales con financiación pública.",
+      "conditions": "Financiación pública para las cotizaciones de cuidadores no profesionales.",
+      "affected_area": "Derechos sociales y laborales de cuidadores",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Fer ús dels instruments legals per investigar-ne les activitats i actuar en conseqüència.",
+      "normalized_text": "Utilizar los instrumentos legales disponibles para investigar las actividades de organizaciones que promueven el racismo y la violencia.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Seguridad y orden público",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "Exigir a les plataformes digitals més responsabilitat davant la difusió de continguts racistes i xenòfobs, amb mecanismes accessibles de denúncia i resposta efectiva davant els continguts il·lícits.",
+      "normalized_text": "Exigir a las plataformas digitales mayor responsabilidad ante la difusión de contenidos racistas y xenófobos, con mecanismos accesibles de denuncia y respuesta efectiva ante contenidos ilícitos.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Regulación de plataformas digitales",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "Actuar contra les campanyes coordinades de desinformació que assenyalen col·lectius pel seu origen i alimenten la confrontació social.",
+      "normalized_text": "Actuar contra las campañas coordinadas de desinformación que señalan colectivos por su origen y fomentan la confrontación social.",
+      "conditions": "Que las campañas sean coordinadas",
+      "affected_area": "Regulación de plataformas digitales",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "reforçar la protecció social, garantir unes pensions dignes i assegurar que ningú quedi desprotegit davant de situacions de vulnerabilitat.",
+      "normalized_text": "Reforzar la protección social, garantizar pensiones dignas y asegurar que nadie quede desprotegido ante situaciones de vulnerabilidad.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Seguridad social y pensiones",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "la resposta no pot ser retallar drets ni privatitzar les pensions, sinó reforçar-ne el finançament.",
+      "normalized_text": "Rechazar los recortes de derechos y la privatización de las pensiones, apostando por reforzar su financiación.",
+      "conditions": "En respuesta al envejecimiento de la población y la jubilación del baby boom",
+      "affected_area": "Seguridad social y pensiones",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "Cal avançar cap a un sistema públic de pensions que garanteixi el poder adquisitiu, redueixi les desigualtats i continuï contribuint a la redistribució de la riquesa.",
+      "normalized_text": "Avanzar hacia un sistema público de pensiones que garantice el poder adquisitivo, reduzca las desigualdades y contribuya a la redistribución de la riqueza.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Seguridad social y pensiones",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "Catalunya necessita eines pròpies per desplegar polítiques socials que responguin a la nostra realitat, amb capacitat per decidir sobre les condicions laborals, la protecció social i el sistema de pensions.",
+      "normalized_text": "Reclamar para Cataluña herramientas propias para desplegar políticas sociales, con capacidad de decisión sobre condiciones laborales, protección social y sistema de pensiones.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Autogobierno y competencias de Cataluña",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "Reduir la durada màxima de la jornada laboral setmanal a 37 hores i mitja sense reducció salarial",
+      "normalized_text": "Reducir la jornada laboral máxima semanal a 37,5 horas sin reducción salarial, modificando el artículo 34 del Estatuto de los Trabajadores",
+      "conditions": "Respetar jornadas inferiores establecidas por convenio colectivo",
+      "affected_area": "Legislación laboral / Jornada laboral",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 26
+    },
+    {
+      "literal_text": "Reforçar el registre diari de jornada, garantint-ne el caràcter digital, fiable i accessible a la Inspecció de Treball, així com el dret a la desconnexió digital",
+      "normalized_text": "Reforzar el registro diario de jornada con carácter digital, fiable y accesible a la Inspección de Trabajo, y garantizar el derecho a la desconexión digital",
+      "conditions": "Vinculado a la reducción de jornada a 37,5 horas",
+      "affected_area": "Legislación laboral / Control de jornada",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 26
+    },
+    {
+      "literal_text": "Actualitzar la Llei de prevenció de riscos laborals per garantir entorns de treball segurs i saludables",
+      "normalized_text": "Actualizar la Ley de Prevención de Riesgos Laborales para reducir la siniestralidad laboral y adaptarla a riesgos derivados de la digitalización, el cambio climático y las transformaciones del mercado laboral, incorporando perspectiva de género y de edad",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Legislación laboral / Prevención de riesgos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 26
+    },
+    {
+      "literal_text": "Ampliar els permisos parentals retribuïts i impulsar, conjuntament amb les administracions competents, mesures que permetin disposar de més temps per a la criança durant els primers anys de vida, sense penalitzacions econòmiques ni professionals",
+      "normalized_text": "Ampliar los permisos parentales retribuidos para la crianza durante los primeros años de vida, sin penalizaciones económicas ni profesionales",
+      "conditions": "Sin penalizaciones económicas ni profesionales; en coordinación con administraciones competentes",
+      "affected_area": "Legislación laboral / Conciliación familiar",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 26
+    },
+    {
+      "literal_text": "Adaptar les quotes als ingressos reals i a la capacitat econòmica de cada professional, establint trams progressius que garanteixin que qui menys ingressi, menys cotitzi",
+      "normalized_text": "Adaptar las cuotas de autónomos a los ingresos reales con tramos progresivos, estableciendo cuotas reducidas para autónomos con ingresos inferiores al SMI con aportaciones de los Presupuestos Generales del Estado",
+      "conditions": "Cuotas reducidas para autónomos con ingresos inferiores al salario mínimo interprofesional; aportaciones necesarias de los PGE para mantener las bases de cotización",
+      "affected_area": "Seguridad Social / Trabajadores autónomos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 26
+    },
+    {
+      "literal_text": "nous trams per als ingressos superiors als 6.000 euros mensuals",
+      "normalized_text": "Crear nuevos tramos fiscales para ingresos superiores a 6.000 euros mensuales para que las rentas más altas contribuyan más",
+      "conditions": "Aplicable a ingresos superiores a 6.000 euros mensuales",
+      "affected_area": "Fiscalidad",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Eximir els treballadors autònoms del pagament de les quotes des del moment en què es produeixi una situació de malaltia greu",
+      "normalized_text": "Eximir a los trabajadores autónomos del pago de cuotas desde el momento en que se produzca una situación de enfermedad grave",
+      "conditions": "Aplicable únicamente en situaciones de enfermedad grave",
+      "affected_area": "Protección social / Autónomos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Reforçar la passarel·la al Règim Especial de Treballadors Autònoms (RETA) de la Llei 2/2026 per als mutualistes amb reconeixement de tots els anys aportats com a anys cotitzats",
+      "normalized_text": "Reforzar la pasarela al RETA de la Ley 2/2026 para mutualistas con reconocimiento de todos los años aportados como años cotizados",
+      "conditions": "Aplicable a trabajadores mutualistas acogidos a la Ley 2/2026",
+      "affected_area": "Seguridad Social / Autónomos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "desenvolupar reglamentàriament la passarel·la garantint la protecció social pública dels treballadors provinents de mutualitats o altres sistemes alternatius",
+      "normalized_text": "Desarrollar reglamentariamente la pasarela al RETA garantizando la protección social pública de los trabajadores provenientes de mutualidades u otros sistemas alternativos",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Seguridad Social / Autónomos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "garantir les competències de la Generalitat de Catalunya, amb els traspassos i recursos necessaris per planificar i gestionar un sistema propi i integrat",
+      "normalized_text": "Garantizar las competencias de la Generalitat de Catalunya en formación profesional con los traspasos y recursos necesarios para planificar y gestionar un sistema propio e integrado",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Formación Profesional / Competencias autonómicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Establir mecanismes de coordinació i projectes compartits entre centres de formació professional, universitats, centres de recerca i empreses, i facilitar les passarel·les formatives mitjançant el reconeixement de crèdits i aprenentatges",
+      "normalized_text": "Establecer mecanismos de coordinación y proyectos compartidos entre centros de FP, universidades, centros de investigación y empresas, y facilitar pasarelas formativas mediante el reconocimiento de créditos y aprendizajes",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Formación Profesional / Universidad / Investigación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Garantir un finançament estable i suficient dels centres de formació professional, amb equipaments actualitzats i recursos per a la formació permanent del professorat",
+      "normalized_text": "Garantizar una financiación estable y suficiente de los centros de formación profesional con equipamientos actualizados y recursos para la formación permanente del profesorado",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Formación Profesional / Financiación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Convertir en estable la garantia de subministrament que actualment es manté amb caràcter temporal fins a 31 de desembre de 2026, adaptant el marc estatal als estàndards de protecció dels consumidors vulnerables de la Directiva europea 2024/1711",
+      "normalized_text": "Convertir en permanente la prohibición de cortes de suministro actualmente vigente hasta el 31 de diciembre de 2026, adaptando el marco estatal a la Directiva europea 2024/1711 sobre protección de consumidores vulnerables",
+      "conditions": "Actualmente la medida tiene carácter temporal hasta el 31 de diciembre de 2026; se propone hacerla permanente para hogares vulnerables",
+      "affected_area": "Energía / Protección social / Consumidores vulnerables",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Posar en marxa un pla de condonació del deute de les llars en situació de vulnerabilitat acumulat durant la",
+      "normalized_text": "Poner en marcha un plan de condonación de la deuda acumulada por hogares en situación de vulnerabilidad (texto incompleto en el fragmento disponible)",
+      "conditions": "Aplicable a hogares en situación de vulnerabilidad; texto incompleto",
+      "affected_area": "Energía / Protección social / Consumidores vulnerables",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Incrementar el finançament estatal per adequar les quanties a la realitat socioeconòmica catalana, sense traslladar-ne el sobrecost a la Generalitat.",
+      "normalized_text": "Incrementar la financiación estatal para adecuar las cuantías del ingreso mínimo vital a la realidad socioeconómica catalana.",
+      "conditions": "Sin trasladar el sobrecoste a la Generalitat",
+      "affected_area": "Protección social / Financiación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 28
+    },
+    {
+      "literal_text": "reconèixer o compensar els períodes treballats per les empleades de la llar abans de 2022 que no van generar drets de protecció per desocupació.",
+      "normalized_text": "Reconocer o compensar los períodos trabajados por las empleadas del hogar antes de 2022 que no generaron derechos de protección por desempleo.",
+      "conditions": "Aplicable a períodos trabajados antes de 2022",
+      "affected_area": "Derechos laborales / Empleo doméstico",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 28
+    },
+    {
+      "literal_text": "Incorporar la perspectiva de gènere al reconeixement de les malalties professionals, revisant el quadre de patologies per corregir els biaixos",
+      "normalized_text": "Incorporar la perspectiva de género en el reconocimiento de enfermedades profesionales, revisando el cuadro de patologías para corregir sesgos.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Derechos laborales / Salud laboral",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 28
+    },
+    {
+      "literal_text": "Adoptar una política industrial activa que aposti per grans projectes industrials a Catalunya.",
+      "normalized_text": "Adoptar una política industrial activa que apueste por grandes proyectos industriales en Cataluña.",
+      "conditions": "Substituir los PERTE, que finalizan en 2026, por proyectos estratégicos con gestión descentralizada.",
+      "affected_area": "Política industrial",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Cal substituir els PERTE, que acaben aquest 2026, per projectes estratègics amb una gestió descentralitzada",
+      "normalized_text": "Sustituir los PERTE por proyectos estratégicos con gestión descentralizada, recuperando la figura del PERTE territorial.",
+      "conditions": "Los PERTE finalizan en 2026.",
+      "affected_area": "Política industrial / Financiación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Prioritzar la contractació pública, la fabricació local i la sostenibilitat, especialment en sectors clau",
+      "normalized_text": "Priorizar la contratación pública, la fabricación local y la sostenibilidad en sectores clave de empleo de calidad y cohesión territorial.",
+      "conditions": "Especialmente en sectores clave en materia de puestos de trabajo de calidad y cohesión territorial.",
+      "affected_area": "Contratación pública / Industria",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Simplificar els procediments administratius per instal·lar punts de recàrrega públics i privats",
+      "normalized_text": "Simplificar los procedimientos administrativos para instalar puntos de recarga públicos y privados, garantizando la disponibilidad de suministro.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Transporte / Electrificación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "vincular els programes de renovació del parc de vehicles a la retirada de vehicles antics",
+      "normalized_text": "Vincular los programas de renovación del parque de vehículos a la retirada de vehículos antiguos.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Transporte / Medio ambiente",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Recuperar i traspassar la gestió i la titularitat pública de les centrals hidroelèctriques a la Generalitat de Catalunya a mesura que vagin caducant les concessions.",
+      "normalized_text": "Traspasar la gestión y titularidad pública de las centrales hidroeléctricas a la Generalitat de Catalunya conforme vayan caducando las concesiones.",
+      "conditions": "A medida que vayan caducando las concesiones.",
+      "affected_area": "Energía / Infraestructuras",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 30
+    },
+    {
+      "literal_text": "Transposar urgentment les directives europees NIS2 i CER per reforçar la protecció de les infraestructures energètiques crítiques, reduir les vulnerabilitats davant de ciberatacs",
+      "normalized_text": "Transponer urgentemente las directivas europeas NIS2 y CER para reforzar la protección de infraestructuras energéticas críticas y reducir vulnerabilidades ante ciberataques.",
+      "conditions": "Mejorar la prevención y la capacidad de respuesta ante incidencias.",
+      "affected_area": "Energía / Ciberseguridad",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 30
+    },
+    {
+      "literal_text": "Reforçar el programa CE IMPLEMENTA i crear línies de suport a les comunitats energètiques, cooperatives, llars, municipis, comerços i pimes",
+      "normalized_text": "Reforzar el programa CE IMPLEMENTA y crear líneas de apoyo a comunidades energéticas, cooperativas, hogares, municipios, comercios y pymes.",
+      "conditions": "Facilitar el aprovechamiento de energías renovables por parte de estos colectivos.",
+      "affected_area": "Energía / Comunidades energéticas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 30
+    },
+    {
+      "literal_text": "Garantir finançament i assistència tècnica, jurídica i administrativa, prioritzant els projectes amb menys recursos, les zones amb vulnerabilitat energètica",
+      "normalized_text": "Garantizar financiación y asistencia técnica, jurídica y administrativa para proyectos de energía, priorizando zonas con vulnerabilidad energética y proyectos con menos recursos.",
+      "conditions": "Prioridad para proyectos con menos recursos, zonas con vulnerabilidad energética y participación de personas que viven de alquiler.",
+      "affected_area": "Energía / Política social",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 31
+    },
+    {
+      "literal_text": "Adaptar el marc normatiu i ampliar els terminis de concessió de les estacions de càrrega ultraràpida per facilitar-ne el desplegament i fomentar la competència.",
+      "normalized_text": "Adaptar el marco normativo y ampliar los plazos de concesión de estaciones de carga ultrarrápida para facilitar su despliegue y fomentar la competencia.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Transporte / Regulación energética",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 31
+    },
+    {
+      "literal_text": "Reformar la fiscalitat per afavorir la substitució dels combustibles fòssils per electricitat i garantir que les obligacions socials del sistema energètic disposin de finançament públic transparent.",
+      "normalized_text": "Reformar la fiscalidad para favorecer la sustitución de combustibles fósiles por electricidad y garantizar financiación pública transparente para las obligaciones sociales del sistema energético.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Fiscalidad / Energía",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 31
+    },
+    {
+      "literal_text": "Establir mecanismes de compensació per als petits inversors fotovoltaics afectats per les modificacions retroactives del règim retributiu de les energies renovables",
+      "normalized_text": "Establecer mecanismos de compensación para pequeños inversores fotovoltaicos afectados por modificaciones retroactivas del régimen retributivo de energías renovables.",
+      "conditions": "Aplicable a inversores que actuaron bajo el marco regulador anterior.",
+      "affected_area": "Energía / Protección inversores",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 31
+    },
+    {
+      "literal_text": "Recuperar el Fons Nacional per a la Sostenibilitat del Sistema Elèctric perquè els combustibles fòssils contribueixin al finançament de les renovables i es redueixin els costos de la factura elèctrica.",
+      "normalized_text": "Recuperar el Fondo Nacional para la Sostenibilidad del Sistema Eléctrico para que los combustibles fósiles contribuyan al financiamiento de las renovables y se reduzcan los costes de la factura eléctrica.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Energía / Regulación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 31
+    },
+    {
+      "literal_text": "Corregir els greuges tarifaris de les xarxes de 25 i 30 kV, incorporant-les a la tarifa 6.2, i regular la contractació de potència estacional per adaptar els costos al consum real.",
+      "normalized_text": "Corregir los agravios tarifarios de las redes de 25 y 30 kV incorporándolas a la tarifa 6.2, y regular la contratación de potencia estacional para adaptar los costes al consumo real.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Energía / Regulación tarifaria",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 31
+    },
+    {
+      "literal_text": "Convocar la comissió bilateral entre la Direcció General de Costes i la Generalitat de Catalunya per coordinar les estratègies de protecció del litoral i incrementar la seguretat jurídica dels titulars",
+      "normalized_text": "Convocar la comisión bilateral entre la Dirección General de Costas y la Generalitat de Catalunya para coordinar estrategias de protección del litoral e incrementar la seguridad jurídica de los titulares de derechos en el delta del Ebro.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Medio ambiente / Gestión costera",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 31
+    },
+    {
+      "literal_text": "Reclamar que Catalunya participi directament en la definició, distribució i gestió dels fons europeus, apropant les decisions a les explotacions agràries, ramaderes i pesqueres.",
+      "normalized_text": "Reclamar que Cataluña participe directamente en la definición, distribución y gestión de los fondos europeos agrarios y pesqueros.",
+      "conditions": "Ninguna condición específica adicional mencionada.",
+      "affected_area": "Política Agraria Común / Descentralización / Competencias autonómicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 32
+    },
+    {
+      "literal_text": "cal garantir clàusules de salvaguarda i reciprocitat de normes per als productes agroalimentaris importats en els tractats comercials.",
+      "normalized_text": "Garantizar cláusulas de salvaguarda y reciprocidad de normas para los productos agroalimentarios importados en los tratados comerciales.",
+      "conditions": "Aplicable a los tratados comerciales en los que participe la UE o el Estado español.",
+      "affected_area": "Comercio internacional / Sector agroalimentario",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 32
+    },
+    {
+      "literal_text": "Promoure els vins i escumosos catalans i garantir la sostenibilitat del sector vitivinícola.",
+      "normalized_text": "Impulsar medidas de comercialización de vinos y espumosos catalanes en mercados interior e internacional, reforzar denominaciones de origen y apoyar a pequeños y medianos productores.",
+      "conditions": "Incluye apoyo al relevo generacional y adaptación al cambio climático",
+      "affected_area": "Agricultura / Sector vitivinícola",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Garantir el finançament estatal de la modernització dels regadius de Catalunya.",
+      "normalized_text": "Exigir al Estado una aportación presupuestaria suficiente y sostenida para modernizar infraestructuras de regadío en Cataluña, priorizando los Canales de Urgell y su conexión con Segarra-Garrigues.",
+      "conditions": "Con calendario plurianual de financiación que evite cargar el coste sobre los regantes",
+      "affected_area": "Agricultura / Infraestructuras hidráulicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Regularitzar la potència real de les embarcacions pesqueres i adaptar els límits de capacitat de la flota.",
+      "normalized_text": "Impulsar la regularización de la potencia real de los motores pesqueros y exigir al Estado que defienda ante la UE una revisión de los criterios de capacidad (GT y kW) sin aumentar el esfuerzo pesquero efectivo.",
+      "conditions": "Sin aumentar el esfuerzo pesquero efectivo ni comprometer la sostenibilidad de los recursos marinos",
+      "affected_area": "Pesca / Regulación de flota",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Regular les captures accidentals de tonyina vermella de la flota de petits pelàgics.",
+      "normalized_text": "Reclamar mecanismos específicos de asignación de cuotas o autorizaciones para capturas accidentales de atún rojo en la pesca de pequeños pelágicos, permitiendo su desembarco y comercialización bajo control y trazabilidad.",
+      "conditions": "Sin incumplir las obligaciones internacionales",
+      "affected_area": "Pesca / Gestión de cuotas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Crear un fons estatal per a municipis propietaris forestals (FEMUPF) per finançar la gestió sostenible dels boscos, la prevenció de grans incendis",
+      "normalized_text": "Crear un fondo estatal (FEMUPF) para municipios propietarios forestales destinado a financiar la gestión sostenible de bosques, la prevención de grandes incendios y el reconocimiento de servicios ecosistémicos.",
+      "conditions": "No se especifican condiciones adicionales en el fragmento disponible",
+      "affected_area": "Medio ambiente / Gestión forestal",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Impulsar una estratègia de sobirania digital que redueixi la dependència de les grans corporacions tecnològiques i reforci les capacitats pròpies en infraestructures digitals, computació, intel·ligència artificial i serveis al núvol.",
+      "normalized_text": "Impulsar una estrategia de soberanía digital para reducir la dependencia de grandes corporaciones tecnológicas y reforzar capacidades propias en infraestructuras digitales, computación, IA y servicios en la nube.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Digitalización / Soberanía tecnológica",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Promoure la inversió pública en recerca, innovació i desenvolupament tecnològic i utilitzar la contractació pública per afavorir solucions europees, obertes i interoperables.",
+      "normalized_text": "Promover la inversión pública en I+D tecnológico y utilizar la contratación pública para favorecer soluciones europeas, abiertas e interoperables.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Digitalización / Contratación pública",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Avançar cap a unes administracions públiques menys dependents de proveïdors tecnològics dominants, amb garanties de seguretat, privacitat i control públic de les dades.",
+      "normalized_text": "Reducir la dependencia de las administraciones públicas respecto a proveedores tecnológicos dominantes, garantizando seguridad, privacidad y control público de los datos.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Administración pública / Digitalización",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Reforçar la protecció de les dades personals, la privacitat i el dret a comunicar-se de manera segura, defensant el xi-",
+      "normalized_text": "Reforzar la protección de datos personales, la privacidad y el derecho a comunicarse de forma segura (propuesta incompleta por corte de página).",
+      "conditions": "Texto incompleto por corte de página.",
+      "affected_area": "Derechos digitales / Privacidad",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Obligar les grans plataformes a establir mesures de prevenció, detecció i denúncia de pràctiques manipuladores o addictives.",
+      "normalized_text": "Obligar a las grandes plataformas digitales a establecer medidas de prevención, detección y denuncia de prácticas manipuladoras o adictivas.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Regulación de plataformas digitales",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "garanteixi la transparència dels algoritmes i el dret de les persones a conèixer, comprendre i qüestionar les decisions automatitzades que les afecten",
+      "normalized_text": "Garantizar mediante legislación la transparencia de los algoritmos y el derecho de las personas a conocer, comprender y cuestionar las decisiones automatizadas que les afectan.",
+      "conditions": "En línea con la declaración de Ginebra.",
+      "affected_area": "Inteligencia artificial y derechos digitales",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Garantir que les administracions públiques utilitzin la intel·ligència artificial amb criteris de transparència, equitat i rendició de comptes",
+      "normalized_text": "Garantizar que las administraciones públicas utilicen la inteligencia artificial con criterios de transparencia, equidad y rendición de cuentas.",
+      "conditions": "Respetando las competencias de las instituciones catalanas y garantizando que las decisiones que afectan derechos permanezcan bajo control democrático.",
+      "affected_area": "Inteligencia artificial en administración pública",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Assegurarem que les administracions públiques utilitzin sistemes transparents, auditables i sotmesos a supervisió humana efectiva",
+      "normalized_text": "Asegurar que las administraciones públicas utilicen sistemas de IA transparentes, auditables y sometidos a supervisión humana efectiva.",
+      "conditions": "Y que la ciudadanía disponga de mecanismos para cuestionar las decisiones que afecten sus derechos.",
+      "affected_area": "Inteligencia artificial en administración pública",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "exigir a les plataformes digitals que incorporin la protecció dels seus drets des del disseny i per defecte",
+      "normalized_text": "Exigir a las plataformas digitales que incorporen la protección de los derechos de los menores desde el diseño y por defecto.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Regulación de plataformas digitales",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Promoure el reconeixement legal de la violència exercida contra els animals de companyia com a instrument de control, intimidació, coacció i patiment envers les dones víctimes",
+      "normalized_text": "Promover el reconocimiento legal de la violencia contra animales de compañía como forma de violencia vicaria, incorporándola al marco normativo de violencia de género.",
+      "conditions": "Aplicable cuando la violencia contra animales se ejerce como instrumento de control o intimidación hacia mujeres víctimas de violencia machista.",
+      "affected_area": "Violencia de género / Protección animal",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 36
+    },
+    {
+      "literal_text": "Impulsar la modificació de la legislació estatal de protecció i benestar animal per eliminar les exclusions que afecten els gossos destinats a activitats de caça, treball i altres finalitats",
+      "normalized_text": "Modificar la legislación estatal de protección y bienestar animal para eliminar exclusiones que afectan a perros destinados a caza, trabajo u otras actividades específicas.",
+      "conditions": "Ninguna actividad económica, deportiva o recreativa puede justificar un nivel inferior de protección.",
+      "affected_area": "Bienestar animal / Legislación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 36
+    },
+    {
+      "literal_text": "Impulsar la reforma del Codi Penal per reforçar les conseqüències dels delictes de maltractament i garantir que els animals retirats a persones condemnades no tornin a estar en les seves mans",
+      "normalized_text": "Reformar el Código Penal para endurecer las consecuencias de los delitos de maltrato animal y garantizar que los animales retirados a personas condenadas no vuelvan a su custodia.",
+      "conditions": "Aplicable a personas condenadas por delitos de maltrato animal.",
+      "affected_area": "Bienestar animal / Legislación penal",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 36
+    },
+    {
+      "literal_text": "hem treballat perquè Catalunya governi Rodalies i les seves infraestructures",
+      "normalized_text": "Transferencia de la gestión de Rodalies y sus infraestructuras a Catalunya",
+      "conditions": "Requiere acuerdo de financiación y ganancia de soberanía frente al Estado",
+      "affected_area": "Infraestructuras / Transporte",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "el traspàs de la titularitat i la gestió dels ports, els aeroports i les carreteres estatals",
+      "normalized_text": "Traspaso de la titularidad y gestión de puertos, aeropuertos y carreteras estatales a Catalunya",
+      "conditions": "Con los recursos necesarios para garantizar un sistema integrado, eficiente, sostenible y territorialmente equilibrado",
+      "affected_area": "Infraestructuras / Descentralización",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "cal adaptar les infraestructures actuals al canvi climàtic i construir-ne de noves que ajudin a la reducció de la contaminació atmosfèrica",
+      "normalized_text": "Adaptación de infraestructuras existentes al cambio climático y construcción de nuevas que reduzcan la contaminación atmosférica",
+      "conditions": "En el contexto de emergencia climática",
+      "affected_area": "Infraestructuras / Medio Ambiente",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "afavoreixin el transport públic i el desenvolupament ferroviari",
+      "normalized_text": "Priorización del transporte público y el desarrollo ferroviario en la construcción de nuevas infraestructuras",
+      "conditions": "En el contexto de emergencia climática",
+      "affected_area": "Infraestructuras / Transporte",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Cal disposar de noves eines que acostin la presa de decisions a Catalunya per revertir aquesta",
+      "normalized_text": "Creación de nuevos mecanismos para acercar la toma de decisiones sobre inversiones a Catalunya",
+      "conditions": "Para revertir el incumplimiento sistemático de inversiones presupuestadas en Catalunya",
+      "affected_area": "Infraestructuras / Gobernanza",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "establir un òrgan bilateral Generalitat–Estat de governança aeroportuària que permeti avançar en el traspàs i la gestió individualitzada dels aeroports de Barcelona-El Prat, Girona, Reus i Sabadell",
+      "normalized_text": "Establecer un órgano bilateral Generalitat-Estado de gobernanza aeroportuaria para avanzar en el traspaso y gestión individualizada de los aeropuertos de Barcelona-El Prat, Girona, Reus y Sabadell",
+      "conditions": "Integrados en una estrategia aeroportuaria catalana en red",
+      "affected_area": "Infraestructuras aeroportuarias",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Crear un consorci Estat-Generalitat per mancomunar els actius de la xarxa viària i establir la vinyeta com a sistema únic de pagament i control de pas.",
+      "normalized_text": "Crear un consorcio Estado-Generalitat para mancomunar los activos de la red viaria y establecer la viñeta como sistema único de pago y control de paso en las vías de alta capacidad en Cataluña",
+      "conditions": "Haciendo contribuir de manera especial al transporte pesado de paso, gestionando el tráfico y reduciendo el impacto ambiental",
+      "affected_area": "Infraestructuras viarias / Financiación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Garantir la finalització dels projectes constructius, la licitació de les obres durant el 2027 i la consignació pressupostària necessària per executar els nous accessos al Port de Barcelona.",
+      "normalized_text": "Garantizar la finalización de los proyectos constructivos, la licitación de obras durante 2027 y la consignación presupuestaria para ejecutar los nuevos accesos ferroviarios y viarios al Puerto de Barcelona.",
+      "conditions": "Plazo de licitación: durante el año 2027.",
+      "affected_area": "Infraestructuras portuarias / Transporte",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 39
+    },
+    {
+      "literal_text": "Prioritzar la connexió ferroviària de mercaderies per reforçar la competitivitat logística i reduir el transport de mercaderies per carretera.",
+      "normalized_text": "Priorizar la conexión ferroviaria de mercancías en los nuevos accesos al Puerto de Barcelona para reforzar la competitividad logística y reducir el transporte de mercancías por carretera.",
+      "conditions": "En el marco de la ejecución de los nuevos accesos al Puerto de Barcelona.",
+      "affected_area": "Transporte ferroviario / Logística",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 39
+    },
+    {
+      "literal_text": "Accelerar els estudis informatius, els projectes constructius i les inversions necessàries per desdoblar el tram ferroviari entre la futura estació intermodal de Lleida i Picamoixons.",
+      "normalized_text": "Acelerar los estudios informativos, proyectos constructivos e inversiones para doblar el tramo ferroviario entre la futura estación intermodal de Lleida y Picamoixons.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Infraestructuras ferroviarias / Transporte de mercancías",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 39
+    },
+    {
+      "literal_text": "Cal reforçar la conservació de les vies, modernitzar els centres de control i els sistemes de senyalització i protecció, i revisar preventivament la seguretat de tota la xarxa",
+      "normalized_text": "Reforzar la conservación de las vías, modernizar los centros de control y los sistemas de señalización y protección, y revisar preventivamente la seguridad de toda la red ferroviaria, incluidas líneas de alta velocidad y tramos mixtos.",
+      "conditions": "Incluye líneas de alta velocidad y tramos con circulación mixta de pasajeros y mercancías.",
+      "affected_area": "Seguridad ferroviaria / Mantenimiento de infraestructuras",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 39
+    },
+    {
+      "literal_text": "Traspassar progressivament a Catalunya les funcions de conservació, manteniment i gestió de les infraestructures ferroviàries vinculades a Rodalies",
+      "normalized_text": "Traspasar progresivamente a Cataluña las funciones de conservación, mantenimiento y gestión de las infraestructuras ferroviarias vinculadas a Rodalies",
+      "conditions": "Con los recursos necesarios para garantizar un servicio seguro, fiable y de calidad",
+      "affected_area": "Infraestructuras ferroviarias / Competencias autonómicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 40
+    },
+    {
+      "literal_text": "Impulsar els estudis i projectes necessaris per desdoblar els trams de via única dels corredors Arenys de Mar-Maçanet-Massanes, Tarragona-Lleida, Vic-Ripoll i Lleida-Cervera-Manresa",
+      "normalized_text": "Impulsar estudios y proyectos para doblar los tramos de vía única de los corredores Arenys de Mar-Maçanet-Massanes, Tarragona-Lleida, Vic-Ripoll y Lleida-Cervera-Manresa",
+      "conditions": "Priorizando en el eje Lleida-Cervera-Manresa el tramo Lleida-Cervera",
+      "affected_area": "Infraestructuras ferroviarias / Red convencional",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 40
+    },
+    {
+      "literal_text": "Accelerar el tram Granollers-Terrassa, que ha de connectar les línies R4 i R8, i licitar-ne el projecte constructiu durant el 2027",
+      "normalized_text": "Acelerar el tramo Granollers-Terrassa de la Línea Orbital Ferroviaria, que conectará las líneas R4 y R8, y licitar el proyecto constructivo durante 2027",
+      "conditions": "Con el objetivo de reforzar la movilidad transversal y descongestionar la red ferroviaria centrada en Barcelona",
+      "affected_area": "Infraestructuras ferroviarias / Línea Orbital",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 40
+    },
+    {
+      "literal_text": "El tercer fil entre Figueres i Portbou i els enllaços i apartadors necessaris per connectar les terminals intermodals.",
+      "normalized_text": "Ejecutar el tercer carril entre Figueres y Portbou y los enlaces y apartaderos necesarios para conectar las terminales intermodales",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Infraestructuras ferroviarias / Corredor Mediterráneo",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 40
+    },
+    {
+      "literal_text": "Blindar les competències de la Generalitat de Catalunya en matèria sanitària. Defensar el caràcter exclusiu de les competències de la Generalitat en matèria de salut",
+      "normalized_text": "Blindar las competencias exclusivas de la Generalitat de Catalunya en materia sanitaria e impedir cualquier recentralización o injerencia del Estado en el modelo sanitario catalán.",
+      "conditions": "Exige el traspaso inmediato de todas las funciones y competencias pendientes con los recursos económicos, humanos y materiales necesarios.",
+      "affected_area": "Sanidad / Competencias autonómicas",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Reclamar el traspàs immediat de les competències plenes en matèria de trànsit i seguretat viària als governs de Catalunya, el País Valencià i les Illes Balears",
+      "normalized_text": "Reclamar el traspaso inmediato de competencias plenas en tráfico y seguridad vial a los gobiernos de Cataluña, País Valenciano e Islas Baleares, incluyendo matriculación, permisos de conducción, velocidad, puntos del carnet y registro de ITV.",
+      "conditions": "Incluye también incrementar los examinadores y liberarlos de sobrecarga burocrática.",
+      "affected_area": "Tráfico y movilidad",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 43
+    },
+    {
+      "literal_text": "cal redefinir el concepte de municipi turístic rebaixant el llindar poblacional actual de 20.000 a 10.000 habitants i establint altres criteris alternatius",
+      "normalized_text": "Redefinir el concepto de municipio turístico rebajando el umbral poblacional de 20.000 a 10.000 habitantes y estableciendo criterios alternativos al poblacional",
+      "conditions": "Motivado por la presión real que la actividad turística ejerce sobre los servicios municipales",
+      "affected_area": "Financiación local / Municipios turísticos",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 44
+    },
+    {
+      "literal_text": "Reduir la precarietat i la temporalitat, accelerar la contractació indefinida del personal investigador, millorar les retribucions i garantir una carrera professional digna",
+      "normalized_text": "Reducir la precariedad y temporalidad, acelerar la contratación indefinida del personal investigador y mejorar sus retribuciones",
+      "conditions": "Aplicable al personal investigador, docente, técnico y de gestión.",
+      "affected_area": "Condiciones laborales en universidades e investigación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "Ampliar les places dels programes estatals de formació i retenció del talent, millorar les condicions dels doctorands i doctorandes i garantir una retribució adequada",
+      "normalized_text": "Ampliar plazas en programas estatales de formación y retención del talento, mejorar condiciones de doctorandos y garantizar retribución adecuada desde el inicio de la carrera investigadora",
+      "conditions": "Desde el inicio de la carrera investigadora.",
+      "affected_area": "Formación e investigación doctoral",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "eliminar les taxes de reposició, desplegar la carrera professional horitzontal, reforçar les plantilles de suport i reduir la càrrega burocràtica",
+      "normalized_text": "Eliminar las tasas de reposición, desplegar la carrera profesional horizontal, reforzar plantillas de apoyo y reducir la carga burocrática en el ámbito universitario",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Condiciones laborales en universidades e investigación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "Assegurar recursos estables per als centres de recerca, les infraestructures científiques singulars i els grups de recerca universitaris i hospitalaris",
+      "normalized_text": "Asegurar financiación basal estable para centros de investigación, infraestructuras científicas singulares y grupos de investigación universitarios y hospitalarios",
+      "conditions": "Con especial atención a los ámbitos estratégicos para el país.",
+      "affected_area": "Financiación de la investigación",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "garantir que Catalunya pugui planificar i executar les competències en formació de les professions sanitàries en un marc nacional",
+      "normalized_text": "Garantizar que Cataluña pueda planificar y ejecutar las competencias en formación de profesiones sanitarias en un marco nacional propio, no centralizado por el Estado",
+      "conditions": "De acuerdo con las necesidades del sistema de salud catalán.",
+      "affected_area": "Formación de profesiones sanitarias",
+      "source_party": "ERC",
+      "source_title": "Programa Electoral ERC 2026",
+      "source_page": 45
+    }
+  ]
+}

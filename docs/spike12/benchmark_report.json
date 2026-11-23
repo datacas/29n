@@ -1,0 +1,556 @@
+{
+  "spike": "SPIKE-12",
+  "run_id": "1463b37e-b71d-4edb-adcb-8ee7b2ba0db5",
+  "model": "jev-1.14.0",
+  "created_at": "2026-11-19T10:27:49.514Z",
+  "n": 30,
+  "human_annotators": [
+    "Codex"
+  ],
+  "metrics": {
+    "jev:independent": {
+      "n": 30,
+      "answered": 20,
+      "abstentionRate": 0.3333333333333333,
+      "accuracyAnswered": 0.7,
+      "accuracyOverall": 0.4666666666666667,
+      "macroF1": 0.5513770180436847,
+      "perClass": {
+        "supports": {
+          "precision": 0.42857142857142855,
+          "recall": 1,
+          "f1": 0.6,
+          "support": 3
+        },
+        "opposes": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support": 0
+        },
+        "conditional": {
+          "precision": 0.6,
+          "recall": 0.375,
+          "f1": 0.4615384615384615,
+          "support": 8
+        },
+        "unclear": {
+          "precision": 1,
+          "recall": 0.42105263157894735,
+          "f1": 0.5925925925925926,
+          "support": 19
+        },
+        "contradictory": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support": 0
+        }
+      },
+      "confusion": {
+        "supports": {
+          "supports": 3,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 0
+        },
+        "opposes": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 0
+        },
+        "conditional": {
+          "supports": 2,
+          "opposes": 0,
+          "conditional": 3,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 3
+        },
+        "unclear": {
+          "supports": 2,
+          "opposes": 0,
+          "conditional": 2,
+          "unclear": 8,
+          "contradictory": 0,
+          "abstain": 7
+        },
+        "contradictory": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 0
+        }
+      },
+      "falseSupport": 4,
+      "falseOppose": 0,
+      "polarityFlips": 0,
+      "uncertainDetectionRate": 0.7894736842105263,
+      "latencyMs": {
+        "p50": 143,
+        "p95": 819
+      },
+      "inputTokens": 31911,
+      "costUsd": 0.001340262
+    },
+    "jev:with_proposal": {
+      "n": 30,
+      "answered": 21,
+      "abstentionRate": 0.3,
+      "accuracyAnswered": 0.8095238095238095,
+      "accuracyOverall": 0.5666666666666667,
+      "macroF1": 0.6444444444444445,
+      "perClass": {
+        "supports": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.6666666666666666,
+          "support": 3
+        },
+        "opposes": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support": 0
+        },
+        "conditional": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5,
+          "f1": 0.5333333333333333,
+          "support": 8
+        },
+        "unclear": {
+          "precision": 1,
+          "recall": 0.5789473684210527,
+          "f1": 0.7333333333333334,
+          "support": 19
+        },
+        "contradictory": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support": 0
+        }
+      },
+      "confusion": {
+        "supports": {
+          "supports": 2,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 1
+        },
+        "opposes": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 0
+        },
+        "conditional": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 4,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 4
+        },
+        "unclear": {
+          "supports": 1,
+          "opposes": 0,
+          "conditional": 3,
+          "unclear": 11,
+          "contradictory": 0,
+          "abstain": 4
+        },
+        "contradictory": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 0
+        }
+      },
+      "falseSupport": 1,
+      "falseOppose": 0,
+      "polarityFlips": 0,
+      "uncertainDetectionRate": 0.7894736842105263,
+      "latencyMs": {
+        "p50": 142,
+        "p95": 161
+      },
+      "inputTokens": 34586,
+      "costUsd": 0.0014526120000000003
+    },
+    "claude": {
+      "n": 30,
+      "answered": 30,
+      "abstentionRate": 0,
+      "accuracyAnswered": 0.43333333333333335,
+      "accuracyOverall": 0.43333333333333335,
+      "macroF1": 0.31359649122807015,
+      "perClass": {
+        "supports": {
+          "precision": null,
+          "recall": 0,
+          "f1": 0,
+          "support": 3
+        },
+        "opposes": {
+          "precision": 0,
+          "recall": null,
+          "f1": 0,
+          "support": 0
+        },
+        "conditional": {
+          "precision": 0.2727272727272727,
+          "recall": 0.375,
+          "f1": 0.3157894736842105,
+          "support": 8
+        },
+        "unclear": {
+          "precision": 0.7692307692307693,
+          "recall": 0.5263157894736842,
+          "f1": 0.625,
+          "support": 19
+        },
+        "contradictory": {
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "support": 0
+        }
+      },
+      "confusion": {
+        "supports": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 2,
+          "unclear": 1,
+          "contradictory": 0,
+          "abstain": 0
+        },
+        "opposes": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 0
+        },
+        "conditional": {
+          "supports": 0,
+          "opposes": 3,
+          "conditional": 3,
+          "unclear": 2,
+          "contradictory": 0,
+          "abstain": 0
+        },
+        "unclear": {
+          "supports": 0,
+          "opposes": 3,
+          "conditional": 6,
+          "unclear": 10,
+          "contradictory": 0,
+          "abstain": 0
+        },
+        "contradictory": {
+          "supports": 0,
+          "opposes": 0,
+          "conditional": 0,
+          "unclear": 0,
+          "contradictory": 0,
+          "abstain": 0
+        }
+      },
+      "falseSupport": 0,
+      "falseOppose": 6,
+      "polarityFlips": 0,
+      "uncertainDetectionRate": 0.5263157894736842,
+      "latencyMs": {
+        "p50": null,
+        "p95": null
+      },
+      "inputTokens": 0,
+      "costUsd": 0
+    }
+  },
+  "jev_vs_claude_agreement": {
+    "comparable": 20,
+    "agree": 6,
+    "rate": 0.3
+  },
+  "disagreements_with_human": [
+    {
+      "position_id": "6364f12b-1444-459f-aae7-610f645ff49f",
+      "party": "ERC",
+      "q": "Q004",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "2e206184-6775-4550-8cf4-42a0e5f32703",
+      "party": "ERC",
+      "q": "Q019",
+      "mode": "independent",
+      "gold": "conditional",
+      "jev": null,
+      "claude": "conditional"
+    },
+    {
+      "position_id": "8bf02801-3569-463d-81fc-5271b5c36104",
+      "party": "Sumar",
+      "q": "Q004",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "84ba2005-6430-4ce8-bb43-ebfa9b321233",
+      "party": "PP",
+      "q": "Q003",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "conditional"
+    },
+    {
+      "position_id": "3db89ded-6508-4651-b189-e003813caebb",
+      "party": "PSOE",
+      "q": "Q009",
+      "mode": "independent",
+      "gold": "conditional",
+      "jev": null,
+      "claude": "opposes"
+    },
+    {
+      "position_id": "294a7fbb-9c29-4243-9efb-da1faa5ee4de",
+      "party": "Vox",
+      "q": "Q020",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": "supports",
+      "claude": "conditional"
+    },
+    {
+      "position_id": "9ca99138-0f09-4b2b-b74b-52d26853a747",
+      "party": "PP",
+      "q": "Q012",
+      "mode": "independent",
+      "gold": "conditional",
+      "jev": "supports",
+      "claude": "opposes"
+    },
+    {
+      "position_id": "c2198178-52ce-40f2-8685-7eea8432825e",
+      "party": "PSOE",
+      "q": "Q017",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": "supports",
+      "claude": "conditional"
+    },
+    {
+      "position_id": "bd55bec5-6454-463e-9a97-84cabf9b1c71",
+      "party": "Sumar",
+      "q": "Q008",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "conditional"
+    },
+    {
+      "position_id": "306355b1-6474-422f-962e-5542efafa4c9",
+      "party": "PSOE",
+      "q": "Q012",
+      "mode": "independent",
+      "gold": "conditional",
+      "jev": "supports",
+      "claude": "unclear"
+    },
+    {
+      "position_id": "c375a3fa-11d0-47d2-9b21-4fa2ff546aa3",
+      "party": "ERC",
+      "q": "Q016",
+      "mode": "independent",
+      "gold": "conditional",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "df03a19c-ab47-4f5e-a85d-c1eb30298142",
+      "party": "PP",
+      "q": "Q007",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "37c97024-6c36-4564-90a8-8a782d710027",
+      "party": "PSOE",
+      "q": "Q019",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "ca5abd7d-201c-4cb0-82db-6ee43eff2bf7",
+      "party": "ERC",
+      "q": "Q011",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "42b09885-5bd1-4347-ae07-67ac03355847",
+      "party": "PP",
+      "q": "Q017",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": "conditional",
+      "claude": "unclear"
+    },
+    {
+      "position_id": "1ae089de-a367-47c8-8ad7-71fd3a84a12e",
+      "party": "ERC",
+      "q": "Q015",
+      "mode": "independent",
+      "gold": "unclear",
+      "jev": "conditional",
+      "claude": "opposes"
+    },
+    {
+      "position_id": "8bf02801-3569-463d-81fc-5271b5c36104",
+      "party": "Sumar",
+      "q": "Q004",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "63f046ce-ccdd-4d3b-bb18-9542def5bbdc",
+      "party": "PSOE",
+      "q": "Q022",
+      "mode": "with_proposal",
+      "gold": "supports",
+      "jev": null,
+      "claude": "conditional"
+    },
+    {
+      "position_id": "84ba2005-6430-4ce8-bb43-ebfa9b321233",
+      "party": "PP",
+      "q": "Q003",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "conditional"
+    },
+    {
+      "position_id": "3db89ded-6508-4651-b189-e003813caebb",
+      "party": "PSOE",
+      "q": "Q009",
+      "mode": "with_proposal",
+      "gold": "conditional",
+      "jev": null,
+      "claude": "opposes"
+    },
+    {
+      "position_id": "294a7fbb-9c29-4243-9efb-da1faa5ee4de",
+      "party": "Vox",
+      "q": "Q020",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "conditional"
+    },
+    {
+      "position_id": "9ca99138-0f09-4b2b-b74b-52d26853a747",
+      "party": "PP",
+      "q": "Q012",
+      "mode": "with_proposal",
+      "gold": "conditional",
+      "jev": null,
+      "claude": "opposes"
+    },
+    {
+      "position_id": "c2198178-52ce-40f2-8685-7eea8432825e",
+      "party": "PSOE",
+      "q": "Q017",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": "supports",
+      "claude": "conditional"
+    },
+    {
+      "position_id": "bd55bec5-6454-463e-9a97-84cabf9b1c71",
+      "party": "Sumar",
+      "q": "Q008",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": "conditional",
+      "claude": "conditional"
+    },
+    {
+      "position_id": "306355b1-6474-422f-962e-5542efafa4c9",
+      "party": "PSOE",
+      "q": "Q012",
+      "mode": "with_proposal",
+      "gold": "conditional",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "c375a3fa-11d0-47d2-9b21-4fa2ff546aa3",
+      "party": "ERC",
+      "q": "Q016",
+      "mode": "with_proposal",
+      "gold": "conditional",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "ca5abd7d-201c-4cb0-82db-6ee43eff2bf7",
+      "party": "ERC",
+      "q": "Q011",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": null,
+      "claude": "unclear"
+    },
+    {
+      "position_id": "42b09885-5bd1-4347-ae07-67ac03355847",
+      "party": "PP",
+      "q": "Q017",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": "conditional",
+      "claude": "unclear"
+    },
+    {
+      "position_id": "1ae089de-a367-47c8-8ad7-71fd3a84a12e",
+      "party": "ERC",
+      "q": "Q015",
+      "mode": "with_proposal",
+      "gold": "unclear",
+      "jev": "conditional",
+      "claude": "opposes"
+    }
+  ]
+}

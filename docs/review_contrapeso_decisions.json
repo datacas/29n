@@ -1,0 +1,492 @@
+{
+ "generated": "2026-11-23",
+ "decisions": [
+  {
+   "party": "Frente Amplio",
+   "qid": "Q086",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q086",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q086",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q086",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q087",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q087",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q087",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q087",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q087",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q088",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q088",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q089",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q089",
+   "action": "reject",
+   "reason": "Habla de limitar la privatización de los cuidados, no de la colaboración público-privada en sanidad."
+  },
+  {
+   "party": "ERC",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q089",
+   "action": "reject",
+   "reason": "Habla de que el Estado pueda intervenir la sanidad privada, no de colaborar con ella."
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q089",
+   "action": "reject",
+   "reason": "Describe a otros partidos, no es una posición propia."
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q089",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q089",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q090",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q090",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q090",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q090",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q090",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q091",
+   "action": "reject",
+   "reason": "Trata de paralizar desahucios de hogares vulnerables, no de desalojar viviendas ocupadas."
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q091",
+   "action": "reject",
+   "reason": "Habla de regular el mercado de la vivienda, no de ocupación."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q091",
+   "action": "reject",
+   "reason": "Habla de desahucios de arrendatarios, no de viviendas ocupadas."
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q091",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q091",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q091",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q091",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q092",
+   "action": "reject",
+   "reason": "Habla de un impuesto a las empresas energéticas, no de impuestos al consumo de luz y carburantes."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q092",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q093",
+   "action": "reject",
+   "reason": "Fragmento sin relación con la financiación de sindicatos y patronales."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q093",
+   "action": "reject",
+   "reason": "Fragmento incompleto: no se ve a qué organizaciones se refiere."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q093",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q093",
+   "action": "reject",
+   "reason": "Habla de ayudas a asociaciones culturales, no de financiar sindicatos y patronales en general."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q093",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q093",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q093",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q094",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q094",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q094",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q094",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q094",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q095",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q095",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q095",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q095",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q095",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q095",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q095",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q096",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q096",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q096",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q096",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q096",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q096",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  }
+ ]
+}

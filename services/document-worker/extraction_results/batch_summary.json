@@ -1,0 +1,69 @@
+{
+  "total_documents": 5,
+  "total_claims": 2121,
+  "total_input_tokens": 343930,
+  "total_output_tokens": 364931,
+  "total_cost": 6.505754999999999,
+  "total_time_seconds": 4110.805722236633,
+  "budget_limit": 25.0,
+  "prompt_version": "1.0.0",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "documents": [
+    {
+      "party": "PSOE",
+      "status": "partial",
+      "total_pages": 114,
+      "pages_processed": 106,
+      "total_claims": 733,
+      "duplicates": 0,
+      "input_tokens": 105654,
+      "output_tokens": 109403,
+      "cost": 1.958007
+    },
+    {
+      "party": "PP",
+      "status": "partial",
+      "total_pages": 64,
+      "pages_processed": 48,
+      "total_claims": 610,
+      "duplicates": 0,
+      "input_tokens": 65116,
+      "output_tokens": 85463,
+      "cost": 1.477293
+    },
+    {
+      "party": "Vox",
+      "status": "partial",
+      "total_pages": 66,
+      "pages_processed": 39,
+      "total_claims": 232,
+      "duplicates": 0,
+      "input_tokens": 28195,
+      "output_tokens": 33238,
+      "cost": 0.583155
+    },
+    {
+      "party": "Sumar",
+      "status": "partial",
+      "total_pages": 95,
+      "pages_processed": 93,
+      "total_claims": 413,
+      "duplicates": 0,
+      "input_tokens": 76469,
+      "output_tokens": 72373,
+      "cost": 1.315002
+    },
+    {
+      "party": "ERC",
+      "status": "partial",
+      "total_pages": 48,
+      "pages_processed": 44,
+      "total_claims": 133,
+      "duplicates": 0,
+      "input_tokens": 68496,
+      "output_tokens": 64454,
+      "cost": 1.172298
+    }
+  ]
+}

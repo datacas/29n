@@ -1,0 +1,119 @@
+{
+  "run_id": "4f3e3488-6fe3-49c5-a4d8-6e5aeb1dc8fe",
+  "model": "jev-1.14.0",
+  "created_at": "2026-11-20T16:35:03.126Z",
+  "subsets": {
+    "todas": {
+      "n": 93,
+      "aprobadas": 71,
+      "rechazadas": 22,
+      "auc_para_anticipar_rechazo": {
+        "P(evidencia insuficiente)": 0.9545454545454546,
+        "P(postura = no claro)": 0.9459026888604354,
+        "P(relevancia no directa)": 0.9481434058898848,
+        "P(contradicción)": 0.762483994878361
+      },
+      "reglas": {
+        "Jev: evidencia insuficiente (<0,5)": {
+          "marca": 29,
+          "de_ellas_rechazadas": 19,
+          "no_marca": 64,
+          "no_marca_rechazadas": 3
+        },
+        "Jev: postura \"no claro\"": {
+          "marca": 20,
+          "de_ellas_rechazadas": 16,
+          "no_marca": 73,
+          "no_marca_rechazadas": 6
+        },
+        "Jev: relevancia no directa": {
+          "marca": 30,
+          "de_ellas_rechazadas": 20,
+          "no_marca": 63,
+          "no_marca_rechazadas": 2
+        },
+        "Triaje alta confianza": {
+          "marca": 4,
+          "de_ellas_rechazadas": 1,
+          "no_marca": 89,
+          "no_marca_rechazadas": 21
+        }
+      }
+    },
+    "original": {
+      "n": 60,
+      "aprobadas": 38,
+      "rechazadas": 22,
+      "auc_para_anticipar_rechazo": {
+        "P(evidencia insuficiente)": 0.9168660287081339,
+        "P(postura = no claro)": 0.9061004784688995,
+        "P(relevancia no directa)": 0.9144736842105263,
+        "P(contradicción)": 0.6961722488038278
+      },
+      "reglas": {
+        "Jev: evidencia insuficiente (<0,5)": {
+          "marca": 29,
+          "de_ellas_rechazadas": 19,
+          "no_marca": 31,
+          "no_marca_rechazadas": 3
+        },
+        "Jev: postura \"no claro\"": {
+          "marca": 20,
+          "de_ellas_rechazadas": 16,
+          "no_marca": 40,
+          "no_marca_rechazadas": 6
+        },
+        "Jev: relevancia no directa": {
+          "marca": 30,
+          "de_ellas_rechazadas": 20,
+          "no_marca": 30,
+          "no_marca_rechazadas": 2
+        },
+        "Triaje alta confianza": {
+          "marca": 3,
+          "de_ellas_rechazadas": 1,
+          "no_marca": 57,
+          "no_marca_rechazadas": 21
+        }
+      }
+    },
+    "recuperada": {
+      "n": 33,
+      "aprobadas": 33,
+      "rechazadas": 0,
+      "auc_para_anticipar_rechazo": {
+        "P(evidencia insuficiente)": null,
+        "P(postura = no claro)": null,
+        "P(relevancia no directa)": null,
+        "P(contradicción)": null
+      },
+      "reglas": {
+        "Jev: evidencia insuficiente (<0,5)": {
+          "marca": 0,
+          "de_ellas_rechazadas": 0,
+          "no_marca": 33,
+          "no_marca_rechazadas": 0
+        },
+        "Jev: postura \"no claro\"": {
+          "marca": 0,
+          "de_ellas_rechazadas": 0,
+          "no_marca": 33,
+          "no_marca_rechazadas": 0
+        },
+        "Jev: relevancia no directa": {
+          "marca": 0,
+          "de_ellas_rechazadas": 0,
+          "no_marca": 33,
+          "no_marca_rechazadas": 0
+        },
+        "Triaje alta confianza": {
+          "marca": 1,
+          "de_ellas_rechazadas": 0,
+          "no_marca": 32,
+          "no_marca_rechazadas": 0
+        }
+      }
+    }
+  },
+  "coste_usd": 0.003672186000000001
+}

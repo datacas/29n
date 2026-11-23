@@ -1,0 +1,1182 @@
+[
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "literal_text": "financiamos 45.000 plazas públicas de 0 a 3 años",
+    "source_page": 46,
+    "conditions": "Ninguna",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "El claim existe pero la postura no es clara"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PSOE",
+    "literal_text": "una educación pública y gratuita de los 0 a los 18 años",
+    "source_page": 46,
+    "conditions": "Propuesta de futuro, no medida ya ejecutada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: propuesta de futuro, no medida ya ejecutada"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "ESPAÑA TENDRÁ SU MEJOR RESULTADO EN PISA EN CUATRO AÑOS",
+    "source_page": 7,
+    "conditions": "Plazo de cuatro años",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "Los currículos de Historia se elaborarán con las Reales Academias y las sociedades científicas, y no con el Gobierno de turno.",
+    "source_page": 38,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "Los alumnos estudiarán la Constitución, la Transición y el daño causado por el terrorismo, así como el papel de quienes lo combatieron.",
+    "source_page": 38,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "Acordaremos con las Comunidades Autónomas un protocolo nacional contra el acoso escolar que obligue a detectarlo a tiempo, también en la red",
+    "source_page": 52,
+    "conditions": "Requiere acuerdo con las Comunidades Autónomas",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "a responder a la vez desde el centro, la sanidad y los servicios sociales",
+    "source_page": 52,
+    "conditions": "Vinculado al protocolo nacional contra el acoso escolar",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "Quien acose tendrá una sanción con contenido educativo y reparador, y la víctima no tendrá que cambiar de centro por haber sido acosada.",
+    "source_page": 52,
+    "conditions": "Ninguna condición explícita",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "En la ESO volverá a pasarse de curso con las asignaturas aprobadas.",
+    "source_page": 52,
+    "conditions": "Ninguna condición explícita",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "PP",
+    "literal_text": "El alumno que vaya mal tendrá refuerzo obligatorio antes de tener que repetir.",
+    "source_page": 52,
+    "conditions": "Aplicable a alumnos con bajo rendimiento académico",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "literal_text": "unificar currículo, evaluaciones nacionales e inspección. Reválidas y EVAU única.",
+    "source_page": 41,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "literal_text": "Revisión de las homologaciones de títulos extranjeros.",
+    "source_page": 41,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "literal_text": "Eliminación de contenidos ideológicos ajenos a las materias académicas.",
+    "source_page": 41,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "literal_text": "Derogación de la LOMLOE y recuperación de una enseñanza basada en el esfuerzo, el saber, el mérito, la exigencia, la disciplina",
+    "source_page": 41,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "literal_text": "Potenciación de las matemáticas, la lectura, las humanidades y las ciencias.",
+    "source_page": 41,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q002",
+    "question": "¿Debe ampliarse la oferta de plazas públicas de educación infantil (0-3 años)?",
+    "party": "Vox",
+    "literal_text": "Fin de los móviles en clase, refuerzo de la autoridad del profesor y plan nacional contra el acoso escolar y el ciberacoso.",
+    "source_page": 41,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "literal_text": "El ritmo de construcción de vivienda protegida ha aumentado un 125% en términos anualizados desde 2018.",
+    "source_page": 25,
+    "conditions": "Medido en términos anualizados desde 2018.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: medido en términos anualizados desde 2018."
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "literal_text": "las viviendas que se construyan con recursos de la Administración General del Estado nunca puedan servir a la especulación. Vivienda pública para siempre.",
+    "source_page": 25,
+    "conditions": "Aplica únicamente a viviendas construidas con recursos de la Administración General del Estado.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "literal_text": "el nuevo Plan Estatal de Vivienda 2026-2030, en el que hemos seguido acompañando a las comunidades autónomas para que ejerzan sus competencias, triplicando los fondos hasta los 7.000 millones de euros",
+    "source_page": 25,
+    "conditions": "Fondos destinados a acompañar a las comunidades autónomas en el ejercicio de sus competencias.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: fondos destinados a acompañar a las comunidades autónomas en el ejercicio de sus competencias."
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "literal_text": "Hemos recuperado 40.000 viviendas y 2.400 suelos",
+    "source_page": 25,
+    "conditions": "Sin condiciones específicas mencionadas.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: sin condiciones específicas mencionadas."
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PSOE",
+    "literal_text": "Identificar y publicar desde el Ministerio de Vivienda un mapa de zonas tensionadas de vivienda que actualmente deben elaborar las comunidades autónomas",
+    "source_page": 31,
+    "conditions": "Solo en casos en que las comunidades autónomas no estén realizando el mapa en aplicación de la Ley de Vivienda.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: solo en casos en que las comunidades autónomas no estén realizando el mapa en aplicación de la ley d"
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "PP",
+    "literal_text": "Facilitaremos la segregación de viviendas grandes, siguiendo la experiencia de otros países europeos.",
+    "source_page": 41,
+    "conditions": "Siguiendo la experiencia de otros países europeos.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "literal_text": "5 % 2030 10–15.000 M€/año",
+    "source_page": 6,
+    "conditions": "Requiere multiplicar por 12–18 la aportación estatal media anual del actual Plan Estatal de Vivienda.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: requiere multiplicar por 12–18 la aportación estatal media anual del actual plan estatal de vivienda"
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "literal_text": "10 % 2035 8–12.000 M€/año",
+    "source_page": 6,
+    "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada más allá del horizonte temporal."
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "literal_text": "15 % 2040-45 6–10.000 M€/año",
+    "source_page": 6,
+    "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada más allá del horizonte temporal."
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "Sumar",
+    "literal_text": "Su precio máximo de venta se actualizará según el Índice de Precios de Consumo (IPC), desvinculado de las fluctuaciones del mercado inmobiliario",
+    "source_page": 7,
+    "conditions": "Aplicable únicamente a viviendas con calificación de protegida.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: aplicable únicamente a viviendas con calificación de protegida."
+  },
+  {
+    "question_id": "Q003",
+    "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de ",
+    "party": "ERC",
+    "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+    "source_page": 18,
+    "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "literal_text": "5 % 2030 10–15.000 M€/año",
+    "source_page": 6,
+    "conditions": "Requiere multiplicar por 12–18 la aportación estatal media anual del actual Plan Estatal de Vivienda.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: requiere multiplicar por 12–18 la aportación estatal media anual del actual plan estatal de vivienda"
+  },
+  {
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "literal_text": "10 % 2035 8–12.000 M€/año",
+    "source_page": 6,
+    "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada más allá del horizonte temporal."
+  },
+  {
+    "question_id": "Q004",
+    "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+    "party": "Sumar",
+    "literal_text": "15 % 2040-45 6–10.000 M€/año",
+    "source_page": 6,
+    "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada más allá del horizonte temporal."
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PSOE",
+    "literal_text": "hemos aprobado ayudas al alquiler y deducciones en la renta para quien pague un alquiler",
+    "source_page": 26,
+    "conditions": "Dirigido a personas que paguen un alquiler",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PSOE",
+    "literal_text": "Incentivar la incorporación de viviendas asequibles, quedando exentas en el IRPF las ganancias patrimoniales derivadas de la transmisión de viviendas a estos proveedores",
+    "source_page": 28,
+    "conditions": "Equiparación del tratamiento fiscal al de transmisiones realizadas a entidades públicas destinadas al alquiler social y asequible.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "literal_text": "La rehabilitación de vivienda habitual tendrá un IVA superreducido del 4%",
+    "source_page": 42,
+    "conditions": "Aplicable únicamente a vivienda habitual.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: aplicable únicamente a vivienda habitual."
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "literal_text": "permitiremos que se pague de forma fraccionada al ritmo de la hipoteca",
+    "source_page": 43,
+    "conditions": "Vinculado a la reducción del IVA al 4% para menores de 40 años",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: vinculado a la reducción del iva al 4% para menores de 40 años"
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "literal_text": "se permitirá igualmente pagar fraccionadamente",
+    "source_page": 43,
+    "conditions": "Vinculado al ITP reducido para primera vivienda usada de jóvenes",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: vinculado al itp reducido para primera vivienda usada de jóvenes"
+  },
+  {
+    "question_id": "Q005",
+    "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimon",
+    "party": "PP",
+    "literal_text": "Los rendimientos generados estarán exentos de tributación siempre que el ahorro se destine a la compra de la primera vivienda",
+    "source_page": 43,
+    "conditions": "El ahorro debe destinarse exclusivamente a la compra de la primera vivienda",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: el ahorro debe destinarse exclusivamente a la compra de la primera vivienda"
+  },
+  {
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PSOE",
+    "literal_text": "formamos más especialistas que nunca con 4.500 plazas más de Formación Sanitaria Especializada (+53%)",
+    "source_page": 46,
+    "conditions": "Ninguna",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PSOE",
+    "literal_text": "impulsamos la Agencia Estatal de Salud Pública",
+    "source_page": 46,
+    "conditions": "Ninguna",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PP",
+    "literal_text": "SEREMOS REFERENTE MUNDIAL EN SANIDAD Y CUIDADOS",
+    "source_page": 7,
+    "conditions": "Ninguna condición explícita mencionada en este texto",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada en este texto"
+  },
+  {
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "PP",
+    "literal_text": "pondremos en marcha, de acuerdo con las Comunidades Autónomas y respetando sus competencias de gestión, un plan urgente de reducción de listas de espera",
+    "source_page": 52,
+    "conditions": "Requiere acuerdo con las CCAA y respeto a sus competencias de gestión",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q006",
+    "question": "¿Debe aumentarse la inversión en el Sistema Nacional de Salud para reducir listas de espera y mejora",
+    "party": "Vox",
+    "literal_text": "tarjeta sanitaria única con historia clínica compartida en todo el territorio nacional",
+    "source_page": 37,
+    "conditions": "Ninguna condición explícita",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q007",
+    "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana",
+    "party": "PP",
+    "literal_text": "Cuando sea necesario para hacer viable una actuación, se facilitará una mayor densidad y edificabilidad.",
+    "source_page": 42,
+    "conditions": "Solo cuando sea necesario para hacer viable la actuación.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PSOE",
+    "literal_text": "Hemos aprobado impuestos extraordinarios a la banca y a las grandes energéticas",
+    "source_page": 36,
+    "conditions": "Las derechas derogaron la prórroga del impuesto a las grandes energéticas en 2025",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: las derechas derogaron la prórroga del impuesto a las grandes energéticas en 2025"
+  },
+  {
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PSOE",
+    "literal_text": "Hemos elevado al 30% la tributación de las rentas del ahorro superiores a 300.000 euros",
+    "source_page": 36,
+    "conditions": "Aplicable únicamente a rentas del ahorro superiores a 300.000 euros",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "PP",
+    "literal_text": "LOS ESPAÑOLES PAGARÁN MENOS IMPUESTOS",
+    "source_page": 7,
+    "conditions": "Ninguna condición explícita mencionada en este texto",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q009",
+    "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicio",
+    "party": "ERC",
+    "literal_text": "Modificar la legislació vigent i els reglaments que la despleguen per facilitar que, en les liquidacions dels tributs cedits, es puguin sol·licitar pròrrogues en el pagament fins a 4 anys",
+    "source_page": 23,
+    "conditions": "Aplicable a las liquidaciones de tributos cedidos.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q010",
+    "question": "¿Deben reducirse los impuestos sobre la renta de las personas físicas (IRPF) para las clases medias ",
+    "party": "PP",
+    "literal_text": "LOS ESPAÑOLES PAGARÁN MENOS IMPUESTOS",
+    "source_page": 7,
+    "conditions": "Ninguna condición explícita mencionada en este texto",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada en este texto"
+  },
+  {
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "PP",
+    "literal_text": "Analizaremos las más de 1.000 limitaciones temporales de velocidad y cuantificaremos las inversiones necesarias para abordarlas, estableciendo prioridades a corto y medio plazo.",
+    "source_page": 36,
+    "conditions": "Ninguna condición explícita.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita."
+  },
+  {
+    "question_id": "Q011",
+    "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad t",
+    "party": "Vox",
+    "literal_text": "Auditoría del estado de la red.",
+    "source_page": 61,
+    "conditions": "Ninguna condición específica mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada."
+  },
+  {
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PSOE",
+    "literal_text": "Convertiremos el mínimo exento por descendiente en el IRPF en un crédito fiscal reembolsable",
+    "source_page": 49,
+    "conditions": "Dirigido a 2 millones de hogares que no tienen obligación de presentar declaración o carecen de cuota para beneficiarse del mínimo actual",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: dirigido a 2 millones de hogares que no tienen obligación de presentar declaración o carecen de cuot"
+  },
+  {
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PP",
+    "literal_text": "Elevaremos los mínimos personales y familiares del IRPF y bajaremos el IRPF de las rentas medias y bajas y de las familias.",
+    "source_page": 47,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada."
+  },
+  {
+    "question_id": "Q012",
+    "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificacione",
+    "party": "PP",
+    "literal_text": "Quien cobre el salario mínimo no pagará IRPF: por ley, el umbral subirá automáticamente cada vez que suba el SMI",
+    "source_page": 47,
+    "conditions": "El umbral se actualizará automáticamente cada vez que suba el SMI.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: el umbral se actualizará automáticamente cada vez que suba el smi."
+  },
+  {
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "PSOE",
+    "literal_text": "Consolidar la cooperación como política de Estado y cerrar la brecha con el 0,7 % de la RNB en Ayuda Oficial al Desarrollo",
+    "source_page": 107,
+    "conditions": "Ninguna condición específica mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada"
+  },
+  {
+    "question_id": "Q014",
+    "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+    "party": "Sumar",
+    "literal_text": "20% de la AOD total que tenga la igualdad de género como objetivo principal",
+    "source_page": 90,
+    "conditions": "Ninguna condición adicional especificada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición adicional especificada"
+  },
+  {
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "PP",
+    "literal_text": "Se extenderá la asistencia digital las 24 horas a todos los servicios para resolver las consultas más habituales.",
+    "source_page": 14,
+    "conditions": "Limitado a resolución de consultas más habituales.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q015",
+    "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acce",
+    "party": "Vox",
+    "literal_text": "Creación de un expediente digital único y centralizado que unifique la gestión de trámites para ciudadanos y empresas, obligando a las diferentes administraciones a compartir los datos entre sí.",
+    "source_page": 27,
+    "conditions": "Ninguna condición o excepción mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición o excepción mencionada."
+  },
+  {
+    "question_id": "Q016",
+    "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estraté",
+    "party": "PP",
+    "literal_text": "Declararemos estratégicos de interés nacional los proyectos que creen al menos cien empleos.",
+    "source_page": 48,
+    "conditions": "Requisito mínimo de creación de 100 empleos.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q016",
+    "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estraté",
+    "party": "ERC",
+    "literal_text": "Adoptar una política industrial activa que aposti per grans projectes industrials a Catalunya.",
+    "source_page": 29,
+    "conditions": "Substituir los PERTE, que finalizan en 2026, por proyectos estratégicos con gestión descentralizada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: substituir los perte, que finalizan en 2026, por proyectos estratégicos con gestión descentralizada."
+  },
+  {
+    "question_id": "Q017",
+    "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y",
+    "party": "PP",
+    "literal_text": "contará con ayudas, financiación pública y avales preferentes, y podrá apoyarse en la figura del agente rehabilitador.",
+    "source_page": 42,
+    "conditions": "Vinculado a actuaciones de rehabilitación de vivienda habitual.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: vinculado a actuaciones de rehabilitación de vivienda habitual."
+  },
+  {
+    "question_id": "Q019",
+    "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en ",
+    "party": "PSOE",
+    "literal_text": "hemos reclamado la liberación de todos los rehenes y defendido la necesidad de exigir responsabilidades por los crímenes cometidos",
+    "source_page": 105,
+    "conditions": "Ninguna condición explícita mencionada",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q019",
+    "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en ",
+    "party": "PP",
+    "literal_text": "Exigiremos la liberación de todos los presos políticos y apoyaremos a los disidentes.",
+    "source_page": 57,
+    "conditions": "Aplicable particularmente en Cuba, Nicaragua y Venezuela.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q020",
+    "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+    "party": "PP",
+    "literal_text": "daremos un impulso nacional e internacional a nuestros Museos Nacionales y Estatales, especialmente a instituciones referentes como el Museo del Prado o el Reina Sofía",
+    "source_page": 38,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q020",
+    "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+    "party": "ERC",
+    "literal_text": "Exigir que les pintures murals de la Sala Capitular de Sixena no siguin desmuntades ni traslladades del MNAC",
+    "source_page": 13,
+    "conditions": "Los informes técnicos disponibles y dictámenes de expertos internacionales alertan de riesgo para la conservación",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "aprobar la reforma laboral",
+    "source_page": 35,
+    "conditions": "Ninguna condición explícita mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "Integrar las mutuas colaboradoras en la gestión pública de la Seguridad Social.",
+    "source_page": 41,
+    "conditions": "Se realizará en el marco del diálogo social.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "Reformar la regulación del contrato a tiempo parcial para exigir que se justifique de forma precisa la causa por la que no se formaliza un contrato a jornada completa",
+    "source_page": 43,
+    "conditions": "Ninguna condición específica mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "impulsamos la reforma del artículo 49 de la Constitución",
+    "source_page": 46,
+    "conditions": "Ninguna",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "El claim existe pero la postura no es clara"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "aprobamos la reforma del artículo 49, la primera reforma social de nuestra Constitución",
+    "source_page": 88,
+    "conditions": "Ninguna condición mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición mencionada."
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "Reformar el Senado para convertirlo en una auténtica Cámara de representación territorial, haciendo coincidir sus circunscripciones con el ámbito autonómico.",
+    "source_page": 91,
+    "conditions": "Ninguna condición mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición mencionada."
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "Culminar la reforma del Código Penal para penalizar las llamadas «terapias de conversión»",
+    "source_page": 97,
+    "conditions": "Retomando la iniciativa legislativa impulsada durante la anterior legislatura.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PSOE",
+    "literal_text": "Culminar la reforma del INAEM, con planes específicos para el flamenco, la danza, el circo y la música, más residencias artísticas y circuitos de exhibición",
+    "source_page": 103,
+    "conditions": "Ninguna condición explícita mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Reformaremos la normativa estatal para que más actividades de bajo riesgo puedan iniciarse mediante declaración responsable.",
+    "source_page": 14,
+    "conditions": "Limitado a actividades calificadas como de bajo riesgo.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: limitado a actividades calificadas como de bajo riesgo."
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Reformaremos la Ley del Menor para que en delitos graves cometi-",
+    "source_page": 16,
+    "conditions": "Aplicable a delitos graves cometidos por menores (texto truncado).",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Reformaremos la Ley de Extranjería para que el rechazo en frontera cubra también las entradas a nado en Ceuta y Melilla.",
+    "source_page": 18,
+    "conditions": "Ninguna condición específica mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada."
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Evitaremos que el suplicatorio pueda convertirse en un instrumento de impunidad ante la Justicia.",
+    "source_page": 25,
+    "conditions": "Ninguna condición específica mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "No se admitirán enmiendas ajenas al contenido de las leyes.",
+    "source_page": 29,
+    "conditions": "Ninguna condición mencionada",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Cada ley explicará el coste que impone a ciudadanos y empresas.",
+    "source_page": 29,
+    "conditions": "Ninguna condición mencionada",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Las solicitudes de reconsideración deberán resolverse antes de la finalización de la tramitación de la ley a la que afecten.",
+    "source_page": 29,
+    "conditions": "Ninguna condición mencionada",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Fijaremos, además, plazos máximos para tramitar, debatir y votar en el Congreso las proposiciones de ley remitidas por el Senado.",
+    "source_page": 29,
+    "conditions": "Ninguna condición mencionada",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Reservaremos el decreto-ley a situaciones verdaderamente extraordinarias y urgentes.",
+    "source_page": 29,
+    "conditions": "Ninguna condición mencionada",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "No podrá aprobarse otro con el contenido sustancial de uno rechazado por el Congreso durante el mismo periodo de sesiones.",
+    "source_page": 29,
+    "conditions": "Aplicable dentro del mismo periodo de sesiones parlamentarias",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Reformaremos la Ley de Residuos para que los ayuntamientos puedan decidir sobre la tasa.",
+    "source_page": 33,
+    "conditions": "Ninguna",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "El claim existe pero la postura no es clara"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Propondremos la reforma del Reglamento de la Cámara para que los debates parlamentarios se desarrollen en la lengua común de todos los españoles.",
+    "source_page": 37,
+    "conditions": "Se mantiene la posibilidad de uso de lenguas cooficiales en el Senado",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: se mantiene la posibilidad de uso de lenguas cooficiales en el senado"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Reformaremos la Ley de Propiedad Horizontal para que las comunidades de propietarios puedan pedir al juez el desalojo",
+    "source_page": 43,
+    "conditions": "Requiere solicitud judicial por parte de la comunidad de propietarios",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: requiere solicitud judicial por parte de la comunidad de propietarios"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Declarará estratégicas las cadenas agroalimentarias, mar-industria y forestal, dará estabilidad a sus políticas y fijará financiación y objetivos medibles",
+    "source_page": 49,
+    "conditions": "Enmarcado en el Pacto Nacional para el campo.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Reformaremos la Ley de Montes para facilitar la prevención, elaboraremos modelos de ordenación predefinidos y potenciaremos la agricultura y ganadería preventivas, la biomasa, los tratamientos selvíco",
+    "source_page": 50,
+    "conditions": "Ninguna condición explícita",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "PP",
+    "literal_text": "Venezuela necesita un calendario electoral ya.",
+    "source_page": 57,
+    "conditions": "Ninguna condición mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición mencionada."
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "literal_text": "Simplificación y bajada del IRPF. Reducción del tipo aplicable del IRPF para cada contribuyente o familia en función del número de hijos.",
+    "source_page": 9,
+    "conditions": "La reducción del tipo varía en función del número de hijos del contribuyente o familia.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: la reducción del tipo varía en función del número de hijos del contribuyente o familia."
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "literal_text": "Reforma de la Ley del Suelo.",
+    "source_page": 23,
+    "conditions": "Ninguna condición adicional especificada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Vox",
+    "literal_text": "Modificar la Ley Orgánica del Poder Judicial para que los doce vocales de procedencia judicial del Consejo General del Poder Judicial sean elegidos mediante voto personal, directo y secreto",
+    "source_page": 55,
+    "conditions": "Aplicable a los vocales de procedencia judicial, no al total de miembros del CGPJ",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: aplicable a los vocales de procedencia judicial, no al total de miembros del cgpj"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "literal_text": "Profundizar en el camino abierto por la reforma de 2023 con la cuota de solidaridad y la subida de la base máxima de cotización eliminando progresivamente el tope",
+    "source_page": 24,
+    "conditions": "La eliminación del tope será progresiva.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: la eliminación del tope será progresiva."
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "literal_text": "Su abordaje desde la justicia global, la fraternidad y la construcción de una sociedad inclusiva representa un eje transversal de nuestro programa electoral",
+    "source_page": 50,
+    "conditions": "Las propuestas se complementan con las de cooperación internacional, educación, vivienda, empleo, sanidad, servicios sociales, comercio exterior e igualdad de derechos.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "literal_text": "Excluir de las listas electorales y de los contratos públicos a las personas y empresas condenadas por corrupción.",
+    "source_page": 69,
+    "conditions": "Aplicable a condenados por corrupción",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "literal_text": "eliminando la obligación de recoger avales introducida en 2011 para presentar candidaturas al Congreso y al Senado, y recuperando el sistema anterior",
+    "source_page": 69,
+    "conditions": "Aplicable a partidos sin representación parlamentaria",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "literal_text": "Exigir el reporte anual de los partidos en el gobierno sobre el nivel de cumplimiento de las medidas propuestas en los programas electorales",
+    "source_page": 73,
+    "conditions": "Los programas deben ser transparentes sobre las posibilidades de concretar las medidas y el grado de apertura a la negociación.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: los programas deben ser transparentes sobre las posibilidades de concretar las medidas y el grado de"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "literal_text": "reformar la Ley estatal de Seguridad Ciudadana",
+    "source_page": 74,
+    "conditions": "Ninguna condición específica mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q021",
+    "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+    "party": "Sumar",
+    "literal_text": "Ley de Seguridad Ciudadana Medida nueva Reformada 2027",
+    "source_page": 75,
+    "conditions": "Se trata de una medida nueva sin legislación previa de referencia indicada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "literal_text": "Empoderar a los vecinos y vecinas para participar en las decisiones de la ciudad y gobernanza de los barrios, incluyendo la decisión sobre los incrementos de edificabilidad",
+    "source_page": 30,
+    "conditions": "Requiere modificación de la Ley de Propiedad Horizontal.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "literal_text": "Continuar fortaleciendo al Tercer Sector de la discapacidad, promoviendo la participación de las organizaciones y las familias en el diseño, ejecución y evaluación",
+    "source_page": 60,
+    "conditions": "Ninguna condición específica mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PSOE",
+    "literal_text": "rebajando la edad de voto a los 16 años, fortaleciendo los consejos de juventud y ampliando los mecanismos de participación ciudadana en las decisiones públicas",
+    "source_page": 90,
+    "conditions": "Ninguna mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna mencionada"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "literal_text": "La tecnología liberará a los empleados públicos de tareas repetitivas para que dediquen su tiempo a atender a las personas en la prestación de servicios públicos.",
+    "source_page": 13,
+    "conditions": "Ninguna condición explícita.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "literal_text": "Recuperaremos en el Código Penal el delito de sedición, adaptado a la legislación contemporánea, y el de convocatoria de referéndum ilegal.",
+    "source_page": 15,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada."
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "literal_text": "Elevaremos la multa mínima a 3.000 euros para quienes participen activamente en actos de vandalismo contra bienes públicos o privados durante desórdenes multitudinarios que alteren gravemente la segur",
+    "source_page": 16,
+    "conditions": "Cuando la conducta no constituya delito; durante desórdenes multitudinarios que alteren gravemente la seguridad ciudadana.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: cuando la conducta no constituya delito; durante desórdenes multitudinarios que alteren gravemente l"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "literal_text": "Agilizaremos la valoración de los daños y el pago de las indemnizaciones que correspondan a los comerciantes afectados, reforzando la coordinación entre el Consorcio de Compensación de Seguros y las e",
+    "source_page": 16,
+    "conditions": "Aplicable a comerciantes afectados por actos de vandalismo en desórdenes multitudinarios.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "literal_text": "Ayudaremos a los ayuntamientos, especialmente a los medianos y pequeños, a financiar videovigilancia en los espacios de mayor riesgo.",
+    "source_page": 17,
+    "conditions": "Dirigido especialmente a ayuntamientos medianos y pequeños.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "literal_text": "LOS CENTROS DE EDUCACIÓN ESPECIAL NO SE CERRARÁN. Seguirán escolarizando a quienes los necesiten y las familias participarán de verdad en la decisión.",
+    "source_page": 51,
+    "conditions": "Alumnos que necesiten centros de educación especial",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: alumnos que necesiten centros de educación especial"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "PP",
+    "literal_text": "Aprobaremos una estrategia nacional de energía nuclear y participaremos en las iniciativas europeas de reactores avanzados y de pequeños reactores modulares",
+    "source_page": 54,
+    "conditions": "Ninguna condición específica mencionada",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Vox",
+    "literal_text": "Aprobación de un Plan Nacional de Reindustrialización enfocado a contrarrestar las deslocalizaciones, la competencia desleal, la pérdida de empleo industrial y la baja participación de la industria en",
+    "source_page": 12,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada."
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "literal_text": "apoyará el desarrollo de programas de mentoría social, redes de familias colaboradoras, actividades compartidas con jóvenes de la comunidad, participación en asociaciones locales",
+    "source_page": 14,
+    "conditions": "Se establecerán criterios comunes de calidad, acompañamiento profesional, protección de la infancia y evaluación de resultados",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: se establecerán criterios comunes de calidad, acompañamiento profesional, protección de la infancia "
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "literal_text": "parte de los ingresos fiscales generados por estas instalaciones contribuya a financiar comunidades energéticas locales de propiedad ciudadana y municipal",
+    "source_page": 59,
+    "conditions": "Requiere cambios legislativos para su implementación",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: requiere cambios legislativos para su implementación"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "literal_text": "incluyendo referendos sobre cuestiones de especial relevancia, inspirándose en experiencias de democracia directa como la suiza",
+    "source_page": 70,
+    "conditions": "Limitado a cuestiones de especial relevancia.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "literal_text": "Exigir el reporte anual de los partidos en el gobierno sobre el nivel de cumplimiento de las medidas propuestas en los programas electorales",
+    "source_page": 73,
+    "conditions": "Los programas deben ser transparentes sobre las posibilidades de concretar las medidas y el grado de apertura a la negociación.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "literal_text": "reformar la Ley estatal de Seguridad Ciudadana",
+    "source_page": 74,
+    "conditions": "Ninguna condición específica mencionada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "literal_text": "Ley de Seguridad Ciudadana Medida nueva Reformada 2027",
+    "source_page": 75,
+    "conditions": "Se trata de una medida nueva sin legislación previa de referencia indicada.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "Sumar",
+    "literal_text": "Constituir consejos territoriales de participación integrados por administraciones, comunidades locales, agricultores, ganaderos y especialistas para planificar y supervisar estas actuaciones.",
+    "source_page": 92,
+    "conditions": "Ninguna condición explícita mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición explícita mencionada."
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "literal_text": "Aprovar un nou model de finançament per garantir la sobirania dels Països Catalans i el benestar de la ciutadania.",
+    "source_page": 12,
+    "conditions": "El acuerdo político ya fue alcanzado en enero de 2026 pero fue bloqueado parlamentariamente; su implementación requiere desbloqueo legislativo en la nueva legislatura.",
+    "unclear_type": "lack_of_evidence",
+    "reason": "El claim no parece relacionado con la política concreta"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "literal_text": "Reclamar la participació de la Generalitat de Catalunya en la negociació de tractats internacionals en el marc de Nacions Unides dels àmbits de la seva competència",
+    "source_page": 17,
+    "conditions": "Limitado a los ámbitos de competencia de la Generalitat de Catalunya",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: limitado a los ámbitos de competencia de la generalitat de catalunya"
+  },
+  {
+    "question_id": "Q022",
+    "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas popular",
+    "party": "ERC",
+    "literal_text": "revisar la contractació pública per facilitar la participació directa de les pimes mitjançant la digitalització dels procediments, la divisió justificada en lots",
+    "source_page": 23,
+    "conditions": "Ninguna condición específica mencionada.",
+    "unclear_type": "ambiguous_interpretation",
+    "reason": "Condiciones que dificultan la interpretación: ninguna condición específica mencionada."
+  }
+]

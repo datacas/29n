@@ -1,0 +1,35 @@
+{
+  "total_cells": 115,
+  "with_evidence": 66,
+  "without_evidence": 49,
+  "position_stance_distribution": {
+    "agrees": 0,
+    "disagrees": 13,
+    "conditional_agrees": 37,
+    "unclear": 16,
+    "contradictory": 0,
+    "mixed": 0,
+    "not_stated": 49
+  },
+  "claim_level_incidents": {
+    "unclear": 118,
+    "unclear_by_type": {
+      "ambiguous_interpretation": 60,
+      "lack_of_evidence": 58
+    }
+  },
+  "formulation_issues": 4,
+  "erc_welfare_claims": 34,
+  "erc_welfare_by_area": {
+    "Infraestructuras / Transporte": 1,
+    "Educación / Competencias autonómicas": 1,
+    "Educación / Protección institucional": 1,
+    "Política industrial / Gobernanza institucional": 1,
+    "Cultura / Competencias autonómicas": 1,
+    "Cultura / Patrimonio / Financiación": 1,
+    "Política exterior / Gobernanza multinivel": 1,
+    "Vivienda": 1,
+    "Vivienda / Arrendamientos": 1,
+    "Política laboral / Salarios / Competencias autonómicas": 1
+  }
+}

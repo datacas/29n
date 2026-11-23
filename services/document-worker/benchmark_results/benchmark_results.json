@@ -1,0 +1,557 @@
+{
+  "PSOE": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 114,
+        "pages_extracted": 10,
+        "elapsed": 10.806512832641602,
+        "total_chars": 20896,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 20896,
+        "total_words": 2370,
+        "total_lines": 232,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": false,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.15121255349500715,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 2
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 114,
+        "pages_extracted": 10,
+        "elapsed": 16.136839866638184,
+        "total_chars": 23696,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 23696,
+        "total_words": 2682,
+        "total_lines": 245,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": false,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.09700427960057062,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 30
+      }
+    },
+    "docling": {
+      "extraction": {
+        "tool": "docling",
+        "total_pages": 114,
+        "pages_extracted": 0,
+        "elapsed": 498.46911883354187,
+        "total_chars": 272772,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 272772,
+        "total_words": 37780,
+        "total_lines": 2014,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": true,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.9144079885877318,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 417
+      }
+    },
+    "mineru": {
+      "extraction": {
+        "tool": "mineru",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.5929226875305176,
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      },
+      "metrics": {
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.05941367149353027,
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      },
+      "metrics": {
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      }
+    }
+  },
+  "PP": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 64,
+        "pages_extracted": 10,
+        "elapsed": 0.6895139217376709,
+        "total_chars": 8804,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 8804,
+        "total_words": 1522,
+        "total_lines": 129,
+        "has_markdown_headers": false,
+        "has_markdown_lists": true,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": true,
+        "sentence_coverage": 0.08670520231213873,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 1
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 64,
+        "pages_extracted": 10,
+        "elapsed": 17.11304545402527,
+        "total_chars": 9168,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 9168,
+        "total_words": 1565,
+        "total_lines": 135,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.08257638315441784,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 1,
+        "total_paragraphs": 40
+      }
+    },
+    "docling": {
+      "extraction": {
+        "tool": "docling",
+        "total_pages": 64,
+        "pages_extracted": 0,
+        "elapsed": 35.39258885383606,
+        "total_chars": 159372,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 159372,
+        "total_words": 23923,
+        "total_lines": 902,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": true,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": true,
+        "sentence_coverage": 0.9331131296449215,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 380
+      }
+    },
+    "mineru": {
+      "extraction": {
+        "tool": "mineru",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.7305059432983398,
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      },
+      "metrics": {
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.07235360145568848,
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      },
+      "metrics": {
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      }
+    }
+  },
+  "Vox": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 66,
+        "pages_extracted": 10,
+        "elapsed": 0.41008663177490234,
+        "total_chars": 4486,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 4486,
+        "total_words": 718,
+        "total_lines": 111,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": true,
+        "sentence_coverage": 0.11263736263736264,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 3
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 66,
+        "pages_extracted": 10,
+        "elapsed": 5.950259208679199,
+        "total_chars": 5995,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 5995,
+        "total_words": 862,
+        "total_lines": 106,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.08241758241758242,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 24
+      }
+    },
+    "docling": {
+      "extraction": {
+        "tool": "docling",
+        "total_pages": 66,
+        "pages_extracted": 0,
+        "elapsed": 52.38956809043884,
+        "total_chars": 47389,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 47389,
+        "total_words": 7162,
+        "total_lines": 438,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": true,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.8681318681318682,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 52
+      }
+    },
+    "mineru": {
+      "extraction": {
+        "tool": "mineru",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.6314010620117188,
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      },
+      "metrics": {
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.014040470123291016,
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      },
+      "metrics": {
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      }
+    }
+  },
+  "Sumar": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 95,
+        "pages_extracted": 10,
+        "elapsed": 0.454010009765625,
+        "total_chars": 14637,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 14637,
+        "total_words": 2275,
+        "total_lines": 272,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": false,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.14420062695924765,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 1
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 95,
+        "pages_extracted": 10,
+        "elapsed": 11.498579025268555,
+        "total_chars": 18579,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 18579,
+        "total_words": 2643,
+        "total_lines": 421,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.09247648902821316,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 11,
+        "total_paragraphs": 97
+      }
+    },
+    "docling": {
+      "extraction": {
+        "tool": "docling",
+        "total_pages": 95,
+        "pages_extracted": 0,
+        "elapsed": 87.77525663375854,
+        "total_chars": 148792,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 148792,
+        "total_words": 21368,
+        "total_lines": 1434,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": true,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": false,
+        "sentence_coverage": 0.8730407523510971,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 2,
+        "total_paragraphs": 283
+      }
+    },
+    "mineru": {
+      "extraction": {
+        "tool": "mineru",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.40774011611938477,
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      },
+      "metrics": {
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.01943039894104004,
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      },
+      "metrics": {
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      }
+    }
+  },
+  "ERC": {
+    "pdfplumber": {
+      "extraction": {
+        "tool": "pdfplumber",
+        "total_pages": 48,
+        "pages_extracted": 10,
+        "elapsed": 0.4414098262786865,
+        "total_chars": 23031,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 23031,
+        "total_words": 3223,
+        "total_lines": 240,
+        "has_markdown_headers": false,
+        "has_markdown_lists": false,
+        "has_tables": false,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": true,
+        "sentence_coverage": 0.17023445463812437,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 2
+      }
+    },
+    "pymupdf4llm": {
+      "extraction": {
+        "tool": "pymupdf4llm",
+        "total_pages": 48,
+        "pages_extracted": 10,
+        "elapsed": 1.8491714000701904,
+        "total_chars": 27216,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 27216,
+        "total_words": 3778,
+        "total_lines": 179,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": true,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": true,
+        "sentence_coverage": 0.16819571865443425,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 55
+      }
+    },
+    "docling": {
+      "extraction": {
+        "tool": "docling",
+        "total_pages": 48,
+        "pages_extracted": 0,
+        "elapsed": 6.308614253997803,
+        "total_chars": 183883,
+        "error": null
+      },
+      "metrics": {
+        "total_chars": 183883,
+        "total_words": 25504,
+        "total_lines": 639,
+        "has_markdown_headers": true,
+        "has_markdown_lists": true,
+        "has_tables": true,
+        "has_page_breaks": false,
+        "has_hyphenation_artifacts": true,
+        "has_line_breaks_in_words": true,
+        "sentence_coverage": 0.7686034658511722,
+        "numbered_sections_coverage": null,
+        "numbered_sections_found": 0,
+        "numbered_sections_total": 0,
+        "duplicate_paragraphs": 0,
+        "total_paragraphs": 186
+      }
+    },
+    "mineru": {
+      "extraction": {
+        "tool": "mineru",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.36768412590026855,
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      },
+      "metrics": {
+        "error": "Usage: mineru parse [OPTIONS] {path}\nTry 'mineru parse --help' for help.\n╭─ Error ──────────────────────────────────────────────────────────────────────╮\n│ No such option: --pages 10 (Possible options: --pages)                       │\n╰──────────────────────────────────────────────────────────────────────────────╯\n"
+      }
+    },
+    "pandoc": {
+      "extraction": {
+        "tool": "pandoc",
+        "total_pages": 0,
+        "pages_extracted": 0,
+        "pages": {},
+        "full_text": "",
+        "elapsed": 0.012367010116577148,
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      },
+      "metrics": {
+        "error": "Unknown input format pdf\nPandoc can convert to PDF, but not from PDF.\n"
+      }
+    }
+  }
+}

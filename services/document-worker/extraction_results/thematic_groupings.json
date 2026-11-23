@@ -1,0 +1,167 @@
+{
+  "total_areas": 1531,
+  "full_coverage_5_parties": 0,
+  "good_coverage_3_plus_parties": 17,
+  "partial_coverage_2_parties": 65,
+  "full_coverage_areas": [],
+  "good_coverage_areas": [
+    [
+      "Educación",
+      24,
+      [
+        "PP",
+        "PSOE",
+        "Sumar",
+        "Vox"
+      ]
+    ],
+    [
+      "Vivienda",
+      22,
+      [
+        "ERC",
+        "PP",
+        "PSOE",
+        "Sumar"
+      ]
+    ],
+    [
+      "Vivienda / Fiscalidad",
+      14,
+      [
+        "PP",
+        "PSOE",
+        "Sumar",
+        "Vox"
+      ]
+    ],
+    [
+      "Sanidad",
+      10,
+      [
+        "PP",
+        "PSOE",
+        "Vox"
+      ]
+    ],
+    [
+      "Vivienda / Urbanismo",
+      8,
+      [
+        "PP",
+        "Sumar",
+        "Vox"
+      ]
+    ],
+    [
+      "Vivienda / Alquiler",
+      7,
+      [
+        "PP",
+        "PSOE",
+        "Sumar"
+      ]
+    ],
+    [
+      "Fiscalidad",
+      7,
+      [
+        "ERC",
+        "PP",
+        "PSOE",
+        "Sumar"
+      ]
+    ],
+    [
+      "Infraestructuras ferroviarias",
+      5,
+      [
+        "PP",
+        "PSOE",
+        "Vox"
+      ]
+    ],
+    [
+      "Fiscalidad / IRPF",
+      5,
+      [
+        "ERC",
+        "PP",
+        "PSOE"
+      ]
+    ],
+    [
+      "Medio ambiente / Gestión forestal",
+      4,
+      [
+        "ERC",
+        "PP",
+        "PSOE",
+        "Vox"
+      ]
+    ],
+    [
+      "Cooperación al desarrollo",
+      4,
+      [
+        "PP",
+        "PSOE",
+        "Sumar"
+      ]
+    ],
+    [
+      "Administración pública / Digitalización",
+      4,
+      [
+        "ERC",
+        "PP",
+        "Vox"
+      ]
+    ],
+    [
+      "Política industrial",
+      3,
+      [
+        "ERC",
+        "PP",
+        "PSOE"
+      ]
+    ],
+    [
+      "Vivienda / Rehabilitación",
+      3,
+      [
+        "PP",
+        "PSOE",
+        "Sumar"
+      ]
+    ],
+    [
+      "Cultura / Legislación",
+      3,
+      [
+        "PP",
+        "PSOE",
+        "Sumar"
+      ]
+    ],
+    [
+      "Política exterior / Derechos humanos",
+      3,
+      [
+        "ERC",
+        "PP",
+        "PSOE"
+      ]
+    ],
+    [
+      "Cultura / Patrimonio",
+      3,
+      [
+        "ERC",
+        "PP",
+        "Vox"
+      ]
+    ]
+  ]
+}

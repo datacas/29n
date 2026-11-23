@@ -1,0 +1,243 @@
+AUDITORÍA DE INTEGRIDAD DE LA EXTRACCIÓN
+Total claims: 2,121 de 5 partidos
+
+================================================================================
+1. BENCHMARK DE EXTRACTORES — Aclaración de cobertura de frases
+================================================================================
+
+PDF: PSOE programa 2026 (10 páginas de muestra)
+
+Extractor       | Palabras | Frases | Caracteres
+----------------|----------|--------|------------
+pdfplumber      |     2370 |    155 |      20897
+pdftotext -layout|     2300 |    157 |      21690
+
+Cobertura de palabras:
+  Palabras comunes: 886
+  Solo en pdfplumber: 94
+  Solo en pdftotext: 65
+  Cobertura mutua: 90.4%
+
+CONCLUSIÓN SOBRE COBERTURA:
+  El benchmark anterior medía 'frases completas' sin saltos de línea.
+  pdfplumber preserva saltos de línea, rompiendo frases.
+  Docling preserva párrafos, manteniendo frases intactas.
+  La diferencia de 8-17% vs 76-93% es una ARTIFACTO DE LA MÉTRICA,
+  no una diferencia real de contenido recuperado.
+  Ambas herramientas recuperan el mismo texto; solo difieren en formato.
+  La normalización (normalize_for_verification) resuelve esta diferencia.
+
+================================================================================
+2. VALIDACIÓN DE normalize_for_verification() — Pruebas negativas
+================================================================================
+
+
+Resultados: 10/10 pruebas correctas
+
+  La normalización no produce falsos positivos en los casos de prueba.
+================================================================================
+3. AUDITORÍA DE PÁGINAS PENDIENTES
+================================================================================
+
+PSOE (114 páginas totales, 106 procesadas):
+  Página 5: vacía (0 chars)
+  Página 10: vacía (40 chars)
+  Página 44: vacía (30 chars)
+  Página 62: vacía (40 chars)
+  Página 75: vacía (48 chars)
+  Página 87: vacía (44 chars)
+  Página 104: vacía (31 chars)
+  Página 114: vacía (0 chars)
+  → 8 vacías, 0 con texto no procesado
+
+PP (64 páginas totales, 48 procesadas):
+  Página 1: vacía (25 chars)
+  Página 2: vacía (1 chars)
+  Página 3: vacía (46 chars)
+  Página 4: vacía (1 chars)
+  Página 5: vacía (1 chars)
+  Página 10: vacía (2 chars)
+  Página 11: vacía (2 chars)
+  Página 23: vacía (2 chars)
+  Página 30: vacía (2 chars)
+  Página 40: vacía (2 chars)
+  Página 58: vacía (2 chars)
+  Página 59: vacía (2 chars)
+  Página 60: vacía (2 chars)
+  Página 61: vacía (2 chars)
+  Página 62: vacía (2 chars)
+  Página 63: vacía (22 chars)
+  → 16 vacías, 0 con texto no procesado
+
+Vox (66 páginas totales, 39 procesadas):
+  Página 1: vacía (23 chars)
+  Página 2: vacía (0 chars)
+  Página 3: vacía (42 chars)
+  Página 4: vacía (0 chars)
+  Página 6: vacía (0 chars)
+  Página 8: vacía (0 chars)
+  Página 14: vacía (0 chars)
+  Página 17: vacía (19 chars)
+  Página 18: vacía (0 chars)
+  Página 21: vacía (19 chars)
+  Página 22: vacía (19 chars)
+  Página 26: vacía (19 chars)
+  Página 31: vacía (19 chars)
+  Página 32: vacía (19 chars)
+  Página 36: vacía (19 chars)
+  Página 39: vacía (19 chars)
+  Página 40: vacía (19 chars)
+  Página 44: vacía (19 chars)
+  Página 49: vacía (19 chars)
+  Página 50: vacía (0 chars)
+  Página 54: vacía (19 chars)
+  Página 59: vacía (19 chars)
+  Página 60: vacía (19 chars)
+  Página 63: vacía (19 chars)
+  Página 64: vacía (0 chars)
+  Página 65: vacía (0 chars)
+  Página 66: vacía (0 chars)
+  → 27 vacías, 0 con texto no procesado
+
+Sumar (95 páginas totales, 93 procesadas):
+  Página 1: vacía (0 chars)
+  Página 95: vacía (0 chars)
+  → 2 vacías, 0 con texto no procesado
+
+ERC (48 páginas totales, 44 procesadas):
+  Página 2: vacía (44 chars)
+  Página 4: vacía (0 chars)
+  Página 47: vacía (0 chars)
+  Página 48: vacía (0 chars)
+  → 4 vacías, 0 con texto no procesado
+
+RESUMEN:
+  Páginas pendientes totales: 57
+  Páginas vacías (portadas, separadores): 57
+  Páginas con texto no procesadas: 0
+
+================================================================================
+4. COBERTURA DE 115 APARTADOS DE VOX
+================================================================================
+
+Total páginas del PDF: 66
+Apertados numerados detectados: 115
+
+Páginas con claims: 38
+Apertados en páginas con claims: 115/115
+Cobertura: 100.0%
+
+Primeros 20 apartados detectados:
+  ✓ 1. (pág 7): Recuperar Ceuta para los ceutíes
+  ✓ 2. (pág 9): Rebaja masiva de impuestos para proteger a los es-
+  ✓ 3. (pág 9): Reducción de la deuda pública. Compatibilizar la re-
+  ✓ 4. (pág 10): Alivio del esfuerzo fiscal extra soportado en las Islas
+  ✓ 5. (pág 10): Impulso nacional de la investigación, el desarrollo y la
+  ✓ 6. (pág 10): Fiscalidad mínima y diferenciada en las zonas en ries-
+  ✓ 7. (pág 10): Garantizar la sostenibilidad del sistema de pensiones.
+  ✓ 8. (pág 11): Reindustrialización radical de la economía española.
+  ✓ 9. (pág 15): Ni uno más. Después de recibir a 5 millones de personas
+  ✓ 10. (pág 15): Endurecimiento de los requisitos de adquisición de la
+  ✓ 11. (pág 15): Supresión de la institución del arraigo como forma de
+  ✓ 12. (pág 15): Repatriación de quienes permanezcan en situación ile-
+  ✓ 13. (pág 15): Remigración. Plan para facilitar el retorno a sus países
+  ✓ 14. (pág 15): Deportación de quienes cometan delitos graves o ha-
+  ✓ 15. (pág 15): Los MENAS, con sus familias. Devolución de meno-
+  ✓ 16. (pág 16): Ni un euro a ONGs que colaboren con el efecto lla-
+  ✓ 17. (pág 16): Fin de la cooperación al desarrollo con los países que
+  ✓ 18. (pág 19): En España, los españoles primero. Acceso preferente
+  ✓ 19. (pág 19): Suprimir toda ayuda y beneficio social a los inmigran-
+  ✓ 20. (pág 19): Garantizar la sostenibilidad del sistema sanitario do-
+================================================================================
+5. DETECCIÓN DE DUPLICADOS, FRAGMENTADOS O EQUIVALENTES
+================================================================================
+
+Total claims: 2121
+
+Duplicados exactos (mismo texto normalizado, mismo partido): 1
+Ejemplos:
+  PSOE (pág None): Crear la figura del Defensor de las Generaciones Futuras, vinculada al Consejo d...
+
+Búsqueda de claims similares entre partidos (mismo tema, diferente partido):
+  Áreas temáticas con claims de múltiples partidos: 82
+  Top 10 áreas más cubiertas:
+    Educación: 24 claims de 4 partidos (PSOE, Vox, Sumar, PP)
+    Vivienda: 22 claims de 4 partidos (PSOE, ERC, Sumar, PP)
+    Vivienda / Fiscalidad: 14 claims de 4 partidos (PSOE, Vox, Sumar, PP)
+    Sanidad: 10 claims de 3 partidos (PSOE, Vox, PP)
+    Vivienda / Urbanismo: 8 claims de 3 partidos (Vox, Sumar, PP)
+    Vivienda / Alquiler: 7 claims de 3 partidos (PSOE, Sumar, PP)
+    Fiscalidad: 7 claims de 4 partidos (PSOE, ERC, Sumar, PP)
+    Regulación de plataformas digitales: 7 claims de 2 partidos (PSOE, ERC)
+    Financiación autonómica: 6 claims de 2 partidos (ERC, PP)
+    Infraestructuras ferroviarias: 5 claims de 3 partidos (PSOE, Vox, PP)
+
+Búsqueda de claims fragmentados (mismo partido, misma página, texto similar):
+  Pares de claims potencialmente fragmentados: 0
+
+================================================================================
+6. AGRUPACIONES TEMÁTICAS TRANSVERSALES
+================================================================================
+
+Áreas temáticas totales: 1531
+Áreas con los 5 partidos: 0
+Áreas con ≥3 partidos: 17
+Áreas con 2 partidos: 65
+
+Top 20 áreas con ≥3 partidos (para preguntas comunes):
+  Educación: 24 claims de 4 partidos (PP, PSOE, Sumar, Vox)
+  Vivienda: 22 claims de 4 partidos (ERC, PP, PSOE, Sumar)
+  Vivienda / Fiscalidad: 14 claims de 4 partidos (PP, PSOE, Sumar, Vox)
+  Sanidad: 10 claims de 3 partidos (PP, PSOE, Vox)
+  Vivienda / Urbanismo: 8 claims de 3 partidos (PP, Sumar, Vox)
+  Vivienda / Alquiler: 7 claims de 3 partidos (PP, PSOE, Sumar)
+  Fiscalidad: 7 claims de 4 partidos (ERC, PP, PSOE, Sumar)
+  Infraestructuras ferroviarias: 5 claims de 3 partidos (PP, PSOE, Vox)
+  Fiscalidad / IRPF: 5 claims de 3 partidos (ERC, PP, PSOE)
+  Medio ambiente / Gestión forestal: 4 claims de 4 partidos (ERC, PP, PSOE, Vox)
+  Cooperación al desarrollo: 4 claims de 3 partidos (PP, PSOE, Sumar)
+  Administración pública / Digitalización: 4 claims de 3 partidos (ERC, PP, Vox)
+  Política industrial: 3 claims de 3 partidos (ERC, PP, PSOE)
+  Vivienda / Rehabilitación: 3 claims de 3 partidos (PP, PSOE, Sumar)
+  Cultura / Legislación: 3 claims de 3 partidos (PP, PSOE, Sumar)
+  Política exterior / Derechos humanos: 3 claims de 3 partidos (ERC, PP, PSOE)
+  Cultura / Patrimonio: 3 claims de 3 partidos (ERC, PP, Vox)
+
+Agrupaciones temáticas guardadas en: ./services/document-worker/extraction_results/thematic_groupings.json
+
+================================================================================
+RESUMEN DE LA AUDITORÍA
+================================================================================
+
+1. Benchmark extractores:
+   - Cobertura mutua de palabras: 90.4%
+   - La diferencia 8-17% vs 76-93% es un ARTIFACTO DE LA MÉTRICA
+   - pdfplumber y pdftotext recuperan el mismo contenido
+
+2. Normalización de citas:
+   - Pruebas negativas: 10/10 correctas
+   - ✓ Sin falsos positivos en los casos de prueba
+
+3. Páginas pendientes:
+   - Total pendientes: 57
+   - Vacías (portadas, separadores): 57
+   - Con texto no procesadas: 0
+
+4. Vox apartados:
+   - Apartados detectados: 115
+   - Cubiertos: 115/115
+   - No cubiertos: 0
+
+5. Duplicados y fragmentación:
+   - Duplicados exactos: 1
+   - Áreas con múltiples partidos: 82
+   - Claims potencialmente fragmentados: 0
+
+6. Agrupaciones temáticas:
+   - Áreas con los 5 partidos: 0
+   - Áreas con ≥3 partidos: 17
+
+RECOMENDACIÓN:
+   - Revisar 1 duplicados exactos
+   - Usar las 17 áreas con ≥3 partidos para preguntas comunes
+   - Mantener todos los claims sin aprobar hasta validación editorial

@@ -1,0 +1,454 @@
+{
+ "generated": "2026-11-21",
+ "source": "revisión editorial asistida de las 54 posiciones en needs_review",
+ "rubric": {
+  "2": "compromiso explícito y directo con la política de la pregunta",
+  "1": "apoyo parcial, implícito o de alcance limitado",
+  "-1": "rechazo parcial, implícito o de alcance limitado",
+  "-2": "rechazo explícito y directo",
+  "conditional": "valor ±1/±2 supeditado a una condición relevante declarada en el programa",
+  "exclude": "aprobada pero no evaluable (ambiguous / not_comparable / conflicting_sources)",
+  "reject": "la cita no responde a la pregunta o el documento no es comparable"
+ },
+ "decisions": [
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q001",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Beca estatal de movilidad e idiomas: compromiso explícito de nueva inversión en ayudas al estudio (p. 46)."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q004",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Índice estatal de referencia y alquiler máximo al 20 % de la renta: regulación de precios explícita (p. 49)."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q005",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Recargos de IBI a viviendas turísticas y de inversión: modificación fiscal de la vivienda con finalidad explícita (p. 50)."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q007",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Rehabilitar «sin gastar más suelo» apoya la rehabilitación frente a la expansión. Se descarta la cita de la p. 83, que trata de ubicación de placas solares, no de vivienda.",
+   "evidence_keep_indices": [
+    0
+   ]
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q008",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Contratos indefinidos y prórroga sin subida para acabar con desahucios silenciosos: protección de inquilinos explícita (p. 49)."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q013",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Fondo público para limpieza y conservación de montes en otoño e invierno; la cita es la justificación de la medida (p. 85)."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q017",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Más inversión en rehabilitación energética y regeneración de barrios, con prioridad a hogares en pobreza energética (p. 50)."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q025",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Aplicación del Pacto Europeo sin listas de países seguros y con garantías: postura proacogida, aunque no compromete explícitamente más plazas (p. 106)."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q026",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved",
+   "reason": "Fin de las devoluciones en caliente y garantía de no devolución: oposición directa a endurecer fronteras y devolver (p. 106)."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q007",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Modifica las ayudas del Plan estatal dirigidas al fomento de la rehabilitación: apoyo implícito y de alcance limitado (p. 12)."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q017",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Programa específico con recursos suficientes para eficiencia energética de edificios públicos: compromiso explícito (p. 13)."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q030",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved",
+   "reason": "Transferir al Gobierno gallego todas las competencias pendientes, incluida educación: se opone a que el Estado recupere competencias (p. 34)."
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q006",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Financiación sanitaria que reconozca el coste de ocho islas y compensación estatal por insularidad: pide más financiación, sin cifra (p. 9)."
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q010",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Mantener y extender la deducción del 60 % en el IRPF en La Palma, La Gomera y El Hierro: reducción fiscal real pero geográficamente limitada (p. 13)."
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q023",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Financiar el despliegue de la Policía Canaria: compromiso explícito de inversión en fuerzas de seguridad (p. 10)."
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q025",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Capacidad de atención y financiación previsible para el salvamento y la acogida: apoyo a ampliar la acogida, sin cifra (p. 18)."
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 1,
+   "stance": "conditional",
+   "conditions": "La sustitución es progresiva y queda supeditada a que avancen las renovables, el almacenamiento y las interconexiones, manteniendo siempre la seguridad del suministro.",
+   "reason": "Sustitución progresiva de instalaciones térmicas por renovables, condicionada a la seguridad de suministro; no compromete «acelerar» (p. 15)."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q002",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "La cita original era un diagnóstico (falta de plazas). Se sustituye por el compromiso explícito de construir la red pública y universal de 0 a 3 años (p. 75).",
+   "evidence_replace": {
+    "index": 0,
+    "literal_text": "Mientras construimos la red pública y universal de 0 a 3 años para saldar décadas de promesas incumplidas, activaremos un plan de choque inmediato: ninguna familia de renta baja o media pagará más de la mitad del coste medio de una plaza en su Comunidad Autónoma.",
+    "source_page": 75
+   }
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q006",
+   "action": "approve",
+   "value": 1,
+   "stance": "conditional",
+   "conditions": "Solo los ingresos extra procedentes del alquiler de quirófanos a mutuas y aseguradoras se reinvierten íntegramente en sanidad.",
+   "reason": "Blinda por ley la reinversión del 100 % de los ingresos extra en listas de espera y sanidad pública; no es un aumento presupuestario general (p. 69)."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q012",
+   "action": "reject",
+   "reason": "La cita describe cómo se financia el Bono Crianza reordenando deducciones existentes, no un aumento de las deducciones del IRPF por hijos. No responde a la pregunta (p. 74)."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q022",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Asamblea ciudadana activada por firmas cuyas propuestas se someten a referéndum consultivo: nuevo mecanismo de participación directa explícito (p. 11)."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q032",
+   "action": "approve",
+   "value": 1,
+   "stance": "conditional",
+   "conditions": "Senda plurianual con certidumbre para las empresas; el SMI no debe bajar de 2/3 de la mediana salarial.",
+   "reason": "Fija un suelo de 2/3 de la mediana salarial, lo que implica subidas graduales del SMI, con cautela empresarial (p. 49)."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q008",
+   "action": "exclude",
+   "stance": "ambiguous",
+   "reason": "Postura partida: topa los precios del alquiler (2.9) pero agiliza los desahucios (2.11). La pregunta mezcla regulación de rentas y protección frente al desahucio; no hay una postura única (p. 15)."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q011",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Fomento de Cercanías y Media Distancia con más medios y plantillas; no menciona alta velocidad (p. 56)."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q015",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Digitalización del procedimiento judicial para agilizarlo: apoyo parcial, limitado a la Administración de Justicia (p. 43)."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q028",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved",
+   "reason": "Freno a todo proyecto de transición energética, anulación del cierre de nucleares y reactivación de térmicas: oposición directa (p. 31)."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q031",
+   "action": "exclude",
+   "stance": "ambiguous",
+   "reason": "Solo propone «estudio» de reducir la jornada, tras estabilizar el cambio de modelo y por sectores viables; no es un compromiso ni un rechazo (p. 22)."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q032",
+   "action": "approve",
+   "value": 1,
+   "stance": "conditional",
+   "conditions": "El SMI se actualiza y se define sectorialmente, no con una subida uniforme.",
+   "reason": "Dice que el SMI «debe ser actualizado», pero lo condiciona a la negociación sectorial y critica la subida de tabula rasa (p. 23)."
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q004",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "Tope de precios de alquiler vinculado al 25 % de la renta del barrio y previsión de reducción del 35 %: regulación explícita (p. 13)."
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q020",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Localización, catalogación y protección de lugares de memoria democrática: inversión en patrimonio, pero limitada a ese ámbito (p. 147)."
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q024",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved",
+   "reason": "Revisión de permisos, imposibilidad de regularizarse tras entrada ilegal y expulsión inmediata de irregulares: oposición directa a una regularización extraordinaria (p. 53)."
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 1,
+   "stance": "conditional",
+   "conditions": "Las renovables se apoyan como complemento a la nuclear, no como sustitución acelerada.",
+   "reason": "Apoya la producción renovable «como complemento a la nuclear»: apoyo parcial y condicionado (p. 16)."
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q032",
+   "action": "reject",
+   "reason": "«Aumento general de los salarios en relación al coste de la vida» no es una posición sobre el SMI; no responde a la pregunta (p. 9)."
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q004",
+   "action": "exclude",
+   "stance": "ambiguous",
+   "reason": "Critica los efectos de las dos normas urgentes (retirada de viviendas y subida de precios), pero no rechaza regular los precios en general; su solución es construir vivienda pública. Postura no concluyente (p. 69)."
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q008",
+   "action": "exclude",
+   "stance": "ambiguous",
+   "reason": "Critica las prórrogas y suspensiones de lanzamientos como parche que no baja precios, pero no se opone a proteger a los inquilinos en todos los casos. Postura no concluyente (p. 69)."
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q013",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Urge una política forestal que proteja los bosques: apoyo explícito, sin medida presupuestaria concreta (p. 48)."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q003",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Aumentar construcción y rehabilitación y movilizar pisos vacíos: apoyo a ampliar la oferta, sin especificar vivienda pública o protegida (p. 7)."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q007",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Movilizar viviendas vacías y rehabilitar edificios para aumentar la oferta residencial: apoyo parcial a la rehabilitación (p. 7)."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q011",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Ejecutar las inversiones del Corredor Ferroviario Atlántico: inversión ferroviaria, sin detallar alta velocidad ni cercanías (p. 19)."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q023",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Una Ertzaintza «con todas las capacidades» y con las herramientas necesarias: apoyo a reforzar la policía, sin cifra (p. 22-23)."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q024",
+   "action": "exclude",
+   "stance": "not_comparable",
+   "reason": "Habla de avanzar en los procesos de regularización «previstos en la legislación», no de una regularización extraordinaria. No comparable con la pregunta (p. 25)."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q025",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Acuerdo de financiación suficiente y acogida digna descentralizada, rechazando grandes centros: apoyo a ampliar la acogida, con modelo propio (p. 25)."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q003",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Plan Nacional de Vivienda Asequible y suelo público para alquiler asequible mediante colaboración público-privada: apoyo a ampliar la oferta, no a construcción pública directa (p. 12)."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q007",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Bonificación del 50 % del ICIO para rehabilitación y eficiencia energética: incentivo fiscal parcial a la rehabilitación (p. 5)."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q023",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Compras centralizadas plurianuales y planificación de oferta de empleo público para seguridad ciudadana: apoyo parcial a más inversión (p. 9-10)."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q026",
+   "action": "reject",
+   "reason": "La cita es la viabilidad de expulsar a delincuentes extranjeros multirreincidentes, no de endurecer el control de fronteras ni de devolver a quienes entran irregularmente. No responde a la pregunta (p. 10)."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 1,
+   "stance": "conditional",
+   "conditions": "Apoyo a renovables y autoconsumo sin cierres prematuros de centrales de respaldo y garantizando seguridad de suministro a precio competitivo.",
+   "reason": "Apoya las renovables y el autoconsumo industrial, pero con neutralidad tecnológica y sin cierres «ideológicos»: apoyo parcial y condicionado (p. 15)."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q009",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved",
+   "reason": "«Fuera también el impuesto a las grandes fortunas»: oposición directa a aumentar la presión fiscal sobre grandes fortunas (p. 13)."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q012",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved",
+   "reason": "La cita original era retórica. Se sustituye por la medida: 5.000 euros más por hijo en el mínimo exento de cada progenitor, que reduce el IRPF de las familias con hijos (p. 12).",
+   "evidence_replace": {
+    "index": 0,
+    "literal_text": "5.000 euros más por cada hijo, para el padre y para la madre. Cada hijo suma 5.000 euros al mínimo exento de cada progenitor: ni el padre ni la madre pagan IRPF por esa parte.",
+    "source_page": 12
+   }
+  },
+  {
+   "party": "SALF",
+   "qid": "Q022",
+   "action": "exclude",
+   "stance": "not_comparable",
+   "reason": "Propone un referéndum concreto sobre la renegociación con la UE (y otro de salida), no ampliar los mecanismos generales de participación directa. No comparable con la pregunta (p. 35)."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q024",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved",
+   "reason": "Derogación de la regularización de 2026 y prohibición por ley orgánica de cualquier regularización masiva: oposición directa (p. 17)."
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q003",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Aceptada por decisión del editor: el documento es el «Programa de lucha 2023-2027» del PCTE (julio de 2023), el único disponible."
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q016",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved",
+   "reason": "Aceptada por decisión del editor: el documento es el «Programa de lucha 2023-2027» del PCTE (julio de 2023), el único disponible."
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q033",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved",
+   "reason": "Aceptada por decisión del editor: el documento es el «Programa de lucha 2023-2027» del PCTE (julio de 2023), el único disponible."
+  }
+ ]
+}

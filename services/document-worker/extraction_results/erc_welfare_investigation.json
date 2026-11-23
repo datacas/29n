@@ -1,0 +1,240 @@
+[
+  {
+    "literal_text": "la gestió catalana de Rodalies per posar fi a un servei pèssim",
+    "normalized_text": "Transferencia de la gestión de Rodalies (cercanías ferroviarias) a la Generalitat de Cataluña",
+    "affected_area": "Infraestructuras / Transporte",
+    "source_page": 7,
+    "conditions": "Negociación en curso con el Estado español"
+  },
+  {
+    "literal_text": "Exigir les competències exclusives en matèria educativa. Reclamar la plena sobirania de Catalunya per decidir, regular i gestionar el seu sistema educatiu",
+    "normalized_text": "Exigir competencias exclusivas en materia educativa para Catalunya, reclamando plena soberanía para decidir, regular y gestionar su sistema educativo sin subordinación al Estado español.",
+    "affected_area": "Educación / Competencias autonómicas",
+    "source_page": 11,
+    "conditions": "Sin subordinación a las imposiciones del Estado español"
+  },
+  {
+    "literal_text": "Exigir mecanismes efectius de protecció i assessorament jurídic perquè els centres i el professorat puguin desenvolupar els seus projectes educatius sense pressions ni interferències externes",
+    "normalized_text": "Exigir mecanismos efectivos de protección y asesoramiento jurídico para centros educativos y profesorado frente a injerencias judiciales y políticas.",
+    "affected_area": "Educación / Protección institucional",
+    "source_page": 11,
+    "conditions": "Ninguna condición específica mencionada"
+  },
+  {
+    "literal_text": "Constituir el Consorci de la Zona Franca amb majoria de les institucions catalanes en els òrgans de governança.",
+    "normalized_text": "Constituir el Consorcio de la Zona Franca con mayoría de representación de instituciones catalanas (Ayuntamiento de Barcelona y Generalitat de Cataluña) en sus órganos de gobernanza, para controlar un",
+    "affected_area": "Política industrial / Gobernanza institucional",
+    "source_page": 12,
+    "conditions": "El objetivo es que las instituciones catalanas controlen el ente sin depender del gobierno español."
+  },
+  {
+    "literal_text": "Impulsar un Pla de Sobirania Cultural per culminar el traspàs dels museus i equipaments culturals transferibles a Catalunya, incloent-hi el Museu Nacional Arqueològic de Tarragona",
+    "normalized_text": "Impulsar un Plan de Soberanía Cultural para completar el traspaso de museos y equipamientos culturales a Cataluña, incluyendo el Museu Nacional Arqueològic de Tarragona",
+    "affected_area": "Cultura / Competencias autonómicas",
+    "source_page": 13,
+    "conditions": "Los traspasos deben ir acompañados de la financiación estructural correspondiente y se deben auditar las inversiones estatales pendientes"
+  },
+  {
+    "literal_text": "Exigir la modificació de la Llei del Patrimoni Històric espanyol perquè els recursos generats per les obres públiques estatals executades a Catalunya es transfereixin automàticament a la Generalitat",
+    "normalized_text": "Exigir la modificación de la Ley del Patrimonio Histórico español para que los recursos generados por obras públicas estatales en Cataluña se transfieran automáticamente a la Generalitat",
+    "affected_area": "Cultura / Patrimonio / Financiación",
+    "source_page": 13,
+    "conditions": "Ninguna condición específica mencionada"
+  },
+  {
+    "literal_text": "Reclamar la participació de la Generalitat de Catalunya en la negociació de tractats internacionals en el marc de Nacions Unides dels àmbits de la seva competència",
+    "normalized_text": "Reclamar la participación de la Generalitat de Catalunya en la negociación de tratados internacionales en el marco de Naciones Unidas en los ámbitos de su competencia",
+    "affected_area": "Política exterior / Gobernanza multinivel",
+    "source_page": 17,
+    "conditions": "Limitado a los ámbitos de competencia de la Generalitat de Catalunya"
+  },
+  {
+    "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+    "normalized_text": "Transferencia de los pisos de la SAREB (Sociedad de Gestión de Activos procedentes de la Reestructuración Bancaria) a la Generalitat de Catalunya",
+    "affected_area": "Vivienda",
+    "source_page": 18,
+    "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda"
+  },
+  {
+    "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+    "normalized_text": "Mejorar la regulación de los arrendamientos para proteger a los arrendatarios, evitar desahucios de personas vulnerables sin alternativa habitacional y mantener compensaciones a pequeños propietarios ",
+    "affected_area": "Vivienda / Arrendamientos",
+    "source_page": 19,
+    "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones."
+  },
+  {
+    "literal_text": "Transferir les competències a la Generalitat de Catalunya per establir un salari mínim català (SMC) a 1.460 €.",
+    "normalized_text": "Transferir competencias a la Generalitat de Catalunya para establecer un salario mínimo catalán (SMC) de 1.460 euros, superior al estatal.",
+    "affected_area": "Política laboral / Salarios / Competencias autonómicas",
+    "source_page": 20,
+    "conditions": "Requiere modificaciones normativas para permitir un SMI territorializado superior al estatal. Referencia: al menos 60% del salario medio neto según el Comité Europeo de Derechos Sociales."
+  },
+  {
+    "literal_text": "avançar en el reconeixement de la diversitat familiar, els drets de les persones cuidadores i la corresponsabilitat de les cures.",
+    "normalized_text": "Avanzar en el reconocimiento de la diversidad familiar, los derechos de las personas cuidadoras y la corresponsabilidad en los cuidados.",
+    "affected_area": "Igualdad / Familia / Cuidados",
+    "source_page": 23,
+    "conditions": "Ninguna condición específica mencionada."
+  },
+  {
+    "literal_text": "continuar eliminant les discriminacions legals i socials, reconèixer totes les identitats de gènere i models familiars, combatre les pràctiques de conversió",
+    "normalized_text": "Eliminar discriminaciones legales y sociales, reconocer todas las identidades de género y modelos familiares, y combatir las prácticas de conversión.",
+    "affected_area": "Derechos LGBTI+",
+    "source_page": 23,
+    "conditions": "Ninguna condición específica mencionada."
+  },
+  {
+    "literal_text": "Equiparar els drets de les famílies monoparentals als de les famílies nombroses, estenent els beneficis fiscals, socials i laborals, amb respecte a les competències de les administracions corresponent",
+    "normalized_text": "Equiparar los derechos de las familias monoparentales a los de las familias numerosas, extendiendo beneficios fiscales, sociales y laborales.",
+    "affected_area": "Políticas familiares",
+    "source_page": 24,
+    "conditions": "Con respeto a las competencias de las administraciones correspondientes."
+  },
+  {
+    "literal_text": "Reformar la legislació civil i del Registre Civil per eliminar les discriminacions en la filiació de les famílies de dues mares, les persones trans i no-binàries i altres models familiars",
+    "normalized_text": "Reformar la legislación civil y del Registro Civil para eliminar discriminaciones en la filiación de familias de dos madres, personas trans y no binarias y otros modelos familiares.",
+    "affected_area": "Derechos LGBTI+ y familia",
+    "source_page": 24,
+    "conditions": "Con participación de entidades LGBTI+ y priorizando el interés superior del menor."
+  },
+  {
+    "literal_text": "Obligar a identificar les imatges corporals retocades digitalment en la publicitat i els continguts comercials de les xarxes socials, i reforçar la regulació dels anuncis que promoguin models corporal",
+    "normalized_text": "Obligar a identificar imágenes corporales retocadas digitalmente en publicidad y contenidos comerciales de redes sociales, y reforzar la regulación de anuncios que promuevan modelos corporales irreale",
+    "affected_area": "Regulación publicitaria y salud",
+    "source_page": 24,
+    "conditions": "Aplicable a publicidad y contenidos comerciales en redes sociales."
+  },
+  {
+    "literal_text": "Garantir que cuidar un familiar no suposi perdre drets de Seguretat Social ni oportunitats laborals, assegurant les cotitzacions de les persones cuidadores no professionals amb finançament públic.",
+    "normalized_text": "Garantizar que cuidar a un familiar no suponga perder derechos de Seguridad Social ni oportunidades laborales, asegurando las cotizaciones de cuidadores no profesionales con financiación pública.",
+    "affected_area": "Derechos sociales y laborales de cuidadores",
+    "source_page": 24,
+    "conditions": "Financiación pública para las cotizaciones de cuidadores no profesionales."
+  },
+  {
+    "literal_text": "Actualitzar la Llei de prevenció de riscos laborals per garantir entorns de treball segurs i saludables",
+    "normalized_text": "Actualizar la Ley de Prevención de Riesgos Laborales para reducir la siniestralidad laboral y adaptarla a riesgos derivados de la digitalización, el cambio climático y las transformaciones del mercado",
+    "affected_area": "Legislación laboral / Prevención de riesgos",
+    "source_page": 26,
+    "conditions": "Ninguna condición específica mencionada"
+  },
+  {
+    "literal_text": "Ampliar els permisos parentals retribuïts i impulsar, conjuntament amb les administracions competents, mesures que permetin disposar de més temps per a la criança durant els primers anys de vida, sens",
+    "normalized_text": "Ampliar los permisos parentales retribuidos para la crianza durante los primeros años de vida, sin penalizaciones económicas ni profesionales",
+    "affected_area": "Legislación laboral / Conciliación familiar",
+    "source_page": 26,
+    "conditions": "Sin penalizaciones económicas ni profesionales; en coordinación con administraciones competentes"
+  },
+  {
+    "literal_text": "garantir les competències de la Generalitat de Catalunya, amb els traspassos i recursos necessaris per planificar i gestionar un sistema propi i integrat",
+    "normalized_text": "Garantizar las competencias de la Generalitat de Catalunya en formación profesional con los traspasos y recursos necesarios para planificar y gestionar un sistema propio e integrado",
+    "affected_area": "Formación Profesional / Competencias autonómicas",
+    "source_page": 27,
+    "conditions": "Ninguna condición específica mencionada"
+  },
+  {
+    "literal_text": "Garantir un finançament estable i suficient dels centres de formació professional, amb equipaments actualitzats i recursos per a la formació permanent del professorat",
+    "normalized_text": "Garantizar una financiación estable y suficiente de los centros de formación profesional con equipamientos actualizados y recursos para la formación permanente del profesorado",
+    "affected_area": "Formación Profesional / Financiación",
+    "source_page": 27,
+    "conditions": "Ninguna condición específica mencionada"
+  },
+  {
+    "literal_text": "Incrementar el finançament estatal per adequar les quanties a la realitat socioeconòmica catalana, sense traslladar-ne el sobrecost a la Generalitat.",
+    "normalized_text": "Incrementar la financiación estatal para adecuar las cuantías del ingreso mínimo vital a la realidad socioeconómica catalana.",
+    "affected_area": "Protección social / Financiación",
+    "source_page": 28,
+    "conditions": "Sin trasladar el sobrecoste a la Generalitat"
+  },
+  {
+    "literal_text": "Incorporar la perspectiva de gènere al reconeixement de les malalties professionals, revisant el quadre de patologies per corregir els biaixos",
+    "normalized_text": "Incorporar la perspectiva de género en el reconocimiento de enfermedades profesionales, revisando el cuadro de patologías para corregir sesgos.",
+    "affected_area": "Derechos laborales / Salud laboral",
+    "source_page": 28,
+    "conditions": "Ninguna condición específica mencionada"
+  },
+  {
+    "literal_text": "Recuperar i traspassar la gestió i la titularitat pública de les centrals hidroelèctriques a la Generalitat de Catalunya a mesura que vagin caducant les concessions.",
+    "normalized_text": "Traspasar la gestión y titularidad pública de las centrales hidroeléctricas a la Generalitat de Catalunya conforme vayan caducando las concesiones.",
+    "affected_area": "Energía / Infraestructuras",
+    "source_page": 30,
+    "conditions": "A medida que vayan caducando las concesiones."
+  },
+  {
+    "literal_text": "Convocar la comissió bilateral entre la Direcció General de Costes i la Generalitat de Catalunya per coordinar les estratègies de protecció del litoral i incrementar la seguretat jurídica dels titular",
+    "normalized_text": "Convocar la comisión bilateral entre la Dirección General de Costas y la Generalitat de Catalunya para coordinar estrategias de protección del litoral e incrementar la seguridad jurídica de los titula",
+    "affected_area": "Medio ambiente / Gestión costera",
+    "source_page": 31,
+    "conditions": "Ninguna condición específica mencionada."
+  },
+  {
+    "literal_text": "Reclamar que Catalunya participi directament en la definició, distribució i gestió dels fons europeus, apropant les decisions a les explotacions agràries, ramaderes i pesqueres.",
+    "normalized_text": "Reclamar que Cataluña participe directamente en la definición, distribución y gestión de los fondos europeos agrarios y pesqueros.",
+    "affected_area": "Política Agraria Común / Descentralización / Competencias autonómicas",
+    "source_page": 32,
+    "conditions": "Ninguna condición específica adicional mencionada."
+  },
+  {
+    "literal_text": "Impulsar una estratègia de sobirania digital que redueixi la dependència de les grans corporacions tecnològiques i reforci les capacitats pròpies en infraestructures digitals, computació, intel·ligènc",
+    "normalized_text": "Impulsar una estrategia de soberanía digital para reducir la dependencia de grandes corporaciones tecnológicas y reforzar capacidades propias en infraestructuras digitales, computación, IA y servicios",
+    "affected_area": "Digitalización / Soberanía tecnológica",
+    "source_page": 34,
+    "conditions": "Ninguna condición específica mencionada."
+  },
+  {
+    "literal_text": "Avançar cap a unes administracions públiques menys dependents de proveïdors tecnològics dominants, amb garanties de seguretat, privacitat i control públic de les dades.",
+    "normalized_text": "Reducir la dependencia de las administraciones públicas respecto a proveedores tecnológicos dominantes, garantizando seguridad, privacidad y control público de los datos.",
+    "affected_area": "Administración pública / Digitalización",
+    "source_page": 34,
+    "conditions": "Ninguna condición específica mencionada."
+  },
+  {
+    "literal_text": "Impulsar la modificació de la legislació estatal de protecció i benestar animal per eliminar les exclusions que afecten els gossos destinats a activitats de caça, treball i altres finalitats",
+    "normalized_text": "Modificar la legislación estatal de protección y bienestar animal para eliminar exclusiones que afectan a perros destinados a caza, trabajo u otras actividades específicas.",
+    "affected_area": "Bienestar animal / Legislación",
+    "source_page": 36,
+    "conditions": "Ninguna actividad económica, deportiva o recreativa puede justificar un nivel inferior de protección."
+  },
+  {
+    "literal_text": "Impulsar la reforma del Codi Penal per reforçar les conseqüències dels delictes de maltractament i garantir que els animals retirats a persones condemnades no tornin a estar en les seves mans",
+    "normalized_text": "Reformar el Código Penal para endurecer las consecuencias de los delitos de maltrato animal y garantizar que los animales retirados a personas condenadas no vuelvan a su custodia.",
+    "affected_area": "Bienestar animal / Legislación penal",
+    "source_page": 36,
+    "conditions": "Aplicable a personas condenadas por delitos de maltrato animal."
+  },
+  {
+    "literal_text": "establir un òrgan bilateral Generalitat–Estat de governança aeroportuària que permeti avançar en el traspàs i la gestió individualitzada dels aeroports de Barcelona-El Prat, Girona, Reus i Sabadell",
+    "normalized_text": "Establecer un órgano bilateral Generalitat-Estado de gobernanza aeroportuaria para avanzar en el traspaso y gestión individualizada de los aeropuertos de Barcelona-El Prat, Girona, Reus y Sabadell",
+    "affected_area": "Infraestructuras aeroportuarias",
+    "source_page": 38,
+    "conditions": "Integrados en una estrategia aeroportuaria catalana en red"
+  },
+  {
+    "literal_text": "Crear un consorci Estat-Generalitat per mancomunar els actius de la xarxa viària i establir la vinyeta com a sistema únic de pagament i control de pas.",
+    "normalized_text": "Crear un consorcio Estado-Generalitat para mancomunar los activos de la red viaria y establecer la viñeta como sistema único de pago y control de paso en las vías de alta capacidad en Cataluña",
+    "affected_area": "Infraestructuras viarias / Financiación",
+    "source_page": 38,
+    "conditions": "Haciendo contribuir de manera especial al transporte pesado de paso, gestionando el tráfico y reduciendo el impacto ambiental"
+  },
+  {
+    "literal_text": "Traspassar progressivament a Catalunya les funcions de conservació, manteniment i gestió de les infraestructures ferroviàries vinculades a Rodalies",
+    "normalized_text": "Traspasar progresivamente a Cataluña las funciones de conservación, mantenimiento y gestión de las infraestructuras ferroviarias vinculadas a Rodalies",
+    "affected_area": "Infraestructuras ferroviarias / Competencias autonómicas",
+    "source_page": 40,
+    "conditions": "Con los recursos necesarios para garantizar un servicio seguro, fiable y de calidad"
+  },
+  {
+    "literal_text": "Blindar les competències de la Generalitat de Catalunya en matèria sanitària. Defensar el caràcter exclusiu de les competències de la Generalitat en matèria de salut",
+    "normalized_text": "Blindar las competencias exclusivas de la Generalitat de Catalunya en materia sanitaria e impedir cualquier recentralización o injerencia del Estado en el modelo sanitario catalán.",
+    "affected_area": "Sanidad / Competencias autonómicas",
+    "source_page": 42,
+    "conditions": "Exige el traspaso inmediato de todas las funciones y competencias pendientes con los recursos económicos, humanos y materiales necesarios."
+  },
+  {
+    "literal_text": "Assegurar recursos estables per als centres de recerca, les infraestructures científiques singulars i els grups de recerca universitaris i hospitalaris",
+    "normalized_text": "Asegurar financiación basal estable para centros de investigación, infraestructuras científicas singulares y grupos de investigación universitarios y hospitalarios",
+    "affected_area": "Financiación de la investigación",
+    "source_page": 45,
+    "conditions": "Con especial atención a los ámbitos estratégicos para el país."
+  }
+]

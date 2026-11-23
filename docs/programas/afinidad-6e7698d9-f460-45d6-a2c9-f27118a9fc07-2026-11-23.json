@@ -1,0 +1,1176 @@
+{
+  "version": "1.0.0",
+  "exported_at": "2026-11-23T10:39:34.202Z",
+  "release_id": "6e7698d9-f460-45d6-a2c9-f27118a9fc07",
+  "entities": [
+    "5e40b635-604a-4d1e-87a8-ef6330480897",
+    "e89954df-abee-4830-a41d-252e59a6171b",
+    "b0a26b0b-84c3-4e86-b2d2-0174fa6dee39",
+    "d78fb7a1-a3d1-435b-96dc-07f81e5923d2",
+    "c39be780-15c3-4947-a3ce-d72f87fb5d41",
+    "8c7e1371-b553-47e7-a6ff-8db94dc4e0eb",
+    "91d62ad9-83d7-4d08-ae8b-84126d68a860",
+    "24176fbc-2a9a-48dc-aa4a-7062a6233c90",
+    "3ea38ea1-6c0f-4748-97fb-42c027856afd",
+    "6df593a9-b67e-4f7f-87b1-8cf973ecb05e"
+  ],
+  "depth_mode": "deep",
+  "calibration_mode": "serious",
+  "answers": [
+    {
+      "questionId": "5e1c9cff-0b52-4c37-88e7-e153b4a30cca",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "22ad44b4-fa95-471a-9865-607b54f5e801",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "6862a2b9-bb7b-4e76-b322-a5d41b80bf54",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "5ba53469-e006-43b8-8dd4-762ca2bd4bdd",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "96aa43fd-0e94-4769-a820-0210ff2e0500",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "b0b6f412-2e38-4c96-97a8-0839ae53b5c1",
+      "value": 0,
+      "skipped": false
+    },
+    {
+      "questionId": "59995d26-29d5-4ffd-b182-9595be414354",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "5aa53c97-9d07-4ed0-a54a-4d5e038810b0",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "07aa4a33-ea52-4ef7-96e5-c91bb0a0de3b",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "f534b1cf-d34f-4309-a363-5bacd7bcf1c9",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "14f51978-4d3f-40d0-b34c-d0550542f108",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "9cbd5e87-e752-4c77-bc4d-3a678f59ceb2",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "d39fcec3-3501-4c59-a90a-d4b5fde1c94e",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "9864a6a8-e1df-4712-8093-56bf701b16f5",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "10bd0e37-b5cc-4e5a-9f9e-5a85e7441fad",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "36714a53-0ebf-4bba-8711-a304f32d5ac1",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "5f66c35e-5a21-41d9-9359-4488d285e701",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "1919b14c-6aa8-40f4-a26a-859896355ecc",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "f1447491-266d-4342-9c80-35a76461b273",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "7b8e4448-1d6c-4151-8b04-d24f16f8ef04",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "6a7a9b46-0641-455f-b782-6015baa9fdd8",
+      "value": -2,
+      "skipped": false
+    },
+    {
+      "questionId": "84d0d92d-4b2b-47de-92fa-6ce67bdc7835",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "83eb458a-d714-43d6-b183-179f643c1242",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "1a1207a9-27c6-43c7-a71b-e96813f7ff5b",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "d7a3288f-1682-4d37-a338-b30871eaeccc",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "3c5ed0a3-c11e-49f5-8d04-b2619953f055",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "44316fff-0777-45e6-a12a-6f2983711ec7",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "47a261fa-be7f-4f65-804c-808687e265fd",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "28ea5577-ace1-47b1-b925-ec174bd76cef",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "84e8dc1b-0f29-4977-b5dd-89149054c4a6",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "46314bf7-8536-4efe-89de-0afbd06c799c",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "35cff363-f461-4f97-ac22-710ee2dd67a8",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "3b2bc64e-ed4b-4e9f-a223-f56295c176e0",
+      "value": -1,
+      "skipped": false
+    },
+    {
+      "questionId": "f817c936-e9ca-431c-a399-ddf509d25c1e",
+      "value": -2,
+      "skipped": false
+    },
+    {
+      "questionId": "ef8cd13a-0aed-4317-b1cc-fc6b20c5505a",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "b2b82e59-8b9f-4aa4-956b-e8cca975f54c",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "1a23e37f-69d0-4f67-ad19-2b3cabf4a6d3",
+      "value": -1,
+      "skipped": false
+    },
+    {
+      "questionId": "04bef793-a1f1-43eb-94c5-83de9af8b205",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "9af6bcd3-0115-4c5d-9581-63392f3a3452",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "f69853ae-1323-408c-a60a-41aeccfa00ee",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "1b30d724-e42a-4ccf-826a-0bc83a9f9045",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "0f9f6389-5c9c-41ed-8f41-50e40272f371",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "c14f1f1d-3b36-416e-b426-26876e084494",
+      "value": 0,
+      "skipped": false
+    },
+    {
+      "questionId": "134b605d-a685-4e9c-a1f4-d95a20422827",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "69b5750e-4105-46d9-948c-1b43ca3aa8d8",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "b542d8eb-c61a-4184-bc03-3857dabe4a67",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "2df61c34-a524-4f28-82f0-8ce039a77906",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "98b1f6e1-ebd6-4832-8d69-36d64f49bd35",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "f94c2039-4830-419e-8138-91b3f2d76f3d",
+      "value": -2,
+      "skipped": false
+    },
+    {
+      "questionId": "d725564f-b2c9-4a2c-9092-07dbf74a2c04",
+      "value": -2,
+      "skipped": false
+    },
+    {
+      "questionId": "69fa0b5f-5586-47c9-90b8-fa69588e4719",
+      "value": -2,
+      "skipped": false
+    },
+    {
+      "questionId": "02cf9daa-cb92-486a-9f8c-ce09a727eccf",
+      "value": -2,
+      "skipped": false
+    },
+    {
+      "questionId": "26d1fccb-6178-4a94-a0c9-94278d2c4cbd",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "0171b3d1-950d-428c-a02c-412f436b6fb6",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "a44095e3-642e-4e51-b5d1-37bf91a7260d",
+      "value": 1,
+      "skipped": false
+    },
+    {
+      "questionId": "e3c48e02-f2f1-4054-b80e-92ef51785d09",
+      "value": -1,
+      "skipped": false
+    },
+    {
+      "questionId": "568e42a3-d094-477f-a5fa-6358103fa08a",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "c2c1b240-407b-444c-a259-d5fbb291ae8d",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "9c445e6d-885b-42f2-932b-06dedc0840f4",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "a6bb37f2-343f-4a9d-baa2-1f4475e1d6c2",
+      "value": 2,
+      "skipped": false
+    },
+    {
+      "questionId": "8dac794c-a437-4011-adc2-4bef78e3fe5f",
+      "value": 2,
+      "skipped": false
+    }
+  ],
+  "weights": [
+    {
+      "questionId": "5e1c9cff-0b52-4c37-88e7-e153b4a30cca",
+      "importance": "medium"
+    },
+    {
+      "questionId": "22ad44b4-fa95-471a-9865-607b54f5e801",
+      "importance": "medium"
+    },
+    {
+      "questionId": "6862a2b9-bb7b-4e76-b322-a5d41b80bf54",
+      "importance": "medium"
+    },
+    {
+      "questionId": "5ba53469-e006-43b8-8dd4-762ca2bd4bdd",
+      "importance": "medium"
+    },
+    {
+      "questionId": "96aa43fd-0e94-4769-a820-0210ff2e0500",
+      "importance": "medium"
+    },
+    {
+      "questionId": "b0b6f412-2e38-4c96-97a8-0839ae53b5c1",
+      "importance": "medium"
+    },
+    {
+      "questionId": "59995d26-29d5-4ffd-b182-9595be414354",
+      "importance": "medium"
+    },
+    {
+      "questionId": "5aa53c97-9d07-4ed0-a54a-4d5e038810b0",
+      "importance": "medium"
+    },
+    {
+      "questionId": "07aa4a33-ea52-4ef7-96e5-c91bb0a0de3b",
+      "importance": "medium"
+    },
+    {
+      "questionId": "f534b1cf-d34f-4309-a363-5bacd7bcf1c9",
+      "importance": "medium"
+    },
+    {
+      "questionId": "14f51978-4d3f-40d0-b34c-d0550542f108",
+      "importance": "medium"
+    },
+    {
+      "questionId": "9cbd5e87-e752-4c77-bc4d-3a678f59ceb2",
+      "importance": "medium"
+    },
+    {
+      "questionId": "d39fcec3-3501-4c59-a90a-d4b5fde1c94e",
+      "importance": "medium"
+    },
+    {
+      "questionId": "9864a6a8-e1df-4712-8093-56bf701b16f5",
+      "importance": "medium"
+    },
+    {
+      "questionId": "10bd0e37-b5cc-4e5a-9f9e-5a85e7441fad",
+      "importance": "medium"
+    },
+    {
+      "questionId": "36714a53-0ebf-4bba-8711-a304f32d5ac1",
+      "importance": "medium"
+    },
+    {
+      "questionId": "5f66c35e-5a21-41d9-9359-4488d285e701",
+      "importance": "medium"
+    },
+    {
+      "questionId": "1919b14c-6aa8-40f4-a26a-859896355ecc",
+      "importance": "medium"
+    },
+    {
+      "questionId": "f1447491-266d-4342-9c80-35a76461b273",
+      "importance": "medium"
+    },
+    {
+      "questionId": "7b8e4448-1d6c-4151-8b04-d24f16f8ef04",
+      "importance": "medium"
+    },
+    {
+      "questionId": "6a7a9b46-0641-455f-b782-6015baa9fdd8",
+      "importance": "medium"
+    },
+    {
+      "questionId": "84d0d92d-4b2b-47de-92fa-6ce67bdc7835",
+      "importance": "medium"
+    },
+    {
+      "questionId": "83eb458a-d714-43d6-b183-179f643c1242",
+      "importance": "high"
+    },
+    {
+      "questionId": "1a1207a9-27c6-43c7-a71b-e96813f7ff5b",
+      "importance": "medium"
+    },
+    {
+      "questionId": "d7a3288f-1682-4d37-a338-b30871eaeccc",
+      "importance": "high"
+    },
+    {
+      "questionId": "3c5ed0a3-c11e-49f5-8d04-b2619953f055",
+      "importance": "high"
+    },
+    {
+      "questionId": "44316fff-0777-45e6-a12a-6f2983711ec7",
+      "importance": "high"
+    },
+    {
+      "questionId": "47a261fa-be7f-4f65-804c-808687e265fd",
+      "importance": "high"
+    },
+    {
+      "questionId": "28ea5577-ace1-47b1-b925-ec174bd76cef",
+      "importance": "medium"
+    },
+    {
+      "questionId": "84e8dc1b-0f29-4977-b5dd-89149054c4a6",
+      "importance": "medium"
+    },
+    {
+      "questionId": "46314bf7-8536-4efe-89de-0afbd06c799c",
+      "importance": "medium"
+    },
+    {
+      "questionId": "35cff363-f461-4f97-ac22-710ee2dd67a8",
+      "importance": "high"
+    },
+    {
+      "questionId": "3b2bc64e-ed4b-4e9f-a223-f56295c176e0",
+      "importance": "medium"
+    },
+    {
+      "questionId": "f817c936-e9ca-431c-a399-ddf509d25c1e",
+      "importance": "medium"
+    },
+    {
+      "questionId": "ef8cd13a-0aed-4317-b1cc-fc6b20c5505a",
+      "importance": "medium"
+    },
+    {
+      "questionId": "b2b82e59-8b9f-4aa4-956b-e8cca975f54c",
+      "importance": "medium"
+    },
+    {
+      "questionId": "1a23e37f-69d0-4f67-ad19-2b3cabf4a6d3",
+      "importance": "medium"
+    },
+    {
+      "questionId": "04bef793-a1f1-43eb-94c5-83de9af8b205",
+      "importance": "medium"
+    },
+    {
+      "questionId": "9af6bcd3-0115-4c5d-9581-63392f3a3452",
+      "importance": "high"
+    },
+    {
+      "questionId": "f69853ae-1323-408c-a60a-41aeccfa00ee",
+      "importance": "medium"
+    },
+    {
+      "questionId": "1b30d724-e42a-4ccf-826a-0bc83a9f9045",
+      "importance": "medium"
+    },
+    {
+      "questionId": "0f9f6389-5c9c-41ed-8f41-50e40272f371",
+      "importance": "high"
+    },
+    {
+      "questionId": "c14f1f1d-3b36-416e-b426-26876e084494",
+      "importance": "medium"
+    },
+    {
+      "questionId": "134b605d-a685-4e9c-a1f4-d95a20422827",
+      "importance": "medium"
+    },
+    {
+      "questionId": "69b5750e-4105-46d9-948c-1b43ca3aa8d8",
+      "importance": "medium"
+    },
+    {
+      "questionId": "b542d8eb-c61a-4184-bc03-3857dabe4a67",
+      "importance": "medium"
+    },
+    {
+      "questionId": "2df61c34-a524-4f28-82f0-8ce039a77906",
+      "importance": "medium"
+    },
+    {
+      "questionId": "98b1f6e1-ebd6-4832-8d69-36d64f49bd35",
+      "importance": "high"
+    },
+    {
+      "questionId": "f94c2039-4830-419e-8138-91b3f2d76f3d",
+      "importance": "medium"
+    },
+    {
+      "questionId": "d725564f-b2c9-4a2c-9092-07dbf74a2c04",
+      "importance": "high"
+    },
+    {
+      "questionId": "69fa0b5f-5586-47c9-90b8-fa69588e4719",
+      "importance": "high"
+    },
+    {
+      "questionId": "02cf9daa-cb92-486a-9f8c-ce09a727eccf",
+      "importance": "high"
+    },
+    {
+      "questionId": "26d1fccb-6178-4a94-a0c9-94278d2c4cbd",
+      "importance": "high"
+    },
+    {
+      "questionId": "0171b3d1-950d-428c-a02c-412f436b6fb6",
+      "importance": "medium"
+    },
+    {
+      "questionId": "a44095e3-642e-4e51-b5d1-37bf91a7260d",
+      "importance": "medium"
+    },
+    {
+      "questionId": "e3c48e02-f2f1-4054-b80e-92ef51785d09",
+      "importance": "medium"
+    },
+    {
+      "questionId": "568e42a3-d094-477f-a5fa-6358103fa08a",
+      "importance": "medium"
+    },
+    {
+      "questionId": "c2c1b240-407b-444c-a259-d5fbb291ae8d",
+      "importance": "medium"
+    },
+    {
+      "questionId": "9c445e6d-885b-42f2-932b-06dedc0840f4",
+      "importance": "medium"
+    },
+    {
+      "questionId": "a6bb37f2-343f-4a9d-baa2-1f4475e1d6c2",
+      "importance": "high"
+    },
+    {
+      "questionId": "8dac794c-a437-4011-adc2-4bef78e3fe5f",
+      "importance": "high"
+    }
+  ],
+  "results": [
+    {
+      "entityId": "6df593a9-b67e-4f7f-87b1-8cf973ecb05e",
+      "affinityPercent": 74.4,
+      "evaluableQuestions": 38,
+      "answeredQuestions": 61,
+      "coveragePercent": 62.3,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 58.3,
+          "evaluableQuestions": 3,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 37.5
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 78.1,
+          "evaluableQuestions": 8,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 57.1
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 72.5,
+          "evaluableQuestions": 7,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 63.6
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 58.3,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 85.7
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 75,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 69.2
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 85.7,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 62.5
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "3ea38ea1-6c0f-4748-97fb-42c027856afd",
+      "affinityPercent": 78.7,
+      "evaluableQuestions": 29,
+      "answeredQuestions": 61,
+      "coveragePercent": 47.5,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 50,
+          "evaluableQuestions": 2,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 25
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 75,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 35.7
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 94.6,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 81.8
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 91.7,
+          "evaluableQuestions": 3,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 42.9
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 57.7,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 69.2
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 100,
+          "evaluableQuestions": 1,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 12.5
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "24176fbc-2a9a-48dc-aa4a-7062a6233c90",
+      "affinityPercent": 72.4,
+      "evaluableQuestions": 42,
+      "answeredQuestions": 61,
+      "coveragePercent": 68.9,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 62.5,
+          "evaluableQuestions": 4,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 50
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 62.5,
+          "evaluableQuestions": 12,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 85.7
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 75,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 54.5
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 45.8,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 85.7
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 76.9,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 69.2
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 87.5,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 62.5
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "91d62ad9-83d7-4d08-ae8b-84126d68a860",
+      "affinityPercent": 64.3,
+      "evaluableQuestions": 36,
+      "answeredQuestions": 61,
+      "coveragePercent": 59,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 50,
+          "evaluableQuestions": 1,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 12.5
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 61.5,
+          "evaluableQuestions": 13,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 92.9
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 97.5,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 54.5
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 100,
+          "evaluableQuestions": 2,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 28.6
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 66.7,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 69.2
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 58.3,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 62.5
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "c39be780-15c3-4947-a3ce-d72f87fb5d41",
+      "affinityPercent": 68.3,
+      "evaluableQuestions": 48,
+      "answeredQuestions": 61,
+      "coveragePercent": 78.7,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 35,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 62.5
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 85,
+          "evaluableQuestions": 10,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 71.4
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 94.6,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 81.8
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 75,
+          "evaluableQuestions": 7,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 100
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 63.2,
+          "evaluableQuestions": 11,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 84.6
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 71.4,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 75
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "8c7e1371-b553-47e7-a6ff-8db94dc4e0eb",
+      "affinityPercent": 77.6,
+      "evaluableQuestions": 36,
+      "answeredQuestions": 61,
+      "coveragePercent": 59,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 68.8,
+          "evaluableQuestions": 7,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 87.5
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 68.8,
+          "evaluableQuestions": 8,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 57.1
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 91.7,
+          "evaluableQuestions": 4,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 36.4
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 75,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 71.4
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 83.3,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 69.2
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 83.3,
+          "evaluableQuestions": 3,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 37.5
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "d78fb7a1-a3d1-435b-96dc-07f81e5923d2",
+      "affinityPercent": 60.5,
+      "evaluableQuestions": 24,
+      "answeredQuestions": 61,
+      "coveragePercent": 39.3,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 25,
+          "evaluableQuestions": 1,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 12.5
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 87.5,
+          "evaluableQuestions": 4,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 28.6
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 90.9,
+          "evaluableQuestions": 7,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 63.6
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 83.3,
+          "evaluableQuestions": 3,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 42.9
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 67.5,
+          "evaluableQuestions": 8,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 61.5
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 50,
+          "evaluableQuestions": 1,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 12.5
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "b0a26b0b-84c3-4e86-b2d2-0174fa6dee39",
+      "affinityPercent": 60.7,
+      "evaluableQuestions": 21,
+      "answeredQuestions": 61,
+      "coveragePercent": 34.4,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 25,
+          "evaluableQuestions": 1,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 12.5
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 62.5,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 42.9
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 96.2,
+          "evaluableQuestions": 7,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 63.6
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 50,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 38.5
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 75,
+          "evaluableQuestions": 2,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 25
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 5,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "e89954df-abee-4830-a41d-252e59a6171b",
+      "affinityPercent": 73.7,
+      "evaluableQuestions": 27,
+      "answeredQuestions": 61,
+      "coveragePercent": 44.3,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 25,
+          "evaluableQuestions": 2,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 25
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 79.2,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 42.9
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 78.6,
+          "evaluableQuestions": 5,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 45.5
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 81.3,
+          "evaluableQuestions": 4,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 57.1
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 72.9,
+          "evaluableQuestions": 8,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 61.5
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 100,
+          "evaluableQuestions": 2,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 25
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    },
+    {
+      "entityId": "5e40b635-604a-4d1e-87a8-ef6330480897",
+      "affinityPercent": 67.9,
+      "evaluableQuestions": 42,
+      "answeredQuestions": 61,
+      "coveragePercent": 68.9,
+      "dimensions": [
+        {
+          "dimensionId": "71abf89f-f2da-4f0e-bd96-bba872e2d540",
+          "dimensionName": "Derechos",
+          "affinityPercent": 29.2,
+          "evaluableQuestions": 6,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 75
+        },
+        {
+          "dimensionId": "756c6934-e490-4cf5-aa59-f80e419e46c2",
+          "dimensionName": "Economía",
+          "affinityPercent": 81.3,
+          "evaluableQuestions": 8,
+          "answeredQuestionsInDimension": 14,
+          "coveragePercent": 57.1
+        },
+        {
+          "dimensionId": "c2d62ebd-30e5-4814-9884-6f29a35e7440",
+          "dimensionName": "Instituciones",
+          "affinityPercent": 98.2,
+          "evaluableQuestions": 9,
+          "answeredQuestionsInDimension": 11,
+          "coveragePercent": 81.8
+        },
+        {
+          "dimensionId": "bcc8dc9c-3815-42cf-95cd-5259d8b3ef13",
+          "dimensionName": "Medio ambiente",
+          "affinityPercent": 68.8,
+          "evaluableQuestions": 4,
+          "answeredQuestionsInDimension": 7,
+          "coveragePercent": 57.1
+        },
+        {
+          "dimensionId": "4ab1a243-ec46-4e20-a571-b5fdc7da93f8",
+          "dimensionName": "Social",
+          "affinityPercent": 66.2,
+          "evaluableQuestions": 11,
+          "answeredQuestionsInDimension": 13,
+          "coveragePercent": 84.6
+        },
+        {
+          "dimensionId": "3e70ad2c-fd4e-4a4c-9e28-130fa5b1be7d",
+          "dimensionName": "Territorio",
+          "affinityPercent": 75,
+          "evaluableQuestions": 4,
+          "answeredQuestionsInDimension": 8,
+          "coveragePercent": 50
+        }
+      ],
+      "evidenceRefs": [],
+      "historical": false,
+      "dimensionsWithCoverage": 6,
+      "totalDimensions": 6
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+ "version": "2026-11-23",
+ "status": "BORRADOR (pendiente de aprobación del editor)",
+ "questions": [
+  {
+   "theme": "educ-publica",
+   "theme_name": "Educación pública y sistema educativo",
+   "dimension": "social",
+   "question": "¿Debe priorizarse la financiación de la escuela pública frente a la concertada y la privada?",
+   "regional_parties": []
+  },
+  {
+   "theme": "fp-universidad",
+   "theme_name": "Formación Profesional y universidad",
+   "dimension": "social",
+   "question": "¿Debe ampliarse la gratuidad de la Formación Profesional y de la matrícula universitaria?",
+   "regional_parties": []
+  },
+  {
+   "theme": "vivienda-especulacion",
+   "theme_name": "Vivienda vacía, pisos turísticos y especulación",
+   "dimension": "social",
+   "question": "¿Debe limitarse la compra de viviendas por grandes tenedores y fondos de inversión?",
+   "regional_parties": []
+  },
+  {
+   "theme": "salud-mental",
+   "theme_name": "Salud mental",
+   "dimension": "social",
+   "question": "¿Debe ampliarse de forma significativa la atención en salud mental dentro de la sanidad pública?",
+   "regional_parties": []
+  },
+  {
+   "theme": "cuidados-dependencia",
+   "theme_name": "Cuidados, dependencia y personas mayores",
+   "dimension": "social",
+   "question": "¿Debe crearse un sistema público de cuidados y dependencia de cobertura universal?",
+   "regional_parties": []
+  },
+  {
+   "theme": "pensiones",
+   "theme_name": "Pensiones",
+   "dimension": "social",
+   "question": "¿Debe garantizarse por ley que las pensiones se revaloricen cada año con el IPC?",
+   "regional_parties": []
+  },
+  {
+   "theme": "familia-permisos",
+   "theme_name": "Familia, natalidad y permisos de cuidado",
+   "dimension": "social",
+   "question": "¿Deben ampliarse los permisos por nacimiento y cuidado de hijos, retribuidos por el Estado?",
+   "regional_parties": []
+  },
+  {
+   "theme": "infancia-juventud",
+   "theme_name": "Infancia y juventud",
+   "dimension": "social",
+   "question": "¿Debe crearse una prestación universal por crianza para todas las familias con hijos?",
+   "regional_parties": []
+  },
+  {
+   "theme": "ingreso-pobreza",
+   "theme_name": "Ingreso mínimo y lucha contra la pobreza",
+   "dimension": "social",
+   "question": "¿Debe reforzarse el ingreso mínimo vital para que llegue a todas las personas en situación de pobreza?",
+   "regional_parties": []
+  },
+  {
+   "theme": "discapacidad",
+   "theme_name": "Discapacidad",
+   "dimension": "social",
+   "question": "¿Deben aumentarse las ayudas y los apoyos públicos a las personas con discapacidad?",
+   "regional_parties": []
+  },
+  {
+   "theme": "consumo-precios",
+   "theme_name": "Precios, consumo y bienes esenciales",
+   "dimension": "social",
+   "question": "¿Debe el Estado limitar por ley los precios de los alimentos y bienes básicos?",
+   "regional_parties": []
+  },
+  {
+   "theme": "agro-rural",
+   "theme_name": "Agricultura, ganadería, pesca y mundo rural",
+   "dimension": "social",
+   "question": "¿Debe prohibirse por ley la venta a pérdidas de productos agrarios?",
+   "regional_parties": []
+  },
+  {
+   "theme": "autonomos-pymes",
+   "theme_name": "Autónomos y pequeñas empresas",
+   "dimension": "economy",
+   "question": "¿Debe fijarse la cuota de los autónomos en función de sus ingresos reales?",
+   "regional_parties": []
+  },
+  {
+   "theme": "fraude-fiscal",
+   "theme_name": "Fraude fiscal y paraísos fiscales",
+   "dimension": "economy",
+   "question": "¿Debe endurecerse la lucha contra el fraude fiscal con más inspectores y sanciones?",
+   "regional_parties": []
+  },
+  {
+   "theme": "energia-precios",
+   "theme_name": "Precio de la energía",
+   "dimension": "economy",
+   "question": "¿Debe intervenirse el mercado eléctrico para bajar el precio de la luz?",
+   "regional_parties": []
+  },
+  {
+   "theme": "turismo",
+   "theme_name": "Modelo turístico",
+   "dimension": "economy",
+   "question": "¿Debe limitarse el número de visitantes en las zonas con mayor presión turística?",
+   "regional_parties": []
+  },
+  {
+   "theme": "deuda-gasto-publico",
+   "theme_name": "Deuda y gasto público",
+   "dimension": "economy",
+   "question": "¿Debe reducirse el gasto público para recortar el déficit y la deuda?",
+   "regional_parties": []
+  },
+  {
+   "theme": "empleo-desempleo",
+   "theme_name": "Empleo y prestaciones por desempleo",
+   "dimension": "economy",
+   "question": "¿Debe ampliarse la duración y la cuantía de las prestaciones por desempleo?",
+   "regional_parties": []
+  },
+  {
+   "theme": "economia-social",
+   "theme_name": "Economía social y participación en la empresa",
+   "dimension": "economy",
+   "question": "¿Deben fomentarse con ayudas públicas las cooperativas y la economía social?",
+   "regional_parties": []
+  },
+  {
+   "theme": "simplificacion-normativa",
+   "theme_name": "Simplificación normativa y burocracia",
+   "dimension": "institutions",
+   "question": "¿Debe reducirse y simplificarse la regulación y los trámites burocráticos para empresas y ciudadanos?",
+   "regional_parties": []
+  },
+  {
+   "theme": "clima-transicion",
+   "theme_name": "Cambio climático y transición ecológica",
+   "dimension": "environment",
+   "question": "¿Debe adelantarse el objetivo de neutralidad climática más allá de los compromisos actuales?",
+   "regional_parties": []
+  },
+  {
+   "theme": "agua-sequia",
+   "theme_name": "Agua y sequía",
+   "dimension": "environment",
+   "question": "¿Debe ampliarse la desalación y las infraestructuras hidráulicas para garantizar el abastecimiento de agua?",
+   "regional_parties": []
+  },
+  {
+   "theme": "biodiversidad-animales",
+   "theme_name": "Biodiversidad y bienestar animal",
+   "dimension": "environment",
+   "question": "¿Deben prohibirse las corridas de toros y otros espectáculos con animales?",
+   "regional_parties": []
+  },
+  {
+   "theme": "residuos-circular",
+   "theme_name": "Residuos y economía circular",
+   "dimension": "environment",
+   "question": "¿Debe implantarse un sistema de depósito y retorno obligatorio para los envases?",
+   "regional_parties": []
+  },
+  {
+   "theme": "poder-judicial",
+   "theme_name": "Poder judicial y justicia",
+   "dimension": "institutions",
+   "question": "¿Deben elegir los propios jueces a los vocales judiciales del Consejo General del Poder Judicial?",
+   "regional_parties": []
+  },
+  {
+   "theme": "corrupcion-transparencia",
+   "theme_name": "Corrupción, transparencia y financiación de partidos",
+   "dimension": "institutions",
+   "question": "¿Deben endurecerse las penas y la inhabilitación de los cargos públicos condenados por corrupción?",
+   "regional_parties": []
+  },
+  {
+   "theme": "monarquia",
+   "theme_name": "Monarquía y forma de Estado",
+   "dimension": "institutions",
+   "question": "¿Debe sustituirse la monarquía por una república?",
+   "regional_parties": []
+  },
+  {
+   "theme": "defensa-exterior",
+   "theme_name": "Defensa y política exterior",
+   "dimension": "institutions",
+   "question": "¿Debe aumentarse el gasto en defensa?",
+   "regional_parties": []
+  },
+  {
+   "theme": "union-europea",
+   "theme_name": "Unión Europea",
+   "dimension": "institutions",
+   "question": "¿Debe cederse más soberanía a la Unión Europea?",
+   "regional_parties": []
+  },
+  {
+   "theme": "administracion-publica",
+   "theme_name": "Administración pública y gasto político",
+   "dimension": "institutions",
+   "question": "¿Debe reducirse el número de ministerios, altos cargos y asesores?",
+   "regional_parties": []
+  },
+  {
+   "theme": "ciberseguridad-datos",
+   "theme_name": "Datos personales y ciberseguridad",
+   "dimension": "institutions",
+   "question": "¿Debe prohibirse el reconocimiento facial en los espacios públicos?",
+   "regional_parties": []
+  },
+  {
+   "theme": "nacionalidad",
+   "theme_name": "Nacionalidad y requisitos de residencia",
+   "dimension": "rights",
+   "question": "¿Deben endurecerse los requisitos para obtener la nacionalidad española?",
+   "regional_parties": []
+  },
+  {
+   "theme": "violencia-genero",
+   "theme_name": "Violencia de género y machista",
+   "dimension": "rights",
+   "question": "¿Debe mantenerse una ley específica contra la violencia de género?",
+   "regional_parties": []
+  },
+  {
+   "theme": "igualdad-lgtbi",
+   "theme_name": "Igualdad y derechos LGTBI",
+   "dimension": "rights",
+   "question": "¿Debe permitirse el cambio de sexo en el registro civil por libre declaración?",
+   "regional_parties": []
+  },
+  {
+   "theme": "memoria-democratica",
+   "theme_name": "Memoria democrática",
+   "dimension": "rights",
+   "question": "¿Debe mantenerse la Ley de Memoria Democrática de 2022?",
+   "regional_parties": []
+  },
+  {
+   "theme": "libertades-civiles",
+   "theme_name": "Libertades civiles y derechos fundamentales",
+   "dimension": "rights",
+   "question": "¿Debe derogarse la Ley Orgánica de Protección de la Seguridad Ciudadana de 2015?",
+   "regional_parties": []
+  },
+  {
+   "theme": "aborto-eutanasia",
+   "theme_name": "Aborto y final de la vida",
+   "dimension": "rights",
+   "question": "¿Debe garantizarse el aborto dentro de la sanidad pública?",
+   "regional_parties": []
+  },
+  {
+   "theme": "aborto-eutanasia",
+   "theme_name": "Aborto y final de la vida",
+   "dimension": "rights",
+   "question": "¿Debe mantenerse la ley que regula la eutanasia?",
+   "regional_parties": []
+  },
+  {
+   "theme": "menores-digital",
+   "theme_name": "Menores y entornos digitales",
+   "dimension": "rights",
+   "question": "¿Debe prohibirse el uso de redes sociales a los menores de 16 años?",
+   "regional_parties": []
+  },
+  {
+   "theme": "laicidad",
+   "theme_name": "Laicidad y religión",
+   "dimension": "rights",
+   "question": "¿Debe eliminarse la financiación pública de la Iglesia y de la enseñanza religiosa?",
+   "regional_parties": []
+  },
+  {
+   "theme": "lenguas",
+   "theme_name": "Lenguas cooficiales y castellano",
+   "dimension": "rights",
+   "question": "¿Debe garantizarse el castellano como lengua vehicular de la enseñanza en todo el territorio?",
+   "regional_parties": []
+  },
+  {
+   "theme": "deporte",
+   "theme_name": "Deporte",
+   "dimension": "rights",
+   "question": "¿Debe aumentarse la inversión pública en el deporte base?",
+   "regional_parties": []
+  },
+  {
+   "theme": "autodeterminacion",
+   "theme_name": "Autodeterminación y modelo federal",
+   "dimension": "territory",
+   "question": "¿Debe reconocerse a las comunidades el derecho a convocar un referéndum de autodeterminación?",
+   "regional_parties": []
+  },
+  {
+   "theme": "financiacion-territorial",
+   "theme_name": "Financiación autonómica y solidaridad territorial",
+   "dimension": "territory",
+   "question": "¿Debe reformarse la financiación autonómica para reducir las diferencias de recursos por habitante entre comunidades?",
+   "regional_parties": []
+  },
+  {
+   "theme": "despoblacion-cohesion",
+   "theme_name": "Despoblación y cohesión territorial",
+   "dimension": "territory",
+   "question": "¿Deben crearse incentivos fiscales y servicios garantizados para frenar la despoblación rural?",
+   "regional_parties": []
+  },
+  {
+   "theme": "ceuta-melilla-gibraltar",
+   "theme_name": "Ceuta, Melilla y Gibraltar",
+   "dimension": "territory",
+   "question": "¿Debe reclamarse la soberanía de Gibraltar?",
+   "regional_parties": []
+  },
+  {
+   "theme": "reg-euskadi",
+   "theme_name": "Autogobierno vasco y concierto económico",
+   "dimension": "territory",
+   "question": "¿Debe reconocerse y ampliarse el concierto económico y las competencias de Euskadi?",
+   "regional_parties": [
+    "PNV",
+    "EH Bildu"
+   ]
+  },
+  {
+   "theme": "reg-catalunya",
+   "theme_name": "Catalunya: autogobierno, competencias y país",
+   "dimension": "territory",
+   "question": "¿Debe Catalunya tener una hacienda propia, con una financiación singular?",
+   "regional_parties": [
+    "ERC"
+   ]
+  },
+  {
+   "theme": "reg-galiza",
+   "theme_name": "Galiza: autogobierno, lengua y sector productivo",
+   "dimension": "territory",
+   "question": "¿Deben transferirse a Galicia las competencias pendientes sobre infraestructuras, costas y recursos propios?",
+   "regional_parties": [
+    "BNG"
+   ]
+  },
+  {
+   "theme": "reg-canarias",
+   "theme_name": "Canarias: régimen especial y lejanía insular",
+   "dimension": "territory",
+   "question": "¿Debe reforzarse el régimen económico y fiscal especial de Canarias y la financiación de la conectividad entre las islas?",
+   "regional_parties": [
+    "Coalición Canaria"
+   ]
+  },
+  {
+   "theme": "reg-andalucia",
+   "theme_name": "Andalucía: financiación, agua y territorio",
+   "dimension": "territory",
+   "question": "¿Debe el Estado aumentar la inversión en Andalucía para corregir las diferencias de financiación por habitante?",
+   "regional_parties": [
+    "Adelante Andalucía"
+   ]
+  }
+ ]
+}

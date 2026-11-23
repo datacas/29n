@@ -1,0 +1,2457 @@
+{
+  "party": "Vox",
+  "source_title": "Programa Electoral Vox 2026",
+  "total_pages": 66,
+  "pages_processed": 39,
+  "total_claims": 232,
+  "duplicates": 0,
+  "input_tokens": 28195,
+  "output_tokens": 33238,
+  "cost": 0.583155,
+  "prompt_version": "1.0.0",
+  "model": "claude-sonnet-4-6",
+  "provider": "anthropic",
+  "page_results": [
+    {
+      "page": 5,
+      "claims": 0,
+      "input_tokens": 545,
+      "output_tokens": 20,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 851
+    },
+    {
+      "page": 7,
+      "claims": 8,
+      "input_tokens": 726,
+      "output_tokens": 1033,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 13363
+    },
+    {
+      "page": 9,
+      "claims": 6,
+      "input_tokens": 726,
+      "output_tokens": 887,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 9962
+    },
+    {
+      "page": 10,
+      "claims": 6,
+      "input_tokens": 824,
+      "output_tokens": 868,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 9649
+    },
+    {
+      "page": 11,
+      "claims": 5,
+      "input_tokens": 785,
+      "output_tokens": 1038,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10359
+    },
+    {
+      "page": 12,
+      "claims": 7,
+      "input_tokens": 780,
+      "output_tokens": 893,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 12094
+    },
+    {
+      "page": 13,
+      "claims": 4,
+      "input_tokens": 628,
+      "output_tokens": 517,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 5300
+    },
+    {
+      "page": 15,
+      "claims": 7,
+      "input_tokens": 766,
+      "output_tokens": 1310,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 14240
+    },
+    {
+      "page": 16,
+      "claims": 2,
+      "input_tokens": 608,
+      "output_tokens": 533,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 8684
+    },
+    {
+      "page": 19,
+      "claims": 8,
+      "input_tokens": 747,
+      "output_tokens": 1061,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 11118
+    },
+    {
+      "page": 20,
+      "claims": 2,
+      "input_tokens": 498,
+      "output_tokens": 350,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 4111
+    },
+    {
+      "page": 23,
+      "claims": 9,
+      "input_tokens": 787,
+      "output_tokens": 1081,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 11471
+    },
+    {
+      "page": 24,
+      "claims": 6,
+      "input_tokens": 825,
+      "output_tokens": 1380,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 16881
+    },
+    {
+      "page": 25,
+      "claims": 3,
+      "input_tokens": 492,
+      "output_tokens": 462,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 5213
+    },
+    {
+      "page": 27,
+      "claims": 5,
+      "input_tokens": 800,
+      "output_tokens": 760,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 8433
+    },
+    {
+      "page": 28,
+      "claims": 2,
+      "input_tokens": 856,
+      "output_tokens": 555,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 7115
+    },
+    {
+      "page": 29,
+      "claims": 7,
+      "input_tokens": 779,
+      "output_tokens": 949,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 13192
+    },
+    {
+      "page": 30,
+      "claims": 4,
+      "input_tokens": 739,
+      "output_tokens": 584,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 7359
+    },
+    {
+      "page": 33,
+      "claims": 6,
+      "input_tokens": 793,
+      "output_tokens": 959,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10480
+    },
+    {
+      "page": 34,
+      "claims": 11,
+      "input_tokens": 836,
+      "output_tokens": 1329,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 16791
+    },
+    {
+      "page": 35,
+      "claims": 6,
+      "input_tokens": 710,
+      "output_tokens": 893,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 9450
+    },
+    {
+      "page": 37,
+      "claims": 8,
+      "input_tokens": 801,
+      "output_tokens": 994,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10359
+    },
+    {
+      "page": 38,
+      "claims": 11,
+      "input_tokens": 784,
+      "output_tokens": 1348,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 16741
+    },
+    {
+      "page": 41,
+      "claims": 9,
+      "input_tokens": 808,
+      "output_tokens": 1034,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10473
+    },
+    {
+      "page": 42,
+      "claims": 9,
+      "input_tokens": 787,
+      "output_tokens": 1148,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 15495
+    },
+    {
+      "page": 43,
+      "claims": 6,
+      "input_tokens": 634,
+      "output_tokens": 831,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 8862
+    },
+    {
+      "page": 45,
+      "claims": 5,
+      "input_tokens": 807,
+      "output_tokens": 830,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 8140
+    },
+    {
+      "page": 46,
+      "claims": 5,
+      "input_tokens": 836,
+      "output_tokens": 1095,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10388
+    },
+    {
+      "page": 47,
+      "claims": 6,
+      "input_tokens": 807,
+      "output_tokens": 843,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 11203
+    },
+    {
+      "page": 48,
+      "claims": 4,
+      "input_tokens": 471,
+      "output_tokens": 457,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 5220
+    },
+    {
+      "page": 51,
+      "claims": 7,
+      "input_tokens": 738,
+      "output_tokens": 912,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10196
+    },
+    {
+      "page": 52,
+      "claims": 9,
+      "input_tokens": 788,
+      "output_tokens": 1160,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 11612
+    },
+    {
+      "page": 53,
+      "claims": 4,
+      "input_tokens": 465,
+      "output_tokens": 460,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 7976
+    },
+    {
+      "page": 55,
+      "claims": 8,
+      "input_tokens": 763,
+      "output_tokens": 975,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 10622
+    },
+    {
+      "page": 56,
+      "claims": 6,
+      "input_tokens": 852,
+      "output_tokens": 837,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 8894
+    },
+    {
+      "page": 57,
+      "claims": 9,
+      "input_tokens": 870,
+      "output_tokens": 1199,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 14857
+    },
+    {
+      "page": 58,
+      "claims": 4,
+      "input_tokens": 494,
+      "output_tokens": 494,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 6021
+    },
+    {
+      "page": 61,
+      "claims": 6,
+      "input_tokens": 806,
+      "output_tokens": 889,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 9366
+    },
+    {
+      "page": 62,
+      "claims": 2,
+      "input_tokens": 434,
+      "output_tokens": 270,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "elapsed_ms": 3764
+    }
+  ],
+  "claims": [
+    {
+      "literal_text": "Expulsión de todos los invasores con carácter inmediato. Defender la españolidad de Ceuta y Melilla",
+      "normalized_text": "Expulsión inmediata de personas consideradas invasoras en Ceuta y Melilla, y defensa de la soberanía española sobre ambas ciudades.",
+      "conditions": "Con carácter inmediato",
+      "affected_area": "Inmigración / Soberanía territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Militarización de la frontera para repeler cualquier intento futuro de invasión o ataque híbrido.",
+      "normalized_text": "Militarización de las fronteras de Ceuta y Melilla para prevenir invasiones o ataques híbridos futuros.",
+      "conditions": "Ante intentos futuros de invasión o ataque híbrido",
+      "affected_area": "Defensa / Seguridad fronteriza",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Refuerzo de la protección de las fronteras terrestres de Ceuta y Melilla, sus aguas bajo soberanía española y su espacio aéreo.",
+      "normalized_text": "Refuerzo de la protección de las fronteras terrestres, marítimas y aéreas de Ceuta y Melilla.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Defensa / Seguridad fronteriza",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Realizar un plan de inversiones que garantice el futuro y la prosperidad de ambas ciudades y su protección.",
+      "normalized_text": "Elaboración de un plan de inversiones para garantizar el desarrollo económico y la protección de Ceuta y Melilla.",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Economía / Desarrollo territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Garantizar la libertad y seguridad de las familias españolas residentes en territorio nacional atacado",
+      "normalized_text": "Garantía de libertad y seguridad para las familias españolas residentes en Ceuta y Melilla.",
+      "conditions": "En territorio nacional considerado atacado",
+      "affected_area": "Seguridad ciudadana / Derechos civiles",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "establecer medidas para evitar futuras invasiones así como reparar las consecuencias sociales, económicas y psicológicas",
+      "normalized_text": "Establecimiento de medidas preventivas contra futuras invasiones y reparación de daños sociales, económicos y psicológicos derivados de la invasión en Ceuta.",
+      "conditions": "Relacionadas con la invasión producida en Ceuta",
+      "affected_area": "Seguridad / Política social",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Promover ante la Justicia el procesamiento a Pedro Sánchez y su gobierno por traición y delitos contra la seguridad del Estado",
+      "normalized_text": "Impulso de acciones judiciales contra Pedro Sánchez y su gobierno por traición y delitos contra la seguridad del Estado en relación con la invasión de Ceuta.",
+      "conditions": "Por su actuación durante la invasión sufrida en Ceuta",
+      "affected_area": "Justicia / Responsabilidad política",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Impulsar sanciones, suspender acuerdos internacionales y revisar las relaciones diplomáticas hasta que Marruecos respete las fronteras",
+      "normalized_text": "Imposición de sanciones, suspensión de acuerdos internacionales y revisión de relaciones diplomáticas con Marruecos.",
+      "conditions": "Hasta que Marruecos respete las fronteras y la soberanía de España",
+      "affected_area": "Política exterior / Diplomacia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 7
+    },
+    {
+      "literal_text": "Simplificación y bajada del IRPF. Reducción del tipo aplicable del IRPF para cada contribuyente o familia en función del número de hijos.",
+      "normalized_text": "Reforma del IRPF con simplificación, bajada general y reducción del tipo impositivo según el número de hijos del contribuyente o familia.",
+      "conditions": "La reducción del tipo varía en función del número de hijos del contribuyente o familia.",
+      "affected_area": "Fiscalidad / Impuesto sobre la Renta",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "Rebaja del tipo reducido y del tipo general del IVA atendiendo prioritariamente a productos esenciales y de primera necesidad.",
+      "normalized_text": "Reducción del tipo reducido y del tipo general del IVA, con prioridad en productos esenciales y de primera necesidad.",
+      "conditions": "Prioridad en productos esenciales y de primera necesidad.",
+      "affected_area": "Fiscalidad / IVA",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "Reducir el tipo del Impuesto de Sociedades con el fin de promover la dinamización de nuestra economía, el crecimiento de nuestras empresas y la creación efectiva de empleo.",
+      "normalized_text": "Reducción del tipo impositivo del Impuesto de Sociedades para favorecer la actividad económica, el crecimiento empresarial y la creación de empleo.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Fiscalidad / Impuesto de Sociedades",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "Cuota de cero euros si los ingresos no llegan al Salario Mínimo Interprofesional y, superado dicho umbral, una cuota progresiva desde los 50 euros en función de sus ingresos.",
+      "normalized_text": "Establecimiento de cuota cero para autónomos con ingresos inferiores al SMI y cuota progresiva desde 50 euros para quienes superen dicho umbral.",
+      "conditions": "Cuota cero si ingresos < SMI; cuota progresiva desde 50 euros si ingresos ≥ SMI.",
+      "affected_area": "Fiscalidad / Trabajadores Autónomos",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "Revisión y reducción sistemática de todos los impuestos y tasas que lastran la prosperidad de los trabajadores, familias y empresas españolas.",
+      "normalized_text": "Revisión y reducción generalizada de impuestos y tasas que afectan a trabajadores, familias y empresas.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Fiscalidad / General",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "Reducción de la deuda pública. Compatibilizar la rebaja de impuestos con la financiación de los servicios",
+      "normalized_text": "Reducción de la deuda pública compatibilizándola con la bajada de impuestos y la financiación de servicios públicos.",
+      "conditions": "El texto está incompleto; no se especifican los mecanismos concretos de compatibilización.",
+      "affected_area": "Economía / Deuda Pública",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 9
+    },
+    {
+      "literal_text": "Actualizar el complemento de insularidad para el personal en activo del sector público estatal en los territorios insulares con el fin de adaptarlo al coste de vida real.",
+      "normalized_text": "Actualización del complemento de insularidad para empleados públicos estatales en Baleares y Canarias, ajustándolo al coste de vida real.",
+      "conditions": "Aplicable al personal en activo del sector público estatal en territorios insulares.",
+      "affected_area": "Función pública / Política territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 10
+    },
+    {
+      "literal_text": "Rebaja general del Impuesto General Indirecto Canario y supresión del Arbitrio sobre Importaciones y Entregas de Mercancías en las Islas Canarias.",
+      "normalized_text": "Reducción del IGIC y eliminación del Arbitrio sobre Importaciones y Entregas de Mercancías en Canarias.",
+      "conditions": "Medida específica para las Islas Canarias.",
+      "affected_area": "Fiscalidad / Política territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 10
+    },
+    {
+      "literal_text": "Mejora de las ayudas al transporte a la Península.",
+      "normalized_text": "Mejora de las ayudas al transporte entre los territorios insulares y la Península.",
+      "conditions": "Enmarcada en el alivio fiscal para Baleares y Canarias.",
+      "affected_area": "Transporte / Política territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 10
+    },
+    {
+      "literal_text": "Reforzar la inversión en I+D+i, los incentivos fiscales a la innovación empresarial, la colaboración entre centros de investigación y empresas e industrias y la transferencia de conocimiento a nuestro tejido productivo, especialmente a las pymes.",
+      "normalized_text": "Incremento de la inversión pública en I+D+i, incentivos fiscales a la innovación empresarial y fomento de la colaboración entre centros de investigación y empresas, con especial atención a las pymes.",
+      "conditions": "Énfasis especial en las pymes.",
+      "affected_area": "Innovación / Economía",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 10
+    },
+    {
+      "literal_text": "Plan para recuperar el talento que se ha tenido que marchar ante la falta de oportunidades.",
+      "normalized_text": "Creación de un plan para la repatriación del talento emigrado por falta de oportunidades laborales.",
+      "conditions": "No se especifican condiciones concretas.",
+      "affected_area": "Empleo / Innovación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 10
+    },
+    {
+      "literal_text": "Tipos mínimos y bonificaciones y deducciones reforzadas para los residentes españoles de estas zonas y para todos aquellos españoles que decidan trasladar su residencia a las mismas.",
+      "normalized_text": "Establecimiento de tipos impositivos mínimos y bonificaciones fiscales reforzadas para residentes en zonas en riesgo de despoblación y para quienes trasladen su residencia a dichas zonas.",
+      "conditions": "Aplicable a zonas en riesgo de despoblación. Beneficia tanto a residentes actuales como a nuevos residentes que se trasladen.",
+      "affected_area": "Fiscalidad / Despoblación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 10
+    },
+    {
+      "literal_text": "Bajada masiva de los impuestos de la energía eléctrica a familias, empresas e industrias españolas. Fin de la doble imposición.",
+      "normalized_text": "Reducción significativa de los impuestos sobre la energía eléctrica para familias, empresas e industrias, eliminando la doble imposición.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Política fiscal y energética",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 11
+    },
+    {
+      "literal_text": "Aprovechamiento de nuestros recursos energéticos, la mejora de las redes y la reducción de cargas fiscales y regulatorias. Plan Nacional de Soberanía Energética.",
+      "normalized_text": "Creación de un Plan Nacional de Soberanía Energética que incluya el aprovechamiento de recursos energéticos propios, mejora de redes y reducción de cargas fiscales y regulatorias.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Política energética",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 11
+    },
+    {
+      "literal_text": "Suspender la aplicación en España de acuerdos internacionales que impiden nuestro desarrollo productivo y la prosperidad de trabajadores, familias, empresas e industrias españolas.",
+      "normalized_text": "Suspensión de la aplicación en España de acuerdos internacionales considerados perjudiciales para el desarrollo productivo y la prosperidad nacional.",
+      "conditions": "Limitado a acuerdos que impidan el desarrollo productivo y la prosperidad de trabajadores, familias, empresas e industrias.",
+      "affected_area": "Política internacional y económica",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 11
+    },
+    {
+      "literal_text": "Revertir las normativas que atacan frontalmente a la industria nacional (prohibición de motores de",
+      "normalized_text": "Reversión de normativas consideradas perjudiciales para la industria nacional, incluyendo aparentemente la prohibición de motores de combustión (texto incompleto).",
+      "conditions": "Texto incompleto; no se puede determinar el alcance total de la propuesta.",
+      "affected_area": "Política industrial y regulatoria",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 11
+    },
+    {
+      "literal_text": "impulsar medidas de apoyo a las familias, fomento de la natalidad y ayuda a la crianza, contribuyendo a revertir el envejecimiento demográfico y el descenso de la natalidad en España.",
+      "normalized_text": "Implementación de medidas de apoyo a las familias, fomento de la natalidad y ayuda a la crianza para revertir el envejecimiento demográfico.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Política familiar y demográfica",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 11
+    },
+    {
+      "literal_text": "Fin a las restricciones para poder explorar, investigar y explotar nuestros recursos naturales y yacimientos minerales.",
+      "normalized_text": "Eliminar las restricciones existentes sobre exploración, investigación y explotación de recursos naturales y yacimientos minerales en España.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Energía y recursos naturales",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Protección de España frente a la dependencia excesiva de materias primas, componentes y tecnologías críticas.",
+      "normalized_text": "Implementar medidas de protección frente a la dependencia exterior en materias primas, componentes y tecnologías críticas, priorizando seguridad económica, soberanía industrial y seguridad nacional.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Seguridad económica e industrial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Recuperar urgentemente el plan nuclear nacional. Se garantizará la supervivencia de las centrales nucleares actuales, derogando el calendario de cierre.",
+      "normalized_text": "Recuperar el plan nuclear nacional, garantizando la continuidad de las centrales nucleares existentes mediante la derogación del calendario de cierre.",
+      "conditions": "Carácter urgente explícitamente indicado.",
+      "affected_area": "Energía nuclear",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Se promoverán estudios urgentes para instalar centrales nucleares en los emplazamientos disponibles adyacentes a las actuales.",
+      "normalized_text": "Promover estudios urgentes para la instalación de nuevas centrales nucleares en emplazamientos adyacentes a las centrales ya existentes.",
+      "conditions": "Limitado a emplazamientos disponibles adyacentes a las centrales actuales.",
+      "affected_area": "Energía nuclear",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Se llevarán a cabo aquellos proyectos que sean viables con la mayor brevedad posible.",
+      "normalized_text": "Ejecutar los proyectos nucleares viables en el menor tiempo posible.",
+      "conditions": "Condicionado a la viabilidad de cada proyecto.",
+      "affected_area": "Energía nuclear",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Aprobación de un Plan Nacional de Reindustrialización enfocado a contrarrestar las deslocalizaciones, la competencia desleal, la pérdida de empleo industrial y la baja participación de la industria en el PIB.",
+      "normalized_text": "Aprobar un Plan Nacional de Reindustrialización para combatir deslocalizaciones, competencia desleal, pérdida de empleo industrial y baja participación industrial en el PIB.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Industria y economía",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Atracción de inversiones estratégicas que favorezcan la economía nacional y el empleo.",
+      "normalized_text": "Atraer inversiones estratégicas orientadas a beneficiar la economía nacional y la generación de empleo.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Industria y economía",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 12
+    },
+    {
+      "literal_text": "Derogar la legislación laboral de Sánchez que ha agravado la precariedad, desincentivado la contratación y empeorado una situación ya de por sí insostenible",
+      "normalized_text": "Derogación de la legislación laboral aprobada durante el gobierno de Sánchez",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Legislación laboral",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "Fomentar la industria turística mediante empleos de calidad y garantizando la convivencia y la preservación de la identidad de nuestros barrios.",
+      "normalized_text": "Fomento de la industria turística con creación de empleos de calidad y preservación de la identidad de los barrios",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Turismo y empleo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "Adoptar medidas fiscales y de promoción interior y exterior de esta industria para crear empleo y riqueza",
+      "normalized_text": "Adopción de medidas fiscales y de promoción nacional e internacional del sector turístico para generar empleo y riqueza",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Fiscalidad y turismo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "Fomento del turismo rural, de montaña o interior, y apoyo a la conservación y difusión de nuestro patrimonio natural, cultural y artístico.",
+      "normalized_text": "Fomento del turismo rural, de montaña e interior, y apoyo a la conservación y difusión del patrimonio natural, cultural y artístico",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Turismo rural y patrimonio",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 13
+    },
+    {
+      "literal_text": "Prohibición de las regularizaciones masivas. Quien entra de forma ilegal jamás podrá regularizar su situación.",
+      "normalized_text": "Prohibir las regularizaciones masivas de inmigrantes e impedir permanentemente la regularización de quienes entraron ilegalmente.",
+      "conditions": "Aplica a personas que hayan entrado de forma ilegal en España.",
+      "affected_area": "Inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "Endurecimiento de los requisitos de adquisición de la nacionalidad española.",
+      "normalized_text": "Aumentar los requisitos exigidos para obtener la nacionalidad española.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Nacionalidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "Revisión de las concesiones fraudulentas de la nacionalidad.",
+      "normalized_text": "Revisar y potencialmente revocar nacionalidades concedidas de forma fraudulenta.",
+      "conditions": "Aplica a concesiones consideradas fraudulentas.",
+      "affected_area": "Nacionalidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "Aumento de los supuestos de pérdida de nacionalidad española para los españoles no de origen en casos de delitos graves o reiterados.",
+      "normalized_text": "Ampliar los casos en que los españoles no de origen pueden perder la nacionalidad, incluyendo delitos graves o reiterados.",
+      "conditions": "Aplica exclusivamente a españoles no de origen; requiere comisión de delitos graves o reiterados.",
+      "affected_area": "Nacionalidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "Repatriación de quienes permanezcan en situación ilegal en nuestra nación.",
+      "normalized_text": "Repatriar a todos los inmigrantes que se encuentren en situación irregular en España.",
+      "conditions": "Aplica a personas en situación ilegal en España.",
+      "affected_area": "Inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "Plan para facilitar el retorno a sus países de los extranjeros que no contribuyan o vivan de subsidios públicos que no alcanzan a los españoles.",
+      "normalized_text": "Crear un plan de retorno voluntario o incentivado para extranjeros que no contribuyen económicamente o que perciben subsidios públicos no accesibles a españoles.",
+      "conditions": "Aplica a extranjeros que no contribuyen o que viven de subsidios públicos no disponibles para españoles.",
+      "affected_area": "Inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "Devolución de menores extranjeros no acompañados a sus padres o a las",
+      "normalized_text": "Devolver a los menores extranjeros no acompañados (MENAS) a sus familias o tutores legales en sus países de origen.",
+      "conditions": "Texto incompleto; aplica a menores extranjeros no acompañados.",
+      "affected_area": "Inmigración / Menores",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 15
+    },
+    {
+      "literal_text": "Eliminación de todas las subvenciones, ayudas, convenios y conciertos con ONG u otras entidades que participen directa o indirectamente en la promoción, facilitación o sostenimiento de la inmigración ilegal",
+      "normalized_text": "Eliminar todas las subvenciones, ayudas, convenios y conciertos públicos a ONGs u otras entidades que promuevan, faciliten o sostengan la inmigración ilegal.",
+      "conditions": "Aplicable a entidades que actúen directa o indirectamente, incluyendo a quienes actúen como cooperadores de mafias de tráfico de personas.",
+      "affected_area": "Inmigración / Financiación pública",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 16
+    },
+    {
+      "literal_text": "Retirar ayudas y fondos de cooperación y promover sanciones a aquellos Estados que fomenten la inmigración ilegal o la utilicen como arma de presión política.",
+      "normalized_text": "Retirar ayudas y fondos de cooperación al desarrollo y promover sanciones internacionales a los Estados que fomenten la inmigración ilegal o la utilicen como instrumento de presión política.",
+      "conditions": "Condicionado a que los países no colaboren en la gestión de flujos migratorios o fomenten activamente la inmigración ilegal.",
+      "affected_area": "Cooperación al desarrollo / Política exterior",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 16
+    },
+    {
+      "literal_text": "Acceso preferente de los españoles a vivienda pública, plazas de guardería, bonos de comedor o transporte, ayudas, prestaciones y servicios sociales.",
+      "normalized_text": "Establecer acceso preferente de los ciudadanos españoles a vivienda pública, guarderías, bonos de comedor, transporte, ayudas y servicios sociales.",
+      "conditions": "Modificación o derogación de normativas que dificulten la aplicación del principio de prioridad nacional.",
+      "affected_area": "Política social y vivienda",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Suprimir toda ayuda y beneficio social a los inmigrantes ilegales.",
+      "normalized_text": "Eliminar todas las ayudas y beneficios sociales destinados a personas en situación irregular en España.",
+      "conditions": "Ninguna condición o excepción mencionada.",
+      "affected_area": "Política social e inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Garantizar la sostenibilidad del sistema sanitario dotándolo de los medios necesarios para atender las necesidades de los españoles, excluyendo a los extranjeros en situación ilegal salvo casos de urgencia grave.",
+      "normalized_text": "Excluir a los extranjeros en situación irregular del acceso al sistema sanitario público, salvo en casos de urgencia grave, y realizar una auditoría del coste de la inmigración en la sanidad pública.",
+      "conditions": "Se exceptúan los casos de urgencia grave.",
+      "affected_area": "Sanidad e inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Auditoría del coste de la inmigración masiva en la sanidad pública.",
+      "normalized_text": "Realizar una auditoría para cuantificar el coste económico de la inmigración en el sistema sanitario público español.",
+      "conditions": "Ninguna condición o excepción mencionada.",
+      "affected_area": "Sanidad e inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Gravamen sobre las remesas al extranjero.",
+      "normalized_text": "Establecer un impuesto o gravamen sobre las transferencias de dinero enviadas desde España al extranjero.",
+      "conditions": "Ninguna condición o excepción mencionada.",
+      "affected_area": "Política fiscal e inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "El Ingreso Mínimo Vital atenderá únicamente las necesidades de los españoles con menos recursos.",
+      "normalized_text": "Restringir el acceso al Ingreso Mínimo Vital exclusivamente a ciudadanos españoles con menos recursos, excluyendo a inmigrantes.",
+      "conditions": "Ninguna condición o excepción mencionada.",
+      "affected_area": "Política social e inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Se promoverá el retorno de aquellos inmigrantes que estén cobrando el IMV o sus complementos autonómicos.",
+      "normalized_text": "Promover el retorno a sus países de origen de los inmigrantes que estén percibiendo el Ingreso Mínimo Vital o complementos autonómicos equivalentes.",
+      "conditions": "Aplicable a inmigrantes que estén cobrando el IMV o sus complementos autonómicos.",
+      "affected_area": "Política social e inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Plan de retorno a nuestra Nación para los españoles que tuvieron que abandonar España en los últimos años por falta de oportunidades y deseen volver.",
+      "normalized_text": "Crear un plan de retorno dirigido a ciudadanos españoles emigrados en los últimos años por falta de oportunidades que deseen regresar a España.",
+      "conditions": "Dirigido a españoles que emigraron por falta de oportunidades y deseen volver voluntariamente.",
+      "affected_area": "Emigración y política social",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 19
+    },
+    {
+      "literal_text": "Garantizar la atención a los españoles más desfavorecidos. Plan de inversiones para recuperar y revitalizar barrios, municipios y provincias abandonadas",
+      "normalized_text": "Creación de un plan de inversiones para recuperar y revitalizar barrios, municipios y provincias que han sido abandonados por los poderes públicos durante décadas",
+      "conditions": "Dirigido a zonas abandonadas durante décadas por los poderes públicos",
+      "affected_area": "Política social y territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 20
+    },
+    {
+      "literal_text": "Poner en marcha todas las medidas necesarias para garantizar la calidad de los servicios públicos, la igualdad y los derechos de todos los españoles",
+      "normalized_text": "Implementación de medidas para garantizar la calidad de los servicios públicos y la igualdad de derechos de todos los españoles con independencia de su lugar de residencia, en los ámbitos de Educación, Sanidad, Seguridad y Justicia",
+      "conditions": "Con independencia del lugar de España en el que residan los ciudadanos; ámbitos específicos: Educación, Sanidad, Seguridad y Justicia",
+      "affected_area": "Servicios públicos",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 20
+    },
+    {
+      "literal_text": "El punto de partida de todo programa de vivienda es el control férreo de las fronteras.",
+      "normalized_text": "Establecer el control estricto de fronteras como condición previa a cualquier política de vivienda.",
+      "conditions": "Ninguna condición adicional especificada.",
+      "affected_area": "Vivienda / Inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Prioridad nacional para acceder a una vivienda protegida, social o a una ayuda al alquiler.",
+      "normalized_text": "Establecer prioridad de acceso a vivienda protegida, social y ayudas al alquiler para ciudadanos españoles.",
+      "conditions": "Ninguna condición adicional especificada.",
+      "affected_area": "Vivienda / Política social",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Modificación o derogación de cuantas normativas pudieran dificultar la consecución plena y efectiva del principio de prioridad nacional.",
+      "normalized_text": "Modificar o derogar normativas que impidan aplicar el principio de prioridad nacional en el acceso a vivienda.",
+      "conditions": "Solo afecta a normativas que dificulten la prioridad nacional.",
+      "affected_area": "Vivienda / Marco normativo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Reforma de la Ley del Suelo.",
+      "normalized_text": "Reformar la Ley del Suelo vigente.",
+      "conditions": "Ninguna condición adicional especificada.",
+      "affected_area": "Vivienda / Marco normativo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Incrementar de manera sustancial y sostenida en el tiempo la construcción de vivienda nueva: ampliación de suelo disponible, agilización de procedimientos, supresión de trabas regulatorias innecesarias, simplificación administrativa.",
+      "normalized_text": "Aumentar la construcción de vivienda nueva mediante ampliación de suelo, agilización de procedimientos, eliminación de trabas regulatorias y simplificación administrativa.",
+      "conditions": "Ninguna condición adicional especificada.",
+      "affected_area": "Vivienda / Urbanismo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Ampliación de la inversión pública en vivienda por habitante.",
+      "normalized_text": "Incrementar la inversión pública destinada a vivienda calculada por habitante.",
+      "conditions": "Ninguna condición adicional especificada.",
+      "affected_area": "Vivienda / Inversión pública",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Aumentar con urgencia la construcción de vivienda protegida para las familias españolas mediante su promoción y colaboración público-privada: cesiones de suelo, subvenciones, descuentos, avales a financiación y créditos blandos.",
+      "normalized_text": "Impulsar urgentemente la construcción de vivienda protegida para familias españolas a través de colaboración público-privada, con cesiones de suelo, subvenciones, descuentos, avales y créditos blandos.",
+      "conditions": "Destinado específicamente a familias españolas.",
+      "affected_area": "Vivienda / Política social",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Derogación de la Ley de Vivienda.",
+      "normalized_text": "Derogar la Ley de Vivienda actualmente vigente.",
+      "conditions": "Ninguna condición adicional especificada.",
+      "affected_area": "Vivienda / Marco normativo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Incentivos fiscales al alquiler de larga",
+      "normalized_text": "Establecer incentivos fiscales para el alquiler de larga duración. (Texto incompleto por corte de página.)",
+      "conditions": "Texto truncado; no se puede verificar el alcance completo de la medida.",
+      "affected_area": "Vivienda / Fiscalidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 23
+    },
+    {
+      "literal_text": "Regulación de la proliferación masiva de VUT y refuerzo del servicio de inspección de pisos turísticos ilegales.",
+      "normalized_text": "Regulación de las viviendas de uso turístico (VUT) y refuerzo del servicio de inspección de pisos turísticos ilegales.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Vivienda / Turismo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Desalojo de la vivienda okupada en menos de 24 horas y recuperación inmediata de la posesión por su legítimo titular, el propietario.",
+      "normalized_text": "Establecer un plazo máximo de 24 horas para el desalojo de viviendas ocupadas ilegalmente y la restitución de la posesión al propietario.",
+      "conditions": "Aplicable al propietario legítimo del inmueble.",
+      "affected_area": "Vivienda / Seguridad / Justicia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Asistencia jurídica gratuita para los afectados y exención de impuestos y de las cargas fiscales y de suministros del inmueble mientras dure la okupación.",
+      "normalized_text": "Proporcionar asistencia jurídica gratuita a propietarios afectados por ocupación ilegal y eximir del pago de impuestos, cargas fiscales y suministros durante el período de ocupación.",
+      "conditions": "Aplicable mientras dure la situación de ocupación ilegal del inmueble.",
+      "affected_area": "Vivienda / Justicia / Fiscalidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Endurecimiento del Código penal. Tipificación de la inquiocupación como delito de estafa.",
+      "normalized_text": "Modificar el Código Penal para tipificar la inquiocupación como delito de estafa.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Vivienda / Justicia / Legislación penal",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Reducción drástica de los impuestos que gravan todo el proceso edificatorio y mejora de los instrumentos de financiación para promotores y constructores.",
+      "normalized_text": "Reducir los impuestos aplicables al proceso edificatorio y mejorar los instrumentos de financiación disponibles para promotores y constructores.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Vivienda / Fiscalidad / Construcción",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Recuperación de la deducción por inversión en vivienda habitual.",
+      "normalized_text": "Restablecer la deducción fiscal por inversión en vivienda habitual en el IRPF.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Vivienda / Fiscalidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 24
+    },
+    {
+      "literal_text": "Fiscalidad media para operaciones de personas físicas o jurídicas destinadas a incrementar la oferta en alquiler residencial de larga duración.",
+      "normalized_text": "Aplicar una fiscalidad media a las operaciones de personas físicas o jurídicas cuyo fin sea incrementar la oferta de alquiler residencial de larga duración.",
+      "conditions": "La operación debe estar destinada a incrementar la oferta en alquiler residencial de larga duración.",
+      "affected_area": "Fiscalidad / Vivienda",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "Fiscalidad agravada y disuasoria para compradores no comunitarios y operaciones especulativas de fondos o sociedades.",
+      "normalized_text": "Establecer una fiscalidad agravada y disuasoria para compradores no comunitarios y para operaciones especulativas realizadas por fondos o sociedades.",
+      "conditions": "Aplica a compradores no comunitarios y a operaciones calificadas como especulativas de fondos o sociedades.",
+      "affected_area": "Fiscalidad / Vivienda",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "La recaudación resultante se destinará a bonificaciones para la compra de vivienda y a la construcción de vivienda protegida.",
+      "normalized_text": "Destinar la recaudación obtenida de la fiscalidad diferenciada a bonificaciones para la compra de vivienda y a la construcción de vivienda protegida.",
+      "conditions": "La recaudación debe provenir de la fiscalidad diferenciada descrita en la misma medida.",
+      "affected_area": "Fiscalidad / Vivienda",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 25
+    },
+    {
+      "literal_text": "Simplificar al mínimo la burocracia que soporta el ciudadano. Toda actuación administrativa deberá justificar su existencia, su utilidad y su proporcionalidad.",
+      "normalized_text": "Revisión permanente y transversal de toda actuación administrativa para suprimir lo no estrictamente necesario y simplificar al máximo lo necesario, afectando a todos los niveles administrativos.",
+      "conditions": "Sin excepción y sin sectores blindados. La revisión será permanente y transversal.",
+      "affected_area": "Administración pública / Desregulación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Impulsar la investigación, el desarrollo y la aplicación de la inteligencia artificial como motor de desarrollo de la economía nacional",
+      "normalized_text": "Impulso de la investigación, desarrollo y aplicación de la inteligencia artificial para aumentar la productividad, crear empleos de calidad y mejorar los servicios públicos.",
+      "conditions": "Garantizando siempre la atención presencial en las administraciones.",
+      "affected_area": "Tecnología / Inteligencia Artificial / Economía",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Facilitar su implantación en nuestras empresas, especialmente pymes y autónomos, y promover la formación de trabajadores y jóvenes",
+      "normalized_text": "Facilitar la implantación de la inteligencia artificial en pymes y autónomos, y promover la formación de trabajadores y jóvenes en esta tecnología.",
+      "conditions": "Especialmente dirigido a pymes y autónomos.",
+      "affected_area": "Tecnología / Formación / Empresa",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Creación de un expediente digital único y centralizado que unifique la gestión de trámites para ciudadanos y empresas, obligando a las diferentes administraciones a compartir los datos entre sí.",
+      "normalized_text": "Instauración de una ventanilla y dato único en la Administración mediante un expediente digital único y centralizado que unifique trámites y obligue a las administraciones a compartir datos.",
+      "conditions": "Ninguna condición o excepción mencionada.",
+      "affected_area": "Administración pública / Digitalización",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Derecho a ser atendido presencialmente en cualquier oficina pública de forma inmediata sin necesidad de solicitar turno por internet.",
+      "normalized_text": "Eliminación de la cita previa obligatoria, garantizando el derecho a atención presencial inmediata en cualquier oficina pública sin necesidad de solicitar turno por internet.",
+      "conditions": "Ninguna condición o excepción mencionada.",
+      "affected_area": "Administración pública / Atención ciudadana",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 27
+    },
+    {
+      "literal_text": "Derogar tres normas por cada una que se apruebe. Cada ley nueva tendrá que identificar, en su propio texto, qué tres normas vigentes deroga.",
+      "normalized_text": "Establecer la obligación de derogar tres normas vigentes por cada nueva ley aprobada, identificándolas explícitamente en el texto de la nueva norma.",
+      "conditions": "Sin la identificación de las tres normas a derogar, la nueva ley no se tramita ni se aprueba.",
+      "affected_area": "Reforma regulatoria y simplificación normativa",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 28
+    },
+    {
+      "literal_text": "Silencio administrativo positivo y declaración responsable como regla general. Si la Administración no contesta en plazo, el ciudadano ha de poder seguir adelante con su proyecto.",
+      "normalized_text": "Establecer el silencio administrativo positivo y la declaración responsable como norma general para que el ciudadano pueda iniciar actividades sin respuesta expresa de la Administración.",
+      "conditions": "Se excluyen expresamente: nacionalidad, residencia, permisos de trabajo a extranjeros e inmigración en general, donde el silencio nunca será positivo.",
+      "affected_area": "Administración pública y simplificación administrativa",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 28
+    },
+    {
+      "literal_text": "Promover una auditoría sistemática de todos los gastos no imprescindibles de las administraciones públicas que serán susceptibles de supresión.",
+      "normalized_text": "Realización de una auditoría sistemática de los gastos no imprescindibles de las administraciones públicas, con publicación progresiva de los resultados.",
+      "conditions": "Los análisis de la auditoría se irán haciendo públicos.",
+      "affected_area": "Administración Pública / Gasto público",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Reducir al mínimo estrictamente necesario el tamaño de la Administración Pública.",
+      "normalized_text": "Reducción del tamaño de la Administración Pública al mínimo estrictamente necesario.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Administración Pública",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Reducir progresivamente hasta su eliminación total las subvenciones a partidos, sindicatos, patronales, ONGs, observatorios y otros organismos ideológicos.",
+      "normalized_text": "Eliminación progresiva y total de las subvenciones públicas a partidos políticos, sindicatos, patronales, ONGs, observatorios y organismos ideológicos.",
+      "conditions": "La eliminación será progresiva hasta llegar a la supresión total.",
+      "affected_area": "Gasto público / Subvenciones",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Derogación o modificación de todas las leyes que dificultan la prosperidad y la libertad de trabajadores, familias y empresas españolas.",
+      "normalized_text": "Derogación o modificación de leyes que obstaculicen la prosperidad y libertad de trabajadores, familias y empresas.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Marco legislativo / Economía",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Acabar con todas las imposiciones climáticas como el Pacto Verde que castigan nuestra industria, nuestro campo o que coartan la libertad de circulación de los españoles, como la imposición de ZBE.",
+      "normalized_text": "Eliminación de las obligaciones derivadas del Pacto Verde Europeo y supresión de las Zonas de Bajas Emisiones (ZBE).",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Política medioambiental / Movilidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Limitar el importe de las multas de tráfico y estacionamiento por infracciones que no comprometan gravemente la seguridad vial.",
+      "normalized_text": "Establecimiento de límites en el importe de las multas de tráfico y estacionamiento para infracciones que no comprometan gravemente la seguridad vial.",
+      "conditions": "Aplicable únicamente a infracciones que no comprometan gravemente la seguridad vial.",
+      "affected_area": "Tráfico y movilidad / Sanciones",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Revisar y reducir las sanciones económicas desproporcionadas, garantizando que su",
+      "normalized_text": "Revisión y reducción de sanciones económicas consideradas desproporcionadas (texto incompleto en el fragmento disponible).",
+      "conditions": "El texto aparece incompleto en el fragmento proporcionado.",
+      "affected_area": "Sanciones / Marco legislativo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 29
+    },
+    {
+      "literal_text": "Superación de las divisivas leyes ideológicas que enfrentan a los españoles, tales como la de Memoria Democrática",
+      "normalized_text": "Derogar o superar la Ley de Memoria Democrática y otras leyes consideradas ideológicas que dividen a los españoles",
+      "conditions": "Se justifica en que dañan la convivencia y tratan de imponer una verdad oficial",
+      "affected_area": "Legislación / Memoria histórica",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 30
+    },
+    {
+      "literal_text": "Derogar las leyes que han criminalizado a los hombres y desprotegido a las mujeres.",
+      "normalized_text": "Derogar las leyes de género vigentes, consideradas perjudiciales tanto para hombres como para mujeres",
+      "conditions": "Se argumenta que no han reducido víctimas, han beneficiado a agresores y han generado denuncias falsas",
+      "affected_area": "Legislación / Igualdad de género",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 30
+    },
+    {
+      "literal_text": "impulsar la aprobación de leyes y normas que protejan de verdad a las mujeres víctimas de violencia, en especial a aquellas que sufran maltrato",
+      "normalized_text": "Aprobar nuevas leyes de protección a mujeres víctimas de violencia y maltrato que no dejen a ninguna víctima desamparada",
+      "conditions": "Como alternativa a la derogación de las leyes de género actuales",
+      "affected_area": "Legislación / Protección de víctimas",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 30
+    },
+    {
+      "literal_text": "Poner fin a la criminalización de la mitad de la población y al desamparo que sufren familias enteras expuestas a ser perjudicadas por el fenómeno creciente de denuncias falsas.",
+      "normalized_text": "Adoptar medidas legislativas para combatir las denuncias falsas y proteger a las familias afectadas por ellas",
+      "conditions": "Enmarcado en la revisión de las leyes de género",
+      "affected_area": "Legislación / Justicia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 30
+    },
+    {
+      "literal_text": "Rechazo explícito al acuerdo UE-Mercosur y de todo acuerdo comercial que obligue a nuestros productores a competir en desigualdad de condiciones.",
+      "normalized_text": "Rechazo al acuerdo comercial UE-Mercosur y a cualquier acuerdo que genere competencia desleal para los productores españoles.",
+      "conditions": "Acuerdos que impliquen desigualdad de condiciones para productores nacionales",
+      "affected_area": "Comercio exterior / Sector primario",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Inclusión de cláusulas espejo.",
+      "normalized_text": "Inclusión de cláusulas espejo en los acuerdos comerciales para garantizar que los productos importados cumplan los mismos estándares que los nacionales.",
+      "conditions": "Ninguna condición explícita mencionada",
+      "affected_area": "Comercio exterior / Sector primario",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Recuperación del principio de preferencia comunitaria.",
+      "normalized_text": "Recuperación del principio de preferencia comunitaria en la política agraria y comercial de la UE.",
+      "conditions": "Ninguna condición explícita mencionada",
+      "affected_area": "Política europea / Sector primario",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Aumento de los controles en frontera y lucha contra el fraude en el etiquetado.",
+      "normalized_text": "Incremento de controles fronterizos y medidas contra el fraude en el etiquetado de productos agroalimentarios.",
+      "conditions": "Ninguna condición explícita mencionada",
+      "affected_area": "Sector primario / Seguridad alimentaria",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Será derogada cualquier normativa que perjudique, imponga cargas o sobrecostes que perjudiquen estos oficios que garantizan nuestra soberanía alimentaria",
+      "normalized_text": "Derogación de normativas que impongan cargas o sobrecostes a agricultores, ganaderos y pescadores.",
+      "conditions": "Normativas que perjudiquen objetivamente a agricultores, ganaderos y pescadores",
+      "affected_area": "Sector primario / Regulación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Creación de un fondo de compensación destinado a mitigar el impacto negativo de las imposiciones normativas de Bruselas, desastres naturales o circunstancias adversas sobrevenidas",
+      "normalized_text": "Creación de un fondo de compensación para proteger a los sectores productivos frente a imposiciones normativas de la UE, desastres naturales o circunstancias adversas.",
+      "conditions": "Activación ante imposiciones normativas de Bruselas, desastres naturales o circunstancias adversas sobrevenidas",
+      "affected_area": "Sector primario / Política económica",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 33
+    },
+    {
+      "literal_text": "Fin de cualquier transferencia de fondos públicos destinados a financiar proyectos en cualquier país extracomunitario que haga competencia desleal",
+      "normalized_text": "Eliminar las transferencias de fondos públicos destinadas a financiar proyectos en países extracomunitarios que compitan deslealmente con productos e industria agroalimentaria española",
+      "conditions": "Aplica a países extracomunitarios que hagan competencia desleal a productos e industria agroalimentaria española",
+      "affected_area": "Agricultura y comercio exterior",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Rechazo frontal a la propuesta de reducción del presupuesto de la PAC.",
+      "normalized_text": "Oposición a cualquier reducción del presupuesto de la Política Agrícola Común (PAC)",
+      "conditions": "Ninguna",
+      "affected_area": "Política agrícola europea",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Vinculación del reparto de fondos de la PAC a una nueva variable que prime la despoblación.",
+      "normalized_text": "Introducir la despoblación como criterio de reparto de los fondos de la PAC",
+      "conditions": "Requiere modificación de los criterios actuales de distribución de la PAC",
+      "affected_area": "Política agrícola europea / Despoblación rural",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Garantizar su autonomía presupuestaria y el fin de las exigencias burocráticas y medioambientales derivadas del fanatismo climático.",
+      "normalized_text": "Eliminar las exigencias burocráticas y medioambientales vinculadas a la PAC y garantizar su autonomía presupuestaria",
+      "conditions": "Ninguna",
+      "affected_area": "Política agrícola europea / Regulación medioambiental",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Promover la revisión de la Política Pesquera Común y de las cuotas y restricciones que perjudican injustificadamente a nuestros pescadores",
+      "normalized_text": "Revisar la Política Pesquera Común para eliminar cuotas y restricciones consideradas perjudiciales para el sector pesquero español",
+      "conditions": "Ninguna",
+      "affected_area": "Pesca / Política pesquera europea",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "reforzando la competitividad, la modernización de la flota, el relevo generacional y la continuidad de las explotaciones pesqueras familiares",
+      "normalized_text": "Impulsar la modernización de la flota pesquera, el relevo generacional y la continuidad de las explotaciones pesqueras familiares",
+      "conditions": "Ninguna",
+      "affected_area": "Pesca",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Impedir la destrucción de la riqueza agrícola y el patrimonio natural para la instalación descontrolada de macro plantas de energías renovables, solar y eólica.",
+      "normalized_text": "Prohibir o restringir la instalación de grandes plantas de energía solar y eólica cuando impliquen destrucción de riqueza agrícola o patrimonio natural",
+      "conditions": "Aplica a instalaciones consideradas descontroladas o de gran escala",
+      "affected_area": "Energía renovable / Agricultura / Medio ambiente",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Revisión de las restricciones ambientales que obstaculizan las labores de prevención y aprovechamiento forestal.",
+      "normalized_text": "Revisar y reducir las restricciones ambientales que dificultan la prevención de incendios y el aprovechamiento forestal",
+      "conditions": "Ninguna",
+      "affected_area": "Medio ambiente / Gestión forestal",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Prevención y lucha contra los incendios: protocolos comunes, coordinación de bomberos y protección civil de distintas administraciones",
+      "normalized_text": "Establecer protocolos comunes y mejorar la coordinación entre bomberos y protección civil de distintas administraciones para la prevención y lucha contra incendios",
+      "conditions": "Ninguna",
+      "affected_area": "Protección civil / Gestión forestal",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "aumento de los medios humanos, materiales y tecnológicos.",
+      "normalized_text": "Incrementar los recursos humanos, materiales y tecnológicos destinados a la lucha contra incendios forestales",
+      "conditions": "Ninguna",
+      "affected_area": "Protección civil / Gestión forestal",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Endurecimiento de las penas a los incendiarios.",
+      "normalized_text": "Aumentar las penas penales aplicables a los autores de incendios forestales",
+      "conditions": "Ninguna",
+      "affected_area": "Justicia / Gestión forestal",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 34
+    },
+    {
+      "literal_text": "Aplicación, con carácter general, del principio de declaración responsable y el silencio administrativo positivo en todos aquellos procedimientos administrativos vinculados al medio rural",
+      "normalized_text": "Aplicar la declaración responsable y el silencio administrativo positivo en los procedimientos administrativos del medio rural para simplificar trámites y reducir cargas burocráticas.",
+      "conditions": "Con carácter general; vinculado a procedimientos del entorno rural; objetivo de asegurar el relevo generacional.",
+      "affected_area": "Administración pública / Medio rural",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Revisión y refuerzo del Sistema Español de Seguros Agrarios ante las necesidades del campo español.",
+      "normalized_text": "Revisar y reforzar el Sistema Español de Seguros Agrarios para adaptarlo a las necesidades actuales del sector agrícola.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Agricultura / Seguros agrarios",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Aumentar la inversión destinada a situaciones sobrevenidas, como inundaciones o granizadas, así como plagas que afecten a la sanidad animal y vegetal.",
+      "normalized_text": "Incrementar la inversión pública para hacer frente a catástrofes naturales (inundaciones, granizadas) y plagas que afecten a la sanidad animal y vegetal.",
+      "conditions": "Limitado a situaciones sobrevenidas y plagas con afectación a sanidad animal y vegetal.",
+      "affected_area": "Agricultura / Gestión de riesgos",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Favorecer el relevo generacional y la continuidad de las explotaciones familiares en el mundo rural apoyando la incorporación de los jóvenes al sector primario y a las cooperativas agroalimentarias.",
+      "normalized_text": "Apoyar la incorporación de jóvenes al sector primario y a las cooperativas agroalimentarias para garantizar el relevo generacional y la continuidad de las explotaciones familiares.",
+      "conditions": "Enfocado en el mundo rural y en jóvenes como destinatarios.",
+      "affected_area": "Agricultura / Relevo generacional",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Impulso de la Formación Profesional en el sector primario a través de programas públicos y concertados.",
+      "normalized_text": "Impulsar la Formación Profesional orientada al sector primario mediante programas de titularidad pública y concertada.",
+      "conditions": "A través de programas públicos y concertados.",
+      "affected_area": "Educación / Sector primario",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "Defensa de la caza como actividad esencial para el control de las poblaciones y para la protección de las explotaciones agrícolas y ganaderas, así como por su valor medioambiental y económico.",
+      "normalized_text": "Defender y proteger la caza como actividad esencial por su función en el control de poblaciones animales, la protección de explotaciones agrícolas y ganaderas, y su valor medioambiental y económico.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Medio ambiente / Caza",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 35
+    },
+    {
+      "literal_text": "tarjeta sanitaria única con historia clínica compartida en todo el territorio nacional",
+      "normalized_text": "Creación de una tarjeta sanitaria única con historia clínica compartida en todo el territorio nacional",
+      "conditions": "Ninguna condición explícita",
+      "affected_area": "Sanidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Garantizar que el desconocimiento de las lenguas regionales no sea en ningún caso impedimento para el acceso por oposición a plazas de personal sanitario",
+      "normalized_text": "Prohibir que el desconocimiento de lenguas regionales sea requisito o impedimento en oposiciones a plazas de personal sanitario",
+      "conditions": "Ninguna condición explícita",
+      "affected_area": "Sanidad / Empleo público",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Refuerzo de la atención primaria y pediátrica en todo el territorio nacional",
+      "normalized_text": "Reforzar la atención primaria y pediátrica a nivel nacional, mejorando accesibilidad y capacidad asistencial",
+      "conditions": "Con especial atención a zonas rurales y de difícil cobertura y a la continuidad entre centros de salud, especialistas y hospitales",
+      "affected_area": "Sanidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Plan nacional de reducción de listas de espera y mejora de la atención sanitaria",
+      "normalized_text": "Implementar un plan nacional para reducir listas de espera, reorganizar circuitos asistenciales y mejorar capacidad diagnóstica y quirúrgica",
+      "conditions": "Ninguna condición explícita",
+      "affected_area": "Sanidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Fomento de la colaboración público-privada cuando ayude efectivamente a reducir demoras, con transparencia, evaluación de calidad y control del gasto",
+      "normalized_text": "Fomentar la colaboración público-privada en sanidad para reducir listas de espera, con transparencia, evaluación de calidad y control del gasto",
+      "conditions": "Solo cuando ayude efectivamente a reducir demoras; con transparencia, evaluación de calidad y control del gasto",
+      "affected_area": "Sanidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Publicación de indicadores comparables y periódicos de listas de espera, actividad y resultados",
+      "normalized_text": "Publicar periódicamente indicadores comparables sobre listas de espera, actividad sanitaria y resultados",
+      "conditions": "Ninguna condición explícita",
+      "affected_area": "Sanidad / Transparencia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Mejora progresiva de retribuciones, reconocimiento de guardias y turnos, conciliación efectiva y carrera profesional basada en formación, experiencia y méritos",
+      "normalized_text": "Mejorar las condiciones laborales y retributivas del personal sanitario, incluyendo reconocimiento de guardias, conciliación y carrera profesional por méritos",
+      "conditions": "Carrera profesional condicionada a formación, experiencia y méritos",
+      "affected_area": "Sanidad / Empleo público",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "Incentivos económicos y profesionales para plazas rurales o de difícil cobertura",
+      "normalized_text": "Establecer incentivos económicos y profesionales para atraer personal sanitario a plazas rurales o de difícil cobertura",
+      "conditions": "Aplicable a plazas rurales o de difícil cobertura",
+      "affected_area": "Sanidad / Empleo público",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 37
+    },
+    {
+      "literal_text": "contratos estables y contratos puente tras la residencia",
+      "normalized_text": "Establecimiento de contratos estables y contratos puente para sanitarios tras completar la residencia.",
+      "conditions": "Aplicable tras la finalización del período de residencia médica.",
+      "affected_area": "Sanidad / Recursos Humanos Sanitarios",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "un programa de retorno de sanitarios españoles que trabajan en el extranjero",
+      "normalized_text": "Creación de un programa específico para promover el retorno de profesionales sanitarios españoles que trabajan en el extranjero.",
+      "conditions": "Dirigido a profesionales que se marcharon por falta de oportunidades en España.",
+      "affected_area": "Sanidad / Recursos Humanos Sanitarios",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Refuerzo de plantillas médicas, de enfermería y personal administrativo.",
+      "normalized_text": "Refuerzo de las plantillas de médicos, enfermeros y personal administrativo del sistema sanitario.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Sanidad / Recursos Humanos Sanitarios",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Fin del turismo sanitario.",
+      "normalized_text": "Eliminación del acceso al sistema sanitario público por parte de personas que lo utilizan de forma oportunista sin residencia o cotización en España.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Sanidad / Acceso al Sistema Sanitario",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Reforzar la prevención y el diagnóstico precoz del cáncer de mama y de los cánceres ginecológicos",
+      "normalized_text": "Refuerzo de los programas de prevención y diagnóstico precoz del cáncer de mama y cánceres ginecológicos.",
+      "conditions": "Enmarcado en la atención específica a la salud de las mujeres.",
+      "affected_area": "Sanidad / Salud de la Mujer",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "mejorar el diagnóstico y tratamiento de las enfermedades que afectan especialmente a las mujeres",
+      "normalized_text": "Mejora del diagnóstico y tratamiento de enfermedades que afectan de forma específica a las mujeres.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Sanidad / Salud de la Mujer",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "garantizar una atención adecuada durante el embarazo, parto y posparto, con especial atención a las necesidades de las madres que afrontan la maternidad a edades más avanzadas",
+      "normalized_text": "Garantía de atención sanitaria adecuada durante el embarazo, parto y posparto, con atención especial a madres de edad avanzada.",
+      "conditions": "Atención especial para madres que afrontan la maternidad a edades más avanzadas.",
+      "affected_area": "Sanidad / Salud de la Mujer / Maternidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Impulso de un mapa de infraestructuras sanitarias urgentes y necesarias y establecimiento de un plan de inversiones directas.",
+      "normalized_text": "Elaboración de un mapa de infraestructuras sanitarias urgentes y creación de un plan de inversiones directas asociado.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Sanidad / Infraestructuras Sanitarias",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Promover la investigación médica con independencia de la rentabilidad comercial (enfermedades raras, enfermedades crónicas, y neurodegenerativas).",
+      "normalized_text": "Promoción de la investigación médica en enfermedades raras, crónicas y neurodegenerativas, independientemente de su rentabilidad comercial.",
+      "conditions": "Aplicable a enfermedades raras, crónicas y neurodegenerativas.",
+      "affected_area": "Sanidad / Investigación Médica",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Refuerzo de la Estrategia Nacional del Cáncer y creación de una Red de Centros Nacionales de Oncología.",
+      "normalized_text": "Refuerzo de la Estrategia Nacional del Cáncer y creación de una Red de Centros Nacionales de Oncología.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Sanidad / Oncología",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "Refuerzo de la Estrategia Nacional de Salud Mental.",
+      "normalized_text": "Refuerzo de la Estrategia Nacional de Salud Mental.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Sanidad / Salud Mental",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 38
+    },
+    {
+      "literal_text": "unificar currículo, evaluaciones nacionales e inspección. Reválidas y EVAU única.",
+      "normalized_text": "Unificación del currículo escolar, las evaluaciones nacionales y la inspección educativa, con una única reválida y EVAU a nivel nacional.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Se garantizará la educación en español en todo el territorio nacional.",
+      "normalized_text": "Garantía de la educación en lengua española en todo el territorio nacional.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Revisión de las homologaciones de títulos extranjeros.",
+      "normalized_text": "Revisión del sistema de homologación de títulos académicos obtenidos en el extranjero.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Garantizar la libre elección de centro educativo en todos los niveles para que las familias elijan libremente el modelo educativo",
+      "normalized_text": "Garantía de la libre elección de centro educativo en todos los niveles educativos, sin que la situación económica o social sea un impedimento.",
+      "conditions": "Sin que la situación económica o social sea un impedimento.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Mejorar el sistema de becas en las etapas universitaria y preuniversitaria para que la educación sea un verdadero ascensor social",
+      "normalized_text": "Mejora del sistema de becas en etapas universitaria y preuniversitaria para que la situación económica no sea un obstáculo al acceso educativo.",
+      "conditions": "Dirigido a estudiantes con falta de recursos económicos.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Eliminación de contenidos ideológicos ajenos a las materias académicas.",
+      "normalized_text": "Eliminación de contenidos considerados ideológicos que no pertenezcan al ámbito estrictamente académico de las materias.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Derogación de la LOMLOE y recuperación de una enseñanza basada en el esfuerzo, el saber, el mérito, la exigencia, la disciplina",
+      "normalized_text": "Derogación de la ley educativa LOMLOE y sustitución por un modelo educativo basado en el esfuerzo, mérito, exigencia, disciplina y responsabilidad personal.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Potenciación de las matemáticas, la lectura, las humanidades y las ciencias.",
+      "normalized_text": "Refuerzo curricular de las áreas de matemáticas, lectura, humanidades y ciencias.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Fin de los móviles en clase, refuerzo de la autoridad del profesor y plan nacional contra el acoso escolar y el ciberacoso.",
+      "normalized_text": "Prohibición del uso de teléfonos móviles en clase, refuerzo de la autoridad docente y creación de un plan nacional contra el acoso escolar y el ciberacoso.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 41
+    },
+    {
+      "literal_text": "Establecimiento de un número máximo por aula de alumnos procedentes de otras culturas o con dominio insuficiente del español.",
+      "normalized_text": "Fijar un límite máximo de alumnos por aula que provengan de otras culturas o que no dominen suficientemente el español.",
+      "conditions": "Aplica a alumnos procedentes de otras culturas o con dominio insuficiente del español.",
+      "affected_area": "Educación / Inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Creación de aulas específicas de nivelación, donde los alumnos que se incorporen tarde al sistema español alcancen el nivel requerido",
+      "normalized_text": "Crear aulas de nivelación específicas para alumnos que se incorporen tardíamente al sistema educativo español, hasta que alcancen el nivel requerido para integrarse en clase ordinaria.",
+      "conditions": "Destinado a alumnos que se incorporen tarde al sistema educativo español.",
+      "affected_area": "Educación / Inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Prohibición del burka y el niqab en todos los espacios públicos y lugares donde se presten servicios públicos",
+      "normalized_text": "Prohibir el uso del burka y el niqab en espacios públicos y en lugares donde se presten servicios públicos.",
+      "conditions": "Con particular atención a centros educativos o entornos donde se vea comprometida la seguridad.",
+      "affected_area": "Libertades públicas / Laicidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Fin de los menús halal en los comedores escolares.",
+      "normalized_text": "Eliminar la oferta de menús halal en los comedores de los centros escolares.",
+      "conditions": "Ninguna condición mencionada.",
+      "affected_area": "Educación / Laicidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Eliminación del programa educativo de Lengua Árabe y Cultura Marroquí.",
+      "normalized_text": "Suprimir el programa educativo de Lengua Árabe y Cultura Marroquí del sistema educativo español.",
+      "conditions": "Ninguna condición mencionada.",
+      "affected_area": "Educación / Política cultural",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Prioridad nacional para escoger centro para los hijos, en la concesión de ayudas y subvenciones educativas y para el acceso a plazas de guardería, becas comedor, becas transporte",
+      "normalized_text": "Establecer prioridad para los nacionales españoles en la elección de centro escolar, concesión de ayudas educativas, plazas de guardería, becas de comedor y becas de transporte.",
+      "conditions": "Prioridad aplicada a nacionales frente a otras personas.",
+      "affected_area": "Educación / Inmigración",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Distrito único y libre elección de centro escolar para los padres. Apuesta decidida por la Formación Profesional.",
+      "normalized_text": "Implantar un distrito único que permita la libre elección de centro escolar por parte de los padres, y reforzar la Formación Profesional.",
+      "conditions": "Ninguna condición mencionada.",
+      "affected_area": "Educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Garantizar la libertad de cátedra de los profesores en las aulas frente a las imposiciones de la corrección política.",
+      "normalized_text": "Garantizar la libertad de cátedra del profesorado universitario frente a imposiciones derivadas de la corrección política.",
+      "conditions": "En el ámbito universitario.",
+      "affected_area": "Educación superior / Libertad académica",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Promoción de la cultura nacional. Afirmación y difusión de la historia común española. Conservación y rehabilitación del patrimonio nacional",
+      "normalized_text": "Promover la cultura nacional española, difundir la historia común de España y conservar y rehabilitar el patrimonio nacional.",
+      "conditions": "Con especial atención al patrimonio nacional (texto incompleto en el fragmento).",
+      "affected_area": "Cultura / Patrimonio",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 42
+    },
+    {
+      "literal_text": "Protección de nuestro patrimonio histórico frente al vandalismo.",
+      "normalized_text": "Establecer medidas de protección del patrimonio histórico contra actos de vandalismo.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Patrimonio histórico y cultural",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 43
+    },
+    {
+      "literal_text": "Reducción de impuestos para el arte y los espectáculos en vivo.",
+      "normalized_text": "Reducir la carga impositiva aplicable al sector del arte y los espectáculos en vivo.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Fiscalidad / Cultura",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 43
+    },
+    {
+      "literal_text": "Nueva Ley de Mecenazgo para elevar las deducciones del IRPF.",
+      "normalized_text": "Aprobar una nueva Ley de Mecenazgo que incremente las deducciones fiscales en el IRPF para donaciones culturales.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Fiscalidad / Cultura",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 43
+    },
+    {
+      "literal_text": "Defensa de la Tauromaquia y promoción de la difusión del arte taurino y potenciación del conjunto de actividades alrededor de esta tradición.",
+      "normalized_text": "Defender y promover la tauromaquia como tradición cultural, fomentando su difusión y las actividades asociadas.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Cultura / Tradiciones",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 43
+    },
+    {
+      "literal_text": "Compromiso con la defensa del deporte femenino, que debe regirse por criterios biológicos y deportivos objetivos para garantizar la igualdad real en la competición.",
+      "normalized_text": "Establecer que la participación en el deporte femenino se rija por criterios biológicos y deportivos objetivos.",
+      "conditions": "Aplicable a competiciones deportivas femeninas.",
+      "affected_area": "Deporte / Igualdad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 43
+    },
+    {
+      "literal_text": "Impulso de becas a deportistas, rebajas fiscales y apoyo a clubes y federaciones deportivas.",
+      "normalized_text": "Crear o ampliar becas para deportistas, aplicar rebajas fiscales y proporcionar apoyo institucional a clubes y federaciones deportivas.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Deporte / Fiscalidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 43
+    },
+    {
+      "literal_text": "Instituciones de Seguridad y Defensa al servicio de los españoles y sus familias, con unas Fuerzas Armadas profesionales y unas Fuerzas y Cuerpos de Seguridad del Estado bien dimensionadas",
+      "normalized_text": "Mantener unas Fuerzas Armadas profesionales y unas Fuerzas y Cuerpos de Seguridad del Estado con los recursos necesarios para defender la soberanía y garantizar la seguridad y libertad.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Seguridad y Defensa",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "Reducción de la edad de responsabilidad penal del menor y plantear la eliminación de inimputabilidad para ciertos delitos violentos como los homicidios o las agresiones sexuales.",
+      "normalized_text": "Reducir la edad de responsabilidad penal de los menores y eliminar la inimputabilidad para delitos violentos graves como homicidios y agresiones sexuales.",
+      "conditions": "Aplica específicamente a delitos violentos como homicidios y agresiones sexuales.",
+      "affected_area": "Justicia y Seguridad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "Ampliación de la prisión permanente revisable. Los que cometen los peores delitos deben tener las máximas condenas.",
+      "normalized_text": "Ampliar el ámbito de aplicación de la prisión permanente revisable para los delitos más graves.",
+      "conditions": "Aplicable a los delitos considerados más graves.",
+      "affected_area": "Justicia y Seguridad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "Asegurar que los directores generales de la Guardia Civil y del Cuerpo Nacional de Policía sean personas con amplia experiencia en el ámbito de la seguridad, y no políticos con carné del partido.",
+      "normalized_text": "Exigir que los directores generales de la Guardia Civil y del Cuerpo Nacional de Policía tengan amplia experiencia en seguridad, excluyendo perfiles políticos partidistas.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Seguridad y Administración Pública",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "Dotar de suficientes medios humanos y recursos materiales, técnicos, tecnológicos, jurídicos, organizativos y presupuestarios, así como de las infraestructuras, instalaciones y demás capacidades a las Fuerzas Armadas",
+      "normalized_text": "Dotar de recursos humanos, materiales, técnicos, tecnológicos, jurídicos, organizativos y presupuestarios a las Fuerzas Armadas, CNI, Guardia Civil, Policía Nacional, Servicio de Vigilancia Aduanera e Instituciones Penitenciarias.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Seguridad y Defensa",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 45
+    },
+    {
+      "literal_text": "Aumento de la inversión, equiparación salarial y sueldos dignos, dignificación de la profesión y programas de modernización y actualización formativa y tecnológica.",
+      "normalized_text": "Incremento de la inversión, equiparación salarial y modernización formativa y tecnológica para las Fuerzas y Cuerpos de Seguridad del Estado.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Seguridad pública / Fuerzas y Cuerpos de Seguridad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 46
+    },
+    {
+      "literal_text": "Reconocimiento de la profesión y servicio en la Guardia Civil y el Cuerpo Nacional de Policía como profesión de riesgo.",
+      "normalized_text": "Reconocimiento legal de la Guardia Civil y el Cuerpo Nacional de Policía como profesiones de riesgo.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Seguridad pública / Fuerzas y Cuerpos de Seguridad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 46
+    },
+    {
+      "literal_text": "Plantillas adecuadamente dimensionadas, equiparación salarial y sueldos dignos, medios materiales y formación frente a los módulos conflictivos y reconocimiento como profesión de riesgo.",
+      "normalized_text": "Dimensionamiento adecuado de plantillas, equiparación salarial, mejora de medios materiales, formación específica y reconocimiento como profesión de riesgo para funcionarios de prisiones.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Seguridad pública / Instituciones penitenciarias",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 46
+    },
+    {
+      "literal_text": "Restablecimiento inmediato del Organismo de Coordinación del Narcotráfico (OCON) Sur.",
+      "normalized_text": "Restablecimiento del Organismo de Coordinación del Narcotráfico (OCON) Sur.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Seguridad pública / Narcotráfico y crimen organizado",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 46
+    },
+    {
+      "literal_text": "Reforzar la prevención, la protección policial y judicial y la asistencia integral a las víctimas, evitando que ninguna mujer quede desamparada.",
+      "normalized_text": "Refuerzo de la prevención, protección policial y judicial, y asistencia integral a víctimas de violencia y agresiones sexuales contra mujeres.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Seguridad pública / Protección de la mujer",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 46
+    },
+    {
+      "literal_text": "Aumento de la inversión en Defensa, sueldos dignos y ayudas a la movilidad geográfica y a la vivienda y alojamiento.",
+      "normalized_text": "Incrementar la inversión en Defensa e introducir mejoras salariales y ayudas de movilidad geográfica, vivienda y alojamiento para el personal militar.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Defensa / Fuerzas Armadas",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 47
+    },
+    {
+      "literal_text": "Reconocimiento de la profesión y servicio en las Fuerzas Armadas como profesión de riesgo.",
+      "normalized_text": "Reconocer oficialmente la profesión militar como profesión de riesgo.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Defensa / Fuerzas Armadas",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 47
+    },
+    {
+      "literal_text": "Difusión de la Cultura de Seguridad y Defensa.",
+      "normalized_text": "Promover y difundir la cultura de seguridad y defensa entre la ciudadanía.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Defensa / Educación cívica",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 47
+    },
+    {
+      "literal_text": "Refuerzo del Sistema Nacional de Protección Civil. Mejorar la prevención, preparación, coordinación y respuesta ante incendios, inundaciones, catástrofes naturales y emergencias de especial gravedad",
+      "normalized_text": "Reforzar el Sistema Nacional de Protección Civil mejorando la prevención, preparación, coordinación y respuesta ante incendios, inundaciones, catástrofes naturales y emergencias graves.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Protección Civil / Emergencias",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 47
+    },
+    {
+      "literal_text": "Refuerzo de la ciberseguridad y protección de las infraestructuras críticas. Mejorar las capacidades nacionales de prevención y respuesta frente a ciberataques, espionaje, sabotajes",
+      "normalized_text": "Reforzar la ciberseguridad nacional y la protección de infraestructuras críticas, mejorando las capacidades de prevención y respuesta ante ciberataques, espionaje y sabotajes.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Ciberseguridad / Seguridad nacional",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 47
+    },
+    {
+      "literal_text": "Defender nuestra soberanía ante injerencias extranjeras y recuperar una posición internacional que priorice la defensa de los intereses reales de los españoles y de la Unidad Nacional.",
+      "normalized_text": "Defender la soberanía nacional frente a injerencias extranjeras y reorientar la política exterior para priorizar los intereses de los españoles y la unidad nacional.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Política exterior / Soberanía nacional",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 47
+    },
+    {
+      "literal_text": "Aplicación de toda la presión internacional necesaria para la recuperación de la soberanía española sobre el Peñón de Gibraltar.",
+      "normalized_text": "Ejercer presión internacional para recuperar la soberanía española sobre Gibraltar.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Política exterior y soberanía territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 48
+    },
+    {
+      "literal_text": "Desmantelamiento de las redes de piratería, narcotráfico, contrabando y blanqueo de capitales que se originan en la colonia y afectan a España.",
+      "normalized_text": "Desmantelar redes de piratería, narcotráfico, contrabando y blanqueo de capitales originadas en Gibraltar.",
+      "conditions": "Redes que se originen en Gibraltar y afecten a España.",
+      "affected_area": "Seguridad y crimen organizado",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 48
+    },
+    {
+      "literal_text": "Recuperación del control de las aguas españolas.",
+      "normalized_text": "Recuperar el control soberano de las aguas territoriales españolas en el entorno de Gibraltar.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Política exterior y soberanía territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 48
+    },
+    {
+      "literal_text": "Plan de inversiones para recuperar la prosperidad del Campo de Gibraltar.",
+      "normalized_text": "Implementar un plan de inversiones destinado a impulsar el desarrollo económico de la comarca del Campo de Gibraltar.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Política económica y desarrollo regional",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 48
+    },
+    {
+      "literal_text": "Todos los beneficios que ahora existen para las familias numerosas se aumentarán y se extenderán a todas las familias de manera progresiva desde el primer hijo",
+      "normalized_text": "Ampliación de los beneficios de familias numerosas a todas las familias, de forma progresiva desde el primer hijo, con incremento de ayudas según número de hijos.",
+      "conditions": "De manera progresiva; las ayudas e intensifican en función del número de hijos.",
+      "affected_area": "Familia y política social",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 51
+    },
+    {
+      "literal_text": "Bonificaciones fiscales a empresas que fomenten la conciliación y hagan descuentos a las familias. Bonificación del 100% de la ayuda en el hogar.",
+      "normalized_text": "Bonificaciones fiscales a empresas que promuevan la conciliación laboral y familiar, y bonificación del 100% del coste de la ayuda en el hogar.",
+      "conditions": "Condicionado a que las empresas fomenten la conciliación y apliquen descuentos a familias.",
+      "affected_area": "Fiscalidad y conciliación laboral",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 51
+    },
+    {
+      "literal_text": "Impulso de los servicios de apoyo a las familias en los centros educativos.",
+      "normalized_text": "Desarrollo de servicios de apoyo a las familias en centros educativos.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación y familia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 51
+    },
+    {
+      "literal_text": "Cotización a la Seguridad Social financiada por el Estado para los españoles dedicados al cuidado de sus hijos.",
+      "normalized_text": "El Estado financiará las cotizaciones a la Seguridad Social de las personas que se dediquen al cuidado de sus hijos, evitando penalizaciones en la jubilación.",
+      "conditions": "Aplicable a españoles dedicados al cuidado de sus hijos.",
+      "affected_area": "Seguridad Social y familia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 51
+    },
+    {
+      "literal_text": "para facilitar el acceso a la vivienda, la compra de vehículos por necesidades familiares, la reducción de la carga fiscal de los productos de primera necesidad infantil",
+      "normalized_text": "Medidas para facilitar el acceso a la vivienda y la compra de vehículos por necesidades familiares, y reducción fiscal sobre productos de primera necesidad infantil.",
+      "conditions": "Enmarcadas dentro del Plan Nacional de Natalidad.",
+      "affected_area": "Vivienda, fiscalidad y familia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 51
+    },
+    {
+      "literal_text": "deducciones por material escolar o clases extraescolares",
+      "normalized_text": "Establecimiento de deducciones fiscales por gastos en material escolar y actividades extraescolares.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Fiscalidad y educación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 51
+    },
+    {
+      "literal_text": "la gratuidad real de la educación infantil de 0 a 3 años",
+      "normalized_text": "Garantizar la gratuidad efectiva de la educación infantil para niños de 0 a 3 años.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Educación y familia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 51
+    },
+    {
+      "literal_text": "Reforzar el presupuesto en dependencia, las ayudas para el cuidado en el hogar, el apoyo a familiares a cargo.",
+      "normalized_text": "Incrementar el presupuesto destinado a dependencia, las ayudas para cuidado en el hogar y el apoyo a familiares cuidadores.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Dependencia y cuidado de mayores",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "Aumento de los programas de atención a la soledad no deseada y de las plazas en residencias.",
+      "normalized_text": "Ampliar los programas de atención a la soledad no deseada y aumentar el número de plazas en residencias para mayores.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Dependencia y cuidado de mayores",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "Refuerzo de las bonificaciones y deducciones para personas con discapacidad",
+      "normalized_text": "Aumentar las bonificaciones y deducciones fiscales o económicas destinadas a personas con discapacidad.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Discapacidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "poner fin a las barreras arquitectónicas que dificultan su movilidad",
+      "normalized_text": "Eliminar las barreras arquitectónicas que limitan la movilidad de las personas con discapacidad.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Discapacidad",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "desburocratizar los procedimientos de reconocimiento de la discapacidad o dependencia, así como otros trámites relacionados.",
+      "normalized_text": "Simplificar y agilizar los procedimientos administrativos para el reconocimiento de la discapacidad o dependencia.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Discapacidad y dependencia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "Eliminar todas aquellas trabas que impiden que las ayudas a la dependencia lleguen de manera rápida e íntegra a los beneficiarios.",
+      "normalized_text": "Suprimir los obstáculos administrativos o procedimentales que retrasan o reducen la entrega de ayudas a la dependencia a sus beneficiarios.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Dependencia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "Preservar la inocencia de los menores y protegerlos frente a los riesgos presentes en los entornos digitales, tales como la adicción al juego o la pornografía",
+      "normalized_text": "Establecer medidas de protección de menores frente a riesgos digitales como la adicción al juego, la pornografía y la vulnerabilidad ante delitos.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Protección de menores",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "Garantizar la objeción de conciencia de los profesionales sanitarios y farmacéuticos y potenciar los cuidados paliativos.",
+      "normalized_text": "Asegurar el derecho a la objeción de conciencia de sanitarios y farmacéuticos, y reforzar los cuidados paliativos.",
+      "conditions": "Enmarcado en la defensa del derecho a la vida desde la concepción hasta la muerte natural.",
+      "affected_area": "Sanidad y bioética",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "Combatir la brecha maternal facilitando la formación, permanencia, promoción y reincorporación al trabajo de las madres",
+      "normalized_text": "Implementar medidas para facilitar la formación, permanencia, promoción laboral y reincorporación al empleo de madres que interrumpieron su carrera por maternidad o cuidado de familiares.",
+      "conditions": "Dirigido a madres que han interrumpido sus carreras por maternidad o cuidado de familiares y desean retomarla.",
+      "affected_area": "Empleo y conciliación familiar",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 52
+    },
+    {
+      "literal_text": "Reforzar los derechos de conciliación de la vida personal, familiar y profesional de todos los trabajadores",
+      "normalized_text": "Refuerzo de los derechos de conciliación de la vida personal, familiar y profesional para todos los trabajadores.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Conciliación laboral y familiar",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 53
+    },
+    {
+      "literal_text": "asunción equilibrada de las responsabilidades familiares",
+      "normalized_text": "Promoción de una asunción equilibrada de las responsabilidades familiares entre los trabajadores.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Conciliación laboral y familiar",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 53
+    },
+    {
+      "literal_text": "Incentivos para las empresas que favorezcan la conciliación familiar y laboral",
+      "normalized_text": "Creación de incentivos dirigidos a empresas que promuevan la conciliación familiar y laboral.",
+      "conditions": "Aplicable únicamente a empresas que favorezcan activamente la conciliación.",
+      "affected_area": "Política empresarial y laboral",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 53
+    },
+    {
+      "literal_text": "Aumento del presupuesto en conciliación familiar con ampliación de los servicios complementarios de aula en los centros educativos",
+      "normalized_text": "Incremento del presupuesto destinado a conciliación familiar y ampliación de los servicios complementarios de aula en centros educativos.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Educación y conciliación familiar",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 53
+    },
+    {
+      "literal_text": "Modificar la Ley Orgánica del Poder Judicial para que los doce vocales de procedencia judicial del Consejo General del Poder Judicial sean elegidos mediante voto personal, directo y secreto",
+      "normalized_text": "Reforma de la LOPJ para que los 12 vocales judiciales del CGPJ sean elegidos por voto directo, personal y secreto entre jueces y magistrados",
+      "conditions": "Aplicable a los vocales de procedencia judicial, no al total de miembros del CGPJ",
+      "affected_area": "Independencia judicial / Poder Judicial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "Acabar con la colonización partidista de cualquier institución judicial.",
+      "normalized_text": "Eliminación de la influencia partidista en las instituciones judiciales",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Independencia judicial / Poder Judicial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "Garantizar la idoneidad, imparcialidad, competencia profesional e independencia del Fiscal General del Estado.",
+      "normalized_text": "Establecimiento de garantías de idoneidad, imparcialidad y competencia profesional para el cargo de Fiscal General del Estado",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Independencia judicial / Ministerio Fiscal",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "El control de la constitucionalidad de las leyes no puede depender de un órgano político.",
+      "normalized_text": "Despolitización del Tribunal Constitucional en el ejercicio del control de constitucionalidad de las leyes",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Tribunal Constitucional",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "Velar por el respeto del papel funcional del Tribunal Supremo y evitar que el Tribunal Constitucional actúe como un tribunal extraordinario por encima del mismo.",
+      "normalized_text": "Preservación del papel funcional del Tribunal Supremo frente a posibles extralimitaciones del Tribunal Constitucional",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Tribunal Constitucional / Tribunal Supremo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "Reforma integral del sistema judicial que deje atrás los desvaríos ideológicos de este Gobierno y permita que los españoles puedan contar con una Administración de Justicia rápida y eficiente.",
+      "normalized_text": "Reforma integral del sistema judicial orientada a mejorar la rapidez y eficiencia de la Administración de Justicia",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Administración de Justicia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "Aumento de las inversiones en sedes judiciales y profesionales de la justicia.",
+      "normalized_text": "Incremento de la inversión pública en infraestructuras judiciales y en los profesionales del ámbito de la justicia",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Administración de Justicia / Inversión pública",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "Recuperar el delito de sedición,",
+      "normalized_text": "Reintroducción del delito de sedición en el ordenamiento jurídico español",
+      "conditions": "Texto incompleto; la propuesta continúa en página siguiente",
+      "affected_area": "Unidad Nacional / Derecho Penal",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 55
+    },
+    {
+      "literal_text": "agravar el tipo delictivo de la malversación de caudales públicos",
+      "normalized_text": "Agravamiento del tipo penal del delito de malversación de caudales públicos",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Justicia / Corrupción",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 56
+    },
+    {
+      "literal_text": "prohibir los indultos para delitos relacionados con la corrupción política, la forma política del Estado o la integridad territorial",
+      "normalized_text": "Prohibición de conceder indultos en delitos de corrupción política, forma política del Estado o integridad territorial",
+      "conditions": "Limitado a delitos relacionados con corrupción política, forma política del Estado o integridad territorial",
+      "affected_area": "Justicia / Corrupción",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 56
+    },
+    {
+      "literal_text": "Ilegalización de los partidos políticos, asociaciones u organizaciones de cualquier tipo que atenten contra la soberanía e independencia de España, su unidad e integridad territorial",
+      "normalized_text": "Ilegalización de partidos políticos, asociaciones u organizaciones que atenten contra la soberanía, independencia, unidad e integridad territorial de España",
+      "conditions": "Aplicable a cualquier tipo de organización que atente contra los valores mencionados",
+      "affected_area": "Sistema político / Unidad territorial",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 56
+    },
+    {
+      "literal_text": "Protección de nuestros usos y costumbres y de las tradiciones religiosas y populares de España, frente a cualquier intento de imposición ideológica o de oposición extranjera",
+      "normalized_text": "Protección legal de los usos, costumbres y tradiciones religiosas y populares de España frente a imposición ideológica u oposición extranjera",
+      "conditions": "Frente a intentos de imposición ideológica o de oposición extranjera",
+      "affected_area": "Cultura / Identidad nacional",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 56
+    },
+    {
+      "literal_text": "Las penas por las ofensas y ultrajes a España y sus símbolos o emblemas deben agravarse para que ninguna afrenta a ellos quede impune",
+      "normalized_text": "Agravamiento de las penas por ofensas y ultrajes a los símbolos nacionales (Bandera, Escudo, Himno y Corona)",
+      "conditions": "Aplicable especialmente a Bandera, Escudo, Himno y Corona",
+      "affected_area": "Justicia / Identidad nacional",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 56
+    },
+    {
+      "literal_text": "Mayores medios y recursos a los juzgados y las unidades de la Guardia Civil y del Cuerpo Nacional de Policía especializadas en la lucha contra la corrupción",
+      "normalized_text": "Incremento de medios y recursos para juzgados y unidades especializadas de la Guardia Civil y Policía Nacional en materia de lucha contra la corrupción",
+      "conditions": "Ninguna condición específica mencionada",
+      "affected_area": "Justicia / Seguridad / Corrupción",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 56
+    },
+    {
+      "literal_text": "Auditoría integral de todas las Administraciones con el fin destapar cualquier indicio de corrupción y llevarlo ante la Justicia.",
+      "normalized_text": "Realizar una auditoría integral de todas las Administraciones Públicas para detectar indicios de corrupción y trasladarlos a la Justicia.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Lucha contra la corrupción / Administración Pública",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Reforzaremos la responsabilidad patrimonial personal de los cargos públicos condenados por delitos de corrupción, garantizando que respondan con todos sus bienes presentes y futuros",
+      "normalized_text": "Reforzar la responsabilidad patrimonial personal de cargos públicos condenados por corrupción, haciéndoles responder con todos sus bienes presentes y futuros hasta recuperar íntegramente los fondos públicos desviados.",
+      "conditions": "Aplicable únicamente a cargos públicos condenados por delitos de corrupción.",
+      "affected_area": "Lucha contra la corrupción / Responsabilidad de cargos públicos",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Auditoría del patrimonio inmobiliario del Estado.",
+      "normalized_text": "Realizar una auditoría del patrimonio inmobiliario del Estado para garantizar su uso al servicio de las necesidades de vivienda o prestación eficiente de servicios públicos.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Patrimonio del Estado / Vivienda",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Plan Nacional de Rehabilitación del Patrimonio Inmobiliario para la revitalización y creación de empleo.",
+      "normalized_text": "Crear un Plan Nacional de Rehabilitación del Patrimonio Inmobiliario orientado a la revitalización y la creación de empleo.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Patrimonio del Estado / Empleo",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Aprobación de una ley que impida de forma efectiva el enaltecimiento del terrorismo, homenajes a terroristas, actos de humillación de las víctimas o ataques a instituciones y símbolos de España.",
+      "normalized_text": "Aprobar una ley que prohíba efectivamente el enaltecimiento del terrorismo, los homenajes a terroristas, los actos de humillación a víctimas y los ataques a instituciones y símbolos de España.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Terrorismo / Víctimas / Legislación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Promover la investigación de todos los crímenes de ETA aún no resueltos",
+      "normalized_text": "Promover la investigación de todos los crímenes de ETA que permanecen sin resolver.",
+      "conditions": "Referido exclusivamente a crímenes de ETA no resueltos.",
+      "affected_area": "Terrorismo / Justicia",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "impulsar la consideración de todos y cada uno de los delitos cometidos por la organización terrorista ETA como crímenes de lesa humanidad, para que no prescriban nunca.",
+      "normalized_text": "Impulsar la calificación de todos los delitos cometidos por ETA como crímenes de lesa humanidad para garantizar su imprescriptibilidad.",
+      "conditions": "Aplicable a todos los delitos cometidos por ETA.",
+      "affected_area": "Terrorismo / Justicia / Legislación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Garantizar la efectiva imprescriptibilidad de todos los delitos de terrorismo.",
+      "normalized_text": "Garantizar que todos los delitos de terrorismo sean imprescriptibles.",
+      "conditions": "Aplicable a todos los delitos de terrorismo, sin distinción.",
+      "affected_area": "Terrorismo / Legislación",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Fin de los privilegios penitenciarios de los condenados por terrorismo.",
+      "normalized_text": "Eliminar los privilegios penitenciarios de las personas condenadas por delitos de terrorismo.",
+      "conditions": "Aplicable únicamente a condenados por terrorismo.",
+      "affected_area": "Terrorismo / Política penitenciaria",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 57
+    },
+    {
+      "literal_text": "Limpiar RTVE de comisarios políticos, acabar con el despilfarro y ponerla al servicio de los españoles.",
+      "normalized_text": "Eliminación de cargos de designación política en RTVE y reducción del gasto considerado innecesario en el ente público.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Medios de comunicación públicos",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 58
+    },
+    {
+      "literal_text": "Reforma integral de la Radio y la Televisión pública para que preste un verdadero servicio público informando con objetividad y pluralidad.",
+      "normalized_text": "Reforma estructural de RTVE orientada a garantizar objetividad y pluralidad informativa.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Medios de comunicación públicos",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 58
+    },
+    {
+      "literal_text": "Garantizar el derecho a comunicar o recibir libremente información veraz.",
+      "normalized_text": "Garantía legal del derecho a la libre comunicación y recepción de información veraz.",
+      "conditions": "Ninguna condición explícita mencionada.",
+      "affected_area": "Derechos fundamentales / Libertad de información",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 58
+    },
+    {
+      "literal_text": "Garantizar la libertad de expresión de todos los españoles frente a la deriva censora del Gobierno de Sánchez.",
+      "normalized_text": "Protección de la libertad de expresión de los ciudadanos españoles frente a medidas consideradas censoras del gobierno vigente.",
+      "conditions": "Se enmarca en oposición a políticas del Gobierno de Sánchez.",
+      "affected_area": "Derechos fundamentales / Libertad de expresión",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 58
+    },
+    {
+      "literal_text": "Aumento de la inversión en infraestructuras que incluya, al menos, red de carreteras, red ferroviaria, infraestructuras hidráulicas y de contención de inundaciones, telecomunicaciones, nodos logísticos, transporte y puertos.",
+      "normalized_text": "Incrementar la inversión en infraestructuras abarcando carreteras, ferrocarril, infraestructuras hidráulicas, telecomunicaciones, nodos logísticos y puertos.",
+      "conditions": "Las inversiones deben diseñarse en interés del conjunto de los españoles y con el fin de conectar los distintos territorios de España.",
+      "affected_area": "Infraestructuras y transportes",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 61
+    },
+    {
+      "literal_text": "Prioridad a la seguridad ferroviaria, al mantenimiento de una red abandonada e infradotada y a los servicios de Cercanías y Media Distancia.",
+      "normalized_text": "Establecer como prioridad la seguridad ferroviaria y el mantenimiento de la red, con especial atención a los servicios de Cercanías y Media Distancia.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Infraestructuras ferroviarias",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 61
+    },
+    {
+      "literal_text": "Auditoría del estado de la red.",
+      "normalized_text": "Realizar una auditoría del estado actual de la red ferroviaria.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Infraestructuras ferroviarias",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 61
+    },
+    {
+      "literal_text": "Modernización y electrificación de las líneas convencionales para conectar también las ciudades pequeñas y la España rural.",
+      "normalized_text": "Modernizar y electrificar las líneas ferroviarias convencionales para mejorar la conectividad de ciudades pequeñas y zonas rurales.",
+      "conditions": "Ninguna condición específica mencionada.",
+      "affected_area": "Infraestructuras ferroviarias",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 61
+    },
+    {
+      "literal_text": "Conclusión de las obras pendientes, conservación de cauces, adecuación de barrancos y desarrollo de las infraestructuras hidráulicas necesarias para garantizar la seguridad y el bienestar de los españoles.",
+      "normalized_text": "Finalizar obras pendientes de protección contra inundaciones, conservar cauces, adecuar barrancos y desarrollar infraestructuras hidráulicas de seguridad.",
+      "conditions": "Poner fin al planeamiento y abandono ideológico de las infraestructuras esenciales contra las inundaciones.",
+      "affected_area": "Infraestructuras hidráulicas y gestión de inundaciones",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 61
+    },
+    {
+      "literal_text": "Plan Nacional del Agua. Interconexión de todas las cuencas que permita una gestión más eficiente del agua y pueda servir para reactivar económicamente a",
+      "normalized_text": "Crear un Plan Nacional del Agua que incluya la interconexión de todas las cuencas hidrográficas para una gestión más eficiente del agua y la reactivación económica.",
+      "conditions": "El texto está incompleto; la propuesta continúa en página siguiente.",
+      "affected_area": "Gestión del agua e infraestructuras hidráulicas",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 61
+    },
+    {
+      "literal_text": "impulsar y modernizar los regadíos y la producción de energía",
+      "normalized_text": "Impulsar y modernizar los sistemas de regadío y la producción de energía en el sector primario.",
+      "conditions": "Orientado al beneficio del sector primario",
+      "affected_area": "Agricultura y energía",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 62
+    },
+    {
+      "literal_text": "conclusión de las obras pendientes y desarrollo de las infraestructuras hidráulicas necesarias para garantizar la seguridad de los españoles ante las inundaciones",
+      "normalized_text": "Concluir obras pendientes y desarrollar infraestructuras hidráulicas para proteger a la población frente a inundaciones.",
+      "conditions": "Obras ya pendientes de conclusión; nuevas infraestructuras condicionadas a necesidad de seguridad",
+      "affected_area": "Infraestructuras hidráulicas y gestión de riesgos naturales",
+      "source_party": "Vox",
+      "source_title": "Programa Electoral Vox 2026",
+      "source_page": 62
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+ "generated": "2026-11-23",
+ "source": "revisión humana/asistida de docs/revision_humana.md",
+ "decisions": [
+  {
+   "party": "PSOE",
+   "qid": "Q079",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q061",
+   "action": "reject",
+   "reason": "Rechaza subir el gasto militar al 5 % del PIB, no se opone a aumentar el gasto en defensa en general."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q023",
+   "action": "reject",
+   "reason": "La cita es solo el título de un epígrafe sobre la Ertzaintza, no propone aumentar la inversión policial."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q046",
+   "action": "reject",
+   "reason": "Defiende libertad de base de cotización: la cita es ambigua sobre cuota por ingresos reales."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q048",
+   "action": "reject",
+   "reason": "Propone una rebaja de impuestos a la electricidad, no una intervención del mercado."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q076",
+   "action": "reject",
+   "reason": "La cita trata de una consulta para Treviño y Villaverde, no del derecho de autodeterminación de las comunidades."
+  }
+ ]
+}

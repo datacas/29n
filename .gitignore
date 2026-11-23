@@ -1,0 +1,67 @@
+# Dependencias y compilación
+node_modules/
+.nuxt/
+.output/
+.output-run/
+dist/
+
+# Entorno y secretos (nunca al repositorio)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Almacenamiento local y copias de seguridad
+storage/
+!storage/.gitkeep
+backups/
+*.dump
+*.sql.gz
+
+# Programas originales de trabajo (la copia pública que se sirve está en app/public/programas)
+docs/programas/*.pdf
+docs/programas/*Zone.Identifier
+
+# Datos de trabajo regenerables del análisis con IA (las decisiones de revisión sí se versionan)
+docs/spike12/scan/
+docs/spike12/theme_scan/
+docs/spike12/*plan*.json
+docs/spike12/translate_*.json
+docs/spike12/*preview*.md
+docs/spike12/missed_evidence_report.md
+docs/spike12/labels/
+.tmp-review/
+
+# Herramientas y agentes locales
+.agents/
+.claude/
+.codex/
+.junie/
+.serena/
+.playwright-cli/
+.aws/
+.data/
+.neon
+.impeccable/mocks/
+.impeccable/live/
+.impeccable/review/
+.impeccable/questions/
+.impeccable/config.local.json
+playwright-report/
+test-results/
+
+# Editor y sistema
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*Zone.Identifier
+
+# Registros
+*.log
+npm-debug.log*
+yarn-debug.log*

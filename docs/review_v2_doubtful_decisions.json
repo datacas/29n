@@ -1,0 +1,528 @@
+{
+ "generated": "2026-11-23",
+ "source": "revisión asistida por Claude de las 76 dudosas de la v2 (SIN APLICAR)",
+ "decisions": [
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q034",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q034",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q034",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q035",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q035",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q036",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q036",
+   "action": "reject",
+   "reason": "Solo un eslogan («Las casas son para las familias, no para las empresas»): no se puede codificar la postura."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q037",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q037",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q038",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q038",
+   "action": "reject",
+   "reason": "La cita habla de plazas públicas gratuitas de otro ámbito (educación infantil), no de un sistema de cuidados."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q038",
+   "action": "reject",
+   "reason": "Cita genérica sobre un «Estado que llegue a tiempo»: no responde a la pregunta."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q039",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q039",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q039",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q040",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q041",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q041",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q041",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q042",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q042",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q044",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q044",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q045",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q046",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q046",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q047",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q047",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q048",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q048",
+   "action": "reject",
+   "reason": "Es la justificación de otra medida («es viable porque…»); la medida no está en la cita."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q048",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q049",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q049",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q050",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q050",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q050",
+   "action": "reject",
+   "reason": "Eslogan de ahorro sin medida concreta de reducción del gasto."
+  },
+  {
+   "party": "PNV",
+   "qid": "Q051",
+   "action": "reject",
+   "reason": "Habla de previsión social de empleo, no de prestaciones por desempleo."
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q051",
+   "action": "reject",
+   "reason": "Es solo la justificación de viabilidad; no se ve la medida sobre prestaciones por desempleo."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q052",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q052",
+   "action": "reject",
+   "reason": "Mención genérica a apoyar cooperativas dentro de una frase sobre salarios y empleo; no es una medida."
+  },
+  {
+   "party": "BNG",
+   "qid": "Q053",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q053",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q053",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q055",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q056",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q056",
+   "action": "approve",
+   "value": 0,
+   "stance": "explicit_neutral",
+   "reason": "Neutralidad explícita: el programa dice que conviven posturas distintas y no propone cambios."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q061",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q061",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q062",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q063",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q063",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q066",
+   "action": "reject",
+   "reason": "Describe la carga de cuidados de las mujeres; no se pronuncia sobre la ley contra la violencia de género."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q066",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q068",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q069",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q069",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q070",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q071",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q072",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q074",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q074",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q075",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PCTE",
+   "qid": "Q075",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q076",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q077",
+   "action": "exclude",
+   "stance": "ambiguous",
+   "reason": "Postura ambigua: defiende «ordinalidad» y financiación singular, que no es ni igualar por habitante ni lo contrario."
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q077",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q078",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q078",
+   "action": "reject",
+   "reason": "Vaga («generar seguridad, acompañamiento y conexión con los pueblos»); sin medida de incentivos o servicios."
+  },
+  {
+   "party": "SALF",
+   "qid": "Q079",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q081",
+   "action": "reject",
+   "reason": "Es su propuesta para Galiza; la pregunta (Q081) es sobre Catalunya, así que no es comparable."
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q083",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q083",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q084",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  }
+ ]
+}

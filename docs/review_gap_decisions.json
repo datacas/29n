@@ -1,0 +1,579 @@
+{
+ "generated": "2026-11-23",
+ "source": "recuperación de evidencia perdida por filtros (revisión por Claude)",
+ "decisions": [
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q001",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q001",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q001",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q002",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q003",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q004",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q005",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q006",
+   "action": "reject",
+   "reason": "Fragmento sin medida concreta («el dinero público, para la sanidad pública»)."
+  },
+  {
+   "party": "FE de las JONS",
+   "qid": "Q006",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q007",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q007",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q008",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q009",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q010",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q010",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q011",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q014",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q015",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q015",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q015",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Partido Autónomos",
+   "qid": "Q015",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q015",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q016",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q018",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q019",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q022",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q023",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q023",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q024",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q025",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q025",
+   "action": "reject",
+   "reason": "Observación general sobre los países ricos; no es una posición sobre ampliar la acogida."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q026",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q026",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q026",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "PNV",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q029",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q030",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q031",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q036",
+   "action": "reject",
+   "reason": "Principio general («la vivienda no es una mercancía»), sin medida sobre limitar a grandes tenedores."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q037",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q037",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "ERC",
+   "qid": "Q038",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q040",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q041",
+   "action": "reject",
+   "reason": "Fragmento ininteligible sin contexto."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q042",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q042",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q043",
+   "action": "reject",
+   "reason": "Habla de complementos de renta en Canarias, no de apoyos a la discapacidad."
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q043",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q046",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q046",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q046",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q047",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q047",
+   "action": "reject",
+   "reason": "Fragmento sin medida sobre el fraude fiscal."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q048",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q048",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "PSOE",
+   "qid": "Q052",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q052",
+   "action": "reject",
+   "reason": "Habla del relevo generacional en explotaciones familiares, no de cooperativas."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q053",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "EH Bildu",
+   "qid": "Q053",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Coalición Canaria",
+   "qid": "Q055",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q055",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q055",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q055",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PP",
+   "qid": "Q056",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q057",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "PACMA",
+   "qid": "Q057",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q058",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q058",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Sumar",
+   "qid": "Q058",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Obrero",
+   "qid": "Q061",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q062",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q063",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "BNG",
+   "qid": "Q064",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "SALF",
+   "qid": "Q065",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Democracia21",
+   "qid": "Q070",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q073",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q076",
+   "action": "reject",
+   "reason": "Se refiere a la autodeterminación del Rif, no a las comunidades españolas."
+  },
+  {
+   "party": "Adelante Andalucía",
+   "qid": "Q078",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Vox",
+   "qid": "Q083",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Frente Amplio",
+   "qid": "Q084",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  }
+ ]
+}

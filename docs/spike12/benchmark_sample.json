@@ -1,0 +1,1400 @@
+{
+  "spike": "SPIKE-12",
+  "seed": 12,
+  "created_at": "2026-11-18T23:16:51.845Z",
+  "size": 30,
+  "items": [
+    {
+      "position_id": "254c123f-cfb7-47fd-b5e2-7e7f352f4cc2",
+      "question_id": "Q009",
+      "party": "ERC",
+      "stratum": "catalan",
+      "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicios públicos?",
+      "claims": [
+        {
+          "literal_text": "Modificar la legislació vigent i els reglaments que la despleguen per facilitar que, en les liquidacions dels tributs cedits, es puguin sol·licitar pròrrogues en el pagament fins a 4 anys",
+          "page": 23,
+          "conditions": "Aplicable a las liquidaciones de tributos cedidos.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "nous trams per als ingressos superiors als 6.000 euros mensuals",
+          "page": 27,
+          "conditions": "Aplicable a ingresos superiores a 6.000 euros mensuales",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:05.856Z"
+      }
+    },
+    {
+      "position_id": "6364f12b-1444-459f-aae7-610f645ff49f",
+      "question_id": "Q004",
+      "party": "ERC",
+      "stratum": "catalan",
+      "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+      "claims": [
+        {
+          "literal_text": "Millorar la regulació dels arrendaments per protegir els drets dels arrendataris i evitar els desnonaments de les persones vulnerables sense habitatge alternatiu",
+          "page": 19,
+          "conditions": "Las compensaciones aplican a pequeños propietarios que puedan verse perjudicados por estas situaciones.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "es planteja el traspàs dels pisos de la SAREB a la Generalitat de Catalunya",
+          "page": 18,
+          "conditions": "Condicionado a que el Estado realice el traspaso a la Generalitat, competente en materia de vivienda",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:05.941Z"
+      }
+    },
+    {
+      "position_id": "9593f82c-1fa9-49fd-b612-a5a00d12e6e5",
+      "question_id": "Q023",
+      "party": "ERC",
+      "stratum": "catalan",
+      "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+      "claims": [
+        {
+          "literal_text": "Cal reforçar la conservació de les vies, modernitzar els centres de control i els sistemes de senyalització i protecció, i revisar preventivament la seguretat de tota la xarxa",
+          "page": 39,
+          "conditions": "Incluye líneas de alta velocidad y tramos con circulación mixta de pasajeros y mercancías.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.041Z"
+      }
+    },
+    {
+      "position_id": "d2554b0a-9545-4f65-951c-e629682b2fe4",
+      "question_id": "Q021",
+      "party": "ERC",
+      "stratum": "catalan",
+      "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+      "claims": [
+        {
+          "literal_text": "Reformar la legislació civil i del Registre Civil per eliminar les discriminacions en la filiació de les famílies de dues mares, les persones trans i no-binàries i altres models familiars",
+          "page": 24,
+          "conditions": "Con participación de entidades LGBTI+ y priorizando el interés superior del menor.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformar la fiscalitat per afavorir la substitució dels combustibles fòssils per electricitat i garantir que les obligacions socials del sistema energètic disposin de finançament públic transparent.",
+          "page": 31,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Impulsar la reforma del Codi Penal per reforçar les conseqüències dels delictes de maltractament i garantir que els animals retirats a persones condemnades no tornin a estar en les seves mans",
+          "page": 36,
+          "conditions": "Aplicable a personas condenadas por delitos de maltrato animal.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.141Z"
+      }
+    },
+    {
+      "position_id": "8ffb2e0b-454c-4388-9e15-b32d59aea6d8",
+      "question_id": "Q022",
+      "party": "ERC",
+      "stratum": "catalan",
+      "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas populares)?",
+      "claims": [
+        {
+          "literal_text": "cal derogar la Llei mordassa, una norma absolutament lesiva per als moviments socials i la dissidència política",
+          "page": 7,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Aprovar un nou model de finançament per garantir la sobirania dels Països Catalans i el benestar de la ciutadania.",
+          "page": 12,
+          "conditions": "El acuerdo político ya fue alcanzado en enero de 2026 pero fue bloqueado parlamentariamente; su implementación requiere desbloqueo legislativo en la nueva legislatura.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reclamar la participació de la Generalitat de Catalunya en la negociació de tractats internacionals en el marc de Nacions Unides dels àmbits de la seva competència",
+          "page": 17,
+          "conditions": "Limitado a los ámbitos de competencia de la Generalitat de Catalunya",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "revisar la contractació pública per facilitar la participació directa de les pimes mitjançant la digitalització dels procediments, la divisió justificada en lots",
+          "page": 23,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "opposes",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.241Z"
+      }
+    },
+    {
+      "position_id": "2e206184-6775-4550-8cf4-42a0e5f32703",
+      "question_id": "Q019",
+      "party": "ERC",
+      "stratum": "catalan",
+      "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en las relaciones internacionales?",
+      "claims": [
+        {
+          "literal_text": "el govern espanyol condicioni qualsevol acord de cooperació o relació amb el Marroc al respecte escrupolós dels drets humans i la sobirania del Sàhara Occidental.",
+          "page": 16,
+          "conditions": "Ninguna condición específica adicional mencionada.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "approved"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.340Z"
+      }
+    },
+    {
+      "position_id": "3ad1c216-77f4-49b4-9c70-18757de05ec4",
+      "question_id": "Q005",
+      "party": "PP",
+      "stratum": "contradictory",
+      "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimonial) para favorecer el acceso a la vivienda?",
+      "claims": [
+        {
+          "literal_text": "La rehabilitación de vivienda habitual tendrá un IVA superreducido del 4%",
+          "page": 42,
+          "conditions": "Aplicable únicamente a vivienda habitual.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reduciremos el IVA de la compra de primera vivienda del 10% al 4% para menores de 40 años",
+          "page": 43,
+          "conditions": "Aplicable únicamente a menores de 40 años en la compra de su primera vivienda",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "permitiremos que se pague de forma fraccionada al ritmo de la hipoteca",
+          "page": 43,
+          "conditions": "Vinculado a la reducción del IVA al 4% para menores de 40 años",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Acordaremos con las Comunidades Autónomas un Impuesto de Transmisiones Patrimoniales reducido para la primera vivienda de los jóvenes",
+          "page": 43,
+          "conditions": "Aplicable cuando la vivienda sea usada; requiere acuerdo con las Comunidades Autónomas",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "se permitirá igualmente pagar fraccionadamente",
+          "page": 43,
+          "conditions": "Vinculado al ITP reducido para primera vivienda usada de jóvenes",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Ampliaremos a cuatro años el plazo para reinvertir el importe de la venta de la vivienda habitual y mantener la exención en el IRPF",
+          "page": 43,
+          "conditions": "El importe debe destinarse a la reinversión en vivienda habitual para mantener la exención fiscal",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Los rendimientos generados estarán exentos de tributación siempre que el ahorro se destine a la compra de la primera vivienda",
+          "page": 43,
+          "conditions": "El ahorro debe destinarse exclusivamente a la compra de la primera vivienda",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "opposes",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.445Z"
+      }
+    },
+    {
+      "position_id": "0d20355c-6ae5-416f-a1d4-e16c1ef85dc7",
+      "question_id": "Q023",
+      "party": "Vox",
+      "stratum": "contradictory",
+      "question": "¿Debe aumentarse la inversión en seguridad ciudadana y fuerzas de policía?",
+      "claims": [
+        {
+          "literal_text": "Reducción de la edad de responsabilidad penal del menor y plantear la eliminación de inimputabilidad para ciertos delitos violentos como los homicidios o las agresiones sexuales.",
+          "page": 45,
+          "conditions": "Aplica específicamente a delitos violentos como homicidios y agresiones sexuales.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Ampliación de la prisión permanente revisable. Los que cometen los peores delitos deben tener las máximas condenas.",
+          "page": 45,
+          "conditions": "Aplicable a los delitos considerados más graves.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.578Z"
+      }
+    },
+    {
+      "position_id": "8bf02801-3569-463d-81fc-5271b5c36104",
+      "question_id": "Q004",
+      "party": "Sumar",
+      "stratum": "contradictory",
+      "question": "¿Deben regularse los precios del alquiler en las zonas tensionadas?",
+      "claims": [
+        {
+          "literal_text": "Reducir los precios abusivos del alquiler y la especulación inmobiliaria, dando prioridad a la función social de la vivienda frente a su utilización como activo exclusivamente financiero.",
+          "page": 4,
+          "conditions": "Prioridad a la función social frente al uso financiero de la vivienda",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "5 % 2030 10–15.000 M€/año",
+          "page": 6,
+          "conditions": "Requiere multiplicar por 12–18 la aportación estatal media anual del actual Plan Estatal de Vivienda.",
+          "quote_check": "fuzzy"
+        },
+        {
+          "literal_text": "10 % 2035 8–12.000 M€/año",
+          "page": 6,
+          "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "15 % 2040-45 6–10.000 M€/año",
+          "page": 6,
+          "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "20 % largo plazo progresivamente mediante reinversión y financiación",
+          "page": 6,
+          "conditions": "A largo plazo; se prevé que las rentas sociales generen ingresos recurrentes que reduzcan la dependencia de financiación exclusiva vía impuestos.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.692Z"
+      }
+    },
+    {
+      "position_id": "63f046ce-ccdd-4d3b-bb18-9542def5bbdc",
+      "question_id": "Q022",
+      "party": "PSOE",
+      "stratum": "contradictory",
+      "question": "¿Deben ampliarse los mecanismos de participación ciudadana directa (referéndums, iniciativas populares)?",
+      "claims": [
+        {
+          "literal_text": "Mantendremos la participación del Estado en sectores estratégicos, preservando capacidades industriales y tecnológicas esenciales",
+          "page": 15,
+          "conditions": "Orientado a fortalecer la autonomía estratégica de España y Europa",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Impulsaremos un Pacto de Estado por la Seguridad Ferroviaria, la Atención a las Víctimas y la Justicia, con las asociaciones de víctimas, los trabajadores del sector",
+          "page": 19,
+          "conditions": "Partirá de un Libro Blanco o auditoría elaborada en dos meses por una comisión técnica de nueva creación compuesta por expertos del sector ferroviario y aeronáutico.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Empoderar a los vecinos y vecinas para participar en las decisiones de la ciudad y gobernanza de los barrios, incluyendo la decisión sobre los incrementos de edificabilidad",
+          "page": 30,
+          "conditions": "Requiere modificación de la Ley de Propiedad Horizontal.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "desarrollando el artículo 129.2 de la Constitución Española para promover fórmulas de participación en la toma de decisiones, modelos cooperativos y procesos de relevo empresarial",
+          "page": 43,
+          "conditions": "Basado en el desarrollo legislativo del artículo 129.2 de la Constitución Española",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Impulsar un nuevo contrato social con los profesionales sanitarios, dignificando y potenciando todas las profesiones, mejorando sus condiciones laborales, estabilidad, formación, conciliación",
+          "page": 50,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reforzar la participación de las organizaciones de pacientes en el SNS mediante un marco jurídico estable y específico.",
+          "page": 50,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Garantizar la participación real y efectiva de la infancia y la adolescencia en las decisiones públicas, mediante el impulso de los órganos de participación locales, autonómicos y estatales.",
+          "page": 57,
+          "conditions": "Ninguna condición explícita mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Impulsar un Pacto de Estado por los derechos de las personas mayores, reforzando su participación efectiva en las políticas públicas",
+          "page": 59,
+          "conditions": "Incluye mecanismos de detección temprana, coordinación sociosanitaria y apoyos comunitarios",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Desarrollaremos la figura de la persona facilitadora procesal, para cubrir las necesidades de apoyo de las personas con discapacidad relacionadas con la comprensión",
+          "page": 60,
+          "conditions": "Aplicable en actos procesales en los que deban participar personas con discapacidad",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Continuar fortaleciendo al Tercer Sector de la discapacidad, promoviendo la participación de las organizaciones y las familias en el diseño, ejecución y evaluación",
+          "page": 60,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Se ampliará la representación social y científica en los órganos de gobernanza climática, incorporando de forma estable a la comunidad científica, la juventud, las mujeres y el medio rural.",
+          "page": 74,
+          "conditions": "La incorporación se plantea de forma estable.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reforzar la autonomía económica de las mujeres rurales, impulsando su participación en sectores estratégicos, promoviendo la titularidad compartida de las explotaciones agrarias",
+          "page": 79,
+          "conditions": "Dirigido específicamente a mujeres rurales.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Crear un escaño ciudadano en el Congreso y en el Senado, sin voto, para que la sociedad civil pueda preguntar al Gobierno y presentar iniciativas y enmiendas",
+          "page": 90,
+          "conditions": "Sin derecho a voto",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "reducir las firmas necesarias para la iniciativa legislativa popular",
+          "page": 90,
+          "conditions": "Ninguna mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "rebajando la edad de voto a los 16 años, fortaleciendo los consejos de juventud y ampliando los mecanismos de participación ciudadana en las decisiones públicas",
+          "page": 90,
+          "conditions": "Ninguna mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Crear la figura del Defensor de las Generaciones Futuras, vinculada al Consejo de la Juventud de España",
+          "page": 90,
+          "conditions": "Vinculada al Consejo de la Juventud de España",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Regular por ley el Consejo de la Juventud de España y establecer un marco jurídico para los consejos de juventud autonómicos y locales que garantice su personalidad jurídica, independencia, autonomía, autogestión, pluralidad y financiación estable",
+          "page": 90,
+          "conditions": "Ninguna mencionada",
+          "quote_check": "fuzzy"
+        },
+        {
+          "literal_text": "Promover la integración participación social, cívica y política de las personas inmigrantes, apoyando el asociacionismo, reforzando los espacios de participación ciudadana",
+          "page": 93,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Promoveremos un Pacto de Estado contra los Discursos y Delitos de Odio con la participación de las fuerzas políticas y las organizaciones sociales",
+          "page": 93,
+          "conditions": "Requiere participación de fuerzas políticas y organizaciones sociales",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Impulsaremos, junto a las organizaciones representativas del pueblo gitano, una Comisión Estatal de Trabajo para desarrollar la igualdad de trato",
+          "page": 94,
+          "conditions": "Junto a las organizaciones representativas del pueblo gitano",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Impulsar un Pacto de Estado contra los discursos y delitos de odio, con la participación de las fuerzas políticas y las organizaciones sociales",
+          "page": 97,
+          "conditions": "Con participación de fuerzas políticas y organizaciones sociales.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "más capacidad para prevenir y combatir la ciberdelincuencia y las estafas digitales.",
+          "page": 98,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Aprobaremos una nueva Ley de Seguridad Ciudadana que garantice la seguridad y proteja los derechos y las libertades.",
+          "page": 98,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Aprobar una nueva Ley de Seguridad Ciudadana que sustituya a la Ley Orgánica 4/2015",
+          "page": 99,
+          "conditions": "Las cámaras corporales deben ir acompañadas de garantías de protección de datos",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Garantizar que toda persona pueda ser atendida por un empleado público, en persona o por teléfono, sin cita previa obligatoria en las oficinas de la Administración del Estado",
+          "page": 101,
+          "conditions": "Ninguna condición explícita mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Garantizar que ninguna Administración vuelva a pedir a la ciudadanía un documento que ya tiene, conectando los sistemas de todas las administraciones y simplificando los trámites",
+          "page": 101,
+          "conditions": "Requiere conexión de los sistemas de todas las administraciones",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "fortaleciendo la Corte Penal Internacional, apoyando la presencia de organismos de la ONU en España y facilitando la participación de las organizaciones juveniles en los foros multilaterales",
+          "page": 107,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Promover la participación de España como Estado observador en el Tratado sobre la Prohibición de las Armas Nucleares",
+          "page": 108,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reforzaremos su participación en los órganos consultivos de la Unión Europea, incluido el Comité Europeo de las Regiones.",
+          "page": 110,
+          "conditions": "Ninguna condición explícita mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformar la legislación electoral para simplificar y facilitar el voto exterior, reduciendo plazos, eliminando obstáculos burocráticos y garantizando una mayor participación",
+          "page": 112,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reforzar una política de Defensa al servicio de la seguridad global, vinculada a la diplomacia, la cooperación internacional y el derecho internacional",
+          "page": 112,
+          "conditions": "Coordinación con aliados y socios internacionales.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Impulsar la autonomía estratégica europea reforzando las capacidades comunes de seguridad y defensa de la UE, y hacer más eficiente la inversión en defensa mediante una mayor participación española en proyectos europeos",
+          "page": 112,
+          "conditions": "Enmarcado en el ámbito de la Unión Europea.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "supports",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.846Z"
+      }
+    },
+    {
+      "position_id": "ebad7bf8-2e7c-4954-a586-37d8626ae3b7",
+      "question_id": "Q021",
+      "party": "PP",
+      "stratum": "contradictory",
+      "question": "¿Debe reformarse el sistema electoral para mejorar la representatividad parlamentaria?",
+      "claims": [
+        {
+          "literal_text": "Reformaremos la normativa estatal para que más actividades de bajo riesgo puedan iniciarse mediante declaración responsable.",
+          "page": 14,
+          "conditions": "Limitado a actividades calificadas como de bajo riesgo.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos las reglas de suspensión para que los informes no vinculantes dejen de paralizar los expedientes cuando llegan tarde.",
+          "page": 14,
+          "conditions": "Aplicable únicamente a informes no vinculantes recibidos fuera de plazo.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos el delito de desórdenes públicos para ampliar las conductas castigadas y endurecer las penas por participar en disturbios violentos que atenten contra las personas, los agentes de la autoridad y el patrimonio público y privado.",
+          "page": 16,
+          "conditions": "Aplicable a disturbios que atenten contra personas, agentes de la autoridad y patrimonio público y privado.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la Ley del Menor para que en delitos graves cometi-",
+          "page": 16,
+          "conditions": "Aplicable a delitos graves cometidos por menores (texto truncado).",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "presencia policial visible y sostenida y con las reformas legales necesarias para luchar contra la ocupación y para el desalojo inmediato y la eliminación de los narcopisos.",
+          "page": 17,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la Ley de Extranjería para que el rechazo en frontera cubra también las entradas a nado en Ceuta y Melilla.",
+          "page": 18,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la Ley de Extranjería para prohibir las regularizaciones masivas e indiscriminadas y para que el arraigo sea un reconocimiento individual excepcional",
+          "page": 19,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la Ley de Montes para mantener la prevención durante todo el año, con gestión activa del monte y apoyo a la agricultura y ganadería preventivas.",
+          "page": 20,
+          "conditions": "Ninguna especificada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "REFORZAREMOS EL CONTROL DEL VOTO POR CORREO EN TODO SU RECORRIDO.",
+          "page": 24,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "La Administración electoral reforzará el control y la supervisión de la recepción, custodia y entrega de los votos por parte de Correos.",
+          "page": 24,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reforzaremos la identificación al solicitar y entregar el voto, con garantías para quien no pueda hacerlo personalmente.",
+          "page": 24,
+          "conditions": "Se prevén garantías específicas para personas que no puedan identificarse personalmente.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Ampliaremos las incompatibilidades e inelegibilidades aplicables a los condenados por terrorismo, así como a los condenados por corrupción grave, delitos contra la vida",
+          "page": 25,
+          "conditions": "Aplicable a condenados por terrorismo, corrupción grave, delitos contra la vida o delitos graves contra las instituciones del Estado",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "ampliaremos las causas de inelegibilidad para impedir que quienes se sustraigan voluntariamente a la acción de la Justicia y hayan sido declarados en rebeldía por delitos graves",
+          "page": 25,
+          "conditions": "Mientras persista la situación de rebeldía declarada por delitos graves",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reforzaremos la Junta Electoral Central con medios propios y estables, y capacidad efectiva para hacer cumplir sus acuerdos durante la campaña.",
+          "page": 25,
+          "conditions": "Aplicable durante la campaña electoral",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Evitaremos que el suplicatorio pueda convertirse en un instrumento de impunidad ante la Justicia.",
+          "page": 25,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Promoveremos las reformas necesarias para que una segunda prórroga consecutiva provoque la disolución de las Cortes y la convocatoria de elecciones.",
+          "page": 26,
+          "conditions": "Aplicable cuando se produzca una segunda prórroga presupuestaria consecutiva.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la legislación procesal y la Ley Orgánica del Tribunal Constitucional para delimitar con claridad qué recursos de amparo admite y qué efectos tienen sus decisiones.",
+          "page": 26,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Adaptaremos el sistema de renovación para impedir que el bloqueo parlamentario paralice el Consejo.",
+          "page": 27,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos los Reglamentos del Congreso y del Senado para limitar las prórrogas sucesivas de los plazos",
+          "page": 29,
+          "conditions": "Con el objetivo de que las Mesas no puedan bloquear una ley alargando plazos injustificadamente ni vaciar el debate acortándolos",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "No se admitirán enmiendas ajenas al contenido de las leyes.",
+          "page": 29,
+          "conditions": "Ninguna condición mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Cada ley explicará el coste que impone a ciudadanos y empresas.",
+          "page": 29,
+          "conditions": "Ninguna condición mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Las que no cumplan su objetivo se corregirán o se derogarán.",
+          "page": 29,
+          "conditions": "Condicionado a que la ley no cumpla el objetivo para el que fue aprobada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reforzaremos los servicios jurídicos de las Cámaras y exigiremos que las Mesas motiven cualquier decisión que se aparte de sus informes.",
+          "page": 29,
+          "conditions": "Ninguna condición mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Las solicitudes de reconsideración deberán resolverse antes de la finalización de la tramitación de la ley a la que afecten.",
+          "page": 29,
+          "conditions": "Ninguna condición mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Fijaremos, además, plazos máximos para tramitar, debatir y votar en el Congreso las proposiciones de ley remitidas por el Senado.",
+          "page": 29,
+          "conditions": "Ninguna condición mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reservaremos el decreto-ley a situaciones verdaderamente extraordinarias y urgentes.",
+          "page": 29,
+          "conditions": "Ninguna condición mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "No podrá aprobarse otro con el contenido sustancial de uno rechazado por el Congreso durante el mismo periodo de sesiones.",
+          "page": 29,
+          "conditions": "Aplicable dentro del mismo periodo de sesiones parlamentarias",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Limitaremos también el recurso a la urgencia, la lectura única y los procedimientos excepcionales que reducen el debate parlamentario.",
+          "page": 29,
+          "conditions": "Ninguna condición mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la Ley de Residuos para que los ayuntamientos puedan decidir sobre la tasa.",
+          "page": 33,
+          "conditions": "Ninguna",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Propondremos la reforma del Reglamento de la Cámara para que los debates parlamentarios se desarrollen en la lengua común de todos los españoles.",
+          "page": 37,
+          "conditions": "Se mantiene la posibilidad de uso de lenguas cooficiales en el Senado",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Llevaremos a cabo una reforma legal que rehabilite y proteja los símbolos del Estado, incluidos los de las Comunidades Autónomas.",
+          "page": 37,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la Ley de Propiedad Horizontal para que las comunidades de propietarios puedan pedir al juez el desalojo",
+          "page": 43,
+          "conditions": "Requiere solicitud judicial por parte de la comunidad de propietarios",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Declarará estratégicas las cadenas agroalimentarias, mar-industria y forestal, dará estabilidad a sus políticas y fijará financiación y objetivos medibles",
+          "page": 49,
+          "conditions": "Enmarcado en el Pacto Nacional para el campo.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos con el sector la Ley de la Cadena Alimentaria para mejorar la información sobre costes y márgenes.",
+          "page": 50,
+          "conditions": "Reforma a realizar con el sector",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reformaremos la Ley de Montes para facilitar la prevención, elaboraremos modelos de ordenación predefinidos y potenciaremos la agricultura y ganadería preventivas, la biomasa, los tratamientos selvícolas",
+          "page": 50,
+          "conditions": "Ninguna condición explícita",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Defenderemos la reforma de la política pesquera común y fondos europeos suficientes, un régimen competitivo para los buques españoles, renovación de flota y fiscalidad adaptada.",
+          "page": 51,
+          "conditions": "Ninguna condición explícita",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Venezuela necesita un calendario electoral ya.",
+          "page": 57,
+          "conditions": "Ninguna condición mencionada.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:06.961Z"
+      }
+    },
+    {
+      "position_id": "d2a12e50-2dde-4cb2-970a-af25af652ee8",
+      "question_id": "Q003",
+      "party": "Sumar",
+      "stratum": "contradictory",
+      "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de vivienda asequible?",
+      "claims": [
+        {
+          "literal_text": "Garantizar que todas las personas puedan acceder a una vivienda digna, estable y asequible, sin que su coste les impida cubrir otras necesidades básicas.",
+          "page": 4,
+          "conditions": "Sin que el coste de la vivienda impida cubrir otras necesidades básicas",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Crear un parque público y social de vivienda amplio, permanente y sostenible, que proteja a las generaciones presentes y futuras.",
+          "page": 4,
+          "conditions": "Orientado a proteger tanto a generaciones presentes como futuras",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Reducir los precios abusivos del alquiler y la especulación inmobiliaria, dando prioridad a la función social de la vivienda frente a su utilización como activo exclusivamente financiero.",
+          "page": 4,
+          "conditions": "Prioridad a la función social frente al uso financiero de la vivienda",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Aumentar la oferta de vivienda disponible, aprovechando los inmuebles vacíos, rehabilitando edificios existentes y promoviendo nuevas viviendas asequibles.",
+          "page": 4,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "5 % 2030 10–15.000 M€/año",
+          "page": 6,
+          "conditions": "Requiere multiplicar por 12–18 la aportación estatal media anual del actual Plan Estatal de Vivienda.",
+          "quote_check": "fuzzy"
+        },
+        {
+          "literal_text": "10 % 2035 8–12.000 M€/año",
+          "page": 6,
+          "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "15 % 2040-45 6–10.000 M€/año",
+          "page": 6,
+          "conditions": "Ninguna condición específica mencionada más allá del horizonte temporal.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "20 % largo plazo progresivamente mediante reinversión y financiación",
+          "page": 6,
+          "conditions": "A largo plazo; se prevé que las rentas sociales generen ingresos recurrentes que reduzcan la dependencia de financiación exclusiva vía impuestos.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Toda vivienda protegida mantendrá esa calificación de forma permanente.",
+          "page": 7,
+          "conditions": "Ninguna condición mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Su precio máximo de venta se actualizará según el Índice de Precios de Consumo (IPC), desvinculado de las fluctuaciones del mercado inmobiliario",
+          "page": 7,
+          "conditions": "Aplicable únicamente a viviendas con calificación de protegida.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "La Administración tendrá derecho de tanteo y retracto en cada venta de una vivienda protegida",
+          "page": 7,
+          "conditions": "Aplicable en cada operación de venta de vivienda protegida.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "supports",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.075Z"
+      }
+    },
+    {
+      "position_id": "84ba2005-6430-4ce8-bb43-ebfa9b321233",
+      "question_id": "Q003",
+      "party": "PP",
+      "stratum": "conditioned",
+      "question": "¿Debe el Estado impulsar la construcción de vivienda pública y protegida para aumentar la oferta de vivienda asequible?",
+      "claims": [
+        {
+          "literal_text": "SE CONSTRUIRÁ UN MILLÓN DE VIVIENDAS MÁS EN ESPAÑA",
+          "page": 7,
+          "conditions": "Ninguna condición explícita mencionada en este texto",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "CONSTRUIREMOS UN MILLÓN DE VIVIENDAS.",
+          "page": 41,
+          "conditions": "En colaboración con las Comunidades Autónomas y las entidades locales.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Facilitaremos la segregación de viviendas grandes, siguiendo la experiencia de otros países europeos.",
+          "page": 41,
+          "conditions": "Siguiendo la experiencia de otros países europeos.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.191Z"
+      }
+    },
+    {
+      "position_id": "3db89ded-6508-4651-b189-e003813caebb",
+      "question_id": "Q009",
+      "party": "PSOE",
+      "stratum": "conditioned",
+      "question": "¿Debe aumentarse la presión fiscal sobre las grandes fortunas y empresas para financiar los servicios públicos?",
+      "claims": [
+        {
+          "literal_text": "Hemos aprobado impuestos extraordinarios a la banca y a las grandes energéticas",
+          "page": 36,
+          "conditions": "Las derechas derogaron la prórroga del impuesto a las grandes energéticas en 2025",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Hemos elevado al 30% la tributación de las rentas del ahorro superiores a 300.000 euros",
+          "page": 36,
+          "conditions": "Aplicable únicamente a rentas del ahorro superiores a 300.000 euros",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "adoptado medidas para evitar las bonificaciones autonómicas del impuesto sobre el patrimonio",
+          "page": 36,
+          "conditions": "Ninguna condición específica mencionada",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "opposes",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.293Z"
+      }
+    },
+    {
+      "position_id": "491a5109-20c8-4a4f-be9c-f40cec25636f",
+      "question_id": "Q005",
+      "party": "Sumar",
+      "stratum": "conditioned",
+      "question": "¿Deben modificarse los impuestos relacionados con la vivienda (IBI, plusvalías, transmisión patrimonial) para favorecer el acceso a la vivienda?",
+      "claims": [
+        {
+          "literal_text": "Establecer un régimen impositivo exponencial al número de compras de viviendas, ya sean de particulares o sociedades, y limitar mediante fiscalidades extraordinarias la acumulación de vivienda bajo una misma propiedad",
+          "page": 10,
+          "conditions": "Aplica especialmente a vivienda turística.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Establecer un régimen impositivo especial en la compra o el alquiler de viviendas con precios por encima de un límite establecido, para las personas extranjeras.",
+          "page": 10,
+          "conditions": "Aplicable solo a precios por encima de un límite establecido y solo a personas extranjeras.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "approved"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.409Z"
+      }
+    },
+    {
+      "position_id": "091e2587-d381-44dc-8488-c9042935d49f",
+      "question_id": "Q012",
+      "party": "ERC",
+      "stratum": "conditioned",
+      "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificaciones?",
+      "claims": [
+        {
+          "literal_text": "reduir els tipus de la fiscalitat del treball per als trams inferiors als 35.000 euros",
+          "page": 21,
+          "conditions": "Aplicable a tramos de renta del trabajo por debajo de 35.000 euros anuales.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "opposes",
+        "stance_status": "approved"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.506Z"
+      }
+    },
+    {
+      "position_id": "294a7fbb-9c29-4243-9efb-da1faa5ee4de",
+      "question_id": "Q020",
+      "party": "Vox",
+      "stratum": "conditioned",
+      "question": "¿Debe el Estado aumentar la inversión en la protección y puesta en valor del patrimonio cultural?",
+      "claims": [
+        {
+          "literal_text": "Promoción de la cultura nacional. Afirmación y difusión de la historia común española. Conservación y rehabilitación del patrimonio nacional",
+          "page": 42,
+          "conditions": "Con especial atención al patrimonio nacional (texto incompleto en el fragmento).",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "approved"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.606Z"
+      }
+    },
+    {
+      "position_id": "9ca99138-0f09-4b2b-b74b-52d26853a747",
+      "question_id": "Q012",
+      "party": "PP",
+      "stratum": "conditioned",
+      "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificaciones?",
+      "claims": [
+        {
+          "literal_text": "Elevaremos los mínimos personales y familiares del IRPF y bajaremos el IRPF de las rentas medias y bajas y de las familias.",
+          "page": 47,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Quien cobre el salario mínimo no pagará IRPF: por ley, el umbral subirá automáticamente cada vez que suba el SMI",
+          "page": 47,
+          "conditions": "El umbral se actualizará automáticamente cada vez que suba el SMI.",
+          "quote_check": "exact"
+        },
+        {
+          "literal_text": "Deflactaremos la tarifa y actualizaremos los principales parámetros del impuesto para impedir que la inflación vuelva a utilizarse como una subida encubierta",
+          "page": 47,
+          "conditions": "Ninguna condición explícita mencionada.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "opposes",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.708Z"
+      }
+    },
+    {
+      "position_id": "c2198178-52ce-40f2-8685-7eea8432825e",
+      "question_id": "Q017",
+      "party": "PSOE",
+      "stratum": "conditioned",
+      "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y reducir emisiones?",
+      "claims": [
+        {
+          "literal_text": "hemos puesto en marcha una ola rehabilitadora sin precedentes, que ha permitido mejorar la calidad de vida en más de medio millón de hogares.",
+          "page": 25,
+          "conditions": "Sin condiciones específicas mencionadas.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "approved"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.826Z"
+      }
+    },
+    {
+      "position_id": "bd55bec5-6454-463e-9a97-84cabf9b1c71",
+      "question_id": "Q008",
+      "party": "Sumar",
+      "stratum": "conditioned",
+      "question": "¿Deben protegerse los derechos de los inquilinos frente al despido y la subida descontrolada de rentas?",
+      "claims": [
+        {
+          "literal_text": "Proteger a las personas inquilinas y ofrecer seguridad jurídica y garantías justas a las y los pequeños propietarios",
+          "page": 5,
+          "conditions": "Orientado a favorecer relaciones de alquiler estables y equilibradas",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "conditional",
+        "stance_status": "approved"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:07.925Z"
+      }
+    },
+    {
+      "position_id": "bfca5023-873e-48bc-bbf8-03d621c2e0be",
+      "question_id": "Q015",
+      "party": "Vox",
+      "stratum": "ambiguous",
+      "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acceso a los servicios?",
+      "claims": [
+        {
+          "literal_text": "Creación de un expediente digital único y centralizado que unifique la gestión de trámites para ciudadanos y empresas, obligando a las diferentes administraciones a compartir los datos entre sí.",
+          "page": 27,
+          "conditions": "Ninguna condición o excepción mencionada.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "supports",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:08.027Z"
+      }
+    },
+    {
+      "position_id": "306355b1-6474-422f-962e-5542efafa4c9",
+      "question_id": "Q012",
+      "party": "PSOE",
+      "stratum": "ambiguous",
+      "question": "¿Debe reformarse el IRPF para que las familias con hijos reciban mayores deducciones y bonificaciones?",
+      "claims": [
+        {
+          "literal_text": "Convertiremos el mínimo exento por descendiente en el IRPF en un crédito fiscal reembolsable",
+          "page": 49,
+          "conditions": "Dirigido a 2 millones de hogares que no tienen obligación de presentar declaración o carecen de cuota para beneficiarse del mínimo actual",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:08.126Z"
+      }
+    },
+    {
+      "position_id": "c375a3fa-11d0-47d2-9b21-4fa2ff546aa3",
+      "question_id": "Q016",
+      "party": "ERC",
+      "stratum": "ambiguous",
+      "question": "¿Debe el Estado impulsar políticas industriales activas para atraer inversión y crear empleo estratégico?",
+      "claims": [
+        {
+          "literal_text": "Adoptar una política industrial activa que aposti per grans projectes industrials a Catalunya.",
+          "page": 29,
+          "conditions": "Substituir los PERTE, que finalizan en 2026, por proyectos estratégicos con gestión descentralizada.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "conditional",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:25:47.305Z"
+      }
+    },
+    {
+      "position_id": "df03a19c-ab47-4f5e-a85d-c1eb30298142",
+      "question_id": "Q007",
+      "party": "PP",
+      "stratum": "ambiguous",
+      "question": "¿Debe fomentarse la rehabilitación de edificios y barrios existentes en lugar de la expansión urbana?",
+      "claims": [
+        {
+          "literal_text": "Cuando sea necesario para hacer viable una actuación, se facilitará una mayor densidad y edificabilidad.",
+          "page": 42,
+          "conditions": "Solo cuando sea necesario para hacer viable la actuación.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:08.907Z"
+      }
+    },
+    {
+      "position_id": "a32fb1f6-ae2e-4cae-b2f1-209e5cef2b78",
+      "question_id": "Q014",
+      "party": "Sumar",
+      "stratum": "ambiguous",
+      "question": "¿Debe mantenerse o aumentarse la ayuda oficial al desarrollo (AOD) como porcentaje del PIB?",
+      "claims": [
+        {
+          "literal_text": "20% de la AOD total que tenga la igualdad de género como objetivo principal",
+          "page": 90,
+          "conditions": "Ninguna condición adicional especificada",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:09.006Z"
+      }
+    },
+    {
+      "position_id": "37c97024-6c36-4564-90a8-8a782d710027",
+      "question_id": "Q019",
+      "party": "PSOE",
+      "stratum": "ambiguous",
+      "question": "¿Debe la política exterior española priorizar la defensa de los derechos humanos y la democracia en las relaciones internacionales?",
+      "claims": [
+        {
+          "literal_text": "hemos reclamado la liberación de todos los rehenes y defendido la necesidad de exigir responsabilidades por los crímenes cometidos",
+          "page": 105,
+          "conditions": "Ninguna condición explícita mencionada",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:09.107Z"
+      }
+    },
+    {
+      "position_id": "ca5abd7d-201c-4cb0-82db-6ee43eff2bf7",
+      "question_id": "Q011",
+      "party": "ERC",
+      "stratum": "ambiguous",
+      "question": "¿Debe ampliarse la red de ferrocarriles de alta velocidad y cercanías para mejorar la conectividad territorial?",
+      "claims": [
+        {
+          "literal_text": "afavoreixin el transport públic i el desenvolupament ferroviari",
+          "page": 37,
+          "conditions": "En el contexto de emergencia climática",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:09.207Z"
+      }
+    },
+    {
+      "position_id": "42b09885-5bd1-4347-ae07-67ac03355847",
+      "question_id": "Q017",
+      "party": "PP",
+      "stratum": "ambiguous",
+      "question": "¿Deben incentivarse las obras de rehabilitación energética de edificios para mejorar la eficiencia y reducir emisiones?",
+      "claims": [
+        {
+          "literal_text": "contará con ayudas, financiación pública y avales preferentes, y podrá apoyarse en la figura del agente rehabilitador.",
+          "page": 42,
+          "conditions": "Vinculado a actuaciones de rehabilitación de vivienda habitual.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:09.307Z"
+      }
+    },
+    {
+      "position_id": "1ae089de-a367-47c8-8ad7-71fd3a84a12e",
+      "question_id": "Q015",
+      "party": "ERC",
+      "stratum": "clear",
+      "question": "¿Debe impulsarse la digitalización de la administración pública para mejorar la eficiencia y el acceso a los servicios?",
+      "claims": [
+        {
+          "literal_text": "Avançar cap a unes administracions públiques menys dependents de proveïdors tecnològics dominants, amb garanties de seguretat, privacitat i control públic de les dades.",
+          "page": 34,
+          "conditions": "Ninguna condición específica mencionada.",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "opposes",
+        "stance_status": "approved"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:09.407Z"
+      }
+    },
+    {
+      "position_id": "58b5628c-d62b-4f3c-8578-19cbe5be685b",
+      "question_id": "Q018",
+      "party": "ERC",
+      "stratum": "catalan",
+      "question": "¿Debe reformarse la legislación cultural (mecenazgo, derechos de autor) para apoyar a los creadores y la industria cultural?",
+      "claims": [
+        {
+          "literal_text": "Impulsar un Pla de Sobirania Cultural per culminar el traspàs dels museus i equipaments culturals transferibles a Catalunya, incloent-hi el Museu Nacional Arqueològic de Tarragona",
+          "page": 13,
+          "conditions": "Los traspasos deben ir acompañados de la financiación estructural correspondiente y se deben auditar las inversiones estatales pendientes",
+          "quote_check": "exact"
+        }
+      ],
+      "claude_proposal": {
+        "stance_class": "unclear",
+        "stance_status": "ambiguous"
+      },
+      "human": {
+        "stance": "unclear",
+        "evidence_sufficient": null,
+        "annotator": "Codex",
+        "notes": "",
+        "labeled_at": "2026-11-19T10:26:09.509Z"
+      }
+    }
+  ]
+}

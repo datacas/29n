@@ -1,0 +1,390 @@
+{
+ "generated": "2026-11-23",
+ "decisions": [
+  {
+   "party": "Compromís",
+   "qid": "Q001",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q002",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q003",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q004",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q005",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q006",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q007",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q008",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q009",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q010",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q011",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q013",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q014",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q015",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q016",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q017",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q018",
+   "action": "reject",
+   "reason": "Habla de excepciones al derecho de propiedad intelectual para usos educativos, no de apoyar a creadores."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q019",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q020",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q022",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q023",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q024",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q025",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q027",
+   "action": "approve",
+   "value": -2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q028",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q029",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q031",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q032",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q034",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q036",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q037",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q038",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q039",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q040",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q041",
+   "action": "reject",
+   "reason": "Fragmento sin antecedente claro: no se sabe a qué prestación se refiere."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q042",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q043",
+   "action": "reject",
+   "reason": "Fragmento sin antecedente claro: no se sabe a qué ayuda se refiere."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q046",
+   "action": "reject",
+   "reason": "Trata de eliminar el sistema de módulos, no de fijar la cuota por ingresos reales."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q047",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q048",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q049",
+   "action": "reject",
+   "reason": "Habla de horarios comerciales, no de limitar el número de turistas."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q052",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q053",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q054",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q056",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q057",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q061",
+   "action": "approve",
+   "value": -1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q068",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q069",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q070",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q073",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q076",
+   "action": "reject",
+   "reason": "Apoya la autodeterminación de pueblos como el Sáhara Occidental, no de comunidades de España."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q077",
+   "action": "approve",
+   "value": 1,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q078",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q081",
+   "action": "reject",
+   "reason": "Es un título de sección, no una posición."
+  },
+  {
+   "party": "Compromís",
+   "qid": "Q085",
+   "action": "approve",
+   "value": 2,
+   "stance": "approved"
+  }
+ ]
+}
