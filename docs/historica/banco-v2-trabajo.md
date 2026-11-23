@@ -1,6 +1,6 @@
 # Banco exhaustivo (v2): documento de trabajo
 
-**Estado: borrador.** Primera pasada con los cinco programas cortos (FASCI19, NSDAP20, TESIS17, FE34, BN34). Faltan los largos: PNF21, PCR19, FP36, CEDA33 y DER33. Cuando estén todos se fusionan las candidatas, se fija el texto de cada pregunta y se añaden las citas a `citas/`.
+**Estado: borrador.** Primera pasada completa: los cinco programas cortos y, después, los cinco largos (PNF21, PCR19, FP36, CEDA33 y DER33). DER33 no aporta propuestas nuevas. Falta cerrar el texto de cada pregunta, comprobar cada posición con su cita y añadirlas a `citas/`.
 
 ## Reglas del banco v2
 
@@ -72,9 +72,34 @@
 | C30 | La educación física y la formación premilitar deben ser obligatorias para los jóvenes | NSDAP20 + (p. 21); FE34 + (p. 23); *PNF21 +, PCR19 +* | 2 |
 | C31 | El Estado puede movilizar obligatoriamente a los jóvenes para trabajos de interés nacional | FE34 + (p. 20) | 3 |
 
-**Recuento provisional:** 31 candidatas de los programas cortos, más las 15 del v1, son 46. Quedan unas 34 plazas para lo que aporten los cinco programas largos que no esté ya aquí. Varias candidatas ya llevan posiciones de los largos (en cursiva), que hay que confirmar con su cita.
+### Candidatas añadidas por los programas largos
+| # | Candidata | Programas | Nivel |
+|---|---|---|---|
+| C32 | El Estado debe planificar la economía en lugar del mercado | PCR19 + (Economía, 15; Distribución, 19); PNF21 − («rinuncia assoluta»); FE34 ~; CEDA33 ~ (dirección corporativa) | 2 |
+| C33 | Las viviendas de los ricos deben pasar a las familias trabajadoras | PCR19 + (Vivienda, 23) | 3 |
+| C34 | La sanidad debe ser pública y gratuita | PCR19 + (Sanidad); FP36 + (asistencia pública, Beneficencia y Sanidad) | 2 |
+| C35 | Las penas de cárcel deben sustituirse en lo posible por medidas educativas | PCR19 + (Justicia, 11); FP36 (+) humanizar prisiones; PNF21 ~ («intimidatrice ed emendatrice») | 2 |
+| C36 | Los jueces deben ser elegidos por el pueblo | PCR19 + (Justicia, 11); FP36 (−) justicia independiente | 2 |
+| C37 | La mujer debe tener los mismos derechos que el hombre, también dentro del matrimonio (fila R, retirada del v1) | FASCI19 + (voto); PCR19 + (4); CEDA33 ~ / (−) («sin perjuicio de la autoridad marital») | 2 |
+| C38 | Los pueblos y regiones deben tener derecho a separarse y formar su propio Estado | PCR19 + (9); FE34 − (p. 2); BN34 − | 2 |
+| C39 | Debe existir el divorcio | PCR19 (+) (igualdad en el matrimonio); CEDA33 − («defensa de la institución familiar contra todo intento de disolución») | 2 |
+| C40 | La religión debe enseñarse en la escuela pública a los alumnos creyentes | CEDA33 + (VII, enseñanza religiosa obligatoria para católicos); PCR19 − (enseñanza «absolutamente laica»); FP36 (−) | 2 |
+| C41 | Los ayuntamientos deben tener amplia autonomía | CEDA33 + (IV); PNF21 (+) descentralización administrativa | 2 |
+| C42 | El Gobierno debe tener más poder frente al Parlamento | CEDA33 + (II, 4.ª «robustecimiento del poder ejecutivo»); BN34 +; FE34 + | 2 |
+| C43 | Amnistía para los presos políticos | FP36 + (amnistía, 1.º); DER33 + («amplia y generosa amnistía»); CEDA33 (+) | 2 (consenso: cada uno para los suyos) |
+| C44 | Quien cultiva una tierra arrendada durante años debe poder acceder a su propiedad | FP36 + (régimen agrario, 3.ª) | 3 (¿o 2 con CEDA?) |
+| C45 | El Estado debe impulsar grandes planes de obras públicas | FP36 +; PNF21 + (piano organico); CEDA33 + (obras hidráulicas); FE34 + (obras hidráulicas) | 2 (consenso) |
+| C46 | Hay que equilibrar las cuentas públicas recortando gastos | PNF21 + (obiettivi, 1); CEDA33 + (X); FP36 (+) (no endeudarse para gasto corriente) | 2 |
+| C47 | Hay que proteger con aranceles la producción nacional | FE34 + (p. 18, agricultura); FP36 (+) (protección de la industria); PNF21 ~ (solo si es necesario) | 2 |
+| C48 | El Estado debe apartar a los funcionarios y policías que no sean leales al régimen | FP36 + (restablecimiento, 5.º); BN34 (+) (Ejército «depurado»); PCR19 (+) | 2 |
+| C49 | La jurisdicción militar debe limitarse a los delitos militares | FP36 + (4.º); PNF21 + («vanno abolite le magistrature speciali») | 2 |
+| C50 | Hay que dejar de subvencionar empresas y cooperativas que no son viables | PNF21 + (obiettivi, 3) | 3 |
+| C51 | Los partidos deben poder tener milicias armadas propias | PNF21 + (squadre, «milizia volontaria»); FE34 (+) («la vida es milicia») | 2 |
+
+**Recuento provisional:** 51 candidatas más las 15 del v1 son **66 preguntas**, por debajo del tope de 80. Al cerrar el texto, algunas se fusionarán (por ejemplo, C26 con C1; C29 con C30 no, porque miden cosas distintas) y otras de nivel 3 muy técnicas pueden caer (C8).
+
+Las posiciones en cursiva de las tablas anteriores son de programas largos y hay que confirmarlas con su cita.
 
 ## Siguiente paso
-1. Extraer PNF21, PCR19, FP36, CEDA33 y DER33 con el mismo criterio.
-2. Fusionar, cerrar el texto de cada pregunta y asignar su nivel.
-3. Añadir las posiciones y citas a `citas/`, actualizar `cargar.ts` y publicar la versión 2.0.0 de la histórica.
+1. Fusionar, cerrar el texto de cada pregunta y asignar su nivel.
+2. Añadir las posiciones y citas a `citas/`, actualizar `cargar.ts` y publicar la versión 2.0.0 de la histórica.
