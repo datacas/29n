@@ -21,6 +21,8 @@ dist/
 
 # Programas originales de trabajo (la copia pública que se sirve está en app/public/programas)
 docs/programas/*.pdf
+docs/historica/fuentes/*.pdf
+docs/historica/fuentes/*.txt
 docs/programas/*Zone.Identifier
 
 # Datos de trabajo regenerables del análisis con IA (las decisiones de revisión sí se versionan)
