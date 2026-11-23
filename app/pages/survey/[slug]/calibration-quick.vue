@@ -14,7 +14,7 @@
         <div class="label__head"><h2 id="h-temas">Importancia de cada tema</h2></div>
         <div class="dimensions-list">
           <div v-for="dim in progress.dimensions" :key="dim.dimensionId" class="dimension-item cq__row">
-            <label :for="`dim-${dim.dimensionId}`" class="cq__name">{{ dim.name }}</label>
+            <label :for="`dim-${dim.dimensionId}`" class="cq__name">{{ dim.name }}<span v-if="dimensionHelp(dim.code)" class="cq__hint">{{ dimensionHelp(dim.code) }}</span></label>
             <select :id="`dim-${dim.dimensionId}`" v-model="importanceMap[dim.dimensionId]" class="importance-select cq__select">
               <option value="low">{{ $t('survey.take.importance.low') }}</option>
               <option value="medium">{{ $t('survey.take.importance.medium') }}</option>
@@ -33,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import { dimensionHelp } from '~/lib/survey/dimension-help'
 const route = useRoute()
 const releaseId = (route.params.slug || route.params.id || '') as string
 
@@ -80,6 +81,8 @@ watch(importanceMap, (newMap) => {
 .back--band { color: var(--muted); margin-bottom: var(--space-2); }
 .cq__row { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--line); }
 .cq__row:last-child { border-bottom: 0; }
-.cq__name { font-weight: 700; font-size: 1.1rem; }
+.cq__name { flex: 1; font-weight: 700; font-size: 1.1rem; }
+.cq__hint { display: block; margin-top: 0.2rem; font-size: 0.85rem; font-weight: 400; line-height: 1.4; color: var(--muted); }
+.cq__select { flex: none; }
 .cq__select { min-height: 2.75rem; padding: 0.3rem 0.6rem; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--tile); }
 </style>
