@@ -63,6 +63,8 @@ export default defineNuxtConfig({
   },
 
   ssr: true,
+  // Sitio estático: el payload va incrustado en el HTML. Si no, el navegador pide /_payload.json y Vercel responde 404
+  experimental: { payloadExtraction: !publicBuild },
 
   runtimeConfig: {
     databaseUrl: process.env.DATABASE_URL || 'postgresql://app:password@localhost:5433/affinity',
