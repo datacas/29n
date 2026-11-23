@@ -38,12 +38,38 @@ describe('selección exhaustiva (encuesta histórica)', () => {
   })
 })
 
-// Datos reales del 29N: fija cuántas preguntas da cada profundidad, para detectar cualquier cambio en el selector general.
-// (Comprobado al introducir el modo exhaustivo: mismas listas que el selector anterior en 9 combinaciones.)
+// Datos reales del 29N: fija las listas EXACTAS de preguntas (huella SHA-256 de los ids, en orden) de cada profundidad
+// para tres selecciones de partidos. Las huellas se calcularon con el selector ANTERIOR al modo exhaustivo,
+// así que este test comprueba que el 29N conserva exactamente sus selecciones.
 import { readFileSync, existsSync } from 'node:fs'
+import { createHash } from 'node:crypto'
 const REL = 'app/public/data/releases/89580f79-3955-469f-99be-2709a5611956.json'
+const EXPECTED: Record<string, string> = {
+  "todos.quick": "12ae32d9f6bbb602",
+  "todos.normal": "09affda24d46fe8d",
+  "todos.deep": "9c28dba306aa6f71",
+  "primeros3.quick": "c342d6740b13e6cb",
+  "primeros3.normal": "296ec39a018009fd",
+  "primeros3.deep": "66733491970c6935",
+  "del5al11.quick": "aea52bd0f0ef7f57",
+  "del5al11.normal": "f81856580d072d00",
+  "del5al11.deep": "bab4480e345a44cb"
+}
 describe.skipIf(!existsSync(REL))('29N con datos reales', () => {
   const d = existsSync(REL) ? JSON.parse(readFileSync(REL, 'utf8')) : null
+  const sets: Record<string, string[]> = d ? {
+    todos: [],
+    primeros3: d.entities.slice(0, 3).map((e: any) => e.entityId),
+    del5al11: d.entities.slice(5, 12).map((e: any) => e.entityId)
+  } : {}
+  it('mismas listas de preguntas que antes del modo exhaustivo (9 combinaciones)', () => {
+    for (const [name, sel] of Object.entries(sets)) {
+      for (const m of ['quick', 'normal', 'deep'] as const) {
+        const got = selectQuestions(d.questions, d.positions, d.entities, sel, m).map((q: any) => q.questionId).join(',')
+        expect(createHash('sha256').update(got).digest('hex').slice(0, 16), `${name}.${m}`).toBe(EXPECTED[`${name}.${m}`])
+      }
+    }
+  })
   it('rápida 27, normal 43, completa 67 con todos los partidos', () => {
     const n = (m: 'quick' | 'normal' | 'deep') => selectQuestions(d.questions, d.positions, d.entities, [], m).length
     expect([n('quick'), n('normal'), n('deep')]).toEqual([27, 43, 67])

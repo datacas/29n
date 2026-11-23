@@ -70,10 +70,10 @@
 
     <h2>Tus datos</h2>
     <ul>
-      <li>Tus respuestas y tus resultados <strong>se guardan solo en tu navegador</strong>. Al servidor solo llegan recuentos anónimos (abajo).</li>
-      <li>Contamos de forma anónima cuántas encuestas se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP, tus respuestas ni tus resultados, y respetamos la opción «No rastrear» del navegador.</li>
-      <li>Al ver tu resultado, tus respuestas y tu afinidad con cada programa <strong>suman de forma anónima</strong> a las estadísticas. No guardamos una ficha por persona: cada respuesta solo añade 1 a un contador (por ejemplo, «pregunta 12, de acuerdo»), sin IP ni ningún identificador, así que nadie, tampoco nosotros, puede saber qué respondiste. Si tu navegador tiene activado «No rastrear» o el control global de privacidad, no se envía nada. Las estadísticas públicas se abren cuando al menos 10 personas han terminado la encuesta, y ninguna cifra se publica si se apoya en menos de 10 personas.</li>
-      <li>Contamos las visitas a la web con Vercel Web Analytics, que no usa cookies ni te identifica. Solo suma páginas vistas. No se carga si tienes activado «No rastrear».</li>
+      <li>Tus respuestas y tus resultados <strong>se guardan en tu navegador</strong>. Para las estadísticas, el servidor los recibe una vez, sin ningún identificador, y solo los usa para sumar contadores: no guarda ningún registro individual (abajo).</li>
+      <li>Contamos de forma anónima cuántas encuestas se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP ni ningún identificador, y no se envía nada si tu navegador tiene activado «No rastrear» o el control global de privacidad.</li>
+      <li>Al ver tu resultado, tus respuestas y tu afinidad con cada programa se envían una vez para <strong>sumar de forma anónima</strong> a las estadísticas. No guardamos una ficha por persona: cada respuesta solo añade 1 a un contador (por ejemplo, «pregunta 12, de acuerdo»), sin IP ni ningún identificador, así que nadie, tampoco nosotros, puede saber qué respondiste. Si tu navegador tiene activado «No rastrear» o el control global de privacidad, no se envía nada. Las estadísticas públicas se abren cuando al menos 10 personas han terminado la encuesta, y ninguna cifra se publica si se apoya en menos de 10 personas.</li>
+      <li>Contamos las visitas a la web con Vercel Web Analytics, que no usa cookies ni te identifica. Solo suma páginas vistas. No se carga si tienes activado «No rastrear» o el control global de privacidad.</li>
     </ul>
 
     <p class="back"><NuxtLink to="/">Volver al inicio</NuxtLink></p>

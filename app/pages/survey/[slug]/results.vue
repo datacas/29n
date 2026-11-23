@@ -138,7 +138,7 @@
           <NuxtLink to="/" class="btn btn-secondary">{{ $t('common.back') }}</NuxtLink>
         </section>
 
-        <p class="disclaimer small">Este resultado se calcula en tu navegador. Al servidor solo llegan recuentos anónimos para las estadísticas, nunca tus respuestas como tales. La compatibilidad refleja coincidencia con los programas, no es una recomendación de voto.</p>
+        <p class="disclaimer small">Este resultado se calcula en tu navegador. Para las estadísticas, tus respuestas se envían una vez, sin ningún identificador, y solo se suman a contadores anónimos. La compatibilidad refleja coincidencia con los programas, no es una recomendación de voto.</p>
       </div>
     </template>
   </div>

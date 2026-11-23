@@ -16,7 +16,7 @@
 
 - **Tope: 80 preguntas en total.** Las propuestas parecidas de varios programas se agrupan en una pregunta.
 - **El nivel no se asigna a mano:** el script de carga lo calculará con las citas verificadas. Será 1 para las 15 comparativas, 2 si hay dos o más programas con posición evaluable y 3 si solo hay uno. Los niveles de las tablas son orientativos. Por ejemplo, C3 (monarquía) solo tiene confirmado el BN34, así que hoy sería nivel 3.
-- **Cupo de contrapeso como criterio de composición:** el selector exhaustivo entra todo el nivel y no aplica el cupo `bal-…`. Así que el cupo se cumple en el propio banco: al menos el 20 % de las preguntas de cada nivel se formulan de modo que «de acuerdo» sea la postura de mercado, libertad u orden (⇄). Con 66 preguntas son unas 13. Hoy solo hay 3: hay que reformular candidatas al cerrar el texto.
+- **Cupo de contrapeso como criterio de composición:** el selector exhaustivo entra todo el nivel y no aplica el cupo `bal-…`. Así que el cupo se cumple en el propio banco: al menos el 20 % de las preguntas de cada nivel se formulan de modo que «de acuerdo» sea la postura de mercado, libertad u orden (⇄). Hoy solo hay 3: hay que reformular candidatas al cerrar el texto. **Validación antes de publicar v2:** comprobar el porcentaje en cada nivel por separado, no solo en el total.
 - **Una pregunta, una afirmación:** no se mezclan cuestiones que puedan tener posiciones distintas (ver C30 y C37).
 - **Sin inferencias débiles:** una posición sin cita que responda a la pregunta no se carga. Si una candidata se queda sin posiciones, cae.
 - Las preguntas de nivel 2 y 3 se redactan igual de neutras que las 15 actuales.
