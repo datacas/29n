@@ -59,7 +59,7 @@ useHead({ title: '29N · ¿Con qué programa coincides más?' })
 .home__steps li { counter-increment: paso; display: grid; grid-template-columns: 2.6rem 1fr; column-gap: var(--space-3); padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--line); }
 .home__steps li:last-child { border-bottom: 0; }
 .home__steps li::before { content: counter(paso); grid-row: span 2; align-self: start; display: grid; place-content: center; width: 2rem; height: 2rem; border-radius: 50%; border: 1px solid var(--ink); font-size: 0.95rem; font-weight: 600; }
-.home__share { margin-top: 0; }
+.home__share { margin-top: var(--space-7); }
 .home__steps b { font-size: 1.08rem; font-weight: 500; }
 .home__steps span { color: var(--ink-soft); }
 </style>
