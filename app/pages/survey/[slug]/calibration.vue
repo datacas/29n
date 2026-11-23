@@ -9,7 +9,7 @@
     </section>
 
     <div class="wrap stack-lg cal__body">
-      <StepBar :current="2" />
+      <StepBar :current="2" :entities="progress?.entityNounPlural" />
 
       <p v-if="!surveyConfig" class="note note--alert error" role="alert">No se encontró la configuración de la encuesta.</p>
 

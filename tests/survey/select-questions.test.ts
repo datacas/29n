@@ -31,8 +31,21 @@ describe('selección exhaustiva (encuesta histórica)', () => {
   it('una pregunta de un solo programa no sale si ese programa no está elegido', () => {
     expect(ids(selectQuestions(questions, positions, entities, ['B', 'C'], 'deep', undefined, true))).toEqual(['q1', 'q2'])
   })
-  it('sin el modo exhaustivo, el comportamiento del 29N no cambia', () => {
-    const normal = ids(selectQuestions(questions, positions, entities, [], 'quick'))
-    expect(normal).toContain('q1')
+  it('sin el modo exhaustivo, el selector no cambia: equivale a pasar exhaustive=false', () => {
+    for (const m of ['quick', 'normal', 'deep'] as const) {
+      expect(ids(selectQuestions(questions, positions, entities, [], m))).toEqual(ids(selectQuestions(questions, positions, entities, [], m, undefined, false)))
+    }
+  })
+})
+
+// Datos reales del 29N: fija cuántas preguntas da cada profundidad, para detectar cualquier cambio en el selector general.
+// (Comprobado al introducir el modo exhaustivo: mismas listas que el selector anterior en 9 combinaciones.)
+import { readFileSync, existsSync } from 'node:fs'
+const REL = 'app/public/data/releases/89580f79-3955-469f-99be-2709a5611956.json'
+describe.skipIf(!existsSync(REL))('29N con datos reales', () => {
+  const d = existsSync(REL) ? JSON.parse(readFileSync(REL, 'utf8')) : null
+  it('rápida 27, normal 43, completa 67 con todos los partidos', () => {
+    const n = (m: 'quick' | 'normal' | 'deep') => selectQuestions(d.questions, d.positions, d.entities, [], m).length
+    expect([n('quick'), n('normal'), n('deep')]).toEqual([27, 43, 67])
   })
 })

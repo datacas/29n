@@ -5,7 +5,7 @@
 export function track(event: 'survey_started' | 'survey_completed', releaseId: string, props: Record<string, unknown> = {}) {
   try {
     if (!import.meta.client) return
-    if (navigator.doNotTrack === '1') return
+    if (privacyOptOut()) return
     const device = window.matchMedia('(max-width: 768px)').matches ? 'mobile' : 'desktop'
     fetch('/api/stats/event', {
       method: 'POST',

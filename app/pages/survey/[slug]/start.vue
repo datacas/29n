@@ -13,7 +13,7 @@
       </section>
 
       <div class="wrap stack-lg start__body">
-        <StepBar :current="1" />
+        <StepBar :current="1" :entities="noun.plural" />
 
         <!-- Paso 1: partidos -->
         <section class="label" aria-labelledby="h-partidos">
@@ -213,6 +213,8 @@ async function startSurvey() {
     release_id: releaseId,
     local_id: crypto.randomUUID(),
     selectedEntities: selectedEntities.value,
+    // Para que las páginas siguientes llamen igual a las entidades sin volver a descargar la versión
+    entityNounPlural: noun.value.plural,
     depthMode: depthMode.value,
     calibrationMode: calibrationMode.value,
     questions: filteredQuestions.value,

@@ -39,7 +39,11 @@ const CONSULTATION = {
     kind: 'historical',
     shortName: '29N Historia',
     entityNoun: { singular: 'programa', plural: 'programas' },
-    minEvaluableQuestions: 5
+    minEvaluableQuestions: 5,
+    // Exhaustiva: rápida = nivel 1, normal = hasta nivel 2, completa = todo (incluidas las de un solo programa)
+    exhaustive: true,
+    // Con preguntas de un solo programa, la cobertura de cada uno es baja por diseño: manda el mínimo absoluto
+    minCoveragePercent: 0
   }
 }
 
@@ -52,7 +56,8 @@ const DIMENSIONS = {
   trabajo: { code: 'h4-trabajo', name: 'Trabajo' }
 } as const
 
-const QUESTIONS: Array<{ letter: string; dim: keyof typeof DIMENSIONS; text: string }> = [
+// level: 1 comparativa (rápida), 2 de dos o más programas (normal), 3 de un solo programa (completa). Por defecto 1.
+const QUESTIONS: Array<{ letter: string; dim: keyof typeof DIMENSIONS; text: string; level?: 1 | 2 | 3 }> = [
   { letter: 'A', dim: 'regimen', text: 'El Parlamento debe elegirse por sufragio universal, votando a partidos.' },
   { letter: 'C', dim: 'regimen', text: 'Hay que romper con el orden constitucional existente y construir un Estado de nuevo tipo.' },
   { letter: 'D', dim: 'regimen', text: 'Las libertades de prensa, reunión y asociación deben valer por igual para todas las ideologías, también para las contrarias al Gobierno.' },
@@ -205,12 +210,12 @@ try {
     const existing = await q(`SELECT id FROM questions WHERE pilot_question_id = $1`, [code])
     if (existing.rows[0]) {
       questionOf[x.letter] = existing.rows[0].id
-      await q(`UPDATE questions SET canonical_text = $2, topic_id = $3, consultation_id = $4, status = 'published' WHERE id = $1`,
-        [questionOf[x.letter], x.text, topicOf[x.dim], consultationId])
+      await q(`UPDATE questions SET canonical_text = $2, topic_id = $3, consultation_id = $4, status = 'published', depth_level = $5 WHERE id = $1`,
+        [questionOf[x.letter], x.text, topicOf[x.dim], consultationId, x.level ?? 1])
     } else {
       questionOf[x.letter] = (await q(
         `INSERT INTO questions (consultation_id, topic_id, canonical_text, answer_type, depth_level, status, pilot_question_id)
-         VALUES ($1,$2,$3,'scale',1,'published',$4) RETURNING id`, [consultationId, topicOf[x.dim], x.text, code]
+         VALUES ($1,$2,$3,'scale',$5,'published',$4) RETURNING id`, [consultationId, topicOf[x.dim], x.text, code, x.level ?? 1]
       )).rows[0].id
     }
   }

@@ -15,7 +15,11 @@
 | 3 | De un solo programa | Completa |
 
 - **Tope: 80 preguntas en total.** Las propuestas parecidas de varios programas se agrupan en una pregunta.
-- Las preguntas de nivel 2 y 3 se redactan igual de neutras que las 15 actuales. Se mantiene el cupo de preguntas formuladas en sentido de mercado, libertad u orden.
+- **El nivel no se asigna a mano:** el script de carga lo calculará con las citas verificadas. Será 1 para las 15 comparativas, 2 si hay dos o más programas con posición evaluable y 3 si solo hay uno. Los niveles de las tablas son orientativos. Por ejemplo, C3 (monarquía) solo tiene confirmado el BN34, así que hoy sería nivel 3.
+- **Cupo de contrapeso como criterio de composición:** el selector exhaustivo entra todo el nivel y no aplica el cupo `bal-…`. Así que el cupo se cumple en el propio banco: al menos el 20 % de las preguntas de cada nivel se formulan de modo que «de acuerdo» sea la postura de mercado, libertad u orden (⇄). Con 66 preguntas son unas 13. Hoy solo hay 3: hay que reformular candidatas al cerrar el texto.
+- **Una pregunta, una afirmación:** no se mezclan cuestiones que puedan tener posiciones distintas (ver C30 y C37).
+- **Sin inferencias débiles:** una posición sin cita que responda a la pregunta no se carga. Si una candidata se queda sin posiciones, cae.
+- Las preguntas de nivel 2 y 3 se redactan igual de neutras que las 15 actuales.
 
 ## Candidatas de los programas cortos
 
@@ -69,7 +73,8 @@
 |---|---|---|---|
 | C28 | Deben confiscarse los bienes de las órdenes religiosas | FASCI19 + (financiero, b); *DER33 −, CEDA33 −* | 2 |
 | C29 | El Estado debe pagar los estudios, también los superiores, a los alumnos capaces sin recursos | NSDAP20 + (p. 20); FE34 + (p. 24); *FP36 +, PCR19 +* | 2 |
-| C30 | La educación física y la formación premilitar deben ser obligatorias para los jóvenes | NSDAP20 + (p. 21); FE34 + (p. 23); *PNF21 +, PCR19 +* | 2 |
+| C30a | La educación física debe ser obligatoria por ley | NSDAP20 + (p. 21) | 3 |
+| C30b | Los jóvenes deben recibir formación premilitar | FE34 + (p. 23); *PNF21 +, PCR19 +* | 2 |
 | C31 | El Estado puede movilizar obligatoriamente a los jóvenes para trabajos de interés nacional | FE34 + (p. 20) | 3 |
 
 ### Candidatas añadidas por los programas largos
@@ -80,15 +85,16 @@
 | C34 | La sanidad debe ser pública y gratuita | PCR19 + (Sanidad); FP36 + (asistencia pública, Beneficencia y Sanidad) | 2 |
 | C35 | Las penas de cárcel deben sustituirse en lo posible por medidas educativas | PCR19 + (Justicia, 11); FP36 (+) humanizar prisiones; PNF21 ~ («intimidatrice ed emendatrice») | 2 |
 | C36 | Los jueces deben ser elegidos por el pueblo | PCR19 + (Justicia, 11); FP36 (−) justicia independiente | 2 |
-| C37 | La mujer debe tener los mismos derechos que el hombre, también dentro del matrimonio (fila R, retirada del v1) | FASCI19 + (voto); PCR19 + (4); CEDA33 ~ / (−) («sin perjuicio de la autoridad marital») | 2 |
+| C37a | Las mujeres deben poder votar y ser elegidas | FASCI19 + (político, a); *PCR19 +* | 2 |
+| C37b | Dentro del matrimonio, la mujer debe tener los mismos derechos que el marido | PCR19 + (4, «igualdad… en el matrimonio»); CEDA33 (−) («sin perjuicio de la autoridad marital») | 2 |
 | C38 | Los pueblos y regiones deben tener derecho a separarse y formar su propio Estado | PCR19 + (9); FE34 − (p. 2); BN34 − | 2 |
-| C39 | Debe existir el divorcio | PCR19 (+) (igualdad en el matrimonio); CEDA33 − («defensa de la institución familiar contra todo intento de disolución») | 2 |
+| C39 | Debe existir el divorcio | PCR19 (+); CEDA33 (−) — **las dos son inferencias**: si no aparece una cita explícita sobre el divorcio, cae | ? |
 | C40 | La religión debe enseñarse en la escuela pública a los alumnos creyentes | CEDA33 + (VII, enseñanza religiosa obligatoria para católicos); PCR19 − (enseñanza «absolutamente laica»); FP36 (−) | 2 |
 | C41 | Los ayuntamientos deben tener amplia autonomía | CEDA33 + (IV); PNF21 (+) descentralización administrativa | 2 |
 | C42 | El Gobierno debe tener más poder frente al Parlamento | CEDA33 + (II, 4.ª «robustecimiento del poder ejecutivo»); BN34 +; FE34 + | 2 |
-| C43 | Amnistía para los presos políticos | FP36 + (amnistía, 1.º); DER33 + («amplia y generosa amnistía»); CEDA33 (+) | 2 (consenso: cada uno para los suyos) |
+| C43 | Amnistía para los presos políticos | FP36 + (amnistía, 1.º); DER33 + («amplia y generosa amnistía»); CEDA33 (+) | 2 · discrimina poco (todos a favor, cada uno para los suyos): candidata a caer |
 | C44 | Quien cultiva una tierra arrendada durante años debe poder acceder a su propiedad | FP36 + (régimen agrario, 3.ª) | 3 (¿o 2 con CEDA?) |
-| C45 | El Estado debe impulsar grandes planes de obras públicas | FP36 +; PNF21 + (piano organico); CEDA33 + (obras hidráulicas); FE34 + (obras hidráulicas) | 2 (consenso) |
+| C45 | El Estado debe impulsar grandes planes de obras públicas | FP36 +; PNF21 + (piano organico); CEDA33 + (obras hidráulicas); FE34 + (obras hidráulicas) | 2 · discrimina poco (consenso): candidata a caer |
 | C46 | Hay que equilibrar las cuentas públicas recortando gastos | PNF21 + (obiettivi, 1); CEDA33 + (X); FP36 (+) (no endeudarse para gasto corriente) | 2 |
 | C47 | Hay que proteger con aranceles la producción nacional | FE34 + (p. 18, agricultura); FP36 (+) (protección de la industria); PNF21 ~ (solo si es necesario) | 2 |
 | C48 | El Estado debe apartar a los funcionarios y policías que no sean leales al régimen | FP36 + (restablecimiento, 5.º); BN34 (+) (Ejército «depurado»); PCR19 (+) | 2 |
@@ -96,10 +102,11 @@
 | C50 | Hay que dejar de subvencionar empresas y cooperativas que no son viables | PNF21 + (obiettivi, 3) | 3 |
 | C51 | Los partidos deben poder tener milicias armadas propias | PNF21 + (squadre, «milizia volontaria»); FE34 (+) («la vida es milicia») | 2 |
 
-**Recuento provisional:** 51 candidatas más las 15 del v1 son **66 preguntas**, por debajo del tope de 80. Al cerrar el texto, algunas se fusionarán (por ejemplo, C26 con C1; C29 con C30 no, porque miden cosas distintas) y otras de nivel 3 muy técnicas pueden caer (C8).
+**Recuento provisional:** 53 candidatas (C30 y C37 se dividen) más las 15 del v1 son **68 preguntas**, por debajo del tope de 80. Al cerrar el texto, algunas se fusionarán (por ejemplo, C26 con C1; C29 con C30 no, porque miden cosas distintas) y otras de nivel 3 muy técnicas pueden caer (C8).
 
 Las posiciones en cursiva de las tablas anteriores son de programas largos y hay que confirmarlas con su cita.
 
 ## Siguiente paso
-1. Fusionar, cerrar el texto de cada pregunta y asignar su nivel.
-2. Añadir las posiciones y citas a `citas/`, actualizar `cargar.ts` y publicar la versión 2.0.0 de la histórica.
+1. Fusionar, cerrar el texto de cada pregunta y reformular las necesarias para el cupo ⇄.
+2. Que el script de carga calcule el nivel de cada pregunta a partir de las citas.
+3. Añadir las posiciones y citas a `citas/` (solo con cita que responda a la pregunta), actualizar `cargar.ts` y publicar la versión 2.0.0 de la histórica.

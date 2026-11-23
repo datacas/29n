@@ -18,7 +18,10 @@ export interface RankableResult {
   coveragePercent: number
 }
 
-/** Cobertura mínima (sobre preguntas contestadas) para considerar fiable un resultado. */
+/**
+ * Cobertura mínima (sobre preguntas contestadas) para considerar fiable un resultado. Configurable por encuesta:
+ * en una exhaustiva, con preguntas de un solo programa, la cobertura de cada uno es baja por diseño y manda el mínimo absoluto.
+ */
 export const MIN_COVERAGE_PERCENT = 25
 
 /**
@@ -33,10 +36,10 @@ export function minEvaluableFor(result: RankableResult, min: number = MIN_EVALUA
   return Math.min(min, result.answeredQuestions)
 }
 
-export function isLowCoverage(result: RankableResult, min: number = MIN_EVALUABLE_QUESTIONS): boolean {
+export function isLowCoverage(result: RankableResult, min: number = MIN_EVALUABLE_QUESTIONS, minCoverage: number = MIN_COVERAGE_PERCENT): boolean {
   if (result.affinityPercent === null) return false
   return (
-    result.coveragePercent < MIN_COVERAGE_PERCENT ||
+    result.coveragePercent < minCoverage ||
     result.evaluableQuestions < minEvaluableFor(result, min)
   )
 }
@@ -47,8 +50,8 @@ export function isLowCoverage(result: RankableResult, min: number = MIN_EVALUABL
  *  - los que no tienen ninguna posición documentada van al final del todo.
  * El orden es estable para que dos ejecuciones den el mismo resultado.
  */
-export function sortResults<T extends RankableResult>(results: T[], min: number = MIN_EVALUABLE_QUESTIONS): T[] {
-  const rank = (r: RankableResult) => (r.affinityPercent === null ? 2 : isLowCoverage(r, min) ? 1 : 0)
+export function sortResults<T extends RankableResult>(results: T[], min: number = MIN_EVALUABLE_QUESTIONS, minCoverage: number = MIN_COVERAGE_PERCENT): T[] {
+  const rank = (r: RankableResult) => (r.affinityPercent === null ? 2 : isLowCoverage(r, min, minCoverage) ? 1 : 0)
   return [...results].sort((a, b) => {
     if (rank(a) !== rank(b)) return rank(a) - rank(b)
     return (b.affinityPercent ?? 0) - (a.affinityPercent ?? 0)

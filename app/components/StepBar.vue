@@ -7,14 +7,8 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ current: 1 | 2 | 3 | 4 }>()
 // El primer paso se llama como las entidades de la encuesta («Partidos» en el 29N, «Programas» en la histórica).
-// Misma URL que la página: useFetch reutiliza la respuesta, no hace otra petición.
-const route = useRoute()
-const id = String(route.params.slug || route.params.id || '')
-const { data } = useFetch<any>(`/data/releases/${id}.json`, { key: `release-${id}`, server: false, immediate: !!id })
-const steps = computed(() => {
-  const plural = data.value?.consultation?.entityNoun?.plural ?? 'partidos'
-  return [plural.charAt(0).toUpperCase() + plural.slice(1), 'Prioridades', 'Preguntas', 'Resultados']
-})
+// Lo pasa cada página, que ya tiene ese dato: el componente no vuelve a descargar la versión.
+const props = withDefaults(defineProps<{ current: 1 | 2 | 3 | 4; entities?: string }>(), { entities: 'partidos' })
+const steps = computed(() => [props.entities.charAt(0).toUpperCase() + props.entities.slice(1), 'Prioridades', 'Preguntas', 'Resultados'])
 </script>

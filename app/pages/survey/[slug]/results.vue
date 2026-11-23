@@ -15,7 +15,7 @@
       </section>
 
       <div class="wrap stack-lg r__body">
-        <StepBar :current="4" />
+        <StepBar :current="4" :entities="noun.plural" />
 
         <section class="how-to-read stack" aria-labelledby="h-leer">
           <h2 id="h-leer" class="visually-hidden">Cómo leer estos resultados</h2>
@@ -118,7 +118,7 @@
         <p v-if="results.length" class="small r__contrib-note">
           Tus respuestas y tu afinidad suman de forma anónima a las <NuxtLink v-if="statsVisible && !isHistoricalSurvey" to="/estadisticas">estadísticas públicas</NuxtLink><template v-else>estadísticas</template>:
           cada respuesta solo añade 1 a un contador, sin IP ni ningún identificador, así que nadie puede saber qué respondiste.
-          No se envía nada si tu navegador tiene activado «No rastrear». <NuxtLink to="/metodologia">Más detalle</NuxtLink>.
+          No se envía nada si tu navegador tiene activado «No rastrear» o el control global de privacidad. <NuxtLink to="/metodologia">Más detalle</NuxtLink>.
         </p>
 
         <section v-if="results.length" class="r__kofi">
@@ -147,7 +147,7 @@
 <script setup lang="ts">
 import { calculateScoring } from '~/lib/scoring/calculate'
 import type { Answer, Position, Question, Weight, EntityInfo, DimensionCalibration, ScoringResult } from '~/lib/scoring/calculate'
-import { MIN_EVALUABLE_QUESTIONS, isLowCoverage, sortResults } from '~/lib/scoring/ranking'
+import { MIN_EVALUABLE_QUESTIONS, MIN_COVERAGE_PERCENT, isLowCoverage, sortResults } from '~/lib/scoring/ranking'
 import { programUrl } from '~/lib/programs'
 
 const route = useRoute()
@@ -316,11 +316,12 @@ const isHistoricalSurvey = computed(() => survey.value.kind === 'historical')
 const minEval = computed<number>(() => survey.value.minEvaluableQuestions ?? MIN_EVALUABLE_QUESTIONS)
 const noun = computed<{ singular: string; plural: string }>(() => survey.value.entityNoun ?? { singular: 'partido', plural: 'partidos' })
 const shortName = computed<string>(() => survey.value.shortName ?? '29N')
-const low = (r: ScoringResult) => isLowCoverage(r, minEval.value)
+const minCov = computed<number>(() => survey.value.minCoveragePercent ?? MIN_COVERAGE_PERCENT)
+const low = (r: ScoringResult) => isLowCoverage(r, minEval.value, minCov.value)
 // En la encuesta histórica todas las entidades son históricas: no se excluyen
 const counts = (r: ScoringResult) => isHistoricalSurvey.value || !r.historical
 
-const sortedResults = computed(() => sortResults(results.value, minEval.value))
+const sortedResults = computed(() => sortResults(results.value, minEval.value, minCov.value))
 
 // Texto para compartir: los tres primeros con datos suficientes. Quien comparte es quien decide enviarlo,
 // y el texto aclara que no es una recomendación de voto (o, en la histórica, que no es adhesión a un régimen).
@@ -347,7 +348,7 @@ async function sendContribution() {
   if (contributed || !progress.value || !results.value.length) return
   contributed = true
   try {
-    if (navigator.doNotTrack === '1') return
+    if (privacyOptOut()) return
     const key = `contributed-${progress.value.local_id}`
     if (localStorage.getItem(key)) return
     const withData = sortedResults.value.filter(r => r.affinityPercent !== null && counts(r))
