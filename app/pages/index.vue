@@ -30,6 +30,11 @@
         </ol>
       </section>
 
+      <section class="label home__share" aria-labelledby="h-share">
+        <div class="label__head"><h2 id="h-share">Compártelo</h2></div>
+        <div class="label__body"><ShareButtons label="Envíaselo a quien quieras" text="29N: compara tu opinión con los programas electorales del 29 de noviembre. Cada porcentaje se apoya en una cita del programa, con su página." /></div>
+      </section>
+
       <div class="note"><strong>No recomienda voto.</strong> Compara tu opinión con lo que dicen los programas, no con lo que luego haga cada partido. Tus respuestas se quedan en tu navegador. <NuxtLink to="/metodologia">Cómo se calcula y de dónde salen los datos</NuxtLink>.</div>
     </div>
   </div>
@@ -54,6 +59,7 @@ useHead({ title: '29N · ¿Con qué programa coincides más?' })
 .home__steps li { counter-increment: paso; display: grid; grid-template-columns: 2.6rem 1fr; column-gap: var(--space-3); padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--line); }
 .home__steps li:last-child { border-bottom: 0; }
 .home__steps li::before { content: counter(paso); grid-row: span 2; align-self: start; display: grid; place-content: center; width: 2rem; height: 2rem; border-radius: 50%; border: 1px solid var(--ink); font-size: 0.95rem; font-weight: 600; }
+.home__share { margin-top: 0; }
 .home__steps b { font-size: 1.08rem; font-weight: 500; }
 .home__steps span { color: var(--ink-soft); }
 </style>
