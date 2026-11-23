@@ -43,10 +43,13 @@ const CONSULTATION = {
   }
 }
 
-// Dos bloques: con tres, el último tendría solo 3 preguntas y oscilaría demasiado. El código ordena los bloques.
+// Cuatro bloques, ordenados por su código. Los dos de 3 preguntas oscilan más en el resultado por bloque,
+// pero así la calibración distingue régimen, sociedad, economía y trabajo.
 const DIMENSIONS = {
-  regimen: { code: 'h1-regimen', name: 'Régimen, nación, Iglesia, escuela y ejército' },
-  economia: { code: 'h2-economia', name: 'Economía y trabajo' }
+  regimen: { code: 'h1-regimen', name: 'Régimen y nación' },
+  sociedad: { code: 'h2-sociedad', name: 'Iglesia, escuela y ejército' },
+  economia: { code: 'h3-economia', name: 'Propiedad y economía' },
+  trabajo: { code: 'h4-trabajo', name: 'Trabajo' }
 } as const
 
 const QUESTIONS: Array<{ letter: string; dim: keyof typeof DIMENSIONS; text: string }> = [
@@ -59,12 +62,12 @@ const QUESTIONS: Array<{ letter: string; dim: keyof typeof DIMENSIONS; text: str
   { letter: 'H', dim: 'economia', text: 'La banca debe ser pública.' },
   { letter: 'I', dim: 'economia', text: 'Las grandes empresas y los servicios públicos deben estar en manos privadas, no del Estado.' },
   { letter: 'J', dim: 'economia', text: 'Los impuestos deben ser progresivos: quien más tiene paga un porcentaje mayor.' },
-  { letter: 'K', dim: 'economia', text: 'Los trabajadores deben poder controlar las decisiones de sus empresas.' },
-  { letter: 'L', dim: 'economia', text: 'Debe prohibirse la huelga en los servicios públicos.' },
-  { letter: 'N', dim: 'economia', text: 'El Estado debe pagar un subsidio a quien está en paro sin culpa.' },
-  { letter: 'O', dim: 'regimen', text: 'La Iglesia y el Estado deben estar separados, sin religión oficial ni dinero público para el culto.' },
-  { letter: 'P', dim: 'regimen', text: 'Los colegios privados y religiosos deben poder enseñar con libertad, sin que el Estado decida sus contenidos.' },
-  { letter: 'U', dim: 'regimen', text: 'El ejército profesional debe sustituirse por una milicia o un ejército del pueblo.' }
+  { letter: 'K', dim: 'trabajo', text: 'Los trabajadores deben poder controlar las decisiones de sus empresas.' },
+  { letter: 'L', dim: 'trabajo', text: 'Debe prohibirse la huelga en los servicios públicos.' },
+  { letter: 'N', dim: 'trabajo', text: 'El Estado debe pagar un subsidio a quien está en paro sin culpa.' },
+  { letter: 'O', dim: 'sociedad', text: 'La Iglesia y el Estado deben estar separados, sin religión oficial ni dinero público para el culto.' },
+  { letter: 'P', dim: 'sociedad', text: 'Los colegios privados y religiosos deben poder enseñar con libertad, sin que el Estado decida sus contenidos.' },
+  { letter: 'U', dim: 'sociedad', text: 'El ejército profesional debe sustituirse por una milicia o un ejército del pueblo.' }
 ]
 
 // Ficha de contexto de cada programa (sale en la encuesta como descripción). Incluye lo que no es pregunta.

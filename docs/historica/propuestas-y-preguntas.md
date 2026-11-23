@@ -244,7 +244,7 @@ Las preguntas marcadas con ⇄ tienen «de acuerdo» en el sentido del **mercado
 14. ⇄ Los colegios privados y religiosos deben poder enseñar con libertad, sin que el Estado decida sus contenidos. *(P)*
 15. El ejército profesional debe sustituirse por una milicia o un ejército del pueblo. *(U)*
 
-**Bloques de resultados:** propongo **dos**, «Régimen, nación, Iglesia, escuela y ejército» (1–5 y 13–15, 8 preguntas) y «Economía y trabajo» (6–12, 7 preguntas). Con tres, el último bloque tendría solo 3 preguntas y su porcentaje oscilaría mucho.
+**Bloques de resultados (versión 1.1.0):** cuatro, para que la calibración distinga temas: «Régimen y nación» (1–5), «Iglesia, escuela y ejército» (13–15), «Propiedad y economía» (6–9) y «Trabajo» (10–12). Los dos bloques de 3 preguntas oscilan más en el resultado por bloque; se acepta a cambio de una calibración más clara. La 1.0.0, con dos bloques, quedó archivada sin llegar a desplegarse.
 
 **Preguntas flojas:**
 - La 5 (F), la 11 (L) y la 12 (N) tienen pocas posiciones.

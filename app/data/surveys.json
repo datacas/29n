@@ -6,8 +6,8 @@
     "description": "Compara tu opinión con diez programas de Europa y España entre 1917 y 1936: el bolchevismo, el fascismo italiano, el nazismo y los partidos de la Segunda República. Cada porcentaje se apoya en una cita del texto.",
     "category": "politics",
     "created_at": "2026-11-23T20:33:00.093Z",
-    "release_id": "76ed8635-c081-4b66-bc58-26c13ce831ef",
-    "release_version": "1.0.0",
+    "release_id": "f44f1d3b-4dfb-4b49-a7af-c188f2820df5",
+    "release_version": "1.1.0",
     "kind": "historical",
     "shortName": "29N Historia"
   },
