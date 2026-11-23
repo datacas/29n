@@ -26,9 +26,11 @@
               <div class="comparison-options cal__options">
                 <button type="button" class="btn-dimension cal__dim" :class="{ selected: selectedSide === 'left' }" :aria-pressed="selectedSide === 'left'" @click="selectedSide = 'left'">
                   {{ getDimName(currentComparison.left) }}
+                  <span v-if="getDimHelp(currentComparison.left)" class="cal__hint">{{ getDimHelp(currentComparison.left) }}</span>
                 </button>
                 <button type="button" class="btn-dimension cal__dim" :class="{ selected: selectedSide === 'right' }" :aria-pressed="selectedSide === 'right'" @click="selectedSide = 'right'">
                   {{ getDimName(currentComparison.right) }}
+                  <span v-if="getDimHelp(currentComparison.right)" class="cal__hint">{{ getDimHelp(currentComparison.right) }}</span>
                 </button>
               </div>
               <button type="button" class="btn-equal btn btn--block" :class="{ 'is-on': selectedSide === 'equal' }" :aria-pressed="selectedSide === 'equal'" @click="selectedSide = 'equal'">
@@ -68,6 +70,7 @@
 </template>
 
 <script setup lang="ts">
+import { dimensionHelp } from '~/lib/survey/dimension-help'
 import {
   computeWeightsFromComparisons,
   type Comparison,
@@ -103,6 +106,16 @@ const dimNames = computed(() => {
   }
   return names
 })
+
+const dimCodes = computed(() => {
+  const codes: Record<string, string> = {}
+  for (const dim of progress?.dimensions || []) codes[dim.dimensionId] = dim.code
+  return codes
+})
+
+function getDimHelp(dimId: string): string {
+  return dimensionHelp(dimCodes.value[dimId])
+}
 
 function getDimName(dimId: string): string {
   return dimNames.value[dimId] || dimId
@@ -218,6 +231,8 @@ function skipComparison() {
 .progress-text { font-size: 0.9rem; font-weight: 500; color: var(--muted); }
 .cal__options { display: grid; gap: var(--space-3); }
 .cal__dim { min-height: 5rem; padding: var(--space-3) var(--space-4); border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--tile); font-size: 1.6rem; font-weight: 450; letter-spacing: -0.03em; line-height: 1.1; text-align: left; transition: background-color 0.15s var(--ease); }
+.cal__hint { display: block; margin-top: 0.5rem; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; line-height: 1.4; color: var(--muted); }
+.cal__dim.selected .cal__hint { color: rgba(255, 255, 255, 0.85); }
 .cal__dim:hover { background: var(--tint); }
 .cal__dim.selected { background: var(--ink); color: #fff; }
 .btn-equal.is-on { background: var(--ink); color: #fff; }
