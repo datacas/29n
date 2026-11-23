@@ -70,9 +70,9 @@
 
     <h2>Tus datos</h2>
     <ul>
-      <li>Tus respuestas y tus resultados <strong>se guardan solo en tu navegador</strong>. No se envían a ningún servidor.</li>
+      <li>Tus respuestas y tus resultados <strong>se guardan solo en tu navegador</strong>. Al servidor solo llegan recuentos anónimos (abajo).</li>
       <li>Contamos de forma anónima cuántas encuestas se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP, tus respuestas ni tus resultados, y respetamos la opción «No rastrear» del navegador.</li>
-      <li>Al terminar puedes <strong>elegir</strong> compartir tus respuestas y tu afinidad de forma anónima para las estadísticas públicas, que se abren cuando al menos 10 personas han terminado la encuesta. Viene desmarcado. No guardamos una ficha por persona: cada respuesta solo suma 1 a un contador (por ejemplo, «pregunta 12, de acuerdo»), así que nadie, tampoco nosotros, puede saber qué respondiste. Ninguna cifra se publica si la comparten menos de 10 personas.</li>
+      <li>Al ver tu resultado, tus respuestas y tu afinidad con cada programa <strong>suman de forma anónima</strong> a las estadísticas. No guardamos una ficha por persona: cada respuesta solo añade 1 a un contador (por ejemplo, «pregunta 12, de acuerdo»), sin IP ni ningún identificador, así que nadie, tampoco nosotros, puede saber qué respondiste. Si tu navegador tiene activado «No rastrear», no se envía nada. Las estadísticas públicas se abren cuando al menos 10 personas han terminado la encuesta, y ninguna cifra se publica si se apoya en menos de 10 personas.</li>
       <li>Contamos las visitas a la web con Vercel Web Analytics, que no usa cookies ni te identifica. Solo suma páginas vistas. No se carga si tienes activado «No rastrear».</li>
     </ul>
 

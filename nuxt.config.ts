@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 
   // Páginas que no cambian se generan en el build; la encuesta es una aplicación del navegador (guarda todo en IndexedDB).
   routeRules: {
-    ...(publicBuild ? { '/': { prerender: true }, '/metodologia': { prerender: true }, '/programas': { prerender: true } } : {}),
+    ...(publicBuild ? { '/': { prerender: true }, '/metodologia': { prerender: true }, '/programas': { prerender: true }, '/historia': { prerender: true } } : {}),
     '/survey/**': { ssr: false },
     '/history': { ssr: false },
     '/estadisticas': { ssr: false }
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   nitro: {
     port: 3099,
-    prerender: publicBuild ? { crawlLinks: false, routes: ['/', '/metodologia', '/programas'] } : undefined,
+    prerender: publicBuild ? { crawlLinks: false, routes: ['/', '/metodologia', '/programas', '/historia'] } : undefined,
     // En Vercel la compresión la hace su red: no duplicamos cada fichero (los PDF pesan 163 MB)
     compressPublicAssets: publicBuild ? false : { gzip: true, brotli: true },
     storage: {

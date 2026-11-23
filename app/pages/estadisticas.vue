@@ -190,7 +190,7 @@
 
         <section class="st__cta">
           <h2>Suma tu opinión</h2>
-          <p>Haz la encuesta y, al terminar, marca «Compartir de forma anónima». Cuantas más personas, más interesantes son estos datos.</p>
+          <p>Haz la encuesta: al ver tu resultado, tus respuestas suman de forma anónima. Cuantas más personas, más interesantes son estos datos.</p>
           <div class="st__ctab">
             <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Hacer la encuesta</NuxtLink>
             <KofiButton />
