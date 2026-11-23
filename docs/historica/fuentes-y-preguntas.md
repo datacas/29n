@@ -37,12 +37,13 @@ Leyenda de estado: ✅ texto íntegro localizado · 🟡 hay fuente, falta compr
 
 ### Lectura del inventario
 
-- **Listos (10):** Fasci 1919, PNF 1921, NSDAP 1920, Tesis de abril, PC(b) 1919, Frente Popular 1936 (cubre también a Izquierda Republicana), Front d'Esquerres 1936 (ERC), Falange 1934, candidatura antimarxista de Madrid 1933 y Bloque Nacional 1934 (Artola, vía Junta de Andalucía).
+- **Listos (10):** Fasci 1919, PNF 1921, NSDAP 1920, Tesis de abril, PC(b) 1919, Frente Popular 1936 (cubre también a Izquierda Republicana), Front d'Esquerres 1936 (ERC; documento propio, pero se carga dentro de FP36), Falange 1934, candidatura antimarxista de Madrid 1933 y Bloque Nacional 1934 (Artola, vía Junta de Andalucía).
 - **Parciales (2):** CEDA 1933 (extracto; falta Artola completo) y PSOE 1933 (título y fecha, sin texto).
 - **Disponibles sin usar aún:** PCE 1931, Acción Nacional 1931, Partido Agrario 1934, JONS 1931 y los 18 puntos de las JAP (1934), en el mismo PDF de la Junta de Andalucía.
 - **Sin texto (3):** Partido Radical, PNV y Lliga (esta, solo pidiendo copia al archivo de la UB).
 - **Programas extranjeros: los 5 localizados completos.**
-- **El hueco que queda es el centro liberal** (Partido Radical, PNV, Lliga): un votante liberal no tiene ningún programa con el que identificarse. **Resuelto:** la CEDA (extracto de Artola más el resumen con citas del BOE) y el Bloque Nacional ya están. La [Biblioteca Virtual de Prensa Histórica](https://prensahistorica.mcu.es) permite descargar números en PDF y buscar en su texto.
+- La derecha ya está cubierta: la CEDA (extracto de Artola más el resumen con citas del BOE) y el Bloque Nacional.
+- **El hueco que queda es el centro liberal** (Partido Radical, PNV, Lliga): un votante liberal no tiene ningún programa con el que identificarse. La [Biblioteca Virtual de Prensa Histórica](https://prensahistorica.mcu.es) permite descargar números en PDF y buscar en su texto.
 
 ## 2. Banco de preguntas
 
