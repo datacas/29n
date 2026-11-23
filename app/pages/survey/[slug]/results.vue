@@ -72,15 +72,15 @@
 
               <details class="evidence-section r__det">
                 <summary>Ver el detalle por tema: tu respuesta frente al programa</summary>
-                <section v-for="sec in sections(result.entityId)" :key="sec.dimensionId" class="r__sec">
-                  <header class="r__sechead">
+                <details v-for="sec in sections(result.entityId)" :key="sec.dimensionId" class="r__sec">
+                  <summary class="r__sechead">
                     <h3>{{ sec.name }}</h3>
                     <p class="small tnum">
                       {{ sec.entered }} de {{ sec.documented }} posiciones del programa entran en tu encuesta
                       <template v-if="sec.entered"> · {{ sec.coincide }} coinciden y {{ sec.discrepan }} no</template>
                       <template v-if="sec.percent !== null"> · afinidad {{ sec.percent }} %</template>
                     </p>
-                  </header>
+                  </summary>
                   <ul class="r__rows">
                     <li v-for="row in sec.rows" :key="row.questionId" class="r__row evidence-item">
                       <p class="r__q evidence-question">{{ row.text }}</p>
@@ -104,7 +104,7 @@
                     </li>
                     <li v-if="!sec.rows.length" class="no-evidence small">Ninguna de las preguntas de este tema que te salieron tiene posición documentada de este partido.</li>
                   </ul>
-                </section>
+                </details>
                 <p class="small"><a :href="programLink(result.entityId, null) || '/programas'" target="_blank" rel="noopener">Abrir el programa completo de {{ getEntityName(result.entityId) }}</a></p>
               </details>
             </div>
@@ -459,8 +459,14 @@ function exportResults() {
 .coverage-label { margin: 0; max-width: none; }
 .r__det { border-top: 1px solid var(--line); padding-top: var(--space-2); }
 .r__det > summary { cursor: pointer; font-weight: 500; min-height: 2.9rem; display: flex; align-items: center; }
-.r__sec { margin-top: var(--space-5); }
-.r__sechead { padding-bottom: var(--space-2); border-bottom: 1px solid var(--ink); }
+/* Cada tema se abre y se cierra por separado: así el detalle de un partido no es un scroll interminable */
+.r__sec { margin-top: var(--space-3); border-bottom: 1px solid var(--line); }
+.r__sechead { position: relative; display: block; padding: var(--space-2) 2rem var(--space-3) 0; cursor: pointer; list-style: none; min-height: 2.9rem; }
+.r__sechead::-webkit-details-marker { display: none; }
+.r__sechead::after { content: ""; position: absolute; right: 0.4rem; top: 1.2rem; width: 0.55rem; height: 0.55rem; border-right: 2.5px solid var(--ink); border-bottom: 2.5px solid var(--ink); transform: rotate(45deg); transition: transform 0.2s var(--ease); }
+.r__sec[open] > .r__sechead::after { transform: translateY(0.2rem) rotate(-135deg); }
+.r__sec[open] > .r__sechead { border-bottom: 1px solid var(--ink); }
+.r__sechead:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
 .r__sechead h3 { font-size: 1.25rem; letter-spacing: -0.02em; }
 .r__sechead p { max-width: none; margin-top: 0.15rem; }
 .r__rows { list-style: none; margin: 0; padding: 0; }
