@@ -72,6 +72,7 @@
     <ul>
       <li>Tus respuestas y tus resultados <strong>se guardan solo en tu navegador</strong>. No se envían a ningún servidor.</li>
       <li>Contamos de forma anónima cuántas encuestas se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP, tus respuestas ni tus resultados, y respetamos la opción «No rastrear» del navegador.</li>
+      <li>Contamos las visitas a la web con Vercel Web Analytics, que no usa cookies ni te identifica. Solo suma páginas vistas. No se carga si tienes activado «No rastrear».</li>
     </ul>
 
     <p class="back"><NuxtLink to="/">Volver al inicio</NuxtLink></p>

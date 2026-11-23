@@ -111,6 +111,11 @@
           </li>
         </ol>
 
+        <section v-if="results.length" class="label r__share" aria-labelledby="h-share">
+          <div class="label__head"><h2 id="h-share">Comparte tu resultado</h2></div>
+          <div class="label__body"><ShareButtons label="Elige cómo enviarlo" :text="shareText" /></div>
+        </section>
+
         <section class="r__actions actions">
           <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Repetir encuesta</NuxtLink>
           <button type="button" class="btn btn-secondary" @click="saveToLocal">{{ $t('survey.results.save') }}</button>
@@ -291,6 +296,17 @@ const priorityList = computed(() => {
 })
 
 const sortedResults = computed(() => sortResults(results.value))
+
+// Texto para compartir: los tres primeros partidos con datos suficientes. Quien comparte es quien decide enviarlo,
+// y el texto aclara que no es una recomendación de voto. Los partidos con pocos datos no entran.
+const shareText = computed(() => {
+  const top = sortedResults.value
+    .filter(r => r.affinityPercent !== null && !r.historical && !isLowCoverage(r))
+    .slice(0, 3)
+    .map(r => `${getEntityName(r.entityId)} ${Math.round(r.affinityPercent as number)} %`)
+  const head = top.length ? `Mi resultado en 29N: ${top.join(', ')}.` : 'He hecho el test de 29N.'
+  return `${head} Es solo la coincidencia con lo que dicen sus programas, no una recomendación de voto. Haz el tuyo:`
+})
 
 function getEntityName(entityId: string): string {
   const entity = releaseData.value?.entities?.find((e: any) => e.entityId === entityId)
