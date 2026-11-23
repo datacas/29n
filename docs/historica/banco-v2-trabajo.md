@@ -1,6 +1,14 @@
 # Banco exhaustivo (v2): documento de trabajo
 
-**Estado: borrador.** Primera pasada completa: los cinco programas cortos y, después, los cinco largos (PNF21, PCR19, FP36, CEDA33 y DER33). DER33 no aporta propuestas nuevas. Falta cerrar el texto de cada pregunta, comprobar cada posición con su cita y añadirlas a `citas/`.
+**Estado: cerrado y publicado como versión 2.0.0.** Este documento recoge el razonamiento previo. **La fuente de verdad es `banco-v2.py`:** las 50 preguntas nuevas (V01–V50) con sus posiciones y citas literales. `python3 banco-v2.py --verificar <textos>` comprueba que cada cita aparece en su fuente; `--escribir` las pasa a `citas/` y genera `preguntas-v2.json`, que lee `cargar.ts`.
+
+Resultado final: 65 preguntas (nivel 1: 15 · nivel 2: 34 · nivel 3: 16) y 198 posiciones. Contrapeso ⇄: 20 %, 21 % y 25 % por nivel.
+
+Cambios respecto a las candidatas:
+- **Caen:** C8 (derecho romano, demasiado técnica) y C39 (divorcio): ni el PCR19 ni la CEDA33 lo mencionan de forma explícita.
+- **Sin cita, retiradas:** la amnistía y la monarquía de la CEDA (su programa deja abierta la forma de gobierno), el voto de la mujer y el deber de trabajar del PCR19, y la religión obligatoria de la CEDA (solo hay paráfrasis del BOE, sin comillas).
+- **Reformuladas en sentido ⇄:** V13 (organismos internacionales), V26 (cárcel), V27 (jueces), V38 (rentas del capital), V39 (planificación), V40 (gasto), V41 (subvenciones), V43 (armamento), V44 (vivienda) y V45 (lucha de clases).
+- **Al verificar:** corregidas dos citas del v1 (orden de palabras en NSDAP20/D y la del PCR19 sobre la separación, que dice «dependent nations to separation»). Anotadas las erratas de las reproducciones.
 
 ## Reglas del banco v2
 

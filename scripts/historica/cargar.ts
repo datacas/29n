@@ -27,7 +27,7 @@ const arg = (n: string, d: string) => {
   const i = process.argv.indexOf(`--${n}`)
   return i >= 0 ? process.argv[i + 1] : d
 }
-const VERSION = arg('version', '1.0.0')
+const VERSION = arg('version', '2.0.0')
 const DOCS = join(process.cwd(), 'docs', 'historica')
 
 const CONSULTATION = {
@@ -74,6 +74,12 @@ const QUESTIONS: Array<{ letter: string; dim: keyof typeof DIMENSIONS; text: str
   { letter: 'P', dim: 'sociedad', text: 'Los colegios privados y religiosos deben poder enseñar con libertad, sin que el Estado decida sus contenidos.' },
   { letter: 'U', dim: 'sociedad', text: 'El ejército profesional debe sustituirse por una milicia o un ejército del pueblo.' }
 ]
+
+// Banco v2 (preguntas V01…): generado por docs/historica/banco-v2.py, que verifica cada cita contra su fuente.
+// Su nivel no está fijado: se calcula con las posiciones evaluables (2 o más programas → 2; uno → 3).
+const V2: Array<{ code: string; dim: keyof typeof DIMENSIONS; bal: boolean; text: string }> =
+  JSON.parse(readFileSync(join(DOCS, 'preguntas-v2.json'), 'utf8'))
+for (const x of V2) QUESTIONS.push({ letter: x.code, dim: x.dim, text: x.text })
 
 // Ficha de contexto de cada programa (sale en la encuesta como descripción). Incluye lo que no es pregunta.
 const PROGRAMS: Array<{ code: string; name: string; period: string; country: string; language: string; year: number; url: string; description: string }> = [
@@ -138,7 +144,7 @@ function readCitations(code: string): Cell[] {
   const md = readFileSync(join(DOCS, 'citas', `${code.toLowerCase()}.md`), 'utf8')
   const cells: Cell[] = []
   for (const line of md.split('\n')) {
-    const m = line.match(/^\| ([A-Z]) \| ([^|]+) \| (.*) \|$/)
+    const m = line.match(/^\| ([A-Z]|V\d\d) \| ([^|]+) \| (.*) \|$/)
     if (!m) continue
     const rest = m[3].split(' | ')
     if (rest.length < 3) throw new Error(`${code}/${m[1]}: fila de citas mal formada`)
@@ -202,6 +208,22 @@ try {
     )).rows[0].id
     await q(`UPDATE topics SET name = $2, dimension_id = $3 WHERE id = $1`, [topicOf[key], d.name, dimId])
   }
+
+  // Nivel de cada pregunta: las 15 comparativas (A…U) son nivel 1; las del banco v2, según cuántos programas
+  // tienen posición evaluable en ellas (2 o más → 2, que sale en Normal; uno → 3, que solo sale en Completa)
+  const holders: Record<string, Set<string>> = {}
+  for (const p of PROGRAMS) {
+    for (const c of readCitations(p.code)) {
+      if (stance(c.mark).value === null) continue
+      ;(holders[c.letter] ??= new Set()).add(p.code)
+    }
+  }
+  for (const x of QUESTIONS) {
+    const n = holders[x.letter]?.size ?? 0
+    if (n === 0) throw new Error(`La pregunta ${x.letter} no tiene ninguna posición evaluable`)
+    x.level = /^V\d\d$/.test(x.letter) ? (n >= 2 ? 2 : 3) : 1
+  }
+  const byLevel = [1, 2, 3].map((l) => QUESTIONS.filter((x) => x.level === l).length)
 
   // Preguntas H-…
   const questionOf: Record<string, string> = {}
@@ -292,7 +314,7 @@ try {
   if (publish) await q(`UPDATE survey_releases SET status = 'published', published_at = now() WHERE id = $1`, [releaseId])
 
   console.log(`Encuesta ${CONSULTATION.slug} · versión ${VERSION} (${publish ? 'publicada' : 'borrador'}) · release ${releaseId}`)
-  console.log(`Preguntas: ${content.questions.length} · programas: ${content.entities.length} · posiciones: ${content.positions.length}`)
+  console.log(`Preguntas: ${content.questions.length} (nivel 1: ${byLevel[0]} · nivel 2: ${byLevel[1]} · nivel 3: ${byLevel[2]}) · programas: ${content.entities.length} · posiciones: ${content.positions.length}`)
   console.log(`Evaluables/total por programa: ${summary.join(' · ')}`)
   console.log(`Huella: ${hash.slice(0, 16)}…`)
 
