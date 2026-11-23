@@ -111,6 +111,29 @@
           </li>
         </ol>
 
+        <section v-if="results.length" class="label r__contrib" aria-labelledby="h-contrib">
+          <div class="label__head"><h2 id="h-contrib">Ayuda con las estadísticas</h2></div>
+          <div class="label__body stack">
+            <template v-if="contribState === 'sent'">
+              <p role="status">Gracias. Tus respuestas ya suman en las <NuxtLink v-if="statsVisible" to="/estadisticas">estadísticas públicas</NuxtLink><template v-else>estadísticas públicas, que se abrirán cuando haya suficientes personas</template>.</p>
+            </template>
+            <template v-else>
+              <label class="r__check">
+                <input v-model="contribOk" type="checkbox">
+                <span>Compartir de forma anónima mis respuestas y mi afinidad con cada partido para las estadísticas públicas.</span>
+              </label>
+              <p class="small">No se guarda una ficha tuya: cada respuesta solo suma 1 a un contador, sin IP ni ningún identificador. Nadie puede saber qué respondiste. <NuxtLink to="/metodologia">Más detalle</NuxtLink>.</p>
+              <div><button type="button" class="btn btn-primary" :disabled="!contribOk || contribState === 'sending'" @click="sendContribution">{{ contribState === 'sending' ? 'Enviando...' : 'Enviar' }}</button></div>
+              <p v-if="contribState === 'error'" class="small" role="alert">No se pudo enviar. Inténtalo más tarde.</p>
+            </template>
+          </div>
+        </section>
+
+        <section v-if="results.length" class="r__kofi">
+          <p class="small">29N es gratuito, sin anuncios y de código abierto. Si te ha sido útil:</p>
+          <KofiButton />
+        </section>
+
         <section v-if="results.length" class="label r__share" aria-labelledby="h-share">
           <div class="label__head"><h2 id="h-share">Comparte tu resultado</h2></div>
           <div class="label__body"><ShareButtons label="Elige cómo enviarlo" :text="shareText" /></div>
@@ -123,7 +146,7 @@
           <NuxtLink to="/" class="btn btn-secondary">{{ $t('common.back') }}</NuxtLink>
         </section>
 
-        <p class="disclaimer small">Este resultado se calcula en tu navegador. Tus respuestas no se envían a ningún servidor. La compatibilidad refleja coincidencia con los programas, no es una recomendación de voto.</p>
+        <p class="disclaimer small">Este resultado se calcula en tu navegador. Tus respuestas no se envían a ningún servidor, salvo que marques arriba compartirlas de forma anónima. La compatibilidad refleja coincidencia con los programas, no es una recomendación de voto.</p>
       </div>
     </template>
   </div>
@@ -307,6 +330,30 @@ const shareText = computed(() => {
   const head = top.length ? `Mi resultado en 29N: ${top.join(', ')}.` : 'He hecho el test de 29N.'
   return `${head} Es solo la coincidencia con lo que dicen sus programas, no una recomendación de voto. Haz el tuyo:`
 })
+
+// Aportación anónima a las estadísticas: solo si la persona marca la casilla (viene desmarcada) y pulsa Enviar.
+// Se recuerda en este navegador para no sumar dos veces la misma encuesta.
+const contribOk = ref(false)
+const statsVisible = useStatsVisible()
+const contribState = ref<'idle' | 'sending' | 'sent' | 'error'>('idle')
+const contribKey = computed(() => `contributed-${progress.value?.local_id}`)
+onMounted(() => { try { if (localStorage.getItem(contribKey.value)) contribState.value = 'sent' } catch { /* sin efecto */ } })
+async function sendContribution() {
+  if (!contribOk.value || !progress.value) return
+  contribState.value = 'sending'
+  const withData = sortedResults.value.filter(r => r.affinityPercent !== null && !r.historical)
+  const top = withData.find(r => !isLowCoverage(r))
+  const ok = await contribute({
+    releaseId,
+    mode: progress.value.depthMode,
+    answers: (progress.value.answers || []).map((a: any) => ({ questionId: a.questionId, value: a.value, skipped: !!a.skipped })),
+    // Los partidos con pocos datos no cuentan: su porcentaje es solo orientativo
+    affinity: withData.filter(r => !isLowCoverage(r)).map(r => ({ entityId: r.entityId, percent: r.affinityPercent as number })),
+    top: top?.entityId ?? null
+  })
+  contribState.value = ok ? 'sent' : 'error'
+  if (ok) { try { localStorage.setItem(contribKey.value, '1') } catch { /* sin efecto */ } }
+}
 
 function getEntityName(entityId: string): string {
   const entity = releaseData.value?.entities?.find((e: any) => e.entityId === entityId)
@@ -502,4 +549,7 @@ function exportResults() {
 .r__actions { display: grid; gap: var(--space-3); }
 .r__actions .btn-primary { order: -1; }
 @media (min-width: 40rem) { .r__actions { grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); } .r__actions .btn-primary { grid-column: 1 / -1; } .r__stats { grid-template-columns: repeat(4, 1fr); } }
+.r__check { display: flex; gap: 0.6rem; align-items: flex-start; cursor: pointer; }
+.r__check input { width: 1.25rem; height: 1.25rem; margin-top: 0.15rem; flex: none; accent-color: var(--ink); }
+.r__kofi { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
 </style>

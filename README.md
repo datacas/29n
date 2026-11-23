@@ -45,10 +45,11 @@ Al publicar una versión se exporta a ficheros estáticos con `npm run data:expo
 
 ## Despliegue (Vercel + Neon)
 
-1. **Neon**: crear una base y ejecutar `db/neon/001_usage_events.sql` en su consola SQL. Copiar la cadena de conexión **agrupada (pooled)**.
+1. **Neon**: crear una base y ejecutar `db/neon/001_usage_events.sql` y `db/neon/002_contribution_tallies.sql` en su consola SQL. Copiar la cadena de conexión **agrupada (pooled)**.
 2. **Vercel**: importar este repositorio. Variables de entorno (Production y Preview):
    - `NUXT_DATABASE_URL`: la cadena pooled de Neon.
    - `NUXT_STATS_RELEASE_IDS`: el `release_id` publicado (lo imprime `npm run data:export`).
+   - `NUXT_PUBLIC_KOFI_URL` (opcional): enlace de «Invítame a un café». Por defecto `https://ko-fi.com/datacas`; vacío lo oculta.
 3. Cada pull request genera una vista previa. La rama principal está protegida: solo se entra por pull request con la CI en verde.
 
 ## Cambios

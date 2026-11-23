@@ -15,7 +15,8 @@ export default defineNuxtConfig({
   routeRules: {
     ...(publicBuild ? { '/': { prerender: true }, '/metodologia': { prerender: true }, '/programas': { prerender: true } } : {}),
     '/survey/**': { ssr: false },
-    '/history': { ssr: false }
+    '/history': { ssr: false },
+    '/estadisticas': { ssr: false }
   },
 
   srcDir: 'app/',
@@ -79,7 +80,11 @@ export default defineNuxtConfig({
     adminEmail: process.env.ADMIN_EMAIL || '',
     otpSecret: process.env.OTP_SECRET || '',
     publicBuild,
-    public: { webAnalytics: process.env.NUXT_PUBLIC_WEB_ANALYTICS === '1' },
+    public: {
+      webAnalytics: process.env.NUXT_PUBLIC_WEB_ANALYTICS === '1',
+      // Botón «Invítame a un café». Vacío = no se muestra
+      kofiUrl: process.env.NUXT_PUBLIC_KOFI_URL ?? 'https://ko-fi.com/datacas'
+    },
     statsReleaseIds: process.env.NUXT_STATS_RELEASE_IDS || '',
     llmApiKey: process.env.LLM_API_KEY || '',
     llmBaseUrl: process.env.LLM_BASE_URL || ''

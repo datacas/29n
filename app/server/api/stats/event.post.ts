@@ -1,4 +1,5 @@
 import { query } from '~/server/utils/db'
+import { rateLimited as limited, releaseAllowed } from '~/server/utils/stats'
 
 /**
  * Registro anónimo de uso. No guarda IP ni agente de usuario ni identificadores.
@@ -9,14 +10,6 @@ const MODES = new Set(['quick', 'normal', 'deep'])
 const DEVICES = new Set(['mobile', 'desktop'])
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 
-const hits = new Map<string, { n: number; t: number }>()
-function limited(key: string): boolean {
-  const now = Date.now()
-  const h = hits.get(key)
-  if (!h || now - h.t > 60_000) { hits.set(key, { n: 1, t: now }); if (hits.size > 5000) hits.clear(); return false }
-  h.n++
-  return h.n > 20
-}
 const num = (v: unknown, max: number) => (Number.isInteger(v) && (v as number) >= 0 && (v as number) <= max ? (v as number) : null)
 
 export default defineEventHandler(async (event) => {
@@ -38,15 +31,7 @@ export default defineEventHandler(async (event) => {
     props.parties = p.parties.filter((x) => typeof x === 'string' && x.length <= 40).slice(0, 40)
   }
   try {
-    // Si NUXT_STATS_RELEASE_IDS está definida (lista separada por comas), solo se aceptan esas encuestas.
-    // Si no, se comprueba contra la tabla de releases (instalación completa con base de datos local).
-    const allow = String(useRuntimeConfig().statsReleaseIds || '').split(',').map((x) => x.trim()).filter(Boolean)
-    if (allow.length) {
-      if (!allow.includes(String(body.releaseId))) { setResponseStatus(event, 404); return { ok: false } }
-    } else {
-      const { rows } = await query(`SELECT 1 FROM survey_releases WHERE id = $1 AND status = 'published'`, [body.releaseId])
-      if (!rows.length) { setResponseStatus(event, 404); return { ok: false } }
-    }
+    if (!(await releaseAllowed(String(body.releaseId)))) { setResponseStatus(event, 404); return { ok: false } }
     await query(`INSERT INTO usage_events (event, release_id, props) VALUES ($1, $2, $3::jsonb)`, [body.event, body.releaseId, JSON.stringify(props)])
     return { ok: true }
   } catch {
