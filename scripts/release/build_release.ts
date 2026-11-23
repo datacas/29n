@@ -58,8 +58,12 @@ try {
   const { rows: qs } = await q(
     `SELECT q.id, q.pilot_question_id AS code, q.topic_id, d.code AS dimension
        FROM questions q LEFT JOIN topics t ON t.id = q.topic_id LEFT JOIN dimensions d ON d.id = t.dimension_id
-      WHERE q.pilot_question_id IS NOT NULL AND NOT (q.pilot_question_id = ANY($1)) ORDER BY q.pilot_question_id`,
-    [exclude]
+      WHERE q.pilot_question_id IS NOT NULL AND NOT (q.pilot_question_id = ANY($1))
+        -- La encuesta histórica (preguntas H-…) tiene su propio generador: nunca entra en el 29N
+        AND q.pilot_question_id NOT LIKE 'H-%'
+        AND (q.consultation_id IS NULL OR q.consultation_id = (SELECT id FROM consultations WHERE slug = $2))
+      ORDER BY q.pilot_question_id`,
+    [exclude, CONSULTATION.slug]
   )
   const { rows: pos } = await q(
     `SELECT p.id, p.entity_id, p.question_id, p.review_status, p.value, p.stance_status, p.conditions, e.name AS party,

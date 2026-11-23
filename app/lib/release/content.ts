@@ -142,8 +142,9 @@ export async function buildReleasePayload(query: QueryFn, releaseId: string, row
       slug: row.manifest_jsonb?.consultation?.slug ?? row.consultation_slug,
       title: row.manifest_jsonb?.consultation?.title ?? row.consultation_title,
       description: row.manifest_jsonb?.consultation?.description ?? row.consultation_description,
-      // Ajustes congelados en el manifiesto si existen; si no, los vigentes de la encuesta
-      ...consultationSettings(row.manifest_jsonb?.consultation?.settings ?? row.consultation_metadata)
+      // Una versión con manifiesto usa solo sus ajustes congelados (los del 29N no tienen: valores por defecto).
+      // El metadata vivo solo se usa sin manifiesto; si no, editarlo cambiaría una versión ya publicada.
+      ...consultationSettings(row.manifest_jsonb?.consultation ? row.manifest_jsonb.consultation.settings : row.consultation_metadata)
     },
     frozen: !!frozen,
     ...content

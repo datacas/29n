@@ -35,7 +35,8 @@ for (const s of surveys) {
   const missing = PROGRAMS.filter((p) => !existsSync(join(root, 'programas', p.file)))
   if (missing.length) fail(`faltan PDF: ${missing.map((m) => m.file).join(', ')}`)
   const entities = new Set(payload.entities.map((e: any) => e.name))
-  const noPdf = [...entities].filter((n) => !PROGRAMS.some((p) => p.name === n))
+  // Los programas históricos no tienen PDF descargable (textos con derechos o con restricciones de difusión)
+  const noPdf = s.kind === 'historical' ? [] : [...entities].filter((n) => !PROGRAMS.some((p) => p.name === n))
   if (noPdf.length) fail(`partidos sin programa descargable: ${noPdf.join(', ')}`)
   if (!bad) console.log(`OK ${s.release_version}: huella ${h.slice(0, 16)}… · ${payload.questions.length} preguntas · ${payload.entities.length} partidos · ${payload.positions.length} posiciones`)
 }

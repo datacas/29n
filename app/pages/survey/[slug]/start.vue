@@ -8,7 +8,7 @@
         <div class="wrap band__inner">
           <NuxtLink :to="`/survey/${releaseId}`" class="back back--band">&larr; {{ $t('common.back') }}</NuxtLink>
           <h1>¿Con qué programa coincides más?</h1>
-          <p>Contesta unas preguntas y compara tu opinión con los programas de {{ releaseData.entities.length }} {{ noun.plural }}. Cada porcentaje se apoya en una cita.</p>
+          <p>Contesta unas preguntas y compara tu opinión con {{ survey.kind === 'historical' ? `${releaseData.entities.length} programas históricos` : `los programas de ${releaseData.entities.length} partidos` }}. Cada porcentaje se apoya en una cita.</p>
         </div>
       </section>
 
@@ -30,7 +30,7 @@
               v-for="entity in releaseData.entities"
               :key="entity.entityId"
               class="choice entity-option"
-              :class="{ selected: selectedEntities.includes(entity.entityId), historical: entity.isHistorical }"
+              :class="{ selected: selectedEntities.includes(entity.entityId), historical: entity.isHistorical && survey.kind !== 'historical' }"
             >
               <input type="checkbox" :value="entity.entityId" v-model="selectedEntities" />
               <span class="choice__name">
@@ -45,7 +45,8 @@
         </section>
 
         <!-- Paso 2: profundidad -->
-        <section aria-labelledby="h-prof" class="stack">
+        <!-- Si las tres profundidades dan las mismas preguntas (encuesta corta), elegir no tiene sentido -->
+        <section v-if="depthMatters" aria-labelledby="h-prof" class="stack">
           <h2 id="h-prof">{{ $t('survey.detail.depthTitle') }}</h2>
           <div class="segments depth-options" role="radiogroup" aria-labelledby="h-prof">
             <label v-for="mode in depthModes" :key="mode.value" class="depth-option" :class="{ selected: depthMode === mode.value }">
@@ -125,6 +126,7 @@ const questionsFor = (mode: DepthMode) =>
     mode
   )
 
+const depthMatters = computed(() => new Set(depthModes.value.map((m) => m.questionCount)).size > 1)
 const depthModes = computed(() => {
   return [
     {

@@ -20,8 +20,8 @@
         </li>
       </ul>
 
-      <section v-for="h in historical" :key="h.release_id" class="label home__hist" aria-labelledby="h-hist">
-        <div class="label__head"><h2 id="h-hist">{{ h.title }}</h2><span class="meta">aparte</span></div>
+      <section v-for="h in historical" :key="h.release_id" class="label home__hist" :aria-labelledby="`h-hist-${h.release_id}`">
+        <div class="label__head"><h2 :id="`h-hist-${h.release_id}`">{{ h.title }}</h2><span class="meta">aparte</span></div>
         <div class="label__body stack">
           <p>{{ h.description }}</p>
           <p class="small">Textos de hace casi un siglo. Coincidir con una propuesta concreta no equivale a compartir ese régimen ni sus crímenes.</p>

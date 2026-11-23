@@ -309,7 +309,11 @@ describe('contenido del release (congelado)', () => {
     expect(query).not.toHaveBeenCalled()
     expect(out.frozen).toBe(true)
     expect(out.questions[0].canonicalText).toBe('congelada')
-    expect(out.consultation).toEqual({ slug: 's', title: 'T', description: 'D' })
+    expect(out.consultation).toEqual({
+      slug: 's', title: 'T', description: 'D',
+      // Sin ajustes congelados ni metadata, la encuesta se comporta como la del 29N
+      kind: 'current', shortName: null, entityNoun: { singular: 'partido', plural: 'partidos' }, minEvaluableQuestions: null
+    })
   })
 
   it('sin content (releases antiguos) lee en vivo', async () => {

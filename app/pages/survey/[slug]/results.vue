@@ -9,7 +9,7 @@
       <section class="band on-band">
         <div class="wrap band__inner">
           <h1>{{ $t('survey.results.title') }}</h1>
-          <p class="survey-title">Cada barra mide cuánto coincide tu opinión con el programa de cada {{ noun.singular }}.</p>
+          <p class="survey-title">Cada barra mide cuánto coincide tu opinión con {{ isHistoricalSurvey ? 'cada programa' : 'el programa de cada partido' }}.</p>
           <p v-if="isHistoricalSurvey" class="note r__hist"><strong>Son textos de hace casi un siglo.</strong> Coincidir con una propuesta concreta no equivale a compartir ese régimen ni sus crímenes. Lee la ficha de cada programa para saber qué pasó después.</p>
         </div>
       </section>
@@ -24,7 +24,7 @@
             <summary>Cómo leer estos resultados</summary>
             <ul>
               <li><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
-              <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice el programa de cada {{ noun.singular }}: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
+              <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice {{ isHistoricalSurvey ? 'cada programa' : 'el programa de cada partido' }}: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
               <li><strong>Solo cuentan las preguntas en las que el programa dice algo.</strong> Si un {{ noun.singular }} no se pronuncia sobre un tema, ese tema no suma ni resta. Tampoco cuentan las que contestaste «No sé» o omitiste.</li>
               <li><strong>«Tiene posición en X de tus Y preguntas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
               <li><strong>Los {{ noun.plural }} con pocos datos</strong> aparecen al final aunque su porcentaje sea alto: con menos de {{ minEval }} preguntas documentadas el resultado es solo orientativo.</li>
@@ -45,7 +45,7 @@
         <div v-if="results.length === 0" class="no-results"><p>{{ $t('survey.results.noData') }}</p></div>
 
         <ol v-else class="results-list">
-          <li v-for="result in sortedResults" :key="result.entityId" class="result-card label" :class="{ historical: result.historical, 'is-low': low(result) }">
+          <li v-for="result in sortedResults" :key="result.entityId" class="result-card label" :class="{ historical: result.historical && !isHistoricalSurvey, 'is-low': low(result) }">
             <div class="label__head entity-header">
               <h2 class="entity-name">
                 {{ getEntityName(result.entityId) }}
@@ -106,7 +106,7 @@
                     <li v-if="!sec.rows.length" class="no-evidence small">Ninguna de las preguntas de este tema que te salieron tiene posición documentada de este {{ noun.singular }}.</li>
                   </ul>
                 </details>
-                <p class="small"><a :href="programLink(result.entityId, null) || '/programas'" target="_blank" rel="noopener">Abrir el programa completo de {{ getEntityName(result.entityId) }}</a></p>
+                <p v-if="!isHistoricalSurvey || programLink(result.entityId, null)" class="small"><a :href="programLink(result.entityId, null) || '/programas'" target="_blank" rel="noopener">Abrir el programa completo de {{ getEntityName(result.entityId) }}</a></p>
               </details>
             </div>
           </li>
@@ -331,13 +331,14 @@ const counts = (r: ScoringResult) => isHistoricalSurvey.value || !r.historical
 
 const sortedResults = computed(() => sortResults(results.value, minEval.value))
 
-// Texto para compartir: los tres primeros partidos con datos suficientes. Quien comparte es quien decide enviarlo,
-// y el texto aclara que no es una recomendación de voto. Los partidos con pocos datos no entran.
+// Texto para compartir: los tres primeros con datos suficientes. Quien comparte es quien decide enviarlo,
+// y el texto aclara que no es una recomendación de voto (o, en la histórica, que no es adhesión a un régimen).
+// Los que tienen pocos datos no entran; solo en la histórica, si todos los tienen, se comparten los primeros.
 const shareText = computed(() => {
   const withData = sortedResults.value.filter(r => r.affinityPercent !== null && counts(r))
   // Si todos tienen pocos datos, mejor enseñar los primeros (ya van marcados en la pantalla) que no enseñar nada
   const solid = withData.filter(r => !low(r))
-  const top = (solid.length ? solid : withData)
+  const top = (solid.length || !isHistoricalSurvey.value ? solid : withData)
     .slice(0, 3)
     .map(r => `${getEntityName(r.entityId)} ${Math.round(r.affinityPercent as number)} %`)
   const head = top.length ? `Mi resultado en ${shortName.value}: ${top.join(', ')}.` : `He hecho el test de ${shortName.value}.`
