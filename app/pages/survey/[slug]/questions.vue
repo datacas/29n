@@ -7,7 +7,7 @@
 
     <template v-else>
       <div class="wrap q__top">
-        <StepBar :current="3" />
+        <StepBar :current="3" class="q__steps" />
         <div class="q__progress progress-bar" role="progressbar" :aria-valuenow="currentQuestionIndex + 1" aria-valuemin="1" :aria-valuemax="questions.length" :aria-label="`Pregunta ${currentQuestionIndex + 1} de ${questions.length}`">
           <div class="q__track"><div class="q__fill progress-fill" :style="{ width: `${progressPercent}%` }"></div></div>
           <span class="progress-text tnum">{{ currentQuestionIndex + 1 }} / {{ questions.length }}</span>
@@ -41,16 +41,17 @@
                 <span class="option-label">
                   <span class="option-value tnum">{{ opt.value > 0 ? '+' + opt.value : opt.value }}</span>
                   <span class="option-text">{{ opt.label }}</span>
+                  <span v-if="opt.value === 0" class="option-sub">no cuenta</span>
                 </span>
               </label>
             </fieldset>
-            <p class="small q__hint">Si no tienes opinión, marca «No sé». Esa pregunta no cuenta en tu resultado.</p>
+            <p class="small q__hint q__hint--wide">Si no tienes opinión, marca «No sé». Esa pregunta no cuenta en tu resultado.</p>
           </div>
 
           <!-- Importancia: opcional -->
           <div class="label__foot importance-section">
             <label class="importance-label" for="importance-select">
-              ¿Te importa especialmente este tema? <span class="importance-optional">(opcional)</span>
+              ¿Te importa este tema? <span class="importance-optional">(opcional)</span>
             </label>
             <span class="info-tip" tabindex="0" role="note" aria-label="Qué hace esta opción">?
               <span class="info-tip-text">No hace falta que elijas nada. Déjalo en «Media» si no quieres dar más o menos peso a esta pregunta. Elige «Alta» si es un tema clave para ti (cuenta el doble en tu resultado) o «Baja» si te importa poco (cuenta la mitad).</span>
@@ -62,8 +63,6 @@
             </select>
           </div>
         </section>
-
-        <button type="button" class="btn btn--quiet btn-skip" @click="skipQuestion">{{ $t('survey.take.skip') }} esta pregunta</button>
 
         <details class="question-list">
           <summary>Ver todas las preguntas</summary>
@@ -84,9 +83,10 @@
         </details>
       </div>
 
-      <div class="dock navigation">
+      <div class="dock navigation q__dock">
         <div class="dock__inner">
-          <button type="button" class="btn btn-secondary" :disabled="currentQuestionIndex === 0" @click="prevQuestion">&larr; Anterior</button>
+          <button type="button" class="btn btn-secondary q__prev" :disabled="currentQuestionIndex === 0" aria-label="Pregunta anterior" @click="prevQuestion">&larr;<span class="q__prev-text"> Anterior</span></button>
+          <button v-if="currentQuestionIndex < questions.length - 1" type="button" class="btn btn--quiet q__skip" @click="skipQuestion">{{ $t('survey.take.skip') }}</button>
           <button v-if="currentQuestionIndex < questions.length - 1" type="button" class="btn-primary q__next" @click="nextQuestion">Siguiente &rarr;</button>
           <button v-else type="button" class="btn-primary btn-finish q__next" @click="finishSurvey">{{ $t('survey.take.finish') }}</button>
         </div>
@@ -240,7 +240,7 @@ function finishSurvey() {
 .question-context p { padding: 0 var(--space-4) var(--space-4); max-width: none; line-height: 1.5; }
 
 .q__hint { max-width: none; }
-.q__fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: var(--space-2); min-width: 0; }
+.q__fieldset { border: 0; padding: 0; margin-inline: 0; margin-bottom: 0; display: grid; gap: var(--space-2); min-width: 0; }
 .answer-option { display: block; cursor: pointer; }
 .answer-option input { position: absolute; opacity: 0; pointer-events: none; }
 .option-label { display: flex; align-items: center; gap: var(--space-3); min-height: 3.5rem; padding: 0.5rem var(--space-3); border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--tile); transition: background-color 0.15s var(--ease); }
@@ -273,4 +273,43 @@ function finishSurvey() {
 .nav-item.current .nav-btn { background: var(--tint); font-weight: 700; }
 .nav-item.skipped .nav-text { color: var(--ink-soft); text-decoration: line-through; }
 @media (min-width: 48rem) { .q__fieldset { grid-template-columns: 1fr; } }
+
+/* Móvil: la pregunta entera cabe en pantalla sin scroll (pregunta, respuestas, importancia y botones).
+   Lo que queda debajo (ver todas las preguntas) es navegación, no la pregunta. */
+.option-sub { margin-left: 0.5rem; font-size: 0.8rem; font-weight: 400; color: var(--muted); }
+.answer-option.selected .option-sub { color: rgba(255, 255, 255, 0.8); }
+.q__skip { margin-left: auto; white-space: nowrap; }
+@media (min-width: 48rem) { .option-sub { display: none; } }
+@media (max-width: 47.99rem) {
+  .q__steps { display: none; }
+  .q__top { padding-top: var(--space-2); gap: 0; }
+  .q__body { padding-top: var(--space-2); padding-bottom: var(--space-3); }
+  .q__hint--wide { display: none; }
+  .question-meta { padding: 0.5rem 0.75rem; }
+  .question-card > .label__body { padding: 0.65rem 0.75rem; }
+  .question-card > .label__body.stack > * + * { margin-top: 0.55rem; }
+  .question-text { font-size: 1.2rem; line-height: 1.18; letter-spacing: -0.02em; }
+  .question-context summary { display: flex; align-items: center; min-height: 2.5rem; padding: 0.3rem 0.75rem; }
+  .q__ctx-title { font-size: 0.95rem; }
+  .ctx-hint { display: none; }
+  .question-context p { padding: 0 0.75rem 0.75rem; font-size: 0.95rem; }
+  .q__fieldset { gap: 0.35rem; }
+  .option-label { min-height: 2.75rem; padding: 0.2rem 0.6rem; gap: 0.6rem; }
+  .option-value { min-width: 2.2rem; font-size: 1rem; padding: 0.15rem 0; }
+  .option-text { font-size: 0.98rem; }
+  .importance-section { padding: 0.45rem 0.75rem; gap: 0.25rem 0.5rem; flex-wrap: nowrap; }
+  .importance-label { flex: 1 1 auto; font-size: 0.85rem; line-height: 1.2; }
+  .question-meta .topic-tag { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .question-meta { gap: 0.5rem; }
+  .importance-select { min-height: 2.5rem; flex: none; }
+  .q__dock { padding: 0.5rem 0.75rem calc(0.5rem + env(safe-area-inset-bottom)); }
+  .q__dock .btn, .q__dock .btn-primary { min-height: 2.9rem; padding-left: 1rem; padding-right: 1rem; }
+  .q__prev-text { display: none; }
+  .q__dock .q__next { flex: 1; }
+}
+@media (max-width: 47.99rem) and (max-height: 700px) {
+  .question-text { font-size: 1.1rem; }
+  .option-label { min-height: 2.5rem; }
+  .q__fieldset { gap: 0.3rem; }
+}
 </style>
