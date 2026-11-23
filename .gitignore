@@ -13,9 +13,9 @@ dist/
 *.key
 
 # Almacenamiento local y copias de seguridad
-storage/
-!storage/.gitkeep
-backups/
+/storage/
+!/storage/.gitkeep
+/backups/
 *.dump
 *.sql.gz
 
