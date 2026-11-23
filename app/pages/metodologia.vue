@@ -65,6 +65,7 @@
     <p>
       El código tiene licencia MIT y los datos (preguntas, posiciones y guías) tienen licencia CC BY 4.0: puedes copiarlos y usarlos
       como quieras, <strong>citando el original</strong>. Los programas electorales son de cada partido.
+      Todo está en <a href="https://github.com/datacas/29n" target="_blank" rel="noopener noreferrer">GitHub</a>.
     </p>
 
     <h2>Tus datos</h2>
