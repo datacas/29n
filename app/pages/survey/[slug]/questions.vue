@@ -37,7 +37,7 @@
                 class="answer-option"
                 :class="{ selected: answers[currentQuestion.questionId] === opt.value }"
               >
-                <input type="radio" :value="opt.value" v-model="answers[currentQuestion.questionId]" />
+                <input type="radio" :value="opt.value" v-model="answers[currentQuestion.questionId]" @change="haptic()" />
                 <span class="option-label">
                   <span class="option-value tnum">{{ opt.value > 0 ? '+' + opt.value : opt.value }}</span>
                   <span class="option-text">{{ opt.label }}</span>
@@ -96,6 +96,7 @@
 </template>
 
 <script setup lang="ts">
+const haptic = useHaptic()
 const route = useRoute()
 const router = useRouter()
 const { t } = useI18n()
@@ -243,12 +244,12 @@ function finishSurvey() {
 .answer-option { display: block; cursor: pointer; }
 .answer-option input { position: absolute; opacity: 0; pointer-events: none; }
 .option-label { display: flex; align-items: center; gap: var(--space-3); min-height: 3.5rem; padding: 0.5rem var(--space-3); border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--tile); transition: background-color 0.15s var(--ease); }
-.answer-option:hover .option-label { display: flex; align-items: center; gap: var(--space-3); min-height: 3.5rem; padding: 0.5rem var(--space-3); border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--tile); transition: background-color 0.15s var(--ease); }
+.answer-option:hover .option-label { background: var(--tint); border-color: var(--ink); }
 .option-value { flex: none; min-width: 2.5rem; text-align: center; font-size: 1.1rem; font-weight: 600; padding: 0.25rem 0; border-radius: 8px; background: var(--tint); }
 .option-text { font-weight: 500; line-height: 1.25; }
-.answer-option.selected .option-label { display: flex; align-items: center; gap: var(--space-3); min-height: 3.5rem; padding: 0.5rem var(--space-3); border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--tile); transition: background-color 0.15s var(--ease); }
-.answer-option.selected .option-value { flex: none; min-width: 2.5rem; text-align: center; font-size: 1.1rem; font-weight: 600; padding: 0.25rem 0; border-radius: 8px; background: var(--tint); }
-.answer-option:has(input:focus-visible) .option-label { display: flex; align-items: center; gap: var(--space-3); min-height: 3.5rem; padding: 0.5rem var(--space-3); border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--tile); transition: background-color 0.15s var(--ease); }
+.answer-option.selected .option-label { background: var(--ink); border-color: var(--ink); color: #fff; }
+.answer-option.selected .option-value { background: #fff; color: var(--ink); }
+.answer-option:has(input:focus-visible) .option-label { outline: 3px solid var(--focus); outline-offset: 2px; }
 
 .importance-section { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); }
 .importance-label { font-weight: 700; flex: 1 1 14rem; }
