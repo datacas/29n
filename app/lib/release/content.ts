@@ -114,6 +114,8 @@ export interface ConsultationSettings {
   entityNoun: { singular: string; plural: string }
   /** Mínimo de posiciones evaluables para no marcar "pocos datos" (null = el general) */
   minEvaluableQuestions: number | null
+  /** Encuesta exhaustiva: la profundidad elige por nivel de pregunta y entran las de un solo programa */
+  exhaustive: boolean
 }
 
 export function consultationSettings(meta: any): ConsultationSettings {
@@ -126,7 +128,8 @@ export function consultationSettings(meta: any): ConsultationSettings {
       singular: typeof m.entityNoun?.singular === 'string' ? m.entityNoun.singular : 'partido',
       plural: typeof m.entityNoun?.plural === 'string' ? m.entityNoun.plural : 'partidos'
     },
-    minEvaluableQuestions: min
+    minEvaluableQuestions: min,
+    exhaustive: m.exhaustive === true
   }
 }
 

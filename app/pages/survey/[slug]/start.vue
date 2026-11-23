@@ -123,7 +123,9 @@ const questionsFor = (mode: DepthMode) =>
     (releaseData.value?.positions || []) as any[],
     (releaseData.value?.entities || []) as any[],
     selectedEntities.value,
-    mode
+    mode,
+    undefined,
+    survey.value.exhaustive === true
   )
 
 const depthMatters = computed(() => new Set(depthModes.value.map((m) => m.questionCount)).size > 1)
