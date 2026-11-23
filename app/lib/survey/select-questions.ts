@@ -20,6 +20,7 @@ export const TARGET_QUESTIONS: Record<DepthMode, number> = { quick: 16, normal: 
 
 export interface SelQuestion {
   questionId: string
+  depthLevel?: number | null
   dimensionCode?: string | null
   themeCode?: string | null
   regionalParties?: string[] | null
@@ -43,16 +44,33 @@ function stddev(xs: number[]): number {
   return Math.sqrt(xs.reduce((a, b) => a + (b - m) ** 2, 0) / xs.length)
 }
 
+/** Nivel máximo de pregunta por profundidad en el modo exhaustivo (1 = comparativa, 2 = de dos programas, 3 = de uno). */
+export const EXHAUSTIVE_LEVEL: Record<DepthMode, number> = { quick: 1, normal: 2, deep: 3 }
+
 export function selectQuestions<Q extends SelQuestion>(
   questions: Q[],
   positions: SelPosition[],
   entities: SelEntity[],
   selectedEntityIds: string[],
   mode: DepthMode,
-  target: number = TARGET_QUESTIONS[mode]
+  target: number = TARGET_QUESTIONS[mode],
+  exhaustive = false
 ): Q[] {
   const chosenIds = selectedEntityIds.length ? selectedEntityIds : entities.map((e) => e.entityId)
   const chosen = new Set(chosenIds)
+
+  // Modo exhaustivo (encuesta histórica): la profundidad la marca el nivel de cada pregunta y entran todas
+  // las de ese nivel sobre las que algún programa elegido tiene posición. Una pregunta que solo trata un
+  // programa suma o resta solo a ese programa: para los demás no puntúa. Orden: el del banco.
+  if (exhaustive) {
+    const max = EXHAUSTIVE_LEVEL[mode]
+    const withChosen = new Set(
+      positions
+        .filter((p) => chosen.has(p.entityId) && p.value !== null && p.value !== undefined && (!p.stanceStatus || INCLUDED.has(p.stanceStatus)))
+        .map((p) => p.questionId)
+    )
+    return questions.filter((q) => (q.depthLevel ?? 1) <= max && withChosen.has(q.questionId))
+  }
   const names = new Set(entities.filter((e) => chosen.has(e.entityId)).map((e) => e.name))
 
   // valores de los partidos elegidos por pregunta

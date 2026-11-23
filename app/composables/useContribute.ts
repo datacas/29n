@@ -1,7 +1,8 @@
 /**
- * Aportación voluntaria y anónima a las estadísticas públicas. Solo se llama si la persona lo acepta.
- * Envía respuestas (-2..2, o «No sé»), la afinidad con cada partido y cuál sale primero, sin ningún identificador.
- * El servidor solo suma contadores: no guarda una fila por persona.
+ * Aportación anónima a las estadísticas públicas. Se envía sola al ver el resultado (una vez por encuesta terminada),
+ * salvo que el navegador pida no ser rastreado (privacyOptOut). Envía respuestas (-2..2, o «No sé»), la afinidad
+ * con cada entidad y cuál sale primero, sin ningún identificador. El servidor solo suma contadores: no guarda
+ * una fila por persona.
  */
 export async function contribute(payload: {
   releaseId: string

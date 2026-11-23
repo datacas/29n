@@ -1,6 +1,6 @@
 # Encuesta histórica: propuestas, matriz y preguntas
 
-Documento de trabajo para revisar. Fecha: 2026-11-23. Sustituye al borrador de preguntas de `fuentes-y-preguntas.md`, que era una hipótesis previa a leer los textos.
+Fecha: 2026-11-23. Describe el **banco v1** (15 preguntas comparativas), publicado como versión 1.1.0. El banco exhaustivo que lo amplía está en `banco-v2-trabajo.md`; cuando se publique, las 15 de aquí serán su nivel 1.
 
 Método: leí cada programa completo, extraje sus propuestas concretas (traducidas al castellano, con el original entre corchetes cuando no está en castellano), las agrupé por temas y me quedé solo con los temas donde **al menos tres programas se pronuncian y no todos dicen lo mismo**. Las traducciones son de trabajo: hay que revisarlas antes de publicar citas.
 
@@ -244,7 +244,7 @@ Las preguntas marcadas con ⇄ tienen «de acuerdo» en el sentido del **mercado
 14. ⇄ Los colegios privados y religiosos deben poder enseñar con libertad, sin que el Estado decida sus contenidos. *(P)*
 15. El ejército profesional debe sustituirse por una milicia o un ejército del pueblo. *(U)*
 
-**Bloques de resultados:** propongo **dos**, «Régimen, nación, Iglesia, escuela y ejército» (1–5 y 13–15, 8 preguntas) y «Economía y trabajo» (6–12, 7 preguntas). Con tres, el último bloque tendría solo 3 preguntas y su porcentaje oscilaría mucho.
+**Bloques de resultados (versión 1.1.0):** cuatro, para que la calibración distinga temas: «Régimen y nación» (1–5), «Iglesia, escuela y ejército» (13–15), «Propiedad y economía» (6–9) y «Trabajo» (10–12). Los dos bloques de 3 preguntas oscilan más en el resultado por bloque; se acepta a cambio de una calibración más clara. La 1.0.0, con dos bloques, quedó archivada sin llegar a desplegarse.
 
 **Preguntas flojas:**
 - La 5 (F), la 11 (L) y la 12 (N) tienen pocas posiciones.
@@ -272,7 +272,7 @@ Las preguntas marcadas con ⇄ tienen «de acuerdo» en el sentido del **mercado
 | BN34 | 5 | 0 | no |
 | DER33 | 2 | 1 | **sí** |
 
-**Implementación** (pendiente; va con los demás cambios de código):
+**Implementación** (hecha, PR 21 y 22; ahora también la cobertura mínima es configurable por encuesta):
 - campo `consultation.minEvaluableQuestions` en el manifiesto de la versión publicada: 5 aquí, ausente (8 por defecto) en el 29N;
 - `isLowCoverage`, `minEvaluableFor` y `sortResults` aceptan el mínimo como parámetro;
 - `results.vue` lo lee de la versión publicada y lo usa también en el texto «menos de N preguntas»;
@@ -284,7 +284,7 @@ Las preguntas marcadas con ⇄ tienen «de acuerdo» en el sentido del **mercado
 ## 5. Aviso legal y de producto (no perder)
 
 - Encuesta separada del 29N: entrada propia, sin mezclar resultados ni estadísticas.
-- Ficha de contexto por programa: año, país, qué pasó después y los datos que no son pregunta, por ejemplo:
+- Ficha de contexto por programa: año, país y qué pasó después. En el banco v1, también los datos que no eran pregunta. En el v2 varios pasan a ser pregunta (igualdad de la mujer, formación premilitar, representación corporativa, ciudadanía por origen), por ejemplo:
   - la ciudadanía por «sangre alemana» y la exclusión de los judíos (NSDAP20);
   - la igualdad de la mujer (FASCI19, PCR19, CEDA33);
   - la formación premilitar;
@@ -293,14 +293,6 @@ Las preguntas marcadas con ⇄ tienen «de acuerdo» en el sentido del **mercado
 - Aviso en resultados y al compartir: «Comparas tus ideas con textos de hace casi un siglo. Coincidir en una propuesta concreta no equivale a compartir ese régimen ni sus crímenes».
 - NSDAP20: citar solo los fragmentos usados, con contexto, y no alojar el texto íntegro (§86 del Código Penal alemán).
 
-## 6. Pendiente antes de cargarlo en el panel
+## 6. Estado
 
-1. **Capa de citas: hecha**, en `citas/<código>.md`, con cita original, traducción de trabajo y localizador por celda. Quedan: revisar las traducciones; tres paráfrasis del BOE en la CEDA (C, J y K), de las que J puntúa; y la licencia de la traducción de las Tesis de abril.
-2. **Umbral:** decidido (§4); falta implementarlo.
-3. **Cambios de código:**
-   - `results.vue` excluye las entidades históricas al compartir (`!r.historical`) y tiene «29N» fijo en el texto;
-   - la aportación a estadísticas también las excluye (`affinity: []`, `top: null`);
-   - la interfaz dice «partidos»;
-   - el umbral pasa a ser configurable por encuesta (§4).
-4. **Cotejar la CEDA con Artola**, pp. 388–400 (Fundación Sancho el Sabio, ATV 69893, o préstamo por REBIUN).
-5. **Valorar** el PCE 1931 y algún programa de centro liberal (Radical, PNV, Lliga). Si aparece el texto del PSOE 1933, el Frente Popular se puede separar en sus dos alas.
+La carga y la publicación del banco v1 están hechas (`scripts/historica/cargar.ts`, versión 1.1.0). Pendiente: cotejar la CEDA con Artola y la revisión externa de las traducciones. El trabajo sigue en `banco-v2-trabajo.md`.

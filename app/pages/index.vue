@@ -20,15 +20,6 @@
         </li>
       </ul>
 
-      <section v-for="h in historical" :key="h.release_id" class="label home__hist" :aria-labelledby="`h-hist-${h.release_id}`">
-        <div class="label__head"><h2 :id="`h-hist-${h.release_id}`">{{ h.title }}</h2><span class="meta">aparte</span></div>
-        <div class="label__body stack">
-          <p>{{ h.description }}</p>
-          <p class="small">Textos de hace casi un siglo. Coincidir con una propuesta concreta no equivale a compartir ese régimen ni sus crímenes.</p>
-          <div><NuxtLink :to="`/survey/${h.release_id}/start`" class="btn btn-secondary">Hacer la encuesta histórica</NuxtLink></div>
-        </div>
-      </section>
-
       <section class="label" aria-labelledby="h-como">
         <div class="label__head"><h2 id="h-como">Cómo funciona</h2><span class="meta">unos 8 minutos</span></div>
         <ol class="home__steps">
@@ -53,9 +44,8 @@
 // La lista de encuestas publicadas se genera con `npm run data:export` y viaja dentro del código
 import surveysJson from '~/data/surveys.json'
 const surveys = ref<any[]>(surveysJson as any[])
-// La encuesta histórica va en su propia sección: no se mezcla con la del 29N
+// La encuesta histórica tiene su propia página (/historia, enlazada en la barra superior): aquí solo la del 29N
 const current = computed(() => surveys.value.filter((s: any) => s.kind !== 'historical'))
-const historical = computed(() => surveys.value.filter((s: any) => s.kind === 'historical'))
 
 useHead({ title: '29N · ¿Con qué programa coincides más?' })
 </script>

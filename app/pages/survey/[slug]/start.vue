@@ -13,7 +13,7 @@
       </section>
 
       <div class="wrap stack-lg start__body">
-        <StepBar :current="1" />
+        <StepBar :current="1" :entities="noun.plural" />
 
         <!-- Paso 1: partidos -->
         <section class="label" aria-labelledby="h-partidos">
@@ -123,7 +123,9 @@ const questionsFor = (mode: DepthMode) =>
     (releaseData.value?.positions || []) as any[],
     (releaseData.value?.entities || []) as any[],
     selectedEntities.value,
-    mode
+    mode,
+    undefined,
+    survey.value.exhaustive === true
   )
 
 const depthMatters = computed(() => new Set(depthModes.value.map((m) => m.questionCount)).size > 1)
@@ -211,6 +213,8 @@ async function startSurvey() {
     release_id: releaseId,
     local_id: crypto.randomUUID(),
     selectedEntities: selectedEntities.value,
+    // Para que las páginas siguientes llamen igual a las entidades sin volver a descargar la versión
+    entityNounPlural: noun.value.plural,
     depthMode: depthMode.value,
     calibrationMode: calibrationMode.value,
     questions: filteredQuestions.value,

@@ -114,6 +114,10 @@ export interface ConsultationSettings {
   entityNoun: { singular: string; plural: string }
   /** Mínimo de posiciones evaluables para no marcar "pocos datos" (null = el general) */
   minEvaluableQuestions: number | null
+  /** Encuesta exhaustiva: la profundidad elige por nivel de pregunta y entran las de un solo programa */
+  exhaustive: boolean
+  /** Cobertura mínima (%) para no marcar "pocos datos" (null = la general, 25) */
+  minCoveragePercent: number | null
 }
 
 export function consultationSettings(meta: any): ConsultationSettings {
@@ -126,7 +130,9 @@ export function consultationSettings(meta: any): ConsultationSettings {
       singular: typeof m.entityNoun?.singular === 'string' ? m.entityNoun.singular : 'partido',
       plural: typeof m.entityNoun?.plural === 'string' ? m.entityNoun.plural : 'partidos'
     },
-    minEvaluableQuestions: min
+    minEvaluableQuestions: min,
+    exhaustive: m.exhaustive === true,
+    minCoveragePercent: typeof m.minCoveragePercent === 'number' && m.minCoveragePercent >= 0 && m.minCoveragePercent <= 100 ? m.minCoveragePercent : null
   }
 }
 

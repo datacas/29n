@@ -15,15 +15,15 @@
       </section>
 
       <div class="wrap stack-lg r__body">
-        <StepBar :current="4" />
+        <StepBar :current="4" :entities="noun.plural" />
 
         <section class="how-to-read stack" aria-labelledby="h-leer">
           <h2 id="h-leer" class="visually-hidden">Cómo leer estos resultados</h2>
-          <p class="note r__alert"><strong>Ojo con contestar «de acuerdo» a todo:</strong> te acerca a los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión.</p>
+          <p v-if="!isHistoricalSurvey" class="note r__alert"><strong>Ojo con contestar «de acuerdo» a todo:</strong> te acerca a los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión.</p>
           <details class="r__how">
             <summary>Cómo leer estos resultados</summary>
             <ul>
-              <li><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
+              <li v-if="!isHistoricalSurvey"><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
               <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice {{ isHistoricalSurvey ? 'cada programa' : 'el programa de cada partido' }}: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
               <li><strong>Solo cuentan las preguntas en las que el programa dice algo.</strong> Si un {{ noun.singular }} no se pronuncia sobre un tema, ese tema no suma ni resta. Tampoco cuentan las que contestaste «No sé» o omitiste.</li>
               <li><strong>«Tiene posición en X de tus Y preguntas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
@@ -54,6 +54,9 @@
               <span v-if="low(result)" class="low-data-badge" :title="`Este ${noun.singular} tiene pocas posiciones documentadas en las preguntas que contestaste: el resultado es solo orientativo.`">Pocos datos</span>
             </div>
             <div class="label__body stack">
+              <p v-if="isHistoricalSurvey && entityInfo(result.entityId)?.description" class="r__ficha small">
+                <strong>{{ entityInfo(result.entityId)?.periodLabel }}.</strong> {{ entityInfo(result.entityId)?.description }}
+              </p>
               <div class="affinity-score r__score">
                 <span v-if="result.affinityPercent !== null" class="flag r__flag tnum" :class="low(result) ? 'flag--ghost' : ''" :style="{ width: `${Math.max(16, result.affinityPercent)}%` }">
                   <span class="score-value">{{ result.affinityPercent }}%</span>
@@ -112,23 +115,11 @@
           </li>
         </ol>
 
-        <section v-if="results.length" class="label r__contrib" aria-labelledby="h-contrib">
-          <div class="label__head"><h2 id="h-contrib">Ayuda con las estadísticas</h2></div>
-          <div class="label__body stack">
-            <template v-if="contribState === 'sent'">
-              <p role="status">Gracias. Tus respuestas ya suman en las <NuxtLink v-if="statsVisible" to="/estadisticas">estadísticas públicas</NuxtLink><template v-else>estadísticas públicas, que se abrirán cuando haya suficientes personas</template>.</p>
-            </template>
-            <template v-else>
-              <label class="r__check">
-                <input v-model="contribOk" type="checkbox">
-                <span>Compartir de forma anónima mis respuestas y mi afinidad con cada {{ noun.singular }} para las estadísticas públicas.</span>
-              </label>
-              <p class="small">No se guarda una ficha tuya: cada respuesta solo suma 1 a un contador, sin IP ni ningún identificador. Nadie puede saber qué respondiste. <NuxtLink to="/metodologia">Más detalle</NuxtLink>.</p>
-              <div><button type="button" class="btn btn-primary" :disabled="!contribOk || contribState === 'sending'" @click="sendContribution">{{ contribState === 'sending' ? 'Enviando...' : 'Enviar' }}</button></div>
-              <p v-if="contribState === 'error'" class="small" role="alert">No se pudo enviar. Inténtalo más tarde.</p>
-            </template>
-          </div>
-        </section>
+        <p v-if="results.length" class="small r__contrib-note">
+          Tus respuestas y tu afinidad suman de forma anónima a las <NuxtLink v-if="statsVisible && !isHistoricalSurvey" to="/estadisticas">estadísticas públicas</NuxtLink><template v-else>estadísticas</template>:
+          cada respuesta solo añade 1 a un contador, sin IP ni ningún identificador, así que nadie puede saber qué respondiste.
+          No se envía nada si tu navegador tiene activado «No rastrear» o el control global de privacidad. <NuxtLink to="/metodologia">Más detalle</NuxtLink>.
+        </p>
 
         <section v-if="results.length" class="r__kofi">
           <p class="small">29N es gratuito, sin anuncios y de código abierto. Si te ha sido útil:</p>
@@ -147,7 +138,7 @@
           <NuxtLink to="/" class="btn btn-secondary">{{ $t('common.back') }}</NuxtLink>
         </section>
 
-        <p class="disclaimer small">Este resultado se calcula en tu navegador. Tus respuestas no se envían a ningún servidor, salvo que marques arriba compartirlas de forma anónima. La compatibilidad refleja coincidencia con los programas, no es una recomendación de voto.</p>
+        <p class="disclaimer small">Este resultado se calcula en tu navegador. Para las estadísticas, tus respuestas se envían una vez, sin ningún identificador, y solo se suman a contadores anónimos. La compatibilidad refleja coincidencia con los programas, no es una recomendación de voto.</p>
       </div>
     </template>
   </div>
@@ -156,7 +147,7 @@
 <script setup lang="ts">
 import { calculateScoring } from '~/lib/scoring/calculate'
 import type { Answer, Position, Question, Weight, EntityInfo, DimensionCalibration, ScoringResult } from '~/lib/scoring/calculate'
-import { MIN_EVALUABLE_QUESTIONS, isLowCoverage, sortResults } from '~/lib/scoring/ranking'
+import { MIN_EVALUABLE_QUESTIONS, MIN_COVERAGE_PERCENT, isLowCoverage, sortResults } from '~/lib/scoring/ranking'
 import { programUrl } from '~/lib/programs'
 
 const route = useRoute()
@@ -325,11 +316,12 @@ const isHistoricalSurvey = computed(() => survey.value.kind === 'historical')
 const minEval = computed<number>(() => survey.value.minEvaluableQuestions ?? MIN_EVALUABLE_QUESTIONS)
 const noun = computed<{ singular: string; plural: string }>(() => survey.value.entityNoun ?? { singular: 'partido', plural: 'partidos' })
 const shortName = computed<string>(() => survey.value.shortName ?? '29N')
-const low = (r: ScoringResult) => isLowCoverage(r, minEval.value)
+const minCov = computed<number>(() => survey.value.minCoveragePercent ?? MIN_COVERAGE_PERCENT)
+const low = (r: ScoringResult) => isLowCoverage(r, minEval.value, minCov.value)
 // En la encuesta histórica todas las entidades son históricas: no se excluyen
 const counts = (r: ScoringResult) => isHistoricalSurvey.value || !r.historical
 
-const sortedResults = computed(() => sortResults(results.value, minEval.value))
+const sortedResults = computed(() => sortResults(results.value, minEval.value, minCov.value))
 
 // Texto para compartir: los tres primeros con datos suficientes. Quien comparte es quien decide enviarlo,
 // y el texto aclara que no es una recomendación de voto (o, en la histórica, que no es adhesión a un régimen).
@@ -348,28 +340,35 @@ const shareText = computed(() => {
   return `${head} ${tail}`
 })
 
-// Aportación anónima a las estadísticas: solo si la persona marca la casilla (viene desmarcada) y pulsa Enviar.
-// Se recuerda en este navegador para no sumar dos veces la misma encuesta.
-const contribOk = ref(false)
+// Aportación anónima a las estadísticas: automática al ver el resultado, una vez por encuesta terminada.
+// Solo suma contadores (sin IP ni identificadores). Respeta «No rastrear». Nunca interrumpe la página.
 const statsVisible = useStatsVisible()
-const contribState = ref<'idle' | 'sending' | 'sent' | 'error'>('idle')
-const contribKey = computed(() => `contributed-${progress.value?.local_id}`)
-onMounted(() => { try { if (localStorage.getItem(contribKey.value)) contribState.value = 'sent' } catch { /* sin efecto */ } })
+let contributed = false
 async function sendContribution() {
-  if (!contribOk.value || !progress.value) return
-  contribState.value = 'sending'
-  const withData = sortedResults.value.filter(r => r.affinityPercent !== null && counts(r))
-  const top = withData.find(r => !low(r))
-  const ok = await contribute({
-    releaseId,
-    mode: progress.value.depthMode,
-    answers: (progress.value.answers || []).map((a: any) => ({ questionId: a.questionId, value: a.value, skipped: !!a.skipped })),
-    // Los partidos con pocos datos no cuentan: su porcentaje es solo orientativo
-    affinity: withData.filter(r => !low(r)).map(r => ({ entityId: r.entityId, percent: r.affinityPercent as number })),
-    top: top?.entityId ?? null
-  })
-  contribState.value = ok ? 'sent' : 'error'
-  if (ok) { try { localStorage.setItem(contribKey.value, '1') } catch { /* sin efecto */ } }
+  if (contributed || !progress.value || !results.value.length) return
+  contributed = true
+  try {
+    if (privacyOptOut()) return
+    const key = `contributed-${progress.value.local_id}`
+    if (localStorage.getItem(key)) return
+    const withData = sortedResults.value.filter(r => r.affinityPercent !== null && counts(r))
+    const top = withData.find(r => !low(r))
+    const ok = await contribute({
+      releaseId,
+      mode: progress.value.depthMode,
+      answers: (progress.value.answers || []).map((a: any) => ({ questionId: a.questionId, value: a.value, skipped: !!a.skipped })),
+      // Los que tienen pocos datos no cuentan: su porcentaje es solo orientativo
+      affinity: withData.filter(r => !low(r)).map(r => ({ entityId: r.entityId, percent: r.affinityPercent as number })),
+      top: top?.entityId ?? null
+    })
+    if (ok) localStorage.setItem(key, '1')
+  } catch { /* sin efecto */ }
+}
+// Cuando ya están los resultados y los datos de la encuesta (para el umbral y los nombres)
+watch([results, releaseData], () => { if (import.meta.client && releaseData.value) sendContribution() }, { immediate: true })
+
+function entityInfo(entityId: string): any {
+  return releaseData.value?.entities?.find((e: any) => e.entityId === entityId)
 }
 
 function getEntityName(entityId: string): string {
@@ -566,8 +565,8 @@ function exportResults() {
 .r__actions { display: grid; gap: var(--space-3); }
 .r__actions .btn-primary { order: -1; }
 @media (min-width: 40rem) { .r__actions { grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); } .r__actions .btn-primary { grid-column: 1 / -1; } .r__stats { grid-template-columns: repeat(4, 1fr); } }
-.r__check { display: flex; gap: 0.6rem; align-items: flex-start; cursor: pointer; }
-.r__check input { width: 1.25rem; height: 1.25rem; margin-top: 0.15rem; flex: none; accent-color: var(--ink); }
+.r__contrib-note { color: var(--muted); }
 .r__hist { margin-top: var(--space-3); }
+.r__ficha { color: var(--ink-soft); border-left: 3px solid var(--line-strong); padding-left: var(--space-3); }
 .r__kofi { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
 </style>

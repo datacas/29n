@@ -312,7 +312,7 @@ describe('contenido del release (congelado)', () => {
     expect(out.consultation).toEqual({
       slug: 's', title: 'T', description: 'D',
       // Sin ajustes congelados ni metadata, la encuesta se comporta como la del 29N
-      kind: 'current', shortName: null, entityNoun: { singular: 'partido', plural: 'partidos' }, minEvaluableQuestions: null
+      kind: 'current', shortName: null, entityNoun: { singular: 'partido', plural: 'partidos' }, minEvaluableQuestions: null, exhaustive: false, minCoveragePercent: null
     })
   })
 

@@ -9,7 +9,7 @@
     </section>
 
     <div class="wrap stack-lg cal__body">
-      <StepBar :current="2" />
+      <StepBar :current="2" :entities="progress?.entityNounPlural" />
 
       <p v-if="!surveyConfig" class="note note--alert error" role="alert">No se encontró la configuración de la encuesta.</p>
 
@@ -47,7 +47,7 @@
             <ul class="weights-list cal__weights">
               <li v-for="(weight, dimId) in weights" :key="dimId">
                 <span class="dim-name">{{ getDimName(dimId) }}</span>
-                <span class="flag cal__flag tnum" :style="{ width: `${Math.max(16, Math.round(weight * 100 * 2.2))}%` }"><span class="weight-value">{{ Math.round(weight * 100) }}%</span></span>
+                <span class="flag cal__flag tnum" :style="{ width: `${Math.max(16, Math.round((weight / maxWeight) * 100))}%` }"><span class="weight-value">{{ Math.round(weight * 100) }}%</span></span>
               </li>
             </ul>
           </div>
@@ -71,6 +71,8 @@
 
 <script setup lang="ts">
 import { dimensionHelp } from '~/lib/survey/dimension-help'
+// La barra más larga ocupa todo el ancho y el resto en proporción: con pocos temas, los pesos se acercan al 100 %
+const maxWeight = computed(() => Math.max(0.0001, ...Object.values(weights.value).map(Number)))
 import {
   computeWeightsFromComparisons,
   type Comparison,
@@ -239,7 +241,7 @@ function skipComparison() {
 .cal__weights { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
 .cal__weights li { display: grid; gap: 0.25rem; }
 .dim-name { font-weight: 700; }
-.cal__flag { height: 1.9rem; justify-content: flex-start; }
+.cal__flag { height: 1.9rem; justify-content: flex-start; max-width: 100%; box-sizing: border-box; }
 .cal__next { flex: 1; text-decoration: none; }
 .dock .btn-skip { flex: none; }
 @media (min-width: 40rem) { .cal__options { grid-template-columns: 1fr 1fr; } }

@@ -7,7 +7,7 @@
 
     <template v-else>
       <div class="wrap q__top">
-        <StepBar :current="3" class="q__steps" />
+        <StepBar :current="3" class="q__steps" :entities="progress?.entityNounPlural" />
         <div class="q__progress progress-bar" role="progressbar" :aria-valuenow="currentQuestionIndex + 1" aria-valuemin="1" :aria-valuemax="questions.length" :aria-label="`Pregunta ${currentQuestionIndex + 1} de ${questions.length}`">
           <div class="q__track"><div class="q__fill progress-fill" :style="{ width: `${progressPercent}%` }"></div></div>
           <span class="progress-text tnum">{{ currentQuestionIndex + 1 }} / {{ questions.length }}</span>

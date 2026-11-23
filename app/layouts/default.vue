@@ -9,6 +9,7 @@
         <nav class="shell__nav" aria-label="Principal">
           <NuxtLink to="/programas">Programas</NuxtLink>
           <NuxtLink to="/metodologia">Cómo funciona</NuxtLink>
+          <NuxtLink v-if="hasHistory" to="/historia" class="shell__hist">Historia</NuxtLink>
           <NuxtLink v-if="statsVisible" to="/estadisticas" class="shell__stats">Estadísticas</NuxtLink>
           <NuxtLink to="/history"><span class="shell__long">Mis resultados</span><span class="shell__short">Historial</span></NuxtLink>
         </nav>
@@ -35,6 +36,9 @@
 
 <script setup lang="ts">
 const statsVisible = useStatsVisible()
+import surveysJson from '~/data/surveys.json'
+// Las encuestas históricas van aparte, en /historia: así no se confunden con la del 29N en la portada
+const hasHistory = (surveysJson as any[]).some((s) => s.kind === 'historical')
 </script>
 
 <style scoped>
