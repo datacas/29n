@@ -97,6 +97,37 @@ export interface ReleaseRow {
   consultation_slug: string
   consultation_title: string
   consultation_description: string | null
+  /** consultations.metadata: ajustes de la encuesta (tipo, umbral, nombre corto, sustantivo). */
+  consultation_metadata?: any
+}
+
+/**
+ * Ajustes de presentación propios de cada encuesta. Viven en consultations.metadata y se congelan en el manifiesto.
+ * Todo es opcional: sin ellos, la encuesta se comporta como la del 29N.
+ */
+export interface ConsultationSettings {
+  /** 'current' (programas actuales) o 'historical' (programas históricos) */
+  kind: 'current' | 'historical'
+  /** Nombre corto para el texto de compartir ("29N", "29N Historia") */
+  shortName: string | null
+  /** Cómo se llama a las entidades: "partido" o "programa" */
+  entityNoun: { singular: string; plural: string }
+  /** Mínimo de posiciones evaluables para no marcar "pocos datos" (null = el general) */
+  minEvaluableQuestions: number | null
+}
+
+export function consultationSettings(meta: any): ConsultationSettings {
+  const m = meta && typeof meta === 'object' ? meta : {}
+  const min = Number.isInteger(m.minEvaluableQuestions) && m.minEvaluableQuestions > 0 ? m.minEvaluableQuestions : null
+  return {
+    kind: m.kind === 'historical' ? 'historical' : 'current',
+    shortName: typeof m.shortName === 'string' && m.shortName.trim() ? m.shortName.trim() : null,
+    entityNoun: {
+      singular: typeof m.entityNoun?.singular === 'string' ? m.entityNoun.singular : 'partido',
+      plural: typeof m.entityNoun?.plural === 'string' ? m.entityNoun.plural : 'partidos'
+    },
+    minEvaluableQuestions: min
+  }
 }
 
 /** Payload público: contenido CONGELADO del manifiesto si existe; si no (releases antiguos), lectura en vivo. */
@@ -110,7 +141,10 @@ export async function buildReleasePayload(query: QueryFn, releaseId: string, row
     consultation: {
       slug: row.manifest_jsonb?.consultation?.slug ?? row.consultation_slug,
       title: row.manifest_jsonb?.consultation?.title ?? row.consultation_title,
-      description: row.manifest_jsonb?.consultation?.description ?? row.consultation_description
+      description: row.manifest_jsonb?.consultation?.description ?? row.consultation_description,
+      // Una versión con manifiesto usa solo sus ajustes congelados (los del 29N no tienen: valores por defecto).
+      // El metadata vivo solo se usa sin manifiesto; si no, editarlo cambiaría una versión ya publicada.
+      ...consultationSettings(row.manifest_jsonb?.consultation ? row.manifest_jsonb.consultation.settings : row.consultation_metadata)
     },
     frozen: !!frozen,
     ...content

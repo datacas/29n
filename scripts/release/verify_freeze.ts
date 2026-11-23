@@ -11,7 +11,7 @@ const canonical = (v: any): string => Array.isArray(v) ? `[${v.map(canonical).jo
 const pool = new pg.Pool({ connectionString: 'postgresql://app:password@localhost:5433/affinity' })
 const c = await pool.connect()
 try {
-  const { rows: [r] } = await c.query(`SELECT sr.id, sr.manifest_jsonb, sr.manifest_hash, sr.scoring_model_version, sr.version, c.slug AS consultation_slug, c.title AS consultation_title, c.description AS consultation_description FROM survey_releases sr JOIN consultations c ON c.id=sr.consultation_id WHERE sr.version=$1`, [process.argv.includes('--version') ? process.argv[process.argv.indexOf('--version') + 1] : '1.0.0-rc1'])
+  const { rows: [r] } = await c.query(`SELECT sr.id, sr.manifest_jsonb, sr.manifest_hash, sr.scoring_model_version, sr.version, c.slug AS consultation_slug, c.title AS consultation_title, c.description AS consultation_description, c.metadata AS consultation_metadata FROM survey_releases sr JOIN consultations c ON c.id=sr.consultation_id WHERE sr.version=$1`, [process.argv.includes('--version') ? process.argv[process.argv.indexOf('--version') + 1] : '1.0.0-rc1'])
   const h = createHash('sha256').update(canonical(r.manifest_jsonb)).digest('hex')
   console.log('hash guardado = hash recalculado del manifiesto:', h === r.manifest_hash)
   const q = (s: string, p?: unknown[]) => c.query(s, p)

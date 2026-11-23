@@ -12,7 +12,7 @@ import pg from 'pg'
 import { mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { join } from 'node:path'
-import { buildReleasePayload } from '../../app/lib/release/content.ts'
+import { buildReleasePayload, consultationSettings } from '../../app/lib/release/content.ts'
 
 export const canonical = (v: unknown): string =>
   Array.isArray(v) ? `[${v.map(canonical).join(',')}]`
@@ -25,14 +25,17 @@ try {
   const { rows } = await pool.query(
     `SELECT c.id, c.slug, c.title, c.description, c.category, c.created_at,
             sr.id AS release_id, sr.version AS release_version, sr.manifest_jsonb, sr.manifest_hash, sr.scoring_model_version,
-            c.slug AS consultation_slug, c.title AS consultation_title, c.description AS consultation_description
+            c.slug AS consultation_slug, c.title AS consultation_title, c.description AS consultation_description, c.metadata AS consultation_metadata
        FROM consultations c JOIN survey_releases sr ON sr.consultation_id = c.id
       WHERE sr.status = 'published' ORDER BY c.created_at DESC`)
   if (!rows.length) throw new Error('No hay ninguna encuesta publicada: no se exporta nada.')
   rmSync(OUT, { recursive: true, force: true })
   mkdirSync(join(OUT, 'releases'), { recursive: true })
 
-  const surveys = rows.map(({ id, slug, title, description, category, created_at, release_id, release_version }) => ({ id, slug, title, description, category, created_at, release_id, release_version }))
+  const surveys = rows.map(({ id, slug, title, description, category, created_at, release_id, release_version, consultation_metadata }) => {
+    const { kind, shortName } = consultationSettings(consultation_metadata)
+    return { id, slug, title, description, category, created_at, release_id, release_version, kind, shortName }
+  })
   writeFileSync(join(OUT, 'surveys.json'), JSON.stringify(surveys))
   // Copia dentro del código: la portada se genera en el build con esta lista (sin pedirla por red)
   mkdirSync(join(process.cwd(), 'app', 'data'), { recursive: true })
@@ -43,7 +46,7 @@ try {
     if (recomputed !== r.manifest_hash) throw new Error(`La huella de ${r.release_version} no coincide con su manifiesto: no se exporta.`)
     const payload = await buildReleasePayload(((s: string, p?: unknown[]) => pool.query(s, p)) as any, r.release_id, {
       manifest_jsonb: r.manifest_jsonb, scoring_model_version: r.scoring_model_version, version: r.release_version,
-      consultation_slug: r.consultation_slug, consultation_title: r.consultation_title, consultation_description: r.consultation_description
+      consultation_slug: r.consultation_slug, consultation_title: r.consultation_title, consultation_description: r.consultation_description, consultation_metadata: r.consultation_metadata
     } as any)
     writeFileSync(join(OUT, 'releases', `${r.release_id}.json`), JSON.stringify(payload))
     writeFileSync(join(OUT, 'releases', `${r.release_id}.manifest.json`), JSON.stringify(r.manifest_jsonb))

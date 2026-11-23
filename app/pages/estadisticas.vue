@@ -207,7 +207,8 @@ import surveysJson from '~/data/surveys.json'
 useHead({ title: '29N · Estadísticas', meta: [{ name: 'robots', content: 'noindex' }] })
 
 const surveys = surveysJson as any[]
-const releaseId = surveys[0]?.release_id ?? ''
+// Las estadísticas públicas son las de la encuesta actual, no las de la histórica
+const releaseId = (surveys.find((s: any) => s.kind !== 'historical') ?? surveys[0])?.release_id ?? ''
 
 const { data, pending, error } = await useFetch<any>('/api/stats/summary', { query: { release: releaseId }, server: false })
 const { data: release } = await useFetch<any>(`/data/releases/${releaseId}.json`, { server: false })

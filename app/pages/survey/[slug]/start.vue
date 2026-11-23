@@ -8,7 +8,7 @@
         <div class="wrap band__inner">
           <NuxtLink :to="`/survey/${releaseId}`" class="back back--band">&larr; {{ $t('common.back') }}</NuxtLink>
           <h1>¿Con qué programa coincides más?</h1>
-          <p>Contesta unas preguntas y compara tu opinión con los programas de {{ releaseData.entities.length }} partidos. Cada porcentaje se apoya en una cita.</p>
+          <p>Contesta unas preguntas y compara tu opinión con {{ survey.kind === 'historical' ? `${releaseData.entities.length} programas históricos` : `los programas de ${releaseData.entities.length} partidos` }}. Cada porcentaje se apoya en una cita.</p>
         </div>
       </section>
 
@@ -18,7 +18,7 @@
         <!-- Paso 1: partidos -->
         <section class="label" aria-labelledby="h-partidos">
           <div class="label__head">
-            <h2 id="h-partidos">Elige los partidos a comparar</h2>
+            <h2 id="h-partidos">Elige los {{ noun.plural }} a comparar</h2>
             <span class="meta" aria-live="polite">{{ selectedEntities.length }} de {{ releaseData.entities.length }}</span>
           </div>
           <div class="label__body entity-tools">
@@ -30,22 +30,23 @@
               v-for="entity in releaseData.entities"
               :key="entity.entityId"
               class="choice entity-option"
-              :class="{ selected: selectedEntities.includes(entity.entityId), historical: entity.isHistorical }"
+              :class="{ selected: selectedEntities.includes(entity.entityId), historical: entity.isHistorical && survey.kind !== 'historical' }"
             >
               <input type="checkbox" :value="entity.entityId" v-model="selectedEntities" />
               <span class="choice__name">
                 {{ entity.name }}
-                <small v-if="entity.isHistorical" class="small"> · {{ entity.periodLabel || 'Histórico' }}</small>
+                <small v-if="entity.periodLabel || (entity.isHistorical && survey.kind !== 'historical')" class="small"> · {{ entity.periodLabel || 'Histórico' }}</small>
               </span>
               <span class="flag flag--mid tnum" :style="{ width: flagWidth(entity.entityId) }" :title="`${positionCount(entity.entityId)} posiciones documentadas`" aria-hidden="true">{{ positionCount(entity.entityId) }}</span>
               <span class="visually-hidden">{{ positionCount(entity.entityId) }} posiciones documentadas</span>
             </label>
           </div>
-          <p class="label__foot">La barra mide las posiciones documentadas de cada programa. Los partidos van en orden alfabético.</p>
+          <p class="label__foot">La barra mide las posiciones documentadas de cada programa. Los {{ noun.plural }} van en orden alfabético.</p>
         </section>
 
         <!-- Paso 2: profundidad -->
-        <section aria-labelledby="h-prof" class="stack">
+        <!-- Si las tres profundidades dan las mismas preguntas (encuesta corta), elegir no tiene sentido -->
+        <section v-if="depthMatters" aria-labelledby="h-prof" class="stack">
           <h2 id="h-prof">{{ $t('survey.detail.depthTitle') }}</h2>
           <div class="segments depth-options" role="radiogroup" aria-labelledby="h-prof">
             <label v-for="mode in depthModes" :key="mode.value" class="depth-option" :class="{ selected: depthMode === mode.value }">
@@ -54,9 +55,9 @@
               <span class="depth-questions tnum">{{ mode.questionCount }} preguntas</span>
             </label>
           </div>
-          <p class="small">{{ depthModes.find((m) => m.value === depthMode)?.description }}. Las preguntas regionales salen solo si eliges ese partido, y se suman.</p>
+          <p class="small">{{ depthModes.find((m) => m.value === depthMode)?.description }}. Las preguntas regionales salen solo si eliges ese {{ noun.singular }}, y se suman.</p>
           <p v-if="selectedEntities.length > 1 && scarceSelection" class="note selection-hint" role="status">
-            Estos partidos solo tienen posiciones documentadas en {{ scarceSelection }} preguntas comunes. Añade más partidos para un resultado más fiable.
+            Estos {{ noun.plural }} solo tienen posiciones documentadas en {{ scarceSelection }} preguntas comunes. Añade más {{ noun.plural }} para un resultado más fiable.
           </p>
         </section>
 
@@ -83,7 +84,7 @@
             <span>Comenzar<template v-if="canStart"> · <span class="tnum">{{ filteredQuestions.length }}</span> preguntas</template></span>
           </button>
         </div>
-        <p v-if="!canStart" class="dock__hint error-hint" role="status">Elige al menos un partido para empezar.</p>
+        <p v-if="!canStart" class="dock__hint error-hint" role="status">Elige al menos un {{ noun.singular }} para empezar.</p>
       </div>
     </template>
   </div>
@@ -103,6 +104,15 @@ const calibrationMode = ref<'serious' | 'quick' | 'skipped'>('serious')
 // Fetch release data
 const { data: releaseData, pending: loading, error } = await useFetch(`/data/releases/${releaseId}.json`)
 
+// Ajustes de la encuesta: en la histórica se llaman «programas» y vienen todos elegidos de entrada
+const survey = computed<any>(() => (releaseData.value as any)?.consultation ?? {})
+const noun = computed<{ singular: string; plural: string }>(() => survey.value.entityNoun ?? { singular: 'partido', plural: 'partidos' })
+watch(releaseData, (d: any) => {
+  if (d?.consultation?.kind === 'historical' && !selectedEntities.value.length) {
+    selectedEntities.value = (d.entities || []).map((e: any) => e.entityId)
+  }
+}, { immediate: true })
+
 // Calculate question counts per depth mode
 const allQuestions = computed(() => releaseData.value?.questions || [])
 
@@ -116,6 +126,7 @@ const questionsFor = (mode: DepthMode) =>
     mode
   )
 
+const depthMatters = computed(() => new Set(depthModes.value.map((m) => m.questionCount)).size > 1)
 const depthModes = computed(() => {
   return [
     {

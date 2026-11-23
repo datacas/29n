@@ -58,8 +58,12 @@ try {
   const { rows: qs } = await q(
     `SELECT q.id, q.pilot_question_id AS code, q.topic_id, d.code AS dimension
        FROM questions q LEFT JOIN topics t ON t.id = q.topic_id LEFT JOIN dimensions d ON d.id = t.dimension_id
-      WHERE q.pilot_question_id IS NOT NULL AND NOT (q.pilot_question_id = ANY($1)) ORDER BY q.pilot_question_id`,
-    [exclude]
+      WHERE q.pilot_question_id IS NOT NULL AND NOT (q.pilot_question_id = ANY($1))
+        -- La encuesta histórica (preguntas H-…) tiene su propio generador: nunca entra en el 29N
+        AND q.pilot_question_id NOT LIKE 'H-%'
+        AND (q.consultation_id IS NULL OR q.consultation_id = (SELECT id FROM consultations WHERE slug = $2))
+      ORDER BY q.pilot_question_id`,
+    [exclude, CONSULTATION.slug]
   )
   const { rows: pos } = await q(
     `SELECT p.id, p.entity_id, p.question_id, p.review_status, p.value, p.stance_status, p.conditions, e.name AS party,
@@ -106,7 +110,7 @@ try {
   } else {
     const c = await q(
       `INSERT INTO consultations (slug, title, description, category, base_locale) VALUES ($1,$2,$3,'politics','es')
-       ON CONFLICT (slug) DO UPDATE SET slug = EXCLUDED.slug RETURNING id`,
+       ON CONFLICT (slug) DO UPDATE SET slug = EXCLUDED.slug RETURNING id, metadata`,
       [CONSULTATION.slug, CONSULTATION.title, CONSULTATION.description]
     )
     const existing = await q(`SELECT id, status FROM survey_releases WHERE consultation_id = $1 AND version = $2`, [c.rows[0].id, version])
@@ -131,7 +135,11 @@ try {
     const manifest = {
       version,
       scoring_model_version: '1.0.0',
-      consultation: { slug: CONSULTATION.slug, title: CONSULTATION.title, description: CONSULTATION.description },
+      consultation: {
+        slug: CONSULTATION.slug, title: CONSULTATION.title, description: CONSULTATION.description,
+        // Ajustes de la encuesta (tipo, umbral…): se congelan solo si existen, así el manifiesto del 29N no cambia
+        ...(c.rows[0].metadata ? { settings: c.rows[0].metadata } : {})
+      },
       question_ids: questions.map((x) => x.id).sort(),
       entity_ids: ents.map((e) => e.id).sort(),
       content

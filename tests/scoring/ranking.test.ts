@@ -56,3 +56,21 @@ describe('ranking y marca de pocos datos', () => {
     expect(r.map((x) => x.affinityPercent)).toEqual([80, 60, 40])
   })
 })
+
+describe('umbral de pocos datos configurable por encuesta', () => {
+  // Encuesta histórica: 15 preguntas, umbral 5
+  it('con mínimo 5, cinco posiciones evaluables no se marcan', () => {
+    expect(isLowCoverage(row(60, 5, 15), 5)).toBe(false)
+  })
+  it('con mínimo 5, tres posiciones evaluables sí se marcan', () => {
+    expect(isLowCoverage(row(60, 3, 15), 5)).toBe(true)
+  })
+  it('sin mínimo explícito se usa el general de 8', () => {
+    expect(MIN_EVALUABLE_QUESTIONS).toBe(8)
+    expect(isLowCoverage(row(60, 5, 15))).toBe(true)
+  })
+  it('el orden respeta el mínimo de la encuesta', () => {
+    const r = sortResults([row(90, 3, 15), row(50, 6, 15), row(70, 5, 15)], 5)
+    expect(r.map((x) => x.affinityPercent)).toEqual([70, 50, 90])
+  })
+})
