@@ -4,21 +4,30 @@
       <div class="wrap band__inner home__intro">
         <h1>¿Con qué programa coincides más?</h1>
         <p>Contesta unas preguntas y compara tu opinión con lo que dicen por escrito los programas electorales. Cada porcentaje se apoya en una cita del programa, con su página.</p>
-        <NuxtLink v-if="surveys.length === 1" :to="`/survey/${surveys[0].release_id}/start`" class="btn-primary home__cta">{{ $t('survey.detail.start') }}</NuxtLink>
+        <NuxtLink v-if="current.length === 1" :to="`/survey/${current[0].release_id}/start`" class="btn-primary home__cta">{{ $t('survey.detail.start') }}</NuxtLink>
       </div>
     </section>
 
     <div class="wrap stack-lg home__body">
-      <p v-if="!surveys.length" class="note no-surveys" role="status">{{ $t('survey.catalog.noSurveys') }}</p>
+      <p v-if="!current.length" class="note no-surveys" role="status">{{ $t('survey.catalog.noSurveys') }}</p>
 
-      <ul v-else-if="surveys.length > 1" class="survey-list">
-        <li v-for="survey in surveys" :key="survey.release_id">
+      <ul v-else-if="current.length > 1" class="survey-list">
+        <li v-for="survey in current" :key="survey.release_id">
           <NuxtLink :to="`/survey/${survey.release_id}/start`" class="survey-card label">
             <span class="label__head"><h2>{{ survey.title }}</h2><span class="meta">v{{ survey.release_version }}</span></span>
             <span class="label__body">{{ survey.description }}</span>
           </NuxtLink>
         </li>
       </ul>
+
+      <section v-for="h in historical" :key="h.release_id" class="label home__hist" aria-labelledby="h-hist">
+        <div class="label__head"><h2 id="h-hist">{{ h.title }}</h2><span class="meta">aparte</span></div>
+        <div class="label__body stack">
+          <p>{{ h.description }}</p>
+          <p class="small">Textos de hace casi un siglo. Coincidir con una propuesta concreta no equivale a compartir ese régimen ni sus crímenes.</p>
+          <div><NuxtLink :to="`/survey/${h.release_id}/start`" class="btn btn-secondary">Hacer la encuesta histórica</NuxtLink></div>
+        </div>
+      </section>
 
       <section class="label" aria-labelledby="h-como">
         <div class="label__head"><h2 id="h-como">Cómo funciona</h2><span class="meta">unos 8 minutos</span></div>
@@ -44,6 +53,9 @@
 // La lista de encuestas publicadas se genera con `npm run data:export` y viaja dentro del código
 import surveysJson from '~/data/surveys.json'
 const surveys = ref<any[]>(surveysJson as any[])
+// La encuesta histórica va en su propia sección: no se mezcla con la del 29N
+const current = computed(() => surveys.value.filter((s: any) => s.kind !== 'historical'))
+const historical = computed(() => surveys.value.filter((s: any) => s.kind === 'historical'))
 
 useHead({ title: '29N · ¿Con qué programa coincides más?' })
 </script>

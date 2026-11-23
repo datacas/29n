@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
   try {
     const { rows } = await query(
       `SELECT sr.manifest_jsonb, sr.scoring_model_version, sr.version,
-              c.slug AS consultation_slug, c.title AS consultation_title, c.description AS consultation_description
+              c.slug AS consultation_slug, c.title AS consultation_title, c.description AS consultation_description, c.metadata AS consultation_metadata
          FROM survey_releases sr JOIN consultations c ON c.id = sr.consultation_id
         WHERE sr.id = $1 AND sr.status = 'published' LIMIT 1`,
       [id]

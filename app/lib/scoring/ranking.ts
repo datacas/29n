@@ -21,19 +21,23 @@ export interface RankableResult {
 /** Cobertura mínima (sobre preguntas contestadas) para considerar fiable un resultado. */
 export const MIN_COVERAGE_PERCENT = 25
 
-/** Mínimo absoluto de preguntas evaluables para no considerarlo "pocos datos". */
+/**
+ * Mínimo absoluto de preguntas evaluables para no considerarlo "pocos datos".
+ * Cada encuesta puede fijar el suyo (consultation.minEvaluableQuestions): la histórica usa 5 porque sus
+ * documentos son cortos y con 8 casi todos saldrían marcados; el 29N usa este valor por defecto.
+ */
 export const MIN_EVALUABLE_QUESTIONS = 8
 
-export function minEvaluableFor(result: RankableResult): number {
-  // Si la persona ha contestado menos de 8 preguntas, no se puede exigir más de las que hay.
-  return Math.min(MIN_EVALUABLE_QUESTIONS, result.answeredQuestions)
+export function minEvaluableFor(result: RankableResult, min: number = MIN_EVALUABLE_QUESTIONS): number {
+  // Si la persona ha contestado menos preguntas que el mínimo, no se puede exigir más de las que hay.
+  return Math.min(min, result.answeredQuestions)
 }
 
-export function isLowCoverage(result: RankableResult): boolean {
+export function isLowCoverage(result: RankableResult, min: number = MIN_EVALUABLE_QUESTIONS): boolean {
   if (result.affinityPercent === null) return false
   return (
     result.coveragePercent < MIN_COVERAGE_PERCENT ||
-    result.evaluableQuestions < minEvaluableFor(result)
+    result.evaluableQuestions < minEvaluableFor(result, min)
   )
 }
 
@@ -43,8 +47,8 @@ export function isLowCoverage(result: RankableResult): boolean {
  *  - los que no tienen ninguna posición documentada van al final del todo.
  * El orden es estable para que dos ejecuciones den el mismo resultado.
  */
-export function sortResults<T extends RankableResult>(results: T[]): T[] {
-  const rank = (r: RankableResult) => (r.affinityPercent === null ? 2 : isLowCoverage(r) ? 1 : 0)
+export function sortResults<T extends RankableResult>(results: T[], min: number = MIN_EVALUABLE_QUESTIONS): T[] {
+  const rank = (r: RankableResult) => (r.affinityPercent === null ? 2 : isLowCoverage(r, min) ? 1 : 0)
   return [...results].sort((a, b) => {
     if (rank(a) !== rank(b)) return rank(a) - rank(b)
     return (b.affinityPercent ?? 0) - (a.affinityPercent ?? 0)

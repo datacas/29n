@@ -8,7 +8,7 @@ export function useStatsVisible() {
   if (import.meta.client && !asked.value) {
     asked.value = true
     import('~/data/surveys.json').then(async ({ default: surveys }: any) => {
-      const id = surveys?.[0]?.release_id
+      const id = (surveys?.find((s: any) => s.kind !== 'historical') ?? surveys?.[0])?.release_id
       if (!id) return
       const r = await fetch(`/api/stats/summary?release=${id}`)
       if (r.ok) visible.value = !!(await r.json()).visible

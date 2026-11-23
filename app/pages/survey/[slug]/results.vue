@@ -9,7 +9,8 @@
       <section class="band on-band">
         <div class="wrap band__inner">
           <h1>{{ $t('survey.results.title') }}</h1>
-          <p class="survey-title">Cada barra mide cuánto coincide tu opinión con el programa de cada partido.</p>
+          <p class="survey-title">Cada barra mide cuánto coincide tu opinión con el programa de cada {{ noun.singular }}.</p>
+          <p v-if="isHistoricalSurvey" class="note r__hist"><strong>Son textos de hace casi un siglo.</strong> Coincidir con una propuesta concreta no equivale a compartir ese régimen ni sus crímenes. Lee la ficha de cada programa para saber qué pasó después.</p>
         </div>
       </section>
 
@@ -18,16 +19,16 @@
 
         <section class="how-to-read stack" aria-labelledby="h-leer">
           <h2 id="h-leer" class="visually-hidden">Cómo leer estos resultados</h2>
-          <p class="note r__alert"><strong>Ojo con contestar «de acuerdo» a todo:</strong> te acerca a los partidos que prometen más intervención pública. Responde con tu opinión.</p>
+          <p class="note r__alert"><strong>Ojo con contestar «de acuerdo» a todo:</strong> te acerca a los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión.</p>
           <details class="r__how">
             <summary>Cómo leer estos resultados</summary>
             <ul>
-              <li><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los partidos que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
-              <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice el programa de cada partido: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
-              <li><strong>Solo cuentan las preguntas en las que el programa dice algo.</strong> Si un partido no se pronuncia sobre un tema, ese tema no suma ni resta. Tampoco cuentan las que contestaste «No sé» o omitiste.</li>
+              <li><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
+              <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice el programa de cada {{ noun.singular }}: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
+              <li><strong>Solo cuentan las preguntas en las que el programa dice algo.</strong> Si un {{ noun.singular }} no se pronuncia sobre un tema, ese tema no suma ni resta. Tampoco cuentan las que contestaste «No sé» o omitiste.</li>
               <li><strong>«Tiene posición en X de tus Y preguntas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
-              <li><strong>Los partidos con pocos datos</strong> aparecen al final aunque su porcentaje sea alto: con menos de {{ MIN_EVALUABLE_QUESTIONS }} preguntas documentadas el resultado es solo orientativo.</li>
-              <li><strong>«Por qué este porcentaje»</strong> te enseña cada pregunta, tu respuesta, la posición del partido y la cita literal del programa, con su página.</li>
+              <li><strong>Los {{ noun.plural }} con pocos datos</strong> aparecen al final aunque su porcentaje sea alto: con menos de {{ minEval }} preguntas documentadas el resultado es solo orientativo.</li>
+              <li><strong>«Por qué este porcentaje»</strong> te enseña cada pregunta, tu respuesta, la posición del {{ noun.singular }} y la cita literal del programa, con su página.</li>
               <li>Más detalle de cómo se calcula y de dónde salen los datos en <NuxtLink to="/metodologia">Cómo funciona</NuxtLink>.</li>
             </ul>
           </details>
@@ -44,17 +45,17 @@
         <div v-if="results.length === 0" class="no-results"><p>{{ $t('survey.results.noData') }}</p></div>
 
         <ol v-else class="results-list">
-          <li v-for="result in sortedResults" :key="result.entityId" class="result-card label" :class="{ historical: result.historical, 'is-low': isLowCoverage(result) }">
+          <li v-for="result in sortedResults" :key="result.entityId" class="result-card label" :class="{ historical: result.historical, 'is-low': low(result) }">
             <div class="label__head entity-header">
               <h2 class="entity-name">
                 {{ getEntityName(result.entityId) }}
-                <span v-if="result.historical" class="historical-badge small">Histórico</span>
+                <span v-if="result.historical && !isHistoricalSurvey" class="historical-badge small">Histórico</span>
               </h2>
-              <span v-if="isLowCoverage(result)" class="low-data-badge" title="Este partido tiene pocas posiciones documentadas en las preguntas que contestaste: el resultado es solo orientativo.">Pocos datos</span>
+              <span v-if="low(result)" class="low-data-badge" :title="`Este ${noun.singular} tiene pocas posiciones documentadas en las preguntas que contestaste: el resultado es solo orientativo.`">Pocos datos</span>
             </div>
             <div class="label__body stack">
               <div class="affinity-score r__score">
-                <span v-if="result.affinityPercent !== null" class="flag r__flag tnum" :class="isLowCoverage(result) ? 'flag--ghost' : ''" :style="{ width: `${Math.max(16, result.affinityPercent)}%` }">
+                <span v-if="result.affinityPercent !== null" class="flag r__flag tnum" :class="low(result) ? 'flag--ghost' : ''" :style="{ width: `${Math.max(16, result.affinityPercent)}%` }">
                   <span class="score-value">{{ result.affinityPercent }}%</span>
                 </span>
                 <span v-else class="no-data">{{ $t('survey.results.noData') }}</span>
@@ -102,7 +103,7 @@
                         <p v-if="row.evidenceSummary" class="evidence-summary small">{{ row.evidenceSummary }}</p>
                       </div>
                     </li>
-                    <li v-if="!sec.rows.length" class="no-evidence small">Ninguna de las preguntas de este tema que te salieron tiene posición documentada de este partido.</li>
+                    <li v-if="!sec.rows.length" class="no-evidence small">Ninguna de las preguntas de este tema que te salieron tiene posición documentada de este {{ noun.singular }}.</li>
                   </ul>
                 </details>
                 <p class="small"><a :href="programLink(result.entityId, null) || '/programas'" target="_blank" rel="noopener">Abrir el programa completo de {{ getEntityName(result.entityId) }}</a></p>
@@ -120,7 +121,7 @@
             <template v-else>
               <label class="r__check">
                 <input v-model="contribOk" type="checkbox">
-                <span>Compartir de forma anónima mis respuestas y mi afinidad con cada partido para las estadísticas públicas.</span>
+                <span>Compartir de forma anónima mis respuestas y mi afinidad con cada {{ noun.singular }} para las estadísticas públicas.</span>
               </label>
               <p class="small">No se guarda una ficha tuya: cada respuesta solo suma 1 a un contador, sin IP ni ningún identificador. Nadie puede saber qué respondiste. <NuxtLink to="/metodologia">Más detalle</NuxtLink>.</p>
               <div><button type="button" class="btn btn-primary" :disabled="!contribOk || contribState === 'sending'" @click="sendContribution">{{ contribState === 'sending' ? 'Enviando...' : 'Enviar' }}</button></div>
@@ -318,17 +319,32 @@ const priorityList = computed(() => {
     .sort((a, b) => b.percent - a.percent)
 })
 
-const sortedResults = computed(() => sortResults(results.value))
+// Ajustes de la encuesta (vienen congelados en la versión publicada): tipo, umbral de «pocos datos», nombre y sustantivo
+const survey = computed(() => releaseData.value?.consultation ?? {})
+const isHistoricalSurvey = computed(() => survey.value.kind === 'historical')
+const minEval = computed<number>(() => survey.value.minEvaluableQuestions ?? MIN_EVALUABLE_QUESTIONS)
+const noun = computed<{ singular: string; plural: string }>(() => survey.value.entityNoun ?? { singular: 'partido', plural: 'partidos' })
+const shortName = computed<string>(() => survey.value.shortName ?? '29N')
+const low = (r: ScoringResult) => isLowCoverage(r, minEval.value)
+// En la encuesta histórica todas las entidades son históricas: no se excluyen
+const counts = (r: ScoringResult) => isHistoricalSurvey.value || !r.historical
+
+const sortedResults = computed(() => sortResults(results.value, minEval.value))
 
 // Texto para compartir: los tres primeros partidos con datos suficientes. Quien comparte es quien decide enviarlo,
 // y el texto aclara que no es una recomendación de voto. Los partidos con pocos datos no entran.
 const shareText = computed(() => {
-  const top = sortedResults.value
-    .filter(r => r.affinityPercent !== null && !r.historical && !isLowCoverage(r))
+  const withData = sortedResults.value.filter(r => r.affinityPercent !== null && counts(r))
+  // Si todos tienen pocos datos, mejor enseñar los primeros (ya van marcados en la pantalla) que no enseñar nada
+  const solid = withData.filter(r => !low(r))
+  const top = (solid.length ? solid : withData)
     .slice(0, 3)
     .map(r => `${getEntityName(r.entityId)} ${Math.round(r.affinityPercent as number)} %`)
-  const head = top.length ? `Mi resultado en 29N: ${top.join(', ')}.` : 'He hecho el test de 29N.'
-  return `${head} Es solo la coincidencia con lo que dicen sus programas, no una recomendación de voto. Haz el tuyo:`
+  const head = top.length ? `Mi resultado en ${shortName.value}: ${top.join(', ')}.` : `He hecho el test de ${shortName.value}.`
+  const tail = isHistoricalSurvey.value
+    ? 'Es solo la coincidencia con textos históricos, no la adhesión a ningún régimen. Haz el tuyo:'
+    : 'Es solo la coincidencia con lo que dicen sus programas, no una recomendación de voto. Haz el tuyo:'
+  return `${head} ${tail}`
 })
 
 // Aportación anónima a las estadísticas: solo si la persona marca la casilla (viene desmarcada) y pulsa Enviar.
@@ -341,14 +357,14 @@ onMounted(() => { try { if (localStorage.getItem(contribKey.value)) contribState
 async function sendContribution() {
   if (!contribOk.value || !progress.value) return
   contribState.value = 'sending'
-  const withData = sortedResults.value.filter(r => r.affinityPercent !== null && !r.historical)
-  const top = withData.find(r => !isLowCoverage(r))
+  const withData = sortedResults.value.filter(r => r.affinityPercent !== null && counts(r))
+  const top = withData.find(r => !low(r))
   const ok = await contribute({
     releaseId,
     mode: progress.value.depthMode,
     answers: (progress.value.answers || []).map((a: any) => ({ questionId: a.questionId, value: a.value, skipped: !!a.skipped })),
     // Los partidos con pocos datos no cuentan: su porcentaje es solo orientativo
-    affinity: withData.filter(r => !isLowCoverage(r)).map(r => ({ entityId: r.entityId, percent: r.affinityPercent as number })),
+    affinity: withData.filter(r => !low(r)).map(r => ({ entityId: r.entityId, percent: r.affinityPercent as number })),
     top: top?.entityId ?? null
   })
   contribState.value = ok ? 'sent' : 'error'
@@ -551,5 +567,6 @@ function exportResults() {
 @media (min-width: 40rem) { .r__actions { grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); } .r__actions .btn-primary { grid-column: 1 / -1; } .r__stats { grid-template-columns: repeat(4, 1fr); } }
 .r__check { display: flex; gap: 0.6rem; align-items: flex-start; cursor: pointer; }
 .r__check input { width: 1.25rem; height: 1.25rem; margin-top: 0.15rem; flex: none; accent-color: var(--ink); }
+.r__hist { margin-top: var(--space-3); }
 .r__kofi { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
 </style>

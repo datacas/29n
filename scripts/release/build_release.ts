@@ -106,7 +106,7 @@ try {
   } else {
     const c = await q(
       `INSERT INTO consultations (slug, title, description, category, base_locale) VALUES ($1,$2,$3,'politics','es')
-       ON CONFLICT (slug) DO UPDATE SET slug = EXCLUDED.slug RETURNING id`,
+       ON CONFLICT (slug) DO UPDATE SET slug = EXCLUDED.slug RETURNING id, metadata`,
       [CONSULTATION.slug, CONSULTATION.title, CONSULTATION.description]
     )
     const existing = await q(`SELECT id, status FROM survey_releases WHERE consultation_id = $1 AND version = $2`, [c.rows[0].id, version])
@@ -131,7 +131,11 @@ try {
     const manifest = {
       version,
       scoring_model_version: '1.0.0',
-      consultation: { slug: CONSULTATION.slug, title: CONSULTATION.title, description: CONSULTATION.description },
+      consultation: {
+        slug: CONSULTATION.slug, title: CONSULTATION.title, description: CONSULTATION.description,
+        // Ajustes de la encuesta (tipo, umbral…): se congelan solo si existen, así el manifiesto del 29N no cambia
+        ...(c.rows[0].metadata ? { settings: c.rows[0].metadata } : {})
+      },
       question_ids: questions.map((x) => x.id).sort(),
       entity_ids: ents.map((e) => e.id).sort(),
       content
