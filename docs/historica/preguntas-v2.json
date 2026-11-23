@@ -1,0 +1,302 @@
+[
+ {
+  "code": "V01",
+  "dim": "regimen",
+  "bal": false,
+  "text": "La representación política debe organizarse por profesiones y corporaciones, en lugar de por partidos."
+ },
+ {
+  "code": "V02",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Es legítimo conquistar el poder fuera de las urnas, mediante la acción en la calle o la revolución."
+ },
+ {
+  "code": "V03",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Un partido puede tener su propia milicia armada."
+ },
+ {
+  "code": "V04",
+  "dim": "regimen",
+  "bal": false,
+  "text": "El país debería restaurar la monarquía."
+ },
+ {
+  "code": "V05",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Debe suprimirse el Senado."
+ },
+ {
+  "code": "V06",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Se debe poder votar a partir de los 18 años."
+ },
+ {
+  "code": "V07",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Los cargos públicos deben ser elegidos, revocables en cualquier momento y cobrar como un trabajador cualificado."
+ },
+ {
+  "code": "V08",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Los usureros y los especuladores deben ser castigados con la pena de muerte."
+ },
+ {
+  "code": "V09",
+  "dim": "regimen",
+  "bal": false,
+  "text": "El Estado debe poder prohibir obras de arte, libros y espectáculos que considere dañinos para el pueblo."
+ },
+ {
+  "code": "V10",
+  "dim": "regimen",
+  "bal": false,
+  "text": "La ciudadanía y los cargos públicos deben reservarse a quienes pertenecen al pueblo por su origen."
+ },
+ {
+  "code": "V11",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Hay que cerrar la inmigración y expulsar a los inmigrantes llegados en los últimos años."
+ },
+ {
+  "code": "V12",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Los tratados de paz impuestos tras una guerra deben anularse o revisarse."
+ },
+ {
+  "code": "V13",
+  "dim": "regimen",
+  "bal": true,
+  "text": "Un país no debe someter su política exterior a organismos internacionales."
+ },
+ {
+  "code": "V14",
+  "dim": "regimen",
+  "bal": false,
+  "text": "Hay que impulsar la revolución en otros países."
+ },
+ {
+  "code": "V15",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "El espíritu militar debe impregnar toda la vida de la nación."
+ },
+ {
+  "code": "V16",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "Deben confiscarse los bienes de las órdenes religiosas."
+ },
+ {
+  "code": "V17",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "La religión debe tener un lugar en la escuela, y las familias deben poder elegir una educación religiosa."
+ },
+ {
+  "code": "V18",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "El Estado debe pagar los estudios, también los superiores, a los alumnos capaces sin recursos."
+ },
+ {
+  "code": "V19",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "La educación física debe ser obligatoria por ley."
+ },
+ {
+  "code": "V20",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "Los jóvenes deben recibir formación premilitar."
+ },
+ {
+  "code": "V21",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "El Estado puede movilizar obligatoriamente a los jóvenes para trabajos de interés nacional."
+ },
+ {
+  "code": "V22",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "Dentro del matrimonio, la mujer debe tener los mismos derechos que el marido."
+ },
+ {
+  "code": "V23",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "Las mujeres deben poder votar y ser elegidas."
+ },
+ {
+  "code": "V24",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "Los pueblos y regiones deben tener derecho a separarse y formar su propio Estado."
+ },
+ {
+  "code": "V25",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "La sanidad debe ser pública."
+ },
+ {
+  "code": "V26",
+  "dim": "sociedad",
+  "bal": true,
+  "text": "La cárcel debe servir sobre todo para castigar, más que para reeducar."
+ },
+ {
+  "code": "V27",
+  "dim": "sociedad",
+  "bal": true,
+  "text": "Los jueces deben ser profesionales independientes, no elegidos por votación."
+ },
+ {
+  "code": "V28",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "La jurisdicción militar debe limitarse a los delitos militares."
+ },
+ {
+  "code": "V29",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "Hay que investigar y castigar los abusos de la policía."
+ },
+ {
+  "code": "V30",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "El Estado debe apartar a los funcionarios, policías y militares que no sean leales al régimen."
+ },
+ {
+  "code": "V31",
+  "dim": "sociedad",
+  "bal": false,
+  "text": "Debe concederse una amplia amnistía a los presos políticos."
+ },
+ {
+  "code": "V32",
+  "dim": "economia",
+  "bal": true,
+  "text": "La tierra debe repartirse en pequeñas propiedades familiares, no en grandes explotaciones colectivas."
+ },
+ {
+  "code": "V33",
+  "dim": "economia",
+  "bal": false,
+  "text": "Quien cultiva una tierra arrendada durante años debe poder acceder a su propiedad."
+ },
+ {
+  "code": "V34",
+  "dim": "economia",
+  "bal": false,
+  "text": "El Estado debe garantizar precios mínimos a los productos del campo."
+ },
+ {
+  "code": "V35",
+  "dim": "economia",
+  "bal": false,
+  "text": "Hay que proteger con aranceles la producción nacional."
+ },
+ {
+  "code": "V36",
+  "dim": "economia",
+  "bal": false,
+  "text": "Hay que proteger al pequeño comercio frente a los grandes almacenes."
+ },
+ {
+  "code": "V37",
+  "dim": "economia",
+  "bal": false,
+  "text": "Hay que confiscar los beneficios obtenidos con la guerra."
+ },
+ {
+  "code": "V38",
+  "dim": "economia",
+  "bal": true,
+  "text": "Es legítimo cobrar intereses y otras rentas del capital."
+ },
+ {
+  "code": "V39",
+  "dim": "economia",
+  "bal": true,
+  "text": "La economía debe dejarse a la iniciativa privada, no planificarse desde el Estado."
+ },
+ {
+  "code": "V40",
+  "dim": "economia",
+  "bal": true,
+  "text": "Hay que equilibrar las cuentas públicas recortando gastos."
+ },
+ {
+  "code": "V41",
+  "dim": "economia",
+  "bal": true,
+  "text": "El Estado debe dejar de subvencionar empresas y cooperativas que no son viables."
+ },
+ {
+  "code": "V42",
+  "dim": "economia",
+  "bal": false,
+  "text": "El Estado debe impulsar grandes planes de obras públicas."
+ },
+ {
+  "code": "V43",
+  "dim": "economia",
+  "bal": true,
+  "text": "La industria de armamento puede estar en manos privadas."
+ },
+ {
+  "code": "V44",
+  "dim": "economia",
+  "bal": true,
+  "text": "Debe respetarse la propiedad de la vivienda, también la de los ricos."
+ },
+ {
+  "code": "V45",
+  "dim": "trabajo",
+  "bal": true,
+  "text": "El conflicto entre trabajadores y empresarios debe sustituirse por la colaboración: la lucha de clases debe desaparecer."
+ },
+ {
+  "code": "V46",
+  "dim": "trabajo",
+  "bal": false,
+  "text": "Trabajadores y empresarios deben integrarse en sindicatos o corporaciones únicos y obligatorios, organizados por el Estado."
+ },
+ {
+  "code": "V47",
+  "dim": "trabajo",
+  "bal": false,
+  "text": "Los sindicatos obreros deben poder gestionar industrias y servicios públicos."
+ },
+ {
+  "code": "V48",
+  "dim": "trabajo",
+  "bal": false,
+  "text": "Todo el que pueda tiene el deber de trabajar."
+ },
+ {
+  "code": "V49",
+  "dim": "trabajo",
+  "bal": false,
+  "text": "Hay que mejorar las pensiones y adelantar la edad de jubilación."
+ },
+ {
+  "code": "V50",
+  "dim": "trabajo",
+  "bal": false,
+  "text": "Hay que prohibir el trabajo infantil y proteger a las madres trabajadoras."
+ }
+]

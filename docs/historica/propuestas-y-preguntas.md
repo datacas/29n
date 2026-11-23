@@ -1,6 +1,6 @@
 # Encuesta histórica: propuestas, matriz y preguntas
 
-Fecha: 2026-11-23. Describe el **banco v1** (15 preguntas comparativas), publicado como versión 1.1.0. El banco exhaustivo que lo amplía está en `banco-v2-trabajo.md`; cuando se publique, las 15 de aquí serán su nivel 1.
+Fecha: 2026-11-23. Describe el **banco v1** (15 preguntas comparativas). Desde la versión 2.0.0, estas 15 son el nivel 1 (rápida) del banco exhaustivo: ver `banco-v2.py` y `banco-v2-trabajo.md`.
 
 Método: leí cada programa completo, extraje sus propuestas concretas (traducidas al castellano, con el original entre corchetes cuando no está en castellano), las agrupé por temas y me quedé solo con los temas donde **al menos tres programas se pronuncian y no todos dicen lo mismo**. Las traducciones son de trabajo: hay que revisarlas antes de publicar citas.
 

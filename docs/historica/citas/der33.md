@@ -9,5 +9,7 @@ Solo los pasajes usados en la matriz de `../propuestas-y-preguntas.md`. Las preg
 | C | ~ | «…la necesidad de una inmediata derogación, por la vía que en cada caso proceda, de los preceptos, tanto constitucionales como legales, inspirados en designios laicos y socializantes» | (Original en castellano) | p. 2, col. 1, «Contra las leyes laicas y socializantes» |
 | G | − | «…trabajarán sin descanso para lograr la cancelación de todas las disposiciones confiscadoras de la propiedad» | (Original en castellano) | p. 2, col. 1, ídem |
 | O | − | «…derogación […] de los preceptos, tanto constitucionales como legales, inspirados en designios laicos» / «disposiciones […] persecutorias de las personas, de las Asociaciones y de las creencias religiosas» | (Original en castellano) | p. 2, col. 1, ídem |
+| V16 | (−) | «disposiciones confiscadoras de la propiedad y persecutorias de las personas, de las Asociaciones y de las creencias religiosas» | (Original en castellano) | p. 2, col. 1 (transcrito de la imagen) |
+| V31 | + | «la concesión de una amplia y generosa amnistía» | (Original en castellano) | p. 2, col. 1 (transcrito de la imagen) |
 
 **Corrección:** la posición `(+)` en I (transportes en «régimen de empresa privada») no es de este manifiesto. Está en la columna siguiente y pertenece al programa de Unión Económica, que empieza en «He aquí dicho programa». Queda vacía. Con 2 posiciones evaluables, DER33 sale marcado como «pocos datos».

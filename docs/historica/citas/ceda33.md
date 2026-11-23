@@ -17,5 +17,15 @@ Solo los pasajes usados en la matriz de `../propuestas-y-preguntas.md`. Las preg
 | O | − | «La CEDA declara que en el orden político-religioso no puede ni quiere tener otro programa que el que representa la incorporación al suyo de toda la doctrina de la Iglesia católica sobre ese punto.» | (Original en castellano) | I, 1.º (Junta) |
 | P | + | «Se ha de respetar el derecho de los individuos y personas morales a fundar y sostener establecimientos de enseñanza en todos los ámbitos.» | (Original en castellano) | VII, 3.ª (Junta) |
 | U | ~ | «Se estudiará el modo de reducir al mínimo indispensable la permanencia del individuo en filas.» / «El Ejército se organizará sobre un tipo moderno.» | (Original en castellano) | XIII, 2.ª y 3.ª (Junta) |
+| V01 | (+) | «cuanto en la organización corporativa que responda al carácter orgánico de la sociedad» | (Original en castellano) | II (BOE, cita del programa) |
+| V15 | (−) | «España debe desarrollar una política militar orientada a dotar al país de medios de defensa activa en armonía con sus posibilidades económicas y su posición geográfica.» | (Original en castellano) | XIII, 1.ª (Junta) |
+| V17 | + | «Se proclama el perfecto derecho de la familia a la educación de sus hijos y el supremo magisterio de la Iglesia» | (Original en castellano) | VII, 1.ª (Junta) |
+| V22 | (−) | «Las desigualdades de las leyes en materia civil y económica entre los dos sexos deben gradualmente desaparecer, sin perjuicio de la autoridad marital y de la jerarquía familiar.» | (Original en castellano) | VIII (Junta) |
+| V32 | + | «Creación gradual de pequeños propietarios y patrimonios familiares.» | (Original en castellano) | XI, 5.ª, a (Junta) |
+| V40 | (+) | «infla temerariamente los gastos que no son inmediatamente reproductivos» | (Original en castellano) | X (BOE, cita del programa, contra el presupuesto de 1933) |
+| V42 | + | «Procede iniciar una política de obras hidráulicas, con arreglo a planes económicos de conjunto» | (Original en castellano) | X, 4.ª (BOE, cita del programa) |
+| V45 | + | «Se rechaza el principio marxista de la lucha de clases.» | (Original en castellano) | IX, 1.ª (Junta) |
 
 **Aviso:** J, C y K se apoyan en paráfrasis del BOE, no en citas literales. J puntúa, así que su texto literal es prioritario al cotejar con Artola. D sostiene ella sola la fila D (es la única posición a favor), así que su cita debe resistir el cotejo.
+
+Erratas de la reproducción (Junta de Andalucía) corregidas al citar: «le verdadero» → «el verdadero» (A), «derecho pública» → «derecho público» (D), «políticoreligioso» → «político-religioso» e «iglesia» → «Iglesia» (O). Cotejar con Artola.
