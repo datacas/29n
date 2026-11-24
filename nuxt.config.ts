@@ -21,6 +21,9 @@ export default defineNuxtConfig({
   },
 
   srcDir: 'app/',
+  // Nuxt 4 busca server/ y public/ en la raíz: aquí viven dentro de app/
+  serverDir: 'app/server',
+  dir: { public: 'app/public' },
   compatibilityDate: '2025-01-01',
   devtools: { enabled: true },
   nitro: {
