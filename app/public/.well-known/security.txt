@@ -1,4 +1,0 @@
-Contact: https://github.com/datacas/29n/security/advisories/new
-Expires: 2027-06-30T00:00:00.000Z
-Preferred-Languages: es, en
-Canonical: https://www.voto29n.com/.well-known/security.txt
