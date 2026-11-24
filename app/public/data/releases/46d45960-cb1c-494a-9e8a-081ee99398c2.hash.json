@@ -1,7 +1,7 @@
 {
-  "version": "2.0.11",
-  "releaseId": "89580f79-3955-469f-99be-2709a5611956",
+  "version": "2.1.0",
+  "releaseId": "46d45960-cb1c-494a-9e8a-081ee99398c2",
   "algorithm": "sha256",
   "canonicalization": "JSON con claves ordenadas alfabéticamente y sin espacios (ver scripts/deploy/export_static.ts, función canonical)",
-  "hash": "f06f7a76228f03af2a8c403f9c6c010ca5314adaf96136fb0dd22461d1ba9c57"
+  "hash": "a4e372355f873546c1ceae5671002124e8f947717183fa9f2947d58c9480b08e"
 }
