@@ -15,13 +15,16 @@ import { join } from 'node:path'
 import { assessClaim } from '../../app/lib/jev/claim-relevance.ts'
 import { JevClient } from '../../app/lib/jev/client.ts'
 import { verifyQuote } from '../../app/lib/jev/quote.ts'
-import { arg, dbPool, loadPageTexts, OUT_DIR, PARTY_NAMES, requireKeyOrExplain } from './common.ts'
+import { arg, dbPool, loadPageTexts, OUT_DIR, PARTY_NAMES, requireKeyOrExplain, ROOT } from './common.ts'
 import { mapLimit } from './runner.ts'
+import { isJustification, withProposal } from './justification.ts'
+import { join as joinPath } from 'node:path'
 
 const mode = process.argv[2]
 const planName = (process.argv.includes('--plan-file') ? process.argv[process.argv.indexOf('--plan-file') + 1] : 'seed_plan') as string
 const planPath = join(OUT_DIR, `${planName}.json`)
 const pool = dbPool()
+const PARTY_FILES = new Map<string, string>((JSON.parse(readFileSync(join(ROOT, 'docs', 'programas', 'parties.json'), 'utf8')) as Array<{ name: string; file: string }>).map((p) => [p.name, p.file]))
 
 interface SeedItem {
   question_id: string
@@ -66,7 +69,15 @@ try {
           for (const { s, p } of scored.filter((x) => x.p >= sMin && usable(x.s)).sort((a, b) => b.p - a.p).slice(0, 3)) {
             const check = verifyQuote(s, pages, para.page)
             if (check === 'not_found' || check === 'no_source') continue
-            claims.push({ literal_text: s, source_page: para.page, p_paragraph: para.scores[qid], p_sentence: p, quote_check: check })
+            // Fichas «medida + Porque…»: una justificación sola no es una cita válida; se completa con la medida
+            let literal = s
+            if (isJustification(s)) {
+              const file = PARTY_FILES.get(party)
+              const full = file ? withProposal(joinPath(ROOT, 'docs', 'programas', file), para.page, s) : null
+              if (!full) continue
+              literal = full
+            }
+            claims.push({ literal_text: literal, source_page: para.page, p_paragraph: para.scores[qid], p_sentence: p, quote_check: check })
           }
         }
         plan.push({ question_id: qid, party, claims })
