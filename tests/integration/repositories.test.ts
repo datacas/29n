@@ -470,31 +470,31 @@ describe('Integration: API endpoint permissions', () => {
   const skipIfNoServer = process.env.NUXT_RUNNING === 'true'
   const baseUrl = process.env.NUXT_BASE_URL || 'http://localhost:3000'
 
-  it.skipIf(!skipIfNoServer)('should require authentication for entities endpoint', async () => {
+  it.skipIf(!skipIfNoServer)('should require authentication for entities endpoint', { timeout: 5000 }, async () => {
     const res = await fetch(`${baseUrl}/api/entities`, {
       headers: { 'Accept': 'application/json' },
     })
     expect(res.status).toBe(401)
-  }, { timeout: 5000 })
+  })
 
-  it.skipIf(!skipIfNoServer)('should require authentication for sources endpoint', async () => {
+  it.skipIf(!skipIfNoServer)('should require authentication for sources endpoint', { timeout: 5000 }, async () => {
     const res = await fetch(`${baseUrl}/api/sources`, {
       headers: { 'Accept': 'application/json' },
     })
     expect(res.status).toBe(401)
-  }, { timeout: 5000 })
+  })
 
-  it.skipIf(!skipIfNoServer)('should require authentication for positions endpoint', async () => {
+  it.skipIf(!skipIfNoServer)('should require authentication for positions endpoint', { timeout: 5000 }, async () => {
     const res = await fetch(`${baseUrl}/api/positions`, {
       headers: { 'Accept': 'application/json' },
     })
     expect(res.status).toBe(401)
-  }, { timeout: 5000 })
+  })
 
-  it.skipIf(!skipIfNoServer)('should require authentication for coverage endpoint', async () => {
+  it.skipIf(!skipIfNoServer)('should require authentication for coverage endpoint', { timeout: 5000 }, async () => {
     const res = await fetch(`${baseUrl}/api/coverage`, {
       headers: { 'Accept': 'application/json' },
     })
     expect(res.status).toBe(401)
-  }, { timeout: 5000 })
+  })
 })
