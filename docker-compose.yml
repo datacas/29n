@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.web
     ports:
-      - "${NUXT_PORT:-3000}:3000"
+      - "127.0.0.1:${NUXT_PORT:-3000}:3000"
     environment:
       - DATABASE_URL=postgresql://${DB_USER:-app}:${DB_PASSWORD:-password}@db:5432/${DB_NAME:-affinity}
       - STORAGE_PATH=/app/storage
@@ -25,7 +25,7 @@ services:
   db:
     image: postgres:17-alpine
     ports:
-      - "${DB_PORT:-5433}:5432"
+      - "127.0.0.1:${DB_PORT:-5433}:5432"
     environment:
       - POSTGRES_DB=${DB_NAME:-affinity}
       - POSTGRES_USER=${DB_USER:-app}

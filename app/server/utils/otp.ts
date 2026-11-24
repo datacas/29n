@@ -13,6 +13,14 @@ function generateOtpCode(): string {
   return (num % 1000000).toString().padStart(OTP_LENGTH, '0')
 }
 
+// Sin OTP_SECRET se usa uno aleatorio por proceso (los códigos caducan al reiniciar), nunca un valor conocido
+let ephemeralSecret = ''
+export function otpSecret(configured: string | undefined): string {
+  if (configured) return configured
+  if (!ephemeralSecret) ephemeralSecret = randomBytes(32).toString('hex')
+  return ephemeralSecret
+}
+
 function hashOtp(otp: string, secret: string): string {
   return createHmac('sha256', secret).update(otp).digest('hex')
 }

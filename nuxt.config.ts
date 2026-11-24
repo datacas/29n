@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // DEPLOY_TARGET=public: build para internet. Solo incluye la encuesta, los programas y las estadísticas anónimas:
 // sin panel de administración, sin acceso por correo, sin subida de documentos ni rutas que lean la base de datos.
@@ -27,6 +28,8 @@ export default defineNuxtConfig({
     prerender: publicBuild ? { crawlLinks: false, routes: ['/', '/metodologia', '/programas', '/historia'] } : undefined,
     // En Vercel la compresión la hace su red: no duplicamos cada fichero (los PDF pesan 163 MB)
     compressPublicAssets: publicBuild ? false : { gzip: true, brotli: true },
+    // Versiones congeladas como recurso del servidor (para validar las aportaciones anónimas)
+    serverAssets: [{ baseName: 'releases', dir: fileURLToPath(new URL('./app/public/data/releases', import.meta.url)) }],
     storage: {
       data: {
         driver: 'fs',
