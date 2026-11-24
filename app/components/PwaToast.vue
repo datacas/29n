@@ -5,8 +5,8 @@
       <div v-if="$pwa?.needRefresh" class="pwa__toast" role="alert">
         <span>Hay una versión nueva de 29N. Tus respuestas no se pierden al actualizar.</span>
         <span class="pwa__actions">
-          <button type="button" class="btn-primary" @click="$pwa.updateServiceWorker(true)">Actualizar</button>
-          <button type="button" class="btn btn--quiet" @click="$pwa.cancelPrompt()">Luego</button>
+          <button type="button" class="btn-primary" :disabled="updating" @click="applyUpdate">{{ updating ? 'Actualizando…' : 'Actualizar' }}</button>
+          <button type="button" class="btn btn--quiet" :disabled="updating" @click="$pwa.cancelPrompt()">Luego</button>
         </span>
       </div>
       <p v-else-if="ready" class="pwa__toast pwa__toast--ready" role="status">Ya puedes usar 29N sin conexión.</p>
@@ -21,6 +21,27 @@ const { $pwa } = useNuxtApp()
 const buildId = useRuntimeConfig().app.buildId
 const offline = ref(false)
 const ready = ref(false)
+const updating = ref(false)
+
+// Actualizar sin depender del estado interno del módulo: si el aviso quedó desfasado (llegó otra versión o ya se
+// activó la nueva) no hay nadie «en espera» y el botón no haría nada. Cada caso acaba en recarga.
+async function applyUpdate() {
+  updating.value = true
+  const reload = () => window.location.reload()
+  try {
+    const reg = await navigator.serviceWorker?.getRegistration()
+    // Si hay otra versión instalándose, se espera a que quede lista
+    if (reg?.installing) await new Promise<void>((res) => { const w = reg.installing!; w.addEventListener('statechange', () => { if (w.state !== 'installing') res() }); setTimeout(res, 4000) })
+    const waiting = reg?.waiting
+    if (!waiting) return reload()
+    navigator.serviceWorker.addEventListener('controllerchange', reload, { once: true })
+    waiting.postMessage({ type: 'SKIP_WAITING' })
+    // Salvavidas: si el cambio de versión no llega, se recarga igualmente
+    setTimeout(reload, 3000)
+  } catch {
+    reload()
+  }
+}
 
 function sync() { offline.value = !navigator.onLine }
 
