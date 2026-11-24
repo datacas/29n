@@ -20,7 +20,7 @@
   "dependencies": {
     "@neon/config": "^1.14.6",
     "@neon/env": "^2.1.9",
-    "@nuxtjs/i18n": "^9.0.0",
+    "@nuxtjs/i18n": "^10.6.0",
     "@pinia/nuxt": "^1.0.3",
     "compression": "^1.8.2",
     "execa": "^9.5.0",
