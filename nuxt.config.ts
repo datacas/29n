@@ -40,6 +40,8 @@ export default defineNuxtConfig({
       openAPI: false
     },
     routeRules: {
+      // El manifiesto debe revalidarse siempre (el módulo ya hace lo mismo con sw.js): así las versiones nuevas llegan sin esperar
+      '/manifest.webmanifest': { headers: { 'Cache-Control': 'no-cache' } },
       '/_nuxt/**': {
         headers: {
           // Los ficheros llevan hash en el nombre: se pueden revalidar con ETag (304) en vez de bajarlos siempre
@@ -51,8 +53,62 @@ export default defineNuxtConfig({
 
   modules: [
     '@pinia/nuxt',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@vite-pwa/nuxt'
   ],
+
+  // PWA: instalable y con la encuesta disponible sin conexión. El service worker propio está en service-worker/sw.ts
+  pwa: {
+    strategies: 'buildSW',
+    // Con aviso: no se recarga la página en mitad de una encuesta sin que la persona lo decida
+    registerType: 'prompt',
+    scope: '/',
+    manifest: {
+      id: '/',
+      name: '29N · ¿Con qué programa coincides más?',
+      short_name: '29N',
+      description: 'Compara tu opinión con los programas electorales del 29 de noviembre. Cada porcentaje se apoya en una cita del programa, con su página.',
+      lang: 'es',
+      dir: 'ltr',
+      start_url: '/',
+      scope: '/',
+      display: 'standalone',
+      display_override: ['standalone', 'minimal-ui'],
+      orientation: 'any',
+      background_color: '#fafaf8',
+      theme_color: '#fafaf8',
+      categories: ['education', 'politics', 'news'],
+      launch_handler: { client_mode: 'navigate-existing' },
+      icons: [
+        { src: '/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+        { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+        { src: '/icon-maskable-192.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
+        { src: '/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+      ],
+      shortcuts: [
+        { name: 'Encuesta 29N', short_name: '29N', url: '/', icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }] },
+        { name: 'Historia', short_name: 'Historia', url: '/historia', icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }] },
+        { name: 'Mis resultados', short_name: 'Resultados', url: '/history', icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }] }
+      ],
+      screenshots: [
+        { src: '/screenshots/movil-inicio.png', sizes: '390x844', type: 'image/png', form_factor: 'narrow', label: 'Portada: contesta unas preguntas y compara con los programas' },
+        { src: '/screenshots/movil-partidos.png', sizes: '390x844', type: 'image/png', form_factor: 'narrow', label: 'Elige los partidos y la profundidad' },
+        { src: '/screenshots/escritorio-inicio.png', sizes: '1280x720', type: 'image/png', form_factor: 'wide', label: 'Portada en el ordenador' }
+      ]
+    },
+    buildSW: {
+      swSrc: 'service-worker/sw.ts',
+      // Solo el «shell»: los datos de cada encuesta, los PDF y las capturas se guardan al usarlos (ver el service worker)
+      globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+      // Del HTML solo se precarga offline.html: las páginas las guarda el service worker al visitarlas
+      globIgnores: ['data/**', 'programas/**', 'screenshots/**', 'og.png', 'icon-maskable-*.png', '**/*.map', '**/index.html', '200.html', '404.html'],
+      // Sin transformaciones: el módulo quitaría «.html» de las URL y /offline daría 404 (rompería la instalación)
+      manifestTransforms: [async (entries: any[]) => ({ manifest: entries, warnings: [] })],
+      maximumFileSizeToCacheInBytes: 3 * 1024 * 1024
+    },
+    client: { installPrompt: true, periodicSyncForUpdates: 3600 },
+    devOptions: { enabled: false }
+  },
 
   i18n: {
     locales: [
@@ -99,7 +155,8 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'es' },
       charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
+      // viewport-fit=cover: la app instalada ocupa toda la pantalla; el CSS respeta las zonas seguras con env(safe-area-inset-*)
+      viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
       title: '29N',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
@@ -107,6 +164,11 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
       ],
       meta: [
+        { name: 'theme-color', content: '#fafaf8' },
+        { name: 'mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-title', content: '29N' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
         { name: 'description', content: 'Compara tu opinión con los programas electorales del 29 de noviembre de 2026. Cada porcentaje se apoya en una cita literal del programa, con su página.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'es_ES' },
