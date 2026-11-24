@@ -11,7 +11,7 @@
           <NuxtLink to="/metodologia">Cómo funciona</NuxtLink>
           <NuxtLink v-if="hasHistory" to="/historia" class="shell__hist">Historia</NuxtLink>
           <NuxtLink v-if="statsVisible" to="/estadisticas" class="shell__stats">Estadísticas</NuxtLink>
-          <NuxtLink to="/history"><span class="shell__long">Mis resultados</span><span class="shell__short">Historial</span></NuxtLink>
+          <NuxtLink to="/history"><span class="shell__long">Mis resultados</span><span class="shell__short">Resultados</span></NuxtLink>
         </nav>
       </div>
     </header>
