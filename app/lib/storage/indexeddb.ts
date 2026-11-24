@@ -11,7 +11,7 @@ export interface LocalSurveySession {
   survey_release_id: string
   scoring_model_version: string
   entities: string[]
-  depth_mode: 'quick' | 'normal' | 'deep'
+  depth_mode: 'quick' | 'normal' | 'deep' | 'total'
   answers: any[]
   weights: any[]
   results?: any[]
@@ -25,7 +25,7 @@ export interface SurveyProgress {
   release_id: string
   local_id: string
   selectedEntities: string[]
-  depthMode: 'quick' | 'normal' | 'deep'
+  depthMode: 'quick' | 'normal' | 'deep' | 'total'
   calibrationMode: 'serious' | 'quick' | 'skipped'
   calibrationWeights?: Record<string, number>
   questions: any[]

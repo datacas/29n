@@ -7,7 +7,7 @@ import { releaseAllowed, releaseKeys, rateLimited } from '~/server/utils/stats'
  * así que es imposible saber qué respondió alguien en concreto. Sin IP, sin agente de usuario, sin fecha por persona.
  */
 const ID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
-const MODES = new Set(['quick', 'normal', 'deep'])
+const MODES = new Set(['quick', 'normal', 'deep', 'total'])
 const MAX_ITEMS = 300
 
 export default defineEventHandler(async (event) => {

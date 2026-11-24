@@ -19,7 +19,7 @@ Una aplicación de afinidad electoral (VAA). La persona contesta preguntas (de �
 Lo que otro producto no podría copiar con verdad: cada porcentaje se apoya en citas literales verificables del programa, con página, y la herramienta dice abiertamente qué partidos tienen pocos datos y qué no sabe. No recomienda voto.
 
 ## Operating Context
-- Flujo: inicio → elegir partidos y profundidad (rápida, normal o profunda) → prioridades por comparación de temas (9 comparaciones) → preguntas (de 16 a más de 50, el número depende de los partidos elegidos) → resultados con evidencia.
+- Flujo: inicio → elegir partidos y profundidad (rápida, normal, profunda o total) → prioridades por comparación de temas (9 comparaciones) → preguntas (de 16 a más de 50, el número depende de los partidos elegidos) → resultados con evidencia.
 - Cada pregunta lleva un texto de contexto plegable («¿Qué significa esto?») y un selector de importancia opcional.
 - Los resultados y el progreso se guardan solo en el navegador (IndexedDB). No hay cuentas. Hay estadísticas de uso anónimas (sin IP ni respuestas) que respetan «No rastrear».
 - Hay una página «Cómo funciona» (`/metodologia`) y un historial local de resultados.

@@ -10,13 +10,15 @@
  *    El total fluctúa: objetivo + regionales de los partidos elegidos.
  *  - Reparto equilibrado por dimensión (todas las áreas representadas) y un tema no repite hasta agotar el resto.
  *  - Dentro de cada dimensión se priorizan las preguntas con más partidos con posición y que más los separan.
+ *  - Profundidad «total»: entran TODAS las preguntas sobre las que algún partido elegido tiene posición, sin
+ *    objetivo ni cupos. Una pregunta que solo trata a uno suma o resta solo a ese partido (no puntúa a los demás).
  */
-export type DepthMode = 'quick' | 'normal' | 'deep'
+export type DepthMode = 'quick' | 'normal' | 'deep' | 'total'
 
 /** Parte del cuestionario general reservada a preguntas de contrapeso (tema «bal-…»). */
 export const BALANCE_SHARE = 0.2
 
-export const TARGET_QUESTIONS: Record<DepthMode, number> = { quick: 16, normal: 32, deep: 56 }
+export const TARGET_QUESTIONS: Record<DepthMode, number> = { quick: 16, normal: 32, deep: 56, total: Infinity }
 
 export interface SelQuestion {
   questionId: string
@@ -45,7 +47,7 @@ function stddev(xs: number[]): number {
 }
 
 /** Nivel máximo de pregunta por profundidad en el modo exhaustivo (1 = comparativa, 2 = de dos programas, 3 = de uno). */
-export const EXHAUSTIVE_LEVEL: Record<DepthMode, number> = { quick: 1, normal: 2, deep: 3 }
+export const EXHAUSTIVE_LEVEL: Record<DepthMode, number> = { quick: 1, normal: 2, deep: 3, total: Infinity }
 
 export function selectQuestions<Q extends SelQuestion>(
   questions: Q[],
@@ -59,10 +61,11 @@ export function selectQuestions<Q extends SelQuestion>(
   const chosenIds = selectedEntityIds.length ? selectedEntityIds : entities.map((e) => e.entityId)
   const chosen = new Set(chosenIds)
 
-  // Modo exhaustivo (encuesta histórica): la profundidad la marca el nivel de cada pregunta y entran todas
-  // las de ese nivel sobre las que algún programa elegido tiene posición. Una pregunta que solo trata un
-  // programa suma o resta solo a ese programa: para los demás no puntúa. Orden: el del banco.
-  if (exhaustive) {
+  // Modo exhaustivo (encuesta histórica) y profundidad «total» (cualquier encuesta): la profundidad la marca el
+  // nivel de cada pregunta (en «total», sin tope) y entran todas las de ese nivel sobre las que algún partido
+  // elegido tiene posición. Una pregunta que solo trata a uno suma o resta solo a ese: para los demás no puntúa.
+  // Orden: el del banco, que ya viene por dimensión.
+  if (exhaustive || mode === 'total') {
     const max = EXHAUSTIVE_LEVEL[mode]
     const withChosen = new Set(
       positions

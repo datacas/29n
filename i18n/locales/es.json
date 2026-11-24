@@ -30,7 +30,8 @@
       "depth": {
         "quick": "Rápida",
         "normal": "Normal",
-        "deep": "Profunda"
+        "deep": "Profunda",
+        "total": "Total"
       },
       "depthTitle": "Profundidad"
     },

@@ -1,0 +1,737 @@
+{
+ "fuente": "BOE, candidaturas proclamadas para el Congreso, publicado el 3 de noviembre de 2026",
+ "nota": "Congreso de los Diputados (el Senado tiene otras circunscripciones). En Navarra, ERC concurre junto a EH Bildu y PNV figura dentro de Geroa Bai. Sumar aparece en candidaturas conjuntas en varias provincias.",
+ "circunscripciones": [
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Almería",
+   "partidos": [
+    "Adelante Andalucía",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Cádiz",
+   "partidos": [
+    "Adelante Andalucía",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Córdoba",
+   "partidos": [
+    "Adelante Andalucía",
+    "FE de las JONS",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Granada",
+   "partidos": [
+    "Adelante Andalucía",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Huelva",
+   "partidos": [
+    "Adelante Andalucía",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Jaén",
+   "partidos": [
+    "Adelante Andalucía",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Málaga",
+   "partidos": [
+    "Adelante Andalucía",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Andalucía",
+   "nombre": "Sevilla",
+   "partidos": [
+    "Adelante Andalucía",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Aragón",
+   "nombre": "Huesca",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Sumar",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Aragón",
+   "nombre": "Teruel",
+   "partidos": [
+    "FE de las JONS",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Aragón",
+   "nombre": "Zaragoza",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Sumar",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Asturias",
+   "nombre": "Asturias",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Illes Balears",
+   "nombre": "Illes Balears",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Sumar",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Canarias",
+   "nombre": "Las Palmas",
+   "partidos": [
+    "Coalición Canaria",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Sumar",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Canarias",
+   "nombre": "Santa Cruz de Tenerife",
+   "partidos": [
+    "Coalición Canaria",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "Partido Autónomos",
+    "SALF",
+    "Sumar",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Cantabria",
+   "nombre": "Cantabria",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla-La Mancha",
+   "nombre": "Albacete",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla-La Mancha",
+   "nombre": "Ciudad Real",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PP",
+    "PSOE",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla-La Mancha",
+   "nombre": "Cuenca",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla-La Mancha",
+   "nombre": "Guadalajara",
+   "partidos": [
+    "FE de las JONS",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla-La Mancha",
+   "nombre": "Toledo",
+   "partidos": [
+    "FE de las JONS",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Ávila",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Burgos",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "León",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Palencia",
+   "partidos": [
+    "FE de las JONS",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Salamanca",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Segovia",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Soria",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Valladolid",
+   "partidos": [
+    "FE de las JONS",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Castilla y León",
+   "nombre": "Zamora",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Cataluña",
+   "nombre": "Barcelona",
+   "partidos": [
+    "Democracia21",
+    "ERC",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Cataluña",
+   "nombre": "Girona",
+   "partidos": [
+    "ERC",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Cataluña",
+   "nombre": "Lleida",
+   "partidos": [
+    "ERC",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Cataluña",
+   "nombre": "Tarragona",
+   "partidos": [
+    "ERC",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Comunitat Valenciana",
+   "nombre": "Alicante",
+   "partidos": [
+    "Compromís",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "Partido Autónomos",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Comunitat Valenciana",
+   "nombre": "Castellón",
+   "partidos": [
+    "Compromís",
+    "FE de las JONS",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "Partido Autónomos",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Comunitat Valenciana",
+   "nombre": "Valencia",
+   "partidos": [
+    "Compromís",
+    "FE de las JONS",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Extremadura",
+   "nombre": "Badajoz",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Extremadura",
+   "nombre": "Cáceres",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Galicia",
+   "nombre": "A Coruña",
+   "partidos": [
+    "BNG",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Galicia",
+   "nombre": "Lugo",
+   "partidos": [
+    "BNG",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Galicia",
+   "nombre": "Ourense",
+   "partidos": [
+    "BNG",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Galicia",
+   "nombre": "Pontevedra",
+   "partidos": [
+    "BNG",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "La Rioja",
+   "nombre": "La Rioja",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Comunidad de Madrid",
+   "nombre": "Madrid",
+   "partidos": [
+    "Democracia21",
+    "FE de las JONS",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Región de Murcia",
+   "nombre": "Murcia",
+   "partidos": [
+    "Frente Amplio",
+    "Frente Obrero",
+    "PCTE",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Navarra",
+   "nombre": "Navarra",
+   "partidos": [
+    "EH Bildu",
+    "ERC",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PNV",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "País Vasco",
+   "nombre": "Álava",
+   "partidos": [
+    "EH Bildu",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PNV",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "País Vasco",
+   "nombre": "Bizkaia",
+   "partidos": [
+    "EH Bildu",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PNV",
+    "PP",
+    "PSOE",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "País Vasco",
+   "nombre": "Gipuzkoa",
+   "partidos": [
+    "EH Bildu",
+    "Frente Amplio",
+    "Frente Obrero",
+    "PACMA",
+    "PCTE",
+    "PNV",
+    "PP",
+    "PSOE",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Ciudades autónomas",
+   "nombre": "Ceuta",
+   "partidos": [
+    "Frente Obrero",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  },
+  {
+   "comunidad": "Ciudades autónomas",
+   "nombre": "Melilla",
+   "partidos": [
+    "Frente Obrero",
+    "PP",
+    "PSOE",
+    "SALF",
+    "Vox"
+   ]
+  }
+ ]
+}

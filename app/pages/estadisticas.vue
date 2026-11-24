@@ -307,14 +307,14 @@ const highlights = computed(() => {
 })
 
 // Uso
-const MODE: Record<string, string> = { quick: 'Rápida', normal: 'Normal', deep: 'Profunda' }
+const MODE: Record<string, string> = { quick: 'Rápida', normal: 'Normal', deep: 'Profunda', total: 'Total' }
 const DEVICE: Record<string, string> = { mobile: 'Móvil', desktop: 'Ordenador' }
 const toItems = (rows: any[], labels: Record<string, string>, order: string[]) => {
   const total = rows.reduce((s, x) => s + (x.n ?? 0), 0)
   return [...rows].sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key))
     .map(x => ({ label: labels[x.key] ?? x.key, n: x.n, pct: total && x.n ? Math.round((x.n / total) * 100) : 0 }))
 }
-const modeItems = computed(() => toItems(data.value?.modes ?? [], MODE, ['quick', 'normal', 'deep']))
+const modeItems = computed(() => toItems(data.value?.modes ?? [], MODE, ['quick', 'normal', 'deep', 'total']))
 const modeArcs = computed(() => { let o = 0; return modeItems.value.map(m => { const a = { ...m, offset: o }; o += m.pct; return a }) })
 const deviceItems = computed(() => toItems(data.value?.devices ?? [], DEVICE, ['mobile', 'desktop']))
 
@@ -445,7 +445,7 @@ const vReveal = {
 .st__donutwrap { display: flex; align-items: center; gap: var(--space-4); }
 .st__donut { width: 7.5rem; height: 7.5rem; flex: none; }
 .st__ring { stroke: var(--tint); }
-.st__arc0 { stroke: #93a883; background: #93a883; } .st__arc1 { stroke: #68745c; background: #68745c; } .st__arc2 { stroke: #2f3a28; background: #2f3a28; }
+.st__arc0 { stroke: #93a883; background: #93a883; } .st__arc1 { stroke: #68745c; background: #68745c; } .st__arc2 { stroke: #2f3a28; background: #2f3a28; } .st__arc3 { stroke: #161c12; background: #161c12; }
 .st__dlegend { list-style: none; padding: 0; display: grid; gap: 0.3rem; font-size: var(--step--1); }
 .st__dlegend i { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 50%; margin-right: 0.4rem; }
 .st__dev { display: grid; grid-template-columns: 5.5rem 1fr 3rem; gap: var(--space-3); align-items: center; margin-bottom: 0.6rem; font-size: var(--step--1); }
