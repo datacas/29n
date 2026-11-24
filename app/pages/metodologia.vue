@@ -48,7 +48,7 @@
 
     <h2>Qué preguntas te salen</h2>
     <ul>
-      <li>El número cambia según los partidos que elijas y la profundidad (rápida, normal o profunda).</li>
+      <li>El número cambia según los partidos que elijas y la profundidad (rápida, normal, profunda o total, que incluye todas las preguntas de los partidos elegidos).</li>
       <li>Las preguntas regionales, y las que solo trata un partido, salen únicamente si eliges a ese partido, y se suman al total.</li>
       <li>Las preguntas se redactan sin añadir el objetivo que se busca. El cuestionario mezcla preguntas donde el «sí» favorece a unos partidos y preguntas donde favorece a otros, para que decir «sí» a todo no beneficie a un lado.</li>
       <li>Los partidos se muestran en orden alfabético, no por tamaño ni por cercanía a ti.</li>

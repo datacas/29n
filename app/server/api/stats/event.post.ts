@@ -6,7 +6,7 @@ import { rateLimited as limited, releaseAllowed } from '~/server/utils/stats'
  * Valida con lista cerrada y limita la frecuencia en memoria (la IP no se almacena en ningún sitio).
  */
 const EVENTS = new Set(['survey_started', 'survey_completed'])
-const MODES = new Set(['quick', 'normal', 'deep'])
+const MODES = new Set(['quick', 'normal', 'deep', 'total'])
 const DEVICES = new Set(['mobile', 'desktop'])
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 

@@ -25,7 +25,7 @@
             <span class="meta date">{{ formatDate(session.completed_at) }}</span>
           </div>
           <div class="label__body stack">
-            <p class="result-meta small">{{ session.entities.length }} partidos · {{ session.depth_mode === 'quick' ? 'Rápida' : session.depth_mode === 'normal' ? 'Normal' : 'Profunda' }}</p>
+            <p class="result-meta small">{{ session.entities.length }} partidos · {{ ({ quick: 'Rápida', normal: 'Normal', deep: 'Profunda', total: 'Total' } as Record<string, string>)[session.depth_mode] ?? 'Profunda' }}</p>
             <div class="result-actions hist__actions">
               <button type="button" class="btn btn-small" @click="exportSession(session)">{{ $t('history.export') }}</button>
               <button type="button" class="btn btn-small btn-delete" @click="deleteSession(session.local_id)">{{ $t('history.delete') }}</button>

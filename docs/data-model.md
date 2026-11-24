@@ -675,7 +675,7 @@ interface LocalSurveySession {
   
   // Configuración
   entities: string[];         // IDs de entidades seleccionadas
-  depth_mode: 'quick' | 'normal' | 'deep';
+  depth_mode: 'quick' | 'normal' | 'deep' | 'total';
   
   // Respuestas
   answers: Answer[];

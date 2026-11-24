@@ -15,16 +15,40 @@
       <div class="wrap stack-lg start__body">
         <StepBar :current="1" :entities="noun.plural" />
 
+        <!-- Modo: varios (compara) o simple (uno solo) -->
+        <section class="label" aria-labelledby="h-modo">
+          <div class="label__head"><h2 id="h-modo">Modo</h2></div>
+          <div class="calibration-options">
+            <label v-for="m in selectionModes" :key="m.value" class="choice calibration-option" :class="{ selected: selectionMode === m.value }">
+              <input type="radio" name="modo" :value="m.value" v-model="selectionMode" />
+              <span class="choice__text">
+                <span class="choice__title">{{ m.title }}</span>
+                <span class="choice__desc">{{ m.description }}</span>
+              </span>
+            </label>
+          </div>
+        </section>
+
         <!-- Paso 1: partidos -->
         <section class="label" aria-labelledby="h-partidos">
           <div class="label__head">
-            <h2 id="h-partidos">Elige los {{ noun.plural }} a comparar</h2>
-            <span class="meta" aria-live="polite">{{ selectedEntities.length }} de {{ releaseData.entities.length }}</span>
+            <h2 id="h-partidos">{{ single ? `Elige el ${noun.singular} a comparar` : `Elige los ${noun.plural} a comparar` }}</h2>
+            <span class="meta" aria-live="polite">{{ single ? `${selectedEntities.length} de 1` : `${selectedEntities.length} de ${releaseData.entities.length}` }}</span>
           </div>
-          <div class="label__body entity-tools">
-            <button type="button" class="btn btn--quiet" @click="selectedEntities = releaseData.entities.map((e: any) => e.entityId)">Elegir todos</button>
-            <button type="button" class="btn btn--quiet" @click="selectedEntities = []" :disabled="!selectedEntities.length">Quitar todos</button>
+          <div v-if="!single" class="label__body entity-tools">
+            <div v-if="hasProvinces" class="province">
+              <label for="provincia">Tu provincia</label>
+              <select id="provincia" v-model="province" @change="applyProvince">
+                <option value="">Elige tu provincia…</option>
+                <optgroup v-for="g in provinceGroups" :key="g.comunidad" :label="g.comunidad">
+                  <option v-for="c in g.items" :key="c.nombre" :value="c.nombre">{{ c.nombre }}</option>
+                </optgroup>
+              </select>
+            </div>
+            <button type="button" class="btn btn--quiet" @click="province = ''; selectedEntities = releaseData.entities.map((e: any) => e.entityId)">Elegir todos</button>
+            <button type="button" class="btn btn--quiet" @click="province = ''; selectedEntities = []" :disabled="!selectedEntities.length">Quitar todos</button>
           </div>
+          <p v-if="!single && provinceInfo" class="label__foot" role="status">{{ provinceInfo }}</p>
           <div class="entities-selection">
             <label
               v-for="entity in releaseData.entities"
@@ -32,7 +56,7 @@
               class="choice entity-option"
               :class="{ selected: selectedEntities.includes(entity.entityId), historical: entity.isHistorical && survey.kind !== 'historical' }"
             >
-              <input type="checkbox" :value="entity.entityId" v-model="selectedEntities" />
+              <input :type="single ? 'radio' : 'checkbox'" name="entidad" :value="entity.entityId" :checked="selectedEntities.includes(entity.entityId)" @change="pick(entity.entityId)" />
               <span class="choice__name">
                 {{ entity.name }}
                 <small v-if="entity.periodLabel || (entity.isHistorical && survey.kind !== 'historical')" class="small"> · {{ entity.periodLabel || 'Histórico' }}</small>
@@ -48,14 +72,14 @@
         <!-- Si las tres profundidades dan las mismas preguntas (encuesta corta), elegir no tiene sentido -->
         <section v-if="depthMatters" aria-labelledby="h-prof" class="stack">
           <h2 id="h-prof">{{ $t('survey.detail.depthTitle') }}</h2>
-          <div class="segments depth-options" role="radiogroup" aria-labelledby="h-prof">
-            <label v-for="mode in depthModes" :key="mode.value" class="depth-option" :class="{ selected: depthMode === mode.value }">
+          <div class="segments depth-options" role="radiogroup" aria-labelledby="h-prof" :style="{ '--n': visibleDepthModes.length }">
+            <label v-for="mode in visibleDepthModes" :key="mode.value" class="depth-option" :class="{ selected: depthMode === mode.value }">
               <input type="radio" :value="mode.value" v-model="depthMode" />
               <b>{{ mode.title }}</b>
               <span class="depth-questions tnum">{{ mode.questionCount }} preguntas</span>
             </label>
           </div>
-          <p class="small">{{ depthModes.find((m) => m.value === depthMode)?.description }}. Las preguntas regionales salen solo si eliges ese {{ noun.singular }}, y se suman.</p>
+          <p class="small">{{ visibleDepthModes.find((m) => m.value === depthMode)?.description }}<template v-if="depthMode !== 'total'">. Las preguntas regionales salen solo si eliges ese {{ noun.singular }}, y se suman.</template></p>
           <p v-if="selectedEntities.length > 1 && scarceSelection" class="note selection-hint" role="status">
             Estos {{ noun.plural }} solo tienen posiciones documentadas en {{ scarceSelection }} preguntas comunes. Añade más {{ noun.plural }} para un resultado más fiable.
           </p>
@@ -84,7 +108,7 @@
             <span>Comenzar<template v-if="canStart"> · <span class="tnum">{{ filteredQuestions.length }}</span> preguntas</template></span>
           </button>
         </div>
-        <p v-if="!canStart" class="dock__hint error-hint" role="status">Elige al menos un {{ noun.singular }} para empezar.</p>
+        <p v-if="!canStart" class="dock__hint error-hint" role="status">Elige {{ single ? `un ${noun.singular}` : `al menos un ${noun.singular}` }} para empezar.</p>
       </div>
     </template>
   </div>
@@ -96,9 +120,33 @@ const router = useRouter()
 const { t } = useI18n()
 const releaseId = (route.params.slug || route.params.id || '') as string
 import { selectQuestions, type DepthMode } from '~/lib/survey/select-questions'
+import provinces from '~/data/circunscripciones.json'
 
 const selectedEntities = ref<string[]>([])
-const depthMode = ref<'quick' | 'normal' | 'deep'>('normal')
+const depthMode = ref<'quick' | 'normal' | 'deep' | 'total'>('deep')
+const selectionMode = ref<'many' | 'single'>('many')
+const single = computed(() => selectionMode.value === 'single')
+
+// Provincia (circunscripción al Congreso): marca de golpe los partidos que se presentan en ella.
+// Solo en las encuestas de partidos actuales; se casa por nombre, así que no depende del id de la versión.
+const province = ref('')
+const hasProvinces = computed(() => survey.value.kind !== 'historical' && (releaseData.value?.entities || []).some((e: any) => provinceEntityNames.has(e.name)))
+const provinceEntityNames = new Set<string>((provinces.circunscripciones as any[]).flatMap((c) => c.partidos))
+const provinceGroups = computed(() => {
+  const m = new Map<string, any[]>()
+  for (const c of provinces.circunscripciones as any[]) m.set(c.comunidad, [...(m.get(c.comunidad) ?? []), c])
+  return [...m].map(([comunidad, items]) => ({ comunidad, items }))
+})
+const provinceInfo = ref('')
+function applyProvince() {
+  const c = (provinces.circunscripciones as any[]).find((x) => x.nombre === province.value)
+  if (!c) { provinceInfo.value = ''; return }
+  const present = new Set<string>(c.partidos)
+  const ids = (releaseData.value?.entities || []).filter((e: any) => present.has(e.name)).map((e: any) => e.entityId)
+  selectedEntities.value = ids
+  provinceInfo.value = `En ${c.nombre} se presentan ${ids.length} de los ${releaseData.value?.entities.length} ${noun.value.plural} (${provinces.fuente}). Puedes añadir o quitar los que quieras.`
+}
+watch(province, (v) => { if (!v) provinceInfo.value = '' })
 const calibrationMode = ref<'serious' | 'quick' | 'skipped'>('serious')
 
 // Fetch release data
@@ -130,6 +178,10 @@ const questionsFor = (mode: DepthMode) =>
 
 const depthMatters = computed(() => new Set(depthModes.value.map((m) => m.questionCount)).size > 1)
 const depthModes = computed(() => {
+  const total = questionsFor('total').length
+  // «Total» solo se ofrece si añade preguntas a «Profunda»; si no (p. ej. la encuesta histórica, donde la profunda ya
+  // incluye todo), «Profunda» pasa a ser la completa.
+  const deep = questionsFor('deep').length
   return [
     {
       value: 'quick' as const,
@@ -146,11 +198,47 @@ const depthModes = computed(() => {
     {
       value: 'deep' as const,
       title: t('survey.detail.depth.deep'),
-      description: 'Todos los temas que tratan los partidos elegidos',
-      questionCount: questionsFor('deep').length
+      description: total === deep
+        ? `Todas las preguntas de los ${noun.value.plural} elegidos`
+        : `Una selección amplia de todos los temas que tratan los ${noun.value.plural} elegidos`,
+      questionCount: deep
+    },
+    {
+      value: 'total' as const,
+      title: t('survey.detail.depth.total'),
+      description: `Todas las preguntas de los ${noun.value.plural} elegidos, sin dejar ninguna. Las que solo trata uno puntúan solo a ese ${noun.value.singular}`,
+      questionCount: total
     }
   ]
 })
+const totalAddsQuestions = computed(() => {
+  const c = Object.fromEntries(depthModes.value.map((m) => [m.value, m.questionCount]))
+  return c.total > c.deep
+})
+const visibleDepthModes = computed(() => depthModes.value.filter((m) => m.value !== 'total' || totalAddsQuestions.value))
+// Si «Total» deja de ofrecerse (cambia la selección), vuelve a la profunda: da las mismas preguntas
+watch(totalAddsQuestions, (ok) => { if (!ok && depthMode.value === 'total') depthMode.value = 'deep' })
+
+// Varios: se marcan y desmarcan. Simple: solo uno, elegir otro sustituye al anterior
+function pick(id: string) {
+  if (single.value) selectedEntities.value = [id]
+  else selectedEntities.value = selectedEntities.value.includes(id) ? selectedEntities.value.filter((x) => x !== id) : [...selectedEntities.value, id]
+}
+// Al pasar a simple se parte de cero (salvo que ya hubiera uno solo): no se elige por la persona
+watch(selectionMode, (m) => { if (m === 'single') { province.value = ''; if (selectedEntities.value.length !== 1) selectedEntities.value = [] } })
+
+const selectionModes = computed(() => [
+  {
+    value: 'many' as const,
+    title: 'Modo múltiple',
+    description: `Comparas tu opinión con varios ${noun.value.plural} a la vez y ves cómo quedan ordenados según tu afinidad. Elige los que quieras.`
+  },
+  {
+    value: 'single' as const,
+    title: 'Modo simple',
+    description: `Eliges un único ${noun.value.singular} y ves cuánto coincides con él, pregunta a pregunta. No se compara con otros.`
+  }
+])
 
 const calibrationModes = computed(() => [
   {
@@ -200,6 +288,7 @@ function depthModeToLevel(mode: string): number {
     case 'quick': return 1
     case 'normal': return 2
     case 'deep': return 3
+    case 'total': return 3
     default: return 2
   }
 }
@@ -258,11 +347,17 @@ async function startSurvey() {
 <style scoped>
 .start__body { padding-top: var(--space-5); padding-bottom: var(--space-6); }
 .back--band { color: var(--muted); margin-bottom: var(--space-3); }
-.entity-tools { display: flex; gap: var(--space-3); padding: var(--space-2) var(--space-4); border-bottom: 1px solid var(--line); }
+.entity-tools { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-4); border-bottom: 1px solid var(--line); }
+.province { flex: 1 0 100%; display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) 0; }
+.province label { font-weight: 500; white-space: nowrap; }
+.province select { flex: 1; min-width: 0; min-height: 2.75rem; padding: 0 var(--space-3); border: 1.5px solid var(--ink); border-radius: 10px; background: var(--tile); font-size: 1rem; }
 .entity-tools .btn { min-height: 2.5rem; font-size: 1rem; padding: 0.3rem 0.4rem; }
 .entities-selection .choice { gap: var(--space-3); }
 .entities-selection .flag { flex: none; min-width: 2.4rem; max-width: 46%; }
 .entity-option.historical .choice__name { color: var(--ink-soft); }
+
+.depth-options { grid-template-columns: repeat(var(--n, 3), 1fr); }
+.depth-option { min-width: 0; }
 
 .dock__hint { margin: var(--space-2) 0 0; text-align: center; }
 

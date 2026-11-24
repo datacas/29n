@@ -36,7 +36,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'admin' })
 const { data, error } = await useFetch<any>('/api/admin/stats')
-const modeLabel = (m: string) => ({ quick: 'Rápida', normal: 'Normal', deep: 'Profunda' } as Record<string, string>)[m] ?? m
+const modeLabel = (m: string) => ({ quick: 'Rápida', normal: 'Normal', deep: 'Profunda', total: 'Total' } as Record<string, string>)[m] ?? m
 </script>
 
 <style scoped>

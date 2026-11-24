@@ -38,6 +38,21 @@ describe('selección exhaustiva (encuesta histórica)', () => {
   })
 })
 
+describe('profundidad total', () => {
+  it('encuesta exhaustiva: entra todo sin tope de nivel', () => {
+    expect(ids(selectQuestions(questions, positions, entities, [], 'total', undefined, true))).toEqual(['q1', 'q2', 'q3'])
+  })
+  it('encuesta normal: entran las preguntas con posición de algún partido elegido, incluidas las de un solo partido', () => {
+    expect(ids(selectQuestions(questions, positions, entities, [], 'total'))).toEqual(['q1', 'q2', 'q3'])
+    // q3 solo la tiene A: sale solo si A está elegido
+    expect(ids(selectQuestions(questions, positions, entities, ['B', 'C'], 'total'))).toEqual(['q1', 'q2'])
+  })
+  it('un único partido: todas sus preguntas', () => {
+    expect(ids(selectQuestions(questions, positions, entities, ['A'], 'total'))).toEqual(['q1', 'q2', 'q3'])
+    expect(ids(selectQuestions(questions, positions, entities, ['C'], 'total'))).toEqual(['q1'])
+  })
+})
+
 // Datos reales del 29N: fija las listas EXACTAS de preguntas (huella SHA-256 de los ids, en orden) de cada profundidad
 // para tres selecciones de partidos. Las huellas se calcularon con el selector ANTERIOR al modo exhaustivo,
 // así que este test comprueba que el 29N conserva exactamente sus selecciones.
@@ -74,4 +89,23 @@ describe.skipIf(!existsSync(REL))('29N con datos reales', () => {
     const n = (m: 'quick' | 'normal' | 'deep') => selectQuestions(d.questions, d.positions, d.entities, [], m).length
     expect([n('quick'), n('normal'), n('deep')]).toEqual([27, 43, 67])
   })
+})
+
+// Con los datos publicados: «total» incluye a las demás profundidades y todas las preguntas con posición
+import { readdirSync } from 'node:fs'
+const DIR = 'app/public/data/releases'
+describe.skipIf(!existsSync(DIR))('profundidad total con datos reales', () => {
+  const files = existsSync(DIR) ? readdirSync(DIR).filter((f) => /^[0-9a-f-]{36}\.json$/.test(f)) : []
+  for (const f of files) {
+    const d = JSON.parse(readFileSync(`${DIR}/${f}`, 'utf8'))
+    const exhaustive = d.consultation?.exhaustive === true
+    it(`${f.slice(0, 8)}: total ⊇ profunda y cubre todas las preguntas con posición`, () => {
+      const total = new Set(selectQuestions(d.questions, d.positions, d.entities, [], 'total', undefined, exhaustive).map((q: any) => q.questionId))
+      const deep = selectQuestions(d.questions, d.positions, d.entities, [], 'deep', undefined, exhaustive).map((q: any) => q.questionId)
+      expect(deep.every((id: string) => total.has(id))).toBe(true)
+      const INC = new Set(['approved', 'conditional', 'explicit_neutral'])
+      const withPos = new Set(d.positions.filter((p: any) => p.value != null && (!p.stanceStatus || INC.has(p.stanceStatus))).map((p: any) => p.questionId))
+      expect(total.size).toBe(d.questions.filter((q: any) => withPos.has(q.questionId)).length)
+    })
+  }
 })
