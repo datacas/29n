@@ -1,9 +1,9 @@
 import { query } from '~/server/utils/db'
-import { verifyOtpCode, generateSessionToken } from '~/server/utils/otp'
+import { verifyOtpCode, generateSessionToken, otpSecret } from '~/server/utils/otp'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
-  const secret = (config.otpSecret as string) || 'change-me-in-production'
+  const secret = otpSecret(config.otpSecret as string)
 
   const body = await readBody(event)
   const code = (body?.code as string) || ''

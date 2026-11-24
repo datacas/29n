@@ -1,8 +1,10 @@
 import { query } from '~/server/utils/db'
+import { requireAdmin } from '~/server/utils/auth'
 
 import { QUESTION_DIMENSION_MAP } from '~/server/utils/dimensions'
 
 export default defineEventHandler(async (event) => {
+  await requireAdmin(event)
   // Load questions and positions from PostgreSQL
   const { rows: partyRows } = await query(`SELECT DISTINCT e.name FROM entities e JOIN positions p ON p.entity_id = e.id JOIN questions q ON q.id = p.question_id WHERE e.type = 'party' AND q.pilot_question_id IS NOT NULL ORDER BY e.name`)
   const parties: string[] = partyRows.map((r: any) => r.name)

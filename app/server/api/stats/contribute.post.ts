@@ -1,5 +1,5 @@
 import { query } from '~/server/utils/db'
-import { releaseAllowed, rateLimited } from '~/server/utils/stats'
+import { releaseAllowed, releaseKeys, rateLimited } from '~/server/utils/stats'
 
 /**
  * Aportación anónima a las estadísticas públicas. Solo llega si la persona lo acepta al terminar.
@@ -19,19 +19,22 @@ export default defineEventHandler(async (event) => {
   if (!body || typeof body !== 'object' || !ID.test(String(body.releaseId ?? ''))) {
     setResponseStatus(event, 400); return { ok: false }
   }
+  if (!(await releaseAllowed(body.releaseId))) { setResponseStatus(event, 404); return { ok: false } }
+  const keys = await releaseKeys(body.releaseId)
+  if (!keys) { setResponseStatus(event, 202); return { ok: false } }
   const rows: [string, string, number][] = [['total', '', 0]]
   if (MODES.has(body.mode)) rows.push(['mode', body.mode, 0])
 
   const seenQ = new Set<string>()
   for (const a of Array.isArray(body.answers) ? body.answers.slice(0, MAX_ITEMS) : []) {
-    if (!a || !ID.test(String(a.questionId)) || seenQ.has(a.questionId)) continue
+    if (!a || !ID.test(String(a.questionId)) || !keys.q.has(a.questionId) || seenQ.has(a.questionId)) continue
     const v = a.skipped ? 99 : a.value
     if (v !== 99 && !(Number.isInteger(v) && v >= -2 && v <= 2)) continue
     seenQ.add(a.questionId); rows.push(['answer', a.questionId, v])
   }
   const seenE = new Set<string>()
   for (const r of Array.isArray(body.affinity) ? body.affinity.slice(0, 60) : []) {
-    if (!r || !ID.test(String(r.entityId)) || seenE.has(r.entityId)) continue
+    if (!r || !ID.test(String(r.entityId)) || !keys.e.has(r.entityId) || seenE.has(r.entityId)) continue
     const p = r.percent
     if (typeof p !== 'number' || !Number.isFinite(p) || p < 0 || p > 100) continue
     seenE.add(r.entityId); rows.push(['affinity', r.entityId, Math.min(10, Math.floor(p / 10))])
@@ -40,7 +43,6 @@ export default defineEventHandler(async (event) => {
   if (rows.length < 2) { setResponseStatus(event, 400); return { ok: false } }
 
   try {
-    if (!(await releaseAllowed(body.releaseId))) { setResponseStatus(event, 404); return { ok: false } }
     // Un solo INSERT ... ON CONFLICT con todas las filas: o suma todo o no suma nada
     const params: unknown[] = [body.releaseId]
     const values = rows.map(([k, key, v], i) => {

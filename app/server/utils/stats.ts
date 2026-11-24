@@ -27,3 +27,26 @@ export function allowedReleaseIds(): string[] {
 
 /** Ningún dato público se apoya en menos personas que esto. */
 export const MIN_PUBLIC_COUNT = 10
+
+/**
+ * Identificadores válidos (preguntas y partidos) de una versión. Las aportaciones solo suman claves que existen
+ * en la versión publicada: así nadie puede inflar la tabla con identificadores inventados.
+ * Build público: lee el JSON congelado empaquetado como recurso del servidor. Local: la base de datos.
+ */
+const keysCache = new Map<string, { q: Set<string>; e: Set<string> } | null>()
+export async function releaseKeys(releaseId: string): Promise<{ q: Set<string>; e: Set<string> } | null> {
+  if (keysCache.has(releaseId)) return keysCache.get(releaseId)!
+  let keys: { q: Set<string>; e: Set<string> } | null = null
+  try {
+    if (useRuntimeConfig().publicBuild) {
+      const d = await useStorage('assets:releases').getItem<any>(`${releaseId}.json`)
+      if (d?.questions) keys = { q: new Set(d.questions.map((x: any) => x.questionId)), e: new Set(d.entities.map((x: any) => x.entityId)) }
+    } else {
+      const q = await query(`SELECT question_id::text AS id FROM release_questions WHERE release_id = $1`, [releaseId])
+      const e = await query(`SELECT entity_id::text AS id FROM release_entities WHERE release_id = $1`, [releaseId])
+      if (q.rows.length) keys = { q: new Set(q.rows.map((r: any) => r.id)), e: new Set(e.rows.map((r: any) => r.id)) }
+    }
+  } catch { keys = null }
+  if (keys) keysCache.set(releaseId, keys)
+  return keys
+}

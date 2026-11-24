@@ -1,10 +1,10 @@
 import { query } from '~/server/utils/db'
-import { createOtpChallenge, generateSessionToken } from '~/server/utils/otp'
+import { createOtpChallenge, generateSessionToken, otpSecret } from '~/server/utils/otp'
 import { createEmailAdapter, MockEmailAdapter } from '~/server/utils/email'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
-  const secret = (config.otpSecret as string) || 'change-me-in-production'
+  const secret = otpSecret(config.otpSecret as string)
   const adminEmail = (config.adminEmail as string) || ''
 
   if (!adminEmail) {
@@ -78,7 +78,10 @@ export default defineEventHandler(async (event) => {
   }
 
   // In mock mode, return the code directly so the user can see it
-  if (isMock) {
+  // El código solo se devuelve en la respuesta a peticiones desde la propia máquina (127.0.0.1 / ::1)
+  const ip = event.node.req.socket.remoteAddress || ''
+  const local = ['127.0.0.1', '::1', '::ffff:127.0.0.1'].includes(ip)
+  if (isMock && local) {
     console.log(`[MOCK OTP] Código para ${email}: ${code}`)
     return {
       success: true,
