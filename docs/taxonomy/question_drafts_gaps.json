@@ -1,0 +1,1207 @@
+{
+ "version": "2026-11-24",
+ "status": "BORRADOR (pendiente de aprobación del editor)",
+ "note": "Huecos detectados cruzando theme_scan con las 109 preguntas de la 2.0.11. Las coincidencias son por palabras clave: n_parties cuenta partidos cuyo programa menciona el tema, no que tengan postura evaluable.",
+ "questions": [
+  {
+   "id": "G01",
+   "theme": "consumo-precios",
+   "dimension": "economy",
+   "question": "¿Debe reducirse el IVA de los alimentos y otros productos de primera necesidad?",
+   "n_parties": 16,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 7,
+     "page": 58,
+     "snippet": "superreducido para lo básico 239 IVA Electricidad, agua, alimentos básicos, productos menstruales y cultura."
+    },
+    "Coalición Canaria": {
+     "paragraphs": 1,
+     "page": 12,
+     "snippet": "eraciones respeten nuestra fiscalidad y que se corrijan los cobros indebidos de IVA cuando corresponda aplicar el IGIC."
+    },
+    "Democracia21": {
+     "paragraphs": 11,
+     "page": 18,
+     "snippet": "r de la vivienda es la propia Administración. Eliminaremos todos los impuestos (IVA, ITP y AJD) en la compra de vivienda habitual para los jóvenes menores de 35 años y los reduciremos para todos (hasta un máximo de 400.000€)."
+    },
+    "EH Bildu": {
+     "paragraphs": 3,
+     "page": 6,
+     "snippet": "Establecer un IVA del 21% para alojamientos turísticos de corta duración."
+    },
+    "ERC": {
+     "paragraphs": 4,
+     "page": 19,
+     "snippet": "i garantir l’exercici del dret a un habitatge digne. Incrementar els tipus de l’IVA i l’ITP sobre la compra d’habitatge quan aquest es destini a usos diferents a l’habitatge habitual. L’increment dels tipus d’IVA i l’ITP cal associar-lo als usos turístics, al "
+    },
+    "FE de las JONS": {
+     "paragraphs": 2,
+     "page": 28,
+     "snippet": "a propia, cuota cero real por ingresos debajo del SMI de su sector, devengo del IVA de caja automático y excluyente, dejando de adelantar dinero de facturas aún no cobradas y bonificación fiscal del 50% para aquellos autónomos que incorporen a sus hijos o fami"
+    },
+    "Frente Amplio": {
+     "paragraphs": 8,
+     "page": 8,
+     "snippet": " ultrarricos—, mientras bajamos el IRPF a los salarios más bajos y reducimos el IVA de los bienes básicos y la energía. 5. Una transición ecológica justa para reindustrializar el país y vivir mejor. Actuaremos contra la emergencia climática con valentía e inve"
+    },
+    "Frente Obrero": {
+     "paragraphs": 1,
+     "page": 18,
+     "snippet": "Disminuir la carga fiscal del IVA e incorporar de forma progresiva todas las mercancías de primera necesidad en el tipo superreducido."
+    },
+    "PACMA": {
+     "paragraphs": 6,
+     "page": 3,
+     "snippet": "onocimiento de las clínicas veterinarias como centros sanitarios. Reducción del IVA y deducciones fiscales ........................................................................................................................................................."
+    },
+    "PCTE": {
+     "paragraphs": 1,
+     "page": 3,
+     "snippet": "lmente a las familias trabajadoras, y el Gobierno la ha afrontado reduciendo el IVA en algunos productos y subvencionando el consumo, garantizando así los beneficios astronómicos de las grandes cadenas de distribución. Se han adoptado muchas medidas en nuestro"
+    },
+    "PNV": {
+     "paragraphs": 3,
+     "page": 21,
+     "snippet": "Favorecer una reforma integral del IVA de los bienes y servicios esenciales, estudiando la aplicación de tipos cero o superreducidos a determinados alimentos básicos (pescado, carne, entre otros) y a productos alimenticios específicos (personas celíacas, entre"
+    },
+    "PP": {
+     "paragraphs": 5,
+     "page": 42,
+     "snippet": "a barrios y cascos históricos. La rehabilitación de vivienda habitual tendrá un IVA superreducido del 4%, contará con ayudas, financiación pública y avales preferentes, y podrá apoyarse en la figura del agente rehabilitador. Cuando sea necesario para hacer via"
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 38,
+     "snippet": "Garantizar que cualquier rebaja del IVA a bienes básicos se traslade a precios, reforzando la CNMC. Fortalecer la capacidad de la CNMC para investigar mercados concentrados y adoptar medidas correctoras, endureciendo las sanciones por abuso de posición dominan"
+    },
+    "Partido Autónomos": {
+     "paragraphs": 8,
+     "page": 2,
+     "snippet": "al SMI. Mantenerlos activos preserva el tejido comercial y retorna ingresos vía IVA, IRPF y consumo."
+    },
+    "SALF": {
+     "paragraphs": 3,
+     "page": 5,
+     "snippet": "rimera vivienda, un 35 % más barata. Por ley. Cero impuestos (ITP y AJD al 0 %; IVA al 4 % devuelto ínte‐ gro en la renta), licencia en plazo y suelo público sin coste. Resultado garantizado por ley: el comprador de primera vi‐ vienda paga, como mínimo, un 35 "
+    },
+    "Vox": {
+     "paragraphs": 2,
+     "page": 9,
+     "snippet": "Rebaja del tipo reducido y del tipo general del IVA atendiendo prioritariamente a productos esenciales y de primera necesidad."
+    }
+   }
+  },
+  {
+   "id": "G02",
+   "theme": "fiscalidad-grandes",
+   "dimension": "economy",
+   "question": "¿Debe crearse un impuesto extraordinario sobre los beneficios de la banca y de las grandes energéticas?",
+   "n_parties": 6,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 2,
+     "page": 10,
+     "snippet": "je a las rentas más bajas y suba con fuerza a partir de 100.000 euros al año, e impuestos permanentes a los beneficios extraordinarios de la banca y las eléctricas."
+    },
+    "BNG": {
+     "paragraphs": 1,
+     "page": 21,
+     "snippet": "s contra a especulación nos mercados de alimentos e enerxía, así como contra os beneficios extraordinarios das grandes empresas de distribución e comercio de alimentación. Facilitar o acceso a contas bancarias de pago básicas e gratuítas para todas as persoas "
+    },
+    "EH Bildu": {
+     "paragraphs": 5,
+     "page": 4,
+     "snippet": "y también los decretos de emergencia junto al escudo social; hemos aumentado el impuesto a la banca y las grandes fortunas logrando la gestión propia para nuestras haciendas forales;"
+    },
+    "Frente Amplio": {
+     "paragraphs": 6,
+     "page": 30,
+     "snippet": "vos electrónicos/tabaco calentado al tabaco tradicional. Fiscalidad saludable e impuestos finalistas: Crearemos impuestos específicos a bebidas energéticas, refrescos azucarados, tabaco y productos ultraprocesados para destinar su recaudación a mejoras en salu"
+    },
+    "PSOE": {
+     "paragraphs": 3,
+     "page": 35,
+     "snippet": "iones con el IPC, incrementar el SMI, aprobar la reforma laboral, o implementar impuestos extraordinarios a la banca y al sector energético. Políticas que responden a una misma convicción: la economía debe estar al servicio de la gente, y no al revés."
+    },
+    "Sumar": {
+     "paragraphs": 1,
+     "page": 27,
+     "snippet": "ontribución fiscal de las grandes empresas, generalizando la tributación de los beneficios extraordinarios, tanto los derivados de circunstancias ajenas a su actividad como los obtenidos por posiciones dominantes en mercados con escasa competencia. Revisar los"
+    }
+   }
+  },
+  {
+   "id": "G03",
+   "theme": "politica-industrial",
+   "dimension": "economy",
+   "question": "¿Deben pasar a control público las grandes empresas de energía y otros sectores estratégicos?",
+   "n_parties": 12,
+   "strength": "fuerte",
+   "parties": {
+    "BNG": {
+     "paragraphs": 11,
+     "page": 3,
+     "snippet": "galego de intelixencia artificial 8.2. Dereitos civís, garantías democráticas e control público dos algoritmos 8.3. Lingua galega, patrimonio cultural e intelixencia artificial soberana 8.4. Datos e coñecemento en man común 8.5. Infraestruturas públicas, nube "
+    },
+    "Democracia21": {
+     "paragraphs": 3,
+     "page": 35,
+     "snippet": "Continuaremos con los sectores estratégicos para nuestro futuro económico, tecnológico e industrial, y extenderemos progresivamente la metodología al resto de las actividades económicas. Cada línea sectorial contará con la participación directa de empresas, au"
+    },
+    "EH Bildu": {
+     "paragraphs": 3,
+     "page": 16,
+     "snippet": "Accelerator Act para reforzar las capacidades productivas europeas, ampliar los sectores estratégicos y vincular las ayudas públicas y la contratación a criterios de descarbonización, empleo digno y valor añadido industrial. Impulsar estos principios mediante "
+    },
+    "FE de las JONS": {
+     "paragraphs": 8,
+     "page": 28,
+     "snippet": "Nacionalizaremos la banca, siguiendo el modelo de las cajas de ahorro (antes de que lo destruyese la corrupta casta política), así como por la creación de un Instituto de Crédito con auténtica vocación pública y que sirva a los intereses de España y los españo"
+    },
+    "Frente Amplio": {
+     "paragraphs": 9,
+     "page": 11,
+     "snippet": "Para garantizar el control público de las operaciones inmobiliarias de gran escala, se reconoce un derecho de tanteo y retracto preferente y subsidiario a la entidad pública estatal Casa 47 (respetando la prioridad de administraciones autonómicas y locales) pa"
+    },
+    "Frente Obrero": {
+     "paragraphs": 5,
+     "page": 9,
+     "snippet": "e trabajo, que limita el ejercicio pleno del derecho a huelga sobre todo en los sectores estratégicos."
+    },
+    "PACMA": {
+     "paragraphs": 1,
+     "page": 63,
+     "snippet": "restigio o a través de la realización de encuentros y foros. - Promoción e internacionalización de creadores y compañías de artes escénicas para la realización de giras nacionales e internacionales. - Elaboración de planes que ayuden a consolidar en nuestro pa"
+    },
+    "PCTE": {
+     "paragraphs": 2,
+     "page": 6,
+     "snippet": "abajos especialmente duros. 3. Al control obrero de la industria y de todos los sectores estratégicos de la economía, y a la socialización de los medios de producción."
+    },
+    "PNV": {
+     "paragraphs": 1,
+     "page": 14,
+     "snippet": "Reforzar el apoyo a la internacionalización de las empresas vascas, facilitando su acceso a nuevos mercados, la diversificación de exportaciones y proveedores y su participación en proyectos industriales europeos."
+    },
+    "PSOE": {
+     "paragraphs": 14,
+     "page": 11,
+     "snippet": " economías avanzadas, ha impulsado los sectores de alto valor añadido y la internacionalización de sus empresas, ha reducido la desigualdad a mínimos históricos y ha reforzado la sostenibilidad de las cuentas públicas. Nada de esto ha ocurrido por casualidad. "
+    },
+    "Partido Autónomos": {
+     "paragraphs": 1,
+     "page": 8,
+     "snippet": "s, eliminando conflictos de intereses y garantizando igualdad de competencia en sectores estratégicos."
+    },
+    "Sumar": {
+     "paragraphs": 2,
+     "page": 5,
+     "snippet": "ustancialmente el parque de vivienda social que permanecerá, bajo algún tipo de control público o social, destinado al alquiler. Las personas inquilinas de estas viviendas pagarán un alquiler en función de su renta, que se revisará anualmente adecuándolo a las"
+    }
+   }
+  },
+  {
+   "id": "G04",
+   "theme": "politica-industrial",
+   "dimension": "economy",
+   "question": "¿Debe crearse una banca pública?",
+   "n_parties": 6,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 8,
+     "page": 3,
+     "snippet": "Defensa de la universidad pública Ley estatal de cuidados Banca pública Desprivatización de toda la energía para una transición ecosocial Financiación justa para Andalucía Andalucía, nacionalidad histórica Agua, Guadalquivir y Doñana protegidas Fin de los priv"
+    },
+    "ERC": {
+     "paragraphs": 2,
+     "page": 22,
+     "snippet": "rimonis, la banca i les empreses energètiques, mentre continuem reivindicant la banca pública amb l’ICF al capdavant. Per últim, també proposem una passa endavant en la fiscalitat verda, on l’Estat es troba a la cua d’Europa, seguint les passes ambicioses que "
+    },
+    "FE de las JONS": {
+     "paragraphs": 2,
+     "page": 14,
+     "snippet": "Lucha contra la usura: Concesión de créditos hipotecarios a cargo del Instituto de Crédito Oficial a muy bajo interés, cercanas al 0%. Para familias jóvenes españolas, condonación automática de un porcentaje del capital principal de la deuda con el nacimiento "
+    },
+    "Frente Amplio": {
+     "paragraphs": 10,
+     "page": 8,
+     "snippet": "nsformar nuestro modelo productivo gracias a una política industrial verde, una banca pública estatal y un fondo soberano renovable que garanticen soberanía energética, empleo estable y electricidad barata. Democratizaremos la energía con intervención pública,"
+    },
+    "PNV": {
+     "paragraphs": 1,
+     "page": 14,
+     "snippet": "ceso de pymes y personas autónomas a la financiación, reforzando las líneas del Instituto de Crédito Oficial y los instrumentos públicos de garantía para invertir, modernizar instalaciones y ampliar la actividad."
+    },
+    "Partido Autónomos": {
+     "paragraphs": 1,
+     "page": 6,
+     "snippet": "a nuevos proyectos Creación de una línea permanente de financiación directa del Instituto de Crédito Oficial (ICO) sin intermediación bancaria abusiva, con 2 años de carencia de capital e interés referenciado al Euríbor para emprendedores y pymes. Viabilidad: "
+    }
+   }
+  },
+  {
+   "id": "G05",
+   "theme": "jornada-salarios",
+   "dimension": "economy",
+   "question": "¿Debe ser obligatorio el registro horario digital y perseguirse las horas extra no pagadas?",
+   "n_parties": 7,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 63,
+     "snippet": "de las horas extra 274 Fin Prohibidas salvo emergencia o fuerza"
+    },
+    "Democracia21": {
+     "paragraphs": 1,
+     "page": 85,
+     "snippet": "meros y mayores al grupo B. Y aprobaremos un nuevo reglamento de retribuciones: horas extraordinarias, nocturnidad y festivos pagados, dietas actualizadas e iguales para todas las escalas, y compensación real de la movilidad geográfica. Si España va a invertir"
+    },
+    "EH Bildu": {
+     "paragraphs": 1,
+     "page": 6,
+     "snippet": "Acabar con la práctica del uso abusivo de las horas extras, muchas de ellas no remuneradas o compensadas con descanso, mediante la implantación del registro horario digital obligatorio accesible a la Inspección de Trabajo, así como establecer por ley el recarg"
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 23,
+     "snippet": "Control exhaustivo de las horas extra, justificándolas, y pago de estas según convenio."
+    },
+    "Frente Amplio": {
+     "paragraphs": 3,
+     "page": 52,
+     "snippet": "Tiempo de trabajo, registro de jornada digital y jornada continua ●"
+    },
+    "Frente Obrero": {
+     "paragraphs": 1,
+     "page": 9,
+     "snippet": "10. Reforzar el control sobre el registro de horas extra y garantizar que solo se realicen las previstas por ley para cada trabajador."
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 41,
+     "snippet": "os transitorios que faciliten a las pymes su implementación. 109. Erradicar las horas extra ilegales y no remuneradas. Implantar un registro horario digital fiable, que recoja las jornadas laborales reales, haciendo efectivo el derecho al descanso y la descone"
+    }
+   }
+  },
+  {
+   "id": "G06",
+   "theme": "pensiones",
+   "dimension": "social",
+   "question": "¿Debe reducirse la edad legal de jubilación?",
+   "n_parties": 8,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 2,
+     "page": 55,
+     "snippet": "Adelanto de la edad de jubilación para la pesca, el marisqueo, la industria naval y el trabajo en el campo, como ya tienen otros oficios penosos."
+    },
+    "EH Bildu": {
+     "paragraphs": 1,
+     "page": 7,
+     "snippet": "ensiones rechazando cualquier intento de recorte, privatización o aumento de la edad de jubilación y periodo de cómputo."
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 24,
+     "snippet": "ductivo descrito e implantado según el punto 6.1 de este documento, vuelta a la edad de jubilación a los 65 años y estudio de posibilidad de rebaja. En aquellos sectores donde el trabajo tenga un gran impacto físico sobre sus trabajadores, jubilación anticipad"
+    },
+    "Frente Amplio": {
+     "paragraphs": 2,
+     "page": 58,
+     "snippet": "Reducir edad de jubilación y eliminar la penalización por jubilación anticipada a quienes han cotizado más de 40 años ●"
+    },
+    "Frente Obrero": {
+     "paragraphs": 2,
+     "page": 8,
+     "snippet": " paro, la inflación, la terciarización de puestos de trabajo y el aumento de la edad de jubilación son la consecuencia directa de un sistema nefasto que explota al que menos tiene, para garantizar los beneficios de grandes empresas y sus socios de gobierno. El"
+    },
+    "PCTE": {
+     "paragraphs": 1,
+     "page": 11,
+     "snippet": "ones a la patronal y oponerse firmemente a cualquier propuesta de retraso de la edad de jubilación y defender su adelanto, además de su inclusión completa en los Presupuestos Generales del Estado."
+    },
+    "PNV": {
+     "paragraphs": 1,
+     "page": 31,
+     "snippet": "Favorecer coeficientes reductores de la edad de jubilación para las personas cuidadoras no profesionales acogidas al convenio especial de la Seguridad Social, reconociendo el desgaste físico y emocional de los cuidados prolongados."
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 40,
+     "snippet": "Impulsar los cambios necesarios para que los coeficientes reductores de la edad de jubilación por penosidad se apliquen de forma singularizada a través de una cuenta individual de penosidad, para reconocer el desgaste laboral real de cada trabajador. 105. Impu"
+    }
+   }
+  },
+  {
+   "id": "G07",
+   "theme": "union-europea",
+   "dimension": "economy",
+   "question": "¿Debe rechazar España el acuerdo comercial entre la UE y Mercosur?",
+   "n_parties": 6,
+   "strength": "fuerte",
+   "parties": {
+    "BNG": {
+     "paragraphs": 2,
+     "page": 48,
+     "snippet": " multilaterais prexudiciais para o sector agrario de Galiza, en particular o UE-Mercosur"
+    },
+    "ERC": {
+     "paragraphs": 1,
+     "page": 32,
+     "snippet": "El govern espanyol ha de rebutjar la ratificació de l’acord de lliure comerç UE-Mercosur i oposar-se a l’aplicació provisional mentre no es pronunciï el TJUE."
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 33,
+     "snippet": "Abandono de España del acuerdo UE-Mercosur, que tanto daña nuestra producción nacional."
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 133,
+     "snippet": " Naciones Unidas. Relaciones con América Latina y salvaguardas en el Acuerdo UE-Mercosur: Construiremos relaciones horizontales con América Latina integrando a movimientos sociales e indígenas, e impulsaremos una cumbre anual UE-CELAC centrada en la desigualda"
+    },
+    "SALF": {
+     "paragraphs": 1,
+     "page": 35,
+     "snippet": "Veto a Mercosur, al recorte de la PAC y al Pacto Verde. Mercosur se aplica desde mayo de 2026 contra el voto de Francia; el recorte del 20 % de la PAC quita 877 millones al año al campo español; la Ley de Restauración deja impro‐ ductivo hasta el 40 % de la Re"
+    },
+    "Vox": {
+     "paragraphs": 1,
+     "page": 33,
+     "snippet": "las imposiciones de Bruselas y del Pacto Verde. Rechazo explícito al acuerdo UE-Mercosur y de todo acuerdo comercial que obligue a nuestros productores a competir en desigualdad de condiciones. Inclusión de cláusulas espejo. Recuperación del principio de prefe"
+    }
+   }
+  },
+  {
+   "id": "G08",
+   "theme": "transporte-movilidad",
+   "dimension": "economy",
+   "question": "¿Debe crearse un abono único estatal de transporte público a precio reducido?",
+   "n_parties": 4,
+   "strength": "media",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 2,
+     "page": 6,
+     "snippet": "ncional, financiación estatal del transporte como la de Madrid o Barcelona y un abono único andaluz."
+    },
+    "Coalición Canaria": {
+     "paragraphs": 1,
+     "page": 18,
+     "snippet": "on continuidad. Exigiremos financiación estatal estable que permita mantener la gratuidad del transporte público terrestre para los usuarios beneficiarios y cubra el coste efectivo de la bonificación. Reclamaremos además la aportación estatal al déficit del si"
+    },
+    "Frente Amplio": {
+     "paragraphs": 3,
+     "page": 8,
+     "snippet": "Revolucionaremos la movilidad sostenible apostando por la electrificación, un abono único estatal de transporte y un tren público al servicio de los territorios y las clases populares. Garantizaremos un futuro para el mundo rural y la España vaciada con apoyo "
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 36,
+     "snippet": "ilidad de millones de personas con las bonificaciones al transporte público, el abono único y el programa Verano Joven. También hemos demostrado que el crecimiento económico y los derechos laborales pueden avanzar de la mano. Con la reforma laboral, España ha "
+    }
+   }
+  },
+  {
+   "id": "G09",
+   "theme": "transporte-movilidad",
+   "dimension": "environment",
+   "question": "¿Deben prohibirse los vuelos de corto recorrido con alternativa ferroviaria y los jets privados?",
+   "n_parties": 2,
+   "strength": "débil",
+   "parties": {
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 47,
+     "snippet": "explotaciones, recaudando más de 470 M€ anuales. Gravaremos el queroseno de los vuelos nacionales. Equipararemos la fiscalidad del diésel a la de otros combustibles fósiles en el impuesto de hidrocarburos."
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 48,
+     "snippet": "dioambiente consumidos por el 0,1% más rico, como el transporte con megayates o jets privados, dejando fuera al transporte comercial del resto de la población. El gravamen alcanzará a las grandes embarcaciones de recreo a través de los amarres en puertos depor"
+    }
+   }
+  },
+  {
+   "id": "G10",
+   "theme": "clima-transicion",
+   "dimension": "environment",
+   "question": "¿Deben eliminarse las zonas de bajas emisiones obligatorias en las ciudades?",
+   "n_parties": 4,
+   "strength": "media",
+   "parties": {
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 55,
+     "snippet": "Derogación del Real Decreto, alumbrado desde Bruselas, que regula las zonas de bajas emisiones que atentan contra la movilidad y actividad comercial, en nuestras ciudades y que ha demostrado que no es diferencial en las emisiones de gases contaminantes."
+    },
+    "PSOE": {
+     "paragraphs": 2,
+     "page": 20,
+     "snippet": "blos y ciudades para una movilidad más saludable y sostenible. Impulsaremos las Zonas de Bajas Emisiones, los desplazamientos a pie y en bicicleta, las calles accesibles, los caminos escolares seguros, los corredores verdes y las redes ciclistas. Asimismo, pro"
+    },
+    "Partido Autónomos": {
+     "paragraphs": 1,
+     "page": 15,
+     "snippet": "de respaldo que encarezcan la factura eléctrica ni restricciones arbitrarias en zonas de bajas emisiones que arruinen al comercio local. Viabilidad: Es viable garantizando seguridad de suministro eléctrico a precio competitivo y moratorias para los vehículos p"
+    },
+    "Vox": {
+     "paragraphs": 1,
+     "page": 29,
+     "snippet": " que coartan la libertad de circulación de los españoles, como la imposición de ZBE. 45. Limitar el importe de las multas de tráfico y estacionamiento por infracciones que no comprometan gravemente la seguridad vial. Revisar y reducir las sanciones económicas "
+    }
+   }
+  },
+  {
+   "id": "G11",
+   "theme": "poder-judicial",
+   "dimension": "institutions",
+   "question": "¿Debe garantizarse por ley que el Gobierno no nombre ni cese libremente al Fiscal General del Estado?",
+   "n_parties": 5,
+   "strength": "fuerte",
+   "parties": {
+    "Democracia21": {
+     "paragraphs": 2,
+     "page": 9,
+     "snippet": "antizará la independencia de la Fiscalía modificando el sistema de elección del Fiscal General del Estado: el Congreso (por mayoría de 3/5) elegirá una terna y el Gobierno elegirá al Fiscal General entre esa terna, previo informe del CGPJ. Se revisará el perio"
+    },
+    "PACMA": {
+     "paragraphs": 1,
+     "page": 23,
+     "snippet": "a materia, unificando los criterios de actuación, para lo que podrá proponer al Fiscal General del Estado la emisión de las correspondientes instrucciones, con la finalidad de ofrecer una respuesta efectiva frente a los ilícitos penales contra los animales. As"
+    },
+    "PP": {
+     "paragraphs": 1,
+     "page": 26,
+     "snippet": "EL FISCAL GENERAL DEL ESTADO NO DEPENDERÁ DEL GOBIERNO. La Fiscalía debe defender la legalidad, no los intereses políticos de quien ocupa el poder. Aprobaremos un nuevo Estatuto del Ministerio Fiscal. El fiscal general tendrá un mandato único de cinco años y, "
+    },
+    "SALF": {
+     "paragraphs": 1,
+     "page": 27,
+     "snippet": "Fiscal General independiente. Elegido por tres quintos del Congreso entre fiscales con 25 años de carrera, mandato de seis años no coincidente con la legislatura. El último nombrado por el Gobierno acabó condenado por el Supremo."
+    },
+    "Vox": {
+     "paragraphs": 1,
+     "page": 55,
+     "snippet": "ntizar la idoneidad, imparcialidad, competencia profesional e independencia del Fiscal General del Estado. 101. Liberar el Tribunal Constitucional de las manos de los políticos. El control de la constitucionalidad de las leyes no puede depender de un órgano po"
+    }
+   }
+  },
+  {
+   "id": "G12",
+   "theme": "reforma-constitucional",
+   "dimension": "institutions",
+   "question": "¿Debe cambiarse la forma de elegir a los magistrados del Tribunal Constitucional para reducir la influencia de los partidos?",
+   "n_parties": 4,
+   "strength": "media",
+   "parties": {
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 42,
+     "snippet": "Disolución del Tribunal Constitucional, trasvasando sus competencias de interpretación de la Constitución al Tribunal Supremo."
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 19,
+     "snippet": "ón jurídica e idéntica exigibilidad directa ante los tribunales ordinarios y el Tribunal Constitucional mediante recurso de amparo. Hasta que se realice la reforma, reconoceremos por ley un derecho subjetivo a la vivienda exigible ante los tribunales, empezand"
+    },
+    "PP": {
+     "paragraphs": 2,
+     "page": 26,
+     "snippet": "LA INDEPENDENCIA DEL TRIBUNAL CONSTITUCIONAL ES UNA PRIORIDAD DEMOCRÁTICA. El Tribunal Constitucional debe ser percibido y funcionar como una institución jurídica independiente, no como una prolongación de las mayorías políticas. Ningún candidato podrá haber o"
+    },
+    "Vox": {
+     "paragraphs": 1,
+     "page": 55,
+     "snippet": "ión judicial. Garantizar la idoneidad, imparcialidad, competencia profesional e independencia del Fiscal General del Estado. 101. Liberar el Tribunal Constitucional de las manos de los políticos. El control de la constitucionalidad de las leyes no puede depend"
+    }
+   }
+  },
+  {
+   "id": "G13",
+   "theme": "reforma-constitucional",
+   "dimension": "institutions",
+   "question": "¿Debe reformarse la ley electoral para que el reparto de escaños sea más proporcional?",
+   "n_parties": 8,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 92,
+     "snippet": "a los 16 años 477 Voto Reforma de la ley electoral para que la juventud pueda votar desde los 16 años."
+    },
+    "Democracia21": {
+     "paragraphs": 2,
+     "page": 14,
+     "snippet": "España Limpia AIRE FRESCO EN NUESTRO SISTEMA ELECTORAL ↪ El 94% de los españoles afirma querer cambiar nuestro sistema electoral, con un rechazo visceral a las actuales listas cerradas controladas por los partidos políticos. Una democracia del siglo 21 debe pe"
+    },
+    "Frente Amplio": {
+     "paragraphs": 2,
+     "page": 141,
+     "snippet": "as cooficiales y estatutarias con las instituciones del Estado. Reformaremos el sistema electoral para lograr la proporcionalidad directa a nivel nacional. Aboliremos de forma definitiva la pena de muerte, que el artículo 15 declara abolida «salvo lo que pueda"
+    },
+    "Frente Obrero": {
+     "paragraphs": 1,
+     "page": 58,
+     "snippet": ", pero ninguno denuncia la raíz del problema, es idéntico a lo que hacen con la Ley Electoral. Como consecuencia, los españoles que quieren denunciar la corrupción política se encuentran con un callejón sin salida."
+    },
+    "PACMA": {
+     "paragraphs": 6,
+     "page": 4,
+     "snippet": "..................................................73 3.9.2.2 Modificación de la Ley Electoral ..........................................................................................................................................73 3.9.2.3 Acceso a la infor"
+    },
+    "Partido Autónomos": {
+     "paragraphs": 1,
+     "page": 9,
+     "snippet": "54. Reforma de la Ley Electoral con circunscripción más proporcional y segunda vuelta Modificación de la LOREG para corregir la sobrerrepresentación de partidos minoritarios regionalistas frente a fuerzas nacionales, valorando la elección a doble vuelta en alc"
+    },
+    "Sumar": {
+     "paragraphs": 1,
+     "page": 34,
+     "snippet": "atorios al tamaño y las características de las empresas, aplicando criterios de proporcionalidad que eviten cargas administrativas y económicas excesivas para las pequeñas empresas, sin comprometer los estándares de calidad, seguridad y sostenibilidad."
+    },
+    "Vox": {
+     "paragraphs": 1,
+     "page": 27,
+     "snippet": "Toda actuación administrativa deberá justificar su existencia, su utilidad y su proporcionalidad. Lo que no sea estrictamente necesario, se suprime. Lo que sea necesario, se simplifica al máximo. Esta revisión será permanente, transversal y afectará a todos lo"
+    }
+   }
+  },
+  {
+   "id": "G14",
+   "theme": "reforma-constitucional",
+   "dimension": "institutions",
+   "question": "¿Deben implantarse listas abiertas en las elecciones generales?",
+   "n_parties": 1,
+   "strength": "débil",
+   "parties": {
+    "Democracia21": {
+     "paragraphs": 1,
+     "page": 14,
+     "snippet": "tas cerradas elaboradas por los partidos políticos e introduciendo tanto listas desbloqueadas como abiertas."
+    }
+   }
+  },
+  {
+   "id": "G15",
+   "theme": "participacion-democratica",
+   "dimension": "institutions",
+   "question": "¿Debe poder votarse desde los 16 años?",
+   "n_parties": 3,
+   "strength": "media",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 2,
+     "page": 92,
+     "snippet": "a los 16 años 477 Voto Reforma de la ley electoral para que la juventud pueda votar desde los 16 años."
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 42,
+     "snippet": "alud mental/bienestar y justicia intergeneracional/crisis ecosocial. Derecho al voto a los 16 años: Reconoceremos por ley el derecho al voto a partir de los 16 años. Plan de Emancipación Juvenil e Ingreso Mínimo Vital: Plan de emancipación articulado en vivien"
+    },
+    "PSOE": {
+     "paragraphs": 2,
+     "page": 90,
+     "snippet": " la participación juvenil y la profundización democrática, rebajando la edad de voto a los 16 años, fortaleciendo los consejos de juventud y ampliando los mecanismos de participación ciudadana en las decisiones públicas. 373. Suprimir los aforamientos de los c"
+    }
+   }
+  },
+  {
+   "id": "G16",
+   "theme": "libertades-civiles",
+   "dimension": "institutions",
+   "question": "¿Debe poder ilegalizarse a los partidos que promuevan la independencia de una parte del territorio?",
+   "n_parties": 1,
+   "strength": "débil",
+   "parties": {
+    "Vox": {
+     "paragraphs": 1,
+     "page": 56,
+     "snippet": " corrupción política, la forma política del Estado o la integridad territorial. Ilegalización de los partidos políticos, asociaciones u organizaciones de cualquier tipo que atenten contra la soberanía e independencia de España, su unidad e integridad territori"
+    }
+   }
+  },
+  {
+   "id": "G17",
+   "theme": "poder-judicial",
+   "dimension": "institutions",
+   "question": "¿Debe volver a penalizarse el delito de sedición?",
+   "n_parties": 2,
+   "strength": "débil",
+   "parties": {
+    "PP": {
+     "paragraphs": 1,
+     "page": 15,
+     "snippet": "ESPAÑA Y EL ORDEN CONSTITUCIONAL. Recuperaremos en el Código Penal el delito de sedición, adaptado a la legislación contemporánea, y el de convocatoria de referéndum ilegal. Las ideas pueden defenderse democráticamente, pero ningún proyecto político está por e"
+    },
+    "Vox": {
+     "paragraphs": 1,
+     "page": 55,
+     "snippet": "tundente frente a los ataques contra la Unidad Nacional. Recuperar el delito de sedición,"
+    }
+   }
+  },
+  {
+   "id": "G18",
+   "theme": "soberania-unidad",
+   "dimension": "institutions",
+   "question": "¿Debe derogarse la ley de amnistía de 2024?",
+   "n_parties": 4,
+   "strength": "media",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 108,
+     "snippet": "2 Memoria democrática de la impunidad 567 Fin Anular los apartados de la Ley de Amnistía de 1977 que impiden investigar los crímenes del franquismo."
+    },
+    "PP": {
+     "paragraphs": 1,
+     "page": 25,
+     "snippet": "LA IMPUNIDAD NO SERÁ MONEDA DE CAMBIO PARA GOBERNAR. Derogaremos la Ley de Amnistía y prohibiremos que el derecho de gracia se utilice como contraprestación política para formar o mantener un Gobierno. Aprobaremos una nueva Ley del Indulto con criterios objeti"
+    },
+    "SALF": {
+     "paragraphs": 1,
+     "page": 26,
+     "snippet": "Amnistías prohibidas en la Constitución. Indultos, nunca por política. Reforma de la Constitución para prohibir expresamente las amnistías y condicionar los indultos a requisitos que impi‐ dan su utilización política: solicitud por el órgano jurisdiccio‐ nal e"
+    },
+    "Sumar": {
+     "paragraphs": 1,
+     "page": 93,
+     "snippet": "iamente la adhesión de las organizaciones citadas al conjunto del programa. [1] Amnistía Internacional (2023). Elecciones generales 2023: prioridades de Amnistía Internacional para los partidos políticos. Recuperado de: https://www.es.amnesty.org/fileadmin/use"
+    }
+   }
+  },
+  {
+   "id": "G19",
+   "theme": "fronteras-expulsiones",
+   "dimension": "rights",
+   "question": "¿Deben cerrarse los centros de internamiento de extranjeros (CIE)?",
+   "n_parties": 7,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 3,
+     "page": 28,
+     "snippet": "ogación de la Ley de Extranjería, regularización extraordinaria y cierre de los CIE, empezando por Algeciras."
+    },
+    "EH Bildu": {
+     "paragraphs": 1,
+     "page": 20,
+     "snippet": "ación y Asilo, las devoluciones sumarias, la externalización de fronteras y los CIE, garantizando procedimientos individuales con todas las garantías jurídicas."
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 11,
+     "snippet": " serán única y exclusivamente para españoles. ●​ Ampliación de la capacidad los CIE mientras se ejecutan, con la máxima celeridad, las órdenes de expulsión."
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 127,
+     "snippet": "Cierre de los CIE y limitación estricta de la detención en frontera: Cerraremos los Centros de Internamiento de Extranjeros (CIE). En los procedimientos de asilo en frontera, la detención se aplicará únicamente como último recurso excepcional, priorizando medi"
+    },
+    "Frente Obrero": {
+     "paragraphs": 1,
+     "page": 54,
+     "snippet": "Operatividad de los CIE o sustitución de estos por otro tipo de centro más efectivo para la deportación. Las órdenes de expulsión deben ser ejecutadas sin excepción alguna."
+    },
+    "PNV": {
+     "paragraphs": 1,
+     "page": 28,
+     "snippet": "ronteras, promoviendo alternativas a la privación de libertad en los Centros de Internamiento de Extranjeros y la investigación de posibles vulneraciones de derechos."
+    },
+    "Sumar": {
+     "paragraphs": 1,
+     "page": 51,
+     "snippet": "nto de personas migrantes por motivos administrativos. Sustituir los Centros de Internamiento de Extranjeros (CIE) por alternativas abiertas y comunitarias, con acompañamiento social y jurídico, respetando la libertad y los derechos fundamentales. Reforzar los"
+    }
+   }
+  },
+  {
+   "id": "G20",
+   "theme": "inmigracion-regularizacion",
+   "dimension": "rights",
+   "question": "¿Debe facilitarse la reagrupación familiar de las personas inmigrantes?",
+   "n_parties": 4,
+   "strength": "media",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 106,
+     "snippet": "listas de países seguros que vacíen el derecho, con plazos máximos de registro, reagrupación familiar ágil y protección para quien deserta, objeta o se niega a combatir en cualquier guerra."
+    },
+    "EH Bildu": {
+     "paragraphs": 1,
+     "page": 14,
+     "snippet": " humanos suficientes para no vulnerar los derechos de los y las solicitantes de reagrupaciones familiares y trámites que afectan directamente a la infancia."
+    },
+    "Frente Amplio": {
+     "paragraphs": 2,
+     "page": 128,
+     "snippet": "Agilización del procedimiento de asilo y reagrupación familiar ●"
+    },
+    "Sumar": {
+     "paragraphs": 1,
+     "page": 51,
+     "snippet": "corredores humanitarios, programas de reasentamiento y mecanismos accesibles de reagrupación familiar. Garantizar la implementación del Pacto Europeo de Migración y Asilo con enfoque de derechos humanos y de protección efectiva de la infancia, garantizando el "
+    }
+   }
+  },
+  {
+   "id": "G21",
+   "theme": "defensa-exterior",
+   "dimension": "institutions",
+   "question": "¿Debe España salir de la OTAN?",
+   "n_parties": 4,
+   "strength": "media",
+   "parties": {
+    "EH Bildu": {
+     "paragraphs": 2,
+     "page": 3,
+     "snippet": ".......................................................................29 3.2.4 NO a la OTAN:......................................................................................................................................................................."
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 41,
+     "snippet": "Abandono de la OTAN por parte del Ejército español. Este ha de servir a los intereses de la nación española, no los de EEUU, cualquier otro país u otra entidad supranacional. No participación en misiones y guerras ajenas a nuestros intereses."
+    },
+    "Frente Obrero": {
+     "paragraphs": 1,
+     "page": 11,
+     "snippet": "Salida inmediata de la OTAN y reforzamiento de nuestro ejército."
+    },
+    "PCTE": {
+     "paragraphs": 1,
+     "page": 19,
+     "snippet": "cesariamente unida a un proceso de implantación del poder obrero. · Defender la salida unilateral de la OTAN, la ruptura del concordato con el Vaticano, el cierre inmediato de todas las bases militares extranjeras en España y la prohibición de tránsito y fonde"
+    }
+   }
+  },
+  {
+   "id": "G22",
+   "theme": "defensa-exterior",
+   "dimension": "institutions",
+   "question": "¿Deben cerrarse las bases militares extranjeras en territorio español?",
+   "n_parties": 5,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 2,
+     "page": 109,
+     "snippet": "Porque las bases extranjeras hacen de Andalucía un objetivo militar."
+    },
+    "EH Bildu": {
+     "paragraphs": 1,
+     "page": 28,
+     "snippet": "stados Unidos hace de las más de 275 bases e instalaciones en Europa, incluidas Rota y Morón, que son utilizadas como centros de operaciones para las guerras que EEUU mantiene, así como la salida de los más de 100.000 soldados estadounidenses en activo en Euro"
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 131,
+     "snippet": "dio, cerrará vías de tránsito militar por aeropuertos, puertos, espacio aéreo y bases militares, y prohibirá la contratación pública o la cooperación militar/tecnológica con la industria de defensa israelí (incluyendo transferencias indirectas a través de terc"
+    },
+    "PCTE": {
+     "paragraphs": 3,
+     "page": 18,
+     "snippet": "023 se han renovado y ampliado los acuerdos con EEUU para la utilización de las bases de Rota y Morón."
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 106,
+     "snippet": "a una guerra contraria al derecho internacional e impidió que se utilizaran las bases militares españolas para operaciones vinculadas a ella, sin dejar de condenar la represión del régimen iraní y sus ataques contra otros países. Por otra parte, hemos revitali"
+    }
+   }
+  },
+  {
+   "id": "G23",
+   "theme": "defensa-exterior",
+   "dimension": "institutions",
+   "question": "¿Debe prohibirse toda exportación de armas y material de doble uso a Israel?",
+   "n_parties": 3,
+   "strength": "media",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 2,
+     "page": 32,
+     "snippet": "ticia para Palestina, el Sáhara y el Rif Ruptura de relaciones con el Estado de Israel y fin de su reconocimiento mientras dure la ocupación y el genocidio, juicio a sus dirigentes, embargo total de armas y apoyo al boicot, las desinversiones y las sanciones d"
+    },
+    "Frente Amplio": {
+     "paragraphs": 2,
+     "page": 131,
+     "snippet": "Embargo integral de armas y medidas frente a Israel y la ocupación en Palestina ●"
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 105,
+     "snippet": "ente las violaciones del derecho internacional humanitario en Gaza, aprobado un embargo de armas a Israel y defendido la labor de la UNRWA, de la Corte Penal Internacional y de la Corte Internacional de Justicia, ante la que España intervino. Al mismo tiempo, "
+    }
+   }
+  },
+  {
+   "id": "G24",
+   "theme": "defensa-exterior",
+   "dimension": "institutions",
+   "question": "¿Debe romper España las relaciones diplomáticas con Israel?",
+   "n_parties": 1,
+   "strength": "débil",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 32,
+     "snippet": "Justicia para Palestina, el Sáhara y el Rif Ruptura de relaciones con el Estado de Israel y fin de su reconocimiento mientras dure la ocupación y el genocidio, juicio a sus dirigentes, embargo total de armas y apoyo al boicot, las desinversiones y las sancione"
+    }
+   }
+  },
+  {
+   "id": "G25",
+   "theme": "defensa-exterior",
+   "dimension": "institutions",
+   "question": "¿Debe España seguir enviando ayuda militar a Ucrania?",
+   "n_parties": 6,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 109,
+     "snippet": "Diplomacia antes que armas Prioridad a la negociación en Ucrania, con un alto el fuego y una paz justa conforme al derecho internacional, y en cualquier conflicto; una unidad de mediación en Exteriores, cumplimiento de las decisiones de la Corte Internacional "
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 133,
+     "snippet": "isputas estratégicas (como en el Sáhara Occidental, Palestina, Colombia, Haití, Ucrania o la región del Sahel). Solidaridad con el pueblo ucraniano: Continuaremos mostrando nuestra solidaridad con Ucrania para lograr por vías diplomáticas una paz justa y durad"
+    },
+    "Frente Obrero": {
+     "paragraphs": 1,
+     "page": 40,
+     "snippet": "Lo vimos con la guerra de Ucrania, con el aumento de detenciones por “delito de odio” que persiguen opiniones y no hechos, y sobre todo con la aprobación de leyes que prevén todo un sistema de sanciones para quienes se atrevan a comunicar o ejercer su profesió"
+    },
+    "PCTE": {
+     "paragraphs": 1,
+     "page": 19,
+     "snippet": "Unidos, al tiempo que se ha implicado directamente en la guerra imperialista en Ucrania. Por todo ello, proponemos:"
+    },
+    "PP": {
+     "paragraphs": 2,
+     "page": 56,
+     "snippet": "240 ESTAREMOS SIEMPRE CON UCRANIA FRENTE A RUSIA. Hoy Ucrania resiste una agresión que"
+    },
+    "PSOE": {
+     "paragraphs": 6,
+     "page": 35,
+     "snippet": "ciones extraordinarias para más de 1,4 millones de autónomos. Ante la guerra de Ucrania, movilizamos más de 16.000 millones de euros e impulsamos la excepción ibérica, que permitió ahorrar más de 200 euros a los hogares con tarifa regulada en apenas seis meses"
+    }
+   }
+  },
+  {
+   "id": "G26",
+   "theme": "defensa-exterior",
+   "dimension": "institutions",
+   "question": "¿Debe restablecerse algún tipo de servicio militar para los jóvenes?",
+   "n_parties": 3,
+   "strength": "media",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 110,
+     "snippet": "con derechos y nunca más 589 Tropa la mili Mesa con las asociaciones de tropa y marinería sobre sus condiciones laborales; ningún servicio militar, ni obligatorio ni voluntario, para la juventud, y una comisión de investigación sobre los abusos y muertes en la"
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 41,
+     "snippet": "Reintroducción del Servicio Militar obligatorio, con duración de 18 meses, tanto para hombres como para mujeres, a realizar entre los 18 y los 22 años, siendo este remunerado y cotizado. A su término, todo aquel que lo haya realizado, pasará a un estado de res"
+    },
+    "SALF": {
+     "paragraphs": 3,
+     "page": 9,
+     "snippet": "La mili voluntaria: 1.600 euros al mes. De seis a doce meses, militar o civil, entre 18 y 30 años: 1.600 euros netos, formación oficial, puntos en todas las oposiciones, vivienda protegida preferente y 5.000 euros al terminar."
+    }
+   }
+  },
+  {
+   "id": "G27",
+   "theme": "educ-publica",
+   "dimension": "social",
+   "question": "¿Debe fijarse por ley una reducción de las ratios de alumnos por aula?",
+   "n_parties": 9,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 11,
+     "page": 17,
+     "snippet": "uela pública Hasta igualar la inversión por estudiante de la media europea, con ratios más bajas y plantillas suficientes."
+    },
+    "BNG": {
+     "paragraphs": 1,
+     "page": 16,
+     "snippet": " Redefinir as causas económicas/organizativas do despedimento obxectivo (última ratio) e período de consultas mínimo dun mes con informe vinculante da Inspección. Dar opción da persoa traballadora entre readmisión e indemnización nos despedimentos. Desenvolver"
+    },
+    "Democracia21": {
+     "paragraphs": 3,
+     "page": 43,
+     "snippet": "ngible a los educadores infantiles —dignificando su remuneración, revisando las ratios e incorporando progresivamente la \"pareja educativa\" de apoyo en el aula— e impulsaremos un nuevo plan de estimulación temprana enfocado en la riqueza del lenguaje, la psico"
+    },
+    "EH Bildu": {
+     "paragraphs": 1,
+     "page": 11,
+     "snippet": "Apostamos por una bajada de ratios como una oportunidad para mejorar la calidad educativa. La bajada de la natalidad puede ser una oportunidad para reforzar la atención personalizada al alumnado, sobre todo del más vulnerable, y fomentar una educación más incl"
+    },
+    "Frente Amplio": {
+     "paragraphs": 8,
+     "page": 7,
+     "snippet": "visual, auditiva y mental— y una educación pública blindada con el 7 % del PIB, ratios reducidas y gratuidad desde los 0 años hasta la universidad. Implantaremos una Prestación Universal por Crianza de 200 euros mensuales por menor para erradicar la pobreza in"
+    },
+    "PACMA": {
+     "paragraphs": 1,
+     "page": 60,
+     "snippet": "los niños y niñas de familias en situación de vulnerabilidad. - Reducción de la ratio de alumnos y alumnas por profesor/a en todo el tramo educativo, para alcanzar una verdadera educación de calidad, con la suficiente atención personalizada al alumnado y una m"
+    },
+    "PSOE": {
+     "paragraphs": 4,
+     "page": 45,
+     "snippet": "aron fuera de la sanidad pública a cientos de miles de personas, aumentaron las ratios en las aulas, endurecieron los criterios para acceder a una beca y retiraron la cotización a quienes cuidaban a un familiar dependiente. Ante este deterioro estructural, fij"
+    },
+    "Partido Autónomos": {
+     "paragraphs": 2,
+     "page": 9,
+     "snippet": "a la construcción de colegios, centros de salud, residencias y comisarías según ratios poblacionales. Viabilidad: Es viable y permite ahorrar hasta un 30 % en costes de diseño, licitación y desviaciones presupuestarias en obra pública civil."
+    },
+    "Sumar": {
+     "paragraphs": 3,
+     "page": 17,
+     "snippet": "a económica, priorizar la gestión pública y la de entidades sin ánimo de lucro, ratios mínimos de personal, requisitos de calidad verificables, inspecciones periódicas y publicidad de los resultados. El beneficio económico nunca podrá prevalecer sobre la digni"
+    }
+   }
+  },
+  {
+   "id": "G28",
+   "theme": "educ-publica",
+   "dimension": "social",
+   "question": "¿Debe unificarse en toda España la prueba de acceso a la universidad (selectividad)?",
+   "n_parties": 5,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 47,
+     "snippet": "Otro acceso a la universidad Sustituir la actual prueba de acceso por un modelo que valore el recorrido personal y formativo del alumnado en su conjunto."
+    },
+    "ERC": {
+     "paragraphs": 1,
+     "page": 17,
+     "snippet": "à duent a terme per avançar objectius de desenvolupament i foment dels DDHH, la pau i el multilateralisme en l’àmbit global. 50. Fomentar l’autonomia geopolítica i estratègica de la Unió Europea apostant per una estratègia de seguretat pròpia basada en la dipl"
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 46,
+     "snippet": "19.6.​ Temario común con Prueba de Acceso a la Universidad común para todos los alumnos de España. 19.7.​"
+    },
+    "PP": {
+     "paragraphs": 1,
+     "page": 32,
+     "snippet": "IMPLANTAREMOS UNA PRUEBA DE ACCESO A LA UNIVERSIDAD (PAU) COMÚN. Se aplicará en todo el territorio nacional. Sus condiciones básicas, incluyendo su evaluación, se acordarán con las Comunidades Autónomas y los órganos de representación de las universidades, con"
+    },
+    "SALF": {
+     "paragraphs": 1,
+     "page": 33,
+     "snippet": "enidos mínimos comunes al 100 %, evaluaciones externas al final de cada etapa y selectividad única y en castellano en toda España."
+    }
+   }
+  },
+  {
+   "id": "G29",
+   "theme": "biodiversidad-animales",
+   "dimension": "environment",
+   "question": "¿Debe prohibirse la caza de recreo?",
+   "n_parties": 9,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 3,
+     "page": 119,
+     "snippet": "ciedad más justa. La ley estatal de bienestar animal dejó fuera a los perros de caza, la atención veterinaria sigue pagando un IVA del 21 % como si fuera un lujo y la tauromaquia continúa recibiendo dinero público. La protección animal no puede tener excepcion"
+    },
+    "FE de las JONS": {
+     "paragraphs": 1,
+     "page": 34,
+     "snippet": "12.12.​ Plan de desregulación en materia de caza y pesca, permitiendo la actividad cinegética sobre especies con un crecimiento insostenible de población, las cuales desequilibran el medio y las actividades agrícolas y ganaderas."
+    },
+    "Frente Amplio": {
+     "paragraphs": 2,
+     "page": 75,
+     "snippet": "hos y el bienestar de los animales, para incluir de forma plena a los perros de caza, de trabajo y a los animales empleados en actividades ganaderas o deportivas, garantizando que todos gocen del mismo nivel de tutela jurídica. Reformaremos el Código Penal, in"
+    },
+    "Frente Obrero": {
+     "paragraphs": 2,
+     "page": 37,
+     "snippet": " de sus trabajadores y las disputas territoriales con países como Marruecos. La caza, una actividad esencial para la sostenibilidad y regulación de los ecosistemas, en el que la ausencia de planificación y control real pone en peligro la seguridad y biodiversi"
+    },
+    "PACMA": {
+     "paragraphs": 35,
+     "page": 2,
+     "snippet": "........................................................10 1.1.8 Oposición a la caza ..............................................................................................................................................................................."
+    },
+    "PP": {
+     "paragraphs": 1,
+     "page": 51,
+     "snippet": "DEFENDEREMOS LA CAZA Y SU PAPEL EN EL MEDIO RURAL. Reduciremos las trabas a la caza sostenible y respaldaremos su contribución a la economía de los pueblos y al mantenimiento de la biodiversidad."
+    },
+    "Partido Autónomos": {
+     "paragraphs": 1,
+     "page": 14,
+     "snippet": "ción, diferenciando claramente las mascotas urbanas de los animales de trabajo, caza y ganadería. Viabilidad: Es viable mediante una normativa consensuada con veterinarios y el sector primario que proteja a los animales sin criminalizar actividades rurales tra"
+    },
+    "Sumar": {
+     "paragraphs": 2,
+     "page": 61,
+     "snippet": "es y a la ganadería extensiva, que cuidan del campo y de sus animales. Sobre la caza deportiva y la tauromaquia conviven en nuestro partido posiciones distintas, y por eso este programa no propone cambios en su regulación. 01"
+    },
+    "Vox": {
+     "paragraphs": 1,
+     "page": 35,
+     "snippet": "sector primario a través de programas públicos y concertados. 59. Defensa de la caza como actividad esencial para el control de las poblaciones y para la protección de las explotaciones agrícolas y ganaderas, así como por su valor medioambiental y económico."
+    }
+   }
+  },
+  {
+   "id": "G30",
+   "theme": "igualdad-lgtbi",
+   "dimension": "rights",
+   "question": "¿Debe prohibirse la prostitución?",
+   "n_parties": 6,
+   "strength": "fuerte",
+   "parties": {
+    "BNG": {
+     "paragraphs": 3,
+     "page": 26,
+     "snippet": "e á súa nacionalidade. Impulsar medidas estratéxicas conducentes á abolición da prostitución desde unha perspectiva que puna e persiga o proxeneta e prostituidor, ficando as mulleres prostituídas libres de calquera criminalización, estigmatización ou aproximac"
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 39,
+     "snippet": "inaremos toda normativa que penalice o punitivice a las personas que ejercen la prostitución garantizando el acceso a derechos fundamentales como seguridad social, salud, condiciones de trabajo dignas y la posibilidad de organizarse, rechazando siempre el esti"
+    },
+    "Frente Obrero": {
+     "paragraphs": 4,
+     "page": 26,
+     "snippet": " a acabar con la publicidad sobre apuestas, bebidas alcohólicas y pornografía o prostitución."
+    },
+    "PCTE": {
+     "paragraphs": 1,
+     "page": 17,
+     "snippet": "ficientes. · Combatir la mercantilización sexual y reproductiva, prohibiendo la prostitución y estableciendo acompañada de mecanismos de integración laboral y social de las mujeres afectadas, y seguir considerando ilegal la “gestación subrogada”."
+    },
+    "PSOE": {
+     "paragraphs": 2,
+     "page": 77,
+     "snippet": "ue fetichiza las agresiones contra las mujeres, la trata, la banalización de la prostitución, la violencia digital o la explotación de la capacidad reproductiva de las mujeres a través de los vientres de alquiler. Nuestro reto es que mujeres"
+    },
+    "Sumar": {
+     "paragraphs": 1,
+     "page": 79,
+     "snippet": "tos y protección y reparación de las víctimas. Avanzar hacia la abolición de la prostitución, garantizando que las personas que la ejercen no queden desprotegidas y facilitando alternativas de empleo digno y acompañamiento social. 7. Mantener la prohibición de"
+    }
+   }
+  },
+  {
+   "id": "G31",
+   "theme": "igualdad-lgtbi",
+   "dimension": "rights",
+   "question": "¿Debe prohibirse la gestación subrogada?",
+   "n_parties": 6,
+   "strength": "fuerte",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 98,
+     "snippet": "Prohibición de la gestación subrogada Y refuerzo de la adopción pública."
+    },
+    "Democracia21": {
+     "paragraphs": 1,
+     "page": 23,
+     "snippet": "o incumple sus objetivos de vivienda asequible, su competencia urbanística será subrogada de forma automática e inmediata por su Comunidad Autónoma, que asumirá el control para garantizar la construcción. Licencias de Obra Mayor en 30 Días y Oficinas Centrales"
+    },
+    "Frente Obrero": {
+     "paragraphs": 2,
+     "page": 31,
+     "snippet": ". Nosotros nos posicionamos en contra de las mafias de la prostitución y de los vientres de alquiler. La mujer no es un objeto de usar y tirar por parte de los ricos, la mujer ha de ser respetada. Este nefasto movimiento defiende el lenguaje de género y los cu"
+    },
+    "PCTE": {
+     "paragraphs": 1,
+     "page": 17,
+     "snippet": "l y social de las mujeres afectadas, y seguir considerando ilegal la “gestación subrogada”."
+    },
+    "PSOE": {
+     "paragraphs": 2,
+     "page": 77,
+     "snippet": "upción voluntaria del embarazo. Hemos reforzado las medidas contra la gestación subrogada, reconocida como una forma de violencia reproductiva, y en 2025 prohibimos la inscripción directa en el Registro Civil de los nacimientos mediante esta práctica en el ext"
+    },
+    "Sumar": {
+     "paragraphs": 1,
+     "page": 79,
+     "snippet": "mpleo digno y acompañamiento social. 7. Mantener la prohibición de la gestación subrogada en España, como medida de protección frente a situaciones de explotación reproductiva, especialmente cuando están vinculadas a la pobreza y la vulnerabilidad económica de"
+    }
+   }
+  },
+  {
+   "id": "G32",
+   "theme": "modelo-territorial",
+   "dimension": "territory",
+   "question": "¿Debe suprimirse el Estado de las autonomías?",
+   "n_parties": 5,
+   "strength": "fuerte",
+   "parties": {
+    "BNG": {
+     "paragraphs": 1,
+     "page": 39,
+     "snippet": "rco para o conxunto das/os profesionais da sanidade pública, que non signifique recentralización de"
+    },
+    "Coalición Canaria": {
+     "paragraphs": 2,
+     "page": 5,
+     "snippet": "desde Canarias, con los medios necesarios para ejercerla, y nos opondremos a la recentralización. Los derechos reconocidos deben traducirse en recursos, inversiones y oportunidades. La propuesta de Decreto Canarias trasladada por el Gobierno canario al Estado "
+    },
+    "Frente Amplio": {
+     "paragraphs": 1,
+     "page": 140,
+     "snippet": " impulsar una nueva descentralización municipalista. Un camino opuesto al de la recentralización y la uniformidad que pretenden unas derechas que amenazan los derechos sociales, el Estado de las autonomías y la diversidad lingüística y cultural. Cuando se van "
+    },
+    "PNV": {
+     "paragraphs": 5,
+     "page": 37,
+     "snippet": "ectamente en ellas y gestionar los recursos que le corresponden, sin tutelas ni recentralizaciones. EAJ-PNV estará en Madrid para defender los intereses de Euskadi, acordar cuando los acuerdos sean beneficiosos y exigir cuando el Estado incumpla."
+    },
+    "PSOE": {
+     "paragraphs": 1,
+     "page": 91,
+     "snippet": "desarrollo de todos los territorios. Casi cincuenta años después, el reto no es recentralizar ni fragmentar, sino hacer que el Estado autonómico funcione mejor: con más cooperación entre administraciones, con instituciones que representen de verdad a los terri"
+    }
+   }
+  },
+  {
+   "id": "G33",
+   "theme": "ingreso-pobreza",
+   "dimension": "social",
+   "question": "¿Debe implantarse una renta básica universal?",
+   "n_parties": 2,
+   "strength": "débil",
+   "parties": {
+    "Adelante Andalucía": {
+     "paragraphs": 1,
+     "page": 114,
+     "snippet": "la intermitencia, que proteja los periodos sin contrato y sea compatible con la renta básica universal."
+    },
+    "Sumar": {
+     "paragraphs": 2,
+     "page": 29,
+     "snippet": "s, salarios suficientes, más tiempo para cuidar y convivir, y avanzar hacia una renta básica de justicia social. 01"
+    }
+   }
+  }
+ ]
+}
