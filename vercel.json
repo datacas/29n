@@ -4,6 +4,7 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run build:public",
   "build": { "env": { "DEPLOY_TARGET": "public" } },
+  "git": { "deploymentEnabled": { "methodology-*": false } },
   "headers": [
     {
       "source": "/(.*)",
