@@ -7,7 +7,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import { randomUUID } from 'crypto'
 import { Pool } from 'pg'
 import {
-  EvalError, resolveEvaluator, listCampaigns, listCells, getCell, saveDraft, finalizeEvaluation, requestContext, resolveContextRequest
+  EvalError, getProvenance, resolveEvaluator, listCampaigns, listCells, getCell, saveDraft, finalizeEvaluation, requestContext, resolveContextRequest
 } from '../../app/server/utils/evaluation'
 import { listQueue, getAdjudication, saveAdjudication } from '../../app/server/utils/adjudication'
 
@@ -382,5 +382,19 @@ describe('Adjudicación en sombra', () => {
     await saveAdjudication(pool, f.ev as any, f.cell, { ...base, documentClass: 'not_mentioned', causes: ['unsupported_registered_position'], proposedAction: 'remove_registered' })
     expect(await snap()).toEqual(before)
     await expect(q('UPDATE eval_adjudications SET applied = true WHERE cell_id = $1', [f.cell])).rejects.toThrow()
+  })
+})
+
+describe('Procedencia (no citar como humano lo que no está verificado)', () => {
+  it('sin declaración es «unverified»; la última declaración manda y el historial es de solo añadir', async () => {
+    const f = await fixture()
+    expect((await getProvenance(pool, f.ev.id, f.camp)).evaluation.provenance).toBe('unverified')
+    expect((await listCampaigns(pool, f.ev as any))[0].provenance.provenance).toBe('unverified')
+    await q(`INSERT INTO eval_provenance (evaluator_id, campaign_id, scope, provenance, statement) VALUES ($1,$2,'all','ai_agent','las produjo un agente')`, [f.ev.id, f.camp])
+    expect((await getProvenance(pool, f.ev.id, f.camp))).toMatchObject({ evaluation: { provenance: 'ai_agent' }, adjudication: { provenance: 'ai_agent' } })
+    await q(`INSERT INTO eval_provenance (evaluator_id, campaign_id, scope, provenance, statement) VALUES ($1,$2,'adjudication','human_verified','revisadas por una persona')`, [f.ev.id, f.camp])
+    expect((await getProvenance(pool, f.ev.id, f.camp))).toMatchObject({ evaluation: { provenance: 'ai_agent' }, adjudication: { provenance: 'human_verified' } })
+    await expect(q('UPDATE eval_provenance SET provenance = $1 WHERE campaign_id = $2', ['human_verified', f.camp])).rejects.toThrow()
+    await expect(q('DELETE FROM eval_provenance WHERE campaign_id = $1', [f.camp])).rejects.toThrow()
   })
 })

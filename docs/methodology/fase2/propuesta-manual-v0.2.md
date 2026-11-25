@@ -1,5 +1,7 @@
 # Revisión del manual de codificación (v0.1-benchmark → v0.2) — DECISIONES DEL RESPONSABLE INCORPORADAS; NO APLICADO
 
+> **ERRATA 2026-11-25 (D26).** Las evaluaciones ciegas y las adjudicaciones del piloto registradas como «Humano interno 1» las produjo **un agente de IA que operaba esa cuenta**, no una persona (declaración del propio agente; corroborada por los tiempos: 19 evaluaciones en 54 s). Por tanto el piloto **no es una validación humana**: las comparaciones «humano interno–IA» de este piloto son **IA–IA**, y las adjudicaciones y las decisiones sobre el manual v0.2 que se le atribuyeron **no están ratificadas por la persona responsable**. El piloto sí vale como prueba de la interfaz, de la trazabilidad y del procedimiento. Ver D26 en `proceso-completo.md`.
+
 Fecha: 2026-11-25. Origen: causas de manual (`manual_insufficient`) y de interpretación registradas al adjudicar el piloto de 19 celdas (evaluador humano interno; muestra dirigida; n muy pequeño). Los casos concretos y las citas quedan en local (`docs/methodology/local/`); aquí solo se formulan reglas generales. **Estado:** el responsable adoptó el 2026-11-25 las cinco decisiones de la sección 7 (con los matices que se recogen abajo). **Sigue sin aplicarse**: falta su orden expresa de publicar v0.2 como manual vigente. El manual v0.1 sigue siendo el de las evaluaciones del benchmark y del piloto; cualquier recodificación con v0.2 es una **campaña nueva** y no es comparable sin más con las de v0.1.
 
 ## 1. Qué es una «medida cercana» (`supports`/`opposes` con ±1)

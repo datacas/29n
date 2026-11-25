@@ -6,6 +6,9 @@
         <p class="subtitle">Revisa las celdas con discrepancias, posibles omisiones y diferencias de intensidad. Cada decisión se registra como nueva (solo añadir) y <strong>no modifica</strong> las posiciones ni el banco publicado.</p>
       </div>
     </div>
+    <aside v-if="data && data.provenance?.provenance !== 'human_verified'" class="notice warn" role="alert">
+      <strong>Procedencia no humana verificada.</strong> {{ data.provenance?.statement }} Las adjudicaciones de esta cola no son decisiones humanas verificadas: requieren verificación por una persona antes de usarse para cambiar el banco.
+    </aside>
     <aside class="notice" role="note">
       <strong>Zona no ciega:</strong> aquí ves la referencia provisional y las respuestas de IA. No se resuelve por mayoría. Tus evaluaciones son humanas internas (no una referencia independiente); la muestra es dirigida y no se extrapola al banco.
     </aside>
@@ -38,11 +41,12 @@ const CAUSE_LABEL: Record<string, string> = {
   manual_insufficient: 'Manual de codificación insuficiente', omitted_position: 'Posición omitida', unsupported_registered_position: 'Posición registrada sin respaldo suficiente',
   reasonable_disagreement: 'Desacuerdo razonable entre evaluadores', other: 'Otra causa justificada'
 }
-const { data, error } = await useFetch<{ items: any[]; causeCounts: Record<string, number> }>('/api/admin/adjudicacion')
+const { data, error } = await useFetch<{ items: any[]; causeCounts: Record<string, number>; provenance?: { provenance: string; statement: string } }>('/api/admin/adjudicacion')
 </script>
 
 <style scoped>
 .notice { margin: 0 0 1.25rem; padding: 0.875rem 1rem; border: 1px solid var(--line-strong); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--sunken); font-size: 0.9375rem; line-height: 1.5; }
+.notice.warn { border-left-color: #b45309; background: #fff6db; }
 .review-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin-bottom: 1.5rem; } .review-table th, .review-table td { padding: 0.5rem; border-bottom: 1px solid var(--line-strong); text-align: left; vertical-align: top; }
 .small { padding: 0.125rem 0.625rem; font-size: 0.8125rem; } .hint { color: var(--ink-3); font-size: 0.8125rem; }
 </style>

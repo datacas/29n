@@ -12,6 +12,9 @@
 
     <p v-if="error" class="error" role="alert">{{ error.statusMessage || 'No se pudieron cargar las campañas' }}</p>
 
+    <aside v-for="c in (data?.campaigns ?? []).filter((x: any) => x.provenance?.provenance !== 'human_verified')" :key="'p' + c.id" class="notice warn" role="alert">
+      <strong>Procedencia no humana verificada — «{{ c.name }}».</strong> {{ c.provenance?.statement }} Estas filas no se citan como evaluación humana ni como referencia humana.
+    </aside>
     <aside class="notice" role="note">
       <strong>Limitación metodológica.</strong> Tus evaluaciones son <em>humanas internas</em>: no constituyen una referencia humana independiente ni permiten
       afirmar concordancia humano–humano. Las campañas dirigidas (como el piloto de 19 celdas) tienen sesgo de selección y no se extrapolan al banco.
@@ -45,6 +48,7 @@ const { data, error } = await useFetch<{ evaluator: { label: string; affiliation
 
 <style scoped>
 .notice { margin: 0 0 1.25rem; padding: 0.875rem 1rem; border: 1px solid var(--line-strong); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--sunken); font-size: 0.9375rem; line-height: 1.5; }
+.notice.warn { border-left-color: #b45309; background: #fff6db; }
 .campaign { margin-bottom: 1rem; }
 .campaign-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .campaign-head h2 { margin: 0; font-size: 1.125rem; }

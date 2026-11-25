@@ -3,7 +3,7 @@
  * Esta zona NO es ciega (muestra la referencia y las respuestas de IA): el servidor exige haber FINALIZADO antes la evaluación propia de la celda
  * (y la propia BD lo vuelve a exigir con un disparador).
  */
-import { EvalError, DOCUMENT_CLASSES, type DocumentClass, type Queryable } from './evaluation'
+import { EvalError, DOCUMENT_CLASSES, getProvenance, type DocumentClass, type Queryable } from './evaluation'
 
 export const CAUSES = [
   'retrieval_error', 'interpretation_error', 'intensity_error', 'insufficient_evidence', 'contradictory_evidence', 'ambiguous_question',
@@ -41,7 +41,9 @@ export async function listQueue(db: Queryable, evaluator: Evaluator) {
       ORDER BY i.priority`, [evaluator.id])
   const counts: Record<string, number> = {}
   for (const r of rows) for (const c of r.causes ?? []) counts[c] = (counts[c] ?? 0) + 1
-  return { items: rows.map((r: any) => ({ ...r, status: r.revision ? 'adjudicada' : 'pendiente' })), causeCounts: counts }
+  const { rows: [camp] } = await db.query(`SELECT c.campaign_id AS id FROM eval_adjudication_items i JOIN eval_cells c ON c.id = i.cell_id LIMIT 1`)
+  const provenance = camp ? (await getProvenance(db, evaluator.id, camp.id)).adjudication : { provenance: 'unverified', statement: 'Sin declaración de procedencia.' }
+  return { items: rows.map((r: any) => ({ ...r, status: r.revision ? 'adjudicada' : 'pendiente' })), causeCounts: counts, provenance }
 }
 
 export async function getAdjudication(db: Queryable, evaluator: Evaluator, cellId: string) {

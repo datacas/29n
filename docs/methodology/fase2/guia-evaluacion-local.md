@@ -1,5 +1,7 @@
 # Guía: evaluación humana ciega en el panel local
 
+> **ERRATA 2026-11-25 (D26).** Las evaluaciones ciegas y las adjudicaciones del piloto registradas como «Humano interno 1» las produjo **un agente de IA que operaba esa cuenta**, no una persona (declaración del propio agente; corroborada por los tiempos: 19 evaluaciones en 54 s). Por tanto el piloto **no es una validación humana**: las comparaciones «humano interno–IA» de este piloto son **IA–IA**, y las adjudicaciones y las decisiones sobre el manual v0.2 que se le atribuyeron **no están ratificadas por la persona responsable**. El piloto sí vale como prueba de la interfaz, de la trazabilidad y del procedimiento. Ver D26 en `proceso-completo.md`.
+
 ## Acceso
 1. Base de datos y panel locales en marcha (`docker start 29n-db-1`; `npm run dev`).
 2. Entra en `/admin` con tu acceso habitual (correo + OTP) y abre **Revisión → Evaluación humana** (`/admin/evaluacion`).

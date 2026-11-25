@@ -76,6 +76,15 @@ function status(d: any): 'pending' | 'draft' | 'finalized' {
   return d.document_class || d.insufficient_context || d.rationale || (d.selected_evidence?.length ?? 0) ? 'draft' : 'pending'
 }
 
+/** Procedencia vigente (última fila) por ámbito para un evaluador y campaña. Sin registro = 'unverified' (no se cita como humana). */
+export async function getProvenance(db: Queryable, evaluatorId: string, campaignId: string) {
+  const { rows } = await db.query(
+    `SELECT DISTINCT ON (scope) scope, provenance, statement, recorded_at AS "recordedAt" FROM eval_provenance WHERE evaluator_id = $1 AND campaign_id = $2 ORDER BY scope, recorded_at DESC`, [evaluatorId, campaignId])
+  const by: Record<string, any> = Object.fromEntries(rows.map((r: any) => [r.scope, r]))
+  const pick = (scope: 'evaluation' | 'adjudication') => by[scope] ?? by.all ?? { provenance: 'unverified', statement: 'Sin declaración de procedencia: no se cita como evaluación humana.' }
+  return { evaluation: pick('evaluation'), adjudication: pick('adjudication') }
+}
+
 export async function listCampaigns(db: Queryable, evaluator: Evaluator) {
   const { rows } = await db.query(
     `SELECT k.id, k.name, k.kind, k.status, k.manual_version, k.selection_method, k.selection_bias_note, k.created_at,
@@ -87,7 +96,7 @@ export async function listCampaigns(db: Queryable, evaluator: Evaluator) {
        JOIN eval_assignments a ON a.cell_id = c.id AND a.evaluator_id = $1
        LEFT JOIN eval_drafts d ON d.cell_id = c.id AND d.evaluator_id = $1
       GROUP BY k.id ORDER BY k.created_at DESC`, [evaluator.id])
-  return rows
+  return Promise.all(rows.map(async (r: any) => ({ ...r, provenance: (await getProvenance(db, evaluator.id, r.id)).evaluation })))
 }
 
 export async function listCells(db: Queryable, evaluator: Evaluator, campaignId: string) {

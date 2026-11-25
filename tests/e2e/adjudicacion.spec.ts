@@ -14,6 +14,7 @@ test('cola, expediente completo, formulario sin preselección y registro de una 
   await expect(page.locator('.review-table tbody tr')).toHaveCount(8)
   await expect(page.getByText('Zona no ciega')).toBeVisible()
   await page.locator('.review-table tbody tr').first().getByRole('link', { name: 'Abrir' }).click()
+  await page.waitForLoadState('networkidle')   // esperar a la hidratación de Vue antes de interactuar
   for (const t of ['Pregunta y contexto', 'Discrepancias detectadas', 'Evaluaciones', 'Programa original', 'Tu adjudicación']) await expect(page.getByRole('heading', { name: new RegExp(t) })).toBeVisible()
   await expect(page.getByText('Referencia provisional').first()).toBeVisible()
   await expect(page.getByText('(humano interno)')).toBeVisible()
@@ -22,8 +23,8 @@ test('cola, expediente completo, formulario sin preselección y registro de una 
   const save = page.getByRole('button', { name: /Registrar adjudicación/ })
   await expect(save).toBeDisabled()
 
-  await page.getByText('Se opone', { exact: true }).last().click()
-  await page.getByText('-1', { exact: true }).click()
+  await page.locator('label.choice', { hasText: 'Se opone' }).click()
+  await page.locator('label.choice', { hasText: /^\s*-1\s*$/ }).click()
   await page.getByLabel('Posición omitida').check(); await page.getByLabel('Error de intensidad').check()
   await page.locator('#act').selectOption('add_position')
   await page.locator('#why').fill('Verificado en el programa original')
