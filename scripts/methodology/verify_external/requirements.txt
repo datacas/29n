@@ -1,0 +1,5 @@
+krippendorff
+scikit-learn
+numpy
+pandas
+irrCAC

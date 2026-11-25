@@ -45,15 +45,18 @@ export function gwetAC(units, categories, weights = 'quadratic') {
   const q = categories.length, ix = new Map(categories.map((c, i) => [c, i]))
   const w = (i, j) => (weights === 'none' ? (i === j ? 1 : 0) : weights === 'linear' ? 1 - Math.abs(i - j) / (q - 1) : 1 - ((i - j) / (q - 1)) ** 2)
   let Tw = 0; for (let i = 0; i < q; i++) for (let j = 0; j < q; j++) Tw += w(i, j)
-  const pi = Array(q).fill(0); let pa = 0, used = 0
+  // Gwet (2014): el acuerdo observado usa las unidades con ≥2 evaluadores; las proporciones marginales π_k, las unidades con ≥1.
+  const pi = Array(q).fill(0); let pa = 0, used = 0, usedPi = 0
   for (const u of units) {
-    const x = u.filter((v) => v !== null && v !== undefined); const r = x.length; if (r < 2) continue
+    const x = u.filter((v) => v !== null && v !== undefined); const r = x.length; if (r < 1) continue
     const cnt = Array(q).fill(0); x.forEach((v) => cnt[ix.get(v)]++)
+    cnt.forEach((c, k) => (pi[k] += c / r)); usedPi++
+    if (r < 2) continue
     let s = 0; for (let k = 0; k < q; k++) { let rs = 0; for (let l = 0; l < q; l++) rs += w(k, l) * cnt[l]; s += (cnt[k] * (rs - 1)) / (r * (r - 1)) }
-    pa += s; used++; cnt.forEach((c, k) => (pi[k] += c / r))
+    pa += s; used++
   }
   if (!used) return NaN
-  pa /= used; pi.forEach((_, k) => (pi[k] /= used))
+  pa /= used; pi.forEach((_, k) => (pi[k] /= usedPi))
   const pe = (Tw / (q * (q - 1))) * pi.reduce((a, p) => a + p * (1 - p), 0)
   return pe === 1 ? NaN : (pa - pe) / (1 - pe)
 }
