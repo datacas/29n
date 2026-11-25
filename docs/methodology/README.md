@@ -15,6 +15,8 @@ Documentación del proceso de validez, fiabilidad y robustez de 29N iniciado a r
 | [`fase1/evolucion-panel-modelos.md`](fase1/evolucion-panel-modelos.md) | Cómo cambió el panel de evaluadores y por qué |
 | [`fase1/protocolo-auditoria-ciega.md`](fase1/protocolo-auditoria-ciega.md) | Protocolo de la segunda auditoría ciega de ítems (diseñada, no ejecutada) |
 | [`fase1/verificacion-externa.md`](fase1/verificacion-externa.md) | Contraste de las métricas con librerías externas |
+| [`fase2/propuesta-area-online-evaluacion.md`](fase2/propuesta-area-online-evaluacion.md) | Propuesta técnica del área online de evaluación humana ciega (OTP con Brevo, BD de evaluación aislada, alojamiento); **solo propuesta** |
+| [`fase2/propuesta-interfaz-evaluacion-humana.md`](fase2/propuesta-interfaz-evaluacion-humana.md) | Propuesta anterior (paquetes HTML), sustituida |
 | [`fase1/migracion-009.md`](fase1/migracion-009.md) | Tabla `position_codings` (solo añadir), prueba y recuperación |
 
 ## Qué es público y qué es local

@@ -1,4 +1,6 @@
-# Propuesta: interfaz de evaluación humana ciega para 29N (SOLO PROPUESTA; nada implementado)
+# Propuesta: interfaz de evaluación humana ciega para 29N (SUSTITUIDA por `propuesta-area-online-evaluacion.md`)
+
+> **Sustituida el 2026-11-25.** El responsable descartó los paquetes HTML autónomos y la importación manual y pidió un área online permanente con acceso por correo y OTP. Se conserva como registro de la alternativa evaluada.
 
 Fecha: 2026-11-25. Objetivo: sustituir las hojas Markdown por un procedimiento reutilizable de evaluación humana ciega que alimente `position_codings` (solo añadir), mida la concordancia humano–humano, humano–IA e IA–IA y permita adjudicar sin contaminar la evaluación ciega. El piloto de 19 celdas es una **muestra dirigida** (casos conflictivos e informativos): sus métricas **no se extrapolan** al banco ni sustituyen la campaña de ~150 celdas.
 

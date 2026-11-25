@@ -82,6 +82,8 @@ Documento maestro. Cubre desde la recepción del feedback hasta la preparación 
 
 | D19 | 2026-11-25 | **No esperar a las cuotas**: el benchmark (A y B) se da por cerrado con los evaluadores y datos disponibles; no se reanudan DeepSeek, Gemini 3.6 flash, Hydrogen ni Groq ni se amplía el tope de Codex. Se prepara el material de validación humana con las celdas prioritarias | Responsable |
 
+| D20 | 2026-11-25 | Validación humana: piloto de 19 celdas como muestra dirigida (no sustituye a la campaña de ~150); el responsable descarta los paquetes HTML y pide un **área online permanente** de evaluación con correo autorizado + OTP (Brevo); propuesta técnica en `fase2/propuesta-area-online-evaluacion.md`, **sin implementar** hasta resolver el alojamiento | Responsable |
+
 ## 4. Registro de desviaciones, incidencias y errores corregidos
 Se documentan **todas**, incluidos errores míos. Ninguna modifica los criterios congelados.
 
