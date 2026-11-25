@@ -1,4 +1,6 @@
-# Propuesta técnica: área online de evaluación metodológica de 29N (SOLO PROPUESTA; nada implementado ni desplegado)
+# Propuesta técnica: área online de evaluación metodológica de 29N (SUSTITUIDA por `propuesta-evaluacion-local.md`)
+
+> **Sustituida el 2026-11-25.** El responsable realizará personalmente las evaluaciones desde el entorno local y no hay colaboradores externos por ahora: se descartan el alojamiento online, el OTP adicional, la segunda base y la sincronización. Se conserva como registro de la alternativa evaluada.
 
 Fecha: 2026-11-25. **Sustituye** a `propuesta-interfaz-evaluacion-humana.md` (opciones de paquete HTML, descartadas por el responsable). Objetivo: una herramienta **permanente** de evaluación humana ciega, con acceso por correo autorizado y OTP (Brevo), persistencia directa en PostgreSQL, cierre irreversible, adjudicación separada y métricas automáticas, reutilizable en el piloto de 19 celdas, en la campaña de ~150 y en futuras campañas.
 

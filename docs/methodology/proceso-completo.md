@@ -84,6 +84,8 @@ Documento maestro. Cubre desde la recepción del feedback hasta la preparación 
 
 | D20 | 2026-11-25 | Validación humana: piloto de 19 celdas como muestra dirigida (no sustituye a la campaña de ~150); el responsable descarta los paquetes HTML y pide un **área online permanente** de evaluación con correo autorizado + OTP (Brevo); propuesta técnica en `fase2/propuesta-area-online-evaluacion.md`, **sin implementar** hasta resolver el alojamiento | Responsable |
 
+| D21 | 2026-11-25 | **Simplificación**: las evaluaciones humanas las hace el responsable personalmente desde el panel administrativo local; no hay evaluadores externos por ahora. Se descartan alojamiento online, OTP adicional, segunda base en Neon, sincronización, paquetes HTML y cambios en Vercel. Modelo de datos preparado para externos futuros sin implementar su acceso. Sus evaluaciones se etiquetan como **humanas internas, no independientes**; no se afirma concordancia humano–humano independiente | Responsable |
+
 ## 4. Registro de desviaciones, incidencias y errores corregidos
 Se documentan **todas**, incluidos errores míos. Ninguna modifica los criterios congelados.
 
