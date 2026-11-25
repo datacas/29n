@@ -18,7 +18,8 @@ Documento maestro. Cubre desde la recepción del feedback hasta la preparación 
 | Modalidad B (conjunto S, 40 celdas × 2 repeticiones) | **Ejecutada** con los evaluadores que la cuota permitió: Llama 4 Scout (80/80), Codex (74/80, tope de 2 M tokens), MiniMax M3.1 (76/80); Qwen y GPT-OSS parciales por la cuota de Groq; DeepSeek, Gemini 4 Hydrogen y Ministral sin completar (D18, I14–I18) |
 | Informe de B | `benchmark_B_report.mjs` (comparación A→B, cita no recuperada, celdas sin posición, selección pre-registrada a posteriori, prioridad de adjudicación); resultados locales |
 | Conjunto E | **Sellado**: no se ha accedido |
-| Recodificación masiva, validación humana, nuevo release | No iniciados |
+| Interfaz de evaluación humana ciega (panel local, piloto de 19 celdas) | **Implementada** (D22): migración 010 local, API, pantalla, campaña creada; 24 pruebas de integración + 3 E2E; evaluaciones humanas aún **no iniciadas** |
+| Recodificación masiva, nuevo release | No iniciados |
 
 ## 1. Origen y restricciones permanentes
 **Feedback recibido** (resumido):
@@ -85,6 +86,7 @@ Documento maestro. Cubre desde la recepción del feedback hasta la preparación 
 | D20 | 2026-11-25 | Validación humana: piloto de 19 celdas como muestra dirigida (no sustituye a la campaña de ~150); el responsable descarta los paquetes HTML y pide un **área online permanente** de evaluación con correo autorizado + OTP (Brevo); propuesta técnica en `fase2/propuesta-area-online-evaluacion.md`, **sin implementar** hasta resolver el alojamiento | Responsable |
 
 | D21 | 2026-11-25 | **Simplificación**: las evaluaciones humanas las hace el responsable personalmente desde el panel administrativo local; no hay evaluadores externos por ahora. Se descartan alojamiento online, OTP adicional, segunda base en Neon, sincronización, paquetes HTML y cambios en Vercel. Modelo de datos preparado para externos futuros sin implementar su acceso. Sus evaluaciones se etiquetan como **humanas internas, no independientes**; no se afirma concordancia humano–humano independiente | Responsable |
+| D22 | 2026-11-25 | **Aprobada la propuesta simplificada** (piloto primero, etiqueta «Humano interno 1», 19 celdas sin cambiar la selección) y **implementado el piloto**: migración 010 local; `insufficient_context` como campo propio (no es un estado técnico); modelo preparado para repetibilidad intraevaluador (no equivale a fiabilidad entre humanos independientes); instantáneas de celda inmutables y versionadas, con contexto ampliado como versión nueva; ceguera desde el backend; pruebas de seguridad, ceguera, concurrencia, persistencia e inmutabilidad en esta fase. Sin cambios en Vercel/Neon/OTP, producción, scoring, banco, posiciones, release 2.1.2, E ni benchmarks | Responsable |
 
 ## 4. Registro de desviaciones, incidencias y errores corregidos
 Se documentan **todas**, incluidos errores míos. Ninguna modifica los criterios congelados.
@@ -206,7 +208,7 @@ node scripts/methodology/build_full_report.mjs
 2. Reanudar Gemini 3.6 flash en A (cuota hasta el 26-nov 08:59).
 3. Adjudicación humana de las discrepancias prioritarias y auditoría de las celdas sin posición con posible posición registrada por varios evaluadores.
 4. Segunda auditoría ciega de ítems (protocolo diseñado, no ejecutada); auditoría de silencio de las 59 celdas candidatas.
-5. Validación humana independiente (2 evaluadores, ~150 celdas, después del 29-nov), adjudicación y propuesta de correcciones.
+5. Realizar las 19 evaluaciones humanas internas (piloto); después valorar si ampliar a ~150 celdas o corregir antes el manual; repetibilidad intraevaluador (≥ 7 días después); adjudicación avanzada y panel de métricas (siguiente fase). La validación humana **independiente** (≥ 2 evaluadores externos) sigue sin existir.
 6. Entrevistas cognitivas y validez de contenido; informe metodológico público sin afirmar validación.
 7. Nuevo release solo con autorización expresa; el merge a `main` requiere autorización expresa.
 

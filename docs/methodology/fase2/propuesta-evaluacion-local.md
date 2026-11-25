@@ -1,4 +1,6 @@
-# Propuesta técnica simplificada: evaluación humana ciega en el panel administrativo local (SOLO PROPUESTA; nada implementado)
+# Propuesta técnica simplificada: evaluación humana ciega en el panel administrativo local (APROBADA e implementada para el piloto, D22)
+
+> **Estado 2026-11-25:** aprobada por el responsable (piloto primero, etiqueta «Humano interno 1», 19 celdas sin modificar). Implementada la fase del piloto; ver `guia-evaluacion-local.md` y `migracion-010.md`. **Cambios respecto a esta propuesta (precisiones del responsable):** `insufficient_context` es un campo propio y **no** forma parte de `execution_status`; el modelo admite campañas de **repetibilidad intraevaluador**; las pruebas de seguridad, ceguera, concurrencia, persistencia e inmutabilidad del piloto se hicieron en esta fase. Pendiente: adjudicación avanzada y panel de métricas.
 
 Fecha: 2026-11-25. **Sustituye** a `propuesta-area-online-evaluacion.md` (alojamiento online, OTP y BD de evaluación en Neon), que el responsable descarta porque realizará personalmente las evaluaciones humanas desde el entorno local y no dispone ahora de colaboradores externos. También sustituye a `propuesta-interfaz-evaluacion-humana.md` (paquetes HTML). Ambas se conservan como registro de alternativas evaluadas.
 

@@ -15,7 +15,9 @@ Documentación del proceso de validez, fiabilidad y robustez de 29N iniciado a r
 | [`fase1/evolucion-panel-modelos.md`](fase1/evolucion-panel-modelos.md) | Cómo cambió el panel de evaluadores y por qué |
 | [`fase1/protocolo-auditoria-ciega.md`](fase1/protocolo-auditoria-ciega.md) | Protocolo de la segunda auditoría ciega de ítems (diseñada, no ejecutada) |
 | [`fase1/verificacion-externa.md`](fase1/verificacion-externa.md) | Contraste de las métricas con librerías externas |
-| [`fase2/propuesta-evaluacion-local.md`](fase2/propuesta-evaluacion-local.md) | **Propuesta vigente**: evaluación humana ciega integrada en el panel administrativo local, con PostgreSQL local; solo propuesta |
+| [`fase2/propuesta-evaluacion-local.md`](fase2/propuesta-evaluacion-local.md) | **Propuesta vigente** (aprobada): evaluación humana ciega integrada en el panel administrativo local, con PostgreSQL local |
+| [`fase2/guia-evaluacion-local.md`](fase2/guia-evaluacion-local.md) | Guía de uso de la interfaz de evaluación, repetibilidad y limitaciones |
+| [`fase2/migracion-010.md`](fase2/migracion-010.md) | Migración 010 (local) y su recuperación |
 | [`fase2/propuesta-area-online-evaluacion.md`](fase2/propuesta-area-online-evaluacion.md) | Área online con OTP (sustituida) |
 | [`fase2/propuesta-interfaz-evaluacion-humana.md`](fase2/propuesta-interfaz-evaluacion-humana.md) | Propuesta anterior (paquetes HTML), sustituida |
 | [`fase1/migracion-009.md`](fase1/migracion-009.md) | Tabla `position_codings` (solo añadir), prueba y recuperación |
