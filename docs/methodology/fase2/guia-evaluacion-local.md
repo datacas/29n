@@ -13,6 +13,12 @@
 - Navegación: `←` / `→`, «Siguiente pendiente», filtro (todas, pendientes, con borrador, finalizadas, contexto pedido) y **«Revisar antes de finalizar»** (tabla con tu decisión por celda y las incompletas resaltadas).
 - **Finalizar** (`Ctrl+Enter`, con confirmación) es **irreversible**: se añade una fila a `position_codings` (humano, interno, ciego, versión de celda y manual) y el borrador se bloquea. Para corregir un error posterior hay que hacer una repetición en una campaña nueva (se conservan ambas).
 
+## Adjudicación en sombra (`/admin/adjudicacion`)
+Tras finalizar tu evaluación de una celda puedes adjudicarla **sin ceguera**: ves pregunta y contexto, manual, **programa original** (páginas relevantes y contiguas, con enlace al PDF en la página), cita registrada, pasajes recuperados, tu evaluación, cada IA y la referencia provisional, y las discrepancias detectadas (incluida la comprobación de si la cita registrada aparece en lo recuperado).
+- La cola se construye con `node scripts/methodology/build_adjudication_dossiers.mjs --apply` (celdas con discrepancia, posibles omisiones y diferencias de intensidad; prioridad 16, 12, 6, 15, 3, 19, 7, 10).
+- Registra clasificación (o «sin resolver»), **una o varias causas**, justificación, evidencia verificada y una propuesta informativa sobre el banco. No hay nada preseleccionado ni se resuelve por mayoría.
+- Cada decisión es una **revisión nueva** (solo añadir; la anterior se conserva) y queda **en sombra**: `applied` es siempre falso y **no modifica `positions` ni el banco**. Aplicar requiere autorización expresa.
+
 ## Repetibilidad intraevaluador (más adelante)
 Tras un tiempo (se recomiendan ≥ 7 días) puedes repetir una muestra aleatoria sin ver tus respuestas anteriores:
 ```
