@@ -73,4 +73,5 @@ for k in (15, 20):
     out[f'solapamiento_K{k}'] = {'ambos': sum(x and y for x, y in zip(b, d)), 'solo_bm25': sum(x and not y for x, y in zip(b, d)), 'solo_denso': sum(y and not x for x, y in zip(b, d)), 'ninguno': sum((not x) and (not y) for x, y in zip(b, d)), 'hibrido_recupera_lo_que_bm25_no': sum(h and not x for x, h in zip(b, hy))}
 out['recursos'] = {'consulta_ms_media': round(1000 * float(np.mean(qtimes)), 1), 'ram_pico_MB': round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024), 'coste_usd': 0.0}
 json.dump(out, open(base / f'results_{tag}.json', 'w'), indent=1, ensure_ascii=False)
+json.dump(perc, open(base / f'perc_{tag}.json', 'w'))   # aciertos celda a celda (comparaciones pareadas)
 print(json.dumps({'modelo': model_name, 'celdas': n_eval, **{v: {f'K{k}': out['variantes'][v][f'K{k}']['recall'] for k in KS} for v in VARS}, 'mrr': {v: out['variantes'][v]['mrr'] for v in VARS}, 'codificacion_s': manifest['encode_seconds_this_run'], 'recursos': out['recursos']}, ensure_ascii=False))

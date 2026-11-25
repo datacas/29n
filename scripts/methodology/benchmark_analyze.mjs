@@ -4,9 +4,16 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { loadRelease, OUT, write, pct } from './lib.mjs'
 import { alphaCI, krippendorffAlpha, weightedKappa, gwetAC } from './agreement.mjs'
+const CATS_C = ['supports', 'opposes', 'explicit_neutral', 'not_mentioned', 'ambiguous'], CATS_I = [-2, -1, 0, 1, 2]
+const nz = (x) => (typeof x === 'number' && Number.isFinite(x) ? +x.toFixed(3) : null)
 
 const arg = (n, d) => { const i = process.argv.indexOf(`--${n}`); return i >= 0 ? process.argv[i + 1] : d }
 const file = arg('file'); if (!file) { console.error('Uso: --file <jsonl> [--set S] [--modality A]'); process.exit(2) }
+// Modalidad B: --pack <paquete B>. Separa las celdas cuya cita REGISTRADA llegó a los pasajes recuperados (fallo de recuperación = no atribuible al codificador).
+const flatQ = (x) => String(x).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim()
+let retrievalHit = null
+if (arg('pack', false)) { const pk = JSON.parse(fs.readFileSync(path.join(OUT, String(arg('pack'))), 'utf8')); const rel = loadRelease('2.1.2'); const pm = new Map(rel.positions.map((p) => [p.questionId + '|' + p.entityId, p])); retrievalHit = {}
+  for (const c of pk[arg('set', 'S')] ?? []) { const q = pm.get(c.cellId)?.evidence?.[0]?.text; if (!q) continue; const w = flatQ(q).split(' ').filter((x) => x.length > 3); const all = flatQ(c.passagesB.map((p) => p.text).join(' ')); retrievalHit[c.cellId] = w.length > 0 && w.filter((x) => all.includes(x)).length / w.length >= 0.8 } }
 const recsAll = fs.readFileSync(file, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
 // Intentos hechos con una configuración técnica anterior (otro max_tokens) se excluyen y se informan aparte (desviación documentada en panel.json).
 const panelFile = path.join(path.dirname(new URL(import.meta.url).pathname), '../../docs/methodology/local/panel.json')
@@ -49,6 +56,13 @@ for (const L of labels) {
     info_concordancia_referencia_provisional: { claseCoincide: cmp.length ? +(clsAgree / cmp.length).toFixed(3) : null, discrepanciaSigno: signPairs.length ? +(signDis / signPairs.length).toFixed(3) : null, intensidadExacta: sameCls.length ? +(sameCls.filter((o) => o.x.intensity === refInt(o.x.cellId)).length / sameCls.length).toFixed(3) : null, intensidadMas1: sameCls.length ? +(sameCls.filter((o) => Math.abs(o.x.intensity - refInt(o.x.cellId)) <= 1).length / sameCls.length).toFixed(3) : null },
     usoNotMentioned: ok.length ? +(ok.filter((x) => x.document_class === 'not_mentioned').length / ok.length).toFixed(3) : null,
   })
+  // Concordancia del modelo con la referencia provisional (2 evaluadores: modelo y codificación registrada). NO es exactitud validada.
+  if (retrievalHit) { const g = (v) => cmp.filter((o) => retrievalHit[o.x.cellId] === v); const agr = (a) => (a.length ? +(a.filter((o) => o.x.document_class === o.ref).length / a.length).toFixed(3) : null); T.porRecuperacion = { citaRecuperada: { n: g(true).length, claseCoincide: agr(g(true)) }, citaNoRecuperada: { n: g(false).length, claseCoincide: agr(g(false)), usoNotMentionado: g(false).length ? +(g(false).filter((o) => o.x.document_class === 'not_mentioned').length / g(false).length).toFixed(3) : null }, nota: 'En celdas con la cita no recuperada, un not_mentioned del modelo es un fallo de recuperación, no del codificador.' } }
+  const clsU = cmp.map((o) => [o.x.document_class, o.ref]); const sameIntU = sameCls.map((o) => [o.x.intensity, refInt(o.x.cellId)])
+  const wk = (kind) => (sameIntU.length >= 5 && new Set(sameIntU.flat()).size > 1 ? weightedKappa(sameIntU.map((u) => u[0]), sameIntU.map((u) => u[1]), CATS_I, kind) : null)
+  T.vsReferencia = { clase: { n: clsU.length, alfaNominal: nz(krippendorffAlpha(clsU, 'nominal')), gwetAC1: nz(gwetAC(clsU, CATS_C, 'none')), kappaCohen: clsU.length >= 5 ? nz(weightedKappa(clsU.map((u) => u[0]), clsU.map((u) => u[1]), CATS_C, 'none')) : null },
+    intensidad: { n: sameIntU.length, alfaOrdinal: nz(krippendorffAlpha(sameIntU, 'ordinal')), kappaLineal: nz(wk('linear')), kappaCuadratico: nz(wk('quadratic')), gwetAC2: nz(gwetAC(sameIntU, CATS_I, 'quadratic')) } }
+  const callsAll = c.filter((x) => x.usage?.total_tokens); T.cuota = { llamadas: c.length, tokensTotales: callsAll.reduce((a, x) => a + x.usage.total_tokens, 0), tokensPorLlamada: callsAll.length ? Math.round(callsAll.reduce((a, x) => a + x.usage.total_tokens, 0) / callsAll.length) : null, costeUSD_declarado: c.reduce((a, x) => a + Number(x.omniroute?.cost_usd ?? 0), 0), via: c[0]?.via ?? 'api' }
   T.criteriosCalidad = { M1: (T.calidad.M1_json_valido ?? 0) >= 0.95, M2: (T.calidad.M2_cita_fiel ?? 0) >= 0.9, M3: (T.calidad.M3_estabilidad_clase ?? 0) >= 0.85 }
   T.pasaA_B_porCalidad = Object.values(T.criteriosCalidad).every(Boolean)
   T.limitacionesOperativas = [ (T.operativa.O1_ejecuciones_correctas ?? 0) < 0.9 && 'O1', (T.operativa.O2_sin_fallback ?? 0) < 0.95 && 'O2', ((T.operativa.O3_latencia_mediana_s ?? 1e9) > 30 || (T.operativa.O3_latencia_p95_s ?? 1e9) > 60) && 'O3', T.operativa.O4_parada && 'O4' ].filter(Boolean)

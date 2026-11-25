@@ -16,9 +16,15 @@ const LOCAL = path.join(ROOT, 'docs/methodology/local')
 const sha = (s) => crypto.createHash('sha256').update(s).digest('hex')
 const manual = fs.readFileSync(path.join(ROOT, 'docs/methodology/coding-manual-v0.md'), 'utf8')
 const MANUAL_VERSION = (manual.match(/Versión \*\*([^*]+)\*\*/) ?? [])[1] ?? 'desconocida'
-const pack = JSON.parse(fs.readFileSync(path.join(OUT, 'benchmark_pack.json'), 'utf8'))
+const pack = JSON.parse(fs.readFileSync(path.join(OUT, String(arg('pack', 'benchmark_pack.json'))), 'utf8'))
 const panel = JSON.parse(fs.readFileSync(path.join(LOCAL, 'panel.json'), 'utf8')).models
 
+
+// Modalidad B: el paquete debe proceder de la configuración de recuperación CONGELADA (sin cambios dinámicos de K, modelos ni reordenador).
+{ const modB = String(arg('modality', 'A')).toUpperCase() === 'B'
+  if (modB) { const fz = path.join(ROOT, 'docs/methodology/local/retriever_frozen.json'); const f = fs.existsSync(fz) ? JSON.parse(fs.readFileSync(fz, 'utf8')) : null
+    if (!f || pack.meta?.retriever_config_sha256 !== f.sha256) { console.error('Modalidad B: el paquete no corresponde a la configuración de recuperación congelada.'); process.exit(2) } } }
+const cellsFilter = arg('cells', false) ? new Set(JSON.parse(fs.readFileSync(String(arg('cells')), 'utf8'))) : null
 const system = (nonce) => `${manual}\n\n[ref: ${nonce}]`
 const userMsg = (c) => `PREGUNTA: ${c.item}\nCONTEXTO: ${c.context}\nPARTIDO: ${c.party}\n\nPASAJES DEL PROGRAMA (idioma: ${c.language}):\n${c.passages.map((p, i) => `[${i + 1}] (pág. ${p.page}) ${p.text}`).join('\n\n') || '(sin pasajes)'}\n\nResponde solo con el objeto JSON del manual.`
 const PROMPT_SHA = sha(system('X') + userMsg({ item: 'I', context: 'C', party: 'P', language: 'es', passages: [] }) + MANUAL_VERSION + sha(manual))
@@ -30,7 +36,7 @@ if (flag('freeze')) {
 const set = arg('set', 'S')
 const modality = String(arg('modality', 'B')).toUpperCase()  // A = evidencia de referencia + distractores; B = recuperación automática
 if (!['A', 'B'].includes(modality)) { console.error('--modality debe ser A o B'); process.exit(2) }
-const cells = (pack[set] ?? []).filter((c) => modality === 'B' || c.passagesA).map((c) => ({ ...c, passages: modality === 'A' ? c.passagesA : c.passagesB })).slice(0, +arg('limit', 1e9))
+const cells = (pack[set] ?? []).filter((c) => (modality === 'B' || c.passagesA) && (!cellsFilter || cellsFilter.has(c.cellId))).map((c) => ({ ...c, passages: modality === 'A' ? c.passagesA : c.passagesB })).slice(0, +arg('limit', 1e9))
 const repeats = +arg('repeats', 2)
 const models = panel.filter((m) => (flag('include-retry') ? true : !m.retry))
 if (flag('dry-run')) {

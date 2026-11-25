@@ -20,6 +20,7 @@ def rrf(lists, k=200):
     for l in lists:
         for r, i in enumerate(l): s[i] = s.get(i, 0) + 1 / (C + r + 1)
     return [i for i, _ in sorted(s.items(), key=lambda x: -x[1])[:k]]
+percell = []
 res = {v: {k: 0 for k in KS} for v in ['hibrido', 'hibrido+reranker']}; mrr = {v: 0.0 for v in res}; times = []; strata = {}
 for n, c in enumerate(cells):
     hits = set(c['hit_idx']); qtext = c['item'] + ' ' + c['context']
@@ -28,17 +29,20 @@ for n, c in enumerate(cells):
     hy = rrf([c['bm25_v7'], dense])[:POOL]
     t = time.time(); sc = ce.predict([(qtext, passages[c['party']][i]) for i in hy], batch_size=8, show_progress_bar=False); times.append(time.time() - t)
     rr = [hy[j] for j in np.argsort(-sc)]
-    row = {'language': c['language'], 'intensity': c['intensity']}
+    row = {'language': c['language'], 'intensity': c['intensity']}; pc = {'cellId': c['cellId']}
     for name, lst in (('hibrido', hy), ('hibrido+reranker', rr)):
         first = next((r for r, i in enumerate(lst[:20]) if i in hits), None)
         if first is not None: mrr[name] += 1 / (first + 1)
         for k in KS:
             h = any(i in hits for i in lst[:k]); res[name][k] += h
             if k == 10: row[name] = h
+            pc.setdefault(name, {})[k] = bool(h)
+    percell.append(pc)
     g = strata.setdefault((c['language']), {'n': 0, 'hibrido': 0, 'hibrido+reranker': 0}); g['n'] += 1; g['hibrido'] += row['hibrido']; g['hibrido+reranker'] += row['hibrido+reranker']
     g2 = strata.setdefault('±%d' % c['intensity'], {'n': 0, 'hibrido': 0, 'hibrido+reranker': 0}); g2['n'] += 1; g2['hibrido'] += row['hibrido']; g2['hibrido+reranker'] += row['hibrido+reranker']
     if n % 50 == 0: print(f'[{n}/{len(cells)}] {np.mean(times):.1f}s por celda', flush=True)
 N = len(cells); pct = lambda x: round(100 * x / N, 1)
 out = {'reranker': RR, 'celdas': N, 'pool': POOL, 'recall': {v: {f'K{k}': pct(res[v][k]) for k in KS} for v in res}, 'mrr': {v: round(mrr[v] / N, 3) for v in res}, 'segundos_por_celda_reranking': round(float(np.mean(times)), 2),
        'estratos_K10': {k: {'n': g['n'], 'hibrido': round(100 * g['hibrido'] / g['n'], 1), 'hibrido+reranker': round(100 * g['hibrido+reranker'] / g['n'], 1)} for k, g in strata.items()}, 'ram_pico_MB': round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024), 'coste_usd': 0.0}
-json.dump(out, open(base / 'results_rerank.json', 'w'), ensure_ascii=False, indent=1); print(json.dumps(out, ensure_ascii=False))
+json.dump(out, open(base / 'results_rerank.json', 'w'), ensure_ascii=False, indent=1)
+json.dump(percell, open(base / 'perc_rerank.json', 'w')); print(json.dumps(out, ensure_ascii=False))

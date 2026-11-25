@@ -1,0 +1,83 @@
+{
+  "name": "hibrido-bm25v7+bge-m3+rrf+reranker",
+  "version": "B-1.0.0",
+  "descripcion": "Recuperación para la modalidad B: BM25 V7 y BGE-M3 fusionados por RRF (25 candidatos) y reordenados con bge-reranker-v2-m3; se entregan K=10 pasajes. Configuración CONGELADA: no se modifican K, modelos, parámetros ni reordenador durante el benchmark.",
+  "segmentacion": {
+    "unidad": "párrafo de pdftotext, fusionando hasta ≥350 caracteres (≥60 si es el final de la página)",
+    "origen": "app/public/programas/*.pdf (versión publicada, huellas abajo)"
+  },
+  "bm25": {
+    "variante": "V7",
+    "k1": 1.5,
+    "b": 0.75,
+    "lematizacion": "ligera (sufijos del castellano)",
+    "consulta": "pregunta + texto explicativo + vocabulario por ítem",
+    "vocabulario_por_ítem": {
+      "modelo": "mistral/ministral-14b-latest vía OmniRoute",
+      "version_prompt": "exp-v1",
+      "temperatura": 0,
+      "idioma": "es",
+      "terminos": 14
+    }
+  },
+  "dense": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "max_seq_length": 512,
+    "normalizado": true,
+    "consulta": "pregunta + texto explicativo + vocabulario por ítem (castellano)",
+    "dispositivo": "GPU local (CPU si no hay CUDA)"
+  },
+  "fusion": {
+    "metodo": "RRF",
+    "c": 60
+  },
+  "pool": 25,
+  "reranker": {
+    "model": "BAAI/bge-reranker-v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+    "max_length": 512,
+    "consulta": "pregunta + texto explicativo (sin vocabulario ampliado)",
+    "candidatos": 25
+  },
+  "k": 10,
+  "k_adicional_no_usado_en_B": 15,
+  "conjuntos": {
+    "S": "cribado (desarrollo)",
+    "D": "ajuste (desarrollo)",
+    "E": "SELLADO: no interviene",
+    "E_sellado_sha256": "d363dc51ae8c9b6845064d3233448f2fe9e728ba918fbffefc541d02fe2757a9"
+  },
+  "corpus": {
+    "parrafos_totales": 3438,
+    "corpus_sha256": "45b7fa727925e3ef6152ae81e443ef3c186f402d1a0cda1e92eebf6532c58cec"
+  },
+  "programas_pdf_sha256": {
+    "programa-adelante-andalucia.pdf": "9edf2c74216c3d68319355de782e979307f2bad8b545ea3cffb53c2113065494",
+    "programa-bng.pdf": "fd5aef260b9c66d030b57b7b0e18914c8ad79384e2c46b2346d9fb4f6514a97d",
+    "programa-coalicion-canaria.pdf": "79fbcdd6e873f06d90542243b5e245ed99eba8419cf5753233d6e3e4850587fb",
+    "programa-compromis.pdf": "0eb96b5f5f98e45ee702771157d8bb0d6553db72241f4def6acd46d887c89d96",
+    "programa-democracia21.pdf": "88db5fc265376d741766f38236ff163aa7ffc1bec966b00ca88947f104a7bc14",
+    "programa-eh-bildu.pdf": "ceb655c9c8ebb036a15fa7829865d6e2d178525eb7db92629d702ac5e8d16047",
+    "programa-erc.pdf": "f0b6d8e0bf7fc6a75206ac4a6b0b7e0e31745b147fae86d341916562d6a433fd",
+    "programa-fe-de-las-jons.pdf": "25f3e5bc8b79b81698d1e6fafc48c48ac21bd1c2544912612f3d229f996d917b",
+    "programa-frente-amplio.pdf": "516c5c6caaa04d0bd6f28770a49ae312f79ff3ebcf48967db66adc4ce2335424",
+    "programa-frente-obrero.pdf": "7b9f423f2c1ada187b6f42ed8dbf4e025356254d7a6b81830e114b818ef2e282",
+    "programa-pacma.pdf": "6009e569e3bfd4f607b8831ade1d1ef33cbbda6033805e3ebc331d4dd0e30a1d",
+    "programa-partido-autonomos.pdf": "2df2537bd762f280c139a0d9b28c77de713d2dcadaf89d1bef6bb75277e7975f",
+    "programa-pcte.pdf": "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711",
+    "programa-pnv.pdf": "5af7a5b6f67c26bad87ef6c3ca01ae38aa1f1d7d9029efb32fc52482de0c1314",
+    "programa-pp.pdf": "010ccb529aa7df592c85f1e1049b5fcfb0ae0563043d0d3e3658dcfb5b90ddbe",
+    "programa-psoe.pdf": "9b580e6e5cff881cabc34ea94fd0ec2e45596c985942ee1db12c512660c3fb52",
+    "programa-salf.pdf": "cec9d9d33a2eb43214c3e3286b6fa52fc4d0250ad1e129120e42d20eb7c7561f",
+    "programa-sumar.pdf": "1ea86dcd3d94ad70a4087f13c09aa0b6ac0f79445c7921ec64a9cd33ca70fcd3",
+    "programa-vox.pdf": "c02548086dffea13f2648b8aa635b56b6ccb2b0fc7bbedefaedd26c9c01c7d2b"
+  },
+  "descartado": [
+    "E5-large como candidato principal",
+    "ventanas de 2 párrafos",
+    "realimentación por pseudo-relevancia",
+    "consulta dual a favor/en contra"
+  ],
+  "hallazgos_no_aplicados": "La traducción auxiliar y la recuperación solo densa para catalán/gallego se estudian aparte y NO forman parte de esta configuración."
+}
