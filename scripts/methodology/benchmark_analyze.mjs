@@ -7,7 +7,14 @@ import { alphaCI, krippendorffAlpha, weightedKappa, gwetAC } from './agreement.m
 
 const arg = (n, d) => { const i = process.argv.indexOf(`--${n}`); return i >= 0 ? process.argv[i + 1] : d }
 const file = arg('file'); if (!file) { console.error('Uso: --file <jsonl> [--set S] [--modality A]'); process.exit(2) }
-const recs = fs.readFileSync(file, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
+const recsAll = fs.readFileSync(file, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
+// Intentos hechos con una configuración técnica anterior (otro max_tokens) se excluyen y se informan aparte (desviación documentada en panel.json).
+const panelFile = path.join(path.dirname(new URL(import.meta.url).pathname), '../../docs/methodology/local/panel.json')
+const panelM = fs.existsSync(panelFile) ? Object.fromEntries(JSON.parse(fs.readFileSync(panelFile, 'utf8')).models.map((m) => [m.label, m])) : {}
+const LEGACY = { 'gemini-3.6-flash': 700 }
+const stale = (r) => { const pm = panelM[r.evaluator_label]; return !!pm && !r.halted && (r.max_tokens ?? LEGACY[r.evaluator_label] ?? pm.maxTokens) !== (pm.maxTokens ?? 800) }
+const excludedStale = recsAll.filter(stale)
+const recs = recsAll.filter((r) => !stale(r))
 const halted = recs.filter((r) => r.halted); const calls = recs.filter((r) => !r.halted)
 const r = loadRelease('2.1.2'); const posOf = new Map(r.positions.map((p) => [p.questionId + '|' + p.entityId, p]))
 const refClass = (cellId) => { const p = posOf.get(cellId); if (!p) return null; if (p.stanceStatus === 'explicit_neutral' || p.value === 0) return 'explicit_neutral'; if (p.value > 0) return 'supports'; if (p.value < 0) return 'opposes'; return null }
@@ -15,6 +22,7 @@ const refInt = (cellId) => posOf.get(cellId)?.value ?? null
 const med = (a) => (a.length ? [...a].sort((x, y) => x - y)[Math.floor(a.length / 2)] : null), q95 = (a) => (a.length ? [...a].sort((x, y) => x - y)[Math.min(a.length - 1, Math.floor(0.95 * a.length))] : null)
 const labels = [...new Set(calls.map((c) => c.evaluator_label))]
 const per = {}
+const MIN_PROPIAS = 20, MIN_PARES = 10   // aclaración posterior: por debajo no se declara aprobado ni suspenso (no cambia ningún umbral)
 for (const L of labels) {
   const c = calls.filter((x) => x.evaluator_label === L)
   const recv = c.filter((x) => ['ok', 'invalid_output'].includes(x.execution_status))
@@ -44,7 +52,8 @@ for (const L of labels) {
   T.criteriosCalidad = { M1: (T.calidad.M1_json_valido ?? 0) >= 0.95, M2: (T.calidad.M2_cita_fiel ?? 0) >= 0.9, M3: (T.calidad.M3_estabilidad_clase ?? 0) >= 0.85 }
   T.pasaA_B_porCalidad = Object.values(T.criteriosCalidad).every(Boolean)
   T.limitacionesOperativas = [ (T.operativa.O1_ejecuciones_correctas ?? 0) < 0.9 && 'O1', (T.operativa.O2_sin_fallback ?? 0) < 0.95 && 'O2', ((T.operativa.O3_latencia_mediana_s ?? 1e9) > 30 || (T.operativa.O3_latencia_p95_s ?? 1e9) > 60) && 'O3', T.operativa.O4_parada && 'O4' ].filter(Boolean)
-  T.clasificacion = !T.pasaA_B_porCalidad ? 'NO PASA a B (calidad)' : T.limitacionesOperativas.length ? `válido con limitaciones operativas (${T.limitacionesOperativas.join(',')})` : 'PASA a B'
+  T.datosSuficientes = own.length >= MIN_PROPIAS && pairs.length >= MIN_PARES
+  T.clasificacion = !T.datosSuficientes ? `NO EVALUABLE (datos insuficientes: ${own.length} respuestas propias, ${pairs.length} pares)` : !T.pasaA_B_porCalidad ? 'NO PASA a B (calidad)' : T.limitacionesOperativas.length ? `válido con limitaciones operativas (${T.limitacionesOperativas.join(',')})` : 'PASA a B'
   T.revisarPorSigno = (T.info_concordancia_referencia_provisional.discrepanciaSigno ?? 0) > 0.15
 }
 // Concordancia entre modelos (sin referencia): unidades = celdas; evaluadores = modelos (1.ª repetición correcta)
@@ -54,7 +63,7 @@ const clsU = cells.map((cell) => labels.map((L) => firstOk(L, cell)?.document_cl
 const intU = cells.map((cell) => labels.map((L) => { const x = firstOk(L, cell); return x && x.intensity !== null ? x.intensity : null }))
 const catsC = ['supports', 'opposes', 'explicit_neutral', 'not_mentioned', 'ambiguous']
 const acuerdo = { modelos: labels.length, celdas: cells.length, clase: { krippendorffNominal: alphaCI(clsU, 'nominal', 500), gwetAC1: gwetAC(clsU, catsC, 'none') }, intensidad: { krippendorffOrdinal: alphaCI(intU, 'ordinal', 500), gwetAC2_cuadratica: gwetAC(intU, [-2, -1, 0, 1, 2], 'quadratic') }, nota: 'Intensidad solo entre modelos que dieron intensidad numérica; la clase y la intensidad se analizan por separado. Sin referencia provisional.' }
-const meta = { archivo: path.basename(file), llamadas: calls.length, paradas: halted, referencia: 'PROVISIONAL (codificaciones registradas; no son referencia dorada)' }
+const meta = { intentosExcluidosPorConfiguracionAnterior: excludedStale.map((r) => r.evaluator_label + ':' + r.execution_status).reduce((m, k) => ((m[k] = (m[k] ?? 0) + 1), m), {}), archivo: path.basename(file), llamadas: calls.length, paradas: halted, referencia: 'PROVISIONAL (codificaciones registradas; no son referencia dorada)' }
 write('benchmark_analisis.json', { meta, modelos: per, acuerdo })
 const tb = labels.map((L) => { const t = per[L], q = t.calidad, o = t.operativa; return `| ${L} | ${pct(q.M1_json_valido ?? 0)} | ${pct(q.M2_cita_fiel ?? 0)} | ${pct(q.M3_estabilidad_clase ?? 0)} | ${pct(o.O1_ejecuciones_correctas ?? 0)} | ${pct(o.O2_sin_fallback ?? 0)} | ${o.O3_latencia_mediana_s?.toFixed(1)}/${o.O3_latencia_p95_s?.toFixed(1)} | ${t.clasificacion} |` }).join('\n')
 write('benchmark_analisis.md', `# Análisis del benchmark (${meta.archivo})\n\nReferencia provisional. Calidad (M) decide el paso a B; viabilidad operativa (O) informa. Criterios fijados en \`docs/methodology/fase1/criterios-aceptacion-modalidad-A.md\`.\n\n| Modelo | M1 JSON | M2 cita | M3 estab. | O1 ok | O2 sin fallback | O3 mediana/p95 s | Clasificación |\n|---|---|---|---|---|---|---|---|\n${tb}\n\n## Concordancia entre modelos\n${JSON.stringify(acuerdo, null, 1)}\n`)

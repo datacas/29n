@@ -57,8 +57,10 @@ if (arg('budget-tokens-per-group', false)) for (const g of Object.keys(BUDGETS))
 // se reintenta solo lo técnico transitorio (timeout, rate_limited, api_error 5xx/sin respuesta). Nunca se duplica una llamada completada.
 // Un fallback es una respuesta de OTRO modelo: se conserva (se excluye de las métricas) pero la celda se reintenta.
 const RETRYABLE = (r) => r.fallback_used === true || r.cache_hit === true || ['timeout', 'rate_limited'].includes(r.execution_status) || (r.execution_status === 'api_error' && (!r.http_status || r.http_status >= 500))
+const LEGACY_MAXTOKENS = { 'gemini-3.6-flash': 700 }   // valor anterior de los registros sin el campo max_tokens (ver config_history en panel.json)
+const panelBy = Object.fromEntries(panel.map((m) => [m.label, m]))
 const prior = new Map()
-if (fs.existsSync(outFile)) for (const l of fs.readFileSync(outFile, 'utf8').split('\n').filter(Boolean)) { const r = JSON.parse(l); if (r.halted) continue; const k = `${r.cellId}|${r.evaluator_label}|${r.repeat}`; const o = prior.get(k) ?? { attempts: 0, final: false }; o.attempts++; if (!RETRYABLE(r)) o.final = true; prior.set(k, o) }
+if (fs.existsSync(outFile)) for (const l of fs.readFileSync(outFile, 'utf8').split('\n').filter(Boolean)) { const r = JSON.parse(l); if (r.halted) continue; const pm = panelBy[r.evaluator_label]; if (pm && (r.max_tokens ?? LEGACY_MAXTOKENS[r.evaluator_label] ?? pm.maxTokens) !== (pm.maxTokens ?? 800)) continue; const k = `${r.cellId}|${r.evaluator_label}|${r.repeat}`; const o = prior.get(k) ?? { attempts: 0, final: false }; o.attempts++; if (!RETRYABLE(r)) o.final = true; prior.set(k, o) }
 const todo = (m, c, k) => { const o = prior.get(`${c.cellId}|${m.label}|${k}`); return !o || (!o.final && o.attempts < MAX_ATTEMPTS) }
 const norm = (x) => String(x ?? '').toLowerCase().replace(/^@cf\//, '')
 const tail = (x) => norm(x).split('/').pop().replace(/:free$|-free$/, '')
@@ -72,7 +74,7 @@ async function call(m, c) {
   return { r, j: await r.json().catch(() => null) }
 }
 async function one(m, c, repeat) {
-  const t0 = Date.now(); const rec = { run_id: runId, cellId: c.cellId, set, modality, evidence_scope: modality === 'A' ? 'reference_evidence_plus_distractors' : 'passages_retrieved', repeat, evaluator_label: m.label, evaluator_kind: 'ai', provider: m.group, model_family: m.vendor, model_requested: m.id, manual_version: MANUAL_VERSION, prompt_version: PROMPT_SHA.slice(0, 12), item_text_sha256: sha(c.item), blind: true, independent_of: [], stratum: c.stratum, party: c.party, language: c.language, attempts_this_run: 0 }
+  const t0 = Date.now(); const rec = { max_tokens: m.maxTokens ?? 800, run_id: runId, cellId: c.cellId, set, modality, evidence_scope: modality === 'A' ? 'reference_evidence_plus_distractors' : 'passages_retrieved', repeat, evaluator_label: m.label, evaluator_kind: 'ai', provider: m.group, model_family: m.vendor, model_requested: m.id, manual_version: MANUAL_VERSION, prompt_version: PROMPT_SHA.slice(0, 12), item_text_sha256: sha(c.item), blind: true, independent_of: [], stratum: c.stratum, party: c.party, language: c.language, attempts_this_run: 0 }
   try {
     let res
     for (let t = 0; t < 3; t++) {   // reintento interno solo ante 429, respetando retry-after (máx. 60 s)
