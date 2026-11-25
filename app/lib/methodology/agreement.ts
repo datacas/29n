@@ -1,3 +1,4 @@
+// @ts-nocheck — núcleo de métricas en JS puro, compartido por scripts (Node) y servidor (Nitro lo incluye en el paquete; un .mjs quedaba como importación externa y rompía `nuxt dev`).
 // Métricas de concordancia entre evaluadores (puras, sin dependencias). Documentación de cada elección en el issue #49.
 // Valores ausentes: null/undefined. Unidad de análisis: celda pregunta×partido (fila) × evaluador (columna).
 // PRNG reproducible (mulberry32). Copia de scripts/methodology/lib.mjs para que este módulo no dependa de fs/path y pueda importarse desde el servidor.

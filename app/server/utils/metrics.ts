@@ -6,8 +6,7 @@
  *  - Humano interno ≠ referencia independiente: la concordancia humano–humano solo se calcula con ≥ 2 evaluadores humanos verificados y externos.
  *  - Con menos de 10 pares la métrica es «no evaluable» (n demasiado pequeño); todos los informes llevan la limitación de muestra y de selección.
  */
-// @ts-expect-error módulo .mjs sin tipos
-import { krippendorffAlpha, alphaCI, weightedKappa, gwetAC } from '../../lib/methodology/agreement.mjs'
+import { krippendorffAlpha, alphaCI, weightedKappa, gwetAC } from '../../lib/methodology/agreement'
 import type { Queryable } from './evaluation'
 
 const CATS_C = ['supports', 'opposes', 'explicit_neutral', 'not_mentioned', 'ambiguous'], CATS_I = [-2, -1, 0, 1, 2]
