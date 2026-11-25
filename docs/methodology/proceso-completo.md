@@ -14,6 +14,7 @@ Documento maestro. Cubre desde la recepción del feedback hasta la preparación 
 | Modalidad A (S, 28 celdas) | Ejecutada con 10 evaluadores (Gemini 3.6 flash pendiente) |
 | Spike de recuperación (BM25, embeddings, híbrido, reordenador, traducción) | Terminado |
 | Configuración de recuperación de B | **Congelada** (huella `acd59e44…`) |
+| Benchmark A y B | **Cerrado con los datos disponibles (D19)**; material de validación humana preparado en local (`hoja_codificacion_ciega.md`, `hoja_adjudicacion.md`) |
 | Modalidad B (conjunto S, 40 celdas × 2 repeticiones) | **Ejecutada** con los evaluadores que la cuota permitió: Llama 4 Scout (80/80), Codex (74/80, tope de 2 M tokens), MiniMax M3.1 (76/80); Qwen y GPT-OSS parciales por la cuota de Groq; DeepSeek, Gemini 4 Hydrogen y Ministral sin completar (D18, I14–I18) |
 | Informe de B | `benchmark_B_report.mjs` (comparación A→B, cita no recuperada, celdas sin posición, selección pre-registrada a posteriori, prioridad de adjudicación); resultados locales |
 | Conjunto E | **Sellado**: no se ha accedido |
@@ -79,6 +80,8 @@ Documento maestro. Cubre desde la recepción del feedback hasta la preparación 
 9. **Spike de embeddings y reordenación** (`spike_*.py`, `spike_stats.py`): BM25 V7 frente a BGE-M3, E5-large, híbrido por RRF y reordenador `bge-reranker-v2-m3`, con estadística pareada. Traducción auxiliar al castellano de ERC, Compromís y BNG (NLLB-200) como índice alternativo. Análisis de las celdas sin posición para priorizar una futura auditoría de silencio.
 10. **Preparación de B**: configuración congelada (`retriever-config-B.json`), paquete híbrido para S (`pack_b_export.mjs`, `pack_b_build.py`), selección pre-registrada para el panel adicional (`benchmark_stage2.mjs`).
 
+| D19 | 2026-11-25 | **No esperar a las cuotas**: el benchmark (A y B) se da por cerrado con los evaluadores y datos disponibles; no se reanudan DeepSeek, Gemini 3.6 flash, Hydrogen ni Groq ni se amplía el tope de Codex. Se prepara el material de validación humana con las celdas prioritarias | Responsable |
+
 ## 4. Registro de desviaciones, incidencias y errores corregidos
 Se documentan **todas**, incluidos errores míos. Ninguna modifica los criterios congelados.
 
@@ -135,7 +138,7 @@ Se diseñó un panel principal de 4 familias (Llama, Codex, DeepSeek, Hydrogen) 
 - **Análisis de B**: se separan las celdas cuya cita registrada llegó a los 10 pasajes de las que no (el fallo de recuperación no se atribuye al codificador). Clase e intensidad se analizan por separado.
 
 ## 8. Inventario técnico
-**Scripts versionados** (`scripts/methodology/`): `lib.mjs`, `asymmetry.mjs`, `coverage.mjs`, `sensitivity.mjs`, `item_audit.mjs`, `benchmark_split.mjs`, `benchmark_pack.mjs`, `benchmark_run.mjs`, `benchmark_run_cli.mjs`, `benchmark_analyze.mjs`, `benchmark_stage2.mjs`, `agreement.mjs`, `retrieval.mjs`, `retrieval_diag.mjs`, `spike_export.mjs`, `spike_dense.py`, `spike_rerank.py`, `spike_silence.py`, `spike_stats.py`, `spike_translate.py`, `spike_translation_eval.py`, `pack_b_export.mjs`, `pack_b_build.py`, `benchmark_B_report.mjs`, `build_full_report.mjs` y `verify_external/`. Pruebas: `tests/methodology/agreement.test.ts`. Migración: `db/migrations/009_position_codings.sql`.
+**Scripts versionados** (`scripts/methodology/`): `lib.mjs`, `asymmetry.mjs`, `coverage.mjs`, `sensitivity.mjs`, `item_audit.mjs`, `benchmark_split.mjs`, `benchmark_pack.mjs`, `benchmark_run.mjs`, `benchmark_run_cli.mjs`, `benchmark_analyze.mjs`, `benchmark_stage2.mjs`, `agreement.mjs`, `retrieval.mjs`, `retrieval_diag.mjs`, `spike_export.mjs`, `spike_dense.py`, `spike_rerank.py`, `spike_silence.py`, `spike_stats.py`, `spike_translate.py`, `spike_translation_eval.py`, `pack_b_export.mjs`, `pack_b_build.py`, `benchmark_B_report.mjs`, `build_adjudication_sheets.mjs`, `build_full_report.mjs` y `verify_external/`. Pruebas: `tests/methodology/agreement.test.ts`. Migración: `db/migrations/009_position_codings.sql`.
 
 **Local, no versionado** (`docs/methodology/local/`): `panel.json` (modelos y presupuestos), `retriever_frozen.json` (huella), juicios de ítems, scripts de sondeo y depuración de OmniRoute, resultados (`out/`), caché de embeddings y traducciones, `venv` (CPU) y `venv-gpu` (CUDA).
 
@@ -195,7 +198,7 @@ node scripts/methodology/build_full_report.mjs
 `--confirm-authorized` representa la autorización expresa de la persona responsable: no debe pasarse sin ella.
 
 ## 12. Pendientes
-1. Opcional: completar B con DeepSeek (tras el reinicio de su cuota), las 6 llamadas de Codex (requiere ampliar su tope, con autorización) y reanudar Groq cuando se renueve la cuota.
+1. (Descartado por D19) completar B con DeepSeek, Codex y Groq. Podría reabrirse solo con decisión expresa.
 2. Reanudar Gemini 3.6 flash en A (cuota hasta el 26-nov 08:59).
 3. Adjudicación humana de las discrepancias prioritarias y auditoría de las celdas sin posición con posible posición registrada por varios evaluadores.
 4. Segunda auditoría ciega de ítems (protocolo diseñado, no ejecutada); auditoría de silencio de las 59 celdas candidatas.
