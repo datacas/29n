@@ -107,17 +107,20 @@ const only = arg('models', false) ? String(arg('models')).split(',') : null
 const groups = {}; for (const m of models) if (!only || only.includes(m.label)) (groups[m.group] ??= []).push(m)
 const summary = {}
 await Promise.all(Object.entries(groups).map(async ([g, ms]) => {
-  let streak = 0, used = 0, delay = 0; const sm = (summary[g] = { llamadas: 0, ok: 0, fallos: 0, omitidas: 0, parada: null })
-  outer: for (const m of ms) for (const c of cells) for (let k = 1; k <= repeats; k++) {
-    if (!todo(m, c, k)) { sm.omitidas++; continue }
-    if (BUDGETS[g] && used >= BUDGETS[g]) { sm.parada = `presupuesto de tokens agotado (${used}/${BUDGETS[g]})`; break outer }
-    if (delay) await sleep(delay)
-    const rec = await one(m, c, k); sm.llamadas++;
-    // Ritmo adaptativo por proveedor: ante un 429 o un fallback se espera más (hasta 60 s); tras éxitos limpios se acorta.
-    delay = (rec.execution_status === 'rate_limited' || rec.fallback_used) ? Math.min(Math.max(delay * 2, 8000), 60000) : rec.execution_status === 'ok' ? Math.floor(delay * 0.7) : delay; used += rec.usage?.total_tokens ?? Math.round((system('x').length + userMsg(c).length) / 4)
-    if (rec.cost_nonzero) { sm.parada = `coste distinto de cero detectado (${rec.omniroute?.cost_usd} USD): parada inmediata`; break outer }
-    if (rec.execution_status === 'ok') { sm.ok++; streak = 0 } else { sm.fallos++; if (['api_error', 'timeout', 'rate_limited'].includes(rec.execution_status)) streak++; if (streak >= BREAKER) { sm.parada = `interruptor: ${BREAKER} fallos técnicos seguidos (${rec.execution_status})`; break outer } }
-    if ((sm.llamadas % 10) === 0) console.error(`[${g}] ${sm.llamadas} llamadas, ${sm.ok} ok, tokens≈${used}`)
+  let used = 0, delay = 0; const sm = (summary[g] = { llamadas: 0, ok: 0, fallos: 0, omitidas: 0, parada: null, modelosParados: {} })
+  outer: for (const m of ms) {
+    let streak = 0   // el interruptor es POR MODELO: un modelo en enfriamiento no debe impedir evaluar a otro del mismo proveedor
+    for (const c of cells) for (let k = 1; k <= repeats; k++) {
+      if (!todo(m, c, k)) { sm.omitidas++; continue }
+      if (BUDGETS[g] && used >= BUDGETS[g]) { sm.parada = `presupuesto de tokens agotado (${used}/${BUDGETS[g]})`; break outer }
+      if (delay) await sleep(delay)
+      const rec = await one(m, c, k); sm.llamadas++; used += rec.usage?.total_tokens ?? Math.round((system('x').length + userMsg(c).length) / 4)
+      // Ritmo adaptativo por proveedor: ante un 429 o un fallback se espera más (hasta 60 s); tras éxitos limpios se acorta.
+      delay = (rec.execution_status === 'rate_limited' || rec.fallback_used) ? Math.min(Math.max(delay * 2, 8000), 60000) : rec.execution_status === 'ok' ? Math.floor(delay * 0.7) : delay
+      if (rec.cost_nonzero) { sm.parada = `coste distinto de cero detectado (${rec.omniroute?.cost_usd} USD): parada inmediata`; break outer }
+      if (rec.execution_status === 'ok') { sm.ok++; streak = 0 } else { sm.fallos++; if (['api_error', 'timeout', 'rate_limited'].includes(rec.execution_status)) streak++; if (streak >= BREAKER) { sm.modelosParados[m.label] = `interruptor: ${BREAKER} fallos técnicos seguidos (${rec.execution_status})`; fs.appendFileSync(outFile, JSON.stringify({ halted: true, group: g, model: m.label, reason: sm.modelosParados[m.label], at: new Date().toISOString(), run_id: runId }) + '\n'); continue outer } }
+      if ((sm.llamadas % 10) === 0) console.error(`[${g}] ${sm.llamadas} llamadas, ${sm.ok} ok, tokens≈${used}`)
+    }
   }
   if (sm.parada) fs.appendFileSync(outFile, JSON.stringify({ halted: true, group: g, reason: sm.parada, at: new Date().toISOString(), run_id: runId }) + '\n')
 }))
