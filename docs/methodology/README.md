@@ -19,6 +19,7 @@ Documentación del proceso de validez, fiabilidad y robustez de 29N iniciado a r
 | [`fase2/guia-evaluacion-local.md`](fase2/guia-evaluacion-local.md) | Guía de uso de la interfaz de evaluación, repetibilidad y limitaciones |
 | [`fase2/migracion-010.md`](fase2/migracion-010.md) | Migración 010 (local) y su recuperación |
 | [`fase2/propuesta-manual-v0.2.md`](fase2/propuesta-manual-v0.2.md) | Borrador (no aplicado) de revisión del manual tras el piloto: medida cercana, cláusulas presuposicionales, condiciones que recortan el alcance, citas |
+| [`fase2/prueba-recuperacion-v2.md`](fase2/prueba-recuperacion-v2.md) | Prueba local de la segmentación v2 de recuperación (B-2.0.0) sobre el piloto; `retriever-config-B2.json` |
 | [`fase2/migracion-011.md`](fase2/migracion-011.md) | Migración 011: adjudicación en sombra, catálogo de causas |
 | [`fase2/propuesta-area-online-evaluacion.md`](fase2/propuesta-area-online-evaluacion.md) | Área online con OTP (sustituida) |
 | [`fase2/propuesta-interfaz-evaluacion-humana.md`](fase2/propuesta-interfaz-evaluacion-humana.md) | Propuesta anterior (paquetes HTML), sustituida |
