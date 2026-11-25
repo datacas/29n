@@ -28,12 +28,14 @@ if (flag('freeze')) {
   console.log('Prompt congelado:', PROMPT_SHA.slice(0, 12)); process.exit(0)
 }
 const set = arg('set', 'S')
-const cells = (pack[set] ?? []).slice(0, +arg('limit', 1e9))
+const modality = String(arg('modality', 'B')).toUpperCase()  // A = evidencia de referencia + distractores; B = recuperación automática
+if (!['A', 'B'].includes(modality)) { console.error('--modality debe ser A o B'); process.exit(2) }
+const cells = (pack[set] ?? []).filter((c) => modality === 'B' || c.passagesA).map((c) => ({ ...c, passages: modality === 'A' ? c.passagesA : c.passagesB })).slice(0, +arg('limit', 1e9))
 const repeats = +arg('repeats', 2)
 const models = panel.filter((m) => (flag('include-retry') ? true : !m.retry))
 if (flag('dry-run')) {
   const c = cells[0]; const chars = (system('x') + userMsg(c)).length
-  console.log(JSON.stringify({ set, cells: cells.length, models: models.length, repeats, manualVersion: MANUAL_VERSION, promptSha: PROMPT_SHA.slice(0, 12), approxPromptChars: chars, llamadasTotales: cells.length * models.length * repeats, tokensEntradaAprox: Math.round((chars / 4) * cells.length * models.length * repeats), grupos: [...new Set(models.map((m) => m.group))] }, null, 1))
+  console.log(JSON.stringify({ set, modality, cells: cells.length, models: models.length, repeats, manualVersion: MANUAL_VERSION, promptSha: PROMPT_SHA.slice(0, 12), approxPromptChars: chars, llamadasTotales: cells.length * models.length * repeats, tokensEntradaAprox: Math.round((chars / 4) * cells.length * models.length * repeats), grupos: [...new Set(models.map((m) => m.group))] }, null, 1))
   console.log('\n--- Ejemplo de mensaje de usuario (celda 1) ---\n' + userMsg(c).slice(0, 700) + '…'); process.exit(0)
 }
 // ---- guardas ------------------------------------------------------------------------------------------------------
@@ -46,7 +48,7 @@ if (set === 'E') {
 const KEY = fs.readFileSync(process.env.OMNIROUTE_BENCH_KEY_FILE, 'utf8').trim()
 const scrub = (s) => String(s).split(KEY).join('<clave>').replace(/\b\d{4,}\*{3,}\w+/g, '<enmascarado>')
 const runId = crypto.randomUUID()
-const outFile = path.join(OUT, `benchmark_${set}_${new Date().toISOString().slice(0, 10)}.jsonl`)
+const outFile = path.join(OUT, `benchmark_${set}_${modality}_${new Date().toISOString().slice(0, 10)}.jsonl`)
 const done = new Set(fs.existsSync(outFile) ? fs.readFileSync(outFile, 'utf8').split('\n').filter(Boolean).map((l) => { const r = JSON.parse(l); return `${r.cellId}|${r.evaluator_label}|${r.repeat}` }) : [])
 const norm = (x) => String(x ?? '').toLowerCase().replace(/^@cf\//, '')
 const tail = (x) => norm(x).split('/').pop().replace(/:free$|-free$/, '')
@@ -55,7 +57,7 @@ const verifyQuote = (q, c) => { if (!q) return null; const f = flat(q), all = fl
 const VALID = { supports: [1, 2], opposes: [-2, -1], explicit_neutral: [0], not_mentioned: [null], ambiguous: [null] }
 
 async function one(m, c, repeat) {
-  const t0 = Date.now(); const rec = { run_id: runId, cellId: c.cellId, set, repeat, evaluator_label: m.label, evaluator_kind: 'ai', provider: m.group, model_family: m.vendor, model_requested: m.id, manual_version: MANUAL_VERSION, prompt_version: PROMPT_SHA.slice(0, 12), item_text_sha256: sha(c.item), blind: true, independent_of: [], stratum: c.stratum, party: c.party, language: c.language }
+  const t0 = Date.now(); const rec = { run_id: runId, cellId: c.cellId, set, modality, evidence_scope: modality === 'A' ? 'reference_evidence_plus_distractors' : 'passages_retrieved', repeat, evaluator_label: m.label, evaluator_kind: 'ai', provider: m.group, model_family: m.vendor, model_requested: m.id, manual_version: MANUAL_VERSION, prompt_version: PROMPT_SHA.slice(0, 12), item_text_sha256: sha(c.item), blind: true, independent_of: [], stratum: c.stratum, party: c.party, language: c.language }
   try {
     const r = await fetch('http://127.0.0.1:20128/v1/chat/completions', { method: 'POST', headers: { 'content-type': 'application/json', authorization: `Bearer ${KEY}` }, body: JSON.stringify({ model: m.id, temperature: 0, max_tokens: m.maxTokens ?? 800, messages: [{ role: 'system', content: system(crypto.randomUUID()) }, { role: 'user', content: userMsg(c) }] }), signal: AbortSignal.timeout(m.timeoutMs ?? +arg('timeout', 45000)) })
     const j = await r.json().catch(() => null); const content = j?.choices?.[0]?.message?.content ?? ''

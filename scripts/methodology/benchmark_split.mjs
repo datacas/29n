@@ -37,6 +37,6 @@ const E = take(evalCells, { positiva_2: 35, positiva_1: 25, negativa: 25, neutra
 const disjoint = ![...S, ...D].some((c) => E.some((e) => e.questionId === c.questionId))
 const sealed = crypto.createHash('sha256').update(JSON.stringify(E.map((c) => c.questionId + c.entityId))).digest('hex')
 const count = (a) => a.reduce((m, c) => ((m[c.stratum] = (m[c.stratum] ?? 0) + 1), m), {})
-const meta = { release: version, sha256: r._sha256, seed: SEED, cutQuestionsDev: cut, S: S.length, D: D.length, E: E.length, questionsDisjointDevVsEval: disjoint, eSealedSha256: sealed, strataS: count(S), strataD: count(D), strataE: count(E), note: 'E es candidato al piloto humano y NO se usa para ajustar prompts ni elegir modelos. Preguntas regionales excluidas del reparto.' }
+const meta = { devQuestionIds: [...devQ], evalQuestionIds: qs.filter((q) => !devQ.has(q.questionId)).map((q) => q.questionId), release: version, sha256: r._sha256, seed: SEED, cutQuestionsDev: cut, S: S.length, D: D.length, E: E.length, questionsDisjointDevVsEval: disjoint, eSealedSha256: sealed, strataS: count(S), strataD: count(D), strataE: count(E), note: 'E es candidato al piloto humano y NO se usa para ajustar prompts ni elegir modelos. Preguntas regionales excluidas del reparto.' }
 write('benchmark_split.json', { meta, S, D, E })
 console.log(JSON.stringify(meta, null, 1))

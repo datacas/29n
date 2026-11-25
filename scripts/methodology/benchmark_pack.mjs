@@ -1,63 +1,51 @@
-// Fase 1 · Paquete de entrada del benchmark reducido (solo lectura; NO llama a ningún modelo).
-// Para cada celda de S, D y E (benchmark_split.mjs) recupera los pasajes candidatos del programa del partido con BM25
-// sobre el texto del PDF (pdftotext), igual para todos los modelos. Mide además el recall de la recuperación contra la
-// página de la cita ya codificada (solo informativo; no entra en el prompt de ningún modelo).
+// Fase 1 · Paquete de entrada del benchmark reducido, v2 (solo lectura; NO llama a ningún modelo).
+// Dos modalidades por celda:
+//   B (extremo a extremo): K pasajes recuperados automáticamente (BM25 con lematización ligera + consulta ampliada por ítem).
+//   A (evidencia de referencia): para celdas con cita registrada y verificada en el PDF, la cita (pasaje que la contiene)
+//     mezclada con K-1 pasajes de B como distractores, en orden determinista (la referencia NO va siempre la primera).
+//     La cita registrada NO es referencia dorada independiente: solo garantiza que la evidencia candidata está presente.
+// Para las celdas sin posición registrada no hay referencia: solo existe B (y la modalidad A no las puntúa).
+// La expansión por ítem la genera un modelo gratuito con un prompt fijo (docs/methodology/local/gen_expansions.mjs). Sin expansión → falla.
 import fs from 'node:fs'
 import path from 'node:path'
-import { execFileSync } from 'node:child_process'
-import { loadRelease, ROOT, OUT, write } from './lib.mjs'
+import { loadRelease, ROOT, OUT, write, rng, usable } from './lib.mjs'
+import { tokens, loadProgram, buildIndex, bm25, quoteHit } from './retrieval.mjs'
 
 const version = process.argv[2] ?? '2.1.2'
-const K = +(process.argv[3] ?? 6)
+const K = +(process.argv[3] ?? 15)
 const r = loadRelease(version)
 const split = JSON.parse(fs.readFileSync(path.join(OUT, 'benchmark_split.json'), 'utf8'))
-const programs = (await import(path.join(ROOT, 'app/lib/programs.ts').replace(/\.ts$/, '.ts')).catch(() => null))
-const PROGRAMS = programs?.PROGRAMS ?? JSON.parse(fs.readFileSync(path.join(ROOT, 'docs/programas/parties.json'), 'utf8')).map?.((p) => p) ?? []
+const expFile = path.join(OUT, process.env.EXPANSIONS ?? 'expansions_dev.json')
+const EXP = fs.existsSync(expFile) ? JSON.parse(fs.readFileSync(expFile, 'utf8')) : {}
+const { PROGRAMS } = await import(path.join(ROOT, 'app/lib/programs.ts'))
 const byName = Object.fromEntries(PROGRAMS.map((p) => [p.name, p]))
-const STOP = new Set('de la el los las un una unos unas y o u e en a al del por para con sin que se su sus lo le les como más mas ser debe deben debería hacia sobre entre este esta estos estas ese esa es son ha han hay no si sí'.split(' '))
-const toks = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ\s]/g, ' ').split(/\s+/).filter((w) => w.length > 2 && !STOP.has(w))
-
-const cache = {}
-function index(name) {
-  if (cache[name]) return cache[name]
-  const prog = byName[name]
-  if (!prog) throw new Error(`Sin programa para ${name}`)
-  const pdf = path.join(ROOT, 'app/public/programas', prog.file)
-  const text = execFileSync('pdftotext', ['-enc', 'UTF-8', pdf, '-'], { maxBuffer: 256 * 1024 * 1024 }).toString()
-  const docs = []
-  text.split('\f').forEach((pg, i) => {
-    let buf = ''
-    for (const para of pg.split(/\n\s*\n/)) {
-      const t = para.replace(/\s+/g, ' ').trim()
-      if (!t) continue
-      buf = buf ? buf + ' ' + t : t
-      if (buf.length >= 350) { docs.push({ page: i + 1, text: buf }); buf = '' }
-    }
-    if (buf.length > 60) docs.push({ page: i + 1, text: buf })
-  })
-  const tf = docs.map((d) => { const m = new Map(); for (const w of toks(d.text)) m.set(w, (m.get(w) ?? 0) + 1); return m })
-  const df = new Map(); tf.forEach((m) => m.forEach((_, w) => df.set(w, (df.get(w) ?? 0) + 1)))
-  const len = tf.map((m) => [...m.values()].reduce((a, b) => a + b, 0)); const avg = len.reduce((a, b) => a + b, 0) / len.length
-  return (cache[name] = { docs, tf, df, len, avg, N: docs.length, language: prog.language, file: prog.file })
-}
-function search(ix, query, k) {
-  const q = [...new Set(toks(query))]; const k1 = 1.5, b = 0.75
-  const sc = ix.docs.map((_, i) => { let s = 0; for (const w of q) { const f = ix.tf[i].get(w); if (!f) continue; const idf = Math.log(1 + (ix.N - (ix.df.get(w) ?? 0) + 0.5) / ((ix.df.get(w) ?? 0) + 0.5)); s += (idf * f * (k1 + 1)) / (f + k1 * (1 - b + (b * ix.len[i]) / ix.avg)) } return [s, i] })
-  return sc.sort((a, b) => b[0] - a[0]).slice(0, k).filter(([s]) => s > 0).map(([s, i]) => ({ page: ix.docs[i].page, score: +s.toFixed(2), text: ix.docs[i].text.slice(0, 1200) }))
-}
 const qd = Object.fromEntries(r.questions.map((q) => [q.questionId, q]))
 const ed = Object.fromEntries(r.entities.map((e) => [e.entityId, e]))
 const posOf = new Map(r.positions.map((p) => [p.questionId + '|' + p.entityId, p]))
-const pack = { meta: { release: version, sha256: r._sha256, k: K, retrieval: 'BM25 por párrafo; consulta = texto del ítem; idéntico para todos los modelos', splitMeta: split.meta }, S: [], D: [], E: [] }
-const recall = { S: [0, 0], D: [0, 0], E: [0, 0] }
-for (const set of ['S', 'D', 'E']) for (const c of split[set]) {
-  const q = qd[c.questionId], e = ed[c.entityId]; const ix = index(e.name)
-  const passages = search(ix, q.canonicalText, K)
-  const p = posOf.get(c.questionId + '|' + c.entityId); const page = p?.evidence?.[0]?.page ?? p?.claimPage ?? null
-  if (page) { recall[set][1]++; if (passages.some((x) => Math.abs(x.page - page) <= 1)) recall[set][0]++ }
-  pack[set].push({ cellId: `${c.questionId}|${c.entityId}`, set, party: e.name, language: ix.language, item: q.canonicalText, context: q.contextText ?? '', passages, stratum: c.stratum })
+const prog = {}
+const P = (name) => (prog[name] ??= (() => { const raw = loadProgram(byName[name]); return { language: raw.language, ix: buildIndex(raw.paras, { stemming: true }) } })())
+const hash = (s) => [...s].reduce((a, c) => (Math.imul(a, 31) + c.charCodeAt(0)) >>> 0, 7)
+const sets = process.env.SETS ? process.env.SETS.split(',') : ['S', 'D', 'E']
+const pack = { meta: { release: version, sha256: r._sha256, retriever: 'V7: BM25 lematizado, consulta = pregunta + contexto + términos del ítem', k: K, expansionsFile: path.basename(expFile), splitMeta: split.meta, generado: sets }, S: [], D: [], E: [] }
+const rec = { S: [0, 0, 0], D: [0, 0, 0], E: [0, 0, 0] }
+for (const set of sets) for (const c of split[set]) {
+  const q = qd[c.questionId], e = ed[c.entityId], px = P(e.name)
+  const ex = EXP[c.questionId]; if (!ex?.terms) throw new Error(`Sin expansión para ${c.questionId} (${set}); genérala con el mismo prompt antes de empaquetar`)
+  const qt = tokens(q.canonicalText + ' ' + (q.contextText ?? '') + ' ' + ex.terms.join(' '), { stemming: true })
+  const ranked = bm25(px.ix, qt, 400)
+  const B = ranked.slice(0, K).map((x) => ({ i: x.i, page: px.ix.docs[x.i].page, score: +x.s.toFixed(2), text: px.ix.docs[x.i].text.slice(0, 1200) }))
+  const p = posOf.get(c.questionId + '|' + c.entityId); const quotes = (p && usable(p) ? p.evidence ?? [] : []).filter((x) => x.text)
+  let A = null, refIdx = null
+  if (quotes.length) {
+    const hit = ranked.find((x) => quotes.some((qq) => quoteHit(px.ix.docs[x.i], qq.text, qq.page)))
+    if (hit) { refIdx = hit.i; const rest = B.filter((b) => b.i !== refIdx).slice(0, K - 1); const ref = { i: refIdx, page: px.ix.docs[refIdx].page, score: null, text: px.ix.docs[refIdx].text.slice(0, 1200) }
+      const all = [...rest, ref]; const rnd = rng(hash(c.questionId + c.entityId)); for (let k = all.length - 1; k > 0; k--) { const j = Math.floor(rnd() * (k + 1)); [all[k], all[j]] = [all[j], all[k]] }
+      A = all.map(({ i, ...x }) => x) }
+    rec[set][0]++; if (B.some((b) => quotes.some((qq) => quoteHit(px.ix.docs[b.i], qq.text, qq.page)))) rec[set][1]++; if (!hit) rec[set][2]++
+  }
+  pack[set].push({ cellId: `${c.questionId}|${c.entityId}`, set, party: e.name, language: px.language, item: q.canonicalText, context: q.contextText ?? '', stratum: c.stratum, passagesB: B.map(({ i, ...x }) => x), passagesA: A, referenceVerified: refIdx !== null, evidence_scope: { B: 'passages_retrieved', A: A ? 'reference_evidence_plus_distractors' : null } })
 }
-pack.meta.retrievalRecallPageWithinOne = Object.fromEntries(Object.entries(recall).map(([k, [a, b]]) => [k, b ? +(a / b).toFixed(3) : null]))
-pack.meta.cells = { S: pack.S.length, D: pack.D.length, E: pack.E.length }
+pack.meta.cells = Object.fromEntries(sets.map((s) => [s, pack[s].length]))
+pack.meta.coherencia = Object.fromEntries(sets.map((s) => [s, { celdasConCita: rec[s][0], retriever_recall_cita: rec[s][0] ? +(rec[s][1] / rec[s][0]).toFixed(3) : null, citaSinPasajeVerificable: rec[s][2] }]))
 write('benchmark_pack.json', pack)
-console.log(JSON.stringify(pack.meta, null, 1).slice(0, 900))
+console.log(JSON.stringify(pack.meta.cells), JSON.stringify(pack.meta.coherencia))
