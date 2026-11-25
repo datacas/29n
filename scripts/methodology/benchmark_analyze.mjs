@@ -14,7 +14,7 @@ const flatQ = (x) => String(x).toLowerCase().normalize('NFD').replace(/[\u0300-\
 let retrievalHit = null
 if (arg('pack', false)) { const pk = JSON.parse(fs.readFileSync(path.join(OUT, String(arg('pack'))), 'utf8')); const rel = loadRelease('2.1.2'); const pm = new Map(rel.positions.map((p) => [p.questionId + '|' + p.entityId, p])); retrievalHit = {}
   for (const c of pk[arg('set', 'S')] ?? []) { const q = pm.get(c.cellId)?.evidence?.[0]?.text; if (!q) continue; const w = flatQ(q).split(' ').filter((x) => x.length > 3); const all = flatQ(c.passagesB.map((p) => p.text).join(' ')); retrievalHit[c.cellId] = w.length > 0 && w.filter((x) => all.includes(x)).length / w.length >= 0.8 } }
-const recsAll = fs.readFileSync(file, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
+const recsAll = fs.readFileSync(file, 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l)).map((r) => (r.execution_status === 'invalid_output' && r.error_detail === 'respuesta vacía' && !r.usage?.total_tokens && r.via === 'cli' ? { ...r, execution_status: 'rate_limited', reclasificado: 'salida vacía de CLI sin uso de tokens = límite de cuota (verificado manualmente: provider.free-limit)' } : r))
 // Intentos hechos con una configuración técnica anterior (otro max_tokens) se excluyen y se informan aparte (desviación documentada en panel.json).
 const panelFile = path.join(path.dirname(new URL(import.meta.url).pathname), '../../docs/methodology/local/panel.json')
 const panelM = fs.existsSync(panelFile) ? Object.fromEntries(JSON.parse(fs.readFileSync(panelFile, 'utf8')).models.map((m) => [m.label, m])) : {}
