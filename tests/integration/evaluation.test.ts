@@ -9,6 +9,7 @@ import { Pool } from 'pg'
 import {
   EvalError, resolveEvaluator, listCampaigns, listCells, getCell, saveDraft, finalizeEvaluation, requestContext, resolveContextRequest
 } from '../../app/server/utils/evaluation'
+import { listQueue, getAdjudication, saveAdjudication } from '../../app/server/utils/adjudication'
 
 let pool: Pool
 beforeAll(() => { pool = new Pool({ connectionString: process.env.TEST_DATABASE_URL || 'postgresql://app:password@localhost:5433/affinity_test' }) })
@@ -309,14 +310,77 @@ describe('Auditoría', () => {
   })
 })
 
-describe('Adjudicación separada', () => {
-  it('no se puede adjudicar una celda sin haber finalizado antes la evaluación propia', async () => {
-    const f = await fixture()
-    await expect(q(`INSERT INTO eval_adjudications (cell_id, adjudicator_id, document_class, intensity, rationale) VALUES ($1,$2,'supports',1,'x')`, [f.cell, f.ev.id])).rejects.toThrow(/finalizar la evaluación propia/)
-    const s = await saveDraft(pool, f.ev as any, f.camp, f.cell, 0, complete(f))
-    await expect(q(`INSERT INTO eval_adjudications (cell_id, adjudicator_id, document_class, intensity, rationale) VALUES ($1,$2,'supports',1,'x')`, [f.cell, f.ev.id])).rejects.toThrow()
-    await finalizeEvaluation(pool as any, f.ev as any, f.camp, f.cell, s.version, 1)
-    await q(`INSERT INTO eval_adjudications (cell_id, adjudicator_id, document_class, intensity, rationale) VALUES ($1,$2,'supports',1,'x')`, [f.cell, f.ev.id])
-    await expect(q('UPDATE eval_adjudications SET rationale = $1 WHERE cell_id = $2', ['y', f.cell])).rejects.toThrow()
+describe('Adjudicación en sombra', () => {
+  const base = { causes: ['omitted_position'], rationale: 'Verificado en el programa original', expectedRevision: 0 }
+  async function queued(f: F, finalize = true) {
+    await q(`INSERT INTO eval_adjudication_items (cell_id, priority, reasons, dossier) VALUES ($1,1,ARRAY['prueba'],'{"ord":1}')`, [f.cell])
+    if (finalize) { const s = await saveDraft(pool, f.ev as any, f.camp, f.cell, 0, complete(f)); await finalizeEvaluation(pool as any, f.ev as any, f.camp, f.cell, s.version, 1) }
+  }
+
+  it('exige haber finalizado la evaluación propia: sin ella 403 en el servidor y rechazo en la BD', async () => {
+    const f = await fixture(); await queued(f, false)
+    await fail(getAdjudication(pool, f.ev as any, f.cell), 403)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, base), 403)
+    await expect(q(`INSERT INTO eval_adjudications (cell_id, adjudicator_id, rationale, causes) VALUES ($1,$2,'x',ARRAY['other'])`, [f.cell, f.ev.id])).rejects.toThrow()
+  })
+
+  it('solo las celdas de la cola se adjudican; otro evaluador no puede', async () => {
+    const f = await fixture(); const g = await fixture()
+    const s = await saveDraft(pool, f.ev as any, f.camp, f.cell, 0, complete(f)); await finalizeEvaluation(pool as any, f.ev as any, f.camp, f.cell, s.version, 1)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, base), 404)           // finalizada pero fuera de la cola
+    await queued(g)
+    await fail(getAdjudication(pool, f.ev as any, g.cell), 403)                    // ajena: no hay evaluación propia
+    expect((await listQueue(pool, f.ev as any)).items).toHaveLength(0)
+  })
+
+  it('registra varias causas, justificación, evidencia y versiones; es de solo añadir y con revisiones consecutivas', async () => {
+    const f = await fixture(); await queued(f)
+    const r1 = await saveAdjudication(pool, f.ev as any, f.cell, { ...base, documentClass: 'opposes', intensity: -1, causes: ['omitted_position', 'intensity_error'], proposedAction: 'add_position', evidence: [{ page: 5, text: 'cita verificada', source: 'programa original' }] })
+    expect(r1.revision).toBe(1)
+    const r2 = await saveAdjudication(pool, f.ev as any, f.cell, { ...base, expectedRevision: 1, documentClass: 'opposes', intensity: -2, causes: ['intensity_error'] })
+    expect(r2.revision).toBe(2)
+    const view = await getAdjudication(pool, f.ev as any, f.cell)
+    expect(view.history.map((h: any) => h.revision)).toEqual([2, 1])                // la anterior se conserva
+    expect(view.history[1]).toMatchObject({ documentClass: 'opposes', intensity: -1, causes: ['omitted_position', 'intensity_error'], proposedAction: 'add_position', manualVersion: '0.1-test', cellVersion: 1, applied: false })
+    const { rows: [row] } = await q('SELECT own_coding_id, applied FROM eval_adjudications WHERE cell_id = $1 AND revision = 1', [f.cell])
+    expect(row.own_coding_id).toBeTruthy(); expect(row.applied).toBe(false)
+    await expect(q('UPDATE eval_adjudications SET rationale = $1 WHERE cell_id = $2', ['x', f.cell])).rejects.toThrow()
+    await expect(q('DELETE FROM eval_adjudications WHERE cell_id = $1', [f.cell])).rejects.toThrow()
+    const q1 = await listQueue(pool, f.ev as any)
+    expect(q1.items[0]).toMatchObject({ status: 'adjudicada', revision: 2, causes: ['intensity_error'] }); expect(q1.causeCounts).toEqual({ intensity_error: 1 })
+  })
+
+  it('valida causas (al menos una, del catálogo, «otra» con texto), clase/intensidad coherentes y justificación', async () => {
+    const f = await fixture(); await queued(f)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, causes: [] }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, causes: ['mayoria'] }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, causes: ['other'] }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, causes: ['other'], otherCauseText: '  ' }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, documentClass: 'supports', intensity: -1 }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, documentClass: 'supports', intensity: null }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, intensity: 1 }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, rationale: '   ' }), 400)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, { ...base, proposedAction: 'aplicar_ya' }), 400)
+    expect((await saveAdjudication(pool, f.ev as any, f.cell, { ...base, causes: ['other'], otherCauseText: 'motivo propio' })).revision).toBe(1)
+    // sin resolver: sin clase y con desacuerdo razonable (no se impone ninguna mayoría)
+    expect((await saveAdjudication(pool, f.ev as any, f.cell, { ...base, expectedRevision: 1, causes: ['reasonable_disagreement'] })).revision).toBe(2)
+  })
+
+  it('revisiones concurrentes o dobles envíos: solo uno prospera', async () => {
+    const f = await fixture(); await queued(f)
+    const r = await Promise.allSettled(Array.from({ length: 5 }, () => saveAdjudication(pool, f.ev as any, f.cell, base)))
+    expect(r.filter((x) => x.status === 'fulfilled')).toHaveLength(1)
+    expect(r.filter((x) => x.status === 'rejected').every((x: any) => x.reason instanceof EvalError && x.reason.status === 409)).toBe(true)
+    await fail(saveAdjudication(pool, f.ev as any, f.cell, base), 409)             // revisión esperada obsoleta
+  })
+
+  it('no altera positions ni las evaluaciones originales (en sombra, applied=false)', async () => {
+    const f = await fixture(); await queued(f)
+    const snap = async () => (await q(`SELECT (SELECT count(*) FROM positions)::int AS p, (SELECT md5(coalesce(string_agg(p::text, '|' ORDER BY id::text), '')) FROM positions p) AS ph,
+      (SELECT md5(string_agg(c::text, '|' ORDER BY id::text)) FROM position_codings c WHERE evaluator_id = $1) AS ch`, [f.ev.id])).rows[0]
+    const before = await snap()
+    await saveAdjudication(pool, f.ev as any, f.cell, { ...base, documentClass: 'not_mentioned', causes: ['unsupported_registered_position'], proposedAction: 'remove_registered' })
+    expect(await snap()).toEqual(before)
+    await expect(q('UPDATE eval_adjudications SET applied = true WHERE cell_id = $1', [f.cell])).rejects.toThrow()
   })
 })
