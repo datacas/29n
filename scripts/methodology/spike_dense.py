@@ -6,12 +6,14 @@ Referencia = párrafos que contienen la cita REGISTRADA (no independiente; no es
 Uso: python spike_dense.py <modelo_hf> [--prefix-e5]    Cachea los embeddings por (modelo, huella del corpus)."""
 import json, sys, time, hashlib, resource, pathlib
 import numpy as np
+import torch
+DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'   # usa la GPU si el entorno la ve (WSL2 + CUDA); si no, CPU
 from sentence_transformers import SentenceTransformer
 
 model_name = sys.argv[1]; e5 = ('e5' in model_name.lower())
 base = pathlib.Path('docs/methodology/local/out/spike'); data = json.load(open(base / 'cells.json')); cells = data['cells']; meta = data['meta']
 KS = [6, 10, 15, 20]; C = 60
-t0 = time.time(); model = SentenceTransformer(model_name, device='cpu'); model.max_seq_length = 512; load_s = time.time() - t0
+t0 = time.time(); model = SentenceTransformer(model_name, device=DEVICE); model.max_seq_length = 512; load_s = time.time() - t0
 qp, pp = ('query: ', 'passage: ') if e5 else ('', '')
 tag = model_name.replace('/', '_'); cdir = base / 'cache'; cdir.mkdir(exist_ok=True)
 emb = {}; enc_s = 0.0
@@ -21,7 +23,7 @@ for party, info in meta['parties'].items():
     if f.exists(): emb[party] = np.load(f)
     else:
         t = time.time(); emb[party] = model.encode([pp + x for x in texts], batch_size=16, normalize_embeddings=True, show_progress_bar=False).astype(np.float32); enc_s += time.time() - t; np.save(f, emb[party])
-manifest = {'model': model_name, 'dim': int(next(iter(emb.values())).shape[1]), 'corpus_passages': meta['totalPassages'], 'corpus_sha': meta['corpusSha'][:16], 'encode_seconds_this_run': round(enc_s, 1), 'load_seconds': round(load_s, 1), 'device': 'cpu', 'max_seq_length': 512}
+manifest = {'model': model_name, 'dim': int(next(iter(emb.values())).shape[1]), 'corpus_passages': meta['totalPassages'], 'corpus_sha': meta['corpusSha'][:16], 'encode_seconds_this_run': round(enc_s, 1), 'load_seconds': round(load_s, 1), 'device': DEVICE, 'max_seq_length': 512}
 passages = {p: [x['text'] for x in json.load(open(base / f"passages_{i['slug']}.json"))] for p, i in meta['parties'].items()}
 
 def rrf(lists, k=200):

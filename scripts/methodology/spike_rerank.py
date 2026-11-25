@@ -4,15 +4,17 @@ BM25 V7 + BGE-M3 (RRF). Solo preguntas de desarrollo; E no interviene. El reorde
 Referencia = párrafos con la cita registrada (no independiente)."""
 import json, sys, time, hashlib, pathlib, resource
 import numpy as np
+import torch
+DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'   # usa la GPU si el entorno la ve (WSL2 + CUDA); si no, CPU
 from sentence_transformers import SentenceTransformer, CrossEncoder
 base = pathlib.Path('docs/methodology/local/out/spike'); data = json.load(open(base / 'cells.json')); meta = data['meta']; cells = [c for c in data['cells'] if c['hit_idx']]
 RR = sys.argv[1] if len(sys.argv) > 1 else 'BAAI/bge-reranker-v2-m3'; POOL = 25; KS = [6, 10, 15]; C = 60
-emb_model = SentenceTransformer('BAAI/bge-m3', device='cpu'); emb_model.max_seq_length = 512
+emb_model = SentenceTransformer('BAAI/bge-m3', device=DEVICE); emb_model.max_seq_length = 512
 emb = {}; passages = {}
 for party, info in meta['parties'].items():
     texts = [p['text'] for p in json.load(open(base / f"passages_{info['slug']}.json"))]; passages[party] = texts
     key = hashlib.sha256(('BAAI/bge-m3' + '\n' + '\n'.join(texts)).encode()).hexdigest()[:16]; emb[party] = np.load(base / 'cache' / f"BAAI_bge-m3_{info['slug']}_{key}.npy")
-ce = CrossEncoder(RR, device='cpu', max_length=512)
+ce = CrossEncoder(RR, device=DEVICE, max_length=512)
 def rrf(lists, k=200):
     s = {}
     for l in lists:

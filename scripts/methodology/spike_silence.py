@@ -5,7 +5,7 @@ sobre apoyo u oposición. Candidatas a una futura auditoría de silencio documen
 import json, pathlib, numpy as np
 from sentence_transformers import SentenceTransformer
 base = pathlib.Path('docs/methodology/local/out/spike'); data = json.load(open(base / 'cells.json')); meta = data['meta']; cells = data['cells']; sil = json.load(open(base / 'silence.json'))
-model = SentenceTransformer('BAAI/bge-m3', device='cpu'); model.max_seq_length = 512
+model = SentenceTransformer('BAAI/bge-m3', device=DEVICE); model.max_seq_length = 512
 import hashlib
 emb = {}
 for party, info in meta['parties'].items():
