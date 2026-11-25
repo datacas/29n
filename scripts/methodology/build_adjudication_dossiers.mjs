@@ -3,7 +3,8 @@
 //   node scripts/methodology/build_adjudication_dossiers.mjs            # simulación: muestra la cola
 //   node scripts/methodology/build_adjudication_dossiers.mjs --apply    # escribe/actualiza eval_adjudication_items (el expediente se puede reconstruir; las adjudicaciones no se tocan)
 // Alcance (decidido por el responsable): celdas con discrepancia entre el humano interno y los 3 evaluadores de IA completos, posibles posiciones omitidas
-// (sin posición registrada pero con posición según el humano) y diferencias de intensidad con la referencia (mismo signo, distinta intensidad). Sin duplicados.
+// (sin posición registrada pero con posición según el humano), diferencias de intensidad con la referencia (mismo signo, distinta intensidad) y posiciones registradas
+// que el humano no encuentra en los pasajes (patrón de la celda 16; añadido por el responsable). Sin duplicados.
 import fs from 'node:fs'
 import path from 'node:path'
 import pg from 'pg'
@@ -43,6 +44,7 @@ for (const h of hum) {
   if (!ref.present && hc && hc !== 'not_mentioned') { reasons.push('posible posición omitida (sin posición registrada; el humano encuentra una)'); disc.push(`Sin posición registrada; humano: ${hc} ${h.intensity ?? ''}`) }
   if (ref.present && hc && sign(hc) !== 0 && sign(hc) === Math.sign(ref.value) && Math.abs(ref.value) !== Math.abs(h.intensity)) { reasons.push('diferencia de intensidad con la referencia (mismo signo)'); disc.push(`Intensidad: humano ${h.intensity}; referencia ${ref.value}`) }
   if (ref.present && hc && sign(hc) !== Math.sign(ref.value) && (hc === 'supports' || hc === 'opposes')) disc.push('Signo distinto respecto de la referencia provisional')
+  if (ref.present && hc === 'not_mentioned') { if (!reasons.length || !reasons.some((r) => r.startsWith('posición registrada'))) reasons.push('posición registrada que el humano no encuentra en los pasajes (sin respaldo aparente)') }
   if (ref.present && hc === 'not_mentioned') disc.push(`La referencia registra una posición (${ref.value}, ${ref.stanceStatus}); el humano no la encuentra en los pasajes dados`)
   if (!reasons.length) continue
 
@@ -69,7 +71,7 @@ for (const h of hum) {
   queue.push({ cellId: h.cell_id, ord: h.ord, reasons, dossier })
 }
 // Prioridad indicada por el responsable: 16, 12, 6, 15, 3, 19, 7, 10 (resto, por orden de celda)
-const PRIO = [16, 12, 6, 15, 3, 19, 7, 10]
+const PRIO = [16, 12, 6, 15, 3, 19, 7, 10, 2]   // la celda 2 se añadió después (mismo patrón que la 16), al final de la cola
 queue.sort((a, b) => { const pa = PRIO.indexOf(a.ord), pb = PRIO.indexOf(b.ord); return (pa < 0 ? 99 : pa) - (pb < 0 ? 99 : pb) || a.ord - b.ord })
 console.log(`Cola: ${queue.length} celdas →`, queue.map((q, i) => `${i + 1}. celda ${q.ord} [${q.reasons.map((r) => r.split(' ')[0]).join('/')}]`).join('; '))
 if (!APPLY) { console.log('Simulación: no se ha escrito nada. Usa --apply.'); await pool.end(); process.exit(0) }
