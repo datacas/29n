@@ -48,14 +48,15 @@ if (set === 'E') {
 const KEY = fs.readFileSync(process.env.OMNIROUTE_BENCH_KEY_FILE, 'utf8').trim()
 const scrub = (s) => String(s).split(KEY).join('<clave>').replace(/\b\d{4,}\*{3,}\w+/g, '<enmascarado>')
 const runId = crypto.randomUUID()
-const outFile = path.join(OUT, `benchmark_${set}_${modality}_${new Date().toISOString().slice(0, 10)}.jsonl`)
+const outFile = path.join(OUT, `benchmark_${set}_${modality}.jsonl`) // nombre estable: la reanudación no depende de la fecha
 const MAX_ATTEMPTS = +arg('max-attempts', 3)            // intentos totales por (celda, modelo, repetición), entre reanudaciones
 const BREAKER = +arg('breaker', 6)                      // fallos técnicos seguidos que detienen un proveedor
 const BUDGETS = { ...(JSON.parse(fs.readFileSync(path.join(LOCAL, 'panel.json'), 'utf8')).budgets ?? {}) }
 if (arg('budget-tokens-per-group', false)) for (const g of Object.keys(BUDGETS)) BUDGETS[g] = +arg('budget-tokens-per-group')
 // Reanudación: se lee el fichero de resultados. Se omite lo ya terminado (ok o resultado del modelo) y lo que agotó intentos;
 // se reintenta solo lo técnico transitorio (timeout, rate_limited, api_error 5xx/sin respuesta). Nunca se duplica una llamada completada.
-const RETRYABLE = (r) => ['timeout', 'rate_limited'].includes(r.execution_status) || (r.execution_status === 'api_error' && (!r.http_status || r.http_status >= 500))
+// Un fallback es una respuesta de OTRO modelo: se conserva (se excluye de las métricas) pero la celda se reintenta.
+const RETRYABLE = (r) => r.fallback_used === true || r.cache_hit === true || ['timeout', 'rate_limited'].includes(r.execution_status) || (r.execution_status === 'api_error' && (!r.http_status || r.http_status >= 500))
 const prior = new Map()
 if (fs.existsSync(outFile)) for (const l of fs.readFileSync(outFile, 'utf8').split('\n').filter(Boolean)) { const r = JSON.parse(l); if (r.halted) continue; const k = `${r.cellId}|${r.evaluator_label}|${r.repeat}`; const o = prior.get(k) ?? { attempts: 0, final: false }; o.attempts++; if (!RETRYABLE(r)) o.final = true; prior.set(k, o) }
 const todo = (m, c, k) => { const o = prior.get(`${c.cellId}|${m.label}|${k}`); return !o || (!o.final && o.attempts < MAX_ATTEMPTS) }
@@ -67,7 +68,7 @@ const VALID = { supports: [1, 2], opposes: [-2, -1], explicit_neutral: [0], not_
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 async function call(m, c) {
-  const r = await fetch('http://127.0.0.1:20128/v1/chat/completions', { method: 'POST', headers: { 'content-type': 'application/json', authorization: `Bearer ${KEY}` }, body: JSON.stringify({ model: m.id, temperature: 0, max_tokens: m.maxTokens ?? 800, messages: [{ role: 'system', content: system(crypto.randomUUID()) }, { role: 'user', content: userMsg(c) }] }), signal: AbortSignal.timeout(m.timeoutMs ?? +arg('timeout', 45000)) })
+  const r = await fetch('http://127.0.0.1:20128/v1/chat/completions', { method: 'POST', headers: { 'content-type': 'application/json', authorization: `Bearer ${KEY}`, 'x-omniroute-no-memory': '1' }, body: JSON.stringify({ model: m.id, temperature: 0, max_tokens: m.maxTokens ?? 800, messages: [{ role: 'system', content: system(crypto.randomUUID()) }, { role: 'user', content: userMsg(c) }] }), signal: AbortSignal.timeout(m.timeoutMs ?? +arg('timeout', 45000)) })
   return { r, j: await r.json().catch(() => null) }
 }
 async function one(m, c, repeat) {
@@ -80,8 +81,11 @@ async function one(m, c, repeat) {
       const ra = +res.r.headers.get('retry-after') || 20; await sleep(Math.min(ra, 60) * 1000)
     }
     const { r, j } = res; const content = j?.choices?.[0]?.message?.content ?? ''
-    rec.latency_ms = Date.now() - t0; rec.model_actual = j?.model ?? null; rec.usage = j?.usage ?? {}; rec.http_status = r.status
+    rec.latency_ms = Date.now() - t0; rec.finish_reason = j?.choices?.[0]?.finish_reason ?? null; rec.model_actual = j?.model ?? null; rec.usage = j?.usage ?? {}; rec.http_status = r.status
     rec.rate_headers = Object.fromEntries([...r.headers].filter(([k]) => /ratelimit|retry-after/i.test(k)))
+    const H = (k) => r.headers.get(k); rec.omniroute = { cache: H('x-omniroute-cache'), cache_hit: H('x-omniroute-cache-hit'), model: H('x-omniroute-model'), provider: H('x-omniroute-provider'), cost_usd: H('x-omniroute-response-cost'), decision: H('x-omniroute-decision'), request_id: H('x-omniroute-request-id') }
+    rec.cache_hit = H('x-omniroute-cache-hit') === 'true'; rec.cost_nonzero = Number(H('x-omniroute-response-cost') ?? 0) > 0
+    if (H('x-omniroute-model')) rec.model_actual = H('x-omniroute-model')
     rec.fallback_used = r.status === 200 ? !norm(j?.model).includes(tail(m.id)) : null
     if (r.status === 429) rec.execution_status = 'rate_limited'
     else if (r.status >= 400) { rec.execution_status = 'api_error'; rec.error_detail = scrub(JSON.stringify(j)).slice(0, 220) }
@@ -89,7 +93,7 @@ async function one(m, c, repeat) {
     else {
       let p = null; try { p = JSON.parse(String(content).replace(/^\s*```(json)?|```\s*$/g, '').trim()) } catch {}
       const okShape = p && p.document_class in VALID && VALID[p.document_class].includes(p.intensity ?? null)
-      if (!okShape) { rec.execution_status = 'invalid_output'; rec.error_detail = content ? 'JSON o valores no válidos' : 'respuesta vacía (¿solo razonamiento?)' }
+      if (!okShape) { rec.execution_status = 'invalid_output'; rec.error_detail = content ? 'JSON o valores no válidos' : 'respuesta vacía (¿solo razonamiento?)'; rec.raw_preview = scrub(content || JSON.stringify(j?.choices?.[0]?.message ?? {})).slice(0, 300) }
       else { rec.execution_status = 'ok'; Object.assign(rec, { document_class: p.document_class, intensity: p.intensity ?? null, quote: p.quote ?? null, page: p.page ?? null, rationale: String(p.rationale ?? '').slice(0, 400), quote_verified: verifyQuote(p.quote, c) }) }
     }
   } catch (e) { rec.latency_ms = Date.now() - t0; rec.execution_status = /timeout|abort/i.test(e.name + e.message) ? 'timeout' : 'api_error'; rec.error_detail = scrub(e.message).slice(0, 160) }
@@ -101,11 +105,15 @@ const only = arg('models', false) ? String(arg('models')).split(',') : null
 const groups = {}; for (const m of models) if (!only || only.includes(m.label)) (groups[m.group] ??= []).push(m)
 const summary = {}
 await Promise.all(Object.entries(groups).map(async ([g, ms]) => {
-  let streak = 0, used = 0; const sm = (summary[g] = { llamadas: 0, ok: 0, fallos: 0, omitidas: 0, parada: null })
+  let streak = 0, used = 0, delay = 0; const sm = (summary[g] = { llamadas: 0, ok: 0, fallos: 0, omitidas: 0, parada: null })
   outer: for (const m of ms) for (const c of cells) for (let k = 1; k <= repeats; k++) {
     if (!todo(m, c, k)) { sm.omitidas++; continue }
     if (BUDGETS[g] && used >= BUDGETS[g]) { sm.parada = `presupuesto de tokens agotado (${used}/${BUDGETS[g]})`; break outer }
-    const rec = await one(m, c, k); sm.llamadas++; used += rec.usage?.total_tokens ?? Math.round((system('x').length + userMsg(c).length) / 4)
+    if (delay) await sleep(delay)
+    const rec = await one(m, c, k); sm.llamadas++;
+    // Ritmo adaptativo por proveedor: ante un 429 o un fallback se espera más (hasta 60 s); tras éxitos limpios se acorta.
+    delay = (rec.execution_status === 'rate_limited' || rec.fallback_used) ? Math.min(Math.max(delay * 2, 8000), 60000) : rec.execution_status === 'ok' ? Math.floor(delay * 0.7) : delay; used += rec.usage?.total_tokens ?? Math.round((system('x').length + userMsg(c).length) / 4)
+    if (rec.cost_nonzero) { sm.parada = `coste distinto de cero detectado (${rec.omniroute?.cost_usd} USD): parada inmediata`; break outer }
     if (rec.execution_status === 'ok') { sm.ok++; streak = 0 } else { sm.fallos++; if (['api_error', 'timeout', 'rate_limited'].includes(rec.execution_status)) streak++; if (streak >= BREAKER) { sm.parada = `interruptor: ${BREAKER} fallos técnicos seguidos (${rec.execution_status})`; break outer } }
     if ((sm.llamadas % 10) === 0) console.error(`[${g}] ${sm.llamadas} llamadas, ${sm.ok} ok, tokens≈${used}`)
   }
