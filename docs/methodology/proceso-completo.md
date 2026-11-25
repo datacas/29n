@@ -14,8 +14,8 @@ Documento maestro. Cubre desde la recepción del feedback hasta la preparación 
 | Modalidad A (S, 28 celdas) | Ejecutada con 10 evaluadores (Gemini 3.6 flash pendiente) |
 | Spike de recuperación (BM25, embeddings, híbrido, reordenador, traducción) | Terminado |
 | Configuración de recuperación de B | **Congelada** (huella `acd59e44…`) |
-| Modalidad B, etapa 1 | **En ejecución** con Llama 4 Scout y Codex; DeepSeek y Gemini 4 Hydrogen bloqueados por cuota (D18) |
-| Modalidad B, etapa 2 | **En ejecución** sobre las 40 celdas (D18) |
+| Modalidad B (conjunto S, 40 celdas × 2 repeticiones) | **Ejecutada** con los evaluadores que la cuota permitió: Llama 4 Scout (80/80), Codex (74/80, tope de 2 M tokens), MiniMax M3.1 (76/80); Qwen y GPT-OSS parciales por la cuota de Groq; DeepSeek, Gemini 4 Hydrogen y Ministral sin completar (D18, I14–I18) |
+| Informe de B | `benchmark_B_report.mjs` (comparación A→B, cita no recuperada, celdas sin posición, selección pre-registrada a posteriori, prioridad de adjudicación); resultados locales |
 | Conjunto E | **Sellado**: no se ha accedido |
 | Recodificación masiva, validación humana, nuevo release | No iniciados |
 
@@ -100,6 +100,7 @@ Se documentan **todas**, incluidos errores míos. Ninguna modifica los criterios
 | I14 | **DeepSeek (OpenCode) agotó su límite gratuito** durante B (respuesta `provider.free-limit`, reinicio en ~11,8 h); el analizador lo registró como «salida vacía» | 69 registros de B mal clasificados | El ejecutor detecta eventos de error y los marca `rate_limited`; los registros heredados se reclasifican en el análisis y se tratan como no finales; parada tras 3 fallos técnicos seguidos |
 | I16 | Durante B, `agy` (Gemini 4 Hydrogen) devolvió `RESOURCE_EXHAUSTED: Individual quota reached` (reinicio en ~166 h); el ejecutor lo había registrado como «salida vacía» | 51 registros mal clasificados de B | Parser de `agy` corregido (error → `rate_limited`); registros heredados reclasificados en el análisis; Hydrogen queda fuera de B por cuota |
 | I17 | Durante B, Mistral devolvió HTTP 402 `billing_error: credits exhausted` (OmniRoute) | Ministral sin evaluar en B (6 fallos técnicos seguidos → interruptor) | No se añade crédito ni se toca ninguna cuenta; Ministral queda fuera de B por limitación operativa |
+| I18 | La cuota gratuita por minuto de Groq derivó a Nemotron más de la mitad de las llamadas de Qwen y GPT-OSS en B; Codex alcanzó su tope de 2 M de tokens (74/80) | Qwen y GPT-OSS no completan; Codex quedó 6 llamadas por debajo | Fallbacks excluidos y registrados; procesos de Groq detenidos; el tope de Codex no se amplió sin autorización |
 | I15 | Mensajes mal enviados por mí (`cat >> fichero` sin entrada) | Una tarea quedó colgada | Detenida; sin efectos |
 
 ## 5. Registro de ejecuciones
@@ -113,8 +114,9 @@ Se documentan **todas**, incluidos errores míos. Ninguna modifica los criterios
 | Diagnóstico de recuperación (457 celdas de desarrollo) | `retrieval_diag.{json,md}` | Terminado |
 | Spike de embeddings (BGE-M3, E5-large), reordenador, silencio, traducción | `spike/` | Terminado |
 | Estadística pareada de recuperadores | `spike/stats_pareadas.json` | Terminada |
-| B etapa 1 (panel principal) | `benchmark_S_B.jsonl` | En ejecución; DeepSeek bloqueado hasta el reinicio de su cuota |
-| B etapa 2 (panel adicional) | `benchmark_S_B.jsonl` | Lanzada sobre las 40 celdas por D18 (en lugar de solo las seleccionadas) |
+| B etapa 1 (panel principal) | `benchmark_S_B.jsonl` | Terminada con Llama 4 Scout y Codex (74/80); DeepSeek y Hydrogen bloqueados por cuota |
+| B etapa 2 (panel adicional, sobre las 40 celdas por D18) | `benchmark_S_B.jsonl` | MiniMax casi completo; Qwen y GPT-OSS parciales (cuota de Groq; paradas por el responsable del proceso); Ministral sin créditos |
+| Informe de B | `benchmark_B_informe.json`, `benchmark_S_B_analisis.{json,md}` | Generado |
 
 ## 6. Panel de evaluadores
 Ver `fase1/evolucion-panel-modelos.md`. Resumen: 7 modelos vía OmniRoute (Gemini 3.6 flash, Gemma 4 31B, Ministral 14B, Qwen3.8-27B, GPT-OSS 120B, MiniMax M3.1 flash, Llama 4 Scout) + Codex (`gpt-6.2-sol`, esfuerzo bajo), DeepSeek v4.1 flash (OpenCode) y Gemini 4 Hydrogen (`agy`, `low`).
@@ -133,7 +135,7 @@ Se diseñó un panel principal de 4 familias (Llama, Codex, DeepSeek, Hydrogen) 
 - **Análisis de B**: se separan las celdas cuya cita registrada llegó a los 10 pasajes de las que no (el fallo de recuperación no se atribuye al codificador). Clase e intensidad se analizan por separado.
 
 ## 8. Inventario técnico
-**Scripts versionados** (`scripts/methodology/`): `lib.mjs`, `asymmetry.mjs`, `coverage.mjs`, `sensitivity.mjs`, `item_audit.mjs`, `benchmark_split.mjs`, `benchmark_pack.mjs`, `benchmark_run.mjs`, `benchmark_run_cli.mjs`, `benchmark_analyze.mjs`, `benchmark_stage2.mjs`, `agreement.mjs`, `retrieval.mjs`, `retrieval_diag.mjs`, `spike_export.mjs`, `spike_dense.py`, `spike_rerank.py`, `spike_silence.py`, `spike_stats.py`, `spike_translate.py`, `spike_translation_eval.py`, `pack_b_export.mjs`, `pack_b_build.py`, `build_full_report.mjs` y `verify_external/`. Pruebas: `tests/methodology/agreement.test.ts`. Migración: `db/migrations/009_position_codings.sql`.
+**Scripts versionados** (`scripts/methodology/`): `lib.mjs`, `asymmetry.mjs`, `coverage.mjs`, `sensitivity.mjs`, `item_audit.mjs`, `benchmark_split.mjs`, `benchmark_pack.mjs`, `benchmark_run.mjs`, `benchmark_run_cli.mjs`, `benchmark_analyze.mjs`, `benchmark_stage2.mjs`, `agreement.mjs`, `retrieval.mjs`, `retrieval_diag.mjs`, `spike_export.mjs`, `spike_dense.py`, `spike_rerank.py`, `spike_silence.py`, `spike_stats.py`, `spike_translate.py`, `spike_translation_eval.py`, `pack_b_export.mjs`, `pack_b_build.py`, `benchmark_B_report.mjs`, `build_full_report.mjs` y `verify_external/`. Pruebas: `tests/methodology/agreement.test.ts`. Migración: `db/migrations/009_position_codings.sql`.
 
 **Local, no versionado** (`docs/methodology/local/`): `panel.json` (modelos y presupuestos), `retriever_frozen.json` (huella), juicios de ítems, scripts de sondeo y depuración de OmniRoute, resultados (`out/`), caché de embeddings y traducciones, `venv` (CPU) y `venv-gpu` (CUDA).
 
@@ -193,9 +195,9 @@ node scripts/methodology/build_full_report.mjs
 `--confirm-authorized` representa la autorización expresa de la persona responsable: no debe pasarse sin ella.
 
 ## 12. Pendientes
-1. Completar la etapa 1 de B (DeepSeek tras el reinicio de su cuota) y ejecutar la etapa 2 con la regla pre-registrada.
+1. Opcional: completar B con DeepSeek (tras el reinicio de su cuota), las 6 llamadas de Codex (requiere ampliar su tope, con autorización) y reanudar Groq cuando se renueve la cuota.
 2. Reanudar Gemini 3.6 flash en A (cuota hasta el 26-nov 08:59).
-3. Analizar por separado las celdas con la cita no recuperada, las 12 sin posición y las discrepancias prioritarias.
+3. Adjudicación humana de las discrepancias prioritarias y auditoría de las celdas sin posición con posible posición registrada por varios evaluadores.
 4. Segunda auditoría ciega de ítems (protocolo diseñado, no ejecutada); auditoría de silencio de las 59 celdas candidatas.
 5. Validación humana independiente (2 evaluadores, ~150 celdas, después del 29-nov), adjudicación y propuesta de correcciones.
 6. Entrevistas cognitivas y validez de contenido; informe metodológico público sin afirmar validación.
