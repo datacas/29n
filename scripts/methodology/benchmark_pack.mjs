@@ -37,7 +37,9 @@ for (const set of sets) for (const c of split[set]) {
   const p = posOf.get(c.questionId + '|' + c.entityId); const quotes = (p && usable(p) ? p.evidence ?? [] : []).filter((x) => x.text)
   let A = null, refIdx = null
   if (quotes.length) {
-    const hit = ranked.find((x) => quotes.some((qq) => quoteHit(px.ix.docs[x.i], qq.text, qq.page)))
+    // La referencia se localiza por la CITA (páginas registradas ±1), nunca por el ranking del recuperador: un párrafo sin términos en común con la consulta (p. ej. idioma distinto) seguiría siendo la evidencia registrada.
+    let hit = null, best = 0
+    for (const qq of quotes) px.ix.docs.forEach((d, i) => { if (Math.abs(d.page - qq.page) > 1) return; if (!quoteHit(d, qq.text, qq.page)) return; const qt = [...new Set(tokens(qq.text, { stemming: true }).filter((w) => w.length > 3))]; const dt = new Set(tokens(d.text, { stemming: true })); const ov = qt.filter((w) => dt.has(w)).length / (qt.length || 1); if (ov > best) { best = ov; hit = { i } } })
     if (hit) { refIdx = hit.i; const rest = B.filter((b) => b.i !== refIdx).slice(0, K - 1); const ref = { i: refIdx, page: px.ix.docs[refIdx].page, score: null, text: px.ix.docs[refIdx].text.slice(0, 1200) }
       const all = [...rest, ref]; const rnd = rng(hash(c.questionId + c.entityId)); for (let k = all.length - 1; k > 0; k--) { const j = Math.floor(rnd() * (k + 1)); [all[k], all[j]] = [all[j], all[k]] }
       A = all.map(({ i, ...x }) => x) }

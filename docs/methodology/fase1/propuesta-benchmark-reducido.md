@@ -18,8 +18,17 @@ La recuperación no se imputa al codificador: en la modalidad A la evidencia can
 ## Alcance de la ausencia de evidencia
 La clase `not_mentioned` significa **ausencia en los pasajes dados**, no en el programa completo. Cada registro lleva `evidence_scope` (`reference_evidence_plus_distractors` o `passages_retrieved`) para no confundirlas. Confirmar la ausencia en el programa completo exige una pasada exhaustiva posterior (búsqueda léxica completa + revisión) y solo para las celdas que algún evaluador marque como `not_mentioned`.
 
-## Recuperador
-BM25 por párrafo con lematización ligera; consulta = pregunta + texto explicativo + vocabulario del ítem generado una vez por ítem con un modelo gratuito (prompt fijo, mismo para todos los ítems; sin reajustes por celda). Parámetros (K, variante) elegidos con las preguntas de desarrollo; el conjunto E no interviene. La recuperación densa o con reranking queda como alternativa a probar (necesita embeddings en OmniRoute o Jev para reordenar; ver el informe local).
+## Recuperador (configuración de referencia, aprobada)
+BM25 por párrafo con lematización ligera; consulta = pregunta + texto explicativo + vocabulario del ítem generado una vez por ítem con un modelo gratuito (prompt fijo, mismo para todos los ítems; sin reajustes por celda). **K = 15** fijo durante todo el benchmark. Parámetros elegidos con las preguntas de desarrollo; el conjunto E no interviene.
+
+### Mejoras futuras (no se introducen en el benchmark actual)
+- K = 20 como recuperación adicional para casos difíciles; sin cambios dinámicos durante el benchmark.
+- Recuperación semántica con embeddings multilingües y búsqueda híbrida (RRF); hay que decidir su coste y dónde ejecutarla.
+- Reordenación (*reranking*) con un modelo local gratuito o con Jev, separando su efecto de la recuperación inicial.
+- Expansión de vocabulario en el idioma original del programa (catalán, gallego): se mide en desarrollo, con tamaños muestrales por idioma, y se decide después. Objetivo: que el idioma no determine artificialmente la cobertura documental de un partido.
+
+### Qué se puede y qué no se puede concluir
+El *recall* se mide contra la cita ya registrada: no es la evidencia suficiente ni la única válida, y solo existe en celdas con posición registrada. Los embeddings, si se usan, solo recuperan candidatos: la similitud semántica no demuestra apoyo, oposición ni neutralidad.
 
 ## Conjuntos (script `benchmark_split.mjs`, semilla fija)
 | Conjunto | Uso | Regla |
@@ -30,6 +39,12 @@ BM25 por párrafo con lematización ligera; consulta = pregunta + texto explicat
 
 ## Métricas
 Fidelidad documental (la cita del modelo existe en los pasajes) · clase · intensidad · concordancia entre modelos y, cuando exista el piloto, con humanos · detección de oposición, silencio y ambigüedad · cumplimiento del manual · salida estructurada · estabilidad · tasa de fallos técnicos (aparte, nunca como `not_mentioned`) · latencia, disponibilidad, cuota y coste. Para la recuperación: recall de página y de cita, tokens, precisión y ruido.
+
+## Plan estadístico
+- Clase documental e intensidad ordinal se analizan **por separado**. La intensidad solo se compara cuando coincide la clase.
+- Alfa de Krippendorff (nominal para la clase, ordinal para la intensidad) con IC por bootstrap; kappa ponderado (lineal y cuadrático) para pares; Gwet AC1/AC2 como contraste ante distribuciones sesgadas. Implementación probada en `tests/methodology/agreement.test.ts`.
+- La concordancia con las codificaciones registradas es **concordancia con una referencia provisional**, no exactitud validada.
+- Criterios de paso de la modalidad A a la B: `criterios-aceptacion-modalidad-A.md`, fijados antes de ejecutar y no modificables retrospectivamente.
 
 ## Reglas
 - Un modelo por **familia** en el panel de evaluadores independientes; se registra siempre el modelo real y el fallback.
