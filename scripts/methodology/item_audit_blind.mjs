@@ -14,7 +14,8 @@ const sha = (s) => crypto.createHash('sha256').update(s).digest('hex')
 const LOCAL = path.join(ROOT, 'docs/methodology/local')
 const panel = JSON.parse(fs.readFileSync(path.join(LOCAL, 'panel.json'), 'utf8')).models
 const DEFAULT = ['llama-4-scout', 'minimax-m3.1-flash', 'mistral-large-4', 'nemotron-3.5-lightning', 'qwen3.8-27b-groq']
-const labels = String(arg('models', DEFAULT.join(','))).split(','); const models = labels.map((l) => panel.find((m) => m.label === l)).filter(Boolean)
+const CLI = [{ label: 'deepseek-v4.1-flash-opencode', id: 'opencode/deepseek-v4.1-flash-free', group: 'opencode', vendor: 'DeepSeek', via: 'opencode', maxTokens: 4000 }]
+const labels = String(arg('models', DEFAULT.join(','))).split(','); const models = labels.map((l) => panel.find((m) => m.label === l) ?? CLI.find((m) => m.label === l)).filter(Boolean)
 const r = loadRelease('2.1.2')
 const items = r.questions.map((q, i) => ({ id: q.questionId, n: i + 1, text: q.canonicalText, context: q.contextText ?? '', kind: 'item' }))
 const known = items.find((x) => /sindicat/i.test(x.text) && /empresarial|patronal/i.test(x.text))
@@ -29,7 +30,7 @@ const CTRL_NEG = [
   '¿Debe subirse el salario mínimo interprofesional?', '¿Debe ampliarse la red de ferrocarril de cercanías?', '¿Debe aumentarse la pensión mínima?', '¿Debe aumentarse el número de profesionales de la sanidad pública?',
   '¿Deben limitarse los pisos turísticos en las ciudades?', '¿Debe garantizarse una plaza de guardería pública a cada niño?'].map((text, i) => ({ id: `CTRL-${i + 1}`, text, context: '', kind: 'control_negativo' }))
 const rr = rng(2911); const repeats = items.filter(() => rr() < 0.1).map((x) => ({ ...x, id: x.id, kind: 'repeticion', repeatOf: x.id }))
-const all = [...items, ...CTRL_POS, ...CTRL_NEG, ...repeats]
+const all = flag('controls-only') ? [...CTRL_POS, ...CTRL_NEG, ...(known ? [{ ...known, kind: 'item' }] : [])] : [...items, ...CTRL_POS, ...CTRL_NEG, ...repeats]
 const SYSTEM = 'Eres un metodólogo de encuestas. Revisas preguntas de un cuestionario de afinidad con programas electorales. Respondes únicamente con un objeto JSON válido, sin texto adicional ni marcas de código.'
 const user = (x) => `PREGUNTA: ${x.text}\nCONTEXTO: ${x.context || '(sin texto explicativo)'}\nESCALA: la persona responde de −2 (totalmente en desacuerdo) a +2 (totalmente de acuerdo), o «No sé».\n\nTarea, razonando con contraejemplos:\n1. Enumera las proposiciones independientes que una persona tendría que aceptar a la vez para responder «de acuerdo».\n2. Busca un contraejemplo: una posición política coherente que ninguna respuesta de la escala pueda expresar fielmente. Si no la hay, null.\n3. ¿Está claro qué significa estar de acuerdo (dirección de la pregunta)?\n4. ¿Hay presuposiciones o un alcance ambiguo?\n5. Neutralidad: ¿qué posiciones políticas favorece responder «de acuerdo»? ¿Hay términos cargados?\n\nDevuelve exactamente este JSON:\n{"propositions":["..."],"n_propositions":0,"counterexample":null,"direction_clear":true,"presupposition":null,"scope_ambiguity":null,"agree_favors":"izquierda|derecha|ninguna|depende|no_claro","loaded_terms":[],"severity":0,"verdict":"ok|doble_contenido|objeto_compuesto|vago|presuposicion|sesgo"}\n(severity 0 = sin problema, 3 = grave)`
 const PROMPT_SHA = sha(SYSTEM + user({ text: 'P', context: 'C' }))
@@ -41,12 +42,27 @@ const outFile = path.join(OUT, 'item_audit_blind.jsonl'); const runId = crypto.r
 const norm = (x) => String(x ?? '').toLowerCase().replace(/^@cf\//, ''); const tail = (x) => norm(x).split('/').pop().replace(/:free$|-free$/, '')
 const done = new Set(); if (fs.existsSync(outFile)) for (const l of fs.readFileSync(outFile, 'utf8').split('\n').filter(Boolean)) { const o = JSON.parse(l); if (!o.halted && (o.execution_status === 'ok' || (o.attempts ?? 0) >= 3)) done.add(`${o.evaluator_label}|${o.itemKey}`) }
 const attemptsOf = {}
+import { spawn } from 'node:child_process'
+// Modelos servidos por CLI (opencode): un único mensaje (sistema + usuario), sin herramientas; coste 0 en el plan gratuito.
+function callCli(m, x) {
+  return new Promise((resolve) => {
+    const prompt = `${SYSTEM}\n\n${user(x)}`; const p = spawn('opencode', ['run', '-m', m.id, '--format', 'json', prompt], { cwd: '/tmp', stdio: ['ignore', 'pipe', 'pipe'] }); let out = ''; const timer = setTimeout(() => { p.kill('SIGKILL') }, +arg('timeout-ms', 150000))
+    p.stdout.on('data', (d) => (out += d)); p.on('close', (code) => { clearTimeout(timer); let text = '', tokens = {}, cost = 0; for (const l of out.split('\n')) { try { const e = JSON.parse(l); if (e.type === 'text') text += e.part?.text ?? ''; if (e.type === 'step_finish') { tokens = e.part?.tokens ?? tokens; cost += Number(e.part?.cost ?? 0) } } catch {} }
+      resolve({ ok: code === 0 && !!text, text, tokens, cost }) })
+  })
+}
 async function call(m, x) {
   const res = await fetch('http://127.0.0.1:20128/v1/chat/completions', { method: 'POST', signal: AbortSignal.timeout(+arg('timeout-ms', 150000)), headers: { 'content-type': 'application/json', authorization: `Bearer ${KEY}`, 'x-omniroute-no-memory': '1' },
     body: JSON.stringify({ model: m.id, temperature: 0, max_tokens: +arg('max-tokens', 0) || Math.max(m.maxTokens ?? 800, 1600), messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: user(x) }] }) })
   return { r: res, j: await res.json().catch(() => null) }
 }
 async function one(m, x, key) {
+  if (m.via === 'opencode') { const t0 = Date.now(); const rec = { run_id: runId, itemKey: key, itemId: x.id, itemKind: x.kind, repeatOf: x.repeatOf ?? null, evaluator_label: m.label, provider: m.group, model_family: m.vendor, model_requested: m.id, model_actual: m.id, prompt_sha: PROMPT_SHA.slice(0, 12), blind: true, via: 'cli', fallback_used: false, attempts: (attemptsOf[`${m.label}|${key}`] = (attemptsOf[`${m.label}|${key}`] ?? 0) + 1) }
+    const res = await callCli(m, x); rec.latency_ms = Date.now() - t0; rec.usage = res.tokens; rec.cost_usd = String(res.cost); rec.cost_nonzero = res.cost > 0
+    let p = null; try { p = JSON.parse(String(res.text).replace(/^\s*```(json)?|```\s*$/g, '').trim()) } catch {}
+    if (!res.ok) { rec.execution_status = 'api_error'; rec.error_detail = 'sin salida del CLI (¿límite gratuito?)' } else if (!p || !Array.isArray(p.propositions) || typeof p.severity !== 'number') { rec.execution_status = 'invalid_output'; rec.raw_preview = String(res.text).slice(0, 300) }
+    else { rec.execution_status = 'ok'; rec.out = { propositions: p.propositions.slice(0, 8).map((s2) => String(s2).slice(0, 240)), n_propositions: Number.isFinite(+p.n_propositions) ? +p.n_propositions : p.propositions.length, counterexample: p.counterexample ? String(p.counterexample).slice(0, 300) : null, direction_clear: p.direction_clear !== false, presupposition: p.presupposition ? String(p.presupposition).slice(0, 240) : null, scope_ambiguity: p.scope_ambiguity ? String(p.scope_ambiguity).slice(0, 240) : null, agree_favors: String(p.agree_favors ?? ''), loaded_terms: (p.loaded_terms ?? []).slice(0, 6).map(String), severity: Math.max(0, Math.min(3, Math.round(+p.severity))), verdict: String(p.verdict ?? '') } }
+    fs.appendFileSync(outFile, JSON.stringify(rec) + '\n'); return rec }
   const t0 = Date.now(); const rec = { run_id: runId, itemKey: key, itemId: x.id, itemKind: x.kind, repeatOf: x.repeatOf ?? null, evaluator_label: m.label, provider: m.group, model_family: m.vendor, model_requested: m.id, prompt_sha: PROMPT_SHA.slice(0, 12), blind: true, attempts: (attemptsOf[`${m.label}|${key}`] = (attemptsOf[`${m.label}|${key}`] ?? 0) + 1) }
   try {
     let res; for (let t = 0; t < 3; t++) { res = await call(m, x); if (res.r.status !== 429) break; await sleep(Math.min(+res.r.headers.get('retry-after') || 20, 60) * 1000) }
