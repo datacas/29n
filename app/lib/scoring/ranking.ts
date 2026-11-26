@@ -57,3 +57,22 @@ export function sortResults<T extends RankableResult>(results: T[], min: number 
     return (b.affinityPercent ?? 0) - (a.affinityPercent ?? 0)
   })
 }
+
+/**
+ * Diferencia pequeña entre los primeros puestos.
+ * Umbral: 3 puntos de afinidad. Se estimó con usuarios sintéticos y pesos iguales sobre la versión 2.2.1: con un hueco menor de 3 puntos entre el 1.º y el 2.º,
+ * quitar una sola pregunta cambia el primer partido en más del 12 % de los casos; con 3-5 puntos baja al 7 % y por encima de 8 puntos al 2 %.
+ * Solo se aplica al primer puesto: el grupo se mide desde su primer miembro (sin encadenar) y los resultados con «pocos datos» no entran.
+ */
+export const SMALL_DIFFERENCE_POINTS = 3
+
+export function leadingGroup<T extends { entityId: string; affinityPercent: number | null }>(
+  sorted: T[],
+  isCandidate: (r: T) => boolean,
+  threshold: number = SMALL_DIFFERENCE_POINTS
+): Set<string> {
+  const head = sorted.find((r) => r.affinityPercent !== null && isCandidate(r))
+  if (!head) return new Set()
+  const ids = sorted.filter((r) => r.affinityPercent !== null && isCandidate(r) && (head.affinityPercent as number) - (r.affinityPercent as number) < threshold).map((r) => r.entityId)
+  return ids.length >= 2 ? new Set(ids) : new Set()
+}

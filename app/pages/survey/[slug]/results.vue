@@ -44,13 +44,19 @@
 
         <div v-if="results.length === 0" class="no-results"><p>{{ $t('survey.results.noData') }}</p></div>
 
-        <ol v-else class="results-list">
+        <template v-else>
+        <p v-if="smallGroup.size" class="note small-diff-note" role="status">
+          <strong>Diferencia pequeña: no se distinguen con fiabilidad.</strong>
+          {{ smallGroupText }}
+        </p>
+        <ol class="results-list">
           <li v-for="result in sortedResults" :key="result.entityId" class="result-card label" :class="{ historical: result.historical && !isHistoricalSurvey, 'is-low': low(result) }">
             <div class="label__head entity-header">
               <h2 class="entity-name">
                 {{ getEntityName(result.entityId) }}
                 <span v-if="result.historical && !isHistoricalSurvey" class="historical-badge small">Histórico</span>
               </h2>
+              <span v-if="smallGroup.has(result.entityId)" class="low-data-badge small-diff-badge" title="A menos de 3 puntos del primero: no se distinguen con fiabilidad.">Diferencia pequeña</span>
               <span v-if="low(result)" class="low-data-badge" :title="`Este ${noun.singular} tiene pocas posiciones documentadas en las preguntas que contestaste: el resultado es solo orientativo.`">Pocos datos</span>
             </div>
             <div class="label__body stack">
@@ -64,6 +70,8 @@
                 <span v-else class="no-data">{{ $t('survey.results.noData') }}</span>
               </div>
 
+              <p v-if="result.affinityPercent !== null" class="small coverage-basis tnum">basado en <strong>{{ result.evaluableQuestions }}</strong> de tus <strong>{{ result.answeredQuestions }}</strong> respuestas</p>
+
               <dl class="r__stats coverage-info" :aria-label="`Resumen de ${getEntityName(result.entityId)}`">
                 <div><dt>Posiciones del programa</dt><dd class="tnum">{{ summary(result.entityId).documented }}</dd></div>
                 <div><dt>Entran en tu encuesta</dt><dd class="tnum">{{ summary(result.entityId).entered }}</dd></div>
@@ -71,7 +79,7 @@
                 <div class="r__stat--no"><dt>No coincidís</dt><dd class="tnum">{{ summary(result.entityId).discrepan }}</dd></div>
               </dl>
               <p class="small coverage-label">
-                De las <strong class="tnum">{{ result.answeredQuestions }}</strong> preguntas que contestaste, el programa tiene posición en <strong class="tnum">{{ result.evaluableQuestions }}</strong>. «Coincidís» es que tu respuesta y el programa estén a un punto o menos en la escala.
+                El programa tiene posición en <strong class="tnum">{{ result.evaluableQuestions }}</strong> de las <strong class="tnum">{{ result.answeredQuestions }}</strong> preguntas que contestaste; las demás no cuentan. «Coincidís» es que tu respuesta y el programa estén a un punto o menos en la escala.
               </p>
 
               <details class="evidence-section r__det">
@@ -114,6 +122,7 @@
             </div>
           </li>
         </ol>
+        </template>
 
         <p v-if="results.length" class="small r__contrib-note">
           Tus respuestas y tu afinidad suman de forma anónima a las <NuxtLink v-if="statsVisible && !isHistoricalSurvey" to="/estadisticas">estadísticas públicas</NuxtLink><template v-else>estadísticas</template>:
@@ -147,7 +156,7 @@
 <script setup lang="ts">
 import { calculateScoring } from '~/lib/scoring/calculate'
 import type { Answer, Position, Question, Weight, EntityInfo, DimensionCalibration, ScoringResult } from '~/lib/scoring/calculate'
-import { MIN_EVALUABLE_QUESTIONS, MIN_COVERAGE_PERCENT, isLowCoverage, sortResults } from '~/lib/scoring/ranking'
+import { MIN_EVALUABLE_QUESTIONS, MIN_COVERAGE_PERCENT, SMALL_DIFFERENCE_POINTS, isLowCoverage, sortResults, leadingGroup } from '~/lib/scoring/ranking'
 import { programUrl } from '~/lib/programs'
 
 const route = useRoute()
@@ -322,6 +331,13 @@ const low = (r: ScoringResult) => isLowCoverage(r, minEval.value, minCov.value)
 const counts = (r: ScoringResult) => isHistoricalSurvey.value || !r.historical
 
 const sortedResults = computed(() => sortResults(results.value, minEval.value, minCov.value))
+// Primeros puestos a menos de 3 puntos del primero: se presentan como «diferencia pequeña» y no como un orden estricto (la encuesta histórica no lo usa)
+const smallGroupText = computed(() => {
+  const names = sortedResults.value.filter(r => smallGroup.value.has(r.entityId)).map(r => getEntityName(r.entityId))
+  if (names.length < 2) return ''
+  return `${names[0]} (primero) y ${names.slice(1).join(', ')} están a menos de ${SMALL_DIFFERENCE_POINTS} puntos de diferencia: el orden entre ellos puede cambiar con una sola respuesta.`
+})
+const smallGroup = computed(() => (isHistoricalSurvey.value ? new Set<string>() : leadingGroup(sortedResults.value, (r) => counts(r) && !low(r))))
 
 // Texto para compartir: los tres primeros con datos suficientes. Quien comparte es quien decide enviarlo,
 // y el texto aclara que no es una recomendación de voto (o, en la histórica, que no es adhesión a un régimen).
@@ -536,6 +552,9 @@ function exportResults() {
 .r__stats dd { margin: 0.1rem 0 0; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.03em; line-height: 1.1; }
 .r__stat--ok dd { color: var(--data); }
 .coverage-label { margin: 0; max-width: none; }
+.coverage-basis { margin: 0; max-width: none; color: var(--ink-soft); }
+.small-diff-note { margin: var(--space-4) 0; }
+.small-diff-badge { background: var(--paper, transparent); }
 .r__det { border-top: 1px solid var(--line); padding-top: var(--space-2); }
 .r__det > summary { cursor: pointer; font-weight: 500; min-height: 2.9rem; display: flex; align-items: center; }
 /* Cada tema se abre y se cierra por separado: así el detalle de un partido no es un scroll interminable */
