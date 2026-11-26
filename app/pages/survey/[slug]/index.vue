@@ -1,6 +1,6 @@
 <template>
   <div class="wrap detail">
-    <p class="small" role="status">Abriendo la encuesta…</p>
+    <p class="small" role="status">Abriendo el test…</p>
     <p><NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">{{ $t('survey.detail.start') }}</NuxtLink></p>
   </div>
 </template>

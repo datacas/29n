@@ -1,5 +1,5 @@
 <template>
-  <ol class="steps" aria-label="Pasos de la encuesta">
+  <ol class="steps" aria-label="Pasos del test">
     <li v-for="(s, i) in steps" :key="s" :class="{ done: i + 1 < current }" :aria-current="i + 1 === current ? 'step' : undefined">
       {{ s }}<span v-if="i + 1 < current" class="visually-hidden"> (hecho)</span>
     </li>

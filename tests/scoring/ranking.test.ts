@@ -74,3 +74,33 @@ describe('umbral de pocos datos configurable por encuesta', () => {
     expect(r.map((x) => x.affinityPercent)).toEqual([70, 50, 90])
   })
 })
+
+describe('Grupo de cabeza por diferencia pequeña (umbral de 3 puntos)', () => {
+  const r = (entityId: string, affinityPercent: number | null) => ({ entityId, affinityPercent })
+  const all = () => true
+  it('agrupa los que están a menos de 3 puntos del primero', async () => {
+    const { leadingGroup } = await import('../../app/lib/scoring/ranking')
+    expect([...leadingGroup([r('a', 70), r('b', 68.5), r('c', 67.1), r('d', 50)], all)]).toEqual(['a', 'b', 'c'])
+  })
+  it('no encadena: se mide desde el primero, no entre vecinos', async () => {
+    const { leadingGroup } = await import('../../app/lib/scoring/ranking')
+    expect([...leadingGroup([r('a', 70), r('b', 68), r('c', 66), r('d', 64)], all)]).toEqual(['a', 'b'])
+  })
+  it('un primero claro no forma grupo', async () => {
+    const { leadingGroup } = await import('../../app/lib/scoring/ranking')
+    expect(leadingGroup([r('a', 80), r('b', 70), r('c', 60)], all).size).toBe(0)
+  })
+  it('exactamente 3 puntos de diferencia ya no es grupo', async () => {
+    const { leadingGroup } = await import('../../app/lib/scoring/ranking')
+    expect(leadingGroup([r('a', 70), r('b', 67)], all).size).toBe(0)
+  })
+  it('los candidatos descartados (pocos datos, históricos) no entran ni encabezan', async () => {
+    const { leadingGroup } = await import('../../app/lib/scoring/ranking')
+    const low = new Set(['x'])
+    expect([...leadingGroup([r('x', 90), r('a', 70), r('b', 69)], (q) => !low.has(q.entityId))]).toEqual(['a', 'b'])
+  })
+  it('sin resultados con porcentaje no hay grupo', async () => {
+    const { leadingGroup } = await import('../../app/lib/scoring/ranking')
+    expect(leadingGroup([r('a', null)], all).size).toBe(0)
+  })
+})

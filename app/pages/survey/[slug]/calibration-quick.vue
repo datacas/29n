@@ -9,7 +9,7 @@
     </section>
     <div class="wrap stack-lg cq__body">
       <StepBar :current="2" :entities="progress?.entityNounPlural" />
-      <p v-if="!progress" class="note note--alert error" role="alert">No se encontró el progreso de la encuesta. <NuxtLink :to="`/survey/${releaseId}/start`">Comenzar de nuevo</NuxtLink></p>
+      <p v-if="!progress" class="note note--alert error" role="alert">No se encontró el progreso del test. <NuxtLink :to="`/survey/${releaseId}/start`">Comenzar de nuevo</NuxtLink></p>
       <section v-else class="label" aria-labelledby="h-temas">
         <div class="label__head"><h2 id="h-temas">Importancia de cada tema</h2></div>
         <div class="dimensions-list">
@@ -26,7 +26,7 @@
     </div>
     <div v-if="progress" class="dock actions">
       <div class="dock__inner">
-        <NuxtLink :to="`/survey/${releaseId}/questions`" class="btn-primary btn--block">Comenzar encuesta</NuxtLink>
+        <NuxtLink :to="`/survey/${releaseId}/questions`" class="btn-primary btn--block">Comenzar test</NuxtLink>
       </div>
     </div>
   </div>
