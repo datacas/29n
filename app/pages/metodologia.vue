@@ -3,7 +3,7 @@
   <section class="band on-band">
     <div class="wrap band__inner">
       <h1>Cómo funciona esta herramienta</h1>
-      <p>Compara lo que piensas con lo que dicen por escrito los programas de las elecciones generales del 29 de noviembre de 2026. Aquí tienes de dónde salen los datos, cómo se calcula el porcentaje y qué límites tiene.</p>
+      <p>Compara lo que piensas con lo que dicen por escrito los programas de las elecciones generales del 29 de noviembre de 2026. Aquí tienes de dónde salen los datos, cómo se calcula el porcentaje, los <a href="#estadistica">métodos estadísticos</a> que usamos y qué límites tiene.</p>
     </div>
   </section>
   <article class="metodologia wrap">
@@ -35,13 +35,27 @@
       Más abajo explicamos qué hemos comprobado, con qué métodos estadísticos y qué no podemos afirmar.
     </p>
 
-    <h2>Cómo se calcula</h2>
+    <h2 id="calculo">Cómo se calcula</h2>
     <ol>
       <li>Contestas cada pregunta de −2 (totalmente en desacuerdo) a +2 (totalmente de acuerdo). Si no tienes opinión, marcas «No sé» y esa pregunta no cuenta, igual que las que omites.</li>
       <li>Para cada partido con posición en esa pregunta, se mide la distancia entre tu respuesta y la suya. Cuanto menor, mayor el acuerdo.</li>
       <li>El porcentaje de cada partido es la media de esos acuerdos. Las preguntas donde el partido no tiene posición no suman ni restan.</li>
       <li>Los temas que más te importan pesan más. Lo decides en las comparaciones de prioridades y, si quieres, marcando la importancia en cada pregunta.</li>
     </ol>
+    <details>
+      <summary>La fórmula exacta y su estadística</summary>
+      <p>
+        <strong>Acuerdo en una pregunta:</strong> 1 − |tu respuesta − la posición del partido| ÷ 4. Con respuestas entre −2 y +2, coincidir da 1 (100 %), estar a dos puntos da 0,5 y estar en polos opuestos da 0.
+      </p>
+      <p>
+        <strong>Por tema:</strong> media de esos acuerdos ponderada por la importancia que das a cada pregunta, solo con las preguntas donde ese partido tiene posición.
+        <strong>Global:</strong> media ponderada de los temas evaluables, con los pesos de tus comparaciones de prioridades y renormalizados cuando un tema no se puede evaluar.
+        Es una media ponderada de distancias, no un modelo probabilístico: no hay estimaciones con intervalos de confianza para tu resultado individual.
+      </p>
+      <p>
+        Sobre la <em>fiabilidad de los datos</em> (cómo de consistente es la codificación de las posiciones, qué muestra se necesita para validarla, cuánto cambia el resultado al quitar una pregunta) usamos acuerdo entre codificadores (alfa de Krippendorff, kappa ponderado, AC1/AC2 de Gwet), intervalos bootstrap y de Wilson, estimadores estratificados con pesos de diseño y tamaño efectivo de muestra de Kish. Se explican abajo, en <a href="#estadistica">Métodos estadísticos</a>.
+      </p>
+    </details>
     <p>
       Los partidos con muy pocas posiciones documentadas aparecen al final con la etiqueta «Pocos datos», aunque su porcentaje sea alto,
       porque con tan pocas preguntas el resultado no es fiable.
