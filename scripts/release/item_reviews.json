@@ -1,0 +1,331 @@
+{
+ "version": 1,
+ "fecha": "2026-11-26",
+ "nota": "Registro de la auditoría de ítems (por IA, sin validación humana). Solo los ítems con verdict distinto de ok y sin justified bloquean una release. Lo que figura en audited se auditó sin hallazgo de doble contenido ni falta de dirección.",
+ "items": {
+  "Q009": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q031": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q033": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q051": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q092": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q112": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q115": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q138": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q056": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q102": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q063": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q093": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q059": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q120": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q073": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q014": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q109": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q008": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q026": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q034": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q040": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q035": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q036": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q055": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q011": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q078": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q085": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q083": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q080": {
+   "verdict": "compound",
+   "note": "doble contenido: sustituida por preguntas de una sola proposición (no debe volver a una release)"
+  },
+  "Q145": {
+   "verdict": "ok",
+   "justified": true,
+   "note": "señalada por la auditoría y revisada: un solo objeto con dirección clara"
+  },
+  "Q113": {
+   "verdict": "ok",
+   "justified": true,
+   "note": "señalada por la auditoría y revisada: un solo objeto con dirección clara"
+  },
+  "Q129": {
+   "verdict": "ok",
+   "justified": true,
+   "note": "señalada por la auditoría y revisada: un solo objeto con dirección clara"
+  },
+  "Q053": {
+   "verdict": "ok",
+   "justified": true,
+   "note": "señalada por la auditoría y revisada: un solo objeto con dirección clara"
+  },
+  "Q018": {
+   "verdict": "compound",
+   "note": "sin dirección y con varios objetos: sustituida por preguntas con dirección explícita"
+  },
+  "Q005": {
+   "verdict": "compound",
+   "note": "sin dirección y con varios objetos: sustituida por preguntas con dirección explícita"
+  },
+  "Q082": {
+   "verdict": "ok",
+   "justified": true,
+   "note": "señalada por la auditoría y revisada: regional con un solo partido; no cambia la afinidad con los demás"
+  }
+ },
+ "audited": [
+  "Q001",
+  "Q002",
+  "Q003",
+  "Q004",
+  "Q005a",
+  "Q005b",
+  "Q006",
+  "Q007",
+  "Q008a",
+  "Q008b",
+  "Q009a",
+  "Q009b",
+  "Q010",
+  "Q011a",
+  "Q011b",
+  "Q012",
+  "Q013",
+  "Q014a",
+  "Q014b",
+  "Q015",
+  "Q016",
+  "Q017",
+  "Q018a",
+  "Q019",
+  "Q020",
+  "Q022",
+  "Q023",
+  "Q024",
+  "Q025",
+  "Q026a",
+  "Q026b",
+  "Q027",
+  "Q028",
+  "Q029",
+  "Q030",
+  "Q031a",
+  "Q031b",
+  "Q032",
+  "Q033a",
+  "Q033b",
+  "Q034a",
+  "Q034b",
+  "Q035a",
+  "Q035b",
+  "Q036a",
+  "Q036b",
+  "Q037",
+  "Q038",
+  "Q039",
+  "Q040a",
+  "Q040b",
+  "Q041",
+  "Q042",
+  "Q043",
+  "Q044",
+  "Q045",
+  "Q046",
+  "Q047",
+  "Q048",
+  "Q049",
+  "Q050",
+  "Q051a",
+  "Q052",
+  "Q053",
+  "Q054",
+  "Q055a",
+  "Q055b",
+  "Q056a",
+  "Q057",
+  "Q058",
+  "Q059a",
+  "Q059b",
+  "Q060",
+  "Q061",
+  "Q062",
+  "Q063a",
+  "Q063b",
+  "Q063c",
+  "Q064",
+  "Q065",
+  "Q066",
+  "Q067",
+  "Q068",
+  "Q069",
+  "Q070",
+  "Q071",
+  "Q072",
+  "Q073a",
+  "Q073b",
+  "Q074",
+  "Q075",
+  "Q076",
+  "Q077",
+  "Q078a",
+  "Q078b",
+  "Q079",
+  "Q080a",
+  "Q080b",
+  "Q081",
+  "Q082",
+  "Q083a",
+  "Q083b",
+  "Q084",
+  "Q085a",
+  "Q085b",
+  "Q086",
+  "Q087",
+  "Q088",
+  "Q089",
+  "Q090",
+  "Q091",
+  "Q092a",
+  "Q092b",
+  "Q093a",
+  "Q093b",
+  "Q094",
+  "Q095",
+  "Q096",
+  "Q097",
+  "Q098",
+  "Q099",
+  "Q100",
+  "Q101",
+  "Q102a",
+  "Q102b",
+  "Q103",
+  "Q104",
+  "Q105",
+  "Q106",
+  "Q107",
+  "Q108",
+  "Q109a",
+  "Q110",
+  "Q111",
+  "Q112a",
+  "Q112b",
+  "Q113",
+  "Q114",
+  "Q115a",
+  "Q115b",
+  "Q116",
+  "Q117",
+  "Q118",
+  "Q119",
+  "Q120a",
+  "Q120b",
+  "Q121",
+  "Q122",
+  "Q123",
+  "Q124",
+  "Q125",
+  "Q126",
+  "Q127",
+  "Q128",
+  "Q129",
+  "Q130",
+  "Q131",
+  "Q132",
+  "Q133",
+  "Q134",
+  "Q135",
+  "Q136",
+  "Q137",
+  "Q138a",
+  "Q139",
+  "Q140",
+  "Q141",
+  "Q142",
+  "Q143",
+  "Q144",
+  "Q145",
+  "Q146",
+  "Q147"
+ ]
+}
