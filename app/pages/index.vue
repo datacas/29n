@@ -28,6 +28,7 @@
           <li><b>Contesta las preguntas</b><span>Cada una trae una explicación por si el tema te suena lejos.</span></li>
           <li><b>Mira de dónde sale cada porcentaje</b><span>Con la cita literal del programa y su página.</span></li>
         </ol>
+        <p class="meta">El porcentaje es la media, ponderada por tus prioridades, de cuánto se acerca tu respuesta a la posición escrita de cada partido. <NuxtLink to="/metodologia#calculo">Fórmula y métodos estadísticos</NuxtLink>.</p>
       </section>
 
       <section class="label home__share" aria-labelledby="h-share">
