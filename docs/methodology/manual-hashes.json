@@ -1,0 +1,21 @@
+{
+  "nota": "Manuales congelados. No se editan: un cambio exige una versión nueva. Los test de CI verifican estas huellas (tests/methodology/manual_freeze.test.ts).",
+  "manuales": {
+    "0.1-benchmark": {
+      "archivo": "docs/methodology/coding-manual-v0.md",
+      "sha256": "3c90c2bb992b07053b434915abf7d7a78a04f501f33c31e4fd4a4a59c2957f65",
+      "aplicacion": "Benchmarks A y B y evaluaciones históricas bajo esa versión (no se recalculan)"
+    },
+    "0.2-borrador": {
+      "archivo": "docs/methodology/coding-manual-v0.2-borrador.md",
+      "sha256": "d756e326d8be01e9a5a8fe3279a207d51c6115ce562307a4021f97685de3f151",
+      "aplicacion": "Recodificación de 8 celdas por una persona (histórico)"
+    },
+    "0.2": {
+      "archivo": "docs/methodology/coding-manual-v0.2.md",
+      "sha256": "ed7aaf955574c0d8e0868d287da1a2a86c51eca31c9b5e9663a2327039fc5c5b",
+      "aplicacion": "Campaña de evaluación humana de ~150 celdas",
+      "congelado": "2026-11-26"
+    }
+  }
+}

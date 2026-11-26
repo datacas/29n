@@ -74,6 +74,9 @@ const groups = [
       { to: '/admin/review-questions', label: 'Revisión editorial' },
       { to: '/admin/position-values', label: 'Asignar posturas' },
       { to: '/admin/jev-labeling', label: 'Etiquetado (SPIKE-12)' },
+      { to: '/admin/evaluacion', label: 'Evaluación humana' },
+      { to: '/admin/adjudicacion', label: 'Adjudicación (sombra)' },
+      { to: '/admin/metricas', label: 'Métricas de concordancia' },
       { to: '/admin/jev-triage', label: 'Triaje Jev' },
       { to: '/admin/review', label: 'Propuestas' },
       { to: '/admin/coverage', label: 'Cobertura' }
