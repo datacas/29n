@@ -1,4 +1,4 @@
-# Manual de codificación v0.2 — BORRADOR (no vigente)
+# Manual de codificación v0.2 — BORRADOR (SUPERADO por `coding-manual-v0.2.md`; se conserva como histórico de la recodificación de 8 celdas)
 
 > **BORRADOR NO RATIFICADO.** Basado en v0.1-benchmark con las aclaraciones de `docs/methodology/fase2/propuesta-manual-v0.2.md`. Las decisiones que lo sustentan proceden de mensajes de autoría no verificada (D26) y **están pendientes de ratificación por la persona responsable**. No es el manual vigente: v0.1 sigue siendo el de los benchmarks.
 

@@ -65,5 +65,5 @@ Medición orientativa sobre los programas (local, sin modelos): en torno al **9,
 3. **Regla fiscal general:** no recorta el alcance, salvo que esté ligada a esa medida o la haga explícitamente opcional.
 4. **Criterios de reparto:** solo los acotados (a quién llega; lado contrario que plantea la pregunta).
 5. **Citas:** comprobación por niveles y regla (a)–(c); «sostiene la clase por sí misma» exige revisión humana o un modelo dedicado (futuro, con autorización).
-6. **Precisión de la regla 2 («compromiso propio»: misma magnitud y nivel + prueba de compatibilidad):** propuesta, **opción A recomendada, pendiente de tu aprobación** (la ratificación de las decisiones 1–5 sigue pendiente de la persona responsable, D26).
+6. **Precisión de la regla 2 («compromiso propio»: misma magnitud y nivel + prueba de compatibilidad):** **opción A APROBADA** por la persona responsable (2026-11-26), junto con la publicación de v0.2 como manual vigente para la campaña de ~150 celdas (`coding-manual-v0.2.md`, congelado; ver `manual-v0.2-cambios.md`).
 Pendiente: orden expresa de publicar v0.2, y decidir si se implementa la nueva configuración de recuperación del apartado 5.
