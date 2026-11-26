@@ -348,9 +348,11 @@ async function startSurvey() {
 .start__body { padding-top: var(--space-5); padding-bottom: var(--space-6); }
 .back--band { color: var(--muted); margin-bottom: var(--space-3); }
 .entity-tools { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-4); border-bottom: 1px solid var(--line); }
-.province { flex: 1 0 100%; display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) 0; }
+.province { flex: 1 1 100%; min-width: 0; max-width: 100%; display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) 0; }
 .province label { font-weight: 500; white-space: nowrap; }
-.province select { flex: 1; min-width: 0; min-height: 2.75rem; padding: 0 var(--space-3); border: 1.5px solid var(--ink); border-radius: 10px; background: var(--tile); font-size: 1rem; }
+/* Móvil: la etiqueta pasa encima del selector para que este ocupe todo el ancho disponible y no se salga del recuadro */
+@media (max-width: 480px) { .province { flex-direction: column; align-items: stretch; gap: var(--space-2); } }
+.province select { flex: 1 1 0; min-width: 0; width: 100%; max-width: 100%; text-overflow: ellipsis; min-height: 2.75rem; padding: 0 var(--space-3); border: 1.5px solid var(--ink); border-radius: 10px; background: var(--tile); font-size: 1rem; }
 .entity-tools .btn { min-height: 2.5rem; font-size: 1rem; padding: 0.3rem 0.4rem; }
 .entities-selection .choice { gap: var(--space-3); }
 .entities-selection .flag { flex: none; min-width: 2.4rem; max-width: 46%; }
