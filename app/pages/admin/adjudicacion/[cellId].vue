@@ -86,7 +86,7 @@
       </section>
 
       <section v-if="d.history.length" class="form-card"><h2>Historial (solo añadir)</h2>
-        <ul><li v-for="h in d.history" :key="h.id">Rev. {{ h.revision }} · {{ new Date(h.createdAt).toLocaleString() }} · {{ h.documentClass ?? 'sin resolver' }} {{ h.intensity ?? '' }} · causas: {{ h.causes.join(', ') }} · {{ h.rationale }}</li></ul></section>
+        <ul><li v-for="h in d.history" :key="h.id">Rev. {{ h.revision }} · {{ new Date(h.createdAt).toLocaleString() }} · {{ h.documentClass ?? 'sin resolver' }} {{ h.intensity ?? '' }} · causas: {{ h.causes.join(', ') }} · <strong v-if="h.authorship">Autor material: {{ AUTHOR[h.authorship.authorKind] ?? h.authorship.authorKind }}<span v-if="h.authorship.authorizedBy"> · autorizado por: {{ h.authorship.authorizedBy }}</span></strong> · {{ h.rationale }}</li></ul></section>
     </template>
   </div>
 </template>
@@ -94,6 +94,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'admin', middleware: ['admin-auth'] })
 const route = useRoute(); const cellId = route.params.cellId as string
+const AUTHOR: Record<string, string> = { human: 'persona', human_with_agent_support: 'persona con apoyo posterior de un agente', ai_agent: 'agente de IA', unverified: 'sin verificar' }
 const CLASSES = [{ v: 'supports', l: 'Apoya' }, { v: 'opposes', l: 'Se opone' }, { v: 'explicit_neutral', l: 'Neutral explícita' }, { v: 'not_mentioned', l: 'No mencionado' }, { v: 'ambiguous', l: 'Ambigua' }]
 const CAUSES = [
   { v: 'retrieval_error', l: 'Error de recuperación documental' }, { v: 'interpretation_error', l: 'Error de interpretación' }, { v: 'intensity_error', l: 'Error de intensidad' },

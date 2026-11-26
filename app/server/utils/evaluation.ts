@@ -222,6 +222,7 @@ export async function finalizeEvaluation(pool: TxPool, evaluator: Evaluator, cam
         JSON.stringify({ affiliation: evaluator.affiliation, independent_human_reference: false, campaign_id: campaignId, cell_id: cellId, cell_version: v.version, draft_version: d.version, blind_backend: true }),
         finalClass, intensity, JSON.stringify(evidence), String(d.rationale ?? ''), !!d.insufficient_context, campaignId, evaluator.id, v.version])
     await db.query('UPDATE eval_drafts SET finalized_at = now(), coding_id = $1 WHERE id = $2', [ins.rows[0].id, d.id])
+    await db.query(`INSERT INTO eval_authorship (record_table, record_id, author_kind, author_label, note) VALUES ('position_codings', $1, 'unverified', $2, 'finalizada desde la interfaz; procedencia declarada aparte (eval_provenance)')`, [ins.rows[0].id, evaluator.label])
     await audit(db, evaluator.id, 'finalize', campaignId, cellId, { coding_id: ins.rows[0].id, class: finalClass, insufficient_context: !!d.insufficient_context })
     await db.query('COMMIT')
     return { codingId: ins.rows[0].id as string }

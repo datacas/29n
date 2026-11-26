@@ -25,8 +25,11 @@ async function requireOwnFinalized(db: Queryable, evaluator: Evaluator, cellId: 
 
 async function history(db: Queryable, cellId: string, evaluatorId: string) {
   const { rows } = await db.query(
-    `SELECT id, revision, document_class AS "documentClass", intensity, causes, other_cause_text AS "otherCauseText", proposed_action AS "proposedAction", rationale, evidence, created_at AS "createdAt", manual_version AS "manualVersion", cell_version AS "cellVersion", applied
-       FROM eval_adjudications WHERE cell_id = $1 AND adjudicator_id = $2 ORDER BY revision DESC`, [cellId, evaluatorId])
+    `SELECT x.id, x.revision, x.document_class AS "documentClass", x.intensity, x.causes, x.other_cause_text AS "otherCauseText", x.proposed_action AS "proposedAction", x.rationale, x.evidence, x.created_at AS "createdAt",
+            x.manual_version AS "manualVersion", x.cell_version AS "cellVersion", x.applied,
+            (SELECT row_to_json(a) FROM (SELECT s.author_kind AS "authorKind", s.author_label AS "authorLabel", s.authorized_by AS "authorizedBy", s.note FROM eval_authorship s
+               WHERE s.record_table = 'eval_adjudications' AND s.record_id = x.id ORDER BY s.recorded_at DESC LIMIT 1) a) AS authorship
+       FROM eval_adjudications x WHERE x.cell_id = $1 AND x.adjudicator_id = $2 ORDER BY x.revision DESC`, [cellId, evaluatorId])
   return rows
 }
 
@@ -85,6 +88,8 @@ export async function saveAdjudication(db: Queryable, evaluator: Evaluator, cell
       [cellId, evaluator.id, cls, input.intensity ?? null, input.rationale.trim(), causes, causes.includes('other') ? String(input.otherCauseText).trim() : null,
         input.proposedAction ?? null, JSON.stringify(ev), own.coding_id, own.manual_version, own.cell_version, current + 1])
     await db.query('INSERT INTO eval_audit (evaluator_id, action, cell_id, detail) VALUES ($1,$2,$3,$4)', [evaluator.id, 'adjudicated', cellId, JSON.stringify({ revision: r.revision, class: cls, causes })])
+    // Autoría material: desde la interfaz no se puede saber quién la maneja; la procedencia se declara aparte (eval_provenance) y puede anotarse después en eval_authorship.
+    await db.query(`INSERT INTO eval_authorship (record_table, record_id, author_kind, author_label, note) VALUES ('eval_adjudications', $1, 'unverified', $2, 'registrada desde la interfaz; procedencia declarada aparte (eval_provenance)')`, [r.id, evaluator.label])
     return { id: r.id as string, revision: r.revision as number }
   } catch (e: any) {
     if (e?.code === '23505') throw new EvalError(409, 'La adjudicación cambió; recarga', { currentRevision: current })

@@ -2,13 +2,14 @@
 // el evaluador ya finalizó en otra campaña. La interfaz no muestra la respuesta anterior; ambas evaluaciones se conservan (son filas distintas de `position_codings`).
 // La repetibilidad intraevaluador NO equivale a fiabilidad entre humanos independientes.
 //   node scripts/methodology/create_repeatability_campaign.mjs --source <campaign_id> [--n 10] [--seed 7] [--min-days 7] [--allow-early] [--apply]
+//   --design: usa las celdas PREINSCRITAS para repetibilidad en el diseño muestral (eval_sample_design.repeat_selected) en vez de una muestra al azar (la selección no puede depender de los resultados)
 import crypto from 'node:crypto'
 import pg from 'pg'
 import { rng } from './lib.mjs'
 
 const arg = (k, d) => { const i = process.argv.indexOf(`--${k}`); return i >= 0 ? process.argv[i + 1] : d }
 const SOURCE = arg('source'); const N = Number(arg('n', 10)); const SEED = Number(arg('seed', 7)); const MIN_DAYS = Number(arg('min-days', 7))
-const APPLY = process.argv.includes('--apply'); const EARLY = process.argv.includes('--allow-early')
+const DESIGN = process.argv.includes('--design'); const APPLY = process.argv.includes('--apply'); const EARLY = process.argv.includes('--allow-early')
 if (!SOURCE) { console.error('Falta --source <campaign_id>'); process.exit(1) }
 const sha = (s) => crypto.createHash('sha256').update(s).digest('hex')
 const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL || 'postgresql://app:password@localhost:5433/affinity' })
@@ -23,7 +24,12 @@ try {
   console.log(`Origen «${src.name}»: ${fin.length} celdas finalizadas; la más reciente hace ${youngest.toFixed(1)} días (mínimo recomendado: ${MIN_DAYS}).`)
   if (youngest < MIN_DAYS && !EARLY) throw new Error('Demasiado pronto: la memoria de la primera evaluación sesgaría la repetición. Espera o usa --allow-early (queda documentado).')
   const r = rng(SEED)
-  const pick = fin.map((f) => [r(), f]).sort((a, b) => a[0] - b[0]).slice(0, Math.min(N, fin.length)).map((x) => x[1])
+  let pick
+  if (DESIGN) {
+    const { rows: pre } = await c.query('SELECT cell_id FROM eval_sample_design WHERE repeat_selected'); const set = new Set(pre.map((x) => x.cell_id))
+    pick = fin.filter((f) => set.has(f.cell_id)); const missing = set.size - pick.length
+    if (missing > 0) throw new Error(`Faltan ${missing} celdas preinscritas por finalizar en la campaña de origen`)
+  } else pick = fin.map((f) => [r(), f]).sort((a, b) => a[0] - b[0]).slice(0, Math.min(N, fin.length)).map((x) => x[1])
   console.log(`Muestra aleatoria de ${pick.length} celdas (semilla ${SEED}) y orden nuevo.`)
   if (!APPLY) { console.log('Simulación: no se ha escrito nada. Usa --apply.'); process.exit(0) }
   await c.query('BEGIN')
@@ -32,7 +38,7 @@ try {
     `INSERT INTO eval_campaigns (name, kind, status, manual_version, manual_text, selection_method, selection_bias_note, source_campaign_id)
      VALUES ($1,'repeatability','open',$2,$3,$4,$5,$6) RETURNING id`,
     [name, src.manual_version, src.manual_text,
-      `Muestra ALEATORIA de ${pick.length} de las ${fin.length} celdas finalizadas en la campaña de origen, en orden y con etiquetas nuevos; se repite sin mostrar la respuesta anterior. Espera mínima entre evaluaciones: ${youngest.toFixed(1)} días${youngest < MIN_DAYS ? ' (por debajo del mínimo recomendado, --allow-early)' : ''}.`,
+      `${DESIGN ? 'Celdas PREINSCRITAS en el diseño muestral (semilla fija, independientes de los resultados)' : 'Muestra ALEATORIA'} de ${pick.length} de las ${fin.length} celdas finalizadas en la campaña de origen, en orden y con etiquetas nuevos; se repite sin mostrar la respuesta anterior. Espera mínima entre evaluaciones: ${youngest.toFixed(1)} días${youngest < MIN_DAYS ? ' (por debajo del mínimo recomendado, --allow-early)' : ''}.`,
       'Mide la repetibilidad del MISMO evaluador interno (test–retest). No equivale a fiabilidad entre humanos independientes; el evaluador puede recordar parte de las celdas.', SOURCE])
   for (const [n, f] of pick.entries()) {
     const { rows: [v] } = await c.query('SELECT snapshot, sha256 FROM eval_cell_versions WHERE cell_id = $1 AND version = $2', [f.cell_id, f.cell_version])

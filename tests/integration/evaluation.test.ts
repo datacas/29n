@@ -398,3 +398,42 @@ describe('Procedencia (no citar como humano lo que no está verificado)', () => 
     await expect(q('DELETE FROM eval_provenance WHERE campaign_id = $1', [f.camp])).rejects.toThrow()
   })
 })
+
+describe('Diseño muestral y autoría', () => {
+  it('el evaluador no ve el diseño muestral (muestra R/T, estrato, probabilidad ni peso): ceguera', async () => {
+    const f = await fixture()
+    await q(`INSERT INTO eval_sample_design (cell_id, sample, tier, stratum, stratum_size, stratum_sampled, inclusion_prob, weight, seed, design_sha256) VALUES ($1,'R','R-negativa','negativa',64,20,0.3125,3.2,1,'sha')`, [f.cell])
+    await saveDraft(pool, f.ev as any, f.camp, f.cell, 0, complete(f))
+    const blob = JSON.stringify({ campaigns: await listCampaigns(pool, f.ev as any), cells: await listCells(pool, f.ev as any, f.camp), cell: await getCell(pool, f.ev as any, f.camp, f.cell) })
+    for (const forbidden of ['R-negativa', 'negativa', 'inclusion_prob', 'stratum', 'weight', 'tier', 'design_sha256', '"sample"', '0.3125']) expect(blob).not.toContain(forbidden)
+  })
+
+  it('el diseño es inmutable y no admite celdas T con peso ni R sin él', async () => {
+    const f = await fixture()
+    await expect(q(`INSERT INTO eval_sample_design (cell_id, sample, tier, stratum, design_sha256) VALUES ($1,'R','x','s','x')`, [f.cell])).rejects.toThrow()
+    await q(`INSERT INTO eval_sample_design (cell_id, sample, tier, stratum, design_sha256) VALUES ($1,'T','T1','sin_fila','x')`, [f.cell])
+    await expect(q('UPDATE eval_sample_design SET sample = $1 WHERE cell_id = $2', ['R', f.cell])).rejects.toThrow()
+    await expect(q('DELETE FROM eval_sample_design WHERE cell_id = $1', [f.cell])).rejects.toThrow()
+  })
+
+  it('cada evaluación y adjudicación queda con autoría «unverified» hasta que se anote otra (solo añadir); la anotación posterior manda', async () => {
+    const f = await fixture()
+    await q(`INSERT INTO eval_adjudication_items (cell_id, priority, reasons, dossier) VALUES ($1,1,ARRAY['p'],'{"ord":1}')`, [f.cell])
+    const s = await saveDraft(pool, f.ev as any, f.camp, f.cell, 0, complete(f)); const { codingId } = await finalizeEvaluation(pool as any, f.ev as any, f.camp, f.cell, s.version, 1)
+    expect((await q(`SELECT author_kind FROM eval_authorship WHERE record_table = 'position_codings' AND record_id = $1`, [codingId])).rows.map((r) => r.author_kind)).toEqual(['unverified'])
+    const adj = await saveAdjudication(pool, f.ev as any, f.cell, { causes: ['omitted_position'], rationale: 'x', expectedRevision: 0 })
+    let h = (await getAdjudication(pool, f.ev as any, f.cell)).history[0]; expect(h.authorship).toMatchObject({ authorKind: 'unverified' })
+    await q(`INSERT INTO eval_authorship (record_table, record_id, author_kind, author_label, authorized_by, note) VALUES ('eval_adjudications', $1, 'ai_agent', 'agente', 'persona responsable', 'registrada bajo autorización expresa')`, [adj.id])
+    h = (await getAdjudication(pool, f.ev as any, f.cell)).history[0]; expect(h.authorship).toMatchObject({ authorKind: 'ai_agent', authorizedBy: 'persona responsable' })
+    expect((await q(`SELECT count(*)::int AS n FROM eval_authorship WHERE record_id = $1`, [adj.id])).rows[0].n).toBe(2)   // el historial se conserva
+    await expect(q(`UPDATE eval_authorship SET author_kind = 'human' WHERE record_id = $1`, [adj.id])).rejects.toThrow()
+  })
+
+  it('la ausencia confirmada exige búsqueda en el programa completo y es de solo añadir', async () => {
+    const f = await fixture()
+    await expect(q(`INSERT INTO eval_absence_checks (cell_id, checked_by, scope, result, search_terms) VALUES ($1,$2,'retrieved_passages','absent_confirmed',ARRAY['x'])`, [f.cell, f.ev.id])).rejects.toThrow()
+    await expect(q(`INSERT INTO eval_absence_checks (cell_id, checked_by, scope, result) VALUES ($1,$2,'full_program','absent_confirmed')`, [f.cell, f.ev.id])).rejects.toThrow()
+    await q(`INSERT INTO eval_absence_checks (cell_id, checked_by, scope, result, search_terms, pages_reviewed) VALUES ($1,$2,'full_program','absent_confirmed',ARRAY['selectividad'],ARRAY[33])`, [f.cell, f.ev.id])
+    await expect(q('DELETE FROM eval_absence_checks WHERE cell_id = $1', [f.cell])).rejects.toThrow()
+  })
+})
