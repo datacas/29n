@@ -19,6 +19,16 @@ Si falta (1) o (3), la clase es `not_mentioned`, aunque el tema se nombre de pas
 
 **Propuesta.** Una cláusula que **presupone** la medida **no cuenta por sí sola** como apoyo ni como oposición. La clase se decide por **los compromisos propios** del programa sobre el objeto: orientación general, medidas explícitas, reducciones o ampliaciones. La cláusula presuposicional se cita como contexto, **no como cita registrada de la posición**. Si, aparte de ella, el programa no dice nada sobre el objeto → `not_mentioned`; si hay señales contrarias y a favor → `ambiguous`. **Matiz adoptado:** la cláusula se registra como **señal de diagnóstico** (etiqueta `presuposicional` en la justificación) para que no se pierda: ayuda a entender lecturas divergentes entre evaluadores. Si más adelante se quiere explotar de forma estructurada, bastaría un campo de etiquetas de diagnóstico (migración futura; no necesario ahora).
 
+**Precisión de la regla 2 — qué es un «compromiso propio sobre el objeto» (propuesta tras la recodificación de 8 celdas por una persona).** Al aplicar la regla, un caso mostró que «compromisos propios» admite dos lecturas: la **orientación general** del apartado frente a un compromiso **sobre la magnitud concreta** que pregunta la proposición. Se propone que un pasaje solo sea compromiso propio si cumple las dos condiciones siguientes:
+1. **Misma magnitud y mismo nivel.** Declara la dirección (más, menos o mantener) de **la misma magnitud** por la que pregunta la proposición (p. ej. el nivel de gasto, no su composición ni su eficiencia) **en el mismo nivel de gobierno** (p. ej. el Estado, no un agregado europeo).
+2. **Prueba de compatibilidad.** Si la medida citada es **compatible con ambos sentidos** de la proposición (p. ej. «reducir duplicidades» o «auditar el gasto» pueden acompañar tanto a más como a menos gasto), **no fija el sentido** y no cuenta.
+
+Las secciones de orientación general (paz, valores, contexto) son **contexto**, no compromiso. Si ningún pasaje cumple las dos condiciones → `not_mentioned`; si hay señales contrarias que sí las cumplen → `ambiguous`.
+
+*Opciones.* **A (recomendada):** la regla anterior; coherente con la decisión de «medida cercana» (no convertir una inferencia en posición) y con el criterio conservador del manual. **B:** una orientación general inequívoca cuenta como ±1 («compromiso por orientación»); se descarta porque reintroduce la inferencia que la regla de medida cercana quiere evitar.
+
+*Efecto en lo ya registrado (solo lectura de las adjudicaciones; sin modelos):* afecta a **una** adjudicación del piloto, la de la celda 12 (hoy −1 por una medida de eficiencia a nivel europeo), que pasaría a `not_mentioned` con la opción A, y no se ve que afecte a las demás. Tu recodificación con v0.2 de esa celda ya dio `not_mentioned`. Si apruebas la opción A, se registraría una **revisión nueva** de esa adjudicación (la anterior se conserva).
+
 ## 3. ¿Qué cuenta como condición que reduce el alcance (+2 frente a +1)?
 **Problema.** v0.1 dice +2 «sin salvedades que recorten su alcance» y +1 «parcial, vago, condicionado». No distingue qué condiciones recortan el alcance.
 
@@ -55,4 +65,5 @@ Medición orientativa sobre los programas (local, sin modelos): en torno al **9,
 3. **Regla fiscal general:** no recorta el alcance, salvo que esté ligada a esa medida o la haga explícitamente opcional.
 4. **Criterios de reparto:** solo los acotados (a quién llega; lado contrario que plantea la pregunta).
 5. **Citas:** comprobación por niveles y regla (a)–(c); «sostiene la clase por sí misma» exige revisión humana o un modelo dedicado (futuro, con autorización).
+6. **Precisión de la regla 2 («compromiso propio»: misma magnitud y nivel + prueba de compatibilidad):** propuesta, **opción A recomendada, pendiente de tu aprobación** (la ratificación de las decisiones 1–5 sigue pendiente de la persona responsable, D26).
 Pendiente: orden expresa de publicar v0.2, y decidir si se implementa la nueva configuración de recuperación del apartado 5.
