@@ -14,7 +14,9 @@ const sha = (s) => crypto.createHash('sha256').update(s).digest('hex')
 const LOCAL = path.join(ROOT, 'docs/methodology/local')
 const panel = JSON.parse(fs.readFileSync(path.join(LOCAL, 'panel.json'), 'utf8')).models
 const DEFAULT = ['llama-4-scout', 'minimax-m3.1-flash', 'mistral-large-4', 'nemotron-3.5-lightning', 'qwen3.8-27b-groq']
-const CLI = [{ label: 'deepseek-v4.1-flash-opencode', id: 'opencode/deepseek-v4.1-flash-free', group: 'opencode', vendor: 'DeepSeek', via: 'opencode', maxTokens: 4000 }]
+const CLI = [{ label: 'deepseek-v4.1-flash-opencode', id: 'opencode/deepseek-v4.1-flash-free', group: 'opencode', vendor: 'DeepSeek', via: 'opencode', maxTokens: 4000 },
+  { label: 'luna-gpt-6-opencode', id: 'openai/gpt-6-luna', group: 'opencode-luna', vendor: 'OpenAI (Luna)', via: 'opencode', maxTokens: 4000 },
+  { label: 'codex-gpt-6.2-sol', id: 'gpt-6.2-sol', group: 'codex', vendor: 'OpenAI (Codex)', via: 'codex', maxTokens: 4000 }]
 const labels = String(arg('models', DEFAULT.join(','))).split(','); const models = labels.map((l) => panel.find((m) => m.label === l) ?? CLI.find((m) => m.label === l)).filter(Boolean)
 const r = loadRelease('2.1.2')
 const items = r.questions.map((q, i) => ({ id: q.questionId, n: i + 1, text: q.canonicalText, context: q.contextText ?? '', kind: 'item' }))
@@ -33,31 +35,42 @@ const rr = rng(2911); const repeats = items.filter(() => rr() < 0.1).map((x) => 
 const all = flag('controls-only') ? [...CTRL_POS, ...CTRL_NEG, ...(known ? [{ ...known, kind: 'item' }] : [])] : [...items, ...CTRL_POS, ...CTRL_NEG, ...repeats]
 const SYSTEM = 'Eres un metodólogo de encuestas. Revisas preguntas de un cuestionario de afinidad con programas electorales. Respondes únicamente con un objeto JSON válido, sin texto adicional ni marcas de código.'
 const user = (x) => `PREGUNTA: ${x.text}\nCONTEXTO: ${x.context || '(sin texto explicativo)'}\nESCALA: la persona responde de −2 (totalmente en desacuerdo) a +2 (totalmente de acuerdo), o «No sé».\n\nTarea, razonando con contraejemplos:\n1. Enumera las proposiciones independientes que una persona tendría que aceptar a la vez para responder «de acuerdo».\n2. Busca un contraejemplo: una posición política coherente que ninguna respuesta de la escala pueda expresar fielmente. Si no la hay, null.\n3. ¿Está claro qué significa estar de acuerdo (dirección de la pregunta)?\n4. ¿Hay presuposiciones o un alcance ambiguo?\n5. Neutralidad: ¿qué posiciones políticas favorece responder «de acuerdo»? ¿Hay términos cargados?\n\nDevuelve exactamente este JSON:\n{"propositions":["..."],"n_propositions":0,"counterexample":null,"direction_clear":true,"presupposition":null,"scope_ambiguity":null,"agree_favors":"izquierda|derecha|ninguna|depende|no_claro","loaded_terms":[],"severity":0,"verdict":"ok|doble_contenido|objeto_compuesto|vago|presuposicion|sesgo"}\n(severity 0 = sin problema, 3 = grave)`
-const PROMPT_SHA = sha(SYSTEM + user({ text: 'P', context: 'C' }))
+// v2 (calibrada): criterio estricto para reducir el exceso de señalamientos de v1 (ver registro D38/D40). Ejemplos de calibración DISTINTOS de los controles.
+const V2 = flag('v2') || arg('prompt', 'v1') === 'v2'
+const userV2 = (x) => `PREGUNTA: ${x.text}\nCONTEXTO: ${x.context || '(sin texto explicativo)'}\nESCALA: la persona responde de −2 (totalmente en desacuerdo) a +2 (totalmente de acuerdo), o «No sé».\n\nCriterio ESTRICTO. Una pregunta tiene DOBLE CONTENIDO solo si cumple las tres condiciones: (a) contiene dos proposiciones sobre objetos o medidas DISTINTOS; (b) existe una posición política REAL y habitual que aceptaría una y rechazaría la otra; (c) ninguna respuesta de la escala puede expresar esa posición. NO es doble contenido: un objeto con varias facetas inseparables en la práctica, una lista de ejemplos del mismo objeto, ni un adjetivo o condición que precisa la medida. En caso de duda, la pregunta es válida («ok»).\n\nEjemplos de calibración:\n- «¿Debe aumentarse el gasto en educación y reducirse el IVA de los alimentos?» → doble_contenido (objetos distintos; un partido podría apoyar solo uno).\n- «¿Debe ampliarse la red de residencias públicas para personas mayores?» → ok (un solo objeto).\n- «¿Debe prohibirse fumar en terrazas y espacios públicos al aire libre?» → ok (el segundo es un ejemplo del mismo ámbito).\n\nDevuelve exactamente este JSON:\n{"propositions":["..."],"n_propositions":0,"counterexample":null,"direction_clear":true,"presupposition":null,"scope_ambiguity":null,"agree_favors":"izquierda|derecha|ninguna|depende|no_claro","loaded_terms":[],"severity":0,"verdict":"ok|doble_contenido|objeto_compuesto|vago|presuposicion|sesgo"}\n(severity 0 = sin problema, 3 = grave). El contraejemplo debe ser una posición política concreta y nombrable, o null.`
+const userFn = V2 ? userV2 : user
+const PROMPT_SHA = sha(SYSTEM + userFn({ text: 'P', context: 'C' }) + (V2 ? 'v2' : 'v1'))
 if (flag('dry-run')) { console.log(JSON.stringify({ items: items.length, controlesPositivos: CTRL_POS.length + (known ? 1 : 0), controlesNegativos: CTRL_NEG.length, repeticiones: repeats.length, total: all.length, modelos: models.map((m) => m.label), llamadas: all.length * models.length, promptSha: PROMPT_SHA.slice(0, 12), controlConocido: known?.text }, null, 1)); console.log('\n' + user(items[0])); process.exit(0) }
 if (!flag('confirm-authorized')) { console.error('Falta --confirm-authorized.'); process.exit(2) }
 const KEY = fs.readFileSync(String(process.env.OMNIROUTE_BENCH_KEY_FILE).replace(/^~/, process.env.HOME), 'utf8').trim()
 const scrub = (s) => String(s).split(KEY).join('<clave>'); const sleep = (ms) => new Promise((x) => setTimeout(x, ms))
-const outFile = path.join(OUT, 'item_audit_blind.jsonl'); const runId = crypto.randomUUID()
+const outFile = path.join(OUT, V2 ? 'item_audit_blind_v2.jsonl' : 'item_audit_blind.jsonl'); const runId = crypto.randomUUID()
 const norm = (x) => String(x ?? '').toLowerCase().replace(/^@cf\//, ''); const tail = (x) => norm(x).split('/').pop().replace(/:free$|-free$/, '')
 const done = new Set(); if (fs.existsSync(outFile)) for (const l of fs.readFileSync(outFile, 'utf8').split('\n').filter(Boolean)) { const o = JSON.parse(l); if (!o.halted && (o.execution_status === 'ok' || (o.attempts ?? 0) >= 3)) done.add(`${o.evaluator_label}|${o.itemKey}`) }
 const attemptsOf = {}
 import { spawn } from 'node:child_process'
 // Modelos servidos por CLI (opencode): un único mensaje (sistema + usuario), sin herramientas; coste 0 en el plan gratuito.
+import os from 'node:os'
 function callCli(m, x) {
   return new Promise((resolve) => {
-    const prompt = `${SYSTEM}\n\n${user(x)}`; const p = spawn('opencode', ['run', '-m', m.id, '--format', 'json', prompt], { cwd: '/tmp', stdio: ['ignore', 'pipe', 'pipe'] }); let out = ''; const timer = setTimeout(() => { p.kill('SIGKILL') }, +arg('timeout-ms', 150000))
-    p.stdout.on('data', (d) => (out += d)); p.on('close', (code) => { clearTimeout(timer); let text = '', tokens = {}, cost = 0; for (const l of out.split('\n')) { try { const e = JSON.parse(l); if (e.type === 'text') text += e.part?.text ?? ''; if (e.type === 'step_finish') { tokens = e.part?.tokens ?? tokens; cost += Number(e.part?.cost ?? 0) } } catch {} }
+    const prompt = `${SYSTEM}\n\n${userFn(x)}`; let p
+    if (m.via === 'codex') { const scratch = fs.mkdtempSync(path.join(os.tmpdir(), 'audit-codex-')); p = spawn('codex', ['exec', '--ephemeral', '--ignore-user-config', '--ignore-rules', '-s', 'read-only', '-C', scratch, '--skip-git-repo-check', '--json', '-m', m.id, '-c', 'model_reasoning_effort="low"', '-'], { stdio: ['pipe', 'pipe', 'pipe'] }); p.stdin.end(prompt) }
+    else p = spawn('opencode', ['run', '-m', m.id, '--format', 'json', prompt], { cwd: '/tmp', stdio: ['ignore', 'pipe', 'pipe'] })
+    let out = ''; const timer = setTimeout(() => { p.kill('SIGKILL') }, +arg('timeout-ms', 180000))
+    p.stdout.on('data', (d) => (out += d)); p.on('close', (code) => { clearTimeout(timer); let text = '', tokens = {}, cost = 0
+      for (const l of out.split('\n')) { try { const e = JSON.parse(l)
+        if (m.via === 'codex') { if (e.type === 'item.completed' && e.item?.type === 'agent_message') text = e.item.text; if (e.type === 'turn.completed') tokens = e.usage ?? tokens }
+        else { if (e.type === 'text') text += e.part?.text ?? ''; if (e.type === 'step_finish') { tokens = e.part?.tokens ?? tokens; cost += Number(e.part?.cost ?? 0) } } } catch {} }
       resolve({ ok: code === 0 && !!text, text, tokens, cost }) })
   })
 }
 async function call(m, x) {
   const res = await fetch('http://127.0.0.1:20128/v1/chat/completions', { method: 'POST', signal: AbortSignal.timeout(+arg('timeout-ms', 150000)), headers: { 'content-type': 'application/json', authorization: `Bearer ${KEY}`, 'x-omniroute-no-memory': '1' },
-    body: JSON.stringify({ model: m.id, temperature: 0, max_tokens: +arg('max-tokens', 0) || Math.max(m.maxTokens ?? 800, 1600), messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: user(x) }] }) })
+    body: JSON.stringify({ model: m.id, temperature: 0, max_tokens: +arg('max-tokens', 0) || Math.max(m.maxTokens ?? 800, 1600), messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: userFn(x) }] }) })
   return { r: res, j: await res.json().catch(() => null) }
 }
 async function one(m, x, key) {
-  if (m.via === 'opencode') { const t0 = Date.now(); const rec = { run_id: runId, itemKey: key, itemId: x.id, itemKind: x.kind, repeatOf: x.repeatOf ?? null, evaluator_label: m.label, provider: m.group, model_family: m.vendor, model_requested: m.id, model_actual: m.id, prompt_sha: PROMPT_SHA.slice(0, 12), blind: true, via: 'cli', fallback_used: false, attempts: (attemptsOf[`${m.label}|${key}`] = (attemptsOf[`${m.label}|${key}`] ?? 0) + 1) }
+  if (m.via === 'opencode' || m.via === 'codex') { const t0 = Date.now(); const rec = { run_id: runId, itemKey: key, itemId: x.id, itemKind: x.kind, repeatOf: x.repeatOf ?? null, evaluator_label: m.label, provider: m.group, model_family: m.vendor, model_requested: m.id, model_actual: m.id, prompt_sha: PROMPT_SHA.slice(0, 12), blind: true, via: 'cli', fallback_used: false, attempts: (attemptsOf[`${m.label}|${key}`] = (attemptsOf[`${m.label}|${key}`] ?? 0) + 1) }
     const res = await callCli(m, x); rec.latency_ms = Date.now() - t0; rec.usage = res.tokens; rec.cost_usd = String(res.cost); rec.cost_nonzero = res.cost > 0
     let p = null; try { p = JSON.parse(String(res.text).replace(/^\s*```(json)?|```\s*$/g, '').trim()) } catch {}
     if (!res.ok) { rec.execution_status = 'api_error'; rec.error_detail = 'sin salida del CLI (¿límite gratuito?)' } else if (!p || !Array.isArray(p.propositions) || typeof p.severity !== 'number') { rec.execution_status = 'invalid_output'; rec.raw_preview = String(res.text).slice(0, 300) }

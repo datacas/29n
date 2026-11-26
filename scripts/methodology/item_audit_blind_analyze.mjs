@@ -4,7 +4,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { OUT, ROOT } from './lib.mjs'
 import { krippendorffAlpha, alphaCI, gwetAC, weightedKappa } from '../../app/lib/methodology/agreement.ts'
-const rows = fs.readFileSync(path.join(OUT, 'item_audit_blind.jsonl'), 'utf8').split('\n').filter(Boolean).map(JSON.parse).filter((r) => !r.halted)
+const FILE = process.argv.includes('--v2') ? 'item_audit_blind_v2.jsonl' : 'item_audit_blind.jsonl'; const SUF = process.argv.includes('--v2') ? '_v2' : ''
+const rows = fs.readFileSync(path.join(OUT, FILE), 'utf8').split('\n').filter(Boolean).map(JSON.parse).filter((r) => !r.halted)
 const ok = rows.filter((r) => r.execution_status === 'ok' && !r.fallback_used && !r.cost_nonzero)
 const first = JSON.parse(fs.readFileSync(path.join(OUT, 'auditoria_items.json'), 'utf8')).items
 const byKey = {}; for (const r of ok) byKey[`${r.evaluator_label}|${r.itemKey}`] ??= r      // primera respuesta válida por (modelo, ítem)
@@ -32,8 +33,11 @@ const cmp = { primeraAuditoriaA: firstA.size, nuevosModelosSeñalanAlMenos1: ite
 const fav = {}; for (const m of models) for (const id of itemIds) { const o = get(m, id); if (o) { const k = o.agree_favors; fav[k] = (fav[k] ?? 0) + 1 } }
 const loaded = itemIds.filter((id) => models.filter((m) => get(m, id)?.loaded_terms?.length).length >= 2)
 const neut = { respuestasPorDireccion: fav, itemsConTerminosCargadosEnAlMenos2: loaded.length, itemsDireccionNoClaraEnAlMenos2: itemIds.filter((id) => models.filter((m) => get(m, id) && get(m, id).direction_clear === false).length >= 2).length }
-const out = { generado: new Date().toISOString(), modelos: models, respuestasValidas: ok.length, estadosTecnicos: rows.reduce((m, r) => ((m[r.execution_status + (r.fallback_used ? '+fallback' : '')] = (m[r.execution_status + (r.fallback_used ? '+fallback' : '')] ?? 0) + 1), m), {}), cobertura: cov, porModelo: per, estabilidad: stab, acuerdoEntreModelos: agree, frenteAPrimeraAuditoria: cmp, neutralidad: neut }
-fs.writeFileSync(path.join(OUT, 'item_audit_blind_analisis.json'), JSON.stringify(out, null, 1))
+const corrFile = path.join(ROOT, 'docs/methodology/local/correcciones_items.json'); const split = fs.existsSync(corrFile) ? new Set(JSON.parse(fs.readFileSync(corrFile, 'utf8')).divididas.map((x) => x.n)) : new Set()
+const nOf = Object.fromEntries(first.map((x) => [x.questionId, x.n])); const cobN = (id) => models.filter((m) => get(m, id)).length
+const corr = { dividas: split.size, conAlMenos2Modelos: [...split].filter((n) => { const id = first.find((f) => f.n === n).questionId; return votes[id] >= 2 }).length, mediaVotosDivididas: nz([...split].reduce((a, n) => a + votes[first.find((f) => f.n === n).questionId], 0) / (split.size || 1)), mediaVotosResto: nz(itemIds.filter((id) => !split.has(nOf[id])).reduce((a, id) => a + votes[id], 0) / (itemIds.length - split.size)), dosModelosOmasNoDivididas: itemIds.filter((id) => !split.has(nOf[id]) && votes[id] >= 2).map((id) => 'Q' + nOf[id]) }
+const out = { correccionesAplicadas: corr, generado: new Date().toISOString(), modelos: models, respuestasValidas: ok.length, estadosTecnicos: rows.reduce((m, r) => ((m[r.execution_status + (r.fallback_used ? '+fallback' : '')] = (m[r.execution_status + (r.fallback_used ? '+fallback' : '')] ?? 0) + 1), m), {}), cobertura: cov, porModelo: per, estabilidad: stab, acuerdoEntreModelos: agree, frenteAPrimeraAuditoria: cmp, neutralidad: neut }
+fs.writeFileSync(path.join(OUT, `item_audit_blind_analisis${SUF}.json`), JSON.stringify(out, null, 1))
 const ids = itemIds.filter((id) => votes[id] >= 2).map((id) => { const x = first.find((f) => f.questionId === id); return `- Q${x.n}: ${x.text} (${votes[id]}/${nmod[id]} modelos; primera auditoría: ${firstA.has(id) ? 'sí' : 'no'})` })
-fs.writeFileSync(path.join(ROOT, 'docs/methodology/local/INFORME_auditoria_items_2.md'), `# Segunda auditoría ciega de ítems (LOCAL)\n\nModelos: ${models.join(', ')}. Respuestas válidas: ${ok.length}.\n\n\`\`\`json\n${JSON.stringify(out, null, 1)}\n\`\`\`\n\n## Ítems señalados como doble contenido por ≥2 modelos independientes\n${ids.join('\n')}\n`)
+fs.writeFileSync(path.join(ROOT, `docs/methodology/local/INFORME_auditoria_items_2${SUF}.md`), `# Segunda auditoría ciega de ítems (LOCAL)\n\nModelos: ${models.join(', ')}. Respuestas válidas: ${ok.length}.\n\n\`\`\`json\n${JSON.stringify(out, null, 1)}\n\`\`\`\n\n## Ítems señalados como doble contenido por ≥2 modelos independientes\n${ids.join('\n')}\n`)
 console.log(JSON.stringify(out, null, 1))

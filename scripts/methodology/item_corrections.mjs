@@ -81,19 +81,38 @@ const C = [
     { t: '¿Debe ampliarse la gratuidad de la matrícula universitaria?', c: 'Se refiere a que la matrícula en la universidad pública no cueste dinero a quien estudia. Unos piden ampliarla; otros prefieren becas selectivas.', k: 'universit|matr[ií]cula' }] },
   { n: 132, halves: [
     { t: '¿Debe limitarse la compra de viviendas por grandes tenedores?', c: 'Se refiere a quienes poseen muchas viviendas. Unos piden limitar sus compras para moderar los precios; otros temen que reduzca la oferta de alquiler.', k: 'grandes tenedores|tenedores' },
-    { t: '¿Debe limitarse la compra de viviendas por fondos de inversión?', c: 'Se refiere a fondos que compran vivienda para alquilar o revender. Unos piden limitarlo para moderar los precios; otros temen que reduzca la inversión.', k: 'fondos|inversi[oó]n|especulaci|socimi' }] }
+    { t: '¿Debe limitarse la compra de viviendas por fondos de inversión?', c: 'Se refiere a fondos que compran vivienda para alquilar o revender. Unos piden limitarlo para moderar los precios; otros temen que reduzca la inversión.', k: 'fondos|inversi[oó]n|especulaci|socimi' }] },
+  { n: 38, halves: [
+    { t: '¿Debe ampliarse la desalación?', c: 'Se refiere a plantas que convierten agua de mar en agua potable o de riego. Unos piden ampliarlas para asegurar el suministro; otros temen su coste energético y ambiental.', k: 'desalaci|desalad|desalinizad' },
+    { t: '¿Deben ampliarse las infraestructuras hidráulicas, como presas, canales y trasvases?', c: 'Se refiere a presas, canales, conducciones y trasvases. Unos piden ampliarlas; otros prefieren priorizar la eficiencia y la restauración de los ríos.', k: 'presa|embalse|trasvase|infraestructuras hidr|canal|conducci|regad' }] },
+  { n: 133, halves: [
+    { t: '¿Debe ampliarse la red de ferrocarril de alta velocidad?', c: 'Se refiere a nuevas líneas de alta velocidad. Unos piden ampliarlas para conectar más territorios; otros prefieren mejorar la red convencional.', k: 'alta velocidad|\\bAVE\\b' },
+    { t: '¿Debe ampliarse la red de ferrocarril de cercanías?', c: 'Se refiere a los trenes de cercanías y rodalies. Unos piden más servicios y líneas; otros priorizan otras inversiones.', k: 'cercan[ií]as|rodalies|rodalia' }] },
+  { n: 138, halves: [
+    { t: '¿Deben crearse incentivos fiscales en las zonas rurales despobladas?', c: 'Se refiere a bajar impuestos o dar deducciones a quien vive o monta un negocio en zonas despobladas. Unos los defienden para fijar población; otros dudan de su eficacia.', k: 'incentivos fiscales|deducci|bonificaci|fiscalidad' },
+    { t: '¿Deben garantizarse servicios públicos mínimos en las zonas rurales despobladas?', c: 'Se refiere a sanidad, educación, transporte y conexión a internet en pueblos pequeños. Unos piden garantizarlos por ley; otros los consideran inviables por su coste.', k: 'servicios (p[uú]blicos|b[aá]sicos|garantizados)|sanidad|escuela|transporte|banda ancha|internet' }] },
+  { n: 142, halves: [
+    { t: '¿Debe reformarse el sistema de financiación de la Comunitat Valenciana?', c: 'Se refiere al reparto de recursos entre el Estado y la Comunitat Valenciana. Unos piden cambiarlo; otros defienden el sistema actual.', k: 'financiaci[oó]n' },
+    { t: '¿Debe condonarse parte de la deuda de la Comunitat Valenciana?', c: 'Se refiere a que el Estado asuma parte de la deuda de la Comunitat Valenciana. Unos lo piden; otros lo rechazan por equidad con otras comunidades.', k: 'deuda|condon' }] },
+  { n: 143, halves: [
+    { t: '¿Debe reforzarse el régimen económico y fiscal especial de Canarias?', c: 'El REF es el conjunto de ventajas fiscales y económicas propias de Canarias. Unos piden reforzarlo; otros lo ven un privilegio.', k: 'r[eé]gimen econ[oó]mico y fiscal|\\bREF\\b|fiscal especial' },
+    { t: '¿Debe reforzarse la financiación de la conectividad entre las islas?', c: 'Se refiere a ayudas al transporte aéreo y marítimo entre islas. Unos piden aumentarlas; otros consideran que ya son suficientes.', k: 'conectividad|transporte (a[eé]reo|mar[ií]timo)|descuento de residente|entre las islas|interinsular' }] },
+  { n: 145, halves: [
+    { t: '¿Debe ampliarse el concierto económico de Euskadi?', c: 'El concierto es el sistema por el que Euskadi recauda sus impuestos y paga al Estado un cupo. Unos piden ampliarlo; otros lo critican por privilegiado.', k: 'concierto' },
+    { t: '¿Deben ampliarse las competencias de Euskadi?', c: 'Se refiere a que Euskadi gestione más materias propias. Unos piden transferirlas; otros prefieren mantener el reparto actual.', k: 'competencias|transferencias|autogobierno|estatuto' }] }
 ]
 const KEEP = [
-  [17, 'el segundo elemento (modelos propios) forma parte de la misma infraestructura de IA'], [28, 'requiere acotar «sectores estratégicos» sin inventar una lista'], [38, 'las infraestructuras hidráulicas incluyen la desalación (un solo objeto)'],
+  [17, 'el segundo elemento (modelos propios) forma parte de la misma infraestructura de IA'], [28, 'requiere acotar «sectores estratégicos» sin inventar una lista'], 
   [61, 'una sola medida (embargo de armas y material de doble uso a un país); la absolutez de «toda» se revisará con la segunda auditoría'], [72, 'regulación y trámites son un mismo objeto (carga administrativa)'],
-  [77, 'sin dirección: no se puede fijar sin inventar una; pendiente de decidir con la evidencia'], [104, 'sin dirección y tres impuestos: no se puede fijar sin inventar una; pendiente'], [133, 'ferrocarril de alta velocidad y cercanías: un mismo objeto (red ferroviaria), pendiente de la segunda auditoría'], [138, 'incentivos y servicios forman un único paquete rural; pendiente'],
-  [142, 'pregunta regional con un solo partido: dividirla no cambia la comparación'], [143, 'regional (6 partidos): se mantiene hasta la segunda auditoría'], [145, 'regional: se mantiene hasta la segunda auditoría'], [146, 'regional con un solo partido']]
+  [77, 'sin dirección: no se puede fijar sin inventar una; pendiente de decidir con la evidencia'], [104, 'sin dirección y tres impuestos: no se puede fijar sin inventar una; pendiente'], 
+  [146, 'regional con un solo partido']]
 const first = JSON.parse(fs.readFileSync(path.join(OUT, 'auditoria_items.json'), 'utf8')).items; const idOf = (n) => first.find((x) => x.n === n).questionId
 const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL || 'postgresql://app:password@localhost:5433/affinity' }); const c = await pool.connect()
 const plan = []
 try {
   for (const corr of C) {
     const qid = idOf(corr.n); const { rows: [q] } = await c.query('SELECT * FROM questions WHERE id = $1', [qid])
+    if ((await c.query('SELECT 1 FROM questions WHERE pilot_question_id = $1', [`${q.pilot_question_id}a`])).rowCount) continue   // ya aplicada (idempotente)
     if (!q || corr.halves.some((h) => !h.t.trim().endsWith('?'))) throw new Error('Pregunta no encontrada o texto no válido: ' + corr.n)
     const { rows: pos } = await c.query(`SELECT * FROM positions WHERE question_id = $1 AND review_status = 'approved' AND value IS NOT NULL`, [qid])
     const halves = corr.halves.map((h, i) => ({ ...h, key: String.fromCharCode(97 + i), carried: [], recode: [] }))
