@@ -19,6 +19,7 @@
 import { createHash } from 'node:crypto'
 import pg from 'pg'
 import { loadReleaseContent } from '../../app/lib/release/content.ts'
+import { checkContent, checkSignDiscrepancies } from './publication_blocks.ts'
 
 const arg = (n: string, d?: string) => {
   const i = process.argv.indexOf(`--${n}`)
@@ -67,7 +68,7 @@ try {
   )
   const { rows: pos } = await q(
     `SELECT p.id, p.entity_id, p.question_id, p.review_status, p.value, p.stance_status, p.conditions, e.name AS party,
-            jsonb_array_length(coalesce(p.evidence_jsonb,'[]')) AS n_ev
+            jsonb_array_length(coalesce(p.evidence_jsonb,'[]')) AS n_ev, p.evidence_jsonb
        FROM positions p JOIN entities e ON e.id = p.entity_id
       WHERE p.question_id = ANY($1) AND e.type = 'party'`,
     [qs.map((x) => x.id)]
@@ -99,12 +100,22 @@ try {
   const questions = qs.filter((x) => (partiesByQuestion.get(x.id)?.size ?? 0) >= 1)
   const sinAprobadas = qs.filter((x) => !questions.includes(x)).map((x) => x.code)
   const soloUnPartido = qs.filter((x) => (partiesByQuestion.get(x.id)?.size ?? 0) === 1).map((x) => x.code)
+  // Bloqueos de publicación (#53): cita no verificable en el PDF, posición sin respaldo documental, discrepancia de signo sin adjudicar, ítem sin atomicidad o sin dirección.
+  {
+    const inRelease = new Set(questions.map((x) => x.id))
+    const cp = approved.filter((p) => inRelease.has(p.question_id)).map((p) => ({ party: p.party, questionId: p.question_id, value: p.value,
+      evidence: (p.evidence_jsonb ?? []).filter((e: any) => e.review_status !== 'rejected').map((e: any) => ({ text: e.literal_text, page: e.source_page })) }))
+    const qs2 = questions.map((x) => ({ id: x.id, code: x.code }))
+    const a1 = checkContent(qs2, cp), a2 = await checkSignDiscrepancies(q as any, qs2)
+    for (const b of [...a1.blocks, ...a2.blocks]) problems.push(`BLOQUEO DE PUBLICACIÓN · ${b}`)
+    for (const w of [...a1.warnings, ...a2.warnings]) console.log('Aviso:', w)
+  }
   const entityIds = [...new Set(approved.map((p) => p.entity_id))]
   const { rows: ents } = await q(`SELECT id, name FROM entities WHERE id = ANY($1) ORDER BY name`, [entityIds])
 
   if (problems.length) {
     console.log(`NO SE PUEDE CREAR: ${problems.length} problema(s)`)
-    for (const p of problems.slice(0, 15)) console.log('  -', p)
+    for (const p of problems.slice(0, 40)) console.log('  -', p)
     await q('ROLLBACK')
     process.exitCode = 2
   } else {

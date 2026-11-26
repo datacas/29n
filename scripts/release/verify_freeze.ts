@@ -7,6 +7,7 @@
 import pg from 'pg'
 import { createHash } from 'node:crypto'
 import { buildReleasePayload, loadReleaseContent } from '../../app/lib/release/content.ts'
+import { checkContent, checkSignDiscrepancies } from './publication_blocks.ts'
 const canonical = (v: any): string => Array.isArray(v) ? `[${v.map(canonical).join(',')}]` : v && typeof v === 'object' ? `{${Object.keys(v).sort().map(k => `${JSON.stringify(k)}:${canonical(v[k])}`).join(',')}}` : JSON.stringify(v)
 const pool = new pg.Pool({ connectionString: 'postgresql://app:password@localhost:5433/affinity' })
 const c = await pool.connect()
@@ -15,6 +16,18 @@ try {
   const h = createHash('sha256').update(canonical(r.manifest_jsonb)).digest('hex')
   console.log('hash guardado = hash recalculado del manifiesto:', h === r.manifest_hash)
   const q = (s: string, p?: unknown[]) => c.query(s, p)
+  // Bloqueos de publicación (#53) sobre el contenido CONGELADO del release: citas verificables en el PDF, respaldo documental, discrepancias de signo sin adjudicar e ítems sin atomicidad/dirección.
+  {
+    const content = r.manifest_jsonb.content; const names = Object.fromEntries(content.entities.map((e: any) => [e.entityId, e.name]))
+    const { rows: qrows } = await q(`SELECT id, pilot_question_id AS code FROM questions WHERE id = ANY($1)`, [content.questions.map((x: any) => x.questionId)])
+    const a1 = checkContent(qrows, content.positions.map((p: any) => ({ party: names[p.entityId], questionId: p.questionId, value: p.value, evidence: (p.evidence ?? []).map((e: any) => ({ text: e.text, page: e.page })) })))
+    const a2 = await checkSignDiscrepancies(q, qrows)
+    const blocks = [...a1.blocks, ...a2.blocks]
+    console.log('bloqueos de publicación:', blocks.length)
+    for (const b of blocks.slice(0, 30)) console.log('  - BLOQUEO ·', b)
+    for (const w of [...a1.warnings, ...a2.warnings]) console.log('  Aviso:', w)
+    if (blocks.length) process.exitCode = 2
+  }
   await c.query('BEGIN')
   const before = await buildReleasePayload(q as any, r.id, r)
   await q(`UPDATE positions SET value = -2 WHERE id = (SELECT p.id FROM positions p JOIN release_questions rq ON rq.question_id=p.question_id WHERE rq.release_id=$1 AND p.review_status='approved' AND p.value=2 LIMIT 1)`, [r.id])
