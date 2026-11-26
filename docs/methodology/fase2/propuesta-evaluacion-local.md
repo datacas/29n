@@ -1,4 +1,8 @@
-# Propuesta técnica simplificada: evaluación humana ciega en el panel administrativo local (SOLO PROPUESTA; nada implementado)
+# Propuesta técnica simplificada: evaluación humana ciega en el panel administrativo local (APROBADA e implementada para el piloto, D22)
+
+> **ERRATA 2026-11-25 (D26).** Las evaluaciones ciegas y las adjudicaciones del piloto registradas como «Humano interno 1» las produjo **un agente de IA que operaba esa cuenta**, no una persona (declaración del propio agente; corroborada por los tiempos: 19 evaluaciones en 54 s). Por tanto el piloto **no es una validación humana**: las comparaciones «humano interno–IA» de este piloto son **IA–IA**, y las adjudicaciones y las decisiones sobre el manual v0.2 que se le atribuyeron **no están ratificadas por la persona responsable**. El piloto sí vale como prueba de la interfaz, de la trazabilidad y del procedimiento. Ver D26 en `proceso-completo.md`.
+
+> **Estado 2026-11-25:** aprobada por el responsable (piloto primero, etiqueta «Humano interno 1», 19 celdas sin modificar). Implementada la fase del piloto; ver `guia-evaluacion-local.md` y `migracion-010.md`. **Cambios respecto a esta propuesta (precisiones del responsable):** `insufficient_context` es un campo propio y **no** forma parte de `execution_status`; el modelo admite campañas de **repetibilidad intraevaluador**; las pruebas de seguridad, ceguera, concurrencia, persistencia e inmutabilidad del piloto se hicieron en esta fase. Pendiente: adjudicación avanzada y panel de métricas.
 
 Fecha: 2026-11-25. **Sustituye** a `propuesta-area-online-evaluacion.md` (alojamiento online, OTP y BD de evaluación en Neon), que el responsable descarta porque realizará personalmente las evaluaciones humanas desde el entorno local y no dispone ahora de colaboradores externos. También sustituye a `propuesta-interfaz-evaluacion-humana.md` (paquetes HTML). Ambas se conservan como registro de alternativas evaluadas.
 

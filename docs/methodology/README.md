@@ -15,7 +15,16 @@ Documentación del proceso de validez, fiabilidad y robustez de 29N iniciado a r
 | [`fase1/evolucion-panel-modelos.md`](fase1/evolucion-panel-modelos.md) | Cómo cambió el panel de evaluadores y por qué |
 | [`fase1/protocolo-auditoria-ciega.md`](fase1/protocolo-auditoria-ciega.md) | Protocolo de la segunda auditoría ciega de ítems (diseñada, no ejecutada) |
 | [`fase1/verificacion-externa.md`](fase1/verificacion-externa.md) | Contraste de las métricas con librerías externas |
-| [`fase2/propuesta-evaluacion-local.md`](fase2/propuesta-evaluacion-local.md) | **Propuesta vigente**: evaluación humana ciega integrada en el panel administrativo local, con PostgreSQL local; solo propuesta |
+| [`fase2/propuesta-evaluacion-local.md`](fase2/propuesta-evaluacion-local.md) | **Propuesta vigente** (aprobada): evaluación humana ciega integrada en el panel administrativo local, con PostgreSQL local |
+| [`fase2/guia-evaluacion-local.md`](fase2/guia-evaluacion-local.md) | Guía de uso de la interfaz de evaluación, repetibilidad y limitaciones |
+| [`fase2/migracion-010.md`](fase2/migracion-010.md) | Migración 010 (local) y su recuperación |
+| [`fase2/propuesta-manual-v0.2.md`](fase2/propuesta-manual-v0.2.md) | Borrador (no aplicado) de revisión del manual tras el piloto: medida cercana, cláusulas presuposicionales, condiciones que recortan el alcance, citas |
+| [`fase2/prueba-recuperacion-v2.md`](fase2/prueba-recuperacion-v2.md) | Prueba local de la segmentación v2 de recuperación (B-2.0.0) sobre el piloto; `retriever-config-B2.json` |
+| [`fase2/manual-v0.2-cambios.md`](fase2/manual-v0.2-cambios.md) | Manual v0.2 vigente (congelado): cambios, motivos, versionado y casos de regresión |
+| [`fase2/diseno-muestra-150.md`](fase2/diseno-muestra-150.md) | Propuesta de diseño de la muestra de ~150 celdas (sin evaluaciones iniciadas; E sellado) |
+| [`fase2/autoria-y-trazabilidad.md`](fase2/autoria-y-trazabilidad.md) | Autoría material vs autorización de cada registro |
+| [`fase2/plan-ia-sin-evaluacion-humana.md`](fase2/plan-ia-sin-evaluacion-humana.md) | **Vigente (D35):** continuación solo con IA; qué se puede y qué no se puede afirmar; sin ejecutar |
+| [`fase2/migracion-011.md`](fase2/migracion-011.md) | Migración 011: adjudicación en sombra, catálogo de causas |
 | [`fase2/propuesta-area-online-evaluacion.md`](fase2/propuesta-area-online-evaluacion.md) | Área online con OTP (sustituida) |
 | [`fase2/propuesta-interfaz-evaluacion-humana.md`](fase2/propuesta-interfaz-evaluacion-humana.md) | Propuesta anterior (paquetes HTML), sustituida |
 | [`fase1/migracion-009.md`](fase1/migracion-009.md) | Tabla `position_codings` (solo añadir), prueba y recuperación |
