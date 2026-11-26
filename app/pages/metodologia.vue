@@ -79,16 +79,16 @@
           <tr><td>Legibilidad y estructura</td><td>Longitud, negaciones, conjunciones, texto explicativo</td><td>Hecho</td></tr>
           <tr><td>Neutralidad y encuadre</td><td>Qué posiciones favorece responder «de acuerdo» y si hay términos cargados</td><td>Hecho en la misma ejecución; solo orientativo</td></tr>
           <tr><td>Fiabilidad entre codificadores</td><td>Acuerdo entre modelos de IA al codificar posiciones, con intervalos de confianza</td><td>Hecho en una muestra pequeña; ver abajo</td></tr>
-          <tr><td>Corrección de preguntas con doble contenido</td><td>Dividir o reformular las preguntas señaladas</td><td>Preparada: 29 preguntas se dividen en 59 de una sola proposición; en la mitad de los casos el programa solo habla de una de las dos mitades. Se publicarán en una versión nueva, con registro de cambios</td></tr>
+          <tr><td>Corrección de preguntas con doble contenido</td><td>Dividir o reformular las preguntas señaladas</td><td>Hecha en la versión 2.2.0: 29 preguntas se dividen en 59 de una sola proposición (172 preguntas en total). En la mitad de los casos el programa solo hablaba de una de las dos cosas que preguntaba la pregunta. Quedan 7 señaladas sin dividir, en revisión</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3>Lo que hemos encontrado hasta ahora</h3>
     <ul>
-      <li><strong>Cobertura.</strong> De las 2.774 combinaciones entre 146 preguntas y 19 partidos, <strong>1.726 (62 %) no tienen posición</strong> porque el programa no dice nada. Esas celdas no cuentan, y no significan «a favor», «en contra» ni «neutral».</li>
-      <li><strong>Sesgo hacia el «sí».</strong> De las posiciones registradas, el <strong>86 % son positivas</strong> y solo el 14 % negativas, porque los programas hablan sobre todo de lo que quieren hacer. Por eso contestar «de acuerdo» a todo favorece a los partidos con más propuestas.</li>
-      <li><strong>Preguntas con doble contenido.</strong> La primera auditoría señala <strong>36 de las 146 preguntas (25 %)</strong> como probables dobles (dos propuestas en una), 20 más con objeto compuesto, 3 sin dirección clara y 10 con presuposiciones. Se corregirán; mientras tanto, esas preguntas pueden ser más difíciles de responder con fidelidad.</li>
+      <li><strong>Cobertura.</strong> De las 3.268 combinaciones entre 172 preguntas y 19 partidos (versión 2.2.0), <strong>2.217 (68 %) no tienen posición</strong> porque el programa no dice nada (62 % en la versión anterior; sube porque al dividir una pregunta solo se heredan las posiciones cuya cita nombra cada parte). Esas celdas no cuentan, y no significan «a favor», «en contra» ni «neutral».</li>
+      <li><strong>Sesgo hacia el «sí».</strong> De las posiciones registradas, el <strong>85 % son positivas</strong> y solo el 15 % negativas, porque los programas hablan sobre todo de lo que quieren hacer. Por eso contestar «de acuerdo» a todo favorece a los partidos con más propuestas.</li>
+      <li><strong>Preguntas con doble contenido.</strong> La primera auditoría señala <strong>36 de las 146 preguntas (25 %)</strong> como probables dobles (dos propuestas en una), 20 más con objeto compuesto, 3 sin dirección clara y 10 con presuposiciones. En la versión 2.2.0 se han dividido 29 de ellas en preguntas de una sola proposición; las demás siguen en revisión. Los datos de esta lista corresponden a la versión 2.1.2, anterior a esa corrección.</li>
       <li><strong>Preguntas que apenas distinguen.</strong> En 68 preguntas el 90 % o más de los partidos con posición comparte el mismo sentido, y 10 preguntas tienen posición de menos de dos partidos (no comparan).</li>
       <li><strong>Peso de cada pregunta.</strong> Con 300 usuarios sintéticos, quitar una sola pregunta cambia de media el orden de los partidos muy poco (correlación τ de Kendall mediana 0,94) y cambia el partido en primer lugar en el 7 % de los casos (máximo 22 % para la pregunta más influyente).</li>
       <li><strong>Legibilidad.</strong> Las preguntas tienen una mediana de 11 palabras, ninguna supera las 28 ni tiene doble negación, todas llevan texto explicativo y 57 contienen una conjunción (y, o, ni). Algo más de una de cada seis (27) tiene un índice de lectura Fernández-Huerta por debajo de 40 (difícil).</li>
@@ -145,7 +145,14 @@
       <li><strong>Los modelos pueden compartir errores.</strong> Que varios coincidan no garantiza que acierten: por eso hay controles, comprobación literal de las citas y auditorías con varias familias de modelos.</li>
       <li><strong>No sabemos aún cómo entienden las preguntas las personas.</strong> Las pruebas de comprensión son sintéticas y no sustituyen a las personas reales.</li>
       <li><strong>Las muestras pequeñas no se generalizan</strong> y las estimaciones llevan su intervalo de confianza.</li>
-      <li><strong>El cuestionario está en mejora.</strong> Hay preguntas señaladas que se corregirán en una versión nueva; los cambios se publicarán con su registro.</li>
+      <li><strong>El cuestionario está en mejora.</strong> Quedan preguntas señaladas por corregir; los cambios se publican en versiones nuevas con su registro.</li>
+    </ul>
+
+
+    <h2 id="versiones">Versiones del cuestionario</h2>
+    <ul>
+      <li><strong>2.2.0 (26 de noviembre de 2026, vigente).</strong> 29 preguntas con doble contenido se dividen en 59 de una sola proposición (172 preguntas, 1.051 posiciones). Una revisión asistida por IA añade 15 posiciones, corrige 8 y retira 2, siempre con su cita literal; sin validación humana independiente. Las estadísticas de uso empiezan de cero para esta versión.</li>
+      <li><strong>2.1.2 (24 de noviembre de 2026).</strong> 146 preguntas, 1.048 posiciones.</li>
     </ul>
 
     <h2>Código y datos abiertos</h2>
