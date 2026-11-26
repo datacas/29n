@@ -30,7 +30,7 @@ try {
     pick = fin.filter((f) => set.has(f.cell_id)); const missing = set.size - pick.length
     if (missing > 0) throw new Error(`Faltan ${missing} celdas preinscritas por finalizar en la campaña de origen`)
   } else pick = fin.map((f) => [r(), f]).sort((a, b) => a[0] - b[0]).slice(0, Math.min(N, fin.length)).map((x) => x[1])
-  console.log(`Muestra aleatoria de ${pick.length} celdas (semilla ${SEED}) y orden nuevo.`)
+  console.log(`${DESIGN ? 'Celdas preinscritas en el diseño' : 'Muestra aleatoria (semilla ' + SEED + ')'}: ${pick.length} celdas, orden nuevo.`)
   if (!APPLY) { console.log('Simulación: no se ha escrito nada. Usa --apply.'); process.exit(0) }
   await c.query('BEGIN')
   const name = `Repetibilidad de «${src.name}» (n=${pick.length}, semilla ${SEED})`
