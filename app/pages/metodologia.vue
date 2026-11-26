@@ -73,13 +73,13 @@
         <tbody>
           <tr><td>Cita literal</td><td>Que cada cita existe tal cual en el PDF del programa, con su página</td><td>Hecho; se aplica a todas las citas</td></tr>
           <tr><td>Primera auditoría de preguntas</td><td>Preguntas con doble contenido, objeto compuesto, sin dirección clara o con presuposiciones</td><td>Hecha (una sola IA)</td></tr>
-          <tr><td>Segunda auditoría independiente</td><td>Lo mismo, con modelos de varias familias que no se ven entre sí, con controles positivos y negativos</td><td>Hecha con los modelos gratuitos disponibles; <strong>no concluyente</strong>: marcan casi todas las preguntas y fallan la mitad de los controles positivos</td></tr>
+          <tr><td>Segunda auditoría independiente</td><td>Lo mismo, con modelos de varias familias que no se ven entre sí, con controles positivos y negativos</td><td>Hecha con varios modelos. Con un criterio estricto y calibrado, un modelo (GPT-6 Luna) acierta los 6 controles positivos y no marca ninguno de los 6 negativos, y señala 15 de 146 preguntas (14 coinciden con la primera auditoría); detecta poco (no marca el caso de sindicatos y patronal). Los modelos gratuitos con criterio abierto marcan casi todo y no sirven</td></tr>
           <tr><td>Poder discriminante</td><td>Qué preguntas distinguen a los partidos y cuáles no</td><td>Hecho</td></tr>
           <tr><td>Influencia en el ranking</td><td>Cuánto cambia el resultado al quitar una pregunta</td><td>Hecho (usuarios sintéticos)</td></tr>
           <tr><td>Legibilidad y estructura</td><td>Longitud, negaciones, conjunciones, texto explicativo</td><td>Hecho</td></tr>
           <tr><td>Neutralidad y encuadre</td><td>Qué posiciones favorece responder «de acuerdo» y si hay términos cargados</td><td>Hecho en la misma ejecución; solo orientativo</td></tr>
           <tr><td>Fiabilidad entre codificadores</td><td>Acuerdo entre modelos de IA al codificar posiciones, con intervalos de confianza</td><td>Hecho en una muestra pequeña; ver abajo</td></tr>
-          <tr><td>Corrección de preguntas con doble contenido</td><td>Dividir o reformular las preguntas señaladas</td><td>Preparada: 23 preguntas se dividen en 47 de una sola proposición; se publicarán en una versión nueva, con registro de cambios</td></tr>
+          <tr><td>Corrección de preguntas con doble contenido</td><td>Dividir o reformular las preguntas señaladas</td><td>Preparada: 29 preguntas se dividen en 59 de una sola proposición; en la mitad de los casos el programa solo habla de una de las dos mitades. Se publicarán en una versión nueva, con registro de cambios</td></tr>
         </tbody>
       </table>
     </div>
