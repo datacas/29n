@@ -3,5 +3,5 @@
   "releaseId": "db77439c-842c-408c-a9fe-86b8495004c9",
   "algorithm": "sha256",
   "canonicalization": "JSON con claves ordenadas alfabéticamente y sin espacios (ver scripts/deploy/export_static.ts, función canonical)",
-  "hash": "5781b2cdf96f1a3b42fbf6bdee9430af1b1640953021663fabc984296309f137"
+  "hash": "7275be4f356864996f3ca49434a94a1ff20f21d191be73c0f0bc84883763bbb8"
 }
