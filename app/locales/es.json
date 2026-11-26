@@ -12,18 +12,18 @@
   },
   "nav": {
     "home": "Inicio",
-    "surveys": "Encuestas",
+    "surveys": "Tests",
     "history": "Mis resultados",
     "admin": "Administración"
   },
   "survey": {
     "catalog": {
-      "title": "Encuestas disponibles",
-      "description": "Selecciona una encuesta para comenzar",
-      "noSurveys": "No hay encuestas publicadas todavía"
+      "title": "Tests disponibles",
+      "description": "Selecciona un test para comenzar",
+      "noSurveys": "No hay tests publicados todavía"
     },
     "detail": {
-      "start": "Comenzar encuesta",
+      "start": "Comenzar test",
       "results": "Ver resultados",
       "entities": "Entidades",
       "questions": "Preguntas",
@@ -68,12 +68,12 @@
   },
   "history": {
     "title": "Mis resultados",
-    "empty": "No has completado ninguna encuesta todavía",
+    "empty": "No has completado ningún test todavía",
     "import": "Importar resultados",
     "export": "Exportar",
     "delete": "Eliminar",
     "date": "Fecha",
-    "survey": "Encuesta"
+    "survey": "Test"
   },
   "admin": {
     "login": {

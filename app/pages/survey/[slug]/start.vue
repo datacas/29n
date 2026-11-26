@@ -1,7 +1,7 @@
 <template>
   <div class="start">
     <div v-if="loading" class="wrap stack"><p>{{ $t('common.loading') }}</p></div>
-    <div v-else-if="error" class="wrap stack"><p class="note note--alert" role="alert">No se pudo cargar la encuesta. Recarga la página o inténtalo más tarde.</p></div>
+    <div v-else-if="error" class="wrap stack"><p class="note note--alert" role="alert">No se pudo cargar el test. Recarga la página o inténtalo más tarde.</p></div>
 
     <template v-else-if="releaseData">
       <section class="band on-band">

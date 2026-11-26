@@ -162,6 +162,7 @@
       <li><strong>Los modelos pueden compartir errores.</strong> Que varios coincidan no garantiza que acierten: por eso hay controles, comprobación literal de las citas y auditorías con varias familias de modelos.</li>
       <li><strong>No sabemos aún cómo entienden las preguntas las personas.</strong> Las pruebas de comprensión son sintéticas y no sustituyen a las personas reales.</li>
       <li><strong>Las muestras pequeñas no se generalizan</strong> y las estimaciones llevan su intervalo de confianza.</li>
+      <li><strong>El porcentaje es una media por temas, y un tema con una sola pregunta pesa igual que uno con muchas.</strong> Por eso puede salir un porcentaje alto aunque haya más desacuerdos que acuerdos. Con usuarios sintéticos (respuestas al azar, de asentimiento y coherentes con un partido; versión 2.2.1; pesos iguales) el partido que encabeza por media de temas no es el que encabezaría por media simple de preguntas en entre el 19 % y el 49 % de los casos, y tiene más «No coincidís» que «Coincidís» en entre el 1 % y el 12 %. Con pesos de prioridades no uniformes las cifras suben (28 %–62 % y 2 %–18 %). No son usuarios reales, y no hemos cambiado la fórmula antes del 29 de noviembre.</li>
       <li><strong>El cuestionario está en mejora.</strong> Quedan preguntas señaladas por corregir; los cambios se publican en versiones nuevas con su registro.</li>
     </ul>
 
@@ -184,7 +185,7 @@
     <h2>Tus datos</h2>
     <ul>
       <li>Tus respuestas y tus resultados <strong>se guardan en tu navegador</strong>. Para las estadísticas, el servidor los recibe una vez, sin ningún identificador, y solo los usa para sumar contadores: no guarda ningún registro individual (abajo).</li>
-      <li>Contamos de forma anónima cuántas encuestas se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP ni ningún identificador, y no se envía nada si tu navegador tiene activado «No rastrear» o el control global de privacidad.</li>
+      <li>Contamos de forma anónima cuántos tests se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP ni ningún identificador, y no se envía nada si tu navegador tiene activado «No rastrear» o el control global de privacidad.</li>
       <li>Al ver tu resultado, tus respuestas y tu afinidad con cada programa se envían una vez para <strong>sumar de forma anónima</strong> a las estadísticas. No guardamos una ficha por persona: cada respuesta solo añade 1 a un contador (por ejemplo, «pregunta 12, de acuerdo»), sin IP ni ningún identificador, así que nadie, tampoco nosotros, puede saber qué respondiste. Si tu navegador tiene activado «No rastrear» o el control global de privacidad, no se envía nada. Las estadísticas públicas se abren cuando al menos 10 personas han terminado la encuesta, y ninguna cifra se publica si se apoya en menos de 10 personas.</li>
       <li>Contamos las visitas a la web con Vercel Web Analytics, que no usa cookies ni te identifica. Solo suma páginas vistas. No se carga si tienes activado «No rastrear» o el control global de privacidad.</li>
     </ul>

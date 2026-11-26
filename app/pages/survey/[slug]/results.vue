@@ -2,7 +2,7 @@
   <div class="survey-results">
     <div v-if="loading" class="wrap"><p class="loading r__pad">Cargando...</p></div>
     <div v-else-if="!progress" class="wrap r__pad">
-      <p class="note note--alert error" role="alert">No se encontró el progreso de la encuesta. <NuxtLink :to="`/survey/${releaseId}/start`">Comenzar de nuevo</NuxtLink></p>
+      <p class="note note--alert error" role="alert">No se encontró el progreso del test. <NuxtLink :to="`/survey/${releaseId}/start`">Comenzar de nuevo</NuxtLink></p>
     </div>
 
     <template v-else>
@@ -26,7 +26,8 @@
               <li v-if="!isHistoricalSurvey"><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
               <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice {{ isHistoricalSurvey ? 'cada programa' : 'el programa de cada partido' }}: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
               <li><strong>Solo cuentan las preguntas en las que el programa dice algo.</strong> Si un {{ noun.singular }} no se pronuncia sobre un tema, ese tema no suma ni resta. Tampoco cuentan las que contestaste «No sé» o omitiste.</li>
-              <li><strong>«Tiene posición en X de tus Y preguntas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
+              <li><strong>«Basado en X de tus Y respuestas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
+              <li><strong>El porcentaje es una media por temas.</strong> Primero se calcula la coincidencia dentro de cada tema y luego se promedian los temas. Un tema donde solo entra una pregunta pesa igual que uno donde entran ocho, así que puede salir un porcentaje alto con más «No coincidís» que «Coincidís».</li>
               <li><strong>Los {{ noun.plural }} con pocos datos</strong> aparecen al final aunque su porcentaje sea alto: con menos de {{ minEval }} preguntas documentadas el resultado es solo orientativo.</li>
               <li><strong>«Por qué este porcentaje»</strong> te enseña cada pregunta, tu respuesta, la posición del {{ noun.singular }} y la cita literal del programa, con su página.</li>
               <li>Más detalle de cómo se calcula y de dónde salen los datos en <NuxtLink to="/metodologia">Cómo funciona</NuxtLink>.</li>
@@ -141,7 +142,7 @@
         </section>
 
         <section class="r__actions actions">
-          <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Repetir encuesta</NuxtLink>
+          <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Repetir test</NuxtLink>
           <button type="button" class="btn btn-secondary" @click="saveToLocal">{{ $t('survey.results.save') }}</button>
           <button type="button" class="btn btn-secondary" @click="exportResults">{{ $t('survey.results.export') }}</button>
           <NuxtLink to="/" class="btn btn-secondary">{{ $t('common.back') }}</NuxtLink>
@@ -553,10 +554,11 @@ function exportResults() {
 .r__stats > div { padding: var(--space-3); border-radius: 12px; background: var(--tint); }
 .r__stats dt { font-size: 0.8rem; color: var(--muted); line-height: 1.25; }
 .r__stats dd { margin: 0.1rem 0 0; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.03em; line-height: 1.1; }
-.r__stat--ok dd { color: var(--data); }
+.r__stat--ok dd { color: var(--data-ink); }
 .coverage-label { margin: 0; max-width: none; }
 .coverage-basis { margin: 0; max-width: none; color: var(--ink-soft); }
-.small-diff-note { margin: var(--space-4) 0; }
+.how-to-read { margin-bottom: var(--space-4); }
+.small-diff-note { margin: 0 0 var(--space-4); }
 .small-diff-badge { background: var(--paper, transparent); }
 .r__det { border-top: 1px solid var(--line); padding-top: var(--space-2); }
 .r__det > summary { cursor: pointer; font-weight: 500; min-height: 2.9rem; display: flex; align-items: center; }

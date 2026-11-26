@@ -11,7 +11,7 @@
     <div class="wrap stack-lg cal__body">
       <StepBar :current="2" :entities="progress?.entityNounPlural" />
 
-      <p v-if="!surveyConfig" class="note note--alert error" role="alert">No se encontró la configuración de la encuesta.</p>
+      <p v-if="!surveyConfig" class="note note--alert error" role="alert">No se encontró la configuración del test.</p>
 
       <template v-else>
         <div v-if="currentComparison" class="stack">
@@ -63,7 +63,7 @@
             {{ comparisonsDone + 1 === totalComparisons ? 'Finalizar' : 'Siguiente' }}
           </button>
         </template>
-        <NuxtLink v-else :to="`/survey/${releaseId}/questions`" class="btn-primary cal__next">Comenzar encuesta</NuxtLink>
+        <NuxtLink v-else :to="`/survey/${releaseId}/questions`" class="btn-primary cal__next">Comenzar test</NuxtLink>
       </div>
     </div>
   </div>
