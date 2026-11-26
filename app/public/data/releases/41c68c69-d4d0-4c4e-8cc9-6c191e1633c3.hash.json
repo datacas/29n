@@ -1,0 +1,7 @@
+{
+  "version": "2.2.0",
+  "releaseId": "41c68c69-d4d0-4c4e-8cc9-6c191e1633c3",
+  "algorithm": "sha256",
+  "canonicalization": "JSON con claves ordenadas alfabéticamente y sin espacios (ver scripts/deploy/export_static.ts, función canonical)",
+  "hash": "11298fbf85c715019497a890044596c8e847537f94f2079cba9061301c39329b"
+}
