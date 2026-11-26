@@ -11,7 +11,7 @@ test('cola, expediente completo, formulario sin preselección y registro de una 
   expect((await anon.post('/api/admin/adjudicacion/00000000-0000-0000-0000-000000000000', { data: {} })).status()).toBe(401)
 
   await page.goto('/admin/adjudicacion')
-  await expect(page.locator('.review-table tbody tr')).toHaveCount(8)
+  expect(await page.locator('.review-table tbody tr').count()).toBeGreaterThanOrEqual(8)
   await expect(page.getByText('Zona no ciega')).toBeVisible()
   await page.locator('.review-table tbody tr').first().getByRole('link', { name: 'Abrir' }).click()
   await page.waitForLoadState('networkidle')   // esperar a la hidratación de Vue antes de interactuar

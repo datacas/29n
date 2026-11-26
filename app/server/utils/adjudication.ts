@@ -35,18 +35,21 @@ async function history(db: Queryable, cellId: string, evaluatorId: string) {
 
 export async function listQueue(db: Queryable, evaluator: Evaluator) {
   const { rows } = await db.query(
-    `SELECT i.cell_id AS "cellId", i.priority, i.reasons, c.ord, c.blind_label AS "blindLabel",
+    `SELECT i.cell_id AS "cellId", i.priority, i.reasons, c.ord, c.blind_label AS "blindLabel", k.id AS "campaignId", k.name AS "campaignName",
             (SELECT count(*) FROM eval_drafts d WHERE d.cell_id = i.cell_id AND d.evaluator_id = $1 AND d.finalized_at IS NOT NULL)::int AS "ownFinalized",
             a.revision, a.document_class AS "documentClass", a.intensity, a.causes, a.proposed_action AS "proposedAction"
-       FROM eval_adjudication_items i JOIN eval_cells c ON c.id = i.cell_id
+       FROM eval_adjudication_items i JOIN eval_cells c ON c.id = i.cell_id JOIN eval_campaigns k ON k.id = c.campaign_id
        JOIN eval_assignments s ON s.cell_id = i.cell_id AND s.evaluator_id = $1
        LEFT JOIN LATERAL (SELECT * FROM eval_adjudications x WHERE x.cell_id = i.cell_id AND x.adjudicator_id = $1 ORDER BY revision DESC LIMIT 1) a ON true
       ORDER BY i.priority`, [evaluator.id])
   const counts: Record<string, number> = {}
   for (const r of rows) for (const c of r.causes ?? []) counts[c] = (counts[c] ?? 0) + 1
-  const { rows: [camp] } = await db.query(`SELECT c.campaign_id AS id FROM eval_adjudication_items i JOIN eval_cells c ON c.id = i.cell_id LIMIT 1`)
-  const provenance = camp ? (await getProvenance(db, evaluator.id, camp.id)).adjudication : { provenance: 'unverified', statement: 'Sin declaración de procedencia.' }
-  return { items: rows.map((r: any) => ({ ...r, status: r.revision ? 'adjudicada' : 'pendiente' })), causeCounts: counts, provenance }
+  // Procedencia por campaña (las decisiones de cada campaña se etiquetan según su propia declaración)
+  const prov: Record<string, any> = {}
+  for (const id of [...new Set(rows.map((r: any) => r.campaignId as string))]) prov[id] = (await getProvenance(db, evaluator.id, id)).adjudication
+  const first = rows[0] ? prov[rows[0].campaignId] : { provenance: 'unverified', statement: 'Sin declaración de procedencia.' }
+  return { items: rows.map((r: any) => ({ ...r, status: r.revision ? 'adjudicada' : 'pendiente', provenance: prov[r.campaignId] })), causeCounts: counts, provenance: first,
+    campaigns: Object.entries(prov).map(([id, p]) => ({ id, name: rows.find((r: any) => r.campaignId === id).campaignName, provenance: p })) }
 }
 
 export async function getAdjudication(db: Queryable, evaluator: Evaluator, cellId: string) {

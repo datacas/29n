@@ -6,18 +6,18 @@
         <p class="subtitle">Revisa las celdas con discrepancias, posibles omisiones y diferencias de intensidad. Cada decisión se registra como nueva (solo añadir) y <strong>no modifica</strong> las posiciones ni el banco publicado.</p>
       </div>
     </div>
-    <aside v-if="data && data.provenance?.provenance !== 'human_verified'" class="notice warn" role="alert">
-      <strong>Procedencia no humana verificada.</strong> {{ data.provenance?.statement }} Las adjudicaciones de esta cola no son decisiones humanas verificadas: requieren verificación por una persona antes de usarse para cambiar el banco.
+    <aside v-for="c in (data?.campaigns ?? []).filter((x: any) => x.provenance?.provenance !== 'human_verified')" :key="c.id" class="notice warn" role="alert">
+      <strong>Procedencia no humana verificada — «{{ c.name }}».</strong> {{ c.provenance?.statement }} Las adjudicaciones de esas celdas no son decisiones humanas verificadas: requieren verificación por una persona antes de usarse para cambiar el banco.
     </aside>
     <aside class="notice" role="note">
       <strong>Zona no ciega:</strong> aquí ves la referencia provisional y las respuestas de IA. No se resuelve por mayoría. Tus evaluaciones son humanas internas (no una referencia independiente); la muestra es dirigida y no se extrapola al banco.
     </aside>
     <p v-if="error" class="error" role="alert">{{ error.statusMessage || 'No se pudo cargar la cola' }}</p>
     <table v-if="data" class="review-table">
-      <thead><tr><th>Prioridad</th><th>Celda</th><th>Motivos</th><th>Estado</th><th>Decisión vigente</th><th>Causas</th><th /></tr></thead>
+      <thead><tr><th>Prioridad</th><th>Campaña</th><th>Celda</th><th>Motivos</th><th>Estado</th><th>Decisión vigente</th><th>Causas</th><th /></tr></thead>
       <tbody>
         <tr v-for="i in data.items" :key="i.cellId">
-          <td>{{ i.priority }}</td><td>{{ i.ord }}</td><td>{{ i.reasons.join('; ') }}</td>
+          <td>{{ i.priority }}</td><td class="hint">{{ i.campaignName.replace(/ — .*/, '') }}</td><td>{{ i.ord }}</td><td>{{ i.reasons.join('; ') }}</td>
           <td>{{ i.status === 'adjudicada' ? `Adjudicada (rev. ${i.revision})` : 'Pendiente' }}</td>
           <td>{{ i.documentClass ? `${i.documentClass} ${i.intensity ?? ''}` : (i.revision ? 'sin resolver' : '—') }}</td>
           <td>{{ (i.causes ?? []).map((c: string) => CAUSE_LABEL[c] ?? c).join(', ') || '—' }}</td>
@@ -41,7 +41,7 @@ const CAUSE_LABEL: Record<string, string> = {
   manual_insufficient: 'Manual de codificación insuficiente', omitted_position: 'Posición omitida', unsupported_registered_position: 'Posición registrada sin respaldo suficiente',
   reasonable_disagreement: 'Desacuerdo razonable entre evaluadores', other: 'Otra causa justificada'
 }
-const { data, error } = await useFetch<{ items: any[]; causeCounts: Record<string, number>; provenance?: { provenance: string; statement: string } }>('/api/admin/adjudicacion')
+const { data, error } = await useFetch<{ items: any[]; causeCounts: Record<string, number>; provenance?: { provenance: string; statement: string }; campaigns?: any[] }>('/api/admin/adjudicacion')
 </script>
 
 <style scoped>
