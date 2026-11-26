@@ -25,13 +25,13 @@
 
     <h2>Cómo se han codificado las posiciones</h2>
     <p>
-      Una herramienta de inteligencia artificial ayudó a encontrar los fragmentos de cada programa que hablan de cada pregunta.
-      Después, el equipo editorial leyó las citas y decidió el valor de cada posición, de −2 (se opone con claridad) a +2 (apoya con claridad).
+      Las posiciones se han codificado con ayuda de <strong>inteligencia artificial</strong>: una herramienta encontró los fragmentos de cada programa que hablan de cada pregunta
+      y se asignó el valor de cada posición, de −2 (se opone con claridad) a +2 (apoya con claridad), con revisiones asistidas por IA desde un panel de administración.
       Cuando una cita era dudosa, o no respondía a la pregunta, se descartó.
       Una comprobación automática verifica además que cada cita existe tal cual en el PDF original.
     </p>
     <p>
-      Esto no es infalible. Si encuentras una posición que te parece mal asignada, revisa la cita con «Ver evidencia» y tenla en cuenta al leer el resultado.
+      <strong>Esto no ha sido validado por personas independientes</strong> y no es infalible. Si encuentras una posición que te parece mal asignada, revisa la cita con «Ver evidencia» y tenla en cuenta al leer el resultado.
     </p>
 
     <h2>Cómo se calcula</h2>
