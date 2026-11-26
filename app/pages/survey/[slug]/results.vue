@@ -2,7 +2,7 @@
   <div class="survey-results">
     <div v-if="loading" class="wrap"><p class="loading r__pad">Cargando...</p></div>
     <div v-else-if="!progress" class="wrap r__pad">
-      <p class="note note--alert error" role="alert">No se encontró el progreso de la encuesta. <NuxtLink :to="`/survey/${releaseId}/start`">Comenzar de nuevo</NuxtLink></p>
+      <p class="note note--alert error" role="alert">No se encontró el progreso del test. <NuxtLink :to="`/survey/${releaseId}/start`">Comenzar de nuevo</NuxtLink></p>
     </div>
 
     <template v-else>
@@ -26,7 +26,8 @@
               <li v-if="!isHistoricalSurvey"><strong>Sobre contestar «de acuerdo» a todo.</strong> Los programas hablan sobre todo de lo que quieren hacer o gastar. Si apoyas casi todas las propuestas, saldrás más cerca de los {{ noun.plural }} que prometen más intervención pública. Responde con tu opinión y usa «en desacuerdo» cuando lo estés.</li>
               <li><strong>El porcentaje</strong> mide cuánto coincide tu opinión con lo que dice {{ isHistoricalSurvey ? 'cada programa' : 'el programa de cada partido' }}: 100 % es coincidir del todo y 0 % estar en polos opuestos.</li>
               <li><strong>Solo cuentan las preguntas en las que el programa dice algo.</strong> Si un {{ noun.singular }} no se pronuncia sobre un tema, ese tema no suma ni resta. Tampoco cuentan las que contestaste «No sé» o omitiste.</li>
-              <li><strong>«Tiene posición en X de tus Y preguntas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
+              <li><strong>«Basado en X de tus Y respuestas»</strong> te dice en cuántas de las que contestaste hay datos. Con pocos datos, el porcentaje es menos fiable.</li>
+              <li><strong>El porcentaje es una media por temas.</strong> Primero se calcula la coincidencia dentro de cada tema y luego se promedian los temas. Un tema donde solo entra una pregunta pesa igual que uno donde entran ocho, así que puede salir un porcentaje alto con más «No coincidís» que «Coincidís».</li>
               <li><strong>Los {{ noun.plural }} con pocos datos</strong> aparecen al final aunque su porcentaje sea alto: con menos de {{ minEval }} preguntas documentadas el resultado es solo orientativo.</li>
               <li><strong>«Por qué este porcentaje»</strong> te enseña cada pregunta, tu respuesta, la posición del {{ noun.singular }} y la cita literal del programa, con su página.</li>
               <li>Más detalle de cómo se calcula y de dónde salen los datos en <NuxtLink to="/metodologia">Cómo funciona</NuxtLink>.</li>
@@ -44,13 +45,19 @@
 
         <div v-if="results.length === 0" class="no-results"><p>{{ $t('survey.results.noData') }}</p></div>
 
-        <ol v-else class="results-list">
+        <template v-else>
+        <p v-if="smallGroup.size" class="note small-diff-note" role="status">
+          <strong>Diferencia pequeña: no se distinguen con fiabilidad.</strong>
+          {{ smallGroupText }}
+        </p>
+        <ol class="results-list">
           <li v-for="result in sortedResults" :key="result.entityId" class="result-card label" :class="{ historical: result.historical && !isHistoricalSurvey, 'is-low': low(result) }">
             <div class="label__head entity-header">
               <h2 class="entity-name">
                 {{ getEntityName(result.entityId) }}
                 <span v-if="result.historical && !isHistoricalSurvey" class="historical-badge small">Histórico</span>
               </h2>
+              <span v-if="smallGroup.has(result.entityId)" class="low-data-badge small-diff-badge" title="A menos de 3 puntos del primero: no se distinguen con fiabilidad.">Diferencia pequeña</span>
               <span v-if="low(result)" class="low-data-badge" :title="`Este ${noun.singular} tiene pocas posiciones documentadas en las preguntas que contestaste: el resultado es solo orientativo.`">Pocos datos</span>
             </div>
             <div class="label__body stack">
@@ -59,19 +66,21 @@
               </p>
               <div class="affinity-score r__score">
                 <span v-if="result.affinityPercent !== null" class="flag r__flag tnum" :class="low(result) ? 'flag--ghost' : ''" :style="{ width: `${Math.max(16, result.affinityPercent)}%` }">
-                  <span class="score-value">{{ result.affinityPercent }}%</span>
+                  <span class="score-value">{{ pctShown(result.affinityPercent) }}</span>
                 </span>
                 <span v-else class="no-data">{{ $t('survey.results.noData') }}</span>
               </div>
 
+              <p v-if="result.affinityPercent !== null" class="small coverage-basis tnum">basado en <strong>{{ result.evaluableQuestions }}</strong> de tus <strong>{{ result.answeredQuestions }}</strong> respuestas</p>
+
               <dl class="r__stats coverage-info" :aria-label="`Resumen de ${getEntityName(result.entityId)}`">
                 <div><dt>Posiciones del programa</dt><dd class="tnum">{{ summary(result.entityId).documented }}</dd></div>
-                <div><dt>Entran en tu encuesta</dt><dd class="tnum">{{ summary(result.entityId).entered }}</dd></div>
+                <div><dt>Entran en tu test</dt><dd class="tnum">{{ summary(result.entityId).entered }}</dd></div>
                 <div class="r__stat--ok"><dt>Coincidís</dt><dd class="tnum">{{ summary(result.entityId).coincide }}</dd></div>
                 <div class="r__stat--no"><dt>No coincidís</dt><dd class="tnum">{{ summary(result.entityId).discrepan }}</dd></div>
               </dl>
               <p class="small coverage-label">
-                De las <strong class="tnum">{{ result.answeredQuestions }}</strong> preguntas que contestaste, el programa tiene posición en <strong class="tnum">{{ result.evaluableQuestions }}</strong>. «Coincidís» es que tu respuesta y el programa estén a un punto o menos en la escala.
+                «Coincidís» es que tu respuesta y el programa estén a un punto o menos en la escala.
               </p>
 
               <details class="evidence-section r__det">
@@ -80,9 +89,9 @@
                   <summary class="r__sechead">
                     <h3>{{ sec.name }}</h3>
                     <p class="small tnum">
-                      {{ sec.entered }} de {{ sec.documented }} posiciones del programa entran en tu encuesta
+                      {{ sec.entered }} de {{ sec.documented }} posiciones del programa entran en tu test
                       <template v-if="sec.entered"> · {{ sec.coincide }} coinciden y {{ sec.discrepan }} no</template>
-                      <template v-if="sec.percent !== null"> · afinidad {{ sec.percent }} %</template>
+                      <template v-if="sec.percent !== null"> · afinidad {{ pctShown(sec.percent) }}</template>
                     </p>
                   </summary>
                   <ul class="r__rows">
@@ -91,7 +100,7 @@
                       <div class="r__vs">
                         <span class="r__cell"><small>Tú</small><b>{{ stanceLabel(row.user) }}</b></span>
                         <span class="r__cell"><small>El programa</small><b>{{ stanceLabel(row.party) }}</b></span>
-                        <span class="r__cell r__cell--match" :class="row.coincide ? 'is-ok' : 'is-no'"><small>{{ row.coincide ? 'Coincidís' : 'No coincidís' }}</small><b class="tnum">{{ row.match }} %</b></span>
+                        <span class="r__cell r__cell--match" :class="row.coincide ? 'is-ok' : 'is-no'"><small>{{ row.coincide ? 'Coincidís' : 'No coincidís' }}</small><b class="tnum">{{ pctShown(row.match) }}</b></span>
                       </div>
                       <div class="evidence-details">
                         <blockquote v-for="(qt, qi) in row.quotes" :key="qi" class="evidence-quote">
@@ -114,6 +123,7 @@
             </div>
           </li>
         </ol>
+        </template>
 
         <p v-if="results.length" class="small r__contrib-note">
           Tus respuestas y tu afinidad suman de forma anónima a las <NuxtLink v-if="statsVisible && !isHistoricalSurvey" to="/estadisticas">estadísticas públicas</NuxtLink><template v-else>estadísticas</template>:
@@ -132,7 +142,7 @@
         </section>
 
         <section class="r__actions actions">
-          <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Repetir encuesta</NuxtLink>
+          <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Repetir test</NuxtLink>
           <button type="button" class="btn btn-secondary" @click="saveToLocal">{{ $t('survey.results.save') }}</button>
           <button type="button" class="btn btn-secondary" @click="exportResults">{{ $t('survey.results.export') }}</button>
           <NuxtLink to="/" class="btn btn-secondary">{{ $t('common.back') }}</NuxtLink>
@@ -147,7 +157,7 @@
 <script setup lang="ts">
 import { calculateScoring } from '~/lib/scoring/calculate'
 import type { Answer, Position, Question, Weight, EntityInfo, DimensionCalibration, ScoringResult } from '~/lib/scoring/calculate'
-import { MIN_EVALUABLE_QUESTIONS, MIN_COVERAGE_PERCENT, isLowCoverage, sortResults } from '~/lib/scoring/ranking'
+import { MIN_EVALUABLE_QUESTIONS, MIN_COVERAGE_PERCENT, SMALL_DIFFERENCE_POINTS, isLowCoverage, sortResults, leadingGroup } from '~/lib/scoring/ranking'
 import { programUrl } from '~/lib/programs'
 
 const route = useRoute()
@@ -322,6 +332,15 @@ const low = (r: ScoringResult) => isLowCoverage(r, minEval.value, minCov.value)
 const counts = (r: ScoringResult) => isHistoricalSurvey.value || !r.historical
 
 const sortedResults = computed(() => sortResults(results.value, minEval.value, minCov.value))
+// Primeros puestos a menos de 3 puntos del primero: se presentan como «diferencia pequeña» y no como un orden estricto (la encuesta histórica no lo usa)
+// Porcentajes mostrados: enteros con formato español («71 %»). Solo presentación: el orden y el umbral de diferencia pequeña usan el valor sin redondear.
+const pctShown = (n: number | null | undefined) => (n === null || n === undefined ? '' : `${Math.round(n)}\u00A0%`)
+const smallGroupText = computed(() => {
+  const names = sortedResults.value.filter(r => smallGroup.value.has(r.entityId)).map(r => getEntityName(r.entityId))
+  if (names.length < 2) return ''
+  return `${names[0]} (primero) y ${names.slice(1).join(', ')} están a menos de ${SMALL_DIFFERENCE_POINTS} puntos de diferencia: el orden entre ellos puede cambiar con una sola respuesta.`
+})
+const smallGroup = computed(() => (isHistoricalSurvey.value ? new Set<string>() : leadingGroup(sortedResults.value, (r) => counts(r) && !low(r))))
 
 // Texto para compartir: los tres primeros con datos suficientes. Quien comparte es quien decide enviarlo,
 // y el texto aclara que no es una recomendación de voto (o, en la histórica, que no es adhesión a un régimen).
@@ -525,6 +544,7 @@ function exportResults() {
 .results-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
 .result-card.is-low { border-style: dashed; border-color: var(--line-strong); }
 .entity-name { font-size: 1.6rem; text-transform: none; letter-spacing: -0.03em; font-weight: 500; color: var(--ink); }
+.label__head.entity-header { flex-wrap: wrap; row-gap: var(--space-2); }
 .label__head.entity-header h2 { text-transform: none; font-size: 1.6rem; letter-spacing: -0.03em; font-weight: 500; color: var(--ink); }
 .low-data-badge { flex: none; padding: 0.15rem 0.7rem; border: 1px solid var(--line-strong); border-radius: 99px; font-size: 0.78rem; font-weight: 600; background: var(--tile); }
 .r__score { display: block; }
@@ -534,8 +554,12 @@ function exportResults() {
 .r__stats > div { padding: var(--space-3); border-radius: 12px; background: var(--tint); }
 .r__stats dt { font-size: 0.8rem; color: var(--muted); line-height: 1.25; }
 .r__stats dd { margin: 0.1rem 0 0; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.03em; line-height: 1.1; }
-.r__stat--ok dd { color: var(--data); }
+.r__stat--ok dd { color: var(--data-ink); }
 .coverage-label { margin: 0; max-width: none; }
+.coverage-basis { margin: 0; max-width: none; color: var(--ink-soft); }
+.how-to-read { margin-bottom: var(--space-4); }
+.small-diff-note { margin: 0 0 var(--space-4); }
+.small-diff-badge { background: var(--paper, transparent); }
 .r__det { border-top: 1px solid var(--line); padding-top: var(--space-2); }
 .r__det > summary { cursor: pointer; font-weight: 500; min-height: 2.9rem; display: flex; align-items: center; }
 /* Cada tema se abre y se cierra por separado: así el detalle de un partido no es un scroll interminable */

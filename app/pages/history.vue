@@ -21,7 +21,7 @@
       <ul v-else class="results-list hist__list">
         <li v-for="session in sessions" :key="session.local_id" class="result-card label">
           <div class="label__head result-header">
-            <h2>Encuesta {{ session.survey_release_id.slice(0, 8) }}</h2>
+            <h2>Test {{ session.survey_release_id.slice(0, 8) }}</h2>
             <span class="meta date">{{ formatDate(session.completed_at) }}</span>
           </div>
           <div class="label__body stack">

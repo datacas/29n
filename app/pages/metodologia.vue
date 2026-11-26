@@ -60,6 +60,9 @@
       Los partidos con muy pocas posiciones documentadas aparecen al final con la etiqueta «Pocos datos», aunque su porcentaje sea alto,
       porque con tan pocas preguntas el resultado no es fiable.
     </p>
+    <p>
+      <strong>Diferencia pequeña.</strong> Si los primeros partidos están a menos de 3 puntos del que encabeza, la pantalla de resultados no los ordena como si se distinguieran: los marca como «diferencia pequeña». El grupo se mide desde el primero, sin encadenar, y los partidos con «Pocos datos» no entran. El umbral de 3 puntos se estimó con usuarios sintéticos y pesos iguales (versión 2.2.1): con una diferencia menor, quitar una sola pregunta cambia el primer partido en más del 12 % de los casos; entre 3 y 5 puntos, en el 7 %; por encima de 8, en el 2 %. No se ha comprobado con usuarios reales.
+    </p>
 
     <h2>Qué preguntas te salen</h2>
     <ul>
@@ -93,20 +96,20 @@
           <tr><td>Legibilidad y estructura</td><td>Longitud, negaciones, conjunciones, texto explicativo</td><td>Hecho</td></tr>
           <tr><td>Neutralidad y encuadre</td><td>Qué posiciones favorece responder «de acuerdo» y si hay términos cargados</td><td>Hecho en la misma ejecución; solo orientativo</td></tr>
           <tr><td>Fiabilidad entre codificadores</td><td>Acuerdo entre modelos de IA al codificar posiciones, con intervalos de confianza</td><td>Hecho en una muestra pequeña; ver abajo</td></tr>
-          <tr><td>Corrección de preguntas con doble contenido</td><td>Dividir o reformular las preguntas señaladas</td><td>Hecha en la versión 2.2.0: 29 preguntas se dividen en 59 de una sola proposición (172 preguntas en total). En la mitad de los casos el programa solo hablaba de una de las dos cosas que preguntaba la pregunta. Quedan 7 señaladas sin dividir, en revisión</td></tr>
+          <tr><td>Corrección de preguntas con doble contenido</td><td>Dividir o reformular las preguntas señaladas</td><td>Hecha en las versiones 2.2.0 y 2.2.1: 31 preguntas se dividen en preguntas de una sola proposición (173 preguntas en total). En la mitad de los casos el programa solo hablaba de una de las dos cosas que preguntaba la pregunta. Otras cinco señaladas se revisaron una por una y se mantienen porque tratan un solo objeto</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3>Lo que hemos encontrado hasta ahora</h3>
     <ul>
-      <li><strong>Cobertura.</strong> De las 3.268 combinaciones entre 172 preguntas y 19 partidos (versión 2.2.0), <strong>2.217 (68 %) no tienen posición</strong> porque el programa no dice nada (62 % en la versión anterior; sube porque al dividir una pregunta solo se heredan las posiciones cuya cita nombra cada parte). Esas celdas no cuentan, y no significan «a favor», «en contra» ni «neutral».</li>
+      <li><strong>Cobertura.</strong> De las 3.287 combinaciones entre 173 preguntas y 19 partidos (versión 2.2.1), <strong>2.243 (68 %) no tienen posición</strong> porque el programa no dice nada. Esas celdas no cuentan, y no significan «a favor», «en contra» ni «neutral». Por eso cada porcentaje se calcula sobre un subconjunto distinto de tus respuestas, y la pantalla de resultados indica junto a cada uno en cuántas se basa («basado en 23 de tus 60 respuestas»).</li>
       <li><strong>Sesgo hacia el «sí».</strong> De las posiciones registradas, el <strong>85 % son positivas</strong> y solo el 15 % negativas, porque los programas hablan sobre todo de lo que quieren hacer. Por eso contestar «de acuerdo» a todo favorece a los partidos con más propuestas.</li>
-      <li><strong>Preguntas con doble contenido.</strong> La primera auditoría señala <strong>36 de las 146 preguntas (25 %)</strong> como probables dobles (dos propuestas en una), 20 más con objeto compuesto, 3 sin dirección clara y 10 con presuposiciones. En la versión 2.2.0 se han dividido 29 de ellas en preguntas de una sola proposición; las demás siguen en revisión. Los datos de esta lista corresponden a la versión 2.1.2, anterior a esa corrección.</li>
-      <li><strong>Preguntas que apenas distinguen.</strong> En 68 preguntas el 90 % o más de los partidos con posición comparte el mismo sentido, y 10 preguntas tienen posición de menos de dos partidos (no comparan).</li>
-      <li><strong>Peso de cada pregunta.</strong> Con 300 usuarios sintéticos, quitar una sola pregunta cambia de media el orden de los partidos muy poco (correlación τ de Kendall mediana 0,94) y cambia el partido en primer lugar en el 7 % de los casos (máximo 22 % para la pregunta más influyente).</li>
-      <li><strong>Legibilidad.</strong> Las preguntas tienen una mediana de 11 palabras, ninguna supera las 28 ni tiene doble negación, todas llevan texto explicativo y 57 contienen una conjunción (y, o, ni). Algo más de una de cada seis (27) tiene un índice de lectura Fernández-Huerta por debajo de 40 (difícil).</li>
-      <li><strong>Estabilidad del ranking.</strong> Con usuarios sintéticos y cambios simulados del 5 % al 20 % de las posiciones, el partido en primer lugar se mantiene entre el 51 % y el 92 % de los casos según el tipo de usuario y de cambio. Por eso el resultado es una <strong>orientación</strong>, no un veredicto, y los huecos pequeños entre partidos deben leerse con prudencia.</li>
+      <li><strong>Preguntas con doble contenido.</strong> La primera auditoría señala <strong>36 de las 146 preguntas (25 %)</strong> como probables dobles (dos propuestas en una), 20 más con objeto compuesto, 3 sin dirección clara y 10 con presuposiciones. En la versión 2.2.1 se han dividido 31 de ellas en preguntas de una sola proposición, y otras cinco señaladas se han revisado y se mantienen. Las cifras de esta lista son de la primera auditoría, sobre la versión 2.1.2, anterior a la corrección.</li>
+      <li><strong>Preguntas que apenas distinguen.</strong> En 62 preguntas el 90 % o más de los partidos con posición comparte el mismo sentido, y 19 preguntas tienen posición de menos de dos partidos (comparan poco o nada). Cifras de la versión 2.2.1.</li>
+      <li><strong>Peso de cada pregunta.</strong> Con 300 usuarios sintéticos y la versión 2.2.1, quitar una sola pregunta cambia de media el orden de los partidos muy poco (correlación τ de Kendall mediana 0,95) y cambia el partido en primer lugar en el 6 % de los casos (mediana por pregunta; máximo 24 % para la pregunta más influyente).</li>
+      <li><strong>Legibilidad.</strong> Las preguntas tienen una mediana de 10 palabras, ninguna supera las 28 ni tiene doble negación, todas llevan texto explicativo y 32 contienen una conjunción (y, o, ni). Algo más de una de cada seis (28) tiene un índice de lectura Fernández-Huerta por debajo de 40 (difícil).</li>
+      <li><strong>Estabilidad del ranking.</strong> Con usuarios sintéticos y cambios simulados del 5 % al 20 % de las posiciones, el partido en primer lugar se mantiene entre el 52 % y el 89 % de los casos según el tipo de usuario y de cambio (versión 2.2.1, 400 usuarios por escenario). Por eso el resultado es una <strong>orientación</strong>, no un veredicto, y los huecos pequeños entre partidos deben leerse con prudencia.</li>
     </ul>
 
     <h2 id="estadistica">Métodos estadísticos</h2>
@@ -159,13 +162,16 @@
       <li><strong>Los modelos pueden compartir errores.</strong> Que varios coincidan no garantiza que acierten: por eso hay controles, comprobación literal de las citas y auditorías con varias familias de modelos.</li>
       <li><strong>No sabemos aún cómo entienden las preguntas las personas.</strong> Las pruebas de comprensión son sintéticas y no sustituyen a las personas reales.</li>
       <li><strong>Las muestras pequeñas no se generalizan</strong> y las estimaciones llevan su intervalo de confianza.</li>
+      <li><strong>El porcentaje es una media por temas, y un tema con una sola pregunta pesa igual que uno con muchas.</strong> Por eso puede salir un porcentaje alto aunque haya más desacuerdos que acuerdos. Medido con usuarios sintéticos (versión 2.2.1; respuestas al azar, de asentimiento y coherentes con un partido), el partido que encabeza por media de temas no es el que encabezaría por media simple de preguntas en el 49 %, el 47 % y el 19 % de los casos, respectivamente, con pesos iguales, y en el 62 %, el 61 % y el 29 % con pesos de prioridades no uniformes. Tiene más «No coincidís» que «Coincidís» en el 12 %, el 0,5 % y el 0,9 % de los casos con pesos iguales, y en el 18 %, el 1,5 % y el 2,2 % con pesos no uniformes. Esos pesos no uniformes son aleatorios, no prioridades reales, y los usuarios no son personas. No hemos cambiado la fórmula antes del 29 de noviembre.</li>
       <li><strong>El cuestionario está en mejora.</strong> Quedan preguntas señaladas por corregir; los cambios se publican en versiones nuevas con su registro.</li>
     </ul>
 
 
     <h2 id="versiones">Versiones del cuestionario</h2>
     <ul>
-      <li><strong>2.2.0 (26 de noviembre de 2026, vigente).</strong> 29 preguntas con doble contenido se dividen en 59 de una sola proposición (172 preguntas, 1.051 posiciones). Una revisión asistida por IA añade 15 posiciones, corrige 8 y retira 2, siempre con su cita literal; sin validación humana independiente. Las estadísticas de uso empiezan de cero para esta versión.</li>
+      <li><strong>2.2.2 (26 de noviembre de 2026).</strong> Corrección de una cita, sin cambio de puntuación: en una posición de Adelante Andalucía sobre el control público de la energía, la cita guardada era un índice del programa y se sustituye por los textos de las páginas 22 y 82. Ningún porcentaje cambia. Las estadísticas de uso empiezan de cero para esta versión.</li>
+      <li><strong>2.2.1 (26 de noviembre de 2026).</strong> Dos preguntas más con varios objetos y sin dirección (impuestos de la vivienda y legislación cultural) se dividen en preguntas con dirección explícita, y se incorporan 10 posiciones nuevas de mitades de preguntas ya divididas, adjudicadas por IA con su cita literal y sin validación humana independiente. Los bloqueos de publicación comprueban ahora que cada cita exista en el PDF original. La pantalla de resultados muestra en cuántas de tus respuestas se basa cada porcentaje y agrupa como «diferencia pequeña» a los primeros partidos que están a menos de 3 puntos. Las estadísticas de uso empiezan de cero para esta versión.</li>
+      <li><strong>2.2.0 (26 de noviembre de 2026).</strong> 29 preguntas con doble contenido se dividen en 59 de una sola proposición (172 preguntas, 1.051 posiciones). Una revisión asistida por IA añade 15 posiciones, corrige 8 y retira 2, siempre con su cita literal; sin validación humana independiente. Las estadísticas de uso empiezan de cero para esta versión.</li>
       <li><strong>2.1.2 (24 de noviembre de 2026).</strong> 146 preguntas, 1.048 posiciones.</li>
     </ul>
 
@@ -179,7 +185,7 @@
     <h2>Tus datos</h2>
     <ul>
       <li>Tus respuestas y tus resultados <strong>se guardan en tu navegador</strong>. Para las estadísticas, el servidor los recibe una vez, sin ningún identificador, y solo los usa para sumar contadores: no guarda ningún registro individual (abajo).</li>
-      <li>Contamos de forma anónima cuántas encuestas se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP ni ningún identificador, y no se envía nada si tu navegador tiene activado «No rastrear» o el control global de privacidad.</li>
+      <li>Contamos de forma anónima cuántos tests se empiezan y se terminan, con la profundidad y los partidos elegidos. No guardamos tu IP ni ningún identificador, y no se envía nada si tu navegador tiene activado «No rastrear» o el control global de privacidad.</li>
       <li>Al ver tu resultado, tus respuestas y tu afinidad con cada programa se envían una vez para <strong>sumar de forma anónima</strong> a las estadísticas. No guardamos una ficha por persona: cada respuesta solo añade 1 a un contador (por ejemplo, «pregunta 12, de acuerdo»), sin IP ni ningún identificador, así que nadie, tampoco nosotros, puede saber qué respondiste. Si tu navegador tiene activado «No rastrear» o el control global de privacidad, no se envía nada. Las estadísticas públicas se abren cuando al menos 10 personas han terminado la encuesta, y ninguna cifra se publica si se apoya en menos de 10 personas.</li>
       <li>Contamos las visitas a la web con Vercel Web Analytics, que no usa cookies ni te identifica. Solo suma páginas vistas. No se carga si tienes activado «No rastrear» o el control global de privacidad.</li>
     </ul>

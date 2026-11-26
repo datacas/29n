@@ -7,7 +7,7 @@
         <h1 class="st__title">Qué piensa la gente<br><span>que ha hecho el test</span></h1>
         <template v-if="ready">
           <div class="st__big">
-            <div><b class="tnum">{{ fmtNum(anim.completed) }}</b><span>encuestas terminadas</span></div>
+            <div><b class="tnum">{{ fmtNum(anim.completed) }}</b><span>tests terminados</span></div>
             <div><b class="tnum">{{ fmtNum(anim.answers) }}</b><span>respuestas compartidas</span></div>
             <div><b class="tnum">{{ data.completionRate ?? '—' }}<small v-if="data.completionRate !== null">%</small></b><span>de quien empieza, termina</span></div>
           </div>
@@ -28,8 +28,8 @@
 
       <section v-else-if="!data.visible" class="st__soon">
         <h2>Las estadísticas se abren pronto</h2>
-        <p>Se publican cuando al menos {{ data.minCount }} personas han terminado la encuesta, para que ningún dato se apoye en muy pocas respuestas.</p>
-        <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Hacer la encuesta</NuxtLink>
+        <p>Se publican cuando al menos {{ data.minCount }} personas han terminado el test, para que ningún dato se apoye en muy pocas respuestas.</p>
+        <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Hacer el test</NuxtLink>
       </section>
 
       <template v-else>
@@ -112,7 +112,7 @@
                   <option value="agree">Más a favor</option>
                   <option value="disagree">Más en contra</option>
                   <option value="divisive">Más divididas</option>
-                  <option value="survey">Orden de la encuesta</option>
+                  <option value="survey">Orden del test</option>
                 </select>
               </label>
             </div>
@@ -172,8 +172,8 @@
               </div>
             </div>
             <div class="st__spark">
-              <h3>Encuestas terminadas por día</h3>
-              <svg v-if="spark" :viewBox="`0 0 ${spark.w} 60`" preserveAspectRatio="none" role="img" :aria-label="`Encuestas terminadas en los últimos ${spark.n} días`">
+              <h3>Tests terminados por día</h3>
+              <svg v-if="spark" :viewBox="`0 0 ${spark.w} 60`" preserveAspectRatio="none" role="img" :aria-label="`Tests terminados en los últimos ${spark.n} días`">
                 <path :d="spark.area" class="st__sparea" />
                 <path :d="spark.line" class="st__spline" />
               </svg>
@@ -190,9 +190,9 @@
 
         <section class="st__cta">
           <h2>Suma tu opinión</h2>
-          <p>Haz la encuesta: al ver tu resultado, tus respuestas suman de forma anónima. Cuantas más personas, más interesantes son estos datos.</p>
+          <p>Haz el test: al ver tu resultado, tus respuestas suman de forma anónima. Cuantas más personas, más interesantes son estos datos.</p>
           <div class="st__ctab">
-            <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Hacer la encuesta</NuxtLink>
+            <NuxtLink :to="`/survey/${releaseId}/start`" class="btn-primary">Hacer el test</NuxtLink>
             <KofiButton />
           </div>
         </section>

@@ -2,7 +2,7 @@
   <div class="survey-questions">
     <div v-if="loading" class="wrap"><p class="loading q__pad">Cargando...</p></div>
     <div v-else-if="!progress" class="wrap q__pad">
-      <p class="note note--alert error" role="alert">No se encontró la configuración de la encuesta. <NuxtLink :to="`/survey/${releaseId}/start`">Volver</NuxtLink></p>
+      <p class="note note--alert error" role="alert">No se encontró la configuración del test. <NuxtLink :to="`/survey/${releaseId}/start`">Volver</NuxtLink></p>
     </div>
 
     <template v-else>

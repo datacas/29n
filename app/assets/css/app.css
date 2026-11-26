@@ -16,6 +16,7 @@
   --tint: #f2f2ef;
   --data: #68745c;
   --data-soft: #d0d8c3;
+  --data-ink: #5a6650; /* texto verde sobre fondos claros: contraste 5,4:1 sobre --tint (AA) */
   --band: #242522;
   --band-mid: #68745c;
   --band-light: #d0d8c3;
