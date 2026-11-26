@@ -65,7 +65,7 @@
               </p>
               <div class="affinity-score r__score">
                 <span v-if="result.affinityPercent !== null" class="flag r__flag tnum" :class="low(result) ? 'flag--ghost' : ''" :style="{ width: `${Math.max(16, result.affinityPercent)}%` }">
-                  <span class="score-value">{{ result.affinityPercent }}%</span>
+                  <span class="score-value">{{ pctShown(result.affinityPercent) }}</span>
                 </span>
                 <span v-else class="no-data">{{ $t('survey.results.noData') }}</span>
               </div>
@@ -74,12 +74,12 @@
 
               <dl class="r__stats coverage-info" :aria-label="`Resumen de ${getEntityName(result.entityId)}`">
                 <div><dt>Posiciones del programa</dt><dd class="tnum">{{ summary(result.entityId).documented }}</dd></div>
-                <div><dt>Entran en tu encuesta</dt><dd class="tnum">{{ summary(result.entityId).entered }}</dd></div>
+                <div><dt>Entran en tu test</dt><dd class="tnum">{{ summary(result.entityId).entered }}</dd></div>
                 <div class="r__stat--ok"><dt>Coincidís</dt><dd class="tnum">{{ summary(result.entityId).coincide }}</dd></div>
                 <div class="r__stat--no"><dt>No coincidís</dt><dd class="tnum">{{ summary(result.entityId).discrepan }}</dd></div>
               </dl>
               <p class="small coverage-label">
-                El programa tiene posición en <strong class="tnum">{{ result.evaluableQuestions }}</strong> de las <strong class="tnum">{{ result.answeredQuestions }}</strong> preguntas que contestaste; las demás no cuentan. «Coincidís» es que tu respuesta y el programa estén a un punto o menos en la escala.
+                «Coincidís» es que tu respuesta y el programa estén a un punto o menos en la escala.
               </p>
 
               <details class="evidence-section r__det">
@@ -88,9 +88,9 @@
                   <summary class="r__sechead">
                     <h3>{{ sec.name }}</h3>
                     <p class="small tnum">
-                      {{ sec.entered }} de {{ sec.documented }} posiciones del programa entran en tu encuesta
+                      {{ sec.entered }} de {{ sec.documented }} posiciones del programa entran en tu test
                       <template v-if="sec.entered"> · {{ sec.coincide }} coinciden y {{ sec.discrepan }} no</template>
-                      <template v-if="sec.percent !== null"> · afinidad {{ sec.percent }} %</template>
+                      <template v-if="sec.percent !== null"> · afinidad {{ pctShown(sec.percent) }}</template>
                     </p>
                   </summary>
                   <ul class="r__rows">
@@ -99,7 +99,7 @@
                       <div class="r__vs">
                         <span class="r__cell"><small>Tú</small><b>{{ stanceLabel(row.user) }}</b></span>
                         <span class="r__cell"><small>El programa</small><b>{{ stanceLabel(row.party) }}</b></span>
-                        <span class="r__cell r__cell--match" :class="row.coincide ? 'is-ok' : 'is-no'"><small>{{ row.coincide ? 'Coincidís' : 'No coincidís' }}</small><b class="tnum">{{ row.match }} %</b></span>
+                        <span class="r__cell r__cell--match" :class="row.coincide ? 'is-ok' : 'is-no'"><small>{{ row.coincide ? 'Coincidís' : 'No coincidís' }}</small><b class="tnum">{{ pctShown(row.match) }}</b></span>
                       </div>
                       <div class="evidence-details">
                         <blockquote v-for="(qt, qi) in row.quotes" :key="qi" class="evidence-quote">
@@ -332,6 +332,8 @@ const counts = (r: ScoringResult) => isHistoricalSurvey.value || !r.historical
 
 const sortedResults = computed(() => sortResults(results.value, minEval.value, minCov.value))
 // Primeros puestos a menos de 3 puntos del primero: se presentan como «diferencia pequeña» y no como un orden estricto (la encuesta histórica no lo usa)
+// Porcentajes mostrados: enteros con formato español («71 %»). Solo presentación: el orden y el umbral de diferencia pequeña usan el valor sin redondear.
+const pctShown = (n: number | null | undefined) => (n === null || n === undefined ? '' : `${Math.round(n)}\u00A0%`)
 const smallGroupText = computed(() => {
   const names = sortedResults.value.filter(r => smallGroup.value.has(r.entityId)).map(r => getEntityName(r.entityId))
   if (names.length < 2) return ''
@@ -541,6 +543,7 @@ function exportResults() {
 .results-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
 .result-card.is-low { border-style: dashed; border-color: var(--line-strong); }
 .entity-name { font-size: 1.6rem; text-transform: none; letter-spacing: -0.03em; font-weight: 500; color: var(--ink); }
+.label__head.entity-header { flex-wrap: wrap; row-gap: var(--space-2); }
 .label__head.entity-header h2 { text-transform: none; font-size: 1.6rem; letter-spacing: -0.03em; font-weight: 500; color: var(--ink); }
 .low-data-badge { flex: none; padding: 0.15rem 0.7rem; border: 1px solid var(--line-strong); border-radius: 99px; font-size: 0.78rem; font-weight: 600; background: var(--tile); }
 .r__score { display: block; }
